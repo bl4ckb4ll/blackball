@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1667409384</mtime>
+    <size>21543</size>
+    <md5>4f128722f5d8724ee47ac18a21bcb1e2</md5>
+    <crc32>9038e20d</crc32>
+    <sha1>051aad4afdbe9a3f7b36b447e62f86dae85eb96b</sha1>
+    <format>JPEG Thumb</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="londonlabourlond03mayh_0.epub" source="derivative">
+    <original>londonlabourlond03mayh_0_abbyy.gz</original>
+    <mtime>1707634464</mtime>
+    <size>51213230</size>
+    <md5>f56862c071b1d68df57978d575bb8259</md5>
+    <crc32>00644821</crc32>
+    <sha1>4fe60462e06de687eaefc72616eaa3471d334d73</sha1>
+    <format>EPUB</format>
+  </file>
+  <file name="londonlabourlond03mayh_0.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>londonlabourlond03mayh_0_jp2.zip</original>
+    <mtime>1422652466</mtime>
+    <size>303821</size>
+    <md5>0398c7bf26de78f908ba72da25b2dc19</md5>
+    <crc32>0fb75a5d</crc32>
+    <sha1>82f63ced49e2f2bb9f256f610400126cdc96f98d</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0.pdf" source="derivative">
+    <format>Text PDF</format>
+    <original>londonlabourlond03mayh_0_page_numbers.json</original>
+    <mtime>1714819124</mtime>
+    <size>91202670</size>
+    <md5>02fe125d0971b3d5d14cde38f5741e02</md5>
+    <crc32>49ed3410</crc32>
+    <sha1>fc46dbaf7d6fc2d383308ba246829904da5b4f2d</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>londonlabourlond03mayh_0_jp2.zip</original>
+    <mtime>1422667201</mtime>
+    <size>35391934</size>
+    <md5>b57da22a290f3993d872f1bfdb12e3ae</md5>
+    <crc32>1649aecb</crc32>
+    <sha1>21c098d59eed2c84e91e6990e8428c6d3d353df1</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_archive.torrent" source="metadata">
+    <btih>b1de5909781786148cdb46443324be62e28cf953</btih>
+    <mtime>1714819635</mtime>
+    <size>23755</size>
+    <md5>c99fe1f501a413b91000fd51831166bf</md5>
+    <crc32>ec3a9ef2</crc32>
+    <sha1>129320b2d94ccd971977132cfb3a406dc377d154</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="londonlabourlond03mayh_0_chocr.html.gz" source="derivative">
+    <ocr_module_version>0.0.14</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.11</ocr_converted>
+    <format>chOCR</format>
+    <original>londonlabourlond03mayh_0_abbyy.gz</original>
+    <mtime>1637796674</mtime>
+    <size>32710653</size>
+    <md5>1cf8810d0c790eaa2245826f51ce7fb9</md5>
+    <crc32>ba967e4a</crc32>
+    <sha1>d1114fdc971851a2c5eb7aa44b4672fb49f0eb67</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_cloth_detection.log" source="derivative">
+    <cloth_cover_detection_module_version>1.2</cloth_cover_detection_module_version>
+    <format>Cloth Cover Detection Log</format>
+    <original>londonlabourlond03mayh_0_scandata.xml</original>
+    <mtime>1667404768</mtime>
+    <size>787</size>
+    <md5>2a849c4e6d6e2856a3a310ca7c748b84</md5>
+    <crc32>a6154df5</crc32>
+    <sha1>7d3a29487c18d7c3a9c99b21b2c566cb565a41c1</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_dc.xml" source="original">
+    <format>Dublin Core</format>
+    <mtime>1649203445</mtime>
+    <size>1392</size>
+    <md5>8a96a49f4fbd389ca76eebe2293d3c5f</md5>
+    <crc32>cd7cc0d8</crc32>
+    <sha1>ad5695398a836ead2b46eb179305db8ea2d96bb4</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>londonlabourlond03mayh_0_djvu.xml</original>
+    <mtime>1667404869</mtime>
+    <size>2947113</size>
+    <md5>b2987abe3f0b61e32250c8d76bf3ee63</md5>
+    <crc32>67292908</crc32>
+    <sha1>fdd7eb907214ca0b076082b8add56869151eadfa</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>londonlabourlond03mayh_0_hocr.html</original>
+    <mtime>1667404575</mtime>
+    <size>36698838</size>
+    <md5>cd14a647b0fc8093a19fbd1100fd80e6</md5>
+    <crc32>a95889a3</crc32>
+    <sha1>d8f87bbd53498296db4f966e65f2fec943bef4a4</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>75bdc9079c56319659b1cc41f10ceac6</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="londonlabourlond03mayh_0_hocr.html" source="derivative">
+    <hocr_char_to_word_module_version>1.0.0</hocr_char_to_word_module_version>
+    <hocr_char_to_word_hocr_version>1.1.2</hocr_char_to_word_hocr_version>
+    <ocr_module_version>0.0.14</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.11</ocr_converted>
+    <format>hOCR</format>
+    <original>londonlabourlond03mayh_0_chocr.html.gz</original>
+    <mtime>1637796948</mtime>
+    <size>68583616</size>
+    <md5>72ef2adc8f77a04b3076a14efbd1863c</md5>
+    <crc32>cb1b1f3a</crc32>
+    <sha1>f129f4561dbcb2bceee71a9564d87924d620600a</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_hocr_pageindex.json.gz" source="derivative">
+    <hocr_pageindex_module_version>1.0.0</hocr_pageindex_module_version>
+    <hocr_pageindex_hocr_version>1.1.0</hocr_pageindex_hocr_version>
+    <format>OCR Page Index</format>
+    <original>londonlabourlond03mayh_0_hocr.html</original>
+    <mtime>1637797195</mtime>
+    <size>6328</size>
+    <md5>172d7a897c079372a81d7f3281042fc0</md5>
+    <crc32>c74deaea</crc32>
+    <sha1>10f2f071955d002b898dc20f024db41f8e2932ee</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_hocr_searchtext.txt.gz" source="derivative">
+    <hocr_fts_text_module_version>1.1.0</hocr_fts_text_module_version>
+    <hocr_fts_text_hocr_version>1.1.0</hocr_fts_text_hocr_version>
+    <word_conf_0_10>21608</word_conf_0_10>
+    <word_conf_11_20>29339</word_conf_11_20>
+    <word_conf_21_30>47987</word_conf_21_30>
+    <word_conf_31_40>65082</word_conf_31_40>
+    <word_conf_41_50>74486</word_conf_41_50>
+    <word_conf_51_60>80934</word_conf_51_60>
+    <word_conf_61_70>58160</word_conf_61_70>
+    <word_conf_71_80>31120</word_conf_71_80>
+    <word_conf_81_90>17173</word_conf_81_90>
+    <word_conf_91_100>43500</word_conf_91_100>
+    <format>OCR Search Text</format>
+    <original>londonlabourlond03mayh_0_hocr.html</original>
+    <mtime>1637797307</mtime>
+    <size>979701</size>
+    <md5>855717ab671777a66e5ffee023596fd4</md5>
+    <crc32>274a6d2f</crc32>
+    <sha1>37667fbf2a83243fb7a6ad91f24c03061ec3ce17</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>londonlabourlond03mayh_0_orig_jp2.tar</original>
+    <mtime>1422652394</mtime>
+    <size>643711659</size>
+    <md5>7b7ae36e67fc50beb340a01f01d9a3ae</md5>
+    <crc32>ed24736c</crc32>
+    <sha1>a84f2aad8b36d22a15a65131a0e24ae391ff18cc</sha1>
+    <filecount>514</filecount>
+  </file>
+  <file name="londonlabourlond03mayh_0_marc.xml" source="original">
+    <format>MARC</format>
+    <mtime>1422453623</mtime>
+    <size>4003</size>
+    <md5>c4dfc00dd11775fb8f5c63dd51cdfd2e</md5>
+    <crc32>dab058eb</crc32>
+    <sha1>d400fdcaceb89904ed94bcee0e8e6d8c059af1d7</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_meta.mrc" source="original">
+    <format>MARC Binary</format>
+    <mtime>1422453623</mtime>
+    <size>1515</size>
+    <md5>aa9f977597c024b8e3d89bb6f2388839</md5>
+    <crc32>414d1579</crc32>
+    <sha1>aa321333231c1c5d28dcce74e7ff7c0939b0e0ac</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_meta.sqlite" source="original">
+    <mtime>1467009085</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>1ec5ca0f509f4281d80464a58503f607</md5>
+    <crc32>69cd3933</crc32>
+    <sha1>49467af26a3776e6f229fce95ab2b3268fb60e54</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1714819622</mtime>
+    <size>3244</size>
+    <md5>9c00ff17b1d9020224fc75c067924130</md5>
+    <crc32>3d983adf</crc32>
+    <sha1>8a763a1a0e67a833b55ea431a14df065240251b3</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_metasource.xml" source="original">
+    <format>MARC Source</format>
+    <mtime>1422453623</mtime>
+    <size>309</size>
+    <md5>4485dba4014354b9f76b28440d57163e</md5>
+    <crc32>fa2bfbc1</crc32>
+    <sha1>bda99d692f27401da569798f44b79292cdd2b743</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_orig_jp2.tar" source="original">
+    <mtime>1422643351</mtime>
+    <size>867758080</size>
+    <md5>469bccfb2c2acad2672a25563477873a</md5>
+    <crc32>dcc8f4da</crc32>
+    <sha1>b68c244eb62a6dab3002304a934941aae3a96a75</sha1>
+    <format>Single Page Original JP2 Tar</format>
+    <filecount>514</filecount>
+  </file>
+  <file name="londonlabourlond03mayh_0_page_numbers.json" source="derivative">
+    <hocr_pagenumber_module_version>1.0.5</hocr_pagenumber_module_version>
+    <hocr_pagenumber_hocr_version>1.1.54</hocr_pagenumber_hocr_version>
+    <hocr_pagenumber_confidence>96</hocr_pagenumber_confidence>
+    <format>Page Numbers JSON</format>
+    <original>londonlabourlond03mayh_0_hocr.html</original>
+    <mtime>1714819123</mtime>
+    <size>86358</size>
+    <md5>bff06153fb6ecbee7f7adb427897412f</md5>
+    <crc32>31b838bf</crc32>
+    <sha1>c2c165bd8519635c06878cf85d7dcf1614141c65</sha1>
+  </file>
+  <file name="londonlabourlond03mayh_0_scandata.xml" source="original">
+    <mtime>1667404768</mtime>
+    <size>673793</size>
+    <md5>4916df0450e3ddf9f5f9b573e830d848</md5>
+    <crc32>c6b1ef79</crc32>
+    <sha1>c69e6014b81bda9b0061fdba36ee12b0dd5cb8f1</sha1>
+    <format>Scandata</format>
+  </file>
+  <file name="londonlabourlond03mayh_0_toc.xml" source="derivative">
+    <format>Contents</format>
+    <original>londonlabourlond03mayh_0_djvu.xml</original>
+    <mtime>1667404870</mtime>
+    <size>25442</size>
+    <md5>a8fbac64df7173955af8dd225ccacb08</md5>
+    <crc32>a2daee32</crc32>
+    <sha1>41b8507567dde55b1150b43a07a4d6a79db2da1f</sha1>
+  </file>
+</files>
