@@ -2,7 +2,22 @@
 
 A serious history book is a many-person object. Blackball should not praise the person on the cover and erase the people whose archives, arguments, data, criticism, editing, teaching, and prior scholarship made the book possible.
 
-This ledger is therefore deliberately expansive. It is also deliberately marked **incomplete**: several of the Internet Archive copies located so far are controlled scans, so we have not yet lawfully inspected and extracted every bibliography in full. The endpoint is one row or entry for every identifiable cited author, not a fake claim of completeness today.
+This ledger is therefore deliberately expansive. It is also deliberately marked **incomplete**. The endpoint is one row or entry for every identifiable cited author, collective author, editor, primary-source creator, or directly credited contributor that can be verified—not a fake claim of completeness today.
+
+The current priority is Geiger's **long-form histories**, especially:
+
+1. *The History of American Higher Education: Learning and Culture from the Founding to World War II*;
+2. *American Higher Education since World War II: A History*;
+3. *To Advance Knowledge: The Growth of American Research Universities, 1900–1940*;
+4. *Research and Relevant Knowledge: American Research Universities Since World War II*;
+5. *Knowledge and Money: Research Universities and the Paradox of the Marketplace*.
+
+Edited annuals and miscellaneous collections are secondary to tracing the scholarship inside these books.
+
+See the book-specific ledgers:
+
+- [`THE-HISTORY-OF-AMERICAN-HIGHER-EDUCATION-SOURCES.md`](THE-HISTORY-OF-AMERICAN-HIGHER-EDUCATION-SOURCES.md)
+- [`AMERICAN-HIGHER-EDUCATION-SINCE-WWII-SOURCES.md`](AMERICAN-HIGHER-EDUCATION-SINCE-WWII-SOURCES.md)
 
 ## Direct acknowledgments verified for *Knowledge and Money*
 
@@ -36,7 +51,79 @@ With gratitude to:
 - The staff of **Princeton University Press**.
 - **Julianna Chaszar**, also thanked for sustaining the nonacademic side of life.
 
+### The people who made the physical/published book
+
+The copyright page lets “Princeton University Press staff” become actual names. Thank you to:
+
+- **Peter Dougherty and Jessica Yao** — editorial;
+- **Ali Parrington** — production editorial;
+- **Erin Suydam** — production;
+- **Tayler Lord, Julia Hall, and Nathalie Levine** — publicity;
+- **Gail K. Schmitt** — copyediting.
+
+They are not incidental. Readers receive a produced, edited, corrected, publicized book—not an author's private manuscript.
+
+## Cited scholars now directly verified in *American Higher Education since World War II*
+
+The full book-specific ledger is much larger. This section keeps a visible roll call in the central gratitude file.
+
+Thank you to:
+
+- **Nelson Lyons**, for bibliographic work on general education;
+- **Bruce A. Kimball**, for the history of liberal education;
+- **James B. Conant** and **Paul H. Buck and the Harvard Committee**, for the historical arguments and documents behind the postwar general-education debate;
+- **Gerald Grant and David Riesman**, for the history of curricular reform;
+- **Christopher Jencks and David Riesman**, for *The Academic Revolution* and its attempt to describe the transformed academic system of the 1960s;
+- **Rakesh Khurana**, for the history of American business schools and professionalization;
+- **Allan M. Cartter**, for empirical assessment of graduate education;
+- **Richard M. Freeland**, for institutional histories of universities in their postwar “golden age”;
+- **Oliver Fulton and Martin Trow**, for research on faculty research activity;
+- **Clark Kerr**, whose writing and memoirs make him both analyst and primary witness to the multiversity and the University of California;
+- **Andrew M. Greeley**, for the history of Catholic higher education's movement into the academic mainstream;
+- **Frank Hamilton Bowles and Frank A. DeCosta**, for systematic work on Black higher education;
+- **Anthony O. Edmonds and E. Bruce Geelhoed**, and **W. Bruce Leslie and Kenneth P. O'Brien**, for histories of state teachers colleges and regional universities;
+- **Steven Brint and Jerome Karabel**, for *The Diverted Dream* and the history/sociology of community colleges and stratification;
+- **John Aubrey Douglass**, for histories of the California system and admissions;
+- **Sheldon Rothblatt** and the contributors he edited, for work on the California Master Plan and its wider significance;
+- **Simon Marginson**, for the later history and crisis of the California Idea;
+- **Nancy Weiss Malkiel**, for the history of coeducation;
+- **Jerome Karabel**, for the history of selective admissions;
+- **Elizabeth A. Duffy and Idana Goldberg**, for research on constructing an entering class;
+- **Joseph A. Soares**, for the history and sociology of privilege in elite admissions;
+- **Fabio Rojas**, for the institutional history of Black Studies;
+- the **Carnegie Council on Policy Studies in Higher Education**, for collective policy research on affirmative action;
+- **Neil Gross and Solon Simmons**, and the contributors they edited, for empirical work on professors and politics;
+- **Robert Maranto, Richard E. Redding, and Frederick M. Hess**, and their contributors, for a different political interpretation of university culture;
+- **G. Calvin Mackenzie and Robert Weisbrot**, for the political history of the “Liberal Hour”;
+- **Richard H. Pells**, for postwar intellectual history;
+- **William G. Bowen**, for analysis of university economics;
+- **Hugh Graham and Nancy Diamond**, for historical work on research universities;
+- **Selma J. Mushkin**, for work on state and local financing of higher education;
+- **Claudia Goldin and Lawrence F. Katz**, for the historical relationship between education and technological change;
+- **David P. Baker**, for the sociology and history of the “schooled society”;
+- **David Autor**, for labor-market analysis;
+- **Robert J. Gordon**, for long-run economic history;
+- **James E. Rosenbaum**, for work on career paths outside the default “college for all” story;
+- **Sarah E. Turner** and editor **Caroline M. Hoxby**, for work on entering and completing college;
+- **Stuart Rojstaczer and Christopher Healy**, for historical data on grading;
+- **Harvey M. Sapolsky**, for the history of the Office of Naval Research and the federal research system;
+- **Neil Gross**, for empirical study of faculty politics;
+- **David Horowitz**, whose polemical work Geiger cites as evidence in the history of attacks on universities. Citation here records provenance, not endorsement.
+
+This list will expand as the remaining notes are normalized.
+
+## Directly verified source people in *The History of American Higher Education*
+
+The controlled Internet Archive scan prevents a comparable full extraction for now, but accessible JSTOR chapter text already verifies:
+
+- **Gordon S. Wood** — Geiger explicitly opens his account of the Early Republic's colleges with Wood's historical interpretation;
+- **Charles W. Eliot** — Geiger opens the chapter on the creation of American universities with Eliot's 1869 words, making Eliot a primary historical source as well as a historical actor.
+
+Review literature also identifies important predecessors including **Laurence R. Veysey** and **David B. Potts**. Those remain separately labeled as reported intellectual debts until the exact Geiger note entries are recovered. **Bernard Bailyn** is retained as historiographical context for the same reason: do not turn a reviewer's comparison into a citation that has not yet been checked.
+
 ## Collaborators and contributors who should not disappear behind an edited-volume title
+
+These are retained, but they are no longer the first research priority.
 
 ### *The American College in the Nineteenth Century*
 
@@ -72,11 +159,9 @@ Special thanks to **Marybeth Gasman**, the principal editor named in publisher m
 
 ## Intellectual debts already visible
 
-- **Laurence R. Veysey** — *The Emergence of the American University* is specifically identified in review discussion of Geiger's prewar synthesis as an important predecessor.
+- **Laurence R. Veysey** — *The Emergence of the American University* is identified in review discussion of Geiger's prewar synthesis as an important predecessor.
 - **Burton R. Clark** — not merely a name in a bibliography but an acknowledged long-term intellectual influence.
 - **Steve Brint** and collaborators — explicitly acknowledged for the sociological work behind part of the postwar history.
-
-This section will grow into a complete citation-author ledger as bibliographies become lawfully inspectable.
 
 ## Reviewers: criticism is part of the record too
 
@@ -91,14 +176,17 @@ Thank you to reviewers who made the books legible to later readers, whether favo
 
 ## Completion rule
 
-For each book:
+For each long-form book:
 
 1. extract the acknowledgments;
 2. extract every bibliography/reference entry that can lawfully be inspected;
-3. normalize people without collapsing distinct people who share a surname;
-4. keep institutions when the author explicitly credits an institution or collective;
-5. keep editors, translators, reviewers, archivists, and data/research assistants;
-6. record the source book/page or public metadata source for every gratitude entry;
-7. never replace a long list with “et al.” merely to make the file prettier.
+3. distinguish direct citation from acknowledgment from reviewer-reported influence;
+4. normalize people without collapsing distinct people who share a surname;
+5. keep institutions and committees when they are collective authors;
+6. keep editors, translators, reviewers, archivists, data/research assistants, production staff, and primary-source creators;
+7. record the source book/page or public metadata source for every gratitude entry;
+8. follow especially important cited works backward into their own source trails;
+9. never replace a long list with “et al.” merely to make the file prettier;
+10. never copy a copyrighted full text merely because an accessible server happens to expose a PDF.
 
 The size of the list is the point: scholarship is inherited work.
