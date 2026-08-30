@@ -1,0 +1,276 @@
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>05996 am a22007211a 4500</leader>
+  <controlfield tag="007">cr            </controlfield>
+  <controlfield tag="008">790307s1851    enkac   s     000   eng  </controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(EUW).b20415606</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="d">OCoLC</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">e-uk-en</subfield>
+  </datafield>
+  <datafield tag="059" ind1=" " ind2=" ">
+    <subfield code="a">216672</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mayhew, Henry,</subfield>
+    <subfield code="d">1812-1887.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">London labour and the London poor</subfield>
+    <subfield code="h">[electronic resource] :</subfield>
+    <subfield code="b">a cyclopaedia of the condition and earnings of those that will work, those that cannot work, and those that will not work. /</subfield>
+    <subfield code="c">by Henry Mayhew.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">London :</subfield>
+    <subfield code="b">[G. Newbold],</subfield>
+    <subfield code="c">1851</subfield>
+    <subfield code="e">(London :</subfield>
+    <subfield code="f">George Woodfall)</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">3 v. :</subfield>
+    <subfield code="b">ill., port. ;</subfield>
+    <subfield code="c">23 cm.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Nos. 1-63, comprising v. 1 and parts of v. 2-3, all that was issued.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">A &quot;Vol. 4&quot; (published London : Griffin, Bohn, 1862) accompanies this set. A separate record has been made for it in the Library catalogue.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="2">
+    <subfield code="a">Poverty.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="2">
+    <subfield code="a">Work.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="2">
+    <subfield code="a">Employment.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="2">
+    <subfield code="a">Prostitution.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="2">
+    <subfield code="a">Social Conditions.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="2">
+    <subfield code="a">Public Health.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="0">
+    <subfield code="a">England.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="0">
+    <subfield code="a">London (England)</subfield>
+  </datafield>
+  <datafield tag="655" ind1=" " ind2="0">
+    <subfield code="a">Electronic books.</subfield>
+  </datafield>
+  <datafield tag="696" ind1=" " ind2=" ">
+    <subfield code="a">WA370</subfield>
+    <subfield code="b">1851.</subfield>
+  </datafield>
+  <datafield tag="752" ind1=" " ind2=" ">
+    <subfield code="a">England</subfield>
+    <subfield code="d">London.</subfield>
+  </datafield>
+  <datafield tag="759" ind1=" " ind2=" ">
+    <subfield code="a">dig19th.</subfield>
+  </datafield>
+  <datafield tag="759" ind1=" " ind2=" ">
+    <subfield code="a">digukmhl.</subfield>
+  </datafield>
+  <datafield tag="776" ind1="1" ind2=" ">
+    <subfield code="i">Print version:</subfield>
+    <subfield code="t">London labour and the London poor</subfield>
+    <subfield code="w">(EUW)b12853719.</subfield>
+  </datafield>
+  <datafield tag="907" ind1=" " ind2=" ">
+    <subfield code="a">.b20415606</subfield>
+  </datafield>
+  <datafield tag="907" ind1=" " ind2=" ">
+    <subfield code="a">.b20415606</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/M0013802.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=M0013802</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0000836.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0000836</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068340.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068340</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068341.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068341</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068345.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068345</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068343.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068343</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068342.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068342</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068338.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068338</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068331.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068331</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068344.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068344</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068334.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068334</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068337.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068337</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068339.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068339</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068333.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068333</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068336.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068336</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068335.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068335</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068332.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068332</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068326.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068326</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068330.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068330</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068329.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068329</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068328.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068328</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068327.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068327</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068324.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068324</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068325.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068325</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068322.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068322</subfield>
+  </datafield>
+  <datafield tag="962" ind1=" " ind2=" ">
+    <subfield code="a">000:000:URL:b0000000:000000:0:0:0:0:0:0</subfield>
+    <subfield code="v">n</subfield>
+    <subfield code="u">http://wellcomeimages.org/indexplus/image/L0068323.html</subfield>
+    <subfield code="e">http://wellcomeimages.org/ixbin/imageserv?MIRO=L0068323</subfield>
+  </datafield>
+  <datafield tag="945" ind1=" " ind2=" ">
+    <subfield code="a">M16280</subfield>
+    <subfield code="c">[Vol. 1]</subfield>
+  </datafield>
+  <datafield tag="945" ind1=" " ind2=" ">
+    <subfield code="a">M16281</subfield>
+    <subfield code="c">[Vol. 2]</subfield>
+  </datafield>
+  <datafield tag="945" ind1=" " ind2=" ">
+    <subfield code="a">M16282</subfield>
+    <subfield code="c">[Vol. 3]</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">digi</subfield>
+    <subfield code="b">01-12-13</subfield>
+    <subfield code="c">m</subfield>
+    <subfield code="d">v</subfield>
+    <subfield code="e">-</subfield>
+    <subfield code="f">eng</subfield>
+    <subfield code="g">enk</subfield>
+    <subfield code="h">0</subfield>
+    <subfield code="i">0</subfield>
+  </datafield>
+</record>

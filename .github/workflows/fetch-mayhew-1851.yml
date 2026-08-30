@@ -1,0 +1,153 @@
+name: Fetch Mayhew 1851 source lineage
+
+on:
+  push:
+    branches:
+      - mayhew-london-labour-corpus
+    paths:
+      - .github/workflows/fetch-mayhew-1851.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      ROOT: sources/henry-mayhew/london-labour-and-the-london-poor/internet-archive-1851
+      RELEASE_TAG: mayhew-london-labour-1851-source-blobs
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "$GITHUB_REF_NAME"
+          git checkout -B "$GITHUB_REF_NAME" "origin/$GITHUB_REF_NAME"
+          git config user.name "blackball corpus sync"
+          git config user.email "blackball-corpus@users.noreply.github.com"
+          mkdir -p "$ROOT"
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" \
+              --target "$GITHUB_REF_NAME" \
+              --title "Mayhew — London Labour and the London Poor — 1851 source blobs" \
+              --notes "Oversized public-domain files from the 1851 Newbold/Wellcome source lineage."
+          fi
+
+      - name: Mirror the 1851 three-volume issue
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          urlquote() {
+            python3 - "$1" <<'PY'
+          import sys, urllib.parse
+          print(urllib.parse.quote(sys.argv[1], safe='/'))
+          PY
+          }
+
+          publish_current_commit() {
+            local message="$1"
+            git commit -m "$message"
+
+            # Another corpus job may move the same branch while this push is
+            # transferring a large pack. Re-fetch/rebase/retry until the commit
+            # is published on top of the newest branch head.
+            local attempt
+            for attempt in 1 2 3 4 5 6 7 8; do
+              git fetch origin "$GITHUB_REF_NAME"
+              git rebase "origin/$GITHUB_REF_NAME"
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+                return 0
+              fi
+              sleep 2
+            done
+            echo "could not publish after concurrent branch updates" >&2
+            return 1
+          }
+
+          sync_item() {
+            local vol="$1" id="$2"
+            local dest="$ROOT/volume-$vol/$id"
+            local meta="$dest/metadata-api.json"
+            local large="$ROOT/large-files-1851.tsv"
+
+            # A non-empty SHA256SUMS plus metadata is the committed completion
+            # marker for an already materialized volume. Oversized release files
+            # are recorded in the companion TSV and release.
+            if [[ -s "$dest/SHA256SUMS" && -s "$meta" ]]; then
+              echo "1851 volume $vol already materialized; skipping"
+              return 0
+            fi
+
+            mkdir -p "$dest"
+            touch "$large"
+
+            curl --fail --location --retry 5 --retry-delay 4 \
+              "https://archive.org/metadata/$id" -o "$meta"
+            : > "$dest/SHA256SUMS"
+
+            jq -r '.files[] | select(.name != null) | [.name, ((.size // "0")|tostring)] | @tsv' "$meta" |
+            while IFS=$'\t' read -r name size; do
+              [ -n "$name" ] || continue
+              size="${size:-0}"
+              [[ "$size" =~ ^[0-9]+$ ]] || size=0
+              local quoted url
+              quoted="$(urlquote "$name")"
+              url="https://archive.org/download/$id/$quoted"
+
+              if (( size >= 99000000 )); then
+                local asset tmp sha line
+                asset="1851-volume-${vol}--${id}--$(basename "$name")"
+                tmp="$RUNNER_TEMP/$asset"
+                curl --fail --location --retry 6 --retry-delay 5 "$url" -o "$tmp"
+                sha="$(sha256sum "$tmp" | awk '{print $1}')"
+                gh release upload "$RELEASE_TAG" "$tmp#$asset" --clobber
+                line="$(printf '%s\t%s\t%s\t%s\t%s' "$vol" "$id/$name" "$size" "$sha" "https://github.com/${GITHUB_REPOSITORY}/releases/download/${RELEASE_TAG}/${asset}")"
+                grep -Fqx -- "$line" "$large" || printf '%s\n' "$line" >> "$large"
+                rm -f "$tmp"
+              else
+                mkdir -p "$(dirname "$dest/$name")"
+                curl --fail --location --retry 6 --retry-delay 5 "$url" -o "$dest/$name"
+                (cd "$dest" && sha256sum "$name") >> "$dest/SHA256SUMS"
+              fi
+            done
+
+            git add "$ROOT"
+            if ! git diff --cached --quiet; then
+              publish_current_commit "[corpus-sync] Mirror Mayhew 1851 volume $vol source representations"
+            fi
+          }
+
+          # Wellcome's surviving 1851 issue: nos. 1–63, comprising volume I and
+          # parts of volumes II–III, all that was issued in this lineage.
+          sync_item 1 b20415606_001
+          sync_item 2 b20415606_002
+          sync_item 3 b20415606_003
+
+      - name: Write 1851 inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo "# Generated 1851 source-lineage inventory"
+            echo
+            find "$ROOT" -type f ! -name INVENTORY.md -printf '%s\t%p\n' | sort -k2
+          } > "$ROOT/INVENTORY.md"
+          git add "$ROOT/INVENTORY.md"
+          if ! git diff --cached --quiet; then
+            git commit -m "[corpus-sync] Record Mayhew 1851 inventory"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              git fetch origin "$GITHUB_REF_NAME"
+              git rebase "origin/$GITHUB_REF_NAME"
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+                exit 0
+              fi
+              sleep 2
+            done
+            exit 1
+          fi

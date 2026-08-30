@@ -1,0 +1,194 @@
+name: Fetch Mayhew public-domain corpus
+
+on:
+  push:
+    branches:
+      - mayhew-london-labour-corpus
+    paths:
+      - .github/workflows/fetch-mayhew-corpus.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      ROOT: sources/henry-mayhew/london-labour-and-the-london-poor
+      RELEASE_TAG: mayhew-london-labour-source-blobs
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "$GITHUB_REF_NAME"
+          git checkout -B "$GITHUB_REF_NAME" "origin/$GITHUB_REF_NAME"
+          git config user.name "blackball corpus sync"
+          git config user.email "blackball-corpus@users.noreply.github.com"
+          mkdir -p "$ROOT/project-gutenberg" "$ROOT/internet-archive"
+          touch "$ROOT/large-files.tsv"
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" \
+              --target "$GITHUB_REF_NAME" \
+              --title "Mayhew — London Labour and the London Poor — public-domain source blobs" \
+              --notes "Oversized source files mirrored for the Blackball RAG corpus. Files remain named with volume and Internet Archive identifier so provenance is recoverable."
+          fi
+
+      - name: Fetch all four volumes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          urlquote() {
+            python3 - "$1" <<'PY'
+          import sys, urllib.parse
+          print(urllib.parse.quote(sys.argv[1], safe='/'))
+          PY
+          }
+
+          sync_gutenberg() {
+            local vol="$1" gid="$2"
+            local dest="$ROOT/project-gutenberg/volume-$vol"
+            mkdir -p "$dest/catalog-formats" "$dest/files-mirror"
+
+            echo "Project Gutenberg volume $vol / ebook $gid"
+            curl --fail --location --retry 4 --retry-delay 3 \
+              "https://www.gutenberg.org/ebooks/${gid}.rdf" \
+              -o "$dest/gutenberg-${gid}.rdf"
+
+            python3 - "$dest/gutenberg-${gid}.rdf" <<'PY' > "$dest/catalog-urls.txt"
+          import sys, xml.etree.ElementTree as ET
+          root = ET.parse(sys.argv[1]).getroot()
+          urls = set()
+          for elem in root.iter():
+              for value in elem.attrib.values():
+                  if value.startswith(('https://www.gutenberg.org/', 'http://www.gutenberg.org/')):
+                      if '/cache/epub/' in value or '/files/' in value:
+                          urls.add(value.replace('http://', 'https://', 1))
+          for url in sorted(urls):
+              print(url)
+          PY
+
+            while IFS= read -r url; do
+              [ -n "$url" ] || continue
+              local base
+              base="$(basename "${url%%\?*}")"
+              [ -n "$base" ] || continue
+              curl --fail --location --retry 4 --retry-delay 3 "$url" -o "$dest/catalog-formats/$base" || true
+            done < "$dest/catalog-urls.txt"
+
+            wget --quiet --recursive --no-parent --no-host-directories \
+              --cut-dirs=1 --reject 'index.html*' \
+              --directory-prefix="$dest/files-mirror" \
+              "https://www.gutenberg.org/files/${gid}/" || true
+
+            if curl --fail --location --retry 4 --retry-delay 3 \
+              "https://www.gutenberg.org/files/${gid}/${gid}-0.txt" \
+              -o "$dest/volume-${vol}-proofread.txt"; then
+              :
+            else
+              curl --fail --location --retry 4 --retry-delay 3 \
+                "https://www.gutenberg.org/cache/epub/${gid}/pg${gid}.txt" \
+                -o "$dest/volume-${vol}-proofread.txt"
+            fi
+          }
+
+          sync_archive() {
+            local vol="$1" id="$2"
+            local dest="$ROOT/internet-archive/volume-$vol/$id"
+            local meta="$dest/metadata-api.json"
+            mkdir -p "$dest"
+
+            echo "Internet Archive volume $vol / $id"
+            curl --fail --location --retry 5 --retry-delay 4 \
+              "https://archive.org/metadata/$id" -o "$meta"
+
+            : > "$dest/SHA256SUMS"
+            jq -r '.files[] | select(.name != null) | [.name, ((.size // "0")|tostring)] | @tsv' "$meta" |
+            while IFS=$'\t' read -r name size; do
+              [ -n "$name" ] || continue
+              size="${size:-0}"
+              [[ "$size" =~ ^[0-9]+$ ]] || size=0
+              local quoted url
+              quoted="$(urlquote "$name")"
+              url="https://archive.org/download/$id/$quoted"
+
+              if (( size >= 99000000 )); then
+                local asset tmp sha
+                asset="volume-${vol}--${id}--$(basename "$name")"
+                tmp="$RUNNER_TEMP/$asset"
+                echo "release asset: $name ($size bytes)"
+                curl --fail --location --retry 6 --retry-delay 5 "$url" -o "$tmp"
+                sha="$(sha256sum "$tmp" | awk '{print $1}')"
+                gh release upload "$RELEASE_TAG" "$tmp#$asset" --clobber
+                printf '%s\t%s\t%s\t%s\t%s\n' "$vol" "$id/$name" "$size" "$sha" \
+                  "https://github.com/${GITHUB_REPOSITORY}/releases/download/${RELEASE_TAG}/${asset}" \
+                  >> "$ROOT/large-files.tsv"
+                rm -f "$tmp"
+              else
+                mkdir -p "$(dirname "$dest/$name")"
+                echo "git file: $name ($size bytes)"
+                curl --fail --location --retry 6 --retry-delay 5 "$url" -o "$dest/$name"
+                (cd "$dest" && sha256sum "$name") >> "$dest/SHA256SUMS"
+              fi
+            done
+          }
+
+          publish_commit() {
+            local message="$1"
+            git commit -m "$message"
+            # The RAG bin may receive other source notes while this large ingest
+            # is running. Integrate those commits immediately before publishing.
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          }
+
+          commit_volume() {
+            local vol="$1"
+            git add "$ROOT"
+            if git diff --cached --quiet; then
+              return
+            fi
+            publish_commit "[corpus-sync] Mirror Mayhew volume $vol source representations"
+          }
+
+          sync_gutenberg 1 55998
+          sync_archive   1 londonlabourlond01mayhuoft
+          commit_volume  1
+
+          sync_gutenberg 2 60440
+          sync_archive   2 londonlabourlond02mayhrich
+          commit_volume  2
+
+          sync_gutenberg 3 57060
+          sync_archive   3 londonlabourlond03mayh_0
+          commit_volume  3
+
+          sync_gutenberg 4 63415
+          sync_archive   4 londonlabourlond04mayh
+          commit_volume  4
+
+      - name: Write corpus inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo "# Generated local-file inventory"
+            echo
+            echo "Generated from the checked-in corpus after all four volumes were mirrored."
+            echo
+            find "$ROOT" -type f ! -name INVENTORY.md -printf '%s\t%p\n' | sort -k2
+          } > "$ROOT/INVENTORY.md"
+          git add "$ROOT/INVENTORY.md" "$ROOT/large-files.tsv"
+          if ! git diff --cached --quiet; then
+            git commit -m "[corpus-sync] Record Mayhew corpus inventory"
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
