@@ -44,7 +44,7 @@ Thank you to **David B. Potts, Leon Jackson, Julie Ann Bubolz, Michael Sugrue, J
 
 ### *Perspectives on the History of Higher Education*, vol. 26
 
-Currently verified: **A. J. Angulo, George Levesque, Jennifer de Forest, Paul McInerny**. The contributor list remains incomplete.
+Currently verified: **A. J. Angulo, George Levesque, Jennifer de Forrest, Paul McInerny**. The contributor list remains incomplete.
 
 ### *Curriculum, Accreditation and Coming of Age of Higher Education*
 
