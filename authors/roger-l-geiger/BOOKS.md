@@ -88,7 +88,7 @@ Verified contributors include **David B. Potts, Leon Jackson, Julie Ann Bubolz, 
 ### Perspectives on the History of Higher Education, Volume 26 (2007) — published 2008
 
 - IA: https://archive.org/details/isbn_9781412807326 — restricted / print-disabled
-- Verified contributors from publisher descriptions include **A. J. Angulo, George Levesque, Jennifer de Forest, and Paul McInerny**. This list is not yet complete.
+- Verified contributors from publisher descriptions include **A. J. Angulo, George Levesque, Jennifer de Forrest, and Paul McInerny**. This list is not yet complete.
 
 ### Curriculum, Accreditation and Coming of Age of Higher Education — 2009
 
