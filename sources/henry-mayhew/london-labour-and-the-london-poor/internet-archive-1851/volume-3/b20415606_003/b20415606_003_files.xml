@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1698946858</mtime>
+    <size>21336</size>
+    <md5>94c33ed31831096edb0e8d7d6dfdeb0c</md5>
+    <crc32>35f38428</crc32>
+    <sha1>9f0c59d1db798facd8b63c66cf5d53fb9b9bd6be</sha1>
+    <format>JPEG Thumb</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="b20415606_003.djvu" source="derivative">
+    <format>DjVu</format>
+    <original>b20415606_003_djvu.xml</original>
+    <mtime>1414091328</mtime>
+    <size>29259716</size>
+    <md5>de29ba577d89905d2d6e8714298e0b7b</md5>
+    <crc32>9ec3d4fb</crc32>
+    <sha1>c1715961616ae2619b118b51d426026df9459f87</sha1>
+  </file>
+  <file name="b20415606_003.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>b20415606_003_jp2.zip</original>
+    <mtime>1414078059</mtime>
+    <size>292053</size>
+    <md5>95bedd947f8d207db6f11f475f3ba455</md5>
+    <crc32>7659027f</crc32>
+    <sha1>ae01dcb0999d8b716d7c506d398e773689c74b5f</sha1>
+  </file>
+  <file name="b20415606_003.pdf" source="derivative">
+    <format>Text PDF</format>
+    <original>b20415606_003_page_numbers.json</original>
+    <mtime>1698946643</mtime>
+    <size>49352763</size>
+    <md5>7543fe25cfb041ccc98b1d62e75357fd</md5>
+    <crc32>f4807093</crc32>
+    <sha1>7cfbaca15b363e1ecad41dad3e14dab70961a281</sha1>
+  </file>
+  <file name="b20415606_003_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>b20415606_003_jp2.zip</original>
+    <mtime>1414084970</mtime>
+    <size>23352740</size>
+    <md5>5b6db4a8629f9619a22ec73652a3515c</md5>
+    <crc32>da6b18ef</crc32>
+    <sha1>15db8d77e30f018325ce53523506eaf4daa81a72</sha1>
+  </file>
+  <file name="b20415606_003_archive.torrent" source="metadata">
+    <btih>f7a514c699ee6a2693b4c23bbd46665a08bace37</btih>
+    <mtime>1742237856</mtime>
+    <size>19375</size>
+    <md5>ba4a377145c012430f85e16782d1e92c</md5>
+    <crc32>f2c045c2</crc32>
+    <sha1>9d7ee24ce5d27c02ce957b4ccf3fd405b3ab31a9</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="b20415606_003_chocr.html.gz" source="derivative">
+    <ocr_module_version>0.0.21</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.37</ocr_converted>
+    <format>chOCR</format>
+    <original>b20415606_003_abbyy.gz</original>
+    <mtime>1698946433</mtime>
+    <size>21190643</size>
+    <md5>2c0d226b2d855248e34be81f6ad43e63</md5>
+    <crc32>7dc55dad</crc32>
+    <sha1>e0e64ae0f45b4c854755e8612a03bbaa27131e7b</sha1>
+  </file>
+  <file name="b20415606_003_cloth_detection.log" source="derivative">
+    <cloth_cover_detection_module_version>1.2</cloth_cover_detection_module_version>
+    <format>Cloth Cover Detection Log</format>
+    <original>b20415606_003_scandata.xml</original>
+    <mtime>1698946803</mtime>
+    <size>743</size>
+    <md5>f8a403331085e715e179f2072465a089</md5>
+    <crc32>f5af0387</crc32>
+    <sha1>3a29f414e2848c172dccec44220d9acf70b25462</sha1>
+  </file>
+  <file name="b20415606_003_dc.xml" source="original">
+    <format>Dublin Core</format>
+    <mtime>1648179740</mtime>
+    <size>1328</size>
+    <md5>ee76d49f4294b50a9f323e06a599458c</md5>
+    <crc32>fc593379</crc32>
+    <sha1>71f49b18d5dd33d468977ec924eddaa431642443</sha1>
+  </file>
+  <file name="b20415606_003_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>b20415606_003_djvu.xml</original>
+    <mtime>1698946619</mtime>
+    <size>1877940</size>
+    <md5>23ab294a25368cc5dd18de76284dc697</md5>
+    <crc32>415a70b5</crc32>
+    <sha1>90e9d70923195b3c703fda4c7dee8ea1a104307a</sha1>
+  </file>
+  <file name="b20415606_003_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>b20415606_003_hocr.html</original>
+    <mtime>1698946517</mtime>
+    <size>22105618</size>
+    <md5>9447078d2a5fdfe785703a7761983e35</md5>
+    <crc32>92fec8bf</crc32>
+    <sha1>9c88c4305d23be3615e5f73dfb7f9f244ff61e6e</sha1>
+  </file>
+  <file name="b20415606_003_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>155bd948f9aa866486be62c3d16fbfc3</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="b20415606_003_hocr.html" source="derivative">
+    <hocr_char_to_word_module_version>1.2.0</hocr_char_to_word_module_version>
+    <hocr_char_to_word_hocr_version>1.1.45</hocr_char_to_word_hocr_version>
+    <ocr_module_version>0.0.21</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.37</ocr_converted>
+    <format>hOCR</format>
+    <original>b20415606_003_chocr.html.gz</original>
+    <mtime>1698946496</mtime>
+    <size>41645910</size>
+    <md5>7bd0aaa1987832b3f68a5c9b2aa96f25</md5>
+    <crc32>bf028778</crc32>
+    <sha1>e81245ae328c6026b2b439d97fcb594103a89cbd</sha1>
+  </file>
+  <file name="b20415606_003_hocr_pageindex.json.gz" source="derivative">
+    <hocr_pageindex_module_version>1.0.0</hocr_pageindex_module_version>
+    <hocr_pageindex_hocr_version>1.1.15</hocr_pageindex_hocr_version>
+    <format>OCR Page Index</format>
+    <original>b20415606_003_hocr.html</original>
+    <mtime>1698946535</mtime>
+    <size>4540</size>
+    <md5>647b0e196859b86d08082db5b099a057</md5>
+    <crc32>046a61f2</crc32>
+    <sha1>2ee355f91ef59dee8b97c82d175c269819e855aa</sha1>
+  </file>
+  <file name="b20415606_003_hocr_searchtext.txt.gz" source="derivative">
+    <hocr_fts_text_module_version>1.1.0</hocr_fts_text_module_version>
+    <hocr_fts_text_hocr_version>1.1.15</hocr_fts_text_hocr_version>
+    <word_conf_0_10>21996</word_conf_0_10>
+    <word_conf_11_20>25240</word_conf_11_20>
+    <word_conf_21_30>38813</word_conf_21_30>
+    <word_conf_31_40>49230</word_conf_31_40>
+    <word_conf_41_50>47473</word_conf_41_50>
+    <word_conf_51_60>38900</word_conf_51_60>
+    <word_conf_61_70>24807</word_conf_61_70>
+    <word_conf_71_80>11912</word_conf_71_80>
+    <word_conf_81_90>5746</word_conf_81_90>
+    <word_conf_91_100>12985</word_conf_91_100>
+    <format>OCR Search Text</format>
+    <original>b20415606_003_hocr.html</original>
+    <mtime>1698946567</mtime>
+    <size>635048</size>
+    <md5>561b8f5291e6a42dd78bdba5ea2d5073</md5>
+    <crc32>f78e4f26</crc32>
+    <sha1>a247686cc62cf9fab374768da577a1085727eb96</sha1>
+  </file>
+  <file name="b20415606_003_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>b20415606_003_orig_jp2.tar</original>
+    <mtime>1414077993</mtime>
+    <size>569295321</size>
+    <md5>76ee2ed696b82121bac50d8365066bd2</md5>
+    <crc32>fd100906</crc32>
+    <sha1>57b5744037b126e0c784a1a8f110ce8505c2a1b8</sha1>
+    <filecount>378</filecount>
+  </file>
+  <file name="b20415606_003_marc.xml" source="original">
+    <format>MARC</format>
+    <mtime>1411995567</mtime>
+    <size>13739</size>
+    <md5>d670fa6a37841d6371942337e94419fb</md5>
+    <crc32>f618755a</crc32>
+    <sha1>dee48581dbf19e5b8527d3052c1bb7f6ec7d1ea9</sha1>
+  </file>
+  <file name="b20415606_003_meta.mrc" source="original">
+    <format>MARC Binary</format>
+    <mtime>1411995567</mtime>
+    <size>5996</size>
+    <md5>2f04c98fbc8ca7c0c3445e93faa406e3</md5>
+    <crc32>5bbcdc58</crc32>
+    <sha1>68868b70028bbded6d3d170932c0ffa91545fa75</sha1>
+  </file>
+  <file name="b20415606_003_meta.sqlite" source="original">
+    <mtime>1464299484</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>dbc1aae74f8fa5bedf2f1640cc932152</md5>
+    <crc32>b0213ec7</crc32>
+    <sha1>e0966500d2f95e2abca786e7a8526e90ba25062f</sha1>
+  </file>
+  <file name="b20415606_003_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1742237850</mtime>
+    <size>3001</size>
+    <md5>28b7d7f6cffaadeaa16639a46556384c</md5>
+    <crc32>38a1c540</crc32>
+    <sha1>49d87df04e3c01257ed85c74e7c6c5cc68f3ad23</sha1>
+  </file>
+  <file name="b20415606_003_metasource.xml" source="original">
+    <format>MARC Source</format>
+    <mtime>1411995567</mtime>
+    <size>303</size>
+    <md5>2b5f5ed382623c3bc5ac69d2edd2f79d</md5>
+    <crc32>ddce42a7</crc32>
+    <sha1>665871388cd1eddd065580f18971811e90252629</sha1>
+  </file>
+  <file name="b20415606_003_orig_jp2.tar" source="original">
+    <mtime>1414071587</mtime>
+    <size>721418240</size>
+    <md5>96df9d9f3c6b0fb55b1e68cbed66521f</md5>
+    <crc32>7544cb66</crc32>
+    <sha1>2b398c922ea106ac958d8909fc2a42f653bab22c</sha1>
+    <format>Single Page Original JP2 Tar</format>
+    <filecount>378</filecount>
+  </file>
+  <file name="b20415606_003_page_numbers.json" source="derivative">
+    <hocr_pagenumber_module_version>1.0.3</hocr_pagenumber_module_version>
+    <hocr_pagenumber_hocr_version>1.1.54</hocr_pagenumber_hocr_version>
+    <hocr_pagenumber_confidence>65</hocr_pagenumber_confidence>
+    <format>Page Numbers JSON</format>
+    <original>b20415606_003_hocr.html</original>
+    <mtime>1698946594</mtime>
+    <size>63474</size>
+    <md5>3d1e8931fcab8515995c798866bd524b</md5>
+    <crc32>05c647ef</crc32>
+    <sha1>0ba7ab216aaefd11f4cdc8b55d74f5c61368e0a8</sha1>
+  </file>
+  <file name="b20415606_003_scandata.xml" source="original">
+    <mtime>1698946803</mtime>
+    <size>374488</size>
+    <md5>559a608c2d4349663d566a5feef3b5f0</md5>
+    <crc32>1a4638ff</crc32>
+    <sha1>ca4bead8e8deab760f7c01e6f2b8ef58602fb320</sha1>
+    <format>Scandata</format>
+  </file>
+</files>
