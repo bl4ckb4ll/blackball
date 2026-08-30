@@ -1,17 +1,44 @@
 # blackball
 
-Blackball keeps two different kinds of material separate.
+Blackball is an LLM-facing RAG bin: a model-independent evidence corpus, claim ledger, source trail, and retrieval surface for questions that should not be answered from model memory alone.
 
-## Human-facing
+It is built to make later answers inspectable.
 
-Literal books, courses, prices, access, and provenance for a person deciding what they would actually read.
+The basic retrieval path is:
 
-## LLM-facing
+**question → candidate claims → evidence → source owner → scope/time → disagreement → answer**
 
-Source dossiers meant to be read back by a model: argument maps, evidence states, institutional cases, citation trails, disagreements, unknowns, and explicit credit to the people whose work supplies the claims or evidence.
+Blackball is not primarily a syllabus, recommendation list, or human-facing course guide. A syllabus can be evidence in Blackball; it is not the organizing object.
 
-These are not syllabi. A dossier should let a later model answer from inspected sources rather than rediscovering the subject or silently promoting metadata and summaries into facts.
+## What belongs here
 
-### Dossiers
+- primary sources and stable source records;
+- careful source-review notes;
+- atomic evidence-backed claims;
+- institutional and historical cases;
+- citation graphs that preserve who actually produced an idea, measurement, document, or observation;
+- competing interpretations and negative evidence;
+- scope, timeframe, and confidence labels;
+- explicit unknowns and retrieval queues;
+- source snapshots sufficient to recover or verify a claim later;
+- question maps that say which evidence would actually decide an issue.
+
+## Evidence rule
+
+Never promote metadata, a title, a search snippet, a review, or an LLM reconstruction into stronger evidence than it is.
+
+Prefer:
+
+**upstream primary source > inspected primary author > inspected secondary analysis > discovery metadata**
+
+unless the question is specifically about the secondary author's interpretation.
+
+A credential, ranking, institutional label, or professional title carries only the evidentiary weight of the process it actually certifies. Do not silently substitute broad claims about intelligence, competence, employability, judgment, or authority.
+
+## Current question surfaces
+
+- [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
+
+## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
