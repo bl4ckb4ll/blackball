@@ -13,7 +13,7 @@ Brian Z. Tamanaha belongs in Blackball because his work repeatedly asks what leg
 - *A Realistic Theory of Law* (Cambridge University Press, 2017)
 - *Legal Pluralism Explained: History, Theory, Consequences* (Oxford University Press, 2021)
 - *Sociological Approaches to Theories of Law* (Cambridge University Press, 2022)
-- *The Truth About Natural Law* (Oxford University Press, 2026)
+- *Truth About Natural Law: History, Theory, Consequences* (Oxford University Press, 2026)
 
 Edited/co-edited work includes *Legal Pluralism and Development* with **Caroline Sage** and **Michael Woolcock**.
 
