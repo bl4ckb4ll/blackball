@@ -1,141 +1,99 @@
 # Roger L. Geiger — books and reading notes
 
-This file separates three questions that are too often collapsed:
+The current Blackball priority is Geiger's **long-form histories**, not his edited annuals.
 
-1. **What is the book?**
-2. **What does it argue or reconstruct?**
-3. **Can we lawfully host the text?**
+For each book we keep four questions separate:
 
-The answer to (3) is currently **no** for every Geiger Internet Archive scan verified in this first pass.
+1. What is the book and what historical problem does it address?
+2. What does Geiger argue or reconstruct?
+3. Whose earlier work, archives, data, memoirs, reports, and criticism does Geiger depend on?
+4. Can the full text lawfully be redistributed here?
 
-## Major authored books
+For every Geiger Internet Archive scan verified so far, the answer to (4) is **no**: the scans are controlled, `printdisabled`, access-restricted, or preview-only. They remain linked rather than mirrored.
+
+## Current source-tracing order
+
+### 1. The History of American Higher Education: Learning and Culture from the Founding to World War II — 2014/2015
+
+The broad pre-1945 synthesis. Geiger follows American higher education from Harvard's founding through World War II while repeatedly asking how colleges and universities balanced three purposes: **knowledge, careers, and culture**.
+
+That frame is useful because an institution can retain the same name while changing its social job. The book makes it possible to ask not simply whether “the college” survived, but what kind of knowledge it taught, what occupations it prepared people for, what cultural formation it claimed to provide, and how those purposes changed relative to one another.
+
+- Publisher: Princeton University Press
+- Internet Archive: https://archive.org/details/historyofamerica0000geig — controlled / print-disabled
+- JSTOR: https://www.jstor.org/stable/j.ctt7ztpf4
+- Source trail: [THE-HISTORY-OF-AMERICAN-HIGHER-EDUCATION-SOURCES.md](THE-HISTORY-OF-AMERICAN-HIGHER-EDUCATION-SOURCES.md)
+
+The current directly verified source trail includes Gordon S. Wood and Charles W. Eliot, while Laurence R. Veysey, David B. Potts, and Bernard Bailyn are kept in separately labeled historiographical categories until exact Geiger note entries can be recovered.
+
+### 2. American Higher Education since World War II: A History — 2019
+
+The continuation covers the GI Bill and explosive postwar growth; mass higher education; desegregation and coeducation; the 1960s and 1970s; research expansion and economic-development policy; selectivity and stratification; academic standards; costs; and the changing position of the university in American society.
+
+- Publisher: Princeton University Press
+- JSTOR: https://www.jstor.org/stable/j.ctv9hvtbz
+- Public institutional PDF located at Martin Luther University Halle-Wittenberg, but the book itself says Copyright © 2019 Princeton University Press / All Rights Reserved. It is therefore verification material, **not a file Blackball can mirror**.
+- Source trail: [AMERICAN-HIGHER-EDUCATION-SINCE-WWII-SOURCES.md](AMERICAN-HIGHER-EDUCATION-SINCE-WWII-SOURCES.md)
+
+This is currently the richest direct citation extraction because the legitimate institutional copy exposes the notes. The source trail already reaches general education, the academic revolution, California's public system, Black higher education, coeducation, admissions, community colleges, university finance, research policy, grading, labor markets, faculty politics, and more.
+
+### 3. To Advance Knowledge: The Growth of American Research Universities, 1900–1940 — 1986
+
+The first of Geiger's two major histories of the American research university. It asks how research capacity actually became institutionalized: disciplines, faculty, laboratories, graduate education, philanthropy, foundations, university wealth, organized research, and the eventual international ascent of American science.
+
+- Original publisher: Oxford University Press
+- Internet Archive, 1986 edition: https://archive.org/details/toadvanceknowled0000geig — controlled / print-disabled
+- Internet Archive / Open Library, 2004 Transaction edition: https://archive.org/details/toadvanceknowled0000geig_r1g9 — Preview Only
+- Original IA metadata reports the notes/source apparatus at roughly pp. 279–320.
+- Source trail: [TO-ADVANCE-KNOWLEDGE-SOURCES.md](TO-ADVANCE-KNOWLEDGE-SOURCES.md)
+
+The 2004 reissue is especially valuable because its legitimate publisher preview includes Geiger's retrospective introduction. Geiger explicitly identifies **Laurence R. Veysey** as an intellectual debt and names a large body of scholarship published after 1986 that changed or deepened the history: Robert McCaughey; Morton and Phyllis Keller; Mary Ann Dzuback; William H. McNeill; Winton U. Solberg; John Aubrey Douglass; Julie A. Reuben; Jon H. Roberts; James Turner; Peter Novick; Gerald Graff; Andrew Abbott; Ellen Condliffe Lagemann; Kenneth M. Ludmerer; Robert E. Kohler; David C. Mowery; Nathan Rosenberg; John P. Swann; Hugh Hawkins; Lynn D. Gordon; W. Bruce Leslie; Ronald A. Smith; Claudia Goldin; Lawrence F. Katz; Susan R. Richardson; and others.
+
+That is the kind of backward source trail Blackball is trying to preserve.
+
+### 4. Research and Relevant Knowledge: American Research Universities Since World War II — 1993
+
+The sequel changes the patronage system. Wartime mobilization and postwar federal agencies make the federal government both a major patron and a major consumer of academic research. Geiger follows contract research, federal science policy, foundations, Sputnik-era expansion, the 1960s, political conflict, the fiscal problems of the 1970s, and the research environment of the 1980s.
+
+- Publisher: Oxford University Press
+- Internet Archive: https://archive.org/details/researchrelevant0000geig_i9p3 — controlled / print-disabled
+- IA metadata reports the notes/source apparatus at roughly pp. 339–404.
+- Source trail: [RESEARCH-AND-RELEVANT-KNOWLEDGE-SOURCES.md](RESEARCH-AND-RELEVANT-KNOWLEDGE-SOURCES.md)
+
+Legitimate previews directly expose historical actors including James Bryant Conant and Vannevar Bush at the creation of the wartime contract-research system. The full bibliography is deliberately **not** being reconstructed from thematic guesses: sixty-six pages of notes exist, but each citation edge has to be verified before it goes into the gratitude graph.
+
+### 5. Knowledge and Money: Research Universities and the Paradox of the Marketplace — 2004
+
+Geiger follows the research university into a period in which university knowledge and credentials become increasingly valuable while markets increasingly shape finance, undergraduate education, research, technology transfer, and economic-development work.
+
+The “paradox of the marketplace” is that universities gain resources because their knowledge has economic value, while market pressures can also narrow or redirect the independent production of knowledge that made those institutions valuable in the first place.
+
+- Publisher: Stanford University Press
+- Internet Archive: https://archive.org/details/knowledgemoneyre0000geig_k2f8 — controlled / print-disabled
+- The IA description says the analysis draws on roughly twenty years of research and data from 99 research universities.
+- Direct acknowledgments and collaborators are already recorded in [GRATITUDE.md](GRATITUDE.md).
+
+A book-specific citation trail comes after the four histories above have been pushed further.
+
+## Other authored books
 
 ### Private Sectors in Higher Education: Structure, Function, and Change in Eight Countries — 1986
 
-A comparative study of private higher education in Belgium, France, Great Britain, Japan, the Netherlands, the Philippines, Sweden, and the United States. The University of Michigan Press describes it as an early systematic scholarly treatment of private higher education outside the United States, using national cases to examine how public/private structures interact with policy.
+A comparative study of private higher education in Belgium, France, Great Britain, Japan, the Netherlands, the Philippines, Sweden, and the United States.
 
 - Publisher: University of Michigan Press
-- IA: https://archive.org/details/privatesectorsin0000geig — restricted / print-disabled
+- IA: https://archive.org/details/privatesectorsin0000geig — controlled / print-disabled
 - Reviews located: Bruce L. R. Smith in *Science*; Joseph M. Stetar in *The Journal of Higher Education*.
-
-### To Advance Knowledge: The Growth of American Research Universities, 1900–1940 — 1986
-
-The first of Geiger's major histories of the American research university. It traces how universities built research capacity and how philanthropic foundations helped raise American science and scholarship toward the international frontier before World War II.
-
-- Publisher: Oxford University Press
-- IA: https://archive.org/details/toadvanceknowled0000geig — restricted / print-disabled
-- IA metadata reports bibliography: pp. 279–320.
-
-### Research and Relevant Knowledge: American Research Universities Since World War II — 1993
-
-The sequel shifts the patronage system: wartime mobilization and postwar federal agencies make the federal government both a major patron and a major consumer of academic research. The IA synopsis highlights institutional cases including MIT, Berkeley, Stanford, UCLA, Pittsburgh, Georgia Tech, and Arizona and follows the research university through the student-rebellion era into the 1990s.
-
-- Publisher: Oxford University Press
-- IA: https://archive.org/details/researchrelevant0000geig_i9p3 — restricted / print-disabled
-- IA metadata reports bibliography: pp. 339–404.
-- Review located: John R. Thelin, *American Historical Review* 100(1), 1995, p. 257, DOI 10.2307/2168162.
-
-### Knowledge and Money: Research Universities and the Paradox of the Marketplace — 2004
-
-Geiger follows the research university into a period in which university knowledge and university credentials become more valuable while market pressures increasingly shape finance, undergraduate education, research, and economic-development work. His phrase “paradox of the marketplace” names the tension: the university gains resources because its knowledge is valuable, while the very markets that reward it can constrain the independence that produces that knowledge.
-
-- Publisher: Stanford University Press
-- IA: https://archive.org/details/knowledgemoneyre0000geig_k2f8 — restricted / print-disabled
-- The IA description says the analysis draws on roughly twenty years of research and data from 99 research universities.
 
 ### Tapping the Riches of Science: Universities and the Promise of Economic Growth — 2008
 
-With **Creso M. Sá**. Extends the university/economic-development problem: what actually happens when states and universities try to turn research capacity into regional economic growth?
+With **Creso M. Sá**. Extends the university/economic-development question: what actually happens when governments and universities try to turn research capacity into regional economic growth?
 
 - Publisher: Harvard University Press
-- IA: no exact book item verified in the 2026-08-30 sweep.
-- Do not infer absence from IA; this only records the search result so far.
+- No exact IA book item verified in the 2026-08-30 sweep.
 
-### The History of American Higher Education: Learning and Culture from the Founding to World War II — 2014/2015
+## Edited volumes
 
-The large synthetic history. It follows American higher education from Harvard's founding through World War II and repeatedly returns to three purposes—**knowledge, careers, culture**—instead of treating “the university” as one timeless object. That makes the book unusually useful for asking when an institution changed its social job even if its name survived.
+Geiger's edited books and the *History of Higher Education Annual* / *Perspectives on the History of Higher Education* run still matter, especially because their chapter contributors should receive individual credit. They are recorded elsewhere in this directory and in [CATALOG-SWEEP-2026-08-30.md](CATALOG-SWEEP-2026-08-30.md).
 
-- Publisher: Princeton University Press
-- IA: https://archive.org/details/historyofamerica0000geig — restricted / print-disabled
-- Review located: T. Gregory Barrett emphasizes the book's span from 1636 to World War II and its knowledge/careers/culture framework.
-- Barrett notes Geiger's debt to Laurence R. Veysey's *The Emergence of the American University*; Veysey therefore belongs in the gratitude ledger rather than disappearing behind Geiger's name.
-
-### American Higher Education since World War II: A History — 2019
-
-The continuation covers the GI Bill and explosive postwar growth, the 1960s and 1970s, desegregation and coeducation, mass higher education, the renewed research/economic-development relationship after about 1980, and the increasingly selective and stratified system of the present era.
-
-Johann N. Neem's *American Historical Review* review reads it as the completion of Geiger's rise-and-fall history of the research university and academic values: the earlier volume shows the rise of knowledge as a central academic purpose; the postwar volume shows how fragile that commitment became.
-
-- Publisher: Princeton University Press
-- Google Books: https://books.google.com/books?id=4LaTDwAAQBAJ
-- Review: Johann N. Neem, *American Historical Review* 126(2), 2021, pp. 827–828, https://doi.org/10.1093/ahr/rhab273
-- IA: no exact IA book item verified in the 2026-08-30 sweep.
-
-## Edited books and the Annual/Perspectives series
-
-These matter because the contributors are part of the intellectual object.
-
-### The American College in the Nineteenth Century — 2000
-
-Edited by Geiger. A revisionist collection on the nineteenth-century college: student life, regional variety, denominational institutions, multipurpose colleges, women's education, professionalization, and the rise of universities.
-
-Verified contributors include **David B. Potts, Leon Jackson, Julie Ann Bubolz, Michael Sugrue, James Findlay, Margaret A. Nash, Peter Dobkin Hall, James Turner, Paul Bernard, and Willard J. Pugh**.
-
-- Vanderbilt University Press: https://www.vanderbiltuniversitypress.com/9780826513649/the-american-college-in-the-nineteenth-century/
-- ERIC record: https://eric.ed.gov/?id=ED464566
-- IA: no exact item identifier verified in this sweep.
-
-### Perspectives on the History of Higher Education, Volume 26 (2007) — published 2008
-
-- IA: https://archive.org/details/isbn_9781412807326 — restricted / print-disabled
-- Verified contributors from publisher descriptions include **A. J. Angulo, George Levesque, Jennifer de Forrest, and Paul McInerny**. This list is not yet complete.
-
-### Curriculum, Accreditation and Coming of Age of Higher Education — 2009
-
-Edited by Geiger. Publisher metadata highlights work by **Timothy J. Williams** on antebellum student diaries and **Marc A. VanOverbeke** on the University of Michigan's relationship with secondary schools.
-
-- Routledge ISBN 9781412810319.
-- IA: no exact item verified in this sweep.
-
-### Iconic Leaders in Higher Education — 2011
-
-Studies how university presidents became symbols of their institutions and how institutional image was constructed.
-
-Verified contributors named in the publisher description: **Andrea Turpin, Roger L. Geiger, Nathan M. Sorber, Joby Topper, Katherine Chaddock, Christian Anderson, James Capshew, Nancy Diamond, and Ethan Schrum**.
-
-- Routledge ISBN 9781412818599.
-- IA: no exact item verified in this sweep.
-
-### Higher Education for African Americans Before the Civil Rights Era, 1900–1964 — 2012
-
-Marybeth Gasman is listed by the publisher as editor; Open Library catalogs Gasman and Geiger together. The collection examines how African Americans created, governed, defended, and expanded opportunities for higher education amid discrimination and intimidation.
-
-- IA: https://archive.org/details/highereducationf0000unse_l3v8 — Open Library reports `Preview Only`; link only.
-
-### The Land-Grant Colleges and the Reshaping of American Higher Education — 2013
-
-Edited by Geiger and **Nathan M. Sorber**. Reexamines land-grant origins and development rather than treating the Morrill Act as a one-step creation story.
-
-- Routledge ISBN 9781412851473.
-- IA: no exact item verified in this sweep.
-
-### Shaping the American Faculty — 2015
-
-Edited by Geiger. Focuses on faculty governance, professional status, tenure, academic freedom, and student-affairs administration.
-
-Verified contributors: **Christian K. Anderson, Zachary Haberler, Richard F. Teichgraeber III, Steve Taaffe, and Tom McCarthy**.
-
-- Routledge ISBN 9781412856027.
-- IA: no exact item verified in this sweep.
-
-### American Higher Education in the Postwar Era, 1945–1970 — 2017/2018
-
-Edited by **Roger L. Geiger, Nathan M. Sorber, and Christian K. Anderson**. Covers institutional expansion and transformation between the GI Bill generation and the upheavals around 1970.
-
-- Routledge paperback ISBN 9781412865593.
-- Review located: Eric Royal Lybeck, *History of Education* 48(6), 2019, pp. 855–856, DOI 10.1080/0046760X.2018.1525438.
-- IA: no exact item verified in this sweep.
-
-## Next bibliographic pass
-
-The *History of Higher Education Annual* / *Perspectives* run is large. The next pass should enumerate every Geiger-edited volume (1993–2018), ISBN, table of contents, contributor list, exact IA/Open Library identifier where one exists, and rights status.
+They are **not the current extraction priority**. The present work is to go inside Geiger's long-form histories, recover the scholarship he used, thank those people, and then follow the most important cited works backward another generation.
