@@ -26,8 +26,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          # A corpus ingest can run for a long time. Always begin from the
-          # newest branch head, not merely the commit that queued the run.
           git fetch origin "$GITHUB_REF_NAME"
           git checkout -B "$GITHUB_REF_NAME" "origin/$GITHUB_REF_NAME"
           git config user.name "blackball corpus sync"
@@ -63,7 +61,6 @@ jobs:
               "https://www.gutenberg.org/ebooks/${gid}.rdf" \
               -o "$dest/gutenberg-${gid}.rdf"
 
-            # Download every format Project Gutenberg advertises in the RDF record.
             python3 - "$dest/gutenberg-${gid}.rdf" <<'PY' > "$dest/catalog-urls.txt"
           import sys, xml.etree.ElementTree as ET
           root = ET.parse(sys.argv[1]).getroot()
@@ -85,15 +82,11 @@ jobs:
               curl --fail --location --retry 4 --retry-delay 3 "$url" -o "$dest/catalog-formats/$base" || true
             done < "$dest/catalog-urls.txt"
 
-            # Mirror the public /files/<ebook>/ tree as well. This preserves old
-            # transcriptions and the complete illustrated HTML tree, not only
-            # the current cache formats.
             wget --quiet --recursive --no-parent --no-host-directories \
               --cut-dirs=1 --reject 'index.html*' \
               --directory-prefix="$dest/files-mirror" \
               "https://www.gutenberg.org/files/${gid}/" || true
 
-            # Ensure the current proofread UTF-8 text has an obvious stable path.
             if curl --fail --location --retry 4 --retry-delay 3 \
               "https://www.gutenberg.org/files/${gid}/${gid}-0.txt" \
               -o "$dest/volume-${vol}-proofread.txt"; then
@@ -126,8 +119,6 @@ jobs:
               url="https://archive.org/download/$id/$quoted"
 
               if (( size >= 99000000 )); then
-                # GitHub rejects ordinary Git blobs >=100 MB. Keep the bytes in
-                # the repository's release storage instead of dropping them.
                 local asset tmp sha
                 asset="volume-${vol}--${id}--$(basename "$name")"
                 tmp="$RUNNER_TEMP/$asset"
@@ -148,19 +139,25 @@ jobs:
             done
           }
 
+          publish_commit() {
+            local message="$1"
+            git commit -m "$message"
+            # The RAG bin may receive other source notes while this large ingest
+            # is running. Integrate those commits immediately before publishing.
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          }
+
           commit_volume() {
             local vol="$1"
             git add "$ROOT"
             if git diff --cached --quiet; then
               return
             fi
-            git commit -m "[corpus-sync] Mirror Mayhew volume $vol source representations"
-            git push origin "HEAD:$GITHUB_REF_NAME"
+            publish_commit "[corpus-sync] Mirror Mayhew volume $vol source representations"
           }
 
-          # One independent scan per volume plus every derivative attached to
-          # that Internet Archive item. Gutenberg contributes a separately
-          # proofread text lineage.
           sync_gutenberg 1 55998
           sync_archive   1 londonlabourlond01mayhuoft
           commit_volume  1
@@ -191,5 +188,7 @@ jobs:
           git add "$ROOT/INVENTORY.md" "$ROOT/large-files.tsv"
           if ! git diff --cached --quiet; then
             git commit -m "[corpus-sync] Record Mayhew corpus inventory"
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
