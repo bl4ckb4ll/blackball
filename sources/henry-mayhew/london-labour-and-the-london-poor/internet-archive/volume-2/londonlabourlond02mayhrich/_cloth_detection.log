@@ -1,0 +1,12 @@
+04-May-24 10:29:04 INFO     Start cloth cover detector module version 2.1.4!
+04-May-24 10:29:04 INFO     sourceFile(scandata) : '/item/scandata.zip' -> targetFile(log-file) '/item/_cloth_detection.log'
+04-May-24 10:29:04 INFO     Using /item/londonlabourlond02mayhrich_cloth_detection.log to find imagestack
+04-May-24 10:29:04 INFO     Successfully found imagestack path - /item/londonlabourlond02mayhrich_jp2.zip
+04-May-24 10:29:05 INFO     Image measurements data: [68.84530864197531, 34.780154643179856, 15.590226069489619, 0.09434914446610353, 22.30232543981134, 0.05806297933665061, 0.015293709599831376, 0.5316916661553657, 0.14772245052947344, 29.526730539597924]
+04-May-24 10:29:05 INFO     Analysis of cover page with leafNum 1: 'is cloth' - False, 'edge level' - 0.8817171231088287
+04-May-24 10:29:06 INFO     Image measurements data: [119.7067701863354, 35.439146217133384, 19.935057125807933, 0.21207521670875706, 33.53375745419638, 0.030811971083086934, 0.00992454557146581, 0.2709662796850586, 0.21916704373138854, 20.83182479267574]
+04-May-24 10:29:06 INFO     Analysis of cover page with leafNum 584: 'is cloth' - False, 'edge level' - 0.38788259060554536
+04-May-24 10:29:06 INFO     Index number of page 1 is 0
+04-May-24 10:29:06 INFO     Index number of page 584 is 583
+04-May-24 10:29:12 INFO     Save new scandata with tag 'clothCover' in /item/scandata.zip
+04-May-24 10:29:12 INFO     Successful finish cloth-cover detector!
