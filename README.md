@@ -14,7 +14,12 @@ The book is the durable object. Courses, teachers, departments, syllabi, reviews
 - Give credit lavishly. Authors do not work alone: collaborators, cited scholars, editors, students, librarians, archivists, reviewers, translators, and others who made the work possible belong in the record.
 - Never pretend a gratitude/citation inventory is complete when the evidence is incomplete.
 
-## First shelf
+## Books
+
+- [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](./David%20L.%20Kirp%20%E2%80%93%20Shakespeare,%20Einstein,%20and%20the%20Bottom%20Line%20%E2%80%93%20$6%20paper%20%E2%80%93%20JSTOR%20(not%20open%20access).md)
+  - [Where would I read this and who with?](./Where%20would%20I%20read%20this%20and%20who%20with/David%20L.%20Kirp%20%E2%80%93%20Shakespeare,%20Einstein,%20and%20the%20Bottom%20Line.md)
+
+## First author shelves
 
 - [Roger L. Geiger](authors/roger-l-geiger/) — first and deepest pass; history of American higher education and research universities.
 - [Brian Z. Tamanaha](authors/brian-z-tamanaha/) — law, legal theory, and the political economy of legal education.
@@ -30,4 +35,4 @@ Each author directory may contain:
 - `GRATITUDE.md` — people and institutions whose work the books depend on.
 - `texts/` — only texts whose redistribution rights have actually been verified.
 
-Syllabus/course provenance comes later and points **to** these book records rather than replacing them.
+Syllabus/course provenance points **to** these book records rather than replacing them.
