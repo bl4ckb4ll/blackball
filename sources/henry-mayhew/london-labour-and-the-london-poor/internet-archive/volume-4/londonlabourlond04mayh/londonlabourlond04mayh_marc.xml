@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+<!-- Length implementation at offset 22 should hold a digit. Assuming 0 -->
+  <leader>01670cam a22003611  4500</leader>
+  <controlfield tag="001">DGQ0451</controlfield>
+  <controlfield tag="008">921111m18611862enkabf        000 0 eng d</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   09026340</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(CStRLIN)UTBGRLA363376-B</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(CStRLIN)PAUG92-B63351</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">Reclass</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="c">CarP</subfield>
+    <subfield code="d">CStRLIN</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">e-uk-en</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">HV4088.L8</subfield>
+    <subfield code="b">M5</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mayhew, Henry,</subfield>
+    <subfield code="d">1812-1887.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">London labour and the London poor :</subfield>
+    <subfield code="b">a cyclopaedia of the condition and earnings of those that will work, those that cannot work, and those that will not work /</subfield>
+    <subfield code="c">by Henry Mayhew ...</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">London :</subfield>
+    <subfield code="b">Griffin, Bohn &amp; Co.,</subfield>
+    <subfield code="c">1861-62.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">4 v. :</subfield>
+    <subfield code="b">ill., maps ;</subfield>
+    <subfield code="c">23 cm.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">I-III. The London street-folk; comprising, Street sellers. Street buyers. Street finders. Street performers. Street artizans. Street labourers -- [Extra volume] Those that will not work. Comprising, Prostitutes. Thieves. Swindlers. Beggars. By several contributors. With introductory essay on the agencies at present in operation in the metropolis for the suppression of vice and crime. By the Rev. William Tuckniss ...</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Working class</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Prostitution</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Poor</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Crime</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Charities</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Tuckniss, William.</subfield>
+  </datafield>
+  <datafield tag="959" ind1=" " ind2=" ">
+    <subfield code="a">cjk</subfield>
+  </datafield>
+  <datafield tag="988" ind1=" " ind2=" ">
+    <subfield code="a">2/16/1997</subfield>
+    <subfield code="b">1/21/1998</subfield>
+    <subfield code="c">11/11/1992</subfield>
+  </datafield>
+  <datafield tag="989" ind1="2" ind2="L">
+    <subfield code="a">HV 4088 .L8 M5</subfield>
+    <subfield code="v">vol.4</subfield>
+    <subfield code="w">LC</subfield>
+    <subfield code="h">hbll</subfield>
+    <subfield code="i">31197004059165</subfield>
+    <subfield code="d">3/23/1996</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="5">1/1</subfield>
+  </datafield>
+  <datafield tag="596" ind1=" " ind2=" ">
+    <subfield code="a">1</subfield>
+  </datafield>
+  <datafield tag="926" ind1=" " ind2=" ">
+    <subfield code="a">LEE</subfield>
+    <subfield code="b">LEE-LIB</subfield>
+    <subfield code="c">HV 4088 .L8 M5 vol.4</subfield>
+    <subfield code="d">BOOK</subfield>
+    <subfield code="f">1</subfield>
+  </datafield>
+  <datafield tag="927" ind1=" " ind2=" ">
+    <subfield code="a">LEE</subfield>
+  </datafield>
+  <datafield tag="927" ind1=" " ind2=" ">
+    <subfield code="b">Location</subfield>
+    <subfield code="c">LEE-LIB--    </subfield>
+  </datafield>
+  <datafield tag="927" ind1=" " ind2=" ">
+    <subfield code="b">Library has</subfield>
+    <subfield code="c">v.4</subfield>
+  </datafield>
+</record>

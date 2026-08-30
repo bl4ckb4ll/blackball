@@ -1,0 +1,12 @@
+04-May-24 10:40:43 INFO     Start cloth cover detector module version 2.1.4!
+04-May-24 10:40:43 INFO     sourceFile(scandata) : '/item/londonlabourlond04mayh_scandata.xml' -> targetFile(log-file) '/item/londonlabourlond04mayh_cloth_detection.log'
+04-May-24 10:40:43 INFO     Using /item/londonlabourlond04mayh_cloth_detection.log to find imagestack
+04-May-24 10:40:43 INFO     Successfully found imagestack path - /item/londonlabourlond04mayh_jp2.zip
+04-May-24 10:40:44 INFO     Image measurements data: [136.2656953642384, 41.90479277635258, 18.622212153146524, 0.09976928006836147, 23.856830018729365, 0.06039500224015204, 0.010819754938991418, 0.6681195171931887, 0.1340225761360251, 14.452373604446732]
+04-May-24 10:40:44 INFO     Analysis of cover page with leafNum 1: 'is cloth' - False, 'edge level' - 0.6084882501992618
+04-May-24 10:40:45 INFO     Image measurements data: [139.7717880794702, 45.22097443212443, 20.78250961391175, 0.11405609429202143, 25.633866376790735, 0.05790562087097344, 0.010158360739395118, 0.6973013393093057, 0.15854293025351943, 15.940773697810933]
+04-May-24 10:40:45 INFO     Analysis of cover page with leafNum 594: 'is cloth' - False, 'edge level' - 0.5597626368250186
+04-May-24 10:40:45 INFO     Index number of page 1 is 1
+04-May-24 10:40:45 INFO     Index number of page 594 is 594
+04-May-24 10:40:46 INFO     Save new scandata with tag 'clothCover' in /item/londonlabourlond04mayh_scandata.xml
+04-May-24 10:40:46 INFO     Successful finish cloth-cover detector!
