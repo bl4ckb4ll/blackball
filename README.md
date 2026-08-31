@@ -38,10 +38,13 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Current question surfaces
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
+- [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
+- [Sarah Lawrence as a class and cultural type](llm/sarah-lawrence-class/README.md)
+- [J. D. Salinger and class](llm/j-d-salinger-class/README.md)
 
 ## Primary-source corpora
 
