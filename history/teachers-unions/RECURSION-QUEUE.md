@@ -1,132 +1,147 @@
 # Teachers’ unions — recursion frontier
 
-This file is the honest stopping boundary of the citation spider. A row means the source is already a **verified descendant** of an inspected parent, but its own citation apparatus is not yet completely represented.
+This file records the honest stopping boundary of the citation spider. A source is **citation-complete** only when its whole notes/reference apparatus has actually been inspected. “Bibliography located” is not the same thing.
 
 ## Current extraction coverage
 
-| Source | Current coverage | Missing next step |
-|---|---|---|
-| Karen Leroux (2006) | all 65 numbered endnotes represented | recurse child-by-child |
-| Kathleen Murphey (1993) | notes 1–21 represented from HJM page images | inspect remaining article pages/notes |
-| David B. Tyack (1976), reached from Leroux n.44 | notes 1–17 and 36–52 represented (34 of 52 note numbers) | recover notes 18–35 |
-| Wayne J. Urban, *Why Teachers Organized* | catalog + exact bibliography location (pp. 195–198) | inspect/transcribe bibliography |
-| Marjorie Murphy, *Blackboard Unions* | catalog, chapter structure, bibliography/index existence | inspect chapter notes / bibliographical references |
+| Source | Parent edge | Current coverage | Next step |
+|---|---|---|---|
+| Karen Leroux (2006) | seed | **65/65 endnotes** | recurse remaining children |
+| Kathleen Murphey (1993) | seed | notes **1–21** from HJM page images | inspect remaining article notes |
+| David B. Tyack (1976) | Leroux n.44 | **52/52 numbered notes** | recurse teacher-relevant children |
+| Kathryn Kish Sklar (1993) | Leroux n.16 | **55/55 numbered notes** | recurse selected children |
+| Anne Firor Scott (1979) | Sklar n.6 | **39/39 numbered notes** | recurse public-domain/inspectable children |
+| Wayne J. Urban, *Why Teachers Organized* | Leroux nn.3, 21 | bibliography located at pp. 195–198 | inspect/transcribe bibliography |
+| Marjorie Murphy, *Blackboard Unions* | Leroux n.65; Murphey nn.1, 4 | bibliographical references confirmed | inspect chapter notes/references |
 
-## Priority A — complete partially inspected parent sources
+## Completed in pass 2
 
-### Kathleen Murphey — later notes
+### Tyack notes 18–35
 
-**Need:** page-image inspection for the remainder of “Gender Barriers to Forming a Teachers’ Union in Boston (1919–1965),” after the currently extracted note 21.
+The apparent middle gap was a Cambridge display/retrieval problem, not a missing citation block. Notes 18–35 are now recorded in [`TYACK-1976-NOTES-18-35.md`](TYACK-1976-NOTES-18-35.md). Together with the previously extracted notes 1–17 and 36–52, Tyack is now **52/52**.
 
-**Why first:** this is one of the two seed sources, so unfinished direct citations contaminate every later completeness claim.
+The newly exposed teacher-history descendants include:
 
-**Do not substitute:** LAWCHA, later Boston-union histories, or search snippets for Murphey’s actual notes.
+- Willard Waller — *The Sociology of Teaching*;
+- Harmon Zeigler — *The Political Life of American Teachers*;
+- Howard S. Becker — “The Career of the Chicago Public Schoolteacher”;
+- Howard K. Beale — *Are American Teachers Free?*;
+- W. W. Charters Jr. — “The Social Background of Teaching”;
+- Richard O. Carlson — organizational/environmental studies of schools and superintendents;
+- primary and professional material in NEA/AASA publications.
 
-### David B. Tyack — notes 18–35
+### Leroux → Sklar
 
-**Need:** the missing central block of the Cambridge reference panel.
+Leroux note 16 directly cites Kathryn Kish Sklar, “The Schooling of Girls and Changing Community Values in Massachusetts Towns, 1750–1820.” Cambridge exposes all **55 notes**, now recorded in [`KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md`](KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md).
 
-**Known total:** the Cambridge article reaches note 52; 34 note numbers are currently represented and notes 18–35 are the defined gap.
+This branch reaches backward into:
 
-## Priority B — shared / central teacher-union histories
+- female literacy and primary schooling;
+- early use and lower pay of women teachers;
+- town school finance and tax records;
+- women’s secondary education;
+- religious change and women’s spiritual authority;
+- household economy and rural industrialization;
+- the feminization of teaching.
+
+### Sklar → Scott
+
+Sklar note 6 cites Anne Firor Scott, “The Ever Widening Circle: The Diffusion of Feminist Values from the Troy Female Seminary, 1822–1872.” Cambridge exposes all **39 notes**, now recorded in [`ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md`](ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md).
+
+Scott produces a fourth-generation trail into:
+
+- Emma Willard’s writings;
+- Troy Female Seminary alumnae questionnaires and correspondence;
+- early teacher-improvement associations;
+- Henry Barnard and common-school journals;
+- Almira Lincoln Phelps and women’s preparation for self-support;
+- women’s higher education and teacher education;
+- historiography of feminism, separate spheres, and professionalization.
+
+## Priority A — finish the remaining seed
+
+### Kathleen Murphey — notes after 21
+
+**Need:** inspect the later page images of “Gender Barriers to Forming a Teachers’ Union in Boston (1919–1965).”
+
+The Historical Journal of Massachusetts scan is the source of record. Later bibliographies, Google Books snippets, and retrospective histories must not be substituted for Murphey’s own notes.
+
+## Priority B — central union histories with located but unseen bibliographies
 
 ### Marjorie Murphy — *Blackboard Unions*
 
 **Parents:** Leroux n.65; Murphey nn.1, 4.
 
-**Need:** complete chapter-note extraction from a lawful Cornell/ACLS or library copy. Preserve chapter/note coordinate for every edge.
-
-**Likely value:** one of the principal trunks for AFT/NEA institutional history, Chicago, early locals, interwar politics, McCarthyism, civil rights, collective bargaining, and Ocean Hill–Brownsville.
+**Need:** complete Cornell/ACLS or library note extraction, preserving chapter/note coordinates.
 
 ### Wayne J. Urban — *Why Teachers Organized*
 
-**Parent:** Leroux nn.3, 21.
+**Parents:** Leroux nn.3, 21.
 
-**Need:** bibliography pp. 195–198 from an inspectable copy.
+**Known:** bibliography pp. 195–198; controlled-borrow IA/Open Library item `whyteachersorgan0000urba`.
 
-**Known record:** 202 pages, bibliography pp. 195–198, index, controlled-borrow IA/Open Library item `whyteachersorgan0000urba`.
+**Need:** inspect those four bibliography pages and create one edge per actual entry.
 
-### William Edward Eaton — *The American Federation of Teachers, 1916–1961*
+## Priority C — best new descendants from Tyack
 
-**Seed-cluster status:** foundational AFT history already identified in the Blackball teachers’-union research cluster.
+- **Willard Waller**, *The Sociology of Teaching* — bibliographies are known to exist; inspect before creating children.
+- **Harmon Zeigler**, *The Political Life of American Teachers*.
+- **Howard S. Becker**, “The Career of the Chicago Public Schoolteacher” — journal record located, reference list not yet exposed.
+- **Howard K. Beale**, *Are American Teachers Free?*
+- **Grace C. Strachan**, *Equal Pay for Equal Work* — public-domain primary source; inspect its own source apparatus if any.
+- **Robert L. Reid**, Chicago teacher-professionalization dissertation.
+- **Raymond E. Callahan**, *Education and the Cult of Efficiency*.
+- **Paul H. Mattingly**, *The Classless Profession*.
+- NEA Department of Superintendence and AASA yearbooks/reports.
 
-**Need:** verify the exact citation edge from an inspected parent before treating it as a graph descendant, then inspect Eaton’s notes/bibliography. It remains in the cluster index but should not be given a false edge merely because later bibliographies pair it with Murphy/Urban.
+## Priority D — best descendants from Sklar
 
-## Priority C — direct descendants central to teacher organization
+- Carl F. Kaestle and Maris A. Vinovskis — “From Apron Strings to ABCs.”
+- E. Jennifer Monaghan — literacy/gender studies.
+- Joel Perlmann and Dennis Shirley — “When Did New England Women Acquire Literacy?”
+- Nancy F. Cott — *The Bonds of Womanhood*.
+- Linda K. Kerber — *Women of the Republic*.
+- Stanley K. Schultz — *The Culture Factory*.
+- Joan M. Jensen — *Loosening the Bonds*.
+- primary Sutton/Northampton school, tax, church, and teacher records.
 
-Create one source node for each after obtaining its reference apparatus:
+## Priority E — best descendants from Scott
 
-- Marjorie Murphy — “From Artisan to Semi-Professional” dissertation.
-- Patricia A. Carter — *Everybody’s Paid But the Teacher*.
-- Donald Warren, ed. — *American Teachers*.
-- Richard J. Altenbaugh, ed. — *The Teacher’s Voice*.
-- Jurgen Herbst — *And Sadly Teach*.
-- Stephen Cole — *The Unionization of Teachers*.
-- Ronald G. Corwin — *Militant Professionalism*.
-- James Earl Clarke — AFT dissertation through 1952.
-- Grace C. Strachan — *Equal Pay for Equal Work*.
-- Margaret A. Haley / Robert L. Reid — *Battleground*.
-- Edgar B. Wesley — *NEA: The First Hundred Years*.
+Prefer public-domain or fully inspectable primary material first:
 
-## Priority D — administrative/professionalization branch exposed through Tyack
+- Emma Willard — *The Advancement of Female Education* and 1819 legislative address;
+- A. W. Fairbanks, ed. — *Mrs. Emma Willard and Her Pupils* (1898);
+- Almira Lincoln Phelps — *The Female Student* (1836);
+- *The Annals of American Education*;
+- *The Massachusetts Common School Journal*;
+- Henry Barnard’s *American Journal of Education*;
+- Willard Association for the Mutual Improvement of Teachers material.
 
-These are true third-generation candidates from the inspected Tyack notes:
+Secondary descendants include Merle Borrowman, Linda Kerber, Karen Blair, Keith Melder, Nancy Cott, Ellen DuBois, and Alice Rossi.
 
-- Raymond E. Callahan — *Education and the Cult of Efficiency*.
-- Raymond E. Callahan — *The Superintendent of Schools: An Historical Analysis*.
-- Paul H. Mattingly — *The Classless Profession*.
-- Larry Cuban — “School Chiefs under Fire.”
-- Merle Curti — *The Social Ideas of American Educators*.
-- Jesse Newlon — *Educational Administration as Social Policy*.
-- NEA Department of Superintendence — *Educational Leadership*, *The Status of the Superintendent*, and relevant proceedings.
-- American Association of School Administrators — *The American School Superintendency* and *Standards for Superintendents of Schools*.
-- Suzanne Estler — “Women as Leaders in Public Education.”
-- Robert L. Reid — Chicago teacher-professionalization dissertation.
-- Ellwood P. Cubberley — “Public School Administration.”
-- Joel H. Spring — *Education and the Rise of the Corporate State*.
+## Archival terminal nodes
 
-## Priority E — Boston / Chicago / St. Paul institutional branches
+The graph should not force bibliographies onto correspondence, minutes, petitions, tax lists, or questionnaires. These are usually evidence terminals unless the document itself contains a meaningful source trail. Major archival clusters currently include:
 
-### Boston
-
-- Boston Lady Teachers’ Association records, Massachusetts Historical Society.
-- Boston Primary Teachers Association records.
-- Boston Teachers Union Local 66 / Greater Boston Federation of Teachers records, Reuther Library.
-- Boston Federation of Men Teachers / AFT Local 100 material.
-- Boston School Committee proceedings, petitions, reports, and salary schedules.
-- Boston Trade Union College / Boston Labor College material.
-
-### Chicago
-
-- Chicago Teachers’ Federation papers.
-- Ella Flagg Young material.
-- David Hogan, *Class and Reform*.
-- Margaret A. Haley / *Battleground*.
-
-### St. Paul / Minnesota
-
-- St. Paul Federation of Teachers Collection.
-- Minnesota Federation of Women’s Clubs records.
-- Political Equality Club of Minneapolis records.
-
-Archival collections are usually **terminal evidence nodes** unless a finding aid or document itself cites another source. Do not force a bibliography where the object is correspondence, minutes, proceedings, or a petition.
+- Boston Lady Teachers’ Association;
+- Boston Teachers Union Local 66 / Greater Boston Federation of Teachers;
+- Chicago Teachers’ Federation;
+- St. Paul Federation of Teachers;
+- Emma Willard School archives;
+- Northampton and Sutton town/school records;
+- Massachusetts Historical Society and American Antiquarian Society holdings.
 
 ## Recursion rule
 
 For each inspectable child:
 
-1. create a source-node file;
+1. create a source-node or citation-spider file;
 2. record every direct citation/reference entry;
-3. preserve note/page/chapter coordinates;
-4. normalize author/title/year only after authoritative verification;
-5. distinguish archival primary evidence from secondary scholarship;
-6. create next-generation children for every actual cited work whose citations can be inspected;
-7. leave inaccessible children in this queue with a reason;
-8. never treat a later topical bibliography as if it were the parent’s own bibliography;
-9. deduplicate nodes, **not edges** — if five parents cite the same work, preserve five edges to one normalized source node.
+3. preserve note/page/chapter coordinates where available;
+4. normalize bibliographic details only after verification;
+5. distinguish primary evidence from later scholarship;
+6. follow actual citations, not topical similarity;
+7. leave inaccessible children here with the exact reason;
+8. deduplicate source nodes, **not edges** — five parents citing the same work means five preserved edges to one normalized node.
 
-## Completeness definition
-
-A source can be marked **citation-complete for this edition** only when its entire notes/reference apparatus has been inspected. A source with a cataloged but unseen bibliography is **located, not spidered**.
-
-The graph as a whole is intentionally open-ended; the meaningful stopping point is a fully explicit frontier, not a claim that scholarship terminates after an arbitrary number of generations.
+The graph is intentionally open-ended. The stopping condition is an explicit frontier, not an arbitrary number of generations.
