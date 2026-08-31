@@ -39,6 +39,10 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 
+## Economics
+
+- [Angus Maddison — historical statistics on world GDP](economics/angus-maddison-world-gdp.md) — benchmark world-GDP estimates from Maddison's 2003 *Historical Statistics*, the final original Maddison database, and the later Maddison Project continuation.
+
 ## People dossiers
 
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
