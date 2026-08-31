@@ -136,17 +136,60 @@ If a hosted interface exposes whether retrieval occurred, preserve that informat
 
 ## Local models
 
-`run_ollama.py` provides a small local runner using Ollama's HTTP API.
+`run_ollama.py` remains the small local runner for the **URL-only** protocol.
 
 A local model normally cannot fetch GitHub merely because a URL is present in its prompt. Therefore `blackball-url` on a local model is a **negative-control / cue test**: it measures the effect of seeing the URL string, not the effect of reading the repository.
 
-A second offline protocol should later be added with a separate condition name, for example `blackball-context`, that freezes a Blackball commit and injects either:
+Do not add repository text injection to `run_ollama.py`; doing so would change the intervention while preserving the old condition name.
 
-- the complete text corpus when it fits;
-- a deterministic subset;
-- or deterministic retrieval results.
+### Offline frozen-context protocol
 
-That protocol must not be called the URL-only A/B test, because it changes the intervention.
+`run_ollama_context.py` implements a separate paired protocol named `offline-blackball-context-v1` with two conditions:
+
+1. **without-blackball** — the literal question;
+2. **blackball-context** — a deterministic frozen Blackball text subset followed by the same literal question.
+
+This runner defaults to `context-results/`, not `results/`, so its outputs are not accidentally mixed with URL-only runs.
+
+The first implementation deliberately does only the simplest deterministic-subset case. It does **not** implement retrieval or ranking. A run must provide:
+
+- an exact 40-hex `--blackball-commit`; symbolic refs such as `HEAD` or `main` are rejected;
+- one or more `--context-path` values naming UTF-8 text files in that commit.
+
+The runner reads those files from Git objects at the frozen commit, not from the working tree. Paths are normalized, deduplicated, and sorted before serialization. The result metadata records the commit, each path and blob SHA, each raw file byte count, and a SHA-256 over the complete serialized context.
+
+That means an uncommitted edit cannot silently change an experiment, and two runs that record the same commit, context file list, and context SHA-256 received the same repository text.
+
+Example:
+
+```sh
+python3 run_ollama_context.py \
+  --model qwen3:4b \
+  --blackball-commit "$(git rev-parse HEAD)" \
+  --context-path README.md \
+  --context-path llm/questions/business-school-university-bundle.md
+```
+
+The corresponding layout is intentionally separate:
+
+```text
+context-results/
+  bme-debt-001/
+    MODEL/
+      RUN-ID/
+        without-blackball/
+          sample-0001.json
+        blackball-context/
+          sample-0001.json
+```
+
+The paired seed and alternating-order rules are the same as in the URL-only runner, but results from the two protocols must not be pooled as though `blackball-url` and `blackball-context` were the same treatment.
+
+The frozen-context invariants can be checked without Ollama:
+
+```sh
+python3 -m unittest -v test_ollama_context.py
+```
 
 ## Comparison comes after raw outputs
 
