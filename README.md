@@ -41,8 +41,12 @@ A credential, ranking, institutional label, or professional title carries only t
 
 ## People dossiers
 
+- [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
+- [Boaventura de Sousa Santos](people/boaventura-de-sousa-santos.md) — University of Coimbra sociologist; CES harassment/abuse controversy, first-person allegations, independent-commission findings, denials, and later Portuguese legal proceedings.
+- [John L. Comaroff](people/john-comaroff.md) — Harvard anthropologist (retired 2024); graduate-student allegations, Harvard policy findings and sanctions, federal litigation, denials, and dismissal record.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Michael S. Kimmel](people/michael-kimmel.md) — former Stony Brook sociologist of gender and masculinity; graduate-student allegations, ASA award response, retirement, and limits of the public institutional record.
 
 ## Source dossiers
 
