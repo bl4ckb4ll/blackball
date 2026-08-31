@@ -17,17 +17,24 @@ This file is the explicit boundary between **inspected** source edges and work s
 
 ### Womack
 
-- [ ] Inspect *Zapata and the Mexican Revolution*, bibliographical references pp. 413–435 in the cited Vintage/ACLS pagination.
-- [ ] Enumerate every source.
-- [ ] Separate archives, contemporary newspapers/documents, memoirs, and later scholarship.
-- [ ] Create source nodes for the highest-degree or most repeatedly cited parents.
+- [x] Confirm the cited edition's bibliographical references are pp. 413–435.
+- [x] Record a first directly verified Womack → source generation from the book's web-visible notes in [WOMACK-CITATION-GRAPH.md](WOMACK-CITATION-GRAPH.md).
+- [x] Separate the verified first batch into archives/documents, official/contemporary periodicals, participant/near-contemporary accounts, and later scholarship.
+- [ ] Directly inspect pp. 413–435 and enumerate **every** bibliography entry; the currently available Internet Archive item is access-restricted, so the visible-note batch is not a substitute for this step.
+- [ ] Mark which visible-note sources also occur in the printed bibliography and add bibliography-only rows.
+- [ ] Spider Jesús Sotelo Inclán, the Archivo de Jesús Sotelo Inclán, Gildardo Magaña, Antonio Díaz Soto y Gama, Morelos official periodicals, Carreño's Porfirio Díaz archive edition, and Büttner's UNAM thesis another generation.
 
 ### Katz
 
-- [ ] Inspect *The Life and Times of Pancho Villa* archival sources beginning p. 911.
-- [ ] Inspect bibliography pp. 919–954.
-- [ ] Cross-check repository names against the Friedrich Katz Papers finding aid at the University of Chicago.
-- [ ] Preserve archive → document → Katz edges separately from secondary-book → Katz edges.
+- [x] Confirm *The Life and Times of Pancho Villa* places **Archival Sources** at p. 911, **Bibliography** at p. 919, and **Index** at p. 955.
+- [x] Cross-check Katz's research repositories against the University of Chicago Friedrich Katz Papers finding aid and record them in [KATZ-CITATION-GRAPH.md](KATZ-CITATION-GRAPH.md).
+- [x] Preserve **Katz research-provenance** edges separately from **printed-book citation** edges; the finding aid itself says the printed appendix/bibliography was used to identify repository provenance only in some cases.
+- [x] Identify book-specific archival control points in the finding aid: Box 31 folders 1–4, “Villa book references and footnote sources,” and Box 40 folder 15, “Villa book — bibliographic citations and notes.”
+- [ ] Directly inspect the printed archival-source list beginning p. 911 and match each printed abbreviation/name to the repository graph.
+- [ ] Upgrade only matched repositories to **VERIFIED PRINTED-BOOK CITATION EDGE**.
+- [ ] Directly enumerate every bibliography row on pp. 919–954.
+- [ ] Preserve archive → collection/document → Katz edges separately from secondary-book → Katz edges.
+- [ ] Split high-degree parents next: AGN; U.S. National Archives/State; Bancroft/Silvestre Terrazas; CONDUMEX/Archivo Carranza; UNAM/Gildardo Magaña; Harvard/John Reed; Maytorena papers; British diplomatic archives.
 
 ### Reed
 
@@ -73,4 +80,4 @@ High-priority episodes for this directory:
 
 ## Stop condition
 
-Never mark the spider "done" merely because the obvious books are listed. Completion means the current generation has been enumerated, inspectable edges are recorded, inaccessible nodes are labeled, and the next-generation frontier is explicit.
+Never mark the spider "done" merely because the obvious books are listed. Completion means the current generation has been enumerated, inspectable edges are recorded with their **edge type**, inaccessible nodes are labeled, and the next-generation frontier is explicit.
