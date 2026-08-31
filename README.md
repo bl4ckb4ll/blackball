@@ -42,6 +42,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
+- [Jeff Sharlet — Dartmouth graduates into finance and consulting](llm/jeff-sharlet-dartmouth-finance-consulting/README.md)
 
 ## Primary-source corpora
 
