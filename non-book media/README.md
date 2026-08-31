@@ -5,6 +5,7 @@ Film, television, audio, and other non-book sources that belong in Blackball bec
 ## Dossiers
 
 - [Jamie Johnson — *Born Rich* (2003)](born-rich.md)
+- [Jamie Johnson — *The One Percent* (2006)](the-one-percent.md) — includes the explicit Josiah Hornblower / Chuck Collins comparison
 - [The *Up* series — *Seven Up!* through *70 Up*](up-series.md)
 - [Rights and mirroring decisions](RIGHTS.md)
 
@@ -18,4 +19,4 @@ Do not collapse these categories. A reviewer saying that a participant seemed sn
 
 A copy being easy to find online is not evidence that it is public domain or redistributable. Mirror video only after finding a positive rights basis: public-domain status, an explicit redistribution license, or permission from the rightsholder. Otherwise preserve several lawful viewing routes when possible.
 
-The two dossiers in this directory currently fail that mirroring test. No feature-length video is included.
+The feature-length films covered by these dossiers currently fail that mirroring test. No feature-length video is included.
