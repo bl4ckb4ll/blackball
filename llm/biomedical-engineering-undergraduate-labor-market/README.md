@@ -43,6 +43,7 @@ The supportable claim is narrower and more important: **there is published evide
 - [`research-evidence.md`](research-evidence.md) — peer-reviewed studies, BLS data, job-board evidence, geographic concentration, and counterevidence.
 - [`reddit-testimony.md`](reddit-testimony.md) — primary-source student/graduate testimony, with negative and contrary cases.
 - [`program-costs.md`](program-costs.md) — 2026–27 published prices and static four-year sticker estimates for selected BME/Bioengineering programs.
+- [`program-marketing-vs-outcomes.md`](program-marketing-vs-outcomes.md) — current occupational/career framing at Hopkins, Michigan and Ohio State placed beside destination and research evidence.
 - [`chatgpt-incident.md`](chatgpt-incident.md) — reconstruction of the cross-session ChatGPT incident that motivated the dossier and an analysis of the recommendation failure.
 
 ## Core sources
