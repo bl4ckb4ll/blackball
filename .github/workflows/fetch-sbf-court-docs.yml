@@ -6,6 +6,10 @@ on:
       - sources/united-states-v-bankman-fried
     paths:
       - .github/workflows/fetch-sbf-court-docs.yml
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
@@ -14,6 +18,7 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     env:
+      BRANCH: sources/united-states-v-bankman-fried
       ROOT: sources/united-states-v-bankman-fried/pdf
     steps:
       - uses: actions/checkout@v4
@@ -24,8 +29,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin "$GITHUB_REF_NAME"
-          git checkout -B "$GITHUB_REF_NAME" "origin/$GITHUB_REF_NAME"
+          git fetch origin "$BRANCH"
+          git checkout -B "$BRANCH" "origin/$BRANCH"
           git config user.name "blackball source sync"
           git config user.email "blackball-source-sync@users.noreply.github.com"
           mkdir -p "$ROOT"
@@ -90,9 +95,9 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m '[source-sync] Mirror public-domain SBF court PDFs'
             for attempt in 1 2 3 4 5 6 7 8; do
-              git fetch origin "$GITHUB_REF_NAME"
-              git rebase "origin/$GITHUB_REF_NAME"
-              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+              git fetch origin "$BRANCH"
+              git rebase "origin/$BRANCH"
+              if git push origin "HEAD:$BRANCH"; then
                 break
               fi
               sleep 2
