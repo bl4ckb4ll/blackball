@@ -58,9 +58,13 @@ Likely Season 9 cross-reference:
 
 The episode relation still needs to be established from Duncan's actual notes/acknowledgements rather than inferred solely from subject matter.
 
-### Generation 1 frontier: Womack's bibliography
+### Generation 1: Womack
 
-Womack's book has a substantial bibliography/reference section. The first spider step has therefore been established precisely: **inspect pp. 413–435 in the cited edition and enumerate every source**. The current web-accessible catalogue exposes the location but not the page contents, so individual Womack → source edges remain queued rather than invented.
+See [WOMACK-CITATION-GRAPH.md](WOMACK-CITATION-GRAPH.md).
+
+A first batch of **VERIFIED WOMACK CITATION EDGES** is now recorded from Womack's web-visible notes, including the Archivo de Jesús Sotelo Inclán, Morelos official periodicals, Jesús Sotelo Inclán's *Raíz y razón de Zapata*, Gildardo Magaña, Antonio Díaz Soto y Gama, Elizabeth Holt Büttner's UNAM thesis, and the edited Porfirio Díaz archive.
+
+This does **not** close the original mechanical task. The target bibliography remains pp. **413–435**, and the available Internet Archive item is access-restricted. The current verified-note batch is therefore a real second-generation graph, but not a substitute for directly enumerating every bibliography row.
 
 ---
 
@@ -85,7 +89,7 @@ The book is unusually spider-friendly once a full copy is available:
 - **Bibliography:** pp. **919–954**
 - **Index:** begins p. 955
 
-The University of Chicago finding aid explicitly says the appendix and bibliography of *The Life and Times of Pancho Villa* were used to identify the archival origins of copies in Katz's papers. That gives a second path for checking Katz's primary-source graph rather than relying only on the printed bibliography.
+The University of Chicago finding aid says that, **in some cases**, the appendix and bibliography of *The Life and Times of Pancho Villa* were used to identify the archival origins of copies in Katz's papers. It also identifies four folders of “Villa book references and footnote sources” and a separate folder of “Villa book — bibliographic citations and notes.” This provides a strong research-provenance cross-check, but it does not license treating every Katz research repository as a printed p. 911 citation.
 
 Likely Season 9 cross-reference:
 
@@ -94,9 +98,13 @@ Likely Season 9 cross-reference:
 
 Again, topical fit is not itself a citation edge.
 
-### Generation 1 frontier: Katz's bibliography
+### Generation 1: Katz
 
-The next mechanical spider step is to enumerate pp. 919–954 and separately enumerate the archival repositories beginning p. 911. Until those pages are directly inspected, do not claim a complete Katz bibliography.
+See [KATZ-CITATION-GRAPH.md](KATZ-CITATION-GRAPH.md).
+
+The University of Chicago finding aid now supports a large set of **VERIFIED KATZ RESEARCH-PROVENANCE EDGES**: Mexican national/state/local archives, U.S. repositories, European diplomatic archives, and participant/private collections. They are deliberately not labeled **VERIFIED PRINTED-BOOK CITATION EDGES** until the published “Archival Sources” section at p. 911 is directly matched.
+
+The remaining mechanical work is to enumerate p. 911 onward and pp. 919–954, upgrade only exact matches, and then spider the highest-degree repository/collection nodes.
 
 ---
 
@@ -156,7 +164,15 @@ Some of these may well appear when the archived Duncan bibliography is recovered
 
 # Adjacent source graph discovered during this pass
 
-This is **not** a substitute Duncan bibliography. It records relevant leads found while checking the Porfiriato and the three recovered/attested Duncan titles.
+This is **not** a substitute Duncan bibliography. It records relevant leads found while checking the Porfiriato and the recovered/attested Duncan titles.
+
+## Womack branch
+
+See [WOMACK-CITATION-GRAPH.md](WOMACK-CITATION-GRAPH.md) for the first verified Womack → source generation and its next frontier.
+
+## Katz branch
+
+See [KATZ-CITATION-GRAPH.md](KATZ-CITATION-GRAPH.md) for Katz research-provenance nodes and the stricter printed-citation upgrade rule.
 
 ## Porfiriato / political economy leads
 
@@ -186,9 +202,9 @@ The Season 9 bibliography spider is **not complete** until all of the following 
 1. recover the Mexican Revolution section of Duncan's archived bibliography verbatim enough to enumerate every bibliographic row;
 2. classify each row by book/article/primary source and map it to the episode(s) where possible;
 3. fetch each source's own notes/bibliography;
-4. enumerate generation-1 sources with exact parent → child edges;
+4. enumerate generation-1 sources with exact parent → child edges and explicit edge types;
 5. repeat for generation 2 where inspectable;
 6. deduplicate editions without erasing edition-specific introductions or apparatus;
 7. preserve an explicit recursion frontier for inaccessible sources.
 
-The work done in this file is the **first recovery generation**, not a claim of completeness.
+The graph has now advanced beyond the first recovery generation for Womack and Katz, but neither printed bibliography has been exhaustively enumerated.
