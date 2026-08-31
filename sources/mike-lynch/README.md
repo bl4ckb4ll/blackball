@@ -4,6 +4,7 @@ Source records supporting [the Mike Lynch people dossier](../../people/mike-lync
 
 ## Collections
 
+- [Academic affiliations and technical lineage](academic-affiliations-and-technical-lineage/README.md) — Cambridge/Christ's College affiliations and the signal-processing → pattern-recognition → connectionist/neural-network → Bayesian/machine-learning lineage, with the cognitive-science connection carefully bounded.
 - [Media framing](media-framing/README.md) — chronological bibliography of contemporary and retrospective descriptions of Lynch, Autonomy, British technology, jobs, skills, and the Cambridge cluster.
 - [Court documents](court-documents/README.md) — public primary-source inventory for the English civil litigation, UK extradition litigation, and U.S. criminal case.
 - [Wikipedia history](wikipedia-history/README.md) — partial reconstruction of how the English Wikipedia article’s framing changed across dated snapshots, with a rights/provenance note.
