@@ -1,59 +1,75 @@
 # Teachers’ unions — history source trail
 
-This directory consolidates Blackball’s teachers’-union research into the `history/` corpus and makes the citation graph explicit.
-
-## Repository provenance
-
-At the branch point used for this pass (`main` at `a75f0282`), the repository did **not** contain a path whose filename included `teacher`, `teachers`, or `union`. The earlier Blackball research thread nevertheless had a recognizable seed cluster. Rather than inventing a move from a nonexistent path, this directory consolidates that material here and records the source trail.
+This directory consolidates Blackball’s teachers’-union research into the `history/` corpus and makes the backward citation graph explicit.
 
 ## Seed cluster
 
 1. **Kathleen Murphey**, “Gender Barriers to Forming a Teachers’ Union in Boston (1919–1965),” *Historical Journal of Massachusetts* 21, no. 2 (Summer 1993), 60–86.
-   - HJM archive index: https://www.westfield.ma.edu/historical-journal/article-index-1976-2013/
+   - HJM archive: https://www.westfield.ma.edu/historical-journal/article-index-1976-2013/
    - Article PDF: https://www.westfield.ma.edu/historical-journal/wp-content/uploads/2018/06/Murphey-combined.pdf
-   - HJM says its article archive is freely available and may be reproduced/distributed for educational or community use with attribution. The PDF itself asks that the journal be contacted for further use, so Blackball links to it rather than mirroring it in this pass.
 
 2. **Karen Leroux**, “‘Lady Teachers’ and the Genteel Roots of Teacher Organization in Gilded Age Cities,” *History of Education Quarterly* 46, no. 2 (Summer 2006), 164–191.
    - DOI: https://doi.org/10.1111/j.1748-5959.2006.tb00065.x
-   - Cambridge record and all 65 endnotes: https://www.cambridge.org/core/journals/history-of-education-quarterly/article/abs/lady-teachers-and-the-genteel-roots-of-teacher-organization-in-gilded-age-cities/F43A45B9FA91787BF36E4058BCA91DD1
-   - The article text is access-controlled, but Cambridge exposes the complete reference/endnote apparatus. Blackball records the citation data, not the copyrighted article text.
+   - Cambridge exposes all 65 endnotes even where article text requires access.
 
-3. **Marjorie Murphy**, *Blackboard Unions: The AFT and the NEA, 1900–1980* (Cornell University Press, copyright 1990; Cornell paperback/electronic records often dated 1992).
-   - Catalog record: https://catalog.folger.edu/record/268548
-   - The record identifies 284 pages and bibliographical references plus an index.
+3. **Marjorie Murphy**, *Blackboard Unions: The AFT and the NEA, 1900–1980*.
 
-4. **Wayne J. Urban**, *Why Teachers Organized* (Wayne State University Press, 1982).
-   - Open Library: https://openlibrary.org/books/OL3491359M
-   - 202 pages; bibliography on pp. 195–198; Internet Archive item identifier `whyteachersorgan0000urba`.
+4. **Wayne J. Urban**, *Why Teachers Organized* (1982), bibliography pp. 195–198.
 
-5. **William Edward Eaton**, *The American Federation of Teachers, 1916–1961: A History of the Movement* (Southern Illinois University Press, 1975).
+5. **William Edward Eaton**, *The American Federation of Teachers, 1916–1961: A History of the Movement* (1975).
 
-6. **National Education Association**, historical material on the NEA and the U.S. labor movement.
-   - https://www.nea.org/nea-today/all-news-articles/nea-and-labor-movement
+6. **National Education Association**, institutional history material on the NEA and U.S. labor movement.
 
-## How the spider is represented
-
-The rule is an explicit directed graph:
+## Citation rule
 
 `source A → work B` means **A actually cites B**.
 
-A topical bibliography or later source that merely discusses A is kept separate from that edge. This avoids quietly turning “related reading” into a false citation claim.
+A later bibliography that happens to list both works is not an edge. A catalog statement that a source “includes bibliography” locates the next evidence but does not reveal its entries. Archival correspondence, minutes, tax lists, petitions, and questionnaires are normally terminal evidence nodes unless they themselves cite something worth following.
 
-Files in this directory use generations:
+## Citation spiders
 
-- `KAREN-LEROUX-2006-CITATION-SPIDER.md` — generation 0 source plus every one of its 65 numbered endnotes, normalized into source nodes.
-- `KATHLEEN-MURPHEY-1993-CITATION-SPIDER.md` — generation 0 source plus the direct references recovered from the HJM scan in this pass.
-- `SECOND-GENERATION.md` — sources reached from those two articles, with their own bibliography/reference status and verified next-hop sources where inspection is possible.
-- `RECURSION-QUEUE.md` — unresolved descendants and the exact reason they are not yet claimed as completely spidered.
-- `BIBLIOGRAPHY.md` — de-duplicated bibliography for the cluster, including archival collections.
+### Seed sources
 
-## External cross-check, not a citation edge
+- [`KAREN-LEROUX-2006-CITATION-SPIDER.md`](KAREN-LEROUX-2006-CITATION-SPIDER.md) — **65/65** Leroux endnotes.
+- [`KATHLEEN-MURPHEY-1993-CITATION-SPIDER.md`](KATHLEEN-MURPHEY-1993-CITATION-SPIDER.md) — Murphey notes 1–21 recovered from the HJM scan; later notes remain on the frontier.
 
-The Labor and Working-Class History Association (LAWCHA) maintains both an annotated and a comprehensive bibliography on teacher/public-sector unionism. It is useful for checking coverage, but it is **not** represented as though Murphey or Leroux cited a later website.
+### Leroux → Tyack
+
+- [`DAVID-TYACK-1976-CITATION-SPIDER.md`](DAVID-TYACK-1976-CITATION-SPIDER.md) — Tyack notes 1–17 and 36–52.
+- [`TYACK-1976-NOTES-18-35.md`](TYACK-1976-NOTES-18-35.md) — recovered middle block; together the Tyack apparatus is **52/52**.
+
+This branch exposes administrative centralization, NEA/AASA professional institutions, women in administration, equal-pay politics, teacher careers, teacher freedom, and occupational sociology.
+
+### Leroux → Sklar
+
+- [`KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md`](KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md) — **55/55** notes from “The Schooling of Girls and Changing Community Values in Massachusetts Towns, 1750–1820.”
+
+This branch reaches into the long pre-union history of girls’ schooling, female literacy, women teachers, school finance, household economy, religion, and the feminization of teaching.
+
+### Leroux → Sklar → Scott
+
+- [`ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md`](ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md) — **39/39** notes from “The Ever Widening Circle: The Diffusion of Feminist Values from the Troy Female Seminary, 1822–1872.”
+
+This fourth generation reaches Emma Willard’s writings, Troy Female Seminary alumnae records, early teacher-improvement associations, Henry Barnard and the common-school press, Almira Lincoln Phelps, and the institutional roots of women’s teacher education and paid self-support.
+
+## Located but not yet fully spidered
+
+- [`WAYNE-URBAN-1982-SOURCE-NODE.md`](WAYNE-URBAN-1982-SOURCE-NODE.md) — bibliography location verified; entries unseen.
+- [`MARJORIE-MURPHY-BLACKBOARD-UNIONS-SOURCE-NODE.md`](MARJORIE-MURPHY-BLACKBOARD-UNIONS-SOURCE-NODE.md) — bibliography/index existence and chapter structure verified; full citation apparatus unseen.
+
+## Navigation
+
+- [`SECOND-GENERATION.md`](SECOND-GENERATION.md) — recursive map and major branches.
+- [`BIBLIOGRAPHY.md`](BIBLIOGRAPHY.md) — de-duplicated bibliography accumulated in the first pass.
+- [`RECURSION-QUEUE.md`](RECURSION-QUEUE.md) — current explicit stopping frontier and next targets.
+
+## External coverage check, not a citation edge
+
+The Labor and Working-Class History Association maintains useful teacher/public-sector union bibliographies. They are used to check coverage, never to fabricate backward edges:
 
 - https://lawcha.org/century-teaching-organizing/bibliography-annotated-list-sources/
 - https://lawcha.org/century-teaching-organizing/bibliography-annotated-list-sources/comprehensive-bibliography/
 
 ## Historical center of gravity
 
-The sources converge on a recurring problem: teachers were not a single undifferentiated labor force. Gender, grade level, race, professional status, subject, school type, and political affiliation structured both working conditions and organizational loyalties. Boston’s slow route to one citywide AFT local is therefore treated here as a history of competing identities and institutions, not as a simple chronology of “union versus nonunion.”
+The source graph keeps returning to the same structural fact: teachers were never a single undifferentiated labor force. Gender, grade level, race, professional status, subject, school type, administrative hierarchy, and political affiliation shaped working conditions and organizational loyalties. The deeper citation trail shows that twentieth-century teacher unionism sits downstream from nineteenth-century professionalization and from an even older transformation in women’s literacy, schooling, paid teaching, and institutional organization.
