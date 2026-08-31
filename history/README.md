@@ -2,6 +2,18 @@
 
 Blackball history material is organized as inspectable source trails rather than as isolated summaries. Where a historical source cites earlier work, preserve the citation edge and follow it backward when the cited source can be inspected.
 
+## Mexico and revolution
+
+- [Mexican Revolution](mexican-revolution/README.md) — late-Porfirian political economy; Guggenheim/ASARCO mining and smelting capital; Andrés Molina Enríquez's 1909 *Los grandes problemas nacionales*; and Mike Duncan's *Revolutions* Season 9 with a recovered/partially recovered bibliography spider and explicit recursion frontier.
+
+### Mexican-Revolution citation graph
+
+- [Guggenheim / ASARCO in Porfirian Mexico](mexican-revolution/GUGGENHEIM-ASARCO.md)
+- [Molina Enríquez — *Los grandes problemas nacionales* (1909)](mexican-revolution/MOLINA-ENRIQUEZ-1909.md)
+- [Mike Duncan — *Revolutions*, Season 9](mexican-revolution/REVOLUTIONS-PODCAST.md)
+- [Duncan Season 9 bibliography spider](mexican-revolution/REVOLUTIONS-BIBLIOGRAPHY-SPIDER.md)
+- [Explicit recursion frontier](mexican-revolution/RECURSION-QUEUE.md)
+
 ## Labor and organization
 
 - [Teachers’ unions](teachers-unions/README.md) — Boston, Chicago, St. Paul, AFT/NEA history, women teachers’ organization, professionalization, administrative centralization, and a recursive citation graph beginning with Kathleen Murphey (1993) and Karen Leroux (2006).
