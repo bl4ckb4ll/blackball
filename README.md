@@ -39,6 +39,10 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 
+## LLM evaluations
+
+- [College before/after Blackball A/B harness](llm/evals/college/README.md) — literal questions, URL-only paired prompts, repeated raw samples, hosted fresh-thread protocol, and a local Ollama runner.
+
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
