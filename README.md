@@ -47,6 +47,7 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Earl Shorris — *Riches for the Poor*](llm/earl-shorris-riches-for-the-poor/README.md) — publication history from *New American Blues*, argument summary, Clemente relationship, access boundary, evidence limitations, and provenance.
 - [John Lennon — “Working Class Hero”](sources/john-lennon/working-class-hero/README.md) — song and album provenance, official full-lyrics routes and copyright boundary, Lennon/Ono and Beatles-breakup chronology, primal-therapy context, class-background evidence, recording history, political context, censorship history, and book leads.
 - [Miles Reid — *Notes for obituary*](sources/miles-reid/obituary-notes/README.md) — self-authored 2002 notes for a future Royal Society biographical memoir, with source links, chronology, academic-pipeline details, and evidence limitations.
+- [Mike Lynch](people/mike-lynch.md) — Cambridge/Bayesian technical background, Autonomy and the British high-technology success narrative, institutional prestige, HP litigation, extradition, U.S. criminal acquittal, media-framing bibliography, court-document inventory, and a dated reconstruction of Wikipedia narrative changes.
 
 ## Primary-source corpora
 
