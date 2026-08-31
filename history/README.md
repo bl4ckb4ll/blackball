@@ -22,6 +22,10 @@ Blackball history material is organized as inspectable source trails rather than
 
 The graph rule is strict: a topical relationship is not a citation edge. If an article cites a book, record the edge. If a later bibliography merely lists both, use it only as a coverage check.
 
+## Mathematics, science, books, and technical practice
+
+- [Reviel Netz](reviel-netz/README.md) — Greek mathematical deduction, lettered diagrams and formulaic language, Archimedes translations and the Palimpsest, Alexandrian mathematical style, ancient literary scale/canon, *Barbed Wire*, and his poetry/literary work. Includes a verified bibliography ledger and an explicit citation-spider recursion queue.
+
 ## Wikipedia-led source spiders
 
 These notes are source-spidered reading guides rather than encyclopedia replacements.
