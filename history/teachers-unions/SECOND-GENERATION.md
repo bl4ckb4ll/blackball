@@ -1,120 +1,126 @@
-# Teachers’ unions — second-generation map
+# Teachers’ unions — recursive citation map
 
-This file records what happened after the first citation hop from the two seed articles. It distinguishes **actual recursive inspection** from bibliography nodes that are merely known to exist.
+This file records the verified backward citation paths from the two seed articles. **An arrow means an inspected parent actually cites the child.** Topical similarity alone does not create an edge.
 
-## Recursion completed far enough to expose another generation
+## Completed recursive branches
 
-### Karen Leroux (2006) → David B. Tyack (1976)
+### Leroux 2006 → Tyack 1976 → third-generation sources
 
-Leroux note 44 cites:
+Karen Leroux note 44 cites:
 
 **David B. Tyack**, “Pilgrim’s Progress: Toward a Social History of the School Superintendency, 1860–1960,” *History of Education Quarterly* 16, no. 3 (Fall 1976): 257–300.
 
-Tyack’s own numbered notes were then inspected through Cambridge Core. This produces real third-generation edges into, among others:
+Tyack’s Cambridge-rendered note apparatus is now represented **52/52**. Notes 18–35, previously mistaken for an extraction gap, are in [`TYACK-1976-NOTES-18-35.md`](TYACK-1976-NOTES-18-35.md). The original spider contains notes 1–17 and 36–52 in [`DAVID-TYACK-1976-CITATION-SPIDER.md`](DAVID-TYACK-1976-CITATION-SPIDER.md).
 
-- Raymond E. Callahan — *Education and the Cult of Efficiency* and *The Superintendent of Schools*;
-- Paul H. Mattingly — *The Classless Profession*;
-- Larry Cuban — “School Chiefs under Fire”;
-- Merle Curti — *The Social Ideas of American Educators*;
-- Jesse Newlon — *Educational Administration as Social Policy*;
-- NEA Department of Superintendence yearbooks and proceedings;
-- American Association of School Administrators reports;
-- Grace C. Strachan — *Equal Pay for Equal Work*;
-- Suzanne Estler — “Women as Leaders in Public Education”;
-- Robert L. Reid — dissertation on Chicago teacher professionalization;
-- Joel Spring — *Education and the Rise of the Corporate State*;
-- organizational sociology by John Meyer, Brian Rowan, Michael Cohen, James March, and Robert Merton;
-- historical primary material in *NEA Addresses and Proceedings*, *American School Board Journal*, and other professional journals.
+The Tyack branch reaches into:
 
-Exact inspected references and the extraction gap are in [`DAVID-TYACK-1976-CITATION-SPIDER.md`](DAVID-TYACK-1976-CITATION-SPIDER.md).
+- administrative centralization and professional authority;
+- NEA and AASA superintendency institutions;
+- women in school administration and equal-pay politics;
+- teacher careers and occupational sociology;
+- teacher freedom and political behavior;
+- efficiency ideology and corporate forms of administration.
 
-This path is important because it shows that the history of teacher unionism is connected to a separate history of **administrative centralization and professional authority**. Teachers were organizing inside systems whose superintendents and administrators were simultaneously constructing a professional jurisdiction over schooling.
+Especially teacher-relevant descendants newly exposed by the completed middle notes include **Willard Waller**, **Harmon Zeigler**, **Howard S. Becker**, **Howard K. Beale**, and **W. W. Charters Jr.**
 
-## Verified child source with bibliography location, bibliography not yet transcribed
+### Leroux 2006 → Sklar 1993 → third-generation sources
 
-### Karen Leroux (2006) → Wayne J. Urban (1982)
+Leroux note 16 cites:
 
-Leroux notes 3 and 21 cite **Wayne J. Urban, *Why Teachers Organized***.
+**Kathryn Kish Sklar**, “The Schooling of Girls and Changing Community Values in Massachusetts Towns, 1750–1820,” *History of Education Quarterly* 33, no. 4 (Winter 1993): 511–542.
 
-Catalog records verify:
+Cambridge exposes all **55 numbered notes**. They are represented in [`KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md`](KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md).
 
-- 202 pages;
-- bibliography on pp. 195–198;
-- index;
-- a controlled-borrow Internet Archive/Open Library record.
+This branch shows a much longer pre-union history behind the overwhelmingly female teaching force:
 
-The bibliography pages themselves were not lawfully inspectable in this pass, so no `Urban → child` edges are invented. See [`WAYNE-URBAN-1982-SOURCE-NODE.md`](WAYNE-URBAN-1982-SOURCE-NODE.md).
+- rapid expansion of women’s literacy;
+- town-level admission of girls to public schooling;
+- use of lower-paid women teachers in summer schools;
+- household economy and the demand for literacy;
+- women’s academies and secondary education;
+- religious pluralism and changing gender authority;
+- rural industrialization and feminization of paid teaching.
 
-## Verified shared child with bibliographical references, full apparatus not yet transcribed
+The source trail includes Lockridge, Monaghan, Kaestle, Vinovskis, Cott, Kerber, Solomon, Schultz, Jensen, town histories, tax lists, school records, and church records.
 
-### Leroux (2006) + Murphey (1993) → Marjorie Murphy, *Blackboard Unions*
+### Leroux 2006 → Sklar 1993 → Scott 1979 → fourth-generation sources
 
-This book is directly cited by both seed articles. Catalog records verify a 284-page edition with bibliographical references and an index. Cornell’s electronic table of contents exposes the full chapter structure, but the complete notes were not available for reliable transcription in this pass.
+Sklar note 6 cites:
+
+**Anne Firor Scott**, “The Ever Widening Circle: The Diffusion of Feminist Values from the Troy Female Seminary, 1822–1872,” *History of Education Quarterly* 19, no. 1 (Spring 1979): 3–25.
+
+Scott’s Cambridge note apparatus is represented **39/39** in [`ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md`](ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md).
+
+This fourth generation reaches directly into the institutional genealogy of women’s teacher education:
+
+- Emma Willard’s 1819 plan and later writings;
+- Troy Female Seminary alumnae questionnaires and correspondence;
+- the Willard Association for the Mutual Improvement of Teachers;
+- Henry Barnard and the common-school press;
+- Almira Lincoln Phelps’s *The Female Student*;
+- early histories of women’s education and teacher education;
+- debates over feminism, separate spheres, professionalization, and paid self-support.
+
+This matters to the union history because it documents institutions and networks that helped create a large class of educated women who understood teaching both as intellectual work and as a route to self-support long before twentieth-century collective bargaining.
+
+## Verified child with bibliography location, not yet transcribed
+
+### Leroux 2006 → Wayne J. Urban, *Why Teachers Organized*
+
+Leroux notes 3 and 21 cite Urban. Catalog records verify a bibliography on **pp. 195–198**, but those pages have not yet been inspected. Therefore the edge `Leroux → Urban` is verified while `Urban → child` remains pending.
+
+See [`WAYNE-URBAN-1982-SOURCE-NODE.md`](WAYNE-URBAN-1982-SOURCE-NODE.md).
+
+## Verified shared child, full apparatus not yet transcribed
+
+### Leroux 2006 + Murphey 1993 → Marjorie Murphy, *Blackboard Unions*
+
+The book is directly cited by both seed articles. Its bibliographical references and chapter structure are verified, but the complete note apparatus has not yet been transcribed.
 
 See [`MARJORIE-MURPHY-BLACKBOARD-UNIONS-SOURCE-NODE.md`](MARJORIE-MURPHY-BLACKBOARD-UNIONS-SOURCE-NODE.md).
 
-## Other high-priority generation-one descendants
-
-These are actual direct citations from Leroux and/or the inspected Murphey notes. Each should become its own source node when its notes/bibliography can be inspected.
+## Other high-priority direct descendants
 
 ### Teacher unionism and the teaching profession
 
-- William Edward Eaton — *The American Federation of Teachers, 1916–1961: A History of the Movement*.
-- Marjorie Murphy — “From Artisan to Semi-Professional: White Collar Unionism Among Chicago Public School Teachers, 1870–1930.”
+- Marjorie Murphy — “From Artisan to Semi-Professional.”
 - Patricia A. Carter — *Everybody’s Paid But the Teacher*.
-- Donald Warren, ed. — *American Teachers: Histories of a Profession at Work*.
+- Donald Warren, ed. — *American Teachers*.
 - Richard J. Altenbaugh, ed. — *The Teacher’s Voice*.
 - Jurgen Herbst — *And Sadly Teach*.
 - Stephen Cole — *The Unionization of Teachers*.
 - Ronald G. Corwin — *Militant Professionalism*.
-- James Earl Clarke — dissertation on the AFT through 1952.
+- James Earl Clarke — AFT dissertation through 1952.
 - Grace Charlotte Strachan — *Equal Pay for Equal Work*.
 - Margaret A. Haley / Robert L. Reid — *Battleground*.
+- Edgar B. Wesley — *NEA: The First Hundred Years*.
 
-### Urban education, administration, and school politics
+### Urban education and school politics
 
 - David B. Tyack — *The One Best System*.
-- Polly Welts Kaufman — *Boston Women and City School Politics, 1872–1905*.
-- Polly Welts Kaufman — *Women Teachers on the Frontier*.
+- Polly Welts Kaufman — *Boston Women and City School Politics* and *Women Teachers on the Frontier*.
 - David Hogan — *Class and Reform*.
 - James W. Fraser — “Agents of Democracy” and “Who Were the Progressive Educators Anyway?”
-- Edgar B. Wesley — *NEA: The First Hundred Years*.
-- John T. McManis — *Ella Flagg Young and a Half-Century of the Chicago Public Schools*.
+- Stanley K. Schultz — *The Culture Factory*.
 
-### Gender, women’s organization, and labor/professional status
+### Gender and professional status
 
 - Maureen Flanagan — *Seeing With Their Hearts*.
 - Karen J. Blair — *The Clubwoman as Feminist*.
 - Karen Halttunen — *Confidence Men and Painted Women*.
-- Lee Virginia Chambers-Schiller — *Liberty, A Better Husband*.
-- Nan Enstad — *Ladies of Labor, Girls of Adventure*.
-- Martha H. Verbrugge — *Able-Bodied Womanhood*.
-- Amy Dru Stanley — *From Bondage to Contract*.
-- Susan B. Carter — “Incentives and Rewards to Teaching.”
-- Geraldine Joncich Clifford — “Man/Woman/Teacher.”
+- Nancy F. Cott — *The Bonds of Womanhood*.
+- Linda K. Kerber — *Women of the Republic*.
+- Joan M. Jensen — *Loosening the Bonds*.
 
 ### Race and teacher organization
 
-- John B. Reid — work on race, class, gender, and teaching.
+- John B. Reid — race/class/gender and teaching.
 - Stephanie J. Shaw — *What a Woman Ought to Be and to Do*.
 - Elizabeth Hafkin Pleck — *Black Migration and Poverty*.
 - Dorothy Porter Wesley — “Maria Louise Baldwin.”
 - Brenda Stevenson, ed. — *The Journals of Charlotte Forten Grimké*.
 - Ira Katznelson and Margaret Weir — *Schooling for All*.
 
-### Labor-market and occupational theory
+## Rule for continuing
 
-- David M. Gordon, Richard C. Edwards, and Michael Reich — labor-market segmentation work.
-- Roy Lubove — *The Professional Altruist*.
-- David T. Beito — fraternal societies/social capital article.
-- George Neil Emery and John Charles Herbert Emery — *A Young Man’s Benefit*.
-
-## Rule for the next pass
-
-A source moves from this map into its own file only when at least one of these is available:
-
-1. its numbered notes/reference list can be inspected;
-2. its bibliography pages can be inspected;
-3. an authoritative edition exposes its citations through structured metadata.
-
-A catalog statement such as “includes bibliography” is enough to record **where the next evidence lives**, but not enough to manufacture bibliography entries.
+A child gets its own recursive file only when its own notes/reference list, bibliography pages, or structured authoritative citation metadata can actually be inspected. A catalog statement that a bibliography exists is a locator, not permission to invent the entries.
