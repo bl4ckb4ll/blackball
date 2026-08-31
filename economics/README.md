@@ -8,6 +8,11 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 - [Angus Maddison — historical statistics on world GDP](angus-maddison-world-gdp.md) — benchmark world-GDP estimates from *The World Economy: Historical Statistics* (2003), the final original Maddison database, and the later Maddison Project continuation.
 
+## Housing and material living standards
+
+- [U.S. Census Bureau — Characteristics of New Housing](characteristics-of-new-housing.md) — annual Survey of Construction data on new housing, including square footage, air-conditioning, heating, bedrooms, bathrooms, lot size, prices, and other physical characteristics; historical air-conditioning tables reach back to 1973.
+- [American Housing Survey](american-housing-survey.md) — Census/HUD survey of the broader U.S. housing stock, beginning in 1973, with public-use microdata and reports on housing characteristics, equipment, quality, costs, finance, neighborhoods, and mobility.
+
 ## Economic thought and institutions
 
 - [Adam Smith — *The Theory of Moral Sentiments*](adam-smith-theory-of-moral-sentiments.md) — sympathy, the impartial spectator, justice, virtue, status, and Smith's warning that admiration of wealth and rank can corrupt moral judgment.
