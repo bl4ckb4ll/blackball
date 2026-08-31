@@ -35,8 +35,7 @@ A later bibliography that happens to list both works is not an edge. A catalog s
 
 ### Leroux → Tyack
 
-- [`DAVID-TYACK-1976-CITATION-SPIDER.md`](DAVID-TYACK-1976-CITATION-SPIDER.md) — Tyack notes 1–17 and 36–52.
-- [`TYACK-1976-NOTES-18-35.md`](TYACK-1976-NOTES-18-35.md) — recovered middle block; together the Tyack apparatus is **52/52**.
+- [`DAVID-TYACK-1976-COMPLETE-INDEX.md`](DAVID-TYACK-1976-COMPLETE-INDEX.md) — **52/52** Tyack notes, joining the original extraction with the recovered 18–35 block.
 
 This branch exposes administrative centralization, NEA/AASA professional institutions, women in administration, equal-pay politics, teacher careers, teacher freedom, and occupational sociology.
 
