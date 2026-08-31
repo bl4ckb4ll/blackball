@@ -10,8 +10,7 @@ Blackball history material is organized as inspectable source trails rather than
 
 - [Leroux 2006 — all 65 endnotes](teachers-unions/KAREN-LEROUX-2006-CITATION-SPIDER.md)
 - [Murphey 1993 — inspected direct notes](teachers-unions/KATHLEEN-MURPHEY-1993-CITATION-SPIDER.md)
-- [Tyack 1976 — notes 1–17 and 36–52](teachers-unions/DAVID-TYACK-1976-CITATION-SPIDER.md)
-- [Tyack 1976 — recovered notes 18–35; 52/52 total](teachers-unions/TYACK-1976-NOTES-18-35.md)
+- [Tyack 1976 — complete 52/52 citation-spider index](teachers-unions/DAVID-TYACK-1976-COMPLETE-INDEX.md)
 - [Sklar 1993 — 55/55 notes on girls’ schooling and women teachers](teachers-unions/KATHRYN-KISH-SKLAR-1993-CITATION-SPIDER.md)
 - [Scott 1979 — 39/39 notes on Troy Female Seminary and teacher education](teachers-unions/ANNE-FIROR-SCOTT-1979-CITATION-SPIDER.md)
 - [Marjorie Murphy — *Blackboard Unions* source node](teachers-unions/MARJORIE-MURPHY-BLACKBOARD-UNIONS-SOURCE-NODE.md)
