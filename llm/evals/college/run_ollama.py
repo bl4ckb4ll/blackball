@@ -19,7 +19,6 @@ import pathlib
 import re
 import sys
 import time
-import urllib.error
 import urllib.request
 
 BLACKBALL_URL = "https://github.com/bl4ckb4ll/blackball"
@@ -102,6 +101,16 @@ def write_json(path: pathlib.Path, value: dict) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def question_metadata(question_item: dict) -> dict:
+    return {
+        "question_id": question_item["id"],
+        "question": question_item["question"],
+        "family": question_item.get("family"),
+        "signal": question_item.get("signal"),
+        "category": question_item.get("category"),
+    }
+
+
 def run_one(
     *,
     args: argparse.Namespace,
@@ -141,9 +150,7 @@ def run_one(
             write_json(
                 failure_path,
                 {
-                    "question_id": question_item["id"],
-                    "question": question,
-                    "category": question_item.get("category"),
+                    **question_metadata(question_item),
                     "condition": condition,
                     "effective_prompt": prompt,
                     "model": args.model,
@@ -168,9 +175,7 @@ def run_one(
         write_json(
             output_path,
             {
-                "question_id": question_item["id"],
-                "question": question,
-                "category": question_item.get("category"),
+                **question_metadata(question_item),
                 "condition": condition,
                 "effective_prompt": prompt,
                 "blackball_url": BLACKBALL_URL if condition == "blackball-url" else None,
@@ -207,9 +212,7 @@ def main() -> int:
             run_root / "run.json",
             {
                 "run_id": run_id,
-                "question_id": question_item["id"],
-                "question": question_item["question"],
-                "category": question_item.get("category"),
+                **question_metadata(question_item),
                 "model": args.model,
                 "conditions": list(CONDITIONS),
                 "samples": args.samples,
