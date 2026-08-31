@@ -71,7 +71,9 @@ The current release located during this source pass is **Maddison Project Databa
 - Release history, including the original 2010 database and MPD 2013/2018/2020/2023: https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/?lang=en
 - MPD 2023 release page: https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023?lang=en
 - Dataset DOI: https://doi.org/10.34894/INZBF2
-- Citation requested by the project: Jutta Bolt and Jan Luiten van Zanden, “Maddison-style estimates of the evolution of the world economy: A new 2023 update,” *Journal of Economic Surveys* 39(2), 2025, pp. 631–671. DOI: https://doi.org/10.1111/joes.12618
+- Update paper DOI: https://doi.org/10.1111/joes.12618
+
+The MPD release page gives the citation as Bolt and van Zanden (2024), “Maddison style estimates of the evolution of the world economy: A new 2023 update.” The final journal bibliographic record is Jutta Bolt and Jan Luiten van Zanden (2025), *Journal of Economic Surveys* 39(2), 631–671. Both point to the same DOI above.
 
 The MPD 2023 dataset is licensed CC BY 4.0. Its release page also gives additional attribution requirements when graphing the data or using subsets of fewer than twelve countries.
 
