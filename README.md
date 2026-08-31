@@ -39,8 +39,14 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 
+## Economics
+
+- [Adam Smith — *The Theory of Moral Sentiments*](economics/adam-smith-theory-of-moral-sentiments.md) — sympathy, the impartial spectator, justice, virtue, status, and Smith's warning that admiration of wealth and rank can corrupt moral judgment.
+- [Economics index](economics/README.md)
+
 ## People dossiers
 
+- [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
 
