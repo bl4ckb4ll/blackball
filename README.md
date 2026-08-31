@@ -41,10 +41,11 @@ A credential, ranking, institutional label, or professional title carries only t
 
 ## Economics
 
-- [Angus Maddison — historical statistics on world GDP](economics/angus-maddison-world-gdp.md) — benchmark world-GDP estimates from Maddison's 2003 *Historical Statistics*, the final original Maddison database, and the later Maddison Project continuation.
+- [Economics index](economics/README.md) — evidence and source records for Maddison, Keynes, Painter, Marx and Engels, Engels's working-class analysis, Adam Smith, and related economic history and political economy.
 
 ## People dossiers
 
+- [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
 
