@@ -35,7 +35,7 @@ This statement applies to the Dataverse deposit. The Cambridge article has its o
 Run:
 
 ```sh
-./fetch.sh
+sh ./fetch.sh
 ```
 
 The command downloads the seven public upstream files into `mirror/` and refuses any file whose downloaded bytes do not match the pinned SHA-256 value. The large generated mirror is ignored by Git: Dataverse remains the authoritative preservation copy, while any Blackball checkout can reconstruct and verify an exact working snapshot. This avoids presenting an unversioned fork as the authors’ archive.
