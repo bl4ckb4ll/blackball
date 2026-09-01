@@ -48,6 +48,7 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Mike Lynch](people/mike-lynch.md) — Cambridge/Bayesian technical background, Autonomy and the British high-technology success narrative, institutional prestige, HP litigation, extradition, U.S. criminal acquittal, media-framing bibliography, court-document inventory, and a dated reconstruction of Wikipedia narrative changes.
 
 ## Source dossiers
 
