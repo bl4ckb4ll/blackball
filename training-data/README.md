@@ -1,15 +1,11 @@
-# Training data
+# Training data moved
 
-Temporary append-only data sink for the phone LLM training collector.
+The phone LLM training collector and append-only training record store have moved to [`isomorphisms/blackball-training-gym`](https://github.com/isomorphisms/blackball-training-gym).
 
-Application source lives in `isomorphisms/utilities-android-phone-user/llm-training`.
-
-Records should be written as one JSON object per file:
+Do not add new records to this branch. The canonical record path in the dedicated repository is:
 
 ```text
 records/<trainer_username>/<year>/<month>/<record_id>.json
 ```
 
-Every record must carry the trainer username. Trainer trust, demotion, exclusion, or weighting belongs in a separate downstream policy; do not rewrite raw records merely because a trainer's weight changes.
-
-This branch is intentionally separate from the ordinary Blackball research corpus. A dedicated training-data repository can replace it later without changing the record schema.
+This branch remains only as a migration pointer; it contains no training records.
