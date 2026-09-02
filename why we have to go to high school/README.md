@@ -1,179 +1,234 @@
 # Why we have to go to high school
 
-This folder is about a historical question that is easy to answer badly:
+This folder is about a historical question that is easy to collapse into a story after the fact:
 
 > How did the United States get from a society in which finishing high school was unusual to one in which not finishing high school is treated as a major deviation from the normal life course?
 
-The short answer is not "because high school has always been necessary," and it is not simply "because compulsory-schooling laws forced everyone to go." The American high school became a mass institution through a long sequence of institutional changes: creation of tax-supported secondary schools, legal legitimation of public funding, local school-building campaigns, changes in the labor market, restriction of child labor, compulsory-attendance rules, and a major redefinition of what secondary school was supposed to do. Between roughly 1910 and 1940 those changes produced the American **high school movement**. During those three decades, secondary schooling crossed from a minority experience to a majority one.
+The first task is descriptive. The American high school existed for many decades before it became a mass institution. Between roughly 1910 and 1940, secondary-school enrollment and graduation rose extraordinarily quickly, crossing from minority to majority behavior.
 
-The most useful single quantitative summary comes from Claudia Goldin and Lawrence F. Katz. In 1910, about **18 percent of U.S. youths were enrolled in public or private secondary schools and about 9 percent graduated**. By 1940, the corresponding figures were **71 percent enrolled and 51 percent graduating**. [Goldin and Katz, *Mass Secondary Schooling and the State* (NBER Working Paper 10075, 2003)](https://www.nber.org/papers/w10075).
+The second task is causal. **Why that happened is not settled here.** Compulsory-attendance laws, child-labor restrictions, local school finance, school construction, youth labor demand, family demand for schooling, curriculum changes, employer demand, political organization, regional institutions, and economic shocks are all candidates for parts of the explanation. The relative importance of these mechanisms must be investigated rather than inferred from the fact that they happened at roughly the same time.
 
-That 51 percent is the cleanest answer to the question we had been asking about when high-school completion became a majority outcome. It needs a qualification, however: there are several different historical series that people casually call "the high-school completion rate," and they cross 50 percent at different times. See [50-percent-marks.md](50-percent-marks.md).
+Claudia Goldin and Lawrence F. Katz are major sources for the quantitative history and for one influential causal interpretation. Their estimates are evidence to examine, not the position of this project by default.
+
+## The mass transition
+
+Goldin and Katz summarize the national transformation this way: in 1910 about **18 percent of U.S. youths were enrolled in public or private secondary schools and about 9 percent graduated**. By 1940, the corresponding figures were **71 percent enrolled and 51 percent graduating**.
+
+Source: Claudia Goldin and Lawrence F. Katz, *Mass Secondary Schooling and the State*, NBER Working Paper 10075 (2003).  
+https://www.nber.org/papers/w10075
+
+The independent NCES historical series gives a closely related result. High-school graduates as a ratio of the 17-year-old population were:
+
+- 8.8 percent in 1909–10;
+- 16.8 percent in 1919–20;
+- 29.0 percent in 1929–30;
+- **50.8 percent in 1939–40**.
+
+NCES warns that this is not a modern cohort graduation rate: the numerator contains all high-school graduates in the year and the denominator is the 17-year-old population. It is nevertheless useful for long-run historical comparison.
+
+Source: NCES Digest, table 219.10.  
+https://nces.ed.gov/programs/digest/d23/tables/dt23_219.10.asp
+
+The institution therefore existed for a long time before it became the normal experience of American youth.
 
 ## The three different 50 percent marks
 
-There are at least three useful questions:
+The phrase "high-school completion passed 50 percent" is ambiguous. At least three useful measures cross one half at different times.
 
-1. **What fraction of youths in a given year graduated from high school?**
-2. **What fraction of young adults had completed high school?**
-3. **What fraction of the entire adult population had completed high school?**
+### Current graduation flow
 
-Those are not the same statistic.
+The NCES graduate-to-age-17 ratio reaches **50.8 percent in 1939–40**. Goldin and Katz summarize the 1940 youth graduation fraction as about **51 percent**.
 
-For the first measure, the NCES historical series reports high-school graduates as a ratio of the 17-year-old population. The ratio was 8.8 percent in 1909–10, 16.8 percent in 1919–20, 29.0 percent in 1929–30, and **50.8 percent in 1939–40**. NCES warns that this is not a modern cohort graduation rate: the numerator is all high-school graduates in the year and the denominator is the 17-year-old population. It is nevertheless an unusually useful historical comparison series. [NCES Digest, table 219.10](https://nces.ed.gov/programs/digest/d23/tables/dt23_219.10.asp).
+### Young-adult attainment
 
-For young adults, NCES reports that the share of people age 25–29 with high-school completion or higher was **38.1 percent in 1940 and 52.8 percent in 1950**. Thus the stock of young adults with high-school completion crossed 50 percent between those census dates. [NCES Digest, table 104.20](https://nces.ed.gov/programs/digest/d23/tables/dt23_104.20.asp).
+For people age 25–29, high-school completion or higher was **38.1 percent in 1940** and **52.8 percent in 1950**.
 
-For all adults age 25 and older, the lag was much longer because older cohorts had gone through school before the high-school movement. The share was 24.5 percent in 1940, 34.3 percent in 1950, 41.1 percent in 1960, and **55.2 percent in 1970**. [NCES Digest, table 104.10](https://nces.ed.gov/programs/digest/d15/tables/dt15_104.10.asp).
+Source: NCES Digest, table 104.20.  
+https://nces.ed.gov/programs/digest/d23/tables/dt23_104.20.asp
 
-So the answer depends on the question:
+### Whole-adult attainment
 
-- **1939–40:** the annual graduate-to-17-year-old ratio first appears above one half in the decennial NCES historical series: 50.8 percent.
-- **1950:** a majority of 25–29-year-olds had completed high school: 52.8 percent.
-- **1970:** a majority of the whole population age 25+ had completed high school: 55.2 percent.
+For all adults age 25+, high-school completion or higher was 24.5 percent in 1940, 34.3 percent in 1950, 41.1 percent in 1960, and **55.2 percent in 1970**.
 
-This distinction matters. A country can have a majority of current teenagers graduating while still having an adult population composed mostly of people educated under the old regime.
+Source: NCES Digest, table 104.10.  
+https://nces.ed.gov/programs/digest/d15/tables/dt15_104.10.asp
+
+So three distinct historical statements are true:
+
+- **1939–40:** the contemporary graduation-flow measure crosses one half.
+- **1950:** a majority of 25–29-year-olds possess high-school completion or higher.
+- **1970:** a majority of the entire population age 25+ possesses high-school completion or higher.
+
+See [50-percent-marks.md](50-percent-marks.md) for the detailed series and caveats.
 
 ## High school was not originally the normal school experience
 
-The American high school is much younger than the American common school.
+William J. Reese's history begins with Boston's English Classical School, established in **1821** and soon renamed the English High School. It was a public secondary school, but not a universal institution in the modern sense. Its rationale included advanced education for young people who would not necessarily follow the traditional classical route to college.
 
-William J. Reese's history of the institution begins with Boston's English Classical School, established in **1821** and soon renamed the English High School. It was a public secondary school, but it was not a universal institution in the modern sense. Its founding rationale was explicitly connected to young people who wanted education beyond the ordinary grammar schools without following the traditional classical route to college. The curriculum emphasized practical and modern studies as well as advanced academic work. Reese traces the spread of public high schools through the nineteenth century and notes that by the 1880s a majority of secondary students in the North were attending high schools rather than academies. That is a statement about the *form of secondary education*, not about a majority of all teenagers attending or graduating. [William J. Reese, *The Origins of the American High School*](https://yalebooks.yale.edu/book/9780300079432/the-origins-of-the-american-high-school/).
+Reese traces the spread of public high schools through the nineteenth century and notes that by the 1880s a majority of secondary students in the North were attending high schools rather than academies. That is a statement about the *form of secondary education*, not about a majority of all teenagers attending or graduating.
 
-NCES's graduation counts make the scale clear. High-school graduates were only about **2.0 percent of the 17-year-old population in 1869–70**, 3.5 percent in 1889–90, 6.4 percent in 1899–1900, and 8.8 percent in 1909–10. [NCES table 219.10](https://nces.ed.gov/programs/digest/d23/tables/dt23_219.10.asp).
+William J. Reese, *The Origins of the American High School*.  
+https://yalebooks.yale.edu/book/9780300079432/the-origins-of-the-american-high-school/
 
-The institution therefore existed for many decades before it became a mass institution.
+NCES's graduation counts make the scale clear. High-school graduates were only about **2.0 percent of the 17-year-old population in 1869–70**, 3.5 percent in 1889–90, 6.4 percent in 1899–1900, and 8.8 percent in 1909–10.
 
-## Public taxation had to be established as legitimate
+The high school therefore became an established institution long before it became a mass institution.
 
-A key nineteenth-century question was whether taxpayers could be required to support education beyond the common-school level.
+## Public finance had to be politically and legally established
 
-Michigan played an important part in this history. In **Stuart v. School District No. 1 of the Village of Kalamazoo, 30 Mich. 69 (1874)**, taxpayers challenged the use of general school taxes to support Kalamazoo's high school. The Michigan Supreme Court upheld the district. The case became one of the leading legal precedents supporting tax-funded public high schools. The Michigan Supreme Court's bound report is available here: [Michigan Reports, vol. 30](https://www.courts.michigan.gov/49595c/siteassets/publications/msc-bound-volumes/1-100/bv_mi30_final.pdf). A useful local history with context is the [Kalamazoo Public Library's account of the Kalamazoo School Case](https://www.kpl.gov/local-history/kalamazoo-history/kps/kalamazoo-school-case/).
+In **Stuart v. School District No. 1 of the Village of Kalamazoo, 30 Mich. 69 (1874)**, taxpayers challenged the use of general school taxes to support Kalamazoo's high school. The Michigan Supreme Court upheld the district.
 
-This point is historically important because the present arrangement can make the earlier controversy hard to see. Today "public school" commonly means K–12. In the nineteenth century, opponents could accept tax-supported elementary education while arguing that education beyond the common school was a private benefit that families should purchase for themselves.
+The controversy matters because the modern category "public school" can hide the older political question. One could support tax-financed common schools while denying that taxpayers should finance education beyond the elementary level. The development of the public high school therefore involved a decision about the boundary of public responsibility for education.
 
-The institutional victory of the public high school was therefore not simply the appearance of a new grade level. It was a political decision about how much education the public would collectively finance.
+Primary source: *Michigan Reports*, vol. 30.  
+https://www.courts.michigan.gov/49595c/siteassets/publications/msc-bound-volumes/1-100/bv_mi30_final.pdf
 
-## The decisive transition: the high school movement, about 1910–1940
+Context: Kalamazoo Public Library, "The Kalamazoo School Case."  
+https://www.kpl.gov/local-history/kalamazoo-history/kps/kalamazoo-school-case/
 
-Goldin's work identifies the first half of the twentieth century, and especially the years from about 1910 to 1940, as the period in which the American secondary school became a mass institution.
+## The high school movement, roughly 1910–1940
 
-In *America's Graduation from High School*, Goldin finds that the fastest expansion outside the South occurred roughly from **1920 to 1935**. The 1920s produced a large rise in attendance; the Great Depression pushed enrollment and graduation still higher. Areas with fewer jobs available to teenagers tended to have higher school attendance. [Goldin, NBER Working Paper 4762](https://www.nber.org/papers/w4762); published as "America's Graduation from High School: The Evolution and Spread of Secondary Schooling in the Twentieth Century," *Journal of Economic History* 58, no. 2 (1998): 345–374.
+The central descriptive fact is not controversial in the same way the causal explanation is: secondary schooling expanded extremely rapidly in the first four decades of the twentieth century.
 
-Goldin and Katz describe the United States as unusually early in developing mass, publicly funded secondary education. Their historical series summarizes the transformation sharply:
+Goldin's state-level work places especially rapid expansion outside the South roughly between **1920 and 1935**. Her interpretation emphasizes the 1920s attendance surge and a further Depression-era increase in enrollment and graduation. She also reports a relationship between youth employment opportunities and school attendance.
 
-| year | secondary enrollment | secondary graduation |
-|---|---:|---:|
-| 1910 | about 18% | about 9% |
-| 1940 | about 71% | about 51% |
+Claudia Goldin, "How America Graduated from High School: 1910 to 1960," NBER Working Paper 4762 (1994).  
+https://www.nber.org/papers/w4762
 
-Source: Goldin and Katz, *Mass Secondary Schooling and the State*, NBER Working Paper 10075 (2003).
+Published as "America's Graduation from High School: The Evolution and Spread of Secondary Schooling in the Twentieth Century," *Journal of Economic History* 58, no. 2 (1998): 345–374.
 
-This is the central fact for this folder. The high school did not merely get a little more popular. In thirty years, it moved from an institution used by a minority to an institution through which most young people passed.
+Goldin and Katz also emphasize geographic variation: the Far West, Great Plains, and parts of New England moved earlier; the South lagged; and many small Midwestern and Great Plains communities were early adopters.
 
-## Compulsory schooling mattered, but it did not explain most of the expansion
+These patterns are evidence that any adequate explanation must account for substantial variation across place and time, not merely the national trend.
 
-It is tempting to tell a simple story: states passed compulsory-schooling laws, therefore teenagers went to high school. Goldin and Katz explicitly test that explanation.
+## Compulsory schooling and child-labor law: an open causal question
 
-Their conclusion is much weaker. Changes in compulsory-schooling and child-labor laws between 1910 and 1939 can explain, at most, roughly **5 percent of the increase in high-school enrollment**, and a similar share of the increase in eventual educational attainment for the affected cohorts. [Goldin and Katz, *Mass Secondary Schooling and the State*](https://www.nber.org/papers/w10075).
+The same decades saw states tighten compulsory-attendance rules and child-labor restrictions. It is entirely reasonable to ask how much those laws caused the rise in secondary schooling.
 
-That does not mean the laws were irrelevant. They changed the lower boundary of legally acceptable schooling and reduced employers' access to young workers. But they should not be confused with a complete explanation of why American communities built and filled high schools.
+Goldin and Katz attempt to answer that question using cross-state variation in compulsory-schooling and child-labor laws. Their estimate is that changes in those laws from 1910 to 1939 can account for **at most roughly 5 percent of the increase in high-school enrollment**, with a similar share of eventual educational attainment for the affected cohorts.
 
-Goldin and Katz instead emphasize a mixture of local prosperity, community organization, relatively broad political support, and substantial private returns to additional schooling. In their Iowa evidence, a year of high school around 1915 produced a large estimated earnings return—on the order of 11–12 percent for young men. See [Goldin and Katz, "Education and Income in the Early 20th Century: Evidence from the Prairies"](https://www.nber.org/papers/w7217) and ["Human Capital and Social Capital: The Rise of Secondary Schooling in America, 1910 to 1940"](https://www.nber.org/papers/w6439).
+Source: Goldin and Katz, *Mass Secondary Schooling and the State*.  
+https://www.nber.org/papers/w10075
+
+**Blackball does not treat that estimate as the settled causal decomposition.** It depends on the authors' definitions, coding of state law, comparison groups, identifying assumptions, and the dimensions of compulsion captured by their variables. Legal change may also interact with school supply, child-labor enforcement, labor demand, local fiscal decisions, family expectations, and employer behavior in ways that are not represented by a single estimated direct effect.
+
+The correct use of the Goldin/Katz result here is:
+
+> One influential study estimates a surprisingly small direct contribution from measured changes in compulsory-schooling and child-labor statutes. That estimate is a claim to audit and compare with other evidence.
+
+It should **not** be rewritten as:
+
+> Compulsory schooling did not cause mass high school.
+
+Those are different statements.
+
+A later research pass should compare competing historical and econometric accounts, examine the underlying law dataset, distinguish statutes from enforcement, and look for discontinuities or natural experiments where legal changes altered actual school-leaving behavior.
+
+## Private returns are also an estimate, not an explanation by themselves
+
+Goldin and Katz use the Iowa State Census of 1915 to estimate substantial earnings returns to high-school education—on the order of 11–12 percent per year for young men in their analysis.
+
+Claudia Goldin and Lawrence F. Katz, "Education and Income in the Early 20th Century: Evidence from the Prairies."  
+https://www.nber.org/papers/w7217
+
+That is relevant evidence about incentives, but it does not by itself prove why the institution expanded. Observed wage differences, estimated returns, family expectations, access to particular occupations, selection into schooling, and the changing supply of credentialed workers are separate empirical questions.
+
+The same rule applies throughout this folder: distinguish the historical series from the interpretation placed on it.
 
 ## 1918 did not create the American high school
 
-One source that repeatedly comes up in this history is the **1918 _Cardinal Principles of Secondary Education_**, issued by the Commission on the Reorganization of Secondary Education of the National Education Association and published by the U.S. Bureau of Education.
+The **1918 _Cardinal Principles of Secondary Education_**, issued by the Commission on the Reorganization of Secondary Education of the National Education Association and published by the U.S. Bureau of Education, is an important primary source.
 
-It is easy to give this report too much causal power. It did not "open" the American high school. Public high schools had existed for almost a century, and the mass expansion was already under way.
+It did not create or "open" the American high school. Public high schools had existed for almost a century, and the mass expansion was already underway.
 
-What the report did was important in a different way: it **codified and legitimated a much broader conception of secondary schooling**. The report's seven famous objectives were health; command of fundamental processes; worthy home membership; vocation; citizenship; worthy use of leisure; and ethical character. It explicitly treated secondary education as something that should serve the whole youth population rather than function only as a narrow college-preparatory ladder.
+The report is useful instead as evidence about institutional purpose. Its seven objectives were health; command of fundamental processes; worthy home membership; vocation; citizenship; worthy use of leisure; and ethical character. It treated secondary education as serving a broad youth population rather than functioning only as a narrow college-preparatory ladder.
 
-That makes the report useful evidence for a change in institutional purpose. Once high school was expected to educate a mass population, its curriculum and justification had to extend beyond preparation for college.
+Primary source: U.S. Bureau of Education, *Cardinal Principles of Secondary Education*, Bulletin 1918, No. 35.  
+https://eric.ed.gov/?id=ED541063
 
-Primary source: U.S. Bureau of Education, [*Cardinal Principles of Secondary Education*, Bulletin 1918, No. 35](https://eric.ed.gov/?id=ED541063).
+Whether the report merely codified an existing change, actively accelerated it, or did some mixture of both is itself a historical question. Chronology alone does not settle causal importance.
 
-## Why "we have to go" is bigger than compulsory attendance
+## Why "we have to go" has several meanings
 
-The phrase "why we have to go to high school" should be read in at least three senses.
+The title question should be split into several different mechanisms rather than answered with one cause.
 
-### 1. Legal obligation
+### Legal obligation
 
-States progressively restricted child labor and required attendance for more years. Those rules made early exit harder. They mattered, but the quantitative work above indicates that they explain only a minority of the great 1910–1940 expansion.
+What did state law actually require, at each date and in each place? At what ages could a child legally leave school? What exemptions existed? How strongly were attendance and child-labor laws enforced?
 
-### 2. Institutional availability
+### Institutional availability
 
-Local communities built tax-supported secondary schools and normalized public payment for them. The Kalamazoo case is a good example of the political conflict that had to be settled before a modern K–12 conception of public education could become ordinary.
+When did communities actually build accessible high schools? Who paid for them? How far did students have to travel? Which communities resisted taxation or consolidation?
 
-### 3. Social and labor-market obligation
+### Family and youth incentives
 
-Once most young people attend and then most graduate, the meaning of non-completion changes. A credential that once marked a relatively educated minority can become a minimum signal because the reference group has changed. This is one route by which an educational opportunity becomes an educational expectation.
+What did families expect additional schooling to yield? What jobs were available to teenagers? How did recessions, industrial structure, farm work, household income, and migration change the opportunity cost of school?
 
-The sources in this folder establish the demographic and institutional transition. They do **not**, by themselves, prove that employers immediately imposed a universal diploma requirement in 1940. That is a separate empirical question and should be measured directly from historical job advertisements, employer manuals, civil-service rules, military requirements, union apprenticeship rules, occupational surveys, and personnel records.
+### Curriculum and institutional purpose
 
-That distinction is important for Blackball. We should not infer credential requirements solely from rising educational attainment. Instead we should treat the emergence of the high-school diploma as a labor-market screen as its own measurable historical process.
+What was high school for at different dates—college preparation, commercial training, vocational education, citizenship, socialization, general education, or some combination?
 
-## Majority does not mean universal, and national averages hide exclusion
+### Labor-market obligation
 
-The national 50-percent threshold should not be mistaken for equal access.
+When did employers begin to prefer or require a diploma for jobs previously performed by people without one? When did the absence of the credential become disqualifying rather than ordinary?
 
-For people age 25–29, NCES reports high-school completion or higher in 1940 at **38.1 percent overall**, **41.2 percent for white people**, and only **12.3 percent for Black people** under the historical racial categories used in the source. In 1950 the corresponding values were **52.8 percent overall**, **56.3 percent white**, and **23.6 percent Black**. By 1970 they were **75.4 percent overall**, **77.8 percent white**, and **58.4 percent Black**. [NCES table 104.20](https://nces.ed.gov/programs/digest/d23/tables/dt23_104.20.asp).
+The sources in this folder establish the demographic and institutional transition. They do **not** yet establish the full causal chain that produced the modern expectation.
 
-The aggregate transition to mass schooling therefore coexisted with enormous inequality. Any account of "universal high school" that stops at the national mean hides who was actually receiving the credential and when.
+## Majority does not mean universal
 
-Regional differences were also substantial. Goldin's work shows that the Far West, Great Plains, and parts of New England moved earlier, while the South lagged. The national majority threshold is therefore a summary of asynchronous local transitions, not a date on which every American community suddenly became a high-school society.
+The national 50-percent threshold also hides unequal access.
 
-## A useful conceptual model
+For people age 25–29, NCES reports high-school completion or higher in 1940 at **38.1 percent overall**, **41.2 percent for white people**, and **12.3 percent for Black people** under the historical racial categories used in the source. In 1950 the corresponding values were **52.8 percent overall**, **56.3 percent white**, and **23.6 percent Black**. By 1970 they were **75.4 percent overall**, **77.8 percent white**, and **58.4 percent Black**.
 
-The history can be separated into four stages:
+Source: NCES table 104.20.  
+https://nces.ed.gov/programs/digest/d23/tables/dt23_104.20.asp
+
+The national majority threshold is therefore a summary of highly unequal and asynchronous local transitions.
+
+## A working descriptive model
+
+The history can provisionally be separated into four stages without claiming that this sequence supplies a complete causal explanation.
 
 ### Stage 1: invention
 
-Public secondary schools appear in the nineteenth century. They are limited institutions for a minority and coexist with academies and classical college-preparatory schools.
+Public secondary schools appear in the nineteenth century as institutions used by a minority.
 
-### Stage 2: legitimation
+### Stage 2: legitimation and expansion of public provision
 
-Communities and courts establish that public taxation can legitimately support schooling beyond the elementary level. High schools spread as part of public school systems.
+Communities, legislatures, and courts establish tax-supported secondary schooling as a legitimate part of public education.
 
-### Stage 3: mass adoption
+### Stage 3: mass participation
 
-From about 1910 to 1940, enrollment and graduation rise extraordinarily quickly. The high school becomes a normal destination for teenagers rather than a specialized institution for a small group.
+Between about 1910 and 1940, enrollment and graduation rise extraordinarily quickly. High school becomes a normal destination for a majority of youths.
 
-### Stage 4: baseline credential
+### Stage 4: credential normalization
 
-As cohorts educated under the mass system age into the labor force, high-school completion becomes the normal educational floor. The statistics show this diffusion through the population: majority youth graduation by 1940, majority young-adult attainment by 1950, and majority adult attainment by 1970.
+As these cohorts age into the labor force, high-school completion becomes increasingly common among young adults and eventually among adults generally.
 
-The fourth stage should not be treated as complete merely because one statistical series crosses 50 percent. A major Blackball research task is to trace, occupation by occupation, when employers converted the new educational abundance into formal or informal credential requirements.
+That last stage still does not prove when or why particular employers converted common possession of the diploma into a formal job requirement. That must be measured directly.
 
-## Why this matters for the larger education question
+## Research program
 
-High school is a useful historical control case for arguments about college.
-
-It demonstrates that an educational credential can change its social meaning dramatically over time. A level of schooling can move from unusual, to advantageous, to normal, and finally to a minimum requirement. During that process:
-
-- the institution changes;
-- the population attending it changes;
-- the curriculum changes;
-- employers adapt to the changing supply of credentials;
-- laws and public finance adapt;
-- people begin to forget that the earlier equilibrium ever existed.
-
-That history prevents a circular argument: "people need high school because jobs require high school, and jobs require high school because everyone needs high school." The historically interesting question is how the requirement was produced.
-
-For Blackball, the right approach is therefore to turn "why do we have to go?" into several measurable questions:
+For Blackball, "why we have to go to high school" should become a set of measurable questions rather than a single historical morality tale:
 
 - What percentage of the relevant age cohort attended?
 - What percentage graduated?
 - What percentage of adults possessed the credential?
-- What did compulsory-attendance law actually require at the time?
+- What did compulsory-attendance law actually require?
+- What did child-labor law actually prohibit?
+- How were those laws enforced?
+- When and where were public high schools physically available?
+- What did secondary schooling cost families in foregone youth earnings?
+- What wage or occupational premium was associated with completion?
+- How much of that apparent premium survives attempts to handle selection?
 - What jobs explicitly required the credential?
-- What jobs were actually performed by workers without it?
-- What wage premium did completion command?
-- How did the premium change as the credential became common?
-- Which racial, regional, sex, and class groups gained access first and last?
-- When did employers begin to treat the absence of the credential as disqualifying rather than ordinary?
+- What jobs were in fact performed by workers without it?
+- How did requirements differ by occupation, race, sex, region, and class?
+- When did employers begin to treat non-completion as disqualifying?
+- Did employer requirements rise before, during, or after the credential became common?
+- Did laws cause attendance, respond to rising attendance, or both?
 
-Those are different measures. Keeping them separate is the difference between a history of education and a story we tell after the institution has become normal.
+The purpose of the folder is to preserve the timeline and make those causal questions harder to smuggle past us as assumptions.
 
 See also:
 
