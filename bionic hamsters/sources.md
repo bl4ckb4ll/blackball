@@ -77,7 +77,7 @@ Uses a 1996 Shanghai survey combining labor-market information, interviewer beau
 
 **Boundary:** this is not evidence for a general causal chain from family wealth to grooming to beauty to earnings. It concerns a specific expenditure category, place, period, and mainly women; most spending was estimated to be consumption rather than a high-return earnings investment.
 
-## Social skills / charisma
+## Social skills — not a generic charisma measure
 
 ### David J. Deming — “The Growing Importance of Social Skills in the Labor Market”
 
