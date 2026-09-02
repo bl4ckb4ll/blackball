@@ -48,12 +48,12 @@ A signal can be useful even if the credential/activity does not cause the underl
 
 Does the marker create later opportunities that make the original difference larger?
 
-Examples:
+Candidate examples to test:
 
-- elite internship gives access to first elite job;
-- first elite job creates references and network;
-- network creates investor or executive access;
-- high income improves spouse pool, neighborhood, and children's schools.
+- elite internship may increase access to a first elite job;
+- a first elite job may create references and network ties;
+- network ties may increase investor or executive access;
+- high income may change partner-meeting opportunities, neighborhood choice, and children's schools.
 
 A trait can be weak as an ability measure and still be a powerful amplifier.
 
@@ -160,7 +160,7 @@ Mechanisms:
 - employer/customer taste;
 - assumed competence;
 - confidence;
-- social-skill development caused by a lifetime of warmer treatment;
+- possible social-skill development following repeated warmer treatment (currently an uncited life-course hypothesis);
 - occupation sorting;
 - class investment in presentation.
 
@@ -226,7 +226,7 @@ Cross-match spouses/partners on:
 - geography;
 - network overlap.
 
-Then estimate downstream effects:
+Then estimate associations and, where a design permits, causal downstream effects:
 
 - household income concentration;
 - household wealth concentration;
@@ -241,7 +241,7 @@ Keep **homogamy** (like with like) distinct from **status exchange** (one trait 
 
 ## 10. College as spouse/network market
 
-The 2026 Abramitzky–Pérez–Price paper gives a particularly useful design lead.
+The 2026 Abramitzky–Pérez–Price working paper gives a useful but bounded design lead: 60 coeducational U.S. colleges, students enrolled in 1915–1943, and child enrollment records through 1963. Its exposure and campus-overlap designs address same-college marriage. Do not generalize them without further evidence to current elite colleges, professional networks, spouse income, beauty/status exchange, or the causal effect on children's selective-college attendance.
 
 Research questions:
 
@@ -371,7 +371,7 @@ Examples:
 - blind audition or anonymized evaluation;
 - performance observed before versus after pedigree information.
 
-These designs help identify the return to the wrapper rather than the work.
+Within the population, outcome, and time horizon studied, these designs can identify an effect of the altered wrapper while holding specified information fixed. They do not automatically identify a career-long return or hold every unobserved interpretation constant.
 
 ## 16. Authority-access outcome
 
@@ -392,7 +392,7 @@ Outcomes:
 - editorial gatekeeping;
 - faculty hiring / admissions committee participation.
 
-The Blackball issue is not just unequal reward after competition. It is unequal access to the arena in which high-stakes competence can be demonstrated.
+The Blackball hypothesis is not just unequal reward after competition, but unequal access to the arena in which high-stakes competence can be demonstrated. Measure that access before stating its magnitude or cause.
 
 ## 17. Late-bloomer test
 
@@ -407,9 +407,9 @@ Questions:
 - Can work samples replace credentials?
 - Which occupations genuinely allow demonstrated adult competence to erase youthful ranking?
 
-## 18. The compounding coefficient
+## 18. Joint accumulation and chain test
 
-Try to estimate not merely individual effects but multiplication.
+Estimate how links combine rather than presuming literal multiplication. A defensible chain needs temporal order, compatible populations and units, explicit mediators, and attention to shared causes, selection, interaction, and offsetting effects.
 
 Example schematic:
 
@@ -426,14 +426,17 @@ Example schematic:
 
 For each arrow estimate:
 
-- effect size;
+- effect size and estimand;
 - uncertainty;
-- population affected;
-- whether the arrow is causal;
+- population and period;
+- whether the arrow is causal, associational, or only proposed;
+- treatment, comparison group, mediator, and outcome;
+- whether adjacent estimates can legitimately be combined;
+- whether a shared cause explains multiple links;
 - whether advantage is zero-sum / positional;
 - whether the arrow differs by gender, race, class, geography, or cohort.
 
-The total system can be strongly unequal even if no single arrow is enormous.
+Do not multiply coefficients imported from separate studies, double-count a mediator and its downstream outcome, or interpret a sequence of conditional associations as a person-level multiplier. The total system can in principle be strongly unequal even if no single link is enormous, but that is a proposition to estimate rather than a result supplied by the diagram.
 
 ## 19. Desert audit
 
@@ -494,21 +497,28 @@ For every intervention ask about gaming, substitution, measurement error, and un
 10. Do not infer absence of injustice merely because every individual transaction can be described as voluntary.
 11. Do not infer causality from elite campus photographs.
 12. Do not turn a regional stereotype into a fact without evidence.
+13. Do not use “social skill” as a synonym for charisma, beauty, confidence, dominance, polish, or pedigree.
+14. Do not splice coefficients from incompatible studies into a cumulative-effect estimate.
+15. Do not describe an observational association as a causal arrow.
+16. Do not generalize a laboratory result, historical cohort, country, occupation, or gender beyond its sampled setting without a separate argument.
 
 ## 22. Minimum useful output for each source
 
 For every book, article, dataset, song, memoir, interview, or anecdote added here, record:
 
-- source type;
+- source type and publication status;
 - exact claim;
-- mechanism;
-- population;
+- design and estimand;
+- mechanism measured versus mechanism merely proposed;
+- population and sampling frame;
 - time/place;
-- outcome measured;
-- evidence strength;
-- obvious confounders;
+- treatment or exposure, comparison group, and outcome;
+- whether the result is causal, associational, descriptive, interpretive, or anecdotal;
+- uncertainty and evidence strength;
+- obvious confounders and external-validity limits;
 - what would falsify the claim;
 - which arrow in the amplification chain it informs;
+- whether adjacent arrows have actually been studied together;
 - whether it bears on causation, justice, or both.
 
 That keeps “bionic hamsters” from becoming a vague label and turns it into a reusable research program.
