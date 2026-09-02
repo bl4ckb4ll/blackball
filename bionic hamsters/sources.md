@@ -2,11 +2,17 @@
 
 This is a starter bibliography and evidence map. Separate cultural examples, hypotheses, and empirical studies.
 
+A source attached to one arrow does not validate the whole amplification chain. Preserve each study's design, population, period, outcome, and causal status; do not carry its coefficient or interpretation into adjacent arrows without evidence that those links were studied together.
+
 ## Origin / elite-education frame
 
 ### William Deresiewicz — *Excellent Sheep: The Miseducation of the American Elite and the Way to a Meaningful Life* (2014)
 
-Core source for the phrase **“bionic hamsters.”** Deresiewicz describes modern elite applicants as an almost alien class of hyper-accomplished students produced by escalating admissions competition. Useful topics:
+Core source for the phrase **“bionic hamsters.”** Deresiewicz describes modern elite applicants as an almost alien class of hyper-accomplished students produced by escalating admissions competition.
+
+**Evidence type:** primary text and interpretive criticism, informed by Deresiewicz's elite-university teaching experience. It documents his argument and observations; it does not estimate how prevalent the type is, whether résumé breadth causes weak curiosity, or whether adolescent optimization causes adult income or authority.
+
+Useful topics:
 
 - AP-course inflation;
 - extracurricular inflation;
@@ -43,7 +49,9 @@ Reported findings include:
 - effects were at least as large for men in their analysis;
 - occupational sorting explained only part of the earnings relationship.
 
-Use as foundational evidence that appearance can affect labor-market outcomes. Do not treat a 1990s estimate as a timeless universal constant.
+**Evidence type and boundary:** observational associations using interviewer-rated appearance in the 1971 Quality of American Life, 1977 Quality of Employment, and 1981 Canadian Quality of Life surveys. Controls reduce some alternative explanations but do not randomly assign appearance or identify a causal effect of beauty itself. Ratings may also bundle grooming, health, class presentation, and rater response.
+
+Use as foundational evidence that rated appearance was associated with labor-market outcomes in these samples. Do not treat the estimates as timeless, universal, or causal constants.
 
 ### Markus M. Mobius and Tanya S. Rosenblat — “Why Beauty Matters”
 
@@ -51,21 +59,23 @@ Use as foundational evidence that appearance can affect labor-market outcomes. D
 
 https://www.aeaweb.org/articles?id=10.1257%2F000282806776157515
 
-Experimental labor market using a maze-solving task. Particularly valuable because task skill was not improved by attractiveness, allowing the authors to investigate transmission mechanisms. They report channels involving:
+Experimental labor market using a maze-solving task. In that setting, true maze-solving skill was unaffected by physical attractiveness, allowing the authors to study how wage offers changed with the information and interaction available to employers. They report channels involving:
 
 - worker confidence;
 - employers inferring greater ability from attractiveness;
 - oral / social interaction effects.
 
-This paper is a clean bridge between beauty, confidence, perceived competence, and wages.
+This paper separates beauty, confidence, perceived competence, and oral interaction within a specific experimental labor market. It does not establish that the same channels or magnitudes govern ordinary hiring, promotion, or cumulative treatment over a career.
 
 ### Daniel S. Hamermesh, Xin Meng, and Junsen Zhang — “Dress for Success — Does Primping Pay?”
 
-NBER Working Paper 7167 (1999); later *Labour Economics*.
+NBER Working Paper 7167 (1999); published in *Labour Economics* 9(3), 2002, pp. 361–373.
 
 https://www.nber.org/papers/w7167
 
-Uses Shanghai data combining labor-market information, beauty ratings, and household spending. Relevant to the question of whether class resources can partly purchase presentation advantages through clothing and cosmetics. Their estimates suggest grooming expenditures have diminishing effects and are not simply a high-return earnings investment.
+Uses a 1996 Shanghai survey combining labor-market information, interviewer beauty ratings, and household spending. The authors report that clothing and cosmetics spending had a generally positive but diminishing association with women's perceived beauty and that no more than roughly 15 percent of an additional unit of spending was recovered through higher earnings.
+
+**Boundary:** this is not evidence for a general causal chain from family wealth to grooming to beauty to earnings. It concerns a specific expenditure category, place, period, and mainly women; most spending was estimated to be consumption rather than a high-return earnings investment.
 
 ## Social skills / charisma
 
@@ -75,9 +85,11 @@ Uses Shanghai data combining labor-market information, beauty ratings, and house
 
 https://doi.org/10.1093/qje/qjx022
 
-Finds substantial growth in jobs requiring social interaction and stronger employment/wage growth in jobs combining social and mathematical skills. Deming models social skill as reducing coordination costs in team production.
+Finds substantial growth in U.S. jobs requiring social interaction and stronger employment/wage growth in jobs combining social and mathematical skills. Deming models social skill as reducing coordination costs in team production and tests implications with occupational data and the NLSY79/NLSY97.
 
-Use this against simplistic versions of the “charisma is fake” claim. Some social skill can be genuinely productive. The Blackball problem is to distinguish productive coordination ability from beauty bias, class-coded polish, confidence effects, pedigree, and social preference—and then to distinguish productivity from moral desert.
+**Boundary:** the paper does not estimate a generic “charisma premium” and does not identify beauty, class-coded polish, confidence, dominance, pedigree, or gatekeeping as the source of the measured patterns. Its team-production account is a modeled and empirically investigated mechanism, not permission to label every socially rewarded trait productive.
+
+Use this against simplistic versions of the “charisma is fake” claim while keeping productive coordination ability separate from the other proposed components—and productivity separate from moral desert.
 
 ## Intergenerational mobility / birth lottery
 
@@ -89,7 +101,7 @@ https://www.nber.org/papers/w19843
 
 Administrative data on more than 40 million children and parents. Parent income rank predicts child income rank, with large geographic variation in upward mobility.
 
-Use for the basic fact that family position and childhood location remain related to adult outcomes.
+**Boundary:** this establishes large intergenerational and geographic associations, not which family resource or neighborhood mechanism caused them. Use it for the fact that family position and childhood location remain related to adult outcomes, not as an estimate of the full amplification chain.
 
 ### Raj Chetty, Nathaniel Hendren, Patrick Kline, Emmanuel Saez, Nicholas Turner — “Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility”
 
@@ -105,7 +117,9 @@ Published in *American Economic Review* 116(1), 2026; project work began earlier
 
 https://www.aeaweb.org/articles?id=10.1257/aer.20200108
 
-Maps adult outcomes by childhood census tract using large longitudinal administrative data. Useful for neighborhood effects and for resisting stories in which adult outcomes are treated as if they originated wholly inside the individual.
+Maps mean adult outcomes by childhood census tract using large longitudinal administrative data. The published article also reports experimental and quasi-experimental estimates attributing about 60 percent of across-neighborhood outcome variation to causal place effects.
+
+**Boundary:** the tract map is descriptive, while the causal estimate comes from separate designs. Neither identifies every mechanism inside “neighborhood,” nor the later elite-school, network, spouse, or authority links in this framework.
 
 ## Selective colleges and class
 
@@ -115,7 +129,9 @@ Maps adult outcomes by childhood census tract using large longitudinal administr
 
 https://opportunityinsights.org/paper/undermatching/
 
-Key relevance: students from low-income families can have excellent outcomes at selective schools, but relatively few low-income students attend them. Useful for distinguishing what selective institutions may do from who gets access to them.
+Key relevance: students from low-income families have high observed long-term outcome rates at selective schools, but relatively few low-income students attend them.
+
+**Boundary:** college-level outcome rates and allocation exercises are not, by themselves, causal estimates of what attending a selective college does to an otherwise identical student. Use the paper to distinguish access, observed outcomes, and proposed allocation changes; do not use it alone to claim that elite attendance causes later income or authority.
 
 ## Assortative mating / reproduction of advantage
 
@@ -125,7 +141,9 @@ NBER Working Paper 20271; revised 2018.
 
 https://www.nber.org/papers/w20271
 
-Documents positive educational assortative mating across several countries and estimates a non-negligible contribution to household income inequality.
+Published in the *Journal of Political Economy* 127(6), 2019. The study documents positive educational assortative mating in Denmark, Germany, Norway, the United Kingdom, and the United States and estimates a non-negligible contribution to cross-sectional household-income inequality.
+
+A crucial limiting result belongs beside that finding: changes in educational assortative mating over time barely move the time trends in household-income inequality in their decomposition. Do not cite the paper as evidence that rising educational homogamy explains rising inequality generally.
 
 ### Ran Abramitzky, Santiago Pérez, Joseph Price — “Colleges, Assortative Mating, and Intergenerational Mobility in Twentieth-Century America”
 
@@ -133,11 +151,15 @@ NBER Working Paper 35602, August 2026.
 
 https://www.nber.org/papers/w35602
 
-Especially important for this folder. Uses records for 1.2 million students at 60 coeducational U.S. colleges, 1915–1943, linked to later records. The authors report that more exposure to opposite-sex classmates and more campus overlap causally increased same-college marriage; children of same-college couples later attended selective colleges at higher rates.
+**Publication status and scope:** NBER working paper, August 2026. It uses records for 1.2 million students at 60 coeducational U.S. colleges who enrolled in 1915–1943, linked to children's enrollment records through 1963.
 
-This provides a direct empirical route for:
+The authors report that within colleges, more different-sex classmates and longer campus overlap increased same-college marriage. That is the paper's strongest causal link. Same-college spouses were more educated, and children of same-college couples attended selective colleges at higher rates, with spousal education statistically explaining part of the gap.
 
-**college selection → spouse pool → household educational advantage → children's educational outcomes**.
+**Boundary:** do not describe the entire sequence as causally identified. The child outcome is a reported intergenerational difference unless the relevant design establishes more; the study is historical, concerns same-college marriage rather than beauty/status exchange, and does not by itself estimate effects of contemporary elite colleges, spouse income, professional networks, or adult authority.
+
+It informs, but does not complete, this proposed route:
+
+**college exposure → same-college marriage → household educational composition → children's college attendance**.
 
 ### Beauty–status exchange
 
@@ -145,10 +167,10 @@ There is a literature on whether physical attractiveness is exchanged for socioe
 
 One recent example:
 
-“Beauty–status exchange in mate selection in China,” *Research in Social Stratification and Mobility* 89 (2024), 100872.
+Wen Liu, Jia Yu, and Yu Xie, “Beauty–Status Exchange in Mate Selection in China,” *Research in Social Stratification and Mobility* 89 (2024), 100872.
 https://doi.org/10.1016/j.rssm.2023.100872
 
-Use as one case, not as a general proof.
+Using 2010–2018 China Family Panel Studies data, the authors report little evidence of beauty–status exchange in Chinese marriages, including little support for the supposed exchange of women's beauty for men's socioeconomic status. Use it as a negative or limiting case, not as support for the folk claim and not as a universal disproof.
 
 Research also needs work on attractiveness-attractiveness matching, income matching, wealth matching, and how elite schools/workplaces alter meeting pools.
 
@@ -160,17 +182,17 @@ Research also needs work on attractiveness-attractiveness matching, income match
 
 https://www.ipr.northwestern.edu/our-work/working-papers/2002/ipr-wp-02-07.html
 
-Using NLSY panel data, the authors report that care work pays less than other occupations after controls for education, experience, job characteristics, and stable individual characteristics. Both men and women in care work experienced the relative penalty in their analysis.
+Using NLSY panel data, the authors report that occupations within their definition of care work pay less than other occupations after controls for education, experience, job characteristics, and stable individual characteristics. Both men and women in care work experienced the relative penalty in their analysis.
 
-Use this as a direct counterpoint to prestige rhetoric about service, character, leadership, and contribution.
+**Boundary:** fixed effects and controls strengthen the comparison but do not prove that every care job is underpaid or that cultural devaluation, rather than every competing mechanism, caused the residual penalty. Use this as a counterpoint to prestige rhetoric about service, character, leadership, and contribution.
 
-### Michelle Budig — “How care-work employment shapes earnings in cross-national perspective”
+### Michelle J. Budig and Joya Misra — “How care-work employment shapes earnings in cross-national perspective”
 
-*International Labour Review* 149(4), 2010/2011.
+*International Labour Review* 149(4), 2010, pp. 441–460.
 
 https://onlinelibrary.wiley.com/doi/10.1111/j.1564-913X.2010.00097.x
 
-Examines 12 countries and finds substantial cross-national variation in care-work wage effects. Useful because it shows that the penalty is institutionally variable rather than a simple natural price of care.
+Examines 12 countries and reports substantial cross-national variation in care-work wage effects, shaped by worker and job characteristics; it also considers country-level inequality, public-sector size, and union strength. The variation is evidence against treating one care penalty as universal. Cross-country covariation alone does not identify which institution caused the differences.
 
 ### Nancy Folbre, Leila Gautham, Kristin Smith — “Essential Workers and Care Penalties in the United States”
 
@@ -178,7 +200,7 @@ Examines 12 countries and finds substantial cross-national variation in care-wor
 
 https://www.tandfonline.com/doi/abs/10.1080/13545701.2020.1828602
 
-Connects essential care work to wage penalties, bargaining power, burnout, and turnover.
+The authors report an essential-care wage penalty and argue that features of care work weaken bargaining, with implications for burnout, turnover, and entry. Preserve the difference between their wage estimates and their proposed bargaining mechanism.
 
 ## Milton Friedman / discrimination as taste
 
@@ -278,3 +300,5 @@ For every claim, label what kind of evidence it is:
 - **unverified lead**.
 
 The bionic-hamster concept is broad enough that sloppy evidence could make it explain everything. The antidote is to preserve the mechanism and evidence type for every arrow.
+
+Never let evidence propagate automatically along a chain. “A predicts B” plus “B predicts C” is not yet evidence that A causes C through B. A whole-chain claim needs compatible units and populations, temporal order, an identified mediator or joint design, and checks for selection, common causes, interaction, and offsetting effects.
