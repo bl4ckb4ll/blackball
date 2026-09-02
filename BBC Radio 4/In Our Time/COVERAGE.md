@@ -7,14 +7,17 @@ This is an incremental full-archive ingestion.
 | Year | Topic episodes ingested | Status |
 | --- | ---: | --- |
 | 1998 | 12 | complete for the original 1998 run |
+| 1999 | 44 | complete for the original 1999 run |
+
+**Total topic episodes ingested:** 56.
 
 ## People
 
-The 1998 tranche contains 25 unique guests. A guest dossier may still be marked partial when that person returned in later years; later appearances will be added as those years are ingested.
+Every guest in the completed years receives one reusable dossier. Recurring guests are added to the same dossier across years and appearances rather than duplicated. Dossiers remain partial until all later appearances by that person have been ingested.
 
 ## Next
 
-Proceed chronologically through 1999 and later years, while normalizing repeated guest names into the existing people dossiers rather than creating duplicates.
+Proceed chronologically through 2000 and later years, while normalizing repeated guest names into existing people dossiers rather than creating duplicates.
 
 ## Counting note
 
