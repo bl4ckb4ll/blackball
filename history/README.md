@@ -7,6 +7,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
 - [Teachers’ unions](teachers-unions/README.md) — Boston, Chicago, St. Paul, AFT/NEA history, women teachers’ organization, professionalization, administrative centralization, women’s schooling, and a recursively inspected citation graph.
 
+## Slavery, labor, skill, and coercion
+
+- [Louis Hughes — *Thirty Years a Slave* (1897)](slavery/louis-hughes-thirty-years-a-slave.md) — primary-source note on the enslaved skilled blacksmith Uncle Ben; the distinction between skill and bargaining power; Hughes's medical aptitude and denied educational/occupational opportunity; and his descriptions of whipping, witnessed violence, and psychological injury.
+
 ### Teachers’-union citation graph
 
 - [Leroux 2006 — all 65 endnotes](teachers-unions/KAREN-LEROUX-2006-CITATION-SPIDER.md)
