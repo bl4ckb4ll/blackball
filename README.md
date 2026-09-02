@@ -54,6 +54,8 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Andrew Hacker](people/andrew-hacker.md) — political scientist and public critic of higher education; connects his 2005 NYRB source trail to *Higher Education?* and preserves the distinction between provocative measurement and strong causal evidence.
+- [Claudia Dreifus](people/claudia-dreifus.md) — journalist, interviewer, and coauthor of *Higher Education?*; focuses on campus reporting, interviewing, classroom observation, and the evidentiary boundary between a field report and a prevalence claim.
 - [Sudhir Venkatesh](people/sudhir-venkatesh.md) — Chicago fieldwork, Hyde Park's labor boundary, Harvard Junior Fellowship, "rogue sociologist" branding, and the conversion of access to poor communities into academic and publishing value.
 - [Barack Obama](people/barack-obama.md) — South Side organizing, Hyde Park residence, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
 - [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh's Hyde Park period.
@@ -66,6 +68,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
+- [Andrew Hacker and Claudia Dreifus — *Higher Education?*](llm/andrew-hacker-claudia-dreifus-higher-education/README.md) — chapter-by-chapter argument/evidence map, campus-reporting method, reconstructed bibliography and upstream source trail, criticisms, and a retrieval queue that keeps direct observation separate from national inference.
 - [Earl Shorris — *A Nation of Salesmen*](llm/earl-shorris-a-nation-of-salesmen/README.md) — argument map, review synthesis, legitimate-access boundary, archival leads, and a dated used-book price snapshot.
 - [Earl Shorris — the Clemente Course in the Humanities](llm/earl-shorris-clemente-course/README.md) — first-course origin, recruitment, original faculty and curriculum, logistics, outcome-count disagreements, later institutionalization, and provenance.
 - [Earl Shorris — *Riches for the Poor*](llm/earl-shorris-riches-for-the-poor/README.md) — publication history from *New American Blues*, argument summary, Clemente relationship, access boundary, evidence limitations, and provenance.
