@@ -54,6 +54,39 @@ That contrast is especially sharp in Venkatesh's own career. The person washing 
 
 This is not by itself evidence of exploitation. It is evidence of a large asymmetry in the institutional value assigned to different forms of participation in the same social world.
 
+## Barack Obama was living inside the same Hyde Park economy
+
+Barack Obama's chronology makes the Hyde Park passage more concrete.
+
+Obama moved to Chicago in **1985** to work for the Developing Communities Project. His organizing territory was not Hyde Park itself: he worked farther south in Roseland, West Pullman, and Altgeld Gardens. But he **lived in Hyde Park while doing that work**. Contemporary Chicago reporting identifies his first Chicago apartment as 5429 South Harper Avenue, on the eastern edge of Hyde Park. He lived there during his 1985–1988 community-organizing period.
+
+In **1988** Obama left Chicago for Harvard Law School. This creates an important one-year distinction: when Venkatesh arrived at the University of Chicago in **1989** and wrote the opening scene about poor Black residents washing windows, changing oil, panhandling, and selling drugs beside the university, Obama was formally a Harvard law student rather than a permanent Hyde Park resident. He did return to Chicago for summer legal work, including the summer of 1989 when he met Michelle Robinson.
+
+Obama returned to Chicago permanently after Harvard in **1991**. The University of Chicago brought him into its Law and Government program that fall, and he taught at the Law School from **1992 through 2004**. Barack and Michelle Obama bought a condominium in East Hyde Park in **1993** and lived there until 2005, when they moved a short distance north to Kenwood.
+
+So the accurate overlap is:
+
+> **1985–1988:** Obama is a community organizer working in poorer far-South-Side neighborhoods while living in Hyde Park.
+>
+> **1989:** Venkatesh arrives and describes the Hyde Park/Woodlawn class boundary and the informal workers serving the university population; Obama is then at Harvard, though back in Chicago during summers.
+>
+> **1991/1992 onward:** Obama returns permanently, teaches at the University of Chicago Law School, and again lives in the Hyde Park area while Venkatesh is still conducting his Chicago research.
+
+It is therefore fair to say that Obama spent many years inhabiting **the same local political economy Venkatesh describes**: a university-centered Hyde Park adjacent to much poorer Black neighborhoods and informal workers selling low-priced labor and services to people with substantially more money and institutional security.
+
+It is **not** yet supported to say that Obama personally "passed the window washers every day." His first Hyde Park apartment was on Harper Avenue on the eastern side of the neighborhood; Venkatesh describes the sharp boundary he saw on the southwestern edge near Cottage Grove and Woodlawn. Obama drove from Hyde Park to organizing work much farther south, so repeated exposure to the surrounding inequality is entirely plausible, but a specific daily route past those specific workers would need documentary evidence.
+
+The stronger point does not require that embellishment. Obama could describe himself as a community organizer serving poor South Side residents while returning home to Hyde Park, and later as a civil-rights lawyer, state politician, and University of Chicago law teacher living in East Hyde Park. Venkatesh's opening establishes that the neighborhood itself visibly contained the class relationship: privileged university residents on one side and poor residents offering cheap labor on the other.
+
+### Sources for the Obama chronology
+
+- Barack Obama Presidential Library: Obama moved to Chicago in 1985, worked for the Developing Communities Project for three years, entered Harvard Law School in 1988, and returned to Chicago after graduating.
+- Obama Foundation, "Chicago: Where it Began": community-organizing years 1985–1988 in Roseland and Altgeld Gardens; 1989 summer work in Chicago; Project Vote work in 1992.
+- WBEZ, "The Neighborhood that Launched Obama": identifies 5429 S. Harper Avenue as Obama's Hyde Park apartment while he was a community organizer and records his later return to the neighborhood.
+- *Los Angeles Times*, 2008 profile: reports that Obama moved to Chicago in June 1985, rented an apartment in Hyde Park, and commuted farther south to Roseland and West Pullman.
+- University of Chicago Law School: Obama entered the Law and Government Fellowship in fall 1991 and taught at the Law School from 1992 through 2004.
+- *Washington Post*, "Uncommon Ground": reports the 1993 purchase of the Obamas' East Hyde Park condominium and their residence there during most of his University of Chicago teaching years.
+
 ## Books
 
 ### *American Project: The Rise and Fall of a Modern Ghetto* (2000)
@@ -100,6 +133,7 @@ The dossier should keep institutional prestige and "rogue" self-presentation in 
 8. How does the Hyde Park account compare with actual employment, wages, rents, university policing, and contracting patterns around the University of Chicago in the late 1980s and 1990s?
 9. Did the University of Chicago itself employ residents of surrounding neighborhoods, and at what wages and occupations?
 10. Can the economic distance between the windshield washer and the sociologist be measured rather than left as rhetoric?
+11. How did elite Hyde Park residents who publicly identified with South Side poverty—including Obama during both his organizing and University of Chicago periods—describe the economic relationship between their own neighborhood and the poorer neighborhoods immediately around it?
 
 ## Source discipline
 
