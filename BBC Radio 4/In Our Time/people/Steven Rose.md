@@ -1,0 +1,21 @@
+# Steven Rose
+
+## Summary
+
+Steven Rose is a biologist and neuroscientist known for research on memory and brain mechanisms and for sustained criticism of biological determinism. His public writing has repeatedly challenged attempts to infer fixed social hierarchies or political prescriptions directly from biology.
+
+In *The Brain and Consciousness* he brings experimental biology to a discussion that could otherwise become purely philosophical. For Blackball, his importance is also methodological: even when a biological measurement is real, the causal and social interpretation placed on it has to be argued separately.
+
+## In Our Time
+
+- [19 Nov 1998 — The Brain and Consciousness](../topics/1998/1998-11-19 — The Brain and Consciousness/README.md)
+
+The archive index shows two appearances in total. The later appearance will be linked when its year is ingested.
+
+## Broadcast-era identification
+
+Professor of Biology and Director of the Brain and Behaviour Research Group at the Open University.
+
+## Sources
+
+- BBC episode: https://www.bbc.co.uk/programmes/p0054582
