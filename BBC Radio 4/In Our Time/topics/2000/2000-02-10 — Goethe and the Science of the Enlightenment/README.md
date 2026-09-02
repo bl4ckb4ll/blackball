@@ -3,7 +3,7 @@
 - **Broadcast:** 10 February 2000
 - **BBC programme ID:** `p00546n1`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546n1
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

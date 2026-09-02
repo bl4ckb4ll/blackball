@@ -3,7 +3,7 @@
 - **Broadcast:** 8 June 2000
 - **BBC programme ID:** `p00546tq`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546tq
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

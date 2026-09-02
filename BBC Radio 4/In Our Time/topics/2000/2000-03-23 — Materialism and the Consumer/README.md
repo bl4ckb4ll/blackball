@@ -3,7 +3,7 @@
 - **Broadcast:** 23 March 2000
 - **BBC programme ID:** `p00546q2`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546q2
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

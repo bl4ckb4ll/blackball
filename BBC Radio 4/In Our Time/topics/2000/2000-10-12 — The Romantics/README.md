@@ -3,7 +3,7 @@
 - **Broadcast:** 12 October 2000
 - **BBC programme ID:** `p00546ws`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546ws
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

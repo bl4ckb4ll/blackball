@@ -3,7 +3,7 @@
 - **Broadcast:** 16 March 2000
 - **BBC programme ID:** `p00546pv`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546pv
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

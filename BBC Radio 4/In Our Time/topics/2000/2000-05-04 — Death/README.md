@@ -3,7 +3,7 @@
 - **Broadcast:** 4 May 2000
 - **BBC programme ID:** `p00546ry`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546ry
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

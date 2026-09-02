@@ -3,7 +3,7 @@
 - **Broadcast:** 25 May 2000
 - **BBC programme ID:** `p00546sz`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546sz
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

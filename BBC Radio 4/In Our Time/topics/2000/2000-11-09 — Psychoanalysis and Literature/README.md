@@ -3,7 +3,7 @@
 - **Broadcast:** 9 November 2000
 - **BBC programme ID:** `p00546y5`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546y5
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

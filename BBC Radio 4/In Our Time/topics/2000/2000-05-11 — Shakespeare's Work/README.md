@@ -3,7 +3,7 @@
 - **Broadcast:** 11 May 2000
 - **BBC programme ID:** `p00546s8`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546s8
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

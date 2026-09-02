@@ -3,7 +3,7 @@
 - **Broadcast:** 2 November 2000
 - **BBC programme ID:** `p00546xr`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546xr
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

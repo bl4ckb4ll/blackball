@@ -3,7 +3,7 @@
 - **Broadcast:** 1 June 2000
 - **BBC programme ID:** `p00546tb`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546tb
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

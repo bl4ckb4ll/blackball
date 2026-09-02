@@ -3,7 +3,7 @@
 - **Broadcast:** 20 January 2000
 - **BBC programme ID:** `p00546lx`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546lx
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

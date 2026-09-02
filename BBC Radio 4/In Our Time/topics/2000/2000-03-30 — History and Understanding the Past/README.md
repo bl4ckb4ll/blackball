@@ -3,7 +3,7 @@
 - **Broadcast:** 30 March 2000
 - **BBC programme ID:** `p00546qd`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546qd
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

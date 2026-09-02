@@ -3,7 +3,7 @@
 - **Broadcast:** 26 October 2000
 - **BBC programme ID:** `p00546xd`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546xd
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

@@ -3,7 +3,7 @@
 - **Broadcast:** 13 April 2000
 - **BBC programme ID:** `p00546qy`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546qy
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

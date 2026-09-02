@@ -3,7 +3,7 @@
 - **Broadcast:** 13 January 2000
 - **BBC programme ID:** `p00546lm`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546lm
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

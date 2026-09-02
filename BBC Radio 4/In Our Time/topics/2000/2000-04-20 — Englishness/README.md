@@ -3,7 +3,7 @@
 - **Broadcast:** 20 April 2000
 - **BBC programme ID:** `p00546r8`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546r8
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

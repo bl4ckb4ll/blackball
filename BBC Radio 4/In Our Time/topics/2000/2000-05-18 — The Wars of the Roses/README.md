@@ -3,7 +3,7 @@
 - **Broadcast:** 18 May 2000
 - **BBC programme ID:** `p00546sp`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546sp
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

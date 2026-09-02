@@ -3,7 +3,7 @@
 - **Broadcast:** 6 January 2000
 - **BBC programme ID:** `p00546l7`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546l7
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

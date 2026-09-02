@@ -3,7 +3,7 @@
 - **Broadcast:** 27 April 2000
 - **BBC programme ID:** `p00546rl`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546rl
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

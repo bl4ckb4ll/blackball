@@ -3,7 +3,7 @@
 - **Broadcast:** 16 November 2000
 - **BBC programme ID:** `p00546yh`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546yh
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

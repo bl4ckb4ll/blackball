@@ -3,7 +3,7 @@
 - **Broadcast:** 6 April 2000
 - **BBC programme ID:** `p00546ql`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546ql
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

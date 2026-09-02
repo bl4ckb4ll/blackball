@@ -3,7 +3,7 @@
 - **Broadcast:** 24 February 2000
 - **BBC programme ID:** `p00546nx`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546nx
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

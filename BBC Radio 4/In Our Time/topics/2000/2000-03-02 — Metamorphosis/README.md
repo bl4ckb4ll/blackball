@@ -3,7 +3,7 @@
 - **Broadcast:** 2 March 2000
 - **BBC programme ID:** `p00546p6`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546p6
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 

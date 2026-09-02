@@ -3,7 +3,7 @@
 - **Broadcast:** 29 June 2000
 - **BBC programme ID:** `p00546vr`
 - **BBC:** https://www.bbc.co.uk/programmes/p00546vr
-- **Coverage:** cross-checked
+- **Coverage:** bbc-verified
 
 ## Summary
 
