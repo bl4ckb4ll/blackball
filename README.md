@@ -41,6 +41,7 @@ A credential, ranking, institutional label, or professional title carries only t
 
 ## Institutional and local case files
 
+- [Place dossiers](places/README.md) — descriptive local case files for Greenwich, Newton, Armonk, Skaneateles, Shaker Heights, Evanston, Aurora, Cupertino, and Richmond; separates public evidence, institutional self-presentation, private research leads, interpretation, and geographic-boundary problems.
 - [Hyde Park](Hyde%20Park/README.md) — Venkatesh's Hyde Park/Woodlawn labor boundary; Friedman, Fama, Obama, and Venkatesh inside the same university-centered geography; Yiran Fan and Shaoxiong Zheng killings; "potential," mourning, policing, and institutional response.
 - [University of Chicago](University%20of%20Chicago/README.md) — put globally influential claims about markets, labor, poverty, human capital, law, and public policy beside the local economy and institutional power of Hyde Park and the South Side.
 - [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, including Venkatesh's 1996–1999 Society of Fellows appointment.
