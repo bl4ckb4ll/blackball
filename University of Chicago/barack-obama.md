@@ -1,0 +1,1 @@
+../people/barack-obama.md
