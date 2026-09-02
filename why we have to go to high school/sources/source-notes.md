@@ -1,8 +1,20 @@
 # Source notes
 
-These notes record what was actually checked for the September 1, 2026 reconstruction of the earlier Blackball discussion about the emergence of American high school and the 50-percent completion threshold.
+These notes record what was checked for the September 1, 2026 reconstruction of the earlier Blackball discussion about the emergence of American high school and the 50-percent completion threshold.
 
 The earlier conversation record preserved the point that the 1918 *Cardinal Principles of Secondary Education* did **not** create the American high school, but it did not preserve the specific citation previously used for the 50-percent threshold. The threshold was therefore reconstructed from the sources below rather than guessed from memory.
+
+## Source-handling rule
+
+This file distinguishes three kinds of statements:
+
+1. **observed or tabulated historical quantities** — for example NCES enrollment, graduation, or attainment series;
+2. **claims made by a source** — for example Goldin and Katz's estimate of the contribution of compulsory-schooling and child-labor law changes;
+3. **Blackball conclusions** — which should not be inferred merely because a source is prominent or quantitatively sophisticated.
+
+In particular, Goldin and Katz are major sources for this topic, but their causal estimates are not adopted as project conclusions without comparison to other evidence.
+
+---
 
 ## Goldin and Katz — *Mass Secondary Schooling and the State*
 
@@ -10,21 +22,32 @@ Claudia Goldin and Lawrence F. Katz. NBER Working Paper 10075, November 2003.
 
 https://www.nber.org/papers/w10075
 
-### Checked claims
+### Checked claims reported by the paper
 
 The NBER abstract states that between 1910 and 1940:
 
 - the fraction of U.S. youths enrolled in public and private secondary schools increased from **18 percent to 71 percent**;
 - the fraction graduating increased from **9 percent to 51 percent**.
 
-The paper evaluates whether state compulsory-education and child-labor laws caused the increase. Its abstract concludes that the expansion of these laws from 1910 to 1939 can, at best, account for roughly **5 percent of the increase in high-school enrollments** and about the same share of the increase in eventual educational attainment for the affected cohorts.
+The paper evaluates whether state compulsory-education and child-labor laws caused the increase. Its abstract concludes that measured expansions of these laws from 1910 to 1939 can, at best, account for roughly **5 percent of the increase in high-school enrollment** and about the same share of the increase in eventual educational attainment for affected cohorts.
 
-### Why this source matters
+### What may safely be taken from this source
 
-This is the cleanest source for two central statements:
+The 1910-to-1940 enrollment and graduation transformation is useful quantitative evidence and is broadly consistent with the independent NCES historical series.
 
-1. High-school graduation became a majority youth outcome by 1940.
-2. The high-school movement cannot be reduced to compulsory-attendance law.
+The **5-percent figure is Goldin and Katz's estimate from their empirical design**. It should be cited that way.
+
+### What should not be silently inferred
+
+Do not convert the estimate into any of the following without further evidence:
+
+- "compulsory schooling did not matter";
+- "child-labor law was unimportant";
+- "voluntary demand explains 95 percent";
+- "the state did not cause the high-school movement";
+- "the causal question is settled."
+
+Those conclusions would require examining the construction of the law variables, enforcement, exemptions, endogeneity, interactions with school supply and labor demand, indirect channels, and competing historical estimates.
 
 ---
 
@@ -50,7 +73,7 @@ The table reports:
 
 ### Checked methodological warning
 
-NCES states that the graduate/17-year-old ratio is based on people of all ages graduating in the year divided by the age-17 population. It **does not provide a cohort graduation rate** for an entering freshman class. NCES says the ratio is useful for comparisons over time.
+NCES states that the graduate/17-year-old ratio uses graduates of all ages in the year divided by the age-17 population. It **does not provide a cohort graduation rate** for an entering freshman class. NCES presents it as a long-run comparison measure.
 
 ### Underlying source series named by NCES
 
@@ -60,9 +83,9 @@ The table cites, among other sources:
 - *Statistics of Public High Schools*, 1889–90 through 1929–30;
 - *Biennial Survey of Education in the United States*, 1919–20 through 1949–50.
 
-### Why this source matters
+### Use in this project
 
-It independently pins the historical majority threshold to **1939–40, 50.8 percent**, while also giving the long trajectory from 2 percent in 1870.
+This is the best direct source currently preserved here for the statement that the annual graduate-to-age-17 ratio reached a majority in **1939–40, at 50.8 percent**.
 
 ---
 
@@ -86,9 +109,9 @@ Historical racial breakdown used in the note:
 - 1960: Black 38.6%, white 63.7%.
 - 1970: Black 58.4%, white 77.8%.
 
-### Why this source matters
+### Use in this project
 
-It shows why "1940" and "1950" can both appear in discussions of the 50-percent mark. The **flow of current graduates** was around one half by 1940, but the **stock of 25–29-year-olds with completion** did not exceed one half until 1950 in the listed census years.
+This shows why **1940** and **1950** can both appear in discussions of the 50-percent mark. The current-graduate flow was around one half by 1940, while the stock of 25–29-year-olds with completion did not exceed one half until 1950 in the listed census years.
 
 ---
 
@@ -106,9 +129,9 @@ https://nces.ed.gov/programs/digest/d15/tables/dt15_104.10.asp
 - 1960: 41.1%.
 - **1970: 55.2%.**
 
-### Why this source matters
+### Use in this project
 
-It shows cohort replacement. Even twenty years after youth graduation became a majority outcome, the majority of the total adult population still had not completed high school. The age-25+ stock does not cross one half until 1970 in this series.
+This shows the slow process of cohort replacement. The age-25+ stock does not cross one half until 1970 in this series.
 
 ---
 
@@ -122,15 +145,17 @@ Published as "America's Graduation from High School: The Evolution and Spread of
 
 ### Checked claims from the NBER abstract
 
-- The most rapid expansion in the non-South occurred approximately **1920–1935**.
-- The 1920s supplied the initial burst in high-school attendance.
-- The Great Depression added substantially to high-school enrollment and graduation.
-- Attendance was higher where youth employment opportunities, especially manufacturing employment, were weaker.
-- Secondary-school expansion accounted for a large share of the twentieth-century increase in U.S. educational attainment.
+Goldin reports that:
 
-### Why this source matters
+- the most rapid expansion in the non-South occurred approximately **1920–1935**;
+- the 1920s supplied the initial burst in high-school attendance;
+- the Great Depression added substantially to high-school enrollment and graduation;
+- attendance was higher where youth employment opportunities, especially manufacturing employment, were weaker;
+- secondary-school expansion accounted for a large share of the twentieth-century increase in U.S. educational attainment.
 
-It turns the 1910–1940 numbers into a historical process and highlights the importance of the labor-market opportunity cost of staying in school.
+### Source-status note
+
+The timing and state-level data are useful evidence. Statements about the role of the Depression or youth labor demand are Goldin's interpretation and should be tested against other accounts rather than repeated as established causation.
 
 ---
 
@@ -144,9 +169,9 @@ https://www.nber.org/papers/h0057
 
 Goldin states that an 18-year-old male in 1910 had only about a **10 percent chance of having a high-school diploma**, but by the mid-1930s the median 18-year-old male was a high-school graduate.
 
-### Why this source matters
+### Use in this project
 
-It is useful both as a data-method source and as an intuitive statement of how quickly the transition occurred.
+Useful as a data-method source and as an intuitive description of the rapid transition.
 
 ---
 
@@ -158,15 +183,16 @@ https://www.nber.org/papers/w6144
 
 ### Checked claims from abstract
 
-- The growth of secondary schooling was a major early-twentieth-century transformation.
-- About **9 percent** of U.S. youths had high-school diplomas in 1910.
-- **More than 50 percent** did by 1940.
-- Early-leading regions included the Far West, Great Plains, and parts of New England.
-- Higher income/wealth, greater equality, social stability, and lower proportions of manufacturing employment were associated with earlier secondary-school expansion.
+The authors report that:
 
-### Why this source matters
+- about **9 percent** of U.S. youths had high-school diplomas in 1910;
+- **more than 50 percent** did by 1940;
+- early-leading regions included the Far West, Great Plains, and parts of New England;
+- higher income/wealth, greater equality, social stability, and lower proportions of manufacturing employment were associated with earlier secondary-school expansion.
 
-This is another independent source for the 1910-to-1940 majority transition and for geographic variation.
+### Source-status note
+
+The 1910/1940 magnitude is useful quantitative corroboration. The proposed explanations for regional variation remain hypotheses/estimates to compare with other work.
 
 ---
 
@@ -180,16 +206,17 @@ Published in *Journal of Interdisciplinary History* 29 (Spring 1999): 683–723.
 
 ### Checked claims from abstract
 
-- The United States led in developing universal, publicly funded secondary schooling.
-- Much of the growth occurred from 1910 to 1940.
-- Small towns were important loci of the high-school movement.
-- Iowa lay near the center of what the authors call the "education belt."
-- Higher wealth, community stability, and greater homogeneity were associated with expansion.
-- The paper reports a pecuniary return to secondary schooling on the order of **12 percent per year in 1914**.
+The authors report:
 
-### Why this source matters
+- much of the growth of mass secondary schooling occurred from 1910 to 1940;
+- small towns were important loci of the high-school movement;
+- Iowa lay near the center of what they call the "education belt";
+- higher wealth, community stability, and greater homogeneity were associated with expansion;
+- a pecuniary return to secondary schooling on the order of **12 percent per year in 1914**.
 
-It helps explain why communities and families supported mass schooling beyond what compulsory law alone can explain.
+### Source-status note
+
+These are useful patterns and estimates. They do not by themselves establish why communities adopted high schools or how much each proposed mechanism contributed.
 
 ---
 
@@ -207,12 +234,12 @@ Using the 1915 Iowa State Census, the authors estimate:
 
 - returns to a year of high school of about **11 percent for males overall**;
 - returns above **12 percent for young males**;
-- some return came through access to better-paid white-collar jobs;
-- educational wage differentials were also visible within broad sectors.
+- some return through access to better-paid white-collar jobs;
+- educational wage differences within broad sectors as well.
 
-### Why this source matters
+### Source-status note
 
-This is evidence for a strong private incentive to remain in secondary school near the beginning of the high-school movement.
+These are estimated associations/returns in the authors' design. Do not convert them directly into a causal explanation of the high-school movement or assume that the observed wage premium was entirely produced by schooling itself.
 
 ---
 
@@ -224,19 +251,21 @@ https://www.nber.org/papers/w5202
 
 ### Checked claims from abstract
 
-- The wage premium to high-school education declined substantially between 1890 and the late 1920s.
-- The relative supply of high-school graduates rose rapidly: approximately 16 percent from 1890 to 1910, 40 percent from 1910 to 1920, and 50 percent from 1920 to 1930, by the paper's measure.
-- The high-school expansion was more important than immigration restriction in explaining the relative supply change.
+The authors report:
 
-### Why this source matters
+- a substantial decline in the wage premium to high-school education between 1890 and the late 1920s;
+- rapid increases in the relative supply of high-school graduates by their measure;
+- an interpretation in which high-school expansion was more important than immigration restriction in explaining the relative supply change.
 
-It is useful for the next research question: what happens to the economic meaning of a credential as it becomes common?
+### Use in this project
+
+Relevant to the next research question: what happens to the labor-market meaning of a credential as it becomes common?
 
 ---
 
 ## Reese — *The Origins of the American High School*
 
-William J. Reese. Yale University Press, 1995; later paperback edition 1999.
+William J. Reese. Yale University Press, 1995; paperback edition 1999.
 
 https://yalebooks.yale.edu/book/9780300079432/the-origins-of-the-american-high-school/
 
@@ -261,7 +290,7 @@ https://tile.loc.gov/storage-services/public/gdcmassbookdig/recordsrelatingt23bo
 
 ### Checked point
 
-The Boston School Committee's 1820 material records the decision to establish the English Classical School, the institution that opened in 1821 and became known as the English High School.
+The Boston School Committee's 1820 material records the decision to establish the English Classical School, which opened in 1821 and became known as the English High School.
 
 The founding discussion framed the school as an extension of public education into subjects beyond the ordinary lower schools and as useful for people who would not necessarily follow the classical collegiate path.
 
@@ -273,21 +302,17 @@ Official Michigan Reports scan:
 
 https://www.courts.michigan.gov/49595c/siteassets/publications/msc-bound-volumes/1-100/bv_mi30_final.pdf
 
-Modern searchable case page used to locate the decision:
-
-https://case-law.vlex.com/vid/stuart-v-school-dist-897019086
-
 Kalamazoo Public Library context:
 
 https://www.kpl.gov/local-history/kalamazoo-history/kps/kalamazoo-school-case/
 
 ### Checked point
 
-The case directly raised the authority of school districts to levy general taxes for the support of high schools. The Michigan Supreme Court affirmed the lower court and upheld the school district.
+The case directly raised the authority of school districts to levy general taxes for the support of high schools. The Michigan Supreme Court upheld the district.
 
-### Why this source matters
+### Use in this project
 
-It demonstrates that publicly funded secondary education was not an automatic extension of the common-school idea. The public had to decide—and litigate—whether tax-supported schooling should extend above the elementary level.
+Evidence that publicly funded secondary education was a contested extension of public-school finance.
 
 ---
 
@@ -297,11 +322,11 @@ ERIC record/full text:
 
 https://eric.ed.gov/?id=ED541063
 
-### Checked points from the official bibliographic record
+### Checked points
 
 The report was published by the U.S. Bureau of Education in 1918 as Bulletin No. 35 and came from the National Education Association's Commission on the Reorganization of Secondary Education.
 
-The ERIC record lists the report's sections, including:
+The ERIC record lists sections including:
 
 - need for reorganization;
 - goal of education in a democracy;
@@ -314,19 +339,23 @@ The seven familiar objectives were health, fundamental processes, worthy home me
 
 ### Chronological interpretation
 
-The report is strong evidence that educational policymakers were articulating a broad, mass social purpose for secondary education in 1918. It is not evidence that high schools first appeared in 1918.
+The report is evidence that educational policymakers were articulating a broad, mass social purpose for secondary education in 1918. It is not evidence that high schools first appeared in 1918.
+
+Whether it mainly codified an existing shift or exerted substantial independent influence is a further historical question.
 
 ---
 
 # Reconstruction status
 
-The central earlier claim has now been reconstructed with multiple independent sources:
+The central numerical claim has now been reconstructed with multiple sources:
 
 - Goldin/Katz: **9 percent graduating in 1910 → 51 percent in 1940**.
 - NCES long-run flow series: **8.8 percent in 1909–10 → 50.8 percent in 1939–40**.
 - NCES young-adult stock: **38.1 percent age 25–29 in 1940 → 52.8 percent in 1950**.
 - NCES whole-adult stock: **41.1 percent age 25+ in 1960 → 55.2 percent in 1970**.
 
-The source evidence therefore supports the historical statement only when the population and measure are named. The safest compact formulation is:
+The safest compact descriptive formulation is:
 
 > High-school graduation became a majority youth outcome around 1940; high-school completion became a majority status among young adults by 1950 and among the entire adult population by 1970.
+
+No equally compact causal formulation is justified yet. The causal literature still needs to be compared rather than represented by one paper's decomposition.
