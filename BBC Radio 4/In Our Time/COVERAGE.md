@@ -13,7 +13,7 @@ This is an incremental full-archive ingestion.
 
 ## People
 
-Every guest in the completed years receives one reusable dossier. Recurring guests are added to the same dossier across years and appearances rather than duplicated. Dossiers remain partial until all later appearances by that person have been ingested.
+There are **111 unique guest dossiers** across the completed 1998–99 corpus. Every guest in the completed years has a reusable dossier with an original summary and appearance link. Recurring guests are added to the same dossier across years and appearances rather than duplicated. Dossiers remain partial until all later appearances by that person have been ingested.
 
 ## Next
 

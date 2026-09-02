@@ -2,20 +2,18 @@
 
 ## Summary
 
-Theodore Zeldin is a historian and social thinker best known for wide-ranging work on French social history and on the history of emotions, aspirations, work and human relationships. Rather than organizing history only around governments and wars, he often asks what institutions feel like from the level of ordinary lives.
-
-In *Work in the 20th Century* he provides a longer historical counterpoint to Richard Sennett's account of contemporary capitalism. His usefulness for Blackball is the insistence that the meaning of work cannot be read from output statistics alone: work is also a structure of dependence, identity, social contact and possibility.
+Theodore Zeldin is a historian and social thinker best known for wide-ranging work on French social history and on the history of emotions, aspirations, work and human relationships. Rather than organizing history only around governments and wars, he often asks what institutions feel like at the level of ordinary lives. His two early *In Our Time* appearances connect work and childhood: both are social categories whose lived meaning changes when institutions change.
 
 ## In Our Time
 
 - [26 Nov 1998 — Work in the 20th Century](../topics/1998/1998-11-26 — Work in the 20th Century/README.md)
-
-The archive index shows two appearances in total. The later appearance will be linked when ingested.
+- [9 Dec 1999 — Childhood](../topics/1999/1999-12-09 — Childhood/README.md)
 
 ## Broadcast-era identification
 
-Historian and Fellow of St Antony's College, Oxford.
+Historian and Senior Fellow of St Antony's College, Oxford.
 
 ## Sources
 
-- BBC episode: https://www.bbc.co.uk/programmes/p0054588
+- BBC: https://www.bbc.co.uk/programmes/p0054588
+- BBC: https://www.bbc.co.uk/programmes/p0054653

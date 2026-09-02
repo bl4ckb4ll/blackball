@@ -11,7 +11,7 @@ Henry Louis Gates Jr. and Anthony Sampson discuss how European colonialism, miss
 
 ## Guests
 
-- [Henry Louis Gates Jr.](../../../people/Henry Louis Gates Jr..md)
+- [Henry Louis Gates Jr.](../../../people/Henry Louis Gates Jr.md)
 - [Anthony Sampson](../../../people/Anthony Sampson.md)
 
 ## Blackball hooks
