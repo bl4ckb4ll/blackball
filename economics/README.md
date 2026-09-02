@@ -29,6 +29,7 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 ## Race, labor, and class
 
+- [Elliot Liebow — *Tally's Corner* (1967)](elliot-liebow-tallys-corner.md) — a ground-level labor-market source on jobs, unstable earnings, credible outside options, bargaining power, and testing whether unpleasant work actually receives compensating wage premiums.
 - [Nell Irvin Painter — *The History of White People*](nell-irvin-painter-history-of-white-people.md) — short summary of Painter's history of whiteness as a changing social category, with emphasis on labor, class, immigration, racial science, and status.
 
 ## People cross-links
