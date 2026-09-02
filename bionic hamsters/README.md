@@ -112,7 +112,7 @@ The research object is possible accumulation and interaction across stages, not 
 | Claim | What the current source map supports | What it does not yet support |
 |---|---|---|
 | Rated attractiveness and earnings | Conditional associations in two 1970s U.S. surveys and one 1981 Canadian survey | A timeless universal premium or a causal effect of appearance itself |
-| Beauty and wage-setting mechanisms | Causal effects within one experimental maze-solving labor market | The same mechanism or magnitude in ordinary workplaces or over a career |
+| Beauty and wage-setting mechanisms | An experimental maze-solving labor market separates several wage-setting channels | The same mechanism or magnitude in ordinary workplaces or over a career |
 | Social skill and labor-market reward | U.S. occupational trends, survey evidence, and a team-production model | Treating “social skill,” charisma, beauty, polish, dominance, and pedigree as one variable |
 | Family position, place, and adult outcomes | Large administrative associations; separate neighborhood designs estimate substantial place effects | A single causal chain from family resources through elite selection to adult authority |
 | College and marriage | A 2026 working paper on 60 coeducational U.S. colleges, 1915–1943, identifies effects of exposure and campus overlap on same-college marriage | A contemporary elite-college effect, a beauty/status mechanism, or a causal estimate for every later child outcome |
@@ -138,7 +138,7 @@ Questions include:
 - marriage-market effects and household wealth;
 - cumulative treatment over decades.
 
-Do not reduce “charisma” to fraud. Social skill can be genuinely productive. David Deming's labor-market work is useful precisely because it creates a harder question: if social skill really improves coordination and team production, what portion of its reward is productive and what portion is social preference, class-coded polish, appearance, or gatekeeping?
+Do not reduce “charisma” to fraud. Deming models social skill as reducing coordination costs in team production and reports labor-market patterns consistent with a productive role for social interaction. That creates a harder question: what portion of a measured reward reflects productive coordination and what portion reflects social preference, class-coded polish, appearance, or gatekeeping?
 
 Also do not make the reverse mistake. Even if charisma is productive, that does not establish that a low-charisma person deserves humiliation, insecurity, or wages below a decent life.
 
@@ -279,7 +279,7 @@ Research should therefore distinguish:
 - gender differences in appearance rewards and penalties;
 - childhood sexualization from adult marriage-market behavior.
 
-Do not turn “beautiful women sometimes marry wealthy men” into an explanation of women as a class. Do not erase beauty as a real source of unequal treatment either.
+Do not turn “beautiful women sometimes marry wealthy men” into an explanation of women as a class. Do not erase rated appearance as a documented axis of unequal treatment in some settings either.
 
 ## Winner optimization versus fair-play norms
 
