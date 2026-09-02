@@ -11,6 +11,7 @@ Blackball history material is organized as inspectable source trails rather than
 
 - [Louis Hughes — *Thirty Years a Slave* (1897)](slavery/louis-hughes-thirty-years-a-slave.md) — primary-source note on the enslaved skilled blacksmith Uncle Ben; the distinction between skill and bargaining power; Hughes's medical aptitude and denied educational/occupational opportunity; and his descriptions of whipping, witnessed violence, and psychological injury.
 - [Edward Baptist — cotton productivity, coercion, and technology-as-progress](slavery/edward-baptist-cotton-productivity.md) — the fourfold rise in cotton picked per enslaved worker per day; Baptist's quota/ledger/"calibrated torture" argument; the Olmstead-Rhode seed-innovation critique; the 2026 Beckert-Stelzner reassessment; and the comparison with Manchester mill productivity.
+- [James C. Cobb — *The Most Southern Place on Earth*, engineering education, absentee ownership, and enslaved labor](slavery/james-c-cobb-most-southern-place-engineering-education.md) — source seed for an early-Delta anecdote connecting an elite technical/Princeton credential, Louisville absentee ownership, disease exposure, and enslaved plantation labor; preserves the remembered details as a verification target and flags that Princeton did not begin civil-engineering instruction until 1875.
 
 ## Technology and progress
 
