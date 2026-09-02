@@ -12,6 +12,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Louis Hughes — *Thirty Years a Slave* (1897)](slavery/louis-hughes-thirty-years-a-slave.md) — primary-source note on the enslaved skilled blacksmith Uncle Ben; the distinction between skill and bargaining power; Hughes's medical aptitude and denied educational/occupational opportunity; and his descriptions of whipping, witnessed violence, and psychological injury.
 - [Edward Baptist — cotton productivity, coercion, and technology-as-progress](slavery/edward-baptist-cotton-productivity.md) — the fourfold rise in cotton picked per enslaved worker per day; Baptist's quota/ledger/"calibrated torture" argument; the Olmstead-Rhode seed-innovation critique; the 2026 Beckert-Stelzner reassessment; and the comparison with Manchester mill productivity.
 
+## Reconstruction
+
+- [Eric Foner — *Reconstruction: America's Unfinished Revolution, 1863–1877*](reconstruction/eric-foner-reconstruction-americas-unfinished-revolution.md) — source node for Foner's 1988 Reconstruction synthesis, with institutional bibliographic confirmation, a directly inspectable chapter map, and explicit boundaries around material not yet inspected from the book itself.
+
 ## Technology and progress
 
 - [Technology and progress](technology-and-progress/README.md) — cases for separating mechanical and biological innovation from organization, labor intensification, coercion, and worker welfare. Starts with the Edward Baptist cotton-productivity case, where measured output per worker rose at roughly the pace of Manchester mill productivity even though cotton picking remained manual.
