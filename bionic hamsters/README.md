@@ -14,7 +14,7 @@ The object of study is the **amplification machine**.
 
 ## Core claim to test
 
-A society can begin with differences that are morally small, accidental, inherited, or specific to childhood and then convert them into very large differences in adult income, authority, ownership, security, social deference, and access to consequential decisions.
+The organizing hypothesis is that a society can begin with differences that are morally small, accidental, inherited, or specific to childhood and convert them into much larger differences in adult income, authority, ownership, security, social deference, and access to consequential decisions. The sources currently mapped below support several individual links in particular settings; they do not yet estimate this whole process or its total magnitude.
 
 Examples of initial differences include:
 
@@ -95,7 +95,7 @@ A useful default model is:
 
 The arrows are hypotheses to measure, not assumptions to repeat.
 
-There can also be side channels:
+Candidate side channels include:
 
 **appearance → confidence / treatment by others → social opportunities → hiring / pay / promotion**
 
@@ -105,11 +105,25 @@ There can also be side channels:
 
 **income / education / prestige → assortative mating → household concentration of resources → next generation**
 
-The important object is the repeated multiplication, not any single coefficient.
+The research object is possible accumulation and interaction across stages, not a presumed product of coefficients. Effects may be additive, mediated, selection-driven, caused by a shared background factor, offset later, or absent. Do not multiply estimates taken from different populations or designs and call the result a life-course effect.
+
+## Current evidence boundary
+
+| Claim | What the current source map supports | What it does not yet support |
+|---|---|---|
+| Rated attractiveness and earnings | Conditional associations in two 1970s U.S. surveys and one 1981 Canadian survey | A timeless universal premium or a causal effect of appearance itself |
+| Beauty and wage-setting mechanisms | Causal effects within one experimental maze-solving labor market | The same mechanism or magnitude in ordinary workplaces or over a career |
+| Social skill and labor-market reward | U.S. occupational trends, survey evidence, and a team-production model | Treating “social skill,” charisma, beauty, polish, dominance, and pedigree as one variable |
+| Family position, place, and adult outcomes | Large administrative associations; separate neighborhood designs estimate substantial place effects | A single causal chain from family resources through elite selection to adult authority |
+| College and marriage | A 2026 working paper on 60 coeducational U.S. colleges, 1915–1943, identifies effects of exposure and campus overlap on same-college marriage | A contemporary elite-college effect, a beauty/status mechanism, or a causal estimate for every later child outcome |
+| Educational assortative mating and inequality | Positive educational matching and a contribution to cross-sectional household-income inequality in five countries | The claim that changing assortative mating explains the historical rise in household-income inequality |
+| Full amplification chain | A research synthesis to be tested link by link | A demonstrated person-level multiplier or settled total effect |
+
+The map currently does **not** establish that wealth causes beauty through grooming, that adolescent résumé breadth causes adult power, that elite attendance causes later authority or capital access, that a generic “charisma premium” exists, or that rich men generally exchange status for women's beauty. Those remain hypotheses or decompositions for further sourcing.
 
 ## Beauty, lookism, and charisma
 
-Beauty belongs in the model because it is an observable social variable with measurable consequences. Treat it neither as mystical nor trivial.
+Rated attractiveness is associated with labor-market outcomes in older observational surveys and affected wage offers in a specific laboratory experiment. That is enough to include appearance in the model, but not to treat every proposed beauty pathway as established. Treat it neither as mystical nor trivial.
 
 Questions include:
 
@@ -146,7 +160,7 @@ Research separately:
 
 The point is **reproduction of advantage**, not resentment of whom anyone marries.
 
-The 2026 NBER paper by Abramitzky, Pérez, and Price on colleges and assortative mating is especially relevant because it directly studies colleges as marriage markets and follows educational advantage into the next generation.
+The 2026 Abramitzky, Pérez, and Price working paper is relevant because it studies 60 coeducational U.S. colleges in 1915–1943 and links parents to children's enrollment records. Its design supports a causal claim about exposure and same-college marriage; the reported difference in children's selective-college attendance should not be promoted to a causal effect without checking the paper's separate identification.
 
 ## Optimization culture
 
@@ -171,7 +185,7 @@ Track:
 - gaming or exploiting rules where documented;
 - how much time remains for reading, thinking, friendship, wandering, boredom, deep practice, or one consuming intellectual interest.
 
-Deresiewicz's critique matters here: a system can reward the ability to satisfy specifications while suppressing independent direction and deep intellectual curiosity.
+Deresiewicz's critique supplies an interpretive hypothesis: a system may reward the ability to satisfy specifications while suppressing independent direction and deep intellectual curiosity. It does not by itself establish the prevalence, causal mechanism, or adult effects of that pattern.
 
 ### Narrow depth as a counterexample
 
@@ -184,7 +198,7 @@ This case matters even if that individual is never identified. It gives a clean 
 - deep, internally motivated specialization;
 - versus strategic breadth optimized for external selection.
 
-A system may claim to select excellence while penalizing exactly the kind of single-mindedness that later produces unusual work.
+This contrast motivates a test of whether selection systems penalize single-minded depth and whether such depth predicts later unusual work; neither link is established by the unverified case.
 
 ## The adult-dignity break
 
@@ -196,7 +210,7 @@ A person who did not maximize a résumé at 16 is still an adult citizen and wor
 
 Keep asking whether institutions quietly treat adolescent sorting as if it established a lifelong caste ranking.
 
-Possible chain:
+Candidate contrast to test, not a documented pair of standard trajectories:
 
 **high-school distinction → selective college → prestigious first employer → network → managerial authority → capital access**
 
@@ -222,7 +236,7 @@ Someone feeding an elderly person, cleaning them, helping a disabled child commu
 - practical judgment;
 - willingness to perform unpleasant necessary work.
 
-Yet care occupations have often carried measurable wage penalties relative to other work after controls.
+Some U.S. and cross-national studies report wage penalties for particular definitions of paid care work after observed controls, with substantial variation by occupation and country. That does not establish a penalty for every care occupation or, by itself, identify devaluation as the cause.
 
 This creates a direct test of the prestige machine:
 
@@ -234,7 +248,7 @@ The point is not to romanticize care workers. It is to compare **what institutio
 
 Do not reduce this topic to earnings regressions.
 
-Repeated preference can enter a person's self-conception:
+A qualitative hypothesis is that repeated differential treatment can enter a person's self-conception:
 
 - the attractive sibling who receives warmer attention;
 - the polished child who adults assume is promising;
@@ -253,7 +267,7 @@ Blackball should preserve both levels:
 
 Beauty, class, sex, and power overlap, but the folder must avoid crude one-way stories.
 
-Historically and presently, women are often evaluated more heavily through appearance, sexual desirability, age, grooming, and body presentation. Girls can receive sexualized attention long before adulthood. Beauty can create opportunities and also expose a person to harassment, possession, coercion, or unwanted attention. Men can also receive appearance premiums and penalties, and some labor-market studies find substantial effects for men.
+Appearance standards, rewards, and harms may differ by gender and age. The current starter sources do not establish a blanket claim that women are evaluated more heavily in every setting; one mapped labor-market study in fact reports earnings associations at least as large for men. A fuller source map should separately document claims about sexualization of girls, harassment and coercion, age penalties, grooming demands, and gender-specific labor- and marriage-market effects.
 
 Research should therefore distinguish:
 
@@ -319,7 +333,7 @@ Evidence against strong versions would include:
 - childhood résumé intensity failing to predict later elite outcomes;
 - care-work wage differences fully explained by measurable compensating factors rather than devaluation or bargaining power.
 
-The purpose is not to prove that every advantage compounds. It is to find which ones do, how strongly, for whom, through what institutions, and with what consequences.
+The purpose is not to prove that every advantage compounds. It is to find which links exist, which are causal, how they combine or offset one another, for whom, through what institutions, and with what consequences.
 
 ## Blackball links
 
