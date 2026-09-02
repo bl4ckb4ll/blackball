@@ -2,6 +2,10 @@
 
 Blackball history material is organized as inspectable source trails rather than isolated summaries. Where a historical source cites earlier work, preserve the citation edge and follow it backward when the cited source can actually be inspected.
 
+## Colonial settlement, disease, land, and institutional genealogy
+
+- [Groton School recruiting page, the Groton name, and Winthrop context](groton-school-winthrop-context.md) — current employment terms and institutional rhetoric; Groton School's stated Gilded Age founding constituency; the Groton, Massachusetts → Groton, Suffolk → Winthrop naming chain; and John Winthrop's 1634 smallpox/title statement, with explicit limits on what the juxtaposition establishes.
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
