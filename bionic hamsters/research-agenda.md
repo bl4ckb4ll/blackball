@@ -330,7 +330,7 @@ Possible themes:
 - customer treatment;
 - workplace meetings;
 - romantic attention;
-- aging and loss of beauty privilege;
+- reported treatment changes with aging or changes in rated attractiveness;
 - people who were high-status adolescents and later lost status;
 - people whose adult competence emerged after being ignored in youth.
 
