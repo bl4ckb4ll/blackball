@@ -82,11 +82,11 @@ The stronger sentence — **"Jim Simons spied on the American people"** — is n
 
 ## Bounded negative-source check
 
-This review checked the searchable OCR of the Church Committee's [NSA hearings, volume 5][church-vol-5], and [Book III of its final report][church-book-3], along with targeted searches for Simons, IDA, CRD, SHAMROCK, MINARET, and the watch list.
+On **September 3, 2026**, this review checked the searchable OCR of the Church Committee's [NSA hearings, volume 5][church-vol-5], and [Book III of its final report][church-book-3], along with targeted searches for Simons, IDA, CRD, SHAMROCK, MINARET, and the watch list.
 
 - No relevant occurrence tying **Jim Simons** to SHAMROCK, the watch list, or MINARET was found.
 - No relevant occurrence tying **IDA's Communications Research Division** to those programs was found.
-- The absence of a searchable hit is not exculpatory evidence. OCR can fail, public records are incomplete, and relevant records may remain classified, destroyed, uncatalogued, or described under unidentified project names.
+- The absence of a searchable hit is not exculpatory evidence. OCR can fail, the inspected public corpus is incomplete, and the search cannot rule out records outside that corpus or work described under unidentified project names.
 
 This is a record of the present public evidence boundary, not a claim that no connection could have existed.
 
