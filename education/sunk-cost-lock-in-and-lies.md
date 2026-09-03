@@ -16,6 +16,8 @@ That response is descriptively common enough to matter even if a textbook labels
 
 “Do not consider sunk costs” belongs mainly to the second category. It is not a factual claim that people do not consider them. “Optimal” is incomplete unless the speaker states optimal for whom, according to which objective, counting which costs, over what period, and under whose constraints.
 
+A lecturer cannot move silently among these three claims. If the model describes conduct people plainly do not exhibit, call it a decision rule or benchmark rather than pretending it is an ordinary description of human behavior.
+
 ## Sunk expenditure and present constraint
 
 Several things coexist after expensive professional education:
@@ -45,6 +47,27 @@ Measure whether institutions know and use this mechanism through:
 - status identities that make ordinary work feel like personal defeat;
 - career services that redirect the graduate toward any job that preserves the credential’s appearance of value;
 - loan structures that make the best-paid buyer of the graduate’s labor the only viable buyer.
+
+## Friendly front end, asymmetric back end
+
+Respectability, friendliness, moral language, and good manners are not evidence that the transaction is balanced. The person making the representation may be sincere, may never perform the coercive work personally, and may be sheltered from seeing the eventual loss. The payoff structure remains.
+
+A prospective buyer often cannot identify the precise lie in advance. The practical warning is therefore structural:
+
+- Who receives money before the result is known?
+- Who keeps the money if the result fails?
+- Who signs an enforceable obligation?
+- Who gives only advice, aspiration, possibility, or an induced inference?
+- Who can walk away?
+- Who is protected by disclaimers?
+- Who benefits from the buyer continuing after contrary evidence arrives?
+- Who performs the collection, denial, discipline, or blame-shifting on the back end?
+
+A smiling, credentialed representative can be the socially pleasant face of a transaction whose unpleasant enforcement is delegated to lenders, collectors, lawyers, administrators, insurers, or employers. The front-end demeanor should never substitute for tracing the back-end winner and loser.
+
+The useful question is not “Do these people seem wonderful?” It is:
+
+> If their story is wrong, who still wins and who absorbs the loss?
 
 ## A lie is not merely imperfect information
 
@@ -94,6 +117,8 @@ For each pathway, preserve separately:
 - what obligations remained after failure;
 - when contrary information became available;
 - what made exit difficult;
-- what work the graduate ultimately performed and for whom.
+- what work the graduate ultimately performed and for whom;
+- who enforced the buyer’s obligation;
+- who retained the seller’s revenue after the represented path failed.
 
-This turns “bad information” into an accountable sequence of actors, representations, commitments, and losses.
+This turns “bad information” into an accountable sequence of actors, representations, commitments, enforcement, and losses.
