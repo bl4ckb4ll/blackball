@@ -4,9 +4,13 @@ Evidence-led notes and source records for economics, economic history, political
 
 This folder is not restricted to texts that would now be shelved in an economics department. Earlier political economy often lived inside moral philosophy, jurisprudence, history, and adjacent fields.
 
+## Model and decision accountability
+
+- [Optimal for whom, and what did the model omit?](optimal-for-whom-and-what-the-model-omits.md) — separates description, prediction, private optimization, social-welfare claims, and moral justification; treats NPV as conditional arithmetic rather than a universal endorsement of whoever receives the positive cash flow.
+
 ## Economic field reports
 
-- [Minnesota Implement — small fabrication shop versus public economic reports, 2026](field-reports/minnesota-implement-2026/README.md) — a West Concord, Minnesota small-business account matched against six months of steel, freight, farm-equipment, weather, regional-manufacturing, and national economic data to study how an individual firm's experience can diverge from aggregate reports.
+- [Minnesota Implement — small fabrication shop versus public economic reports, 2026](field-reports/minnesota-implement-2026/README.md) — a West Concord, Minnesota small-business account matched against six months of steel, freight, farm-equipment, weather, regional-manufacturing, and national economic data to study how an individual firm’s experience can diverge from aggregate reports.
 
 ## Historical macroeconomics
 
@@ -19,18 +23,18 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 ## Economic thought and institutions
 
-- [Adam Smith — *The Theory of Moral Sentiments*](adam-smith-theory-of-moral-sentiments.md) — sympathy, the impartial spectator, justice, virtue, status, and Smith's warning that admiration of wealth and rank can corrupt moral judgment.
-- [John Maynard Keynes — “Economic Possibilities for our Grandchildren” (1930)](economic-possibilities-for-our-grandchildren-1930.md) — the productivity-and-leisure argument, the approximately 2030 horizon, the fifteen-hour-week illustration, and Keynes's distinction between absolute and relative wants.
+- [Adam Smith — *The Theory of Moral Sentiments*](adam-smith-theory-of-moral-sentiments.md) — sympathy, the impartial spectator, justice, virtue, status, and Smith’s warning that admiration of wealth and rank can corrupt moral judgment.
+- [John Maynard Keynes — “Economic Possibilities for our Grandchildren” (1930)](economic-possibilities-for-our-grandchildren-1930.md) — the productivity-and-leisure argument, the approximately 2030 horizon, the fifteen-hour-week illustration, and Keynes’s distinction between absolute and relative wants.
 
 ## Political economy and labor
 
-- [Marx and Engels — the “second page” of *The Communist Manifesto*](marx-engels-second-page-of-the-communist-manifesto.md) — the Part I passage cataloguing bourgeois society's historically revolutionary achievements in production, markets, technical change, urbanization, communication, and political centralization.
+- [Marx and Engels — the “second page” of *The Communist Manifesto*](marx-engels-second-page-of-the-communist-manifesto.md) — the Part I passage cataloguing bourgeois society’s historically revolutionary achievements in production, markets, technical change, urbanization, communication, and political centralization.
 - [Friedrich Engels — *The Condition of the Working Class in England* and the American working-class question](engels-condition-of-the-working-class-england-and-america.md) — wage dependence, competition, crises, urban conditions, labor organization, and the 1887 American-edition discussion.
 
 ## Race, labor, and class
 
-- [Elliot Liebow — *Tally's Corner* (1967)](elliot-liebow-tallys-corner.md) — a ground-level labor-market source on jobs, unstable earnings, credible outside options, bargaining power, and testing whether unpleasant work actually receives compensating wage premiums.
-- [Nell Irvin Painter — *The History of White People*](nell-irvin-painter-history-of-white-people.md) — short summary of Painter's history of whiteness as a changing social category, with emphasis on labor, class, immigration, racial science, and status.
+- [Elliot Liebow — *Tally’s Corner* (1967)](elliot-liebow-tallys-corner.md) — a ground-level labor-market source on jobs, unstable earnings, credible outside options, bargaining power, and testing whether unpleasant work actually receives compensating wage premiums.
+- [Nell Irvin Painter — *The History of White People*](nell-irvin-painter-history-of-white-people.md) — short summary of Painter’s history of whiteness as a changing social category, with emphasis on labor, class, immigration, racial science, and status.
 
 ## People cross-links
 
