@@ -23,7 +23,7 @@ The basic institutional and occupational facts are well supported:
 
 1. A [2012 Simons Foundation account][sf-2012] says that Simons joined IDA/CRD's research staff in 1964, that the division focused on codebreaking, and that he devised algorithms for particular cryptographic problems.
 2. A [2024 Simons Foundation account][sf-2024] describes him as a codebreaker for NSA while placing him institutionally at IDA.
-3. In a [March 2019 MIT conversation][mit-event-2019], Simons described IDA as a highly classified workplace under NSA auspices that specialized in **"cracking Russian codes and protecting our own."** He said his own work included developing candidate codebreaking algorithms that programmers implemented and tested on computers. The [event transcript][mit-transcript-2019] is a third-party transcription; the official MIT page establishes the event and participants.
+3. In an [official recording of a March 2019 MIT conversation][mit-video-2019], also documented by the [MIT event page][mit-event-2019], Simons described IDA as a highly classified workplace under NSA auspices that specialized in **"cracking Russian codes and protecting our own."** He said his own work included developing candidate codebreaking algorithms that programmers implemented and tested on computers. A [searchable third-party transcript][mit-transcript-2019] makes the passages easier to locate, but quotations should be checked against the recording.
 4. In a [2022 autobiographical talk][simons-2022-video], Simons again said that the assigned work was to **"break Russian codes."** A [searchable transcript][simons-2022-transcript] is available for inspection.
 5. In the 2019 conversation, Simons said that an algorithm he developed at IDA solved a classified problem and led NSA to build a special-purpose machine that he later heard remained in use for decades. This supports the fact that **Simons made that retrospective claim**. It does not independently identify the algorithm, its target, its input data, or its operational use.
 
@@ -123,8 +123,8 @@ A useful comparison is to ask what a typical mathematics graduate receives at ea
 
 - [Simons Foundation, "Simons Foundation Chair Jim Simons on His Career in Mathematics" (2012)][sf-2012] — institutional biography; identifies 1964 entry into IDA/CRD, codebreaking focus, cryptographic algorithms, and 1968 departure.
 - [Simons Foundation, "Remembering the Life and Careers of Jim Simons" (2024)][sf-2024] — institutional obituary; uses the shorthand "code breaker for the National Security Agency" while identifying IDA as the workplace.
-- [MIT event page for the March 6, 2019 conversation][mit-event-2019] — confirms the event, date, Simons, and interviewer Andrew Lo.
-- [Searchable transcript of the March 2019 MIT conversation][mit-transcript-2019] — relevant passages at approximately 00:14:40–00:16:40 and 01:12:52; third-party transcript, so exact quotations should be checked against the recording when possible.
+- [Official recording of the March 6, 2019 conversation][mit-video-2019] and [MIT event page][mit-event-2019] — first-person account and institutional provenance; relevant passages at approximately 00:14:40–00:16:40 and 01:12:52.
+- [Searchable transcript of the March 2019 MIT conversation][mit-transcript-2019] — third-party search aid; exact quotations should be checked against the official recording.
 - [Jim Simons, "A Short Story of My Life and Mathematics" (2022), original video][simons-2022-video] and [searchable transcript][simons-2022-transcript] — first-person description of the assigned work as breaking Russian codes; relevant passage around 00:05:28.
 
 ### NSA surveillance programs
@@ -136,6 +136,7 @@ A useful comparison is to ask what a typical mathematics graduate receives at ea
 
 [sf-2012]: https://www.simonsfoundation.org/2012/09/28/simons-foundation-chair-jim-simons-on-his-career-in-mathematics/
 [sf-2024]: https://www.simonsfoundation.org/2024/05/10/remembering-the-life-and-careers-of-jim-simons/
+[mit-video-2019]: https://www.youtube.com/watch?v=srbQzrtfEvY
 [mit-event-2019]: https://calendar.mit.edu/event/idali_vega
 [mit-transcript-2019]: https://www.bishoprockcap.com/assets/library/jim-simons/March%202019%20S.%20Donald%20Sussman%20Fellowship%20Fireside%20Chat%20with%20Dr.%20James%20Simons%20%E2%80%94%20Chat%202%20%28Finance%2C%20moderated%20by%20Andrew%20Lo%29%20%28.html
 [simons-2022-video]: https://www.youtube.com/watch?v=CTQcLi6SpX8
