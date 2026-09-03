@@ -64,22 +64,25 @@ This supports a different comic mechanism: piety language can absorb contrary ev
 
 It does **not** mention salary, poverty, inadequate communal support, or hunger. It should not be fused with "The Rabbi's Nourishment" to manufacture a story that Ausubel does not actually tell.
 
-## I. L. Peretz, "The Cabalists" — pp. 112–115 in the Bantam abridgment
+## I. L. Peretz, "The Cabalists" — pp. 112–116 in the Bantam abridgment
 
 This is the strongest structural source for the Blackball motif.
 
 The Lashchev yeshiva has declined until only its principal, Reb Yekel, and one student remain. Both are ragged and extremely poor. Ausubel's text says the **impoverished townspeople** have been sending less food to the yeshiva and offering fewer eating days. Other students leave. Reb Yekel and his pupil remain and repeatedly go hungry.
 
-The narration then explicitly turns material deprivation into ascetic practice: because they are already forced to go hungry and lie awake, they use the involuntary "long fasts" and bodily mortification as an opportunity for Kabbalistic study. The story later makes food itself painfully central to the student's spiritual crisis.
+The narration then explicitly turns material deprivation into ascetic practice: because they are already forced to go hungry and lie awake, they use the involuntary "long fasts" and bodily mortification as an opportunity for Kabbalistic study.
+
+The ending intensifies the connection but also makes the causal sequence more complicated. When food finally arrives, the pupil refuses his portion and chooses an additional penitential fast because he had coveted his master's food. After a nocturnal mystical experience he dies. The town admires the manner of his death, while Reb Yekel says that with a few more fasts he might have died by the "Divine Kiss." The story has therefore moved from involuntary hunger caused by poverty into voluntary religious fasting before the death that is admired; those stages should not be collapsed.
 
 This supports:
 
 - a communal support system for a school and its students;
 - that system shrinking when the town itself becomes poor;
 - real hunger caused by inadequate food support;
-- the conversion of involuntary deprivation into religious ascetic practice.
+- the conversion of involuntary deprivation into religious ascetic practice;
+- a later religious valuation of a death following additional voluntary fasting.
 
-It does **not** support blaming affluent townspeople who refuse to pay. The text specifically says the townspeople are impoverished.
+It does **not** support blaming affluent townspeople who refuse to pay. The text specifically says the townspeople are impoverished, and the pupil's final fast is voluntary.
 
 ### Ausubel's provenance for the story
 
@@ -126,7 +129,7 @@ The *Danger Man* scene and the Ausubel/Peretz material meet at a narrow, defensi
 The comparison then divides:
 
 - In "The Rabbi's Nourishment," tiny salary, hunger, and pious fasting form the joke.
-- In Peretz's "The Cabalists," an impoverished town's shrinking food support produces actual hunger, which the master and pupil turn toward ascetic/mystical practice.
+- In Peretz's "The Cabalists," an impoverished town's shrinking food support produces actual hunger; the story then converts that deprivation into ascetic practice and finally into an additional voluntary fast associated with a religiously admired death.
 - In Ausubel's historical/editorial note, supporting scholars is itself meritorious, yet widespread poverty makes the support inadequate.
 - In *Danger Man*, the boy does not deny or spiritualize the teacher's hunger. He tries to feed him materially because the teacher, as the boy says, "feeds my mind."
 
