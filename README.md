@@ -49,6 +49,11 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Economics index](economics/README.md) — evidence and source records for Maddison, Keynes, Painter, Marx and Engels, Engels's working-class analysis, Adam Smith, and related economic history and political economy.
 
+## History and training institutions
+
+- [History index](history/README.md) — inspectable source trails for labor, organization, coercion, technology, and historical institutions.
+- [Apprenticeship](history/apprenticeship/README.md) — applies the same accountability test to apprenticeship that Blackball applies to college and graduate education: actual training, contract enforcement, exit, deferred benefits, exclusion, wages, and outcomes rather than the surface appeal of “earn while you learn.”
+
 ## People dossiers
 
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.

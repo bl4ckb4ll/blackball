@@ -5,6 +5,7 @@ Blackball history material is organized as inspectable source trails rather than
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
+- [Apprenticeship](apprenticeship/README.md) — apprenticeship as an institution to investigate rather than a default alternative to college: craft, pauper, industrial, union/joint, and modern forms; contract enforcement, actual training, exit, deferred benefits, exclusion, and outcomes; JSTOR/peer-reviewed source ledger plus a retrieval queue.
 - [Teachers’ unions](teachers-unions/README.md) — Boston, Chicago, St. Paul, AFT/NEA history, women teachers’ organization, professionalization, administrative centralization, women’s schooling, and a recursively inspected citation graph.
 
 ## Slavery, labor, skill, and coercion
