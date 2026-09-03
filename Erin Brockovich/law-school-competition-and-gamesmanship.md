@@ -12,11 +12,15 @@ Blackball has evidence for the first two. It does not yet have the third. Do not
 
 The contrary account is rarely “this never happens and the trope was invented.” It is usually local and qualified: “not at our school,” “our students collaborate,” or “we are competitive without hiding books.” Those accounts may show meaningful variation among schools, but they also demonstrate that the audience is expected to recognize the underlying pattern.
 
-## User-provided example
+## User correction and screenshot provenance
 
-A September 2026 screenshot supplied to this project showed a discussion of law-school culture in which students warned that classmates may lie about grades or study habits, described historical book-hiding, and recounted a story about a shared digital outline allegedly being altered before a final examination. Preserve this as first-person/community testimony. It contributes to the recurring-pattern evidence even though it does not supply a denominator.
+A September 2026 screenshot supplied in the conversation shows an earlier Blackball answer describing recurring stories about hiding books, withholding outlines, and manipulating study materials. **The screenshot is a record of the assistant’s prior summary and the user’s correction; it is not itself a primary account from law students and must not be cited as evidence that an incident occurred.**
 
-The important feature is not any single anecdote. It is the repetition of the same recognizable forms:
+The user’s correction was that recurrence across many ordinary accounts is already evidence of prevalence in the ordinary-language sense, particularly when the supposedly opposite accounts are usually only “not here” or “not as bad.” The earlier answer had overprotected itself with “we do not know the exact prevalence,” making the missing percentage sound as though the underlying phenomenon were doubtful. This note adopts the corrected distinction above.
+
+## Recurrent forms
+
+Across the source record, the same recognizable forms include:
 
 - hiding or monopolizing scarce study materials;
 - misleading classmates about preparation;
@@ -26,7 +30,7 @@ The important feature is not any single anecdote. It is the repetition of the sa
 - damaging, removing, or deliberately misshelving library material;
 - treating rank on a curve as a reason to disadvantage classmates.
 
-The user’s Arnold Schwarzenegger/Lou Ferrigno analogy captures one form of strategic misrepresentation: publicly claim that one will relax or party while privately continuing to train, so a competitor lowers effort. Whether any particular story is true must still be checked, but the strategy itself is widely legible because rank makes classmates’ performance affect one another.
+The user’s Arnold Schwarzenegger/Lou Ferrigno analogy captures one form of strategic misrepresentation: publicly claim that one will relax or party while privately continuing to train, so a competitor lowers effort. Whether any particular story is true must still be checked, but the strategy is readily understood because rank makes classmates’ performance affect one another.
 
 ## Independent corroboration of prevalence and cultural recognition
 
@@ -40,7 +44,7 @@ Examples to retain:
 - Indiana University’s Maurer School of Law academic rules explicitly prohibit knowingly stealing, destroying, damaging, or hiding library materials and intentionally impeding another student’s academic work.
 - Law-school memoirs and guides repeatedly warn about withholding outlines, misleading peers about preparation, and manipulating access to shared materials.
 
-Formal prohibitions do not prove a high violation rate. But institutions do not independently converge on detailed prohibitions and warnings for a wholly unintelligible behavior. The rules, stories, denials, and advice together establish that competitive obstruction is persistent enough to organize expectations and institutional responses.
+Formal prohibitions do not prove a high violation rate. But institutions do not independently converge on detailed prohibitions and warnings for wholly unintelligible conduct. The rules, stories, denials, and advice together establish that competitive obstruction is persistent enough to organize expectations and institutional responses.
 
 ## What “prevalent” should mean here
 
@@ -56,7 +60,7 @@ A precise future estimate would require a denominator and careful definitions. I
 - conduct witnessed directly versus heard secondhand;
 - isolated actors versus school-wide climate.
 
-The absence of that estimate does not require Blackball to retreat to “maybe one person once hid a book.” The current evidence supports a recurrent cultural and behavioral pattern while leaving its exact rate open.
+The absence of that estimate does not require retreat to “maybe one person once hid a book.” The current evidence supports a recurrent cultural and behavioral pattern while leaving its exact rate open.
 
 ## Granfield
 
@@ -87,7 +91,8 @@ The target is not merely “prove law students are bad people.” It is to measu
 
 - Robert Granfield, *Making Elite Lawyers: Visions of Law at Harvard and Beyond* (1992).
 - Indiana University Maurer School of Law, academic regulations — prohibition on hiding library materials and impeding academic work.
-- Washington & Lee Law admissions interview discussing the absence of book-hiding/ripping-page behavior under its honor system.
+- Washington & Lee Law admissions interview discussing the absence of book-hiding/ripping-page behavior under its honor system: https://www.top-law-schools.com/interview-twitty.html
 - Baylor University / Princeton Review student comments distinguishing ordinary competition from “hiding-books-in-the-library” competition.
 - Kaplan, “How to Overcome Competitiveness in Law School” — useful as evidence of the trope and recurring warning, not as a prevalence survey.
-- User-provided September 2026 law-school discussion screenshot — preserve as community testimony pending source URL recovery.
+- Robert H. Miller, *Law School Confidential* — warnings concerning book hiding, withheld outlines, and competitive mind games; inspect the relevant edition directly.
+- September 2026 conversation screenshot — evidence of the user’s correction to the assistant’s framing only, not evidence of an underlying law-school incident.
