@@ -31,23 +31,36 @@ Prefer:
 
 **upstream primary source > inspected primary author > inspected secondary analysis > discovery metadata**
 
-unless the question is specifically about the secondary author's interpretation.
+unless the question is specifically about the secondary author’s interpretation.
 
 A credential, ranking, institutional label, or professional title carries only the evidentiary weight of the process it actually certifies. Do not silently substitute broad claims about intelligence, competence, employability, judgment, or authority.
+
+Blackball does not impose optimism as an evidentiary requirement. An encouraging possibility is not a usable path until openings, selection, costs, constraints, probability, actual work, and loss-bearing are made concrete. Accuracy forbids both false hope and unsupported hopelessness.
 
 ## Current question surfaces
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
+- [Truth before hope](TRUTH-BEFORE-HOPE.md)
+- [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
+- [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
+
+## Education and occupational pathways
+
+- [Education accountability index](education/README.md) — front-loaded payment, back-loaded uncertainty, sunk-cost lock-in, lies versus incomplete information, actual job conversion, academic self-reproduction, and long-run regret.
+- [Erin Brockovich](Erin%20Brockovich/README.md) — the transition from a youth-facing image of law as justice to law-school competition, debt, recruiting, actual clients, calibrated threats, workplace injury defense, and class access to counsel.
+- [Main Street](Main%20Street/README.md) — ordinary repeatable employment options as the comparison baseline for expensive education, including pay, scheduling, physical cost, experience accumulation, and promotion.
+- [University of Michigan](University%20of%20Michigan/README.md) — institutional outcome claims and a southeast Michigan lead concerning psychology graduates working in retail under a manager with more applicable experience and less credential prestige.
 
 ## Institutional and local case files
 
-- [Hyde Park](Hyde%20Park/README.md) — Venkatesh's Hyde Park/Woodlawn labor boundary; Friedman, Fama, Obama, and Venkatesh inside the same university-centered geography; Yiran Fan and Shaoxiong Zheng killings; "potential," mourning, policing, and institutional response.
+- [Hyde Park](Hyde%20Park/README.md) — Venkatesh’s Hyde Park/Woodlawn labor boundary; Friedman, Fama, Obama, and Venkatesh inside the same university-centered geography; Yiran Fan and Shaoxiong Zheng killings; “potential,” mourning, policing, and institutional response.
 - [University of Chicago](University%20of%20Chicago/README.md) — put globally influential claims about markets, labor, poverty, human capital, law, and public policy beside the local economy and institutional power of Hyde Park and the South Side.
-- [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, including Venkatesh's 1996–1999 Society of Fellows appointment.
+- [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, with a pointer to Bryan Stevenson’s criticism of the separation between law professors’ professed beliefs and conduct.
+- [University of Michigan](University%20of%20Michigan/README.md) — compare broad college-wide outcomes with major-specific occupational conversion and first-person local cases.
 
 ## Economics
 
-- [Economics index](economics/README.md) — evidence and source records for Maddison, Keynes, Painter, Marx and Engels, Engels's working-class analysis, Adam Smith, and related economic history and political economy.
+- [Economics index](economics/README.md) — evidence and source records for Maddison, Keynes, Painter, Marx and Engels, Engels’s working-class analysis, Adam Smith, and related economic history and political economy.
 
 ## History and training institutions
 
@@ -58,18 +71,21 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
-- [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
-- [Sudhir Venkatesh](people/sudhir-venkatesh.md) — Chicago fieldwork, Hyde Park's labor boundary, Harvard Junior Fellowship, "rogue sociologist" branding, and the conversion of access to poor communities into academic and publishing value.
+- [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell’s reminiscences and Cassels’s memoir.
+- [Sudhir Venkatesh](people/sudhir-venkatesh.md) — Chicago fieldwork, Hyde Park’s labor boundary, Harvard Junior Fellowship, “rogue sociologist” branding, and the conversion of access to poor communities into academic and publishing value.
 - [Barack Obama](people/barack-obama.md) — South Side organizing, Hyde Park residence, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
-- [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh's Hyde Park period.
+- [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh’s Hyde Park period.
 - [Milton Friedman](people/milton-friedman.md) — Chicago graduate degree and faculty career, Hyde Park residence, global policy influence, and an earlier generation of the same university-neighborhood geography.
-- [Yiran Fan](people/yiran-fan.md) — Booth/Economics Ph.D. student, institutional "potential" language, posthumous degree, and same-event comparison with other January 2021 victims.
-- [Shaoxiong "Dennis" Zheng](people/shaoxiong-dennis-zheng.md) — UChicago statistics graduate whose 2021 killing triggered major memorial and security responses.
+- [Yiran Fan](people/yiran-fan.md) — Booth/Economics Ph.D. student, institutional “potential” language, posthumous degree, and same-event comparison with other January 2021 victims.
+- [Shaoxiong “Dennis” Zheng](people/shaoxiong-dennis-zheng.md) — UChicago statistics graduate whose 2021 killing triggered major memorial and security responses.
 - [Aisha Johnson](people/aisha-johnson.md) — doorwoman killed in the same January 2021 spree as Fan; kept separate from UChicago affiliation absent evidence.
 - [Anthony Faulkner Jr.](people/anthony-faulkner-jr.md) — 20-year-old killed in the same spree; sparse public biography preserved as a measurement problem rather than filled with assumptions.
 
 ## Source dossiers
 
+- [Bryan Stevenson — *Just Mercy*](sources/bryan-stevenson/just-mercy/README.md) — the disconnect between professed beliefs and conduct as a central institutional accountability test.
+- [Anh Do — *The Happiest Refugee*](sources/anh-do/the-happiest-refugee/README.md) — garment-work poverty, the doctor-or-lawyer funnel, law as the money route, competitive legal education, and an exceptional exit.
+- [Estreicher and Radice — *Beyond Elite Law*](sources/estreicher-radice/beyond-elite-law/README.md) — elite legal production beside ordinary unmet civil legal needs.
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
 - [Earl Shorris — *A Nation of Salesmen*](llm/earl-shorris-a-nation-of-salesmen/README.md) — argument map, review synthesis, legitimate-access boundary, archival leads, and a dated used-book price snapshot.
 - [Earl Shorris — the Clemente Course in the Humanities](llm/earl-shorris-clemente-course/README.md) — first-course origin, recruitment, original faculty and curriculum, logistics, outcome-count disagreements, later institutionalization, and provenance.
