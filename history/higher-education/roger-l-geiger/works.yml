@@ -1,0 +1,228 @@
+schema_version: 1
+person:
+  name: Roger L. Geiger
+  role_in_blackball: primary_historiographic_anchor
+  evidence_class: secondary_scholarship
+  official_publications_url: https://sites.psu.edu/rogerlgeiger/publications/
+
+status_terms:
+  metadata_checked: bibliographic data checked against an author, publisher, journal, or library record
+  full_text_not_inspected: no page-level Blackball note exists
+  official_full_text_route: an author or publisher supplies a readable or downloadable copy
+  unresolved: a material bibliographic or textual question remains
+
+works:
+  - id: private-sectors-1986
+    type: book
+    title: "Private Sectors in Higher Education: Structure, Function, and Change in Eight Countries"
+    authors: [Roger L. Geiger]
+    publisher: University of Michigan Press
+    year: 1986
+    isbn: ["9780472063680"]
+    themes: [private_higher_education, comparative_systems, public_private_division, finance]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://openlibrary.org/works/OL1835637W/Private_sectors_in_higher_education
+
+  - id: to-advance-knowledge-1986
+    type: book
+    title: "To Advance Knowledge: The Growth of American Research Universities, 1900-1940"
+    authors: [Roger L. Geiger]
+    publisher: Oxford University Press
+    year: 1986
+    later_publishers: [Transaction Publishers, Routledge]
+    pages: 325
+    themes: [research_universities, foundations, philanthropy, faculty, science, finance]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://www.routledge.com/To-Advance-Knowledge-The-Growth-of-American-Research-Universities-1900-1940/Geiger/p/book/9780765804624
+
+  - id: research-relevant-knowledge-1993
+    type: book
+    title: "Research and Relevant Knowledge: American Research Universities Since World War II"
+    authors: [Roger L. Geiger]
+    publisher: Oxford University Press
+    year: 1993
+    later_publishers: [Transaction Publishers, Routledge]
+    pages: 411
+    themes: [research_universities, federal_research, mission_agencies, postwar_growth, student_rebellion]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://www.routledge.com/Research-and-Relevant-Knowledge-American-Research-Universities-Since-World-War-II/Geiger/p/book/9780765805690
+
+  - id: knowledge-and-money-2004
+    type: book
+    title: "Knowledge and Money: Research Universities and the Paradox of the Marketplace"
+    authors: [Roger L. Geiger]
+    publisher: Stanford University Press
+    year: 2004
+    pages: 336
+    isbn: ["9780804749251", "9780804749268"]
+    themes: [research_universities, markets, finance, undergraduate_education, basic_research, economic_development]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://www.sup.org/books/education/knowledge-and-money
+
+  - id: tapping-riches-science-2009
+    type: book
+    title: "Tapping the Riches of Science: Universities and the Promise of Economic Growth"
+    authors: [Roger L. Geiger, Creso M. Sá]
+    publisher: Harvard University Press
+    year: 2009
+    year_note: "Some records use 2008; cite the inspected edition."
+    pages: 262
+    isbn: ["9780674031289"]
+    doi: 10.4159/9780674273764
+    themes: [technology_transfer, patents, university_industry, regional_development, innovation]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://www.degruyter.com/document/doi/10.4159/9780674273764/html
+
+  - id: history-american-higher-education-2014
+    type: book
+    title: "The History of American Higher Education: Learning and Culture from the Founding to World War II"
+    authors: [Roger L. Geiger]
+    publisher: Princeton University Press
+    year: 2014
+    year_note: "Publisher and catalog records variously use 2014 or 2015; paperback appeared in 2016."
+    pages: 584
+    isbn: ["9780691149394", "9780691173061"]
+    themes: [national_history, colonial_colleges, land_grants, universities, students, knowledge, careers, culture]
+    status: [metadata_checked, full_text_not_inspected]
+    priority: 1
+    url: https://press.princeton.edu/books/hardcover/9780691149394/the-history-of-american-higher-education
+    retrieval_targets:
+      - "chapter 8: The Creation of American Universities"
+      - Johns Hopkins
+      - Daniel Coit Gilman
+      - students
+      - undergraduates
+      - faculty
+      - afterthought
+
+  - id: american-higher-education-since-wwii-2019
+    type: book
+    title: "American Higher Education Since World War II: A History"
+    authors: [Roger L. Geiger]
+    publisher: Princeton University Press
+    year: 2019
+    pages: 400
+    themes: [national_history, gi_bill, mass_higher_education, desegregation, coeducation, research, stratification, costs]
+    status: [metadata_checked, full_text_not_inspected]
+    priority: 2
+    url: https://press.princeton.edu/books/hardcover/9780691179728/american-higher-education-since-world-war-ii
+
+  - id: after-the-emergence-1985
+    type: journal_article
+    title: "After the Emergence: Voluntary Support and the Building of American Research Universities"
+    authors: [Roger L. Geiger]
+    container: History of Education Quarterly
+    year: 1985
+    volume: 25
+    issue: 3
+    pages: "369-381"
+    doi: 10.2307/368274
+    themes: [philanthropy, research_universities, Johns_Hopkins, institutional_resources]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://doi.org/10.2307/368274
+
+  - id: ten-generations-2023
+    type: book_chapter
+    title: "The Ten Generations of American Higher Education"
+    authors: [Roger L. Geiger]
+    container: "American Higher Education in the Twenty-First Century: Social, Political, and Economic Challenges"
+    edition: 5
+    publisher: Johns Hopkins University Press
+    year: 2023
+    pages: "3-36"
+    themes: [national_history, periodization]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://www.press.jhu.edu/books/title/12691/american-higher-education-twenty-first-century
+
+  - id: brain-of-society-2024
+    type: journal_article
+    title: "The Brain of Society: Knowledge and American Higher Education Since 1945"
+    authors: [Roger L. Geiger]
+    container: Annali di Storia delle Università italiane
+    year: 2024
+    issue: 2
+    pages: "7-28"
+    themes: [knowledge, postwar_higher_education, research_universities]
+    status: [metadata_checked, official_full_text_route, full_text_not_inspected]
+    url: https://sites.psu.edu/rogerlgeiger/publications/
+
+  - id: merit-exists-2024
+    type: journal_article
+    title: "Merit Exists, and So Does Inequality"
+    authors: [Roger L. Geiger]
+    container: Academic Questions
+    year: 2024
+    volume: 37
+    issue: 3
+    pages: "81-89"
+    themes: [merit, inequality, stratification]
+    status: [metadata_checked, official_full_text_route, full_text_not_inspected]
+    url: https://sites.psu.edu/rogerlgeiger/publications/
+
+  - id: policy-dialogue-2024
+    type: journal_article
+    title: "Policy Dialogue: Higher Education in the US and Abroad: Historical and Contemporary Perspectives"
+    authors: [Philip G. Altbach, Roger L. Geiger]
+    container: History of Education Quarterly
+    year: 2024
+    volume: 64
+    pages: "538-549"
+    themes: [comparative_higher_education, policy, history]
+    status: [metadata_checked, official_full_text_route, full_text_not_inspected]
+    url: https://sites.psu.edu/rogerlgeiger/publications/
+
+  - id: modern-public-research-university-2024
+    type: article
+    title: "Becoming a Modern Public Research University: The Postwar Challenges of Penn State and Rutgers, 1945-1965"
+    authors: [Roger L. Geiger]
+    container: Mansion Notes
+    year: 2024
+    volume: 46
+    issue: 2
+    pages: "1, 11-14"
+    themes: [Penn_State, Rutgers, public_research_universities, postwar_growth]
+    status: [metadata_checked, official_full_text_route, full_text_not_inspected]
+    url: https://sites.psu.edu/rogerlgeiger/publications/
+
+  - id: exchange-of-ideas-review-2025
+    type: book_review
+    title: "Exchange of Ideas: The Economy of Higher Education in Early America"
+    authors: [Roger L. Geiger]
+    container: Journal of American History
+    year: 2025
+    volume: 112
+    issue: 1
+    pages: "142-143"
+    doi: 10.1093/jahist/jaaf018
+    themes: [colonial_higher_education, finance, public_aid]
+    status: [metadata_checked, full_text_not_inspected]
+    url: https://doi.org/10.1093/jahist/jaaf018
+
+  - id: university-of-admin-2025
+    type: book_review
+    title: "University of Admin"
+    authors: [Roger L. Geiger]
+    container: Academic Questions
+    year: 2025
+    volume: 38
+    issue: 3
+    doi: 10.51845/38.3.20
+    themes: [administration, assessment, public_universities, governance]
+    status: [metadata_checked, official_full_text_route]
+    url: https://www.nas.org/academic-questions/38/3/university-of-admin
+
+  - id: philosophy-nineteenth-century-unresolved
+    type: article
+    title: "Philosophy in 19th Century American Colleges and Universities"
+    authors: [Roger L. Geiger]
+    year: 2025
+    year_note: "Official author page listed it as forthcoming in 2025; final venue not located in the September 2026 sweep."
+    themes: [philosophy, curriculum, nineteenth_century]
+    status: [unresolved]
+    url: https://sites.psu.edu/rogerlgeiger/publications/
+
+open_questions:
+  - "Locate the exact Geiger passage behind the remembered Johns Hopkins 'students were an afterthought' paraphrase."
+  - "Inspect the archived curriculum vitae and reconcile the reported count of eight single-authored books."
+  - "Inventory every volume edited in History of Higher Education Annual / Perspectives on the History of Higher Education."
+  - "Locate the final publication record for Philosophy in 19th Century American Colleges and Universities."
