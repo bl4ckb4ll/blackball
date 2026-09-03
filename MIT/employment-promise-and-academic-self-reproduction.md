@@ -67,9 +67,11 @@ A user-supplied screenshot shows that on **18 March 2012**, during his PhD years
 
 > “Support the Student Loan Forgiveness Act of 2012”
 
-This directly documents public support for student-loan forgiveness during the graduate-school period. It does not by itself identify which institution generated each loan or prove a literal statement of surprise. In the context of the user’s recollection, however, it corroborates the substantive episode: debt had become salient enough during the long academic route that Curry publicly advocated forgiveness.
+This directly documents public support for student-loan forgiveness during the graduate-school period. It does not by itself identify which institution generated each loan or prove a literal statement of surprise. In the context of the user’s recollection, however, it corroborates the substantive episode: debt and forgiveness had become publicly salient during the long academic route.
 
-Preserve the screenshot as a primary-source image and distinguish it from later interpretation.
+A second screenshot shows the same X search query returning the post under **Top** while **Latest** reported no results. That is also a useful retrieval warning: failure to find an old post through one ranking mode does not establish that it does not exist.
+
+See the [source record, transcript, image metadata, and hashes](../sources/justin-curry/student-loan-forgiveness-2012/README.md). The binary screenshots have not yet been committed through the text-only repository action; the source record preserves checksums for a later exact upload.
 
 ## Debt: enforceable downside, unenforceable upside
 
