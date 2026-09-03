@@ -8,6 +8,10 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 - [Minnesota Implement — small fabrication shop versus public economic reports, 2026](field-reports/minnesota-implement-2026/README.md) — a West Concord, Minnesota small-business account matched against six months of steel, freight, farm-equipment, weather, regional-manufacturing, and national economic data to study how an individual firm's experience can diverge from aggregate reports.
 
+## Entrepreneurship and household enterprise
+
+- [Entrepreneurship](entrepreneurship/README.md) — treats household livelihood businesses, owner-operator firms, family enterprises, franchises, growth firms, and venture-backed startups as distinct institutions; measures capital, labor, household return, asset accumulation, autonomy, failure, succession, family/community networks, and the null alternative rather than treating "start a business" as a generic answer to college or wage employment.
+
 ## Historical macroeconomics
 
 - [Angus Maddison — historical statistics on world GDP](angus-maddison-world-gdp.md) — benchmark world-GDP estimates from *The World Economy: Historical Statistics* (2003), the final original Maddison database, and the later Maddison Project continuation.
