@@ -21,7 +21,7 @@ works:
     isbn: ["9780472063680"]
     themes: [private_higher_education, comparative_systems, public_private_division, finance]
     status: [metadata_checked, full_text_not_inspected]
-    url: https://openlibrary.org/works/OL1835637W/Private_sectors_in_higher_education
+    url: https://openlibrary.org/books/OL2542805M/Private_sectors_in_higher_education
 
   - id: to-advance-knowledge-1986
     type: book
