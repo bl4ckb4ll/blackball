@@ -28,7 +28,7 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 ## Political economy and labor
 
-- [Marx and Engels — the “second page” of *The Communist Manifesto*](marx-engels-second-page-of-the-communist-manifesto.md) — the Part I passage cataloguing bourgeois society's historically revolutionary achievements in production, markets, labor, poverty, human capital, law, and public policy.
+- [Marx and Engels — the “second page” of *The Communist Manifesto*](marx-engels-second-page-of-the-communist-manifesto.md) — the Part I passage cataloguing bourgeois society's historically revolutionary achievements in production, markets, technical change, urbanization, communication, and political centralization.
 - [Friedrich Engels — *The Condition of the Working Class in England* and the American working-class question](engels-condition-of-the-working-class-england-and-america.md) — wage dependence, competition, crises, urban conditions, labor organization, and the 1887 American-edition discussion.
 
 ## Race, labor, and class
