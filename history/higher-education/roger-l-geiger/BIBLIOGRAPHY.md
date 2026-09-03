@@ -20,9 +20,8 @@ This is a seed ledger, not yet a claim of complete bibliography. Geiger's archiv
 - Print ISBN: 9780472063680
 - Scope: comparative public/private divisions in higher education, including seven non-U.S. country cases and the United States.
 - Status: metadata checked; full text not inspected; citation spider pending.
-- Access records:
-  - https://openlibrary.org/works/OL1835637W/Private_sectors_in_higher_education
-  - https://www.fulcrum.org/concern/monographs/3r074x72h
+- Access record:
+  - https://openlibrary.org/books/OL2542805M/Private_sectors_in_higher_education
 
 ### *To Advance Knowledge: The Growth of American Research Universities, 1900–1940*
 
@@ -34,7 +33,7 @@ This is a seed ledger, not yet a claim of complete bibliography. Geiger's archiv
 - Scope: sixteen research-active universities; foundations, finance, faculty, collegiate life, social science, natural science, and the institutional growth that made sustained research possible.
 - Status: metadata checked; full text not inspected; citation spider pending.
 - Access records:
-  - https://wellcomecollection.org/works/p7axjwep
+  - https://wellcomecollection.org/works/uwqvv5mm
   - https://www.routledge.com/To-Advance-Knowledge-The-Growth-of-American-Research-Universities-1900-1940/Geiger/p/book/9780765804624
 
 ### *Research and Relevant Knowledge: American Research Universities Since World War II*
@@ -47,7 +46,7 @@ This is a seed ledger, not yet a claim of complete bibliography. Geiger's archiv
 - Scope: federal mission research, the postwar expansion of university science, institutional case studies, student rebellion, and the position of the research university after the long postwar expansion.
 - Status: metadata checked; full text not inspected; citation spider pending.
 - Access records:
-  - https://openlibrary.org/works/OL1835645W/Research_and_relevant_knowledge
+  - https://openlibrary.org/books/OL1719283M/Research_and_relevant_knowledge
   - https://www.routledge.com/Research-and-Relevant-Knowledge-American-Research-Universities-Since-World-War-II/Geiger/p/book/9780765805690
 
 ### *Knowledge and Money: Research Universities and the Paradox of the Marketplace*
@@ -75,6 +74,7 @@ This is a seed ledger, not yet a claim of complete bibliography. Geiger's archiv
 - Johns Hopkins is expected in chapter 8, “The Creation of American Universities.”
 - Access records:
   - https://press.princeton.edu/books/hardcover/9780691149394/the-history-of-american-higher-education
+  - https://www.jstor.org/stable/j.ctt7ztpf4
   - https://openlibrary.org/works/OL19992429W/The_history_of_American_higher_education
 
 ### *American Higher Education Since World War II: A History*
@@ -87,7 +87,7 @@ This is a seed ledger, not yet a claim of complete bibliography. Geiger's archiv
 - Status: metadata checked; full text not inspected; second acquisition priority; citation spider pending.
 - Access records:
   - https://press.princeton.edu/books/hardcover/9780691179728/american-higher-education-since-world-war-ii
-  - https://openlibrary.org/works/OL20647679W/American_higher_education_since_World_War_II
+  - https://www.jstor.org/stable/j.ctv9hvtbz
 
 ## Coauthored monograph
 
