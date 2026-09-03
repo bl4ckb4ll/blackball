@@ -52,11 +52,19 @@ Possible comparison set:
 
 The point is not romanticization. The master in this episode is close to starvation. A system can revere learning rhetorically while failing to feed the person doing the teaching. That is itself part of the labor question.
 
-## Related Blackball motif: honored because underfed
+## Related Blackball motif: “honored because underfed” — source check
 
-Cross-link this with the Nathan Ausubel / Jewish folklore material about rabbis whose poverty or hunger can be redescribed as holiness or fasting. The recurring question is whether honor-language disguises material neglect: the community says the intellectual or religious worker is exalted while not actually supporting him.
+See [Nathan Ausubel — Jewish folklore, material support, hunger, and learning](../people/nathan-ausubel.md) for the source dossier. **“Honored because underfed” is Blackball’s interpretive label, not Ausubel’s wording, and the individual stories should not be fused into a composite story.**
 
-The *Danger Man* scene supplies the other side of the relation. The boy does not deny the material problem. He feeds the teacher because, in his formulation, the teacher feeds him intellectually.
+The closest Ausubel joke is “The Rabbi’s Nourishment.” A village Jew is challenged about the rabbi’s very small salary; the answer says the rabbi would otherwise have died of hunger, but his pious Monday-and-Thursday fasts are what “sustain” him. This supports a narrow claim: inadequate pay, hunger, and religious fasting are put into comic tension. It does not say the community honors the rabbi *because* it underfeeds him.
+
+A stronger structural parallel is “The Cabalists,” which Ausubel credits to I. L. Peretz. The principal of a yeshiva and his remaining pupil go hungry after the **impoverished townspeople** reduce the food and eating days supplied to the school. The story then turns their involuntary hunger into long fasts and bodily mortification that can be used for Kabbalistic study. The causal detail matters: the town itself is poor; this is not evidence of affluent patrons deliberately refusing support.
+
+Ausubel’s own signed note on yeshiva students makes the broader point more carefully. He says support of poor scholarly youths was considered meritorious, yet widespread poverty could make that support inadequate; students on *essen teg* sometimes received only leftovers and remained hungry. He also contrasts the prospect of a respected rabbinate with the poverty of the melamed’s calling. That supports a tension between social/religious valuation of learning and precarious subsistence, not a universal claim that honor-language is a deliberate disguise for neglect.
+
+“The Modest Saint” is adjacent but distinct: a disciple treats his rabbi’s observed eating as proof of saintly modesty about fasting. It contains no poverty, salary, or communal-support claim.
+
+The *Danger Man* scene supplies a different side of the relation. The boy does not deny or spiritualize the material problem. He feeds the teacher because, in his formulation, the teacher feeds him intellectually. The defensible cross-link is therefore **valued learning, precarious subsistence, and the ways religious language can coexist with or reinterpret material hunger**.
 
 ## Geographic / cultural note
 
