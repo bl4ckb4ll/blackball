@@ -14,6 +14,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Edward Baptist — cotton productivity, coercion, and technology-as-progress](slavery/edward-baptist-cotton-productivity.md) — the fourfold rise in cotton picked per enslaved worker per day; Baptist's quota/ledger/"calibrated torture" argument; the Olmstead-Rhode seed-innovation critique; the 2026 Beckert-Stelzner reassessment; and the comparison with Manchester mill productivity.
 - [James C. Cobb — *The Most Southern Place on Earth*, engineering education, absentee ownership, and enslaved labor](slavery/james-c-cobb-most-southern-place-engineering-education.md) — source seed for an early-Delta anecdote connecting an elite technical/Princeton credential, Louisville absentee ownership, disease exposure, and enslaved plantation labor; preserves the remembered details as a verification target and flags that Princeton did not begin civil-engineering instruction until 1875.
 
+## Reconstruction
+
+- [Eric Foner — *Reconstruction: America's Unfinished Revolution, 1863–1877*](reconstruction/eric-foner-reconstruction-americas-unfinished-revolution.md) — source node for Foner's 1988 Reconstruction synthesis, with institutional bibliographic confirmation, a directly inspectable chapter map, and explicit boundaries around material not yet inspected from the book itself.
+
 ## Technology and progress
 
 - [Technology and progress](technology-and-progress/README.md) — cases for separating mechanical and biological innovation from organization, labor intensification, coercion, and worker welfare. Starts with the Edward Baptist cotton-productivity case, where measured output per worker rose at roughly the pace of Manchester mill productivity even though cotton picking remained manual.
