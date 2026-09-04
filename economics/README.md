@@ -26,6 +26,8 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 - [Marx and Engels — the “second page” of *The Communist Manifesto*](marx-engels-second-page-of-the-communist-manifesto.md) — the Part I passage cataloguing bourgeois society's historically revolutionary achievements in production, markets, technical change, urbanization, communication, and political centralization.
 - [Friedrich Engels — *The Condition of the Working Class in England* and the American working-class question](engels-condition-of-the-working-class-england-and-america.md) — wage dependence, competition, crises, urban conditions, labor organization, and the 1887 American-edition discussion.
+- [Robert Frost — “Two Tramps in Mud Time” (1934)](robert-frost-two-tramps-in-mud-time-1934.md) — chosen manual work versus work needed for income; ownership, control, skill, outside options, and the class difference between vocation and avocation.
+- [Robert Frost — “The Death of the Hired Man” (1914)](robert-frost-death-of-the-hired-man-1914.md) — aging and seasonal wage labor, bargaining power, dignity, employer obligation, and practical competence versus formal education.
 
 ## Race, labor, and class
 
