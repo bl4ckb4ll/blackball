@@ -22,6 +22,20 @@ Emily Hale donated Eliot's letters to her to Princeton University Library in 195
 
 This is more precise than saying that the Eliot estate simply "published his private papers fifty years after he died." Hale preserved and donated Eliot's letters to Princeton. After the archive opened, the Estate of T. S. Eliot later made a free searchable digital edition of the surviving correspondence available on the official Eliot site. Princeton's current access guidance says that by January 2023 the estate had released transcriptions of the letters.
 
+## Philosophy and the academic career he rejected
+
+Eliot's 1960 statement also contains unusually direct evidence about how he regarded the academic path for which he had trained.
+
+He says that he spent three years in the Harvard Graduate School, at his father's expense, preparing for a doctorate in philosophy and the expected next step of finding a college or university post. He then says that his heart was not in the subject and that he had no confidence that he would distinguish himself in the profession.
+
+Later in the same statement, when contrasting the life he actually led with the life he imagined he would have led had he married Hale and remained on the academic track, he calls the alternative **"the dull misery of the mediocre teacher of philosophy."**
+
+That sentence should not be generalized into "Eliot proved that philosophy is worthless." It is narrower and more useful than that. Eliot himself had received elite graduate training for an academic profession, yet retrospectively described the expected professional outcome as one in which he believed he would have been mediocre and miserable.
+
+For Blackball this is relevant to the prestige problem independently of whether one agrees with Eliot's judgment of himself. Admission to elite graduate study, years spent preparing for a doctorate, and the social status of a university career did not make that path valuable to him. The source is particularly useful because the rejection comes from the canonical figure himself rather than from a later critic attacking academic life from outside.
+
+It also sits awkwardly beside classroom canonization of Eliot. Institutions can present Eliot as an intellectual authority while omitting the fact that Eliot himself regarded the prestigious academic career for which Harvard had trained him as an undesirable life in which he expected mediocrity.
+
 ## Eliot's attempt to control the posthumous record
 
 After learning that Hale had deposited his letters at Princeton, Eliot wrote a statement on November 25, 1960, with directions to his executors that it be made public when Hale's collection became public. He slightly revised the statement in 1963. The original was held at Harvard's Houghton Library; the official T. S. Eliot site published the statement when the Hale papers opened in 2020.
