@@ -37,7 +37,7 @@ A credential, ranking, institutional label, or professional title carries only t
 
 ## Audits
 
-- [September 1–7, 2026 conversation-to-repository forensic audit](audits/2026-09-01--07-conversation-repository/README.md) — a lower-bound ledger of 48 recoverable Blackball discussion items, graded by substantive quality and default-branch/PR/branch state without filling the identified research gaps.
+- [September 1–7, 2026 conversation-to-repository forensic audit](audits/2026-09-01--07-conversation-repository/README.md) — all 131 project conversations visible at the Sep 7 20:22 UTC snapshot plus recovered outside-snapshot history mapped to a 109-item substantive ledger, graded by research quality and default-branch/PR/branch state without filling the identified gaps.
 
 ## Current question surfaces
 
