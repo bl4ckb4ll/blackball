@@ -63,6 +63,7 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Barack Obama](people/barack-obama.md) — South Side organizing, Hyde Park residence, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
 - [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh's Hyde Park period.
 - [Milton Friedman](people/milton-friedman.md) — Chicago graduate degree and faculty career, Hyde Park residence, global policy influence, and an earlier generation of the same university-neighborhood geography.
+- [T. S. Eliot](people/t-s-eliot.md) — Emily Hale archive, Eliot's 1960 posthumous counter-statement, destruction of Hale's letters, and the distinction between literary value and personal/canonical authority.
 - [Yiran Fan](people/yiran-fan.md) — Booth/Economics Ph.D. student, institutional "potential" language, posthumous degree, and same-event comparison with other January 2021 victims.
 - [Shaoxiong "Dennis" Zheng](people/shaoxiong-dennis-zheng.md) — UChicago statistics graduate whose 2021 killing triggered major memorial and security responses.
 - [Aisha Johnson](people/aisha-johnson.md) — doorwoman killed in the same January 2021 spree as Fan; kept separate from UChicago affiliation absent evidence.
