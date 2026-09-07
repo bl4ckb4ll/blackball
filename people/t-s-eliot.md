@@ -22,20 +22,6 @@ Emily Hale donated Eliot's letters to her to Princeton University Library in 195
 
 This is more precise than saying that the Eliot estate simply "published his private papers fifty years after he died." Hale preserved and donated Eliot's letters to Princeton. After the archive opened, the Estate of T. S. Eliot later made a free searchable digital edition of the surviving correspondence available on the official Eliot site. Princeton's current access guidance says that by January 2023 the estate had released transcriptions of the letters.
 
-## Philosophy and the academic career he rejected
-
-Eliot's 1960 statement also contains unusually direct evidence about how he regarded the academic path for which he had trained.
-
-He says that he spent three years in the Harvard Graduate School, at his father's expense, preparing for a doctorate in philosophy and the expected next step of finding a college or university post. He then says that his heart was not in the subject and that he had no confidence that he would distinguish himself in the profession.
-
-Later in the same statement, when contrasting the life he actually led with the life he imagined he would have led had he married Hale and remained on the academic track, he calls the alternative **"the dull misery of the mediocre teacher of philosophy."**
-
-That sentence should not be generalized into "Eliot proved that philosophy is worthless." It is narrower and more useful than that. Eliot himself had received elite graduate training for an academic profession, yet retrospectively described the expected professional outcome as one in which he believed he would have been mediocre and miserable.
-
-For Blackball this is relevant to the prestige problem independently of whether one agrees with Eliot's judgment of himself. Admission to elite graduate study, years spent preparing for a doctorate, and the social status of a university career did not make that path valuable to him. The source is particularly useful because the rejection comes from the canonical figure himself rather than from a later critic attacking academic life from outside.
-
-It also sits awkwardly beside classroom canonization of Eliot. Institutions can present Eliot as an intellectual authority while omitting the fact that Eliot himself regarded the prestigious academic career for which Harvard had trained him as an undesirable life in which he expected mediocrity.
-
 ## Eliot's attempt to control the posthumous record
 
 After learning that Hale had deposited his letters at Princeton, Eliot wrote a statement on November 25, 1960, with directions to his executors that it be made public when Hale's collection became public. He slightly revised the statement in 1963. The original was held at Harvard's Houghton Library; the official T. S. Eliot site published the statement when the Hale papers opened in 2020.
@@ -62,6 +48,23 @@ The surviving correspondence makes the 1960 statement difficult to treat as a ne
 The official Eliot–Hale digital edition itself describes the early correspondence as an intensive courtship. Its introduction says that Eliot promptly declared his love for Hale in 1930–31 and repeatedly represented that love as extending back to their youth. Princeton scholars reading the newly opened archive likewise emphasized that the letters document strong declarations of love and Hale's importance to Eliot over many years.
 
 That does not prove that Eliot's feelings never changed. It does provide direct evidence against reading his later dismissive account as though it were the only or obviously definitive description of the relationship.
+
+## The didactic register toward Hale
+
+Another feature worth preserving is the recurring way Eliot addresses Hale as someone to be instructed, corrected, diagnosed, or managed. Hale was herself an adult professional teacher, lecturer, actor, and theatre director. The relevant contrast is therefore not simply educated man versus inexperienced girl.
+
+Examples from the surviving letters include:
+
+- On March 24, 1931, after Hale described an emotionally intimate experience involving a former female pupil, Eliot pronounces it **"perfectly good, normal and right for both you and the girl"** and then generalizes about what such experiences mean. Rather than only listening to Hale's account, he assumes the position of explaining the experience back to her.
+- On August 11, 1932, after having difficulty finding her Seattle address, he tells her, **"You really are careless about addresses sometimes"**, and instructs her to print each new address in block letters. The register is strikingly close to a teacher correcting a pupil's work.
+- On October 6, 1932, he prescribes a short period of devotional reading at night and then questions Hale about whether she sleeps properly, the climate, outdoor activity, and food. Concern is clearly part of the letter, but so is a repeated assumption that he may specify the proper regimen.
+- On October 26, 1936, he tells Hale what she **"ought to be engrossed in"** with her new pupils and says that a more personal and theological letter will come later. Again, he frames her immediate priorities for her rather than merely asking how she sees them.
+
+No one of these sentences, by itself, establishes a moral verdict. Affection, anxiety, ordinary advice between intimates, and the conventions of the period are relevant context. The pattern is more interesting than any isolated line: Eliot repeatedly evaluates Hale's choices, tells her what she ought to do, interprets her experiences, and shifts into a teacher-like explanatory voice.
+
+That is the evidence behind describing parts of the correspondence as paternalistic or patronizing. Those words are interpretations, not archive metadata, and Blackball should keep the underlying letters next to the interpretation so a reader can reject or refine it.
+
+A remembered passage in which Eliot appears to tell Hale that she should have listened to him about philosophy or a related subject has **not yet been securely located** in the digital edition. It should not be quoted from memory. Locating that exact passage remains a primary-source research task.
 
 ## Hale's own account
 
@@ -94,7 +97,7 @@ Those judgments can disagree with one another. The point is to preserve the evid
 
 ### Interpretive claim
 
-Calling Eliot cruel, self-serving, cowardly, or an "asshole" is a moral judgment, not an archival fact. The archive supplies unusually strong evidence on which such a judgment can be argued: the contrast between his contemporaneous declarations and later repudiation; his disparagement of Hale; the destruction of her letters; and his deliberate attempt to pre-position a response for future readers.
+Calling Eliot cruel, self-serving, cowardly, paternalistic, patronizing, or an "asshole" is a moral or interpretive judgment, not an archival fact. The archive supplies unusually strong evidence on which such judgments can be argued: the contrast between his contemporaneous declarations and later repudiation; his disparagement of Hale; the destruction of her letters; his deliberate attempt to pre-position a response for future readers; and the recurring teacher-like register in which he corrects, prescribes, and explains Hale's own affairs to her.
 
 Blackball should preserve those facts and the conflict among the sources rather than laundering the judgment into neutral-sounding biography or, in the other direction, pretending the judgment is itself a primary-source fact.
 
@@ -106,12 +109,17 @@ Blackball should preserve those facts and the conflict among the sources rather 
 - T. S. Eliot, "Statement by T. S. Eliot on the opening of the Emily Hale letters at Princeton," official T. S. Eliot site, January 2, 2020: https://tseliot.com/foundation/statement-by-t-s-eliot-on-the-opening-of-the-emily-hale-letters-at-princeton/
 - The Estate of T. S. Eliot, *The Letters of T. S. Eliot to Emily Hale*, free digital edition: https://tseliot.com/the-eliot-hale-letters
 - Digital edition introduction and archival history: https://tseliot.com/the-eliot-hale-letters/introduction
+- Eliot to Hale, March 24, 1931: https://tseliot.com/the-eliot-hale-letters/letters/l27
+- Eliot to Hale, August 11, 1932: https://tseliot.com/the-eliot-hale-letters/letters/l162
+- Eliot to Hale, October 6, 1932: https://tseliot.com/the-eliot-hale-letters/letters/l175
+- Eliot to Hale, October 26, 1936: https://tseliot.com/the-eliot-hale-letters/letters/l517
 - Princeton University Library, access guidance for the Emily Hale letters: https://faq.library.princeton.edu/special-collections/faq/382291
 
 ## Research leads
 
+- Locate the exact remembered passage in which Eliot appears to tell Hale she should have listened to him about philosophy or a related subject; do not substitute a thematically similar passage.
 - Inspect representative letters across 1930–1947 rather than relying only on summaries of the archive.
 - Build a dated comparison table: contemporaneous statements to Hale versus claims in Eliot's 1960 retrospective statement.
 - Trace which Eliot poems and passages he himself associated with Hale in the correspondence.
-- Record how major high-school and college anthologies present Eliot biographically, including whether the Hale archive and the destruction of Hale's letters are mentioned.
+- Record how major high-school and college anthologies present Eliot biographically, including whether the Hale archive, destruction of Hale's letters, and the teacher-like register toward Hale are mentioned.
 - Keep aesthetic evaluation of the poems separate from, but adjacent to, evidence about Eliot's conduct and institutional canonization.
