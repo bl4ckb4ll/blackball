@@ -65,7 +65,7 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Charles Darwin](people/charles-darwin.md) — father-directed medicine then clergy, university natural-history exposure, and Darwin's explicit statement that expected inherited property reduced his effort to learn medicine.
 - [Edwin Hubble](people/edwin-hubble.md) — paternal expectation of law, Rhodes-supported Oxford legal study, brief legal practice, and deliberate return to astronomy, with family-finance questions left open.
 - [Sudhir Venkatesh](people/sudhir-venkatesh.md) — Chicago fieldwork, Hyde Park's labor boundary, Harvard Junior Fellowship, "rogue sociologist" branding, and the conversion of access to poor communities into academic and publishing value.
-- [Barack Obama](people/barack-obama.md) — South Side organizing, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
+- [Barack Obama](people/barack-obama.md) — South Side organizing, Hyde Park residence, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
 - [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh's Hyde Park period.
 - [Milton Friedman](people/milton-friedman.md) — Chicago graduate degree and faculty career, Hyde Park residence, global policy influence, and an earlier generation of the same university-neighborhood geography.
 - [Yiran Fan](people/yiran-fan.md) — Booth/Economics Ph.D. student, institutional "potential" language, posthumous degree, and same-event comparison with other January 2021 victims.
