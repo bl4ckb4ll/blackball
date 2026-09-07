@@ -38,6 +38,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Current question surfaces
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
+- [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
 
 ## Institutional and local case files
 
@@ -59,6 +60,10 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Tycho Brahe](people/tycho-brahe.md) — noble family and foster-uncle plan for statesmanship/jurisprudence, secret Leipzig astronomy, Tycho's rejection of inherited lineage as personal achievement, and the material-resource qualification.
+- [Galileo Galilei](people/galileo-galilei.md) — father-directed medical training at Pisa, mathematical exposure and Ricci's intervention, departure without a medical degree, and the unresolved economics of the switch.
+- [Charles Darwin](people/charles-darwin.md) — father-directed medicine then clergy, university natural-history exposure, and Darwin's explicit statement that expected inherited property reduced his effort to learn medicine.
+- [Edwin Hubble](people/edwin-hubble.md) — paternal expectation of law, Rhodes-supported Oxford legal study, brief legal practice, and deliberate return to astronomy, with family-finance questions left open.
 - [Sudhir Venkatesh](people/sudhir-venkatesh.md) — Chicago fieldwork, Hyde Park's labor boundary, Harvard Junior Fellowship, "rogue sociologist" branding, and the conversion of access to poor communities into academic and publishing value.
 - [Barack Obama](people/barack-obama.md) — South Side organizing, Hyde Park residence, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
 - [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh's Hyde Park period.
