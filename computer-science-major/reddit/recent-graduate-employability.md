@@ -1,6 +1,13 @@
 # Reddit discovery: recent-graduate employability
 
-Discovery pass: 2026-09-09.
+## Provenance
+
+- Retrieval pass: `2026-09-09T11:53:59-04:00` (`America/Detroit`).
+- Source surface: Reddit web pages discovered through ChatGPT web search.
+- Source URLs: preserved individually in the thread inventory below.
+- Source timestamps: the `Reddit post date` column records the calendar date exposed during this discovery pass.
+- Timestamp precision: date only for individual Reddit posts. Exact Reddit `created_utc` values were **not** captured in this pass and must not be invented. A later Reddit-CLI/API pass should add exact source timestamps where the API exposes them.
+- Snapshot limitation: this file records the findings and source locations, not immutable copies of the Reddit pages. Posts and comments may later be edited or deleted.
 
 Scope: recent computer-science graduates and nearby new-grad software candidates, primarily `r/csMajors` and `r/cscareerquestions`.
 
@@ -8,7 +15,7 @@ This is **not** a representative sample. Reddit over-selects people motivated to
 
 ## Thread inventory
 
-| Date | Thread | What the post reports | Use in Blackball | Limit |
+| Reddit post date | Thread | What the post reports | Use in Blackball | Limit |
 |---|---|---|---|---|
 | 2026-08-10 | [Who else 2025 graduate with no job still?](https://www.reddit.com/r/csMajors/comments/1vk75bn/who_else_2025_graduate_with_no_job_still/) | 2025 CS bachelor's graduate reports roughly 3,000 applications, 40 interviews, and zero offers after about a year. Comments include both similarly difficult searches and successful searches. | Strong example that a completed CS degree can coexist with a very long search; also separates resume-screen success from interview conversion. | One self-report; 3,000 applications are not independently verified and say little about job fit or application quality. |
 | 2025-05-31 | [I graduated a year ago and CANT FIND A MFING JOB](https://www.reddit.com/r/csMajors/comments/1l0a3th/i_graduated_a_year_ago_and_cant_find_a_mfing_job/) | May 2024 CS graduate reports a 3.6 GPA, game-development minor, paid university research, projects, career-center resume work, alumni outreach, networking, and continued failure to land a job after about a year. | Useful counterexample to the simple claim that career-center use, networking, respectable grades, and projects are sufficient. | No denominator; university research may not be treated by employers like industry experience. |
