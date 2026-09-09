@@ -39,6 +39,7 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
+- [Employer discretion, worker risk, and the absence of a general fairness guarantee](llm/questions/employer-discretion-worker-risk.md) — separates specific legal constraints from broader questions about hiring screens, prior termination, truthfulness incentives, symbolic recognition, promotion, reciprocal obligations, and which employment risks remain with the worker.
 
 ## Institutional and local case files
 
