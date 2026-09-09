@@ -17,7 +17,10 @@ Current Reddit evidence trails:
 - [recent-graduate-employability.md](reddit/recent-graduate-employability.md) — initial mixed outcome inventory;
 - [recent-graduate-employability-pass-2.md](reddit/recent-graduate-employability-pass-2.md) — additional 2024–2026 outcome cases, including fresh August/September 2026 reports;
 - [internship-return-offer-pipeline.md](reddit/internship-return-offer-pipeline.md) — distinguishes internship conversion from open-market new-grad search and records student-status eligibility issues;
-- [graduate-school-as-recruiting-reset.md](reddit/graduate-school-as-recruiting-reset.md) — tracks cases where further education enters the decision after weak occupational entry and asks whether it restores recruiting eligibility.
+- [fallback-work-delayed-entry-and-survivorship.md](reddit/fallback-work-delayed-entry-and-survivorship.md) — records retail, food-service, manual-labor, IT-support, unrelated-work, delayed-entry, and survivorship mechanisms;
+- [school-specific-employability-leads.md](reddit/school-specific-employability-leads.md) — named Georgia Tech, UIUC, Berkeley, and Washington cases for follow-up against official outcome data;
+- [graduate-school-as-recruiting-reset.md](reddit/graduate-school-as-recruiting-reset.md) — tracks cases where further education enters the decision after weak occupational entry and asks whether it restores recruiting eligibility;
+- [graduate-school-after-failed-search-cost-case.md](reddit/graduate-school-after-failed-search-cost-case.md) — one concrete 2026 case in which a failed employment search leads to graduate-school choices with poster-reported costs ranging from a funded PhD to a six-figure master's path.
 
 Each discovery file records its retrieval timestamp, source URLs, source-date precision, and limitations. Exact Reddit `created_utc` timestamps are not fabricated when they were not captured.
 
