@@ -66,7 +66,7 @@ The useful question is narrower:
 
 **When wealth becomes highly concentrated, how much of it is converted into durable cultural, scientific, educational, or civic institutions that remain available beyond the patron's immediate private consumption?**
 
-The present-day hypothesis to test is not that contemporary billionaires literally never fund arts or science. Many plainly do. The stronger and more interesting question is whether the mix has changed:
+The present-day hypothesis to test should not be the categorical claim that contemporary billionaires never fund arts or science. The stronger and more interesting question is whether the mix has changed:
 
 - public institution versus private platform;
 - durable endowment versus short-lived project;
