@@ -79,7 +79,7 @@ The appraisal is valuable because it tests several claims that can otherwise be 
 
 Use this report as an institutional check on specific contract terms. Do not treat an institutional review as neutral merely because it is primary documentation; compare it with the agreement, faculty-governance material, and independent scholarship.
 
-**Evidence state:** upstream/near-contemporaneous institutional source inspected for the chapter-11 evidence graph.
+**Evidence state:** near-contemporaneous institutional source inspected as a later check for the chapter-11 evidence graph; it is not an upstream source for the 2003 book.
 
 ## Coverage gaps that matter most
 
