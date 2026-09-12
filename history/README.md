@@ -8,6 +8,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Apprenticeship](apprenticeship/README.md) — apprenticeship as an institution to investigate rather than a default alternative to college: craft, pauper, industrial, union/joint, and modern forms; contract enforcement, actual training, exit, deferred benefits, exclusion, and outcomes; JSTOR/peer-reviewed source ledger plus a retrieval queue.
 - [Teachers’ unions](teachers-unions/README.md) — Boston, Chicago, St. Paul, AFT/NEA history, women teachers’ organization, professionalization, administrative centralization, women’s schooling, and a recursively inspected citation graph.
 
+## Education and professional training
+
+- [UMKC six-year B.A./M.D. program](medical-education/umkc-six-year-ba-md.md) — E. Grey Dimond and colleagues’ deliberate 1971 departure from the conventional U.S. 4+4 medical-education sequence: direct high-school admission, integrated liberal arts and medicine, early clinical contact, docent teams, accreditation resistance, outcome evidence, qualifications, and a retrieval queue for the original LCME and planning records.
+
 ## Slavery, labor, skill, and coercion
 
 - [Louis Hughes — *Thirty Years a Slave* (1897)](slavery/louis-hughes-thirty-years-a-slave.md) — primary-source note on the enslaved skilled blacksmith Uncle Ben; the distinction between skill and bargaining power; Hughes's medical aptitude and denied educational/occupational opportunity; and his descriptions of whipping, witnessed violence, and psychological injury.
