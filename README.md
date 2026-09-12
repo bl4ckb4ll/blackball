@@ -83,6 +83,7 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Mathematicians of the African Diaspora — paper corpus](sources/mathematicians-of-the-african-diaspora/README.md) — Scott W. Williams's MAD roster normalized into a paper-level coverage ledger, bibliography cull, and mathematical summary/reaction lane with discovery/abstract/full-text evidence states kept separate.
 - [John Lennon — “Working Class Hero”](sources/john-lennon/working-class-hero/README.md) — song and album provenance, official full-lyrics routes and copyright boundary, Lennon/Ono and Beatles-breakup chronology, primal-therapy context, class-background evidence, recording history, political context, censorship history, and book leads.
 - [Miles Reid — *Notes for obituary*](sources/miles-reid/obituary-notes/README.md) — self-authored 2002 notes for a future Royal Society biographical memoir, with source links, chronology, academic-pipeline details, and evidence limitations.
+- [FTX / Sam Bankman-Fried federal criminal case](sources/ftx/sam-bankman-fried-federal-case/README.md) — seven-count trial and 2026 appeal, software/account evidence, cooperating-witness testimony, Ellison balance-sheet evidence, MIT/Stanford network, severed charges, atomic claim ledger, source provenance and evidentiary guardrails.
 
 ## Primary-source corpora
 
