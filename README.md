@@ -53,8 +53,8 @@ A credential, ranking, institutional label, or professional title carries only t
 ## History and training institutions
 
 - [History index](history/README.md) — inspectable source trails for labor, organization, coercion, technology, and historical institutions.
-- [Higher-education history](history/higher-education/README.md) — Roger L. Geiger as the primary historiographic anchor, with national chronology, research-university development, a bibliography/acquisition ledger, and page-level retrieval queues.
-- [Johns Hopkins founding case](history/higher-education/roger-l-geiger/JOHNS-HOPKINS.md) — separates the remembered “students were an afterthought” formulation from verified wording and tests the narrower faculty-first claim against the founding record.
+- [Higher-education history](history/higher-education/README.md) — a provisional Roger L. Geiger bibliography and acquisition map; no book-length Geiger text has yet been inspected.
+- [Johns Hopkins founding lead](history/higher-education/roger-l-geiger/JOHNS-HOPKINS.md) — preserves the remembered “students were an afterthought” formulation as an unverified retrieval target.
 - [Apprenticeship](history/apprenticeship/README.md) — applies the same accountability test to apprenticeship that Blackball applies to college and graduate education: actual training, contract enforcement, exit, deferred benefits, exclusion, wages, and outcomes rather than the surface appeal of “earn while you learn.”
 
 ## People dossiers

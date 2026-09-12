@@ -2,34 +2,45 @@
 
 ## Blackball status
 
-**Role:** primary historiographic anchor for the history of American higher education.
+**Role:** provisional bibliography, lawful-access map, and inspection queue for
+the history of American higher education.
 
-**Scope:** colonial colleges through the present, with particular authority for the development of research universities, the relation between knowledge and institutions, finance, philanthropy, government research support, professionalization, curriculum, student culture, and institutional stratification.
+**Intended scope:** colonial colleges through the present. Publication metadata
+suggests relevance to research universities, knowledge and institutions,
+finance, philanthropy, government research support, professionalization,
+curriculum, student culture, and institutional stratification. That apparent
+coverage is not evidentiary authority.
 
 **Evidence class:** inspected or to-be-inspected secondary scholarship. Geiger is not silently promoted into an eyewitness or institutional primary source.
 
 No Geiger book-length full text is currently checked into Blackball. This dossier records the corpus, lawful access routes, inspection status, and claims that require page-level verification.
 
-## Why Geiger is the anchor
+## Why collect Geiger
 
-Geiger wrote a two-volume continuous history of American higher education:
+Publication records list two broad chronological volumes on American higher education:
 
 - *The History of American Higher Education: Learning and Culture from the Founding to World War II*;
 - *American Higher Education Since World War II: A History*.
 
-He also wrote the central three-volume sequence on American research universities:
+Publication records also list a three-volume sequence on American research universities:
 
 - *To Advance Knowledge: The Growth of American Research Universities, 1900–1940*;
 - *Research and Relevant Knowledge: American Research Universities Since World War II*;
 - *Knowledge and Money: Research Universities and the Paradox of the Marketplace*.
 
-Together these works cover more of Blackball's historical questions than a single general survey can: what institutions were for, the rise of graduate education and research, who paid, whose knowledge counted, how universities attached themselves to government and industry, and how collegiate life related to the research mission.
+The titles, tables of contents, and publisher records suggest that these works
+may address several Blackball questions: what institutions were for, the rise
+of graduate education and research, who paid, whose knowledge counted, how
+universities attached themselves to government and industry, and how collegiate
+life related to the research mission. Page-level inspection must establish
+whether and how they actually do.
 
-Use Geiger first for the broad map, not as the last word on every institution or group.
+Treat the works as acquisition priorities, not as a broad map or final word
+before the relevant text is inspected.
 
 ## Working concepts to index
 
-Geiger repeatedly organizes higher-education history around the interaction of:
+The acquisition and inspection pass should test whether, and how, these works organize higher-education history around the interaction of:
 
 - **knowledge** — its production, organization, authority, and uses;
 - **careers** — the occupational purposes attached to study and credentials;
@@ -40,7 +51,7 @@ Geiger repeatedly organizes higher-education history around the interaction of:
 
 These are retrieval headings, not conclusions. Each claimed mechanism still needs a page reference and, where possible, an upstream source.
 
-## Reading order for Blackball
+## Acquisition and inspection order for Blackball
 
 ### National chronology
 

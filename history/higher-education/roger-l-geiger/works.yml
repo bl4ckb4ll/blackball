@@ -1,7 +1,7 @@
 schema_version: 1
 person:
   name: Roger L. Geiger
-  role_in_blackball: primary_historiographic_anchor
+  role_in_blackball: provisional_secondary_corpus
   evidence_class: secondary_scholarship
   official_publications_url: https://sites.psu.edu/rogerlgeiger/publications/
 
