@@ -11,6 +11,9 @@ This folder is not restricted to texts that would now be shelved in an economics
 ## Work, pay, and career claims
 
 - [Automotive technician pay — career-claim audit](automotive-technician-pay/README.md) — tests Ford/Jim Farley six-figure technician claims against BLS wage distributions, DOL flat-rate compensation rules, Ford training/recruiting material, tools and physical costs, practitioner evidence, current Michigan postings, and retention/risk questions. Includes a reusable audit for high-water-mark career claims and a source ledger with falsification conditions.
+## Entrepreneurship and household enterprise
+
+- [Entrepreneurship](entrepreneurship/README.md) — treats household livelihood businesses, owner-operator firms, family enterprises, franchises, growth firms, and venture-backed startups as distinct institutions; measures capital, labor, household return, asset accumulation, autonomy, failure, succession, family/community networks, and the null alternative rather than treating "start a business" as a generic answer to college or wage employment.
 
 ## Historical macroeconomics
 

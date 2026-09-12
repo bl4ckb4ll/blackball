@@ -39,6 +39,7 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
+- [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
 
 ## Institutional and local case files
 
@@ -49,6 +50,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Economics
 
 - [Economics index](economics/README.md) — evidence and source records for Maddison, Keynes, Painter, Marx and Engels, Engels's working-class analysis, Adam Smith, and related economic history and political economy.
+- [Entrepreneurship](economics/entrepreneurship/README.md) — separates household livelihood enterprise, owner-operator business, family enterprise, franchise, growth firm, and venture-backed startup; applies a common capital, labor, household-return, downside, succession, and accountability analysis.
 
 ## History and training institutions
 

@@ -61,6 +61,10 @@ The correct inference is:
 
 That means investigating apprenticeship with the same hostility to advertising language that Blackball applies to universities: inspect contracts, actual training, completion, cancellation, wages, access, employer incentives, union rules, occupational demand, and post-training outcomes.
 
+## Cross-pathway comparison
+
+- [Apprenticeship, entrepreneurship, and the null alternative](../../llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and the null/do-not-buy-another-intervention alternative on the same ledger. It also treats "start a business" as a recommendation requiring its own capital, labor, household-return, downside, and accountability analysis.
+
 ## Source trail
 
 - [Core source ledger](source-ledger.md) — JSTOR and peer-reviewed work on craft, pauper, industrial, and early-modern apprenticeship, plus primary/government anchors.
