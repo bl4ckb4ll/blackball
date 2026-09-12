@@ -9,7 +9,9 @@ That stage should remain visible when evaluating the institutions, technical tra
 ## Career outline
 
 - **1958:** mathematics degree, MIT.
-- **1961:** Ph.D. in mathematics, University of California, Berkeley.
+- **1961–1962:** completed his Berkeley mathematics dissertation in 1961 and
+  formally received the Ph.D. in 1962. Rob Kirby's biographical account
+  explicitly distinguishes the two dates.[^simons-phd-date]
 - **Early 1960s:** academic positions including MIT and Harvard.
 - **1964:** joined the research staff of IDA's Communications Research Division in Princeton.
 - **1964–1968:** worked on classified codebreaking and cryptographic problems while continuing his own mathematics research.
@@ -118,6 +120,10 @@ A useful comparison is to ask what a typical mathematics graduate receives at ea
 6. Which technical and organizational habits from CRD demonstrably carried into Renaissance, and which claimed continuities are retrospective storytelling?
 
 ## Sources and inspection notes
+
+[^simons-phd-date]: Rob Kirby, [“James Harris Simons,” *Celebratio
+    Mathematica* (September 2016)](https://celebratio.org/Simons_J/article/375/):
+    the dissertation was finished in 1961, with formal graduation in 1962.
 
 ### Simons and IDA/CRD
 
