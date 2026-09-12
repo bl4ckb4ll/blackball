@@ -8,6 +8,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Roger L. Geiger dossier](higher-education/roger-l-geiger/README.md) — core books and edited series, a machine-readable works ledger, current acquisition status, citation-spider queue, and strict separation between inspected text and discovery metadata.
 - [Johns Hopkins founding case](higher-education/roger-l-geiger/JOHNS-HOPKINS.md) — tests the remembered “students were an afterthought” formulation against Geiger, Daniel Coit Gilman's 1876 address, and focused institutional history; exact Geiger wording remains unverified.
 
+## Colonial settlement, disease, land, and institutional genealogy
+
+- [Groton School recruiting page, the Groton name, and Winthrop context](groton-school-winthrop-context.md) — current employment terms and institutional rhetoric; Groton School's stated Gilded Age founding constituency; the Groton, Massachusetts → Groton, Suffolk → Winthrop naming chain; and John Winthrop's 1634 smallpox/title statement, with explicit limits on what the juxtaposition establishes.
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
