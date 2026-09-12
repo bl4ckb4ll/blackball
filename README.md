@@ -35,6 +35,10 @@ unless the question is specifically about the secondary author's interpretation.
 
 A credential, ranking, institutional label, or professional title carries only the evidentiary weight of the process it actually certifies. Do not silently substitute broad claims about intelligence, competence, employability, judgment, or authority.
 
+## Audits
+
+- [September 1–7, 2026 conversation-to-repository forensic audit](audits/2026-09-01--07-conversation-repository/README.md) — all 131 project conversations visible at the Sep 7 20:22 UTC snapshot plus recovered outside-snapshot history mapped to a 109-item substantive ledger, graded by research quality and default-branch/PR/branch state without filling the identified gaps.
+
 ## Current question surfaces
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
