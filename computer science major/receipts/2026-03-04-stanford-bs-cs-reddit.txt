@@ -1,0 +1,23 @@
+Source URL: https://www.reddit.com/r/csMajors/comments/1rl1utz/honestly_feeling_pretty_hopeless_as_a_stanford_cs/
+Platform: Reddit / r/csMajors
+Displayed account: Purple_Natural_4711
+Public post date: 2026-03-04
+Retrieved: 2026-09-10
+Capture kind: public indexed-text snapshot
+Capture limitation: This is not source-native HTML or a screenshot. Preserve a native capture separately if available.
+
+Honestly feeling pretty hopeless as a Stanford CS grad right now.
+
+I’m graduating from Stanford this June with a BS in CS and I’ve been applying since August. I’m at about 350+ applications right now and I’ve literally had 2 OA’s and 1 first-round interview that went nowhere.
+
+My GPA is a 3.4 and I’m starting to think that’s just a death sentence in this market. I have one internship but it feels like if you don't have a Big N or unicorn on your resume, the Stanford name just doesn't carry you anymore.
+
+I’ve been grinding LeetCode (around 600 solved) and my projects are decent, but I’m just getting ghosted or hit with auto-rejections everywhere. It's honestly depressing that I can't even get an interview at a local mid-tier company.
+
+Should I just scrub my GPA from my resume? Does it look even worse to hide it? I’m honestly starting to wonder if I should just pivot or look for something outside of SWE because this is exhausting.
+
+Anyone else from a T5 school struggling this hard or is it literally just me?
+
+Same-thread poster reply when asked whether international:
+
+no, i'm domestic.

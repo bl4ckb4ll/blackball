@@ -1,0 +1,28 @@
+Source URL: https://www.reddit.com/r/csMajors/comments/1gi9g27
+Platform: Reddit / r/csMajors
+Public post date: 2024-11-02
+Retrieved: 2026-09-10
+Capture kind: public indexed-text snapshot
+Capture limitation: This is not source-native HTML or a screenshot. Preserve a native capture separately if available.
+
+300+ applications 0 interview, T5 school, International student, need advice
+
+Hi all! I'm an international student doing MS in Computational Data Science at Carnegie Mellon University (CMU). My background is more on the ML side but honestly it's all over the place. I’m graduating in May 2025 and have applied to over 300 positions (including SWE, MLE, DS) in the past 3 months, but I’ve only received about 7 OAs. While I passed some, they haven’t led to interviews.
+
+Issues I know I have:
+
+1. International student status
+2. Lackluster work experience
+3. Projects aren’t very technical
+4. Lacking expertise in any one area
+
+My coursework is ML-focused, but I don’t really have many impressive projects to showcase. On the software development and data science side, my experiences are ever more limited. I know the process is tough for international students, but most of my classmates (also international) have secured a job. Any advice would be greatly appreciated!
+
+Same-thread poster replies preserved in the indexed source include:
+
+My fallback plan was being an RA at CMU but this also sounds viable, thanks!
+
+Not sure if you're from CMU, but if you are you should definitely check out the course "15-319/619 Cloud Computing" from CMU. It's a notoriously brutal but useful course that takes 30~40 hours per week but covers a wide range of stuff you can put on your resume. That's how I put all those cloud and devops words on my resume. Unfortunately I don't know any good way to self-study those, as the assignments were very reliant on having an autograder.
+I put all three cloud platforms because I have used them during different times (Azure when I was a TA, AWS for all the CMU courses, and GCP for my internship). Can't really give a comment on which I prefer though as I've only used a very limited subset of their services, just pick one and dive deep if you ask me.
+
+I tried doing some research during my undergrad and published a paper but it just wasn't my cup of tea, unfortunately. Networking is also something I should be doing but just could not bring myself to do because of how awkward and introverted I am with people.

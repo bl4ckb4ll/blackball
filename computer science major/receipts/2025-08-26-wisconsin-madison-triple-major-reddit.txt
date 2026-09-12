@@ -1,0 +1,52 @@
+Source URL: https://www.reddit.com/r/academiceconomics/comments/1n0r3xq/recent_graduate_cant_find_a_job/
+Platform: Reddit / r/academiceconomics
+Displayed account: Exotic_Distance5282
+Public post date: 2025-08-26
+Retrieved: 2026-09-10
+Capture kind: public indexed-text snapshot
+Capture limitation: This is not source-native HTML or a screenshot. Preserve a native capture separately if available.
+
+Recent graduate can't find a job
+
+Posting on this on a few relevant subreddits looking for advice.
+
+I have recently graduated this past may from a T20 university and have been unable to find a job in any relevant field. I have been stuck working a restaurant serving job the past couple months while I send out applications but have had no luck. I hope someone can analyze my stats and tell me what's going wrong.
+
+Majors:
+
+I loved school and was interested in many things so I ended up graduating with a triple major in Applied Mathematics, Computer Science, and Economics.
+
+Math GPA - 3.9
+CS GPA - 4.0
+Econ GPA - 4.0
+
+Relevant Coursework:
+
+Math Classes (All A's or AB)
+
+Multivariable Calculus, Linear Algebra, Intro proofs, Analysis I (Rudin 1-7), Analysis II (Rudin 7-10), PhD Analysis I (Folland), Probability Theory, Stochastic Processes, Stochastic Calculus, Numerical Analysis, ODE's, PDE's
+
+CS Classes (All A's)
+
+Data Structures, Algorithms, Discrete Math, Computer Engineering, Machine Organization, Machine Learning, Computer Networks, Operating Systems, Databases
+
+Econ Classes (All A's)
+
+Intermediate Micro, Intermediate Macro, Intro stats, Econometrics, PhD Econometrics, PhD Mathematical Stats, Industrial organization, Honors Thesis.
+
+Extracurriculars:
+
+I had to work my way through college to pay for everything which meant a lot of restaurant jobs that weren't relevant to my coursework. I did some low quality econ research for a prof my freshman year but it didn't end anywhere and I had to give it up in order to focus on paying for rent and such. I have 0 internships and no other research experience.
+Didn't really have time for clubs most of college but participated in a sponsored quant trading group on campus my final year focussing on algorithmic trading.
+
+Same-thread poster replies:
+
+Ive applied to lots of different industries based on what advisors and classmates have suggested. Most of the places ive applied to fall into the following categories: Tech, Quant Finance, Think Tanks. Lots of OA's and online technical interviews but nothing in person yet. I think this fall I will be looking into applied for predocs in econ or grad school in another area (applied math, CS, Stats, financial engineering).
+
+When asked, "Would you mind sharing the school name?":
+
+Madison
+
+Pretty much all of my coding work whenever I get to choose a language is done in python so I'm very comfortable with the language. Im going to keep on applying with a focus on quant finance as that seems to be what interests me most these days but a PhD is not out of the question as im not sure if I have enough mathematical speed to ace trading interviews.
+
+Are projects useful for quant resumes? I though academics is what really mattered.
