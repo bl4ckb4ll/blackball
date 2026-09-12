@@ -93,7 +93,7 @@ The available biographical record does not support this for Koch. It does suppor
 
 - Illinois State University, "James Koch to receive honorary doctorate on Founders Day": https://news.illinoisstate.edu/2009/01/james-koch-to-receive-honorary-doctorate-on-founders-day/
 - Old Dominion University archived James V. Koch biography: https://ww2.odu.edu/~jkoch/
-- University of Montana, past president James V. Koch: https://www.umt.edu/president/people/past-presidents/koch.php
+- University of Montana, past president James V. Koch: https://www.umt.edu/president/about/past-presidents/koch.php
 - Johns Hopkins University Press author page: https://www.press.jhu.edu/books/authors/james-v-koch
 - Illinois State University, *Reggie Reads* entry on *The Caterpillar Way*: https://news.illinoisstate.edu/2014/02/reggie-reads-february-2014/
 - SEC proxy materials for Esmark's Wheeling-Pittsburgh campaign, including Koch among the director nominees: https://www.sec.gov/Archives/edgar/data/941738/000119312506151834/ddfan14a.htm
