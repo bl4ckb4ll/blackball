@@ -2,6 +2,12 @@
 
 Blackball history material is organized as inspectable source trails rather than isolated summaries. Where a historical source cites earlier work, preserve the citation edge and follow it backward when the cited source can actually be inspected.
 
+## Higher education
+
+- [Higher-education history](higher-education/README.md) — Roger L. Geiger as Blackball's primary historiographic anchor; national chronology, research-university development, finance, knowledge, careers, culture, and institutional form.
+- [Roger L. Geiger dossier](higher-education/roger-l-geiger/README.md) — core books and edited series, a machine-readable works ledger, current acquisition status, citation-spider queue, and strict separation between inspected text and discovery metadata.
+- [Johns Hopkins founding case](higher-education/roger-l-geiger/JOHNS-HOPKINS.md) — tests the remembered “students were an afterthought” formulation against Geiger, Daniel Coit Gilman's 1876 address, and focused institutional history; exact Geiger wording remains unverified.
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
