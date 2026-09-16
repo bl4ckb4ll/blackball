@@ -79,7 +79,6 @@ initial_hits = int(sys.argv[6])
 pages = int(sys.argv[7])
 
 # These are screening tags, not mutually exclusive occupational classifications.
-# A word appearing anywhere in a posting is not enough to call the vacancy that kind of job.
 rules = [
     ("compiler_mention", r"\bcompiler(s| engineering)?\b|\bllvm\b|\bmlir\b|\bopenxla\b|\bstablehlo\b|\bcode[- ]?gen(eration)?\b|\btoolchain\b"),
     ("machine_learning", r"\bmachine learning\b|\bartificial intelligence\b|\bgenerative ai\b|\blarge language model(s)?\b|\bllm(s)?\b|\bpytorch\b|\btensorflow\b|\bjax\b"),
@@ -96,8 +95,8 @@ rules = [
 ]
 compiled_rules = [(tag, re.compile(pattern, re.I)) for tag, pattern in rules]
 
-# Compiler-specific screening deliberately distinguishes a mere mention from evidence
-# that the vacancy itself is for compiler work. `core_candidate` still requires human audit.
+# A compiler mention is only a retrieval screen. Core candidates need an explicit
+# compiler title or explicit compiler-work language outside a centralized/fungible pipeline.
 compiler_title_re = re.compile(
     r"\bcompiler(s)?\b|\bcompiler engineer(s|ing)?\b|\bcompiler engineering\b|\bcompilation\b",
     re.I,
@@ -120,6 +119,7 @@ central_pipeline_re = re.compile(
 
 degree_re = re.compile(r"\b(bachelor'?s|bachelors|master'?s|masters|ph\.?d\.?|degree)\b", re.I)
 manager_title_re = re.compile(r"\b(manager|director|head of|sdm)\b", re.I)
+job_path_id_re = re.compile(r"/jobs/(\d+)(?:/|$)")
 
 
 def flatten(value):
@@ -148,24 +148,49 @@ def first(job, *keys):
     return ""
 
 
+def requisition_id(job):
+    path = clean_text(first(job, "job_path", "url"))
+    match = job_path_id_re.search(path)
+    if match:
+        return match.group(1)
+    for key in ("job_id", "icims_id"):
+        value = clean_text(first(job, key))
+        if value.isdigit():
+            return value
+    return ""
+
+
 raw_jobs = []
 for page in sorted(page_dir.glob("page-*.json"), key=lambda p: int(p.stem.split("-")[1])):
     payload = json.loads(page.read_text(encoding="utf-8"))
     raw_jobs.extend(payload["jobs"])
 
-by_id = {}
-missing_id = 0
-for job in raw_jobs:
-    job_id = first(job, "id", "job_id", "icims_id")
-    if job_id == "":
-        missing_id += 1
-        continue
-    key = str(job_id)
-    if key not in by_id:
-        by_id[key] = job
+# Amazon's JSON `id` is a source-record identifier. The numeric requisition id is
+# taken from /jobs/<number>/... and is the job identity used by the public site.
+source_record_ids = set()
+by_requisition = {}
+missing_requisition_id = 0
+duplicate_requisition_records = 0
+duplicate_rows = []
 
-if missing_id:
-    raise SystemExit(f"{missing_id} jobs lacked a stable job id")
+for job in raw_jobs:
+    source_record_id = clean_text(first(job, "id"))
+    if source_record_id:
+        source_record_ids.add(source_record_id)
+    amazon_job_id = requisition_id(job)
+    if amazon_job_id:
+        key = "amazon:" + amazon_job_id
+    else:
+        missing_requisition_id += 1
+        if not source_record_id:
+            raise SystemExit("job lacked both Amazon requisition id and source-record id")
+        key = "source:" + source_record_id
+
+    if key in by_requisition:
+        duplicate_requisition_records += 1
+        duplicate_rows.append((amazon_job_id, source_record_id, clean_text(first(job, "title", "job_title"))))
+        continue
+    by_requisition[key] = (amazon_job_id, source_record_id, job)
 
 retrieved_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 rows = []
@@ -179,8 +204,12 @@ compiler_mention_rows = []
 compiler_core_rows = []
 compiler_mention_only_rows = []
 
-for job_id in sorted(by_id, key=lambda x: (len(x), x)):
-    job = by_id[job_id]
+records = sorted(
+    by_requisition.values(),
+    key=lambda item: (0, int(item[0])) if item[0].isdigit() else (1, item[1]),
+)
+
+for amazon_job_id, source_record_id, job in records:
     canonical = json.dumps(job, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     record_hash = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -200,8 +229,10 @@ for job_id in sorted(by_id, key=lambda x: (len(x), x)):
         source_url = "https://www.amazon.jobs" + path
     elif path.startswith("http://") or path.startswith("https://"):
         source_url = path
+    elif amazon_job_id:
+        source_url = f"https://www.amazon.jobs/en/jobs/{amazon_job_id}"
     else:
-        source_url = f"https://www.amazon.jobs/en/jobs/{job_id}"
+        source_url = ""
 
     description = clean_text(first(job, "description"))
     basic = clean_text(first(job, "basic_qualifications", "basicQualifications"))
@@ -267,7 +298,8 @@ for job_id in sorted(by_id, key=lambda x: (len(x), x)):
 
     row = {
         "retrieved_at": retrieved_at,
-        "job_id": job_id,
+        "amazon_job_id": amazon_job_id,
+        "source_record_id": source_record_id,
         "title": title,
         "location": location,
         "city": city,
@@ -295,7 +327,7 @@ for job_id in sorted(by_id, key=lambda x: (len(x), x)):
         compiler_mention_only_rows.append(row)
 
 fields = [
-    "retrieved_at", "job_id", "title", "location", "city", "state", "country",
+    "retrieved_at", "amazon_job_id", "source_record_id", "title", "location", "city", "state", "country",
     "posted", "updated", "job_category", "business_category", "team", "schedule_type",
     "manager_status", "degree_status", "compiler_screening", "domain_tags", "source_url",
     "source_record_sha256",
@@ -313,6 +345,11 @@ write_tsv(out_dir / "jobs.tsv", rows, fields)
 write_tsv(out_dir / "compiler-mentions.tsv", compiler_mention_rows, fields)
 write_tsv(out_dir / "compiler-core-candidates.tsv", compiler_core_rows, fields)
 write_tsv(out_dir / "compiler-mention-only.tsv", compiler_mention_only_rows, fields)
+
+with (out_dir / "duplicate-requisition-records.tsv").open("w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f, delimiter="\t")
+    writer.writerow(["amazon_job_id", "source_record_id", "title"])
+    writer.writerows(duplicate_rows)
 
 with (out_dir / "classification-rules.tsv").open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f, delimiter="\t")
@@ -368,8 +405,8 @@ with (out_dir / "title-counts.tsv").open("w", encoding="utf-8", newline="") as f
         writer.writerow([title, count])
 
 raw_count = len(raw_jobs)
-unique_count = len(rows)
-duplicates = raw_count - unique_count
+source_id_count = len(source_record_ids)
+requisition_count = len(rows)
 receipt = [
     ("retrieval_started_at", started_at),
     ("retrieval_finished_at", retrieved_at),
@@ -380,8 +417,10 @@ receipt = [
     ("pages_fetched", str(pages)),
     ("initial_hits", str(initial_hits)),
     ("raw_records", str(raw_count)),
-    ("unique_job_ids", str(unique_count)),
-    ("duplicate_records", str(duplicates)),
+    ("unique_source_record_ids", str(source_id_count)),
+    ("requisition_records_after_amazon_job_id_dedup", str(requisition_count)),
+    ("duplicate_requisition_records", str(duplicate_requisition_records)),
+    ("missing_amazon_job_id", str(missing_requisition_id)),
     ("compiler_any_mention", str(compiler_screen_counts.get("any_mention", 0))),
     ("compiler_core_candidates", str(compiler_screen_counts.get("core_candidate_total", 0))),
     ("compiler_core_candidate_management", str(compiler_screen_counts.get("core_candidate_management", 0))),
@@ -399,15 +438,19 @@ Retrieval started: `{started_at}`
 Retrieval finished: `{retrieved_at}`
 
 - Amazon `/en/search.json` initial hit count: **{initial_hits}**
-- Raw records fetched across {pages} pages: **{raw_count}**
-- Unique job IDs after deduplication: **{unique_count}**
-- Duplicate page records removed: **{duplicates}**
+- Raw search records fetched across {pages} pages: **{raw_count}**
+- Unique source-record ids: **{source_id_count}**
+- Requisition records after deduplication on Amazon's numeric job id: **{requisition_count}**
+- Duplicate requisition records removed: **{duplicate_requisition_records}**
+- Records without a recoverable numeric Amazon job id: **{missing_requisition_id}**
 - Requisitions with any compiler-related screening mention: **{compiler_screen_counts.get('any_mention', 0)}**
 - Compiler core candidates before human audit: **{compiler_screen_counts.get('core_candidate_total', 0)}**
 
-This is a requisition inventory, not a count of hires, vacancies filled, or employees. Amazon's search index can change during pagination, so `initial_hits` and the deduplicated count are preserved separately rather than forced to agree.
+This is a requisition inventory, not a count of hires, vacancies filled, or employees. Amazon's search index can change during pagination, so `initial_hits`, raw source records, and deduplicated requisitions are preserved separately.
 
-The general `domain_tags` are **mention-based screening tags** and overlap heavily. They are not occupational shares. Compiler screening is stricter: `any_mention` means compiler-related language appears somewhere in the posting, while `core_candidate` requires an explicit compiler title or explicit compiler-work language outside a detected centralized/fungible pipeline. Even `core_candidate` remains a machine-generated review queue until inspected.
+The JSON `id` is stored as `source_record_id`; the public numeric requisition number parsed from `/jobs/<number>/...` is stored as `amazon_job_id`. The general `domain_tags` are mention-based screening tags and overlap heavily; they are not occupational shares.
+
+Compiler screening is stricter: `any_mention` means compiler-related language appears somewhere in the posting, while `core_candidate` requires an explicit compiler title or explicit compiler-work language outside a detected centralized/fungible pipeline. Even `core_candidate` remains a machine-generated review queue until inspected.
 
 Full posting bodies were used transiently for classification but are not committed. `source_record_sha256` hashes the canonical source record seen during acquisition.
 """
