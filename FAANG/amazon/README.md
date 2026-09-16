@@ -1,10 +1,39 @@
 # Amazon software employment
 
-This is the first employer case in the FAANG working area. The task is descriptive: preserve what Amazon publicly says it is hiring software workers to do, compare advertised work with advertised qualifications and the official interview gate, and measure the current requisition stock without pretending postings are realized hires.
+This is the first employer case in the FAANG working area. The primary task is to map Amazon's productive organization: which business units and teams exist, what they own or operate, and where the current requisition stock attaches. Skills, languages, degrees, and interview gates are attributes of those organizational demand nodes, not the organizing principle of the case.
 
-## First full snapshot
+## Organization map comes first
 
-Blackball now has a reproducible global snapshot of Amazon's **Software Development** category.
+Use this hierarchy of evidence:
+
+1. Amazon's own public team/business-unit pages;
+2. explicit organizational relationships stated in job postings and leadership pages;
+3. employer-provided `business_category` and `team` metadata from the jobs feed;
+4. requisitions attached to the narrowest supported node;
+5. work responsibilities attached to that node;
+6. only after that, qualifications, languages, technologies, credentials, and interview requirements.
+
+Do not automatically promote feed labels into departments. Some are recognizable organizational/product labels; others are job-family or recruiting buckets such as `team-sde-primary`, `team-aws-sdm`, or `no-team-listed`.
+
+Amazon's public team catalog currently names high-level organizations such as Amazon Ads, Artificial General Intelligence, Amazon Business, Entertainment, Operations, Security, Amazon Web Services, Devices and Services, Finance and Global Business Services, Fulfillment Technology and Robotics, International Stores, North America Stores, People Experience and Technology, Selling Partner Services, Transportation/Shipping/Logistics, and others:
+
+https://www.amazon.jobs/content/en/teams
+
+The public Devices & Services hierarchy, for example, exposes subteams including Alexa, Amazon Leo, Ring/Blink/Amazon Key/Amazon Sidewalk, Fire TV/Kindle/Tablets, Devices Software & Services, Devices Hardware, Devices Operations & Supply Chain, and Devices Sales/Marketing/Design:
+
+https://www.amazon.jobs/content/en/teams/devices-services/teams
+
+AWS likewise exposes named organizations and service families; AWS Infrastructure Services explicitly owns the design, planning, delivery, and operation of servers, storage, networking, power, and cooling across AWS infrastructure, while AWS Databases names Aurora, DynamoDB, ElastiCache, Neptune, and related database work:
+
+https://www.amazon.jobs/content/en/teams/amazon-web-services
+https://amazon.jobs/content/en/teams/amazon-web-services/infrastructure-services
+https://www.amazon.jobs/content/en/teams/amazon-web-services/databases
+
+These public hierarchies should be used to validate and interpret the requisition metadata rather than replaced by keyword classification.
+
+## First full requisition snapshot
+
+Blackball has a reproducible global snapshot of Amazon's **Software Development** category.
 
 From **2026-09-16 15:57:26Z through 15:57:53Z**, Amazon's public search endpoint returned:
 
@@ -17,86 +46,100 @@ From **2026-09-16 15:57:26Z through 15:57:53Z**, Amazon's public search endpoint
 
 See [`demand/2026-09-16-census.md`](demand/2026-09-16-census.md) and the machine-readable receipt under [`inventory/2026-09-16T155726Z/`](inventory/2026-09-16T155726Z/).
 
-The number is a **dated stock of advertised requisitions**, not a number of hires, employees, or positions actually filled. Amazon's index is live and can change during the day.
+The number is a **dated stock of advertised requisitions**, not a number of hires, employees, or positions actually filled.
 
-The earlier ten-posting seed corpus remains useful because it contains inspected role details across a general 2026 US SDE pipeline, a fungible experienced-SDE pipeline, distributed search, identity, networking, RAG/document processing, security, people-science production systems, ML compilers, and AI/ML network infrastructure. It is not used as a prevalence sample.
+## First organizational cut through the 2,613 requisitions
 
-## Compiler result and classification warning
+Exact grouping of the frozen feed metadata produces:
 
-The first broad keyword pass found compiler/toolchain language in 120 of the 2,613 requisitions. Inspection showed why keyword counts cannot simply be renamed occupations: centralized AWS postings and many adjacent systems roles mention compilers without being compiler vacancies.
+- **42** distinct `business_category` labels;
+- **125** distinct `team` labels;
+- **143** observed business-category/team combinations.
 
-A stricter role screen plus manual review produced **12 compiler-centered requisitions**, 3 of them management postings. The audited set is in [`../specialties/compilers/amazon-2026-09-16.md`](../specialties/compilers/amazon-2026-09-16.md).
+See [`org-tree/2026-09-16-demand-map/`](org-tree/2026-09-16-demand-map/).
 
-That 12 / 2,613 ratio is about 0.46% of this dated Amazon Software Development requisition stock. It is not a share of Amazon programmers or a hiring probability.
+The largest feed-level business-category labels in that snapshot are:
 
-## ML/AI title result and another classification warning
+- `aws`: 1,224 requisitions;
+- `alexa-and-amazon-devices`: 391;
+- `advertising`: 115;
+- `subsidiaries`: 113;
+- `amazon-security`: 87;
+- `retail`: 70;
+- `selling-partner-services`: 70;
+- `ecp`: 66;
+- `operations`: 63;
+- `amazon-business`: 50;
+- `entertainment`: 50.
 
-The body-wide ML/AI screening tag appears in **836** requisitions. That is a retrieval queue, not 836 ML jobs.
+These counts are useful attachment totals, not yet an org chart. For example, `subsidiaries` is not one operating department, and `ecp` requires interpretation before it can be treated as an organizational node.
 
-A deterministic derivation from the same frozen 2,613-requisition snapshot found **264** requisitions whose titles explicitly foreground ML or AI. Inside those 264, the checked title taxonomy assigns:
+Likewise, the largest team-label counts include `team-sde-primary` (904), `team-project-kuiper` (217), `no-team-listed` (202), `team-aws-sdm` (132), `team-amazon-ads` (98), `team-amazon-robotics` (81), `team-ring-key-blink` (52), and `team-aws-security` (44). Some of these are clearly closer to real organizational/product nodes than others. The map must preserve that distinction.
 
-- 161 to software/systems/infrastructure titles;
-- 44 to hardware/firmware/silicon titles;
-- 13 to model/science titles;
-- 8 to compiler titles;
-- 16 to management titles;
-- 22 to other titles.
+## What the map should eventually answer
 
-These are still title signals, not work classifications. Generic titles can hide ML-centered work, while titles naming an ML accelerator or AI product can describe ordinary software or hardware engineering. The result is useful because it makes the heterogeneity visible before any claim about how many “AI jobs” exist.
+For every validated node, record:
 
-See [`demand/2026-09-16-title-signals/`](demand/2026-09-16-title-signals/) and [`../specialties/machine-learning/`](../specialties/machine-learning/).
+- parent organization where explicitly sourced;
+- node type: business unit, department, team, product/service organization, centralized hiring pool, or unresolved label;
+- what the node owns, builds, operates, sells, or supports;
+- current requisition count and historical snapshots;
+- management versus individual-contributor requisitions;
+- locations;
+- major child teams/products/services;
+- attached work categories;
+- then, secondarily, recurring languages, technologies, credentials, and interview gates.
 
-The same mention-versus-role separation still has to be applied to backend, distributed systems, infrastructure, security, networking, embedded systems, and the other broad categories before their shares are reported.
+A worker should be able to traverse something like:
 
-## Research questions
+`Amazon → AWS → Databases → DynamoDB → advertised work → current requisitions → worker requirements`
 
-For Amazon, keep asking:
+rather than beginning from a decontextualized statement such as “learn distributed systems.”
 
-- Which requirements appear across unrelated SDE postings because they are standard Amazon templates?
-- Which requirements identify the actual work of a particular team?
-- What fraction of the requisition stock falls into defensibly classified backend/application, distributed systems, infrastructure, databases/search, security, embedded/systems, compilers, ML, graphics, frontend/mobile, and other categories?
-- Which jobs truly require a degree, which permit equivalent experience, which merely prefer a degree, and which state no degree rule?
-- How do requirements change by level?
-- What operational obligations recur: deployment, monitoring, on-call, incident response, documentation, code review, mentoring, or recruiting?
-- What does Amazon's generic SDE interview test, and what team-specific knowledge appears only in the job itself?
-- Which advertised requirements appear to be waived in actual hiring? That requires evidence beyond job postings.
-- How persistent are requisitions, and how many new/removed postings appear between snapshots?
+## Specialty screens are subordinate probes
+
+The compiler and ML/AI work remains useful, but primarily as probes attached to organizational demand.
+
+The compiler screen narrowed 120 compiler/toolchain mentions to **12 compiler-centered requisitions**, concentrated mainly around AWS Neuron/Annapurna Labs plus Devices work. That result becomes more useful when interpreted as demand inside those organizations rather than as a free-floating language/compiler statistic.
+
+The ML/AI title derivation found 264 requisitions whose titles explicitly foreground ML or AI, but those titles span software/systems, hardware/firmware/silicon, model/science, compiler, management, and other work. Again, the organization owning the work is part of the explanation.
+
+See [`../specialties/compilers/`](../specialties/compilers/) and [`../specialties/machine-learning/`](../specialties/machine-learning/).
 
 ## Current files
 
+- [`org-tree/README.md`](org-tree/README.md) — organizational mapping rules and source hierarchy.
+- [`org-tree/2026-09-16-demand-map/`](org-tree/2026-09-16-demand-map/) — fixed-snapshot business/team attachment counts.
+- [`org-tree/2026-09-16-public-evidence.md`](org-tree/2026-09-16-public-evidence.md) — source-supported organizational relationships from inspected postings.
 - [`jobs/2026-09-16-seed-corpus.md`](jobs/2026-09-16-seed-corpus.md) — ten inspected Amazon postings with source URLs and extracted facts.
-- [`demand/2026-09-16-seed-map.md`](demand/2026-09-16-seed-map.md) — initial shape before the full census.
 - [`demand/2026-09-16-census.md`](demand/2026-09-16-census.md) — first population-level requisition snapshot and evidence boundary.
-- [`demand/2026-09-16-title-signals/`](demand/2026-09-16-title-signals/) — fixed-snapshot ML/AI and software-title signals with auditable title-family assignments.
-- [`inventory/`](inventory/) — timestamped machine-readable inventories, classification rules, hashes, screening queues, and receipts.
-- [`acquire-software-development.sh`](acquire-software-development.sh) — current-directory-independent public-data acquisition and screening path.
-- [`derive-title-signals.sh`](derive-title-signals.sh) — deterministic derivation from the preserved 2026-09-16 snapshot; it does not re-fetch Amazon.
-- [`org-tree/2026-09-16-public-evidence.md`](org-tree/2026-09-16-public-evidence.md) — team/organization relationships explicitly supported by postings; not promoted into a complete reporting tree.
-- [`interview-versus-work/README.md`](interview-versus-work/README.md) — Amazon's official SDE interview material beside work described in current postings.
-- [`../specialties/compilers/README.md`](../specialties/compilers/README.md) — compiler-specialty question map and current result.
-- [`../specialties/machine-learning/README.md`](../specialties/machine-learning/README.md) — ML/AI demand question map and current title-level result.
+- [`demand/2026-09-16-title-signals/`](demand/2026-09-16-title-signals/) — subordinate ML/AI title signal derivation.
+- [`inventory/`](inventory/) — timestamped machine-readable requisition inventory and receipts.
+- [`acquire-software-development.sh`](acquire-software-development.sh) — public-data acquisition path.
+- [`derive-organization-demand.sh`](derive-organization-demand.sh) — fixed-snapshot organizational metadata derivation.
+- [`interview-versus-work/README.md`](interview-versus-work/README.md) — interview gate versus advertised work, to be attached to organizational nodes as the map matures.
 
 ## Identity and source policy
 
-Amazon's JSON `id` is a source-record identifier. Blackball separately records the numeric public requisition ID parsed from `/jobs/<number>/...`. The 2026-09-16 validated snapshot found a one-to-one mapping, but the two fields remain distinct so later changes cannot silently redefine job identity.
+Amazon's JSON `id` is a source-record identifier. Blackball separately records the numeric public requisition ID parsed from `/jobs/<number>/...`. The 2026-09-16 validated snapshot found a one-to-one mapping, but the two fields remain distinct.
 
-Amazon Jobs pages and the search feed are primary sources for Amazon's own advertised vacancies, work, qualifications, and interview process. They are not independent evidence that:
+Amazon Jobs pages and the search feed are primary sources for Amazon's own advertised vacancies, organizational labels, work, qualifications, and interview process. They are not independent evidence that:
 
-- the work is performed exactly as advertised;
-- every listed qualification is enforced;
+- a feed label is a formal department;
+- two co-occurring organization names have a reporting relationship;
 - every requisition results in a hire;
 - one requisition represents exactly one headcount slot;
+- the work is performed exactly as advertised;
 - a posting remains open after its retrieval time.
-
-If a posting disappears, retain the dated metadata/hash and seek an archived source rather than reconstructing it from memory.
 
 ## Next measurement steps
 
-1. Do a body-aware audit of the 836-record ML/AI mention queue, keeping model/science, software systems, data/retrieval infrastructure, hardware, compilers/runtimes, product integration, incidental mentions, management, and uncertain cases separate.
-2. Build and manually audit role-level classifiers for ordinary backend/application work and distributed/infrastructure work.
-3. Replace the literal degree-language screen with a rule-aware classification of required degree, degree-or-equivalent-experience, preferred degree, and no stated degree condition.
-4. Preserve management and individual-contributor requisitions separately.
-5. Repeat the exact Amazon snapshot so stock, additions, removals, and persistence can be measured.
-6. Apply the same bounded method to another major employer before treating Amazon as representative of the programming labor market.
+1. Validate the largest feed-level business and team labels against Amazon's public team pages and posting bodies; assign node types instead of assuming every label is a department.
+2. Build the high-level Amazon → organization → subteam/product/service graph, beginning with AWS, Devices & Services, Ads, Security, Operations, Stores, Selling Partner Services, PXT, and major subsidiaries represented in the software census.
+3. Attach all 2,613 requisitions to the narrowest validated node possible; keep unresolved attachments explicit.
+4. For each major node, summarize what it actually owns/builds/operates from primary sources.
+5. Add management/leadership evidence where public sources support it.
+6. Only then aggregate skills, languages, degrees, and interview gates within and across those nodes.
+7. Repeat snapshots to measure organizational demand persistence and change.
 
-Only after those stages should Blackball make broader statements about what “software jobs” mostly are or what preparation the employment market rewards.
+The central question is what Amazon needs done, where inside Amazon that need lives, and how much observable demand attaches to it. Worker requirements are downstream of that map.
