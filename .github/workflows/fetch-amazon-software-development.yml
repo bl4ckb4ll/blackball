@@ -6,6 +6,7 @@ on:
       - add-faang-amazon-demand-map
     paths:
       - .github/workflows/fetch-amazon-software-development.yml
+      - FAANG/amazon/acquire-software-development.sh
   workflow_dispatch:
 
 permissions:
