@@ -1,0 +1,13 @@
+tag	case_insensitive_regex
+compiler	\bcompiler(s| engineering)?\b|\bllvm\b|\bmlir\b|\bopenxla\b|\bstablehlo\b|\bcode[- ]?gen(eration)?\b|\btoolchain\b
+machine_learning	\bmachine learning\b|\bartificial intelligence\b|\bgenerative ai\b|\blarge language model(s)?\b|\bllm(s)?\b|\bpytorch\b|\btensorflow\b|\bjax\b
+distributed_systems	\bdistributed system(s)?\b|\bdistributed computing\b|\bfault[- ]tolerant\b|\bhighly available\b|\bmulti[- ]tier(ed)?\b
+cloud_infrastructure	\bcloud\b|\binfrastructure\b|\baws\b|\bec2\b|\bs3\b|\becs\b|\blambda\b|\bkubernetes\b|\bcontainer(s|ized)?\b
+networking	\bnetwork(s|ing)?\b|\brouting\b|\brdma\b|\btcp\b|\budp\b|\bsdn\b|\bswitch(es|ing)?\b
+database_search	\bdatabase(s)?\b|\bstorage\b|\bquery\b|\bsearch\b|\bopensearch\b|\bdynamodb\b|\bsql\b|\bnosql\b
+security_identity	\bsecurity\b|\bidentity\b|\bauthentication\b|\bauthorization\b|\biam\b|\bvulnerabilit(y|ies)\b|\bthreat(s)?\b
+embedded_systems	\bembedded\b|\bfirmware\b|\brtos\b|\bkernel\b|\bdevice driver(s)?\b|\bdriver development\b
+frontend_mobile	\bfront[- ]?end\b|\breact\b|\btypescript\b|\bandroid\b|\bios\b|\bmobile development\b
+graphics_media	\bgraphics\b|\bvideo processing\b|\bstreaming\b|\brender(ing|er)?\b|\bcomputer vision\b|\bgpu\b
+application_backend	\bback[- ]?end\b|\bmicroservice(s)?\b|\bweb service(s)?\b|\bapi(s)?\b|\bservice-oriented\b
+operations_observability	\bon[- ]call\b|\bmonitoring\b|\bobservability\b|\bincident(s)?\b|\blivesite\b|\bproduction issue(s)?\b
