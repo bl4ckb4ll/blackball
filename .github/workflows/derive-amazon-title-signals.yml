@@ -1,0 +1,51 @@
+name: Derive Amazon title signals
+
+on:
+  push:
+    branches:
+      - classify-amazon-ml-titles
+    paths:
+      - .github/workflows/derive-amazon-title-signals.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  derive:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Clone exact branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh auth setup-git
+          gh repo clone "$GITHUB_REPOSITORY" worktree -- \
+            --branch "$GITHUB_REF_NAME" \
+            --single-branch \
+            --depth 1
+          cd worktree
+          git config user.name "blackball title-signal derivation"
+          git config user.email "blackball-title-signals@users.noreply.github.com"
+
+      - name: Derive fixed-snapshot title signals
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd worktree
+          sh FAANG/amazon/derive-title-signals.sh
+
+      - name: Commit derived files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd worktree
+          git add FAANG/amazon/demand/2026-09-16-title-signals
+          if git diff --cached --quiet; then
+            echo "No derived changes were produced" >&2
+            exit 1
+          fi
+          git commit -m "[corpus-derive] Regenerate trimmed Amazon title signals"
+          git push origin "HEAD:$GITHUB_REF_NAME"
