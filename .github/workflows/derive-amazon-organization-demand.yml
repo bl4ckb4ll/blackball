@@ -1,0 +1,52 @@
+name: Derive Amazon organization demand map
+
+on:
+  push:
+    branches:
+      - map-amazon-organization-demand
+    paths:
+      - .github/workflows/derive-amazon-organization-demand.yml
+      - FAANG/amazon/derive-organization-demand.sh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  derive:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Clone exact branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh auth setup-git
+          gh repo clone "$GITHUB_REPOSITORY" worktree -- \
+            --branch "$GITHUB_REF_NAME" \
+            --single-branch \
+            --depth 1
+          cd worktree
+          git config user.name "blackball org-map derivation"
+          git config user.email "blackball-org-map@users.noreply.github.com"
+
+      - name: Derive fixed-snapshot organization demand map
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd worktree
+          sh FAANG/amazon/derive-organization-demand.sh
+
+      - name: Commit derived files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd worktree
+          git add FAANG/amazon/org-tree/2026-09-16-demand-map
+          if git diff --cached --quiet; then
+            echo "No derived changes were produced" >&2
+            exit 1
+          fi
+          git commit -m "[corpus-derive] Map Amazon organization demand"
+          git push origin "HEAD:$GITHUB_REF_NAME"
