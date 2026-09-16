@@ -1,0 +1,50 @@
+name: Fetch Amazon software-development snapshot
+
+on:
+  push:
+    branches:
+      - add-faang-amazon-demand-map
+    paths:
+      - .github/workflows/fetch-amazon-software-development.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Clone exact branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh auth setup-git
+          gh repo clone "$GITHUB_REPOSITORY" worktree -- \
+            --branch "$GITHUB_REF_NAME" \
+            --single-branch
+          cd worktree
+          git config user.name "blackball amazon-jobs sync"
+          git config user.email "blackball-amazon-jobs@users.noreply.github.com"
+
+      - name: Fetch and classify software-development inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd worktree
+          bash FAANG/amazon/acquire-software-development.sh
+
+      - name: Commit dated snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd worktree
+          git add FAANG/amazon/inventory
+          if git diff --cached --quiet; then
+            echo "No new snapshot files were produced" >&2
+            exit 1
+          fi
+          git commit -m "[corpus-sync] Snapshot Amazon software-development jobs"
+          git push origin "HEAD:$GITHUB_REF_NAME"
