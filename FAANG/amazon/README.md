@@ -1,16 +1,35 @@
 # Amazon software employment
 
-This is the first employer case in the FAANG working area. The immediate task is descriptive: build a dated corpus of what Amazon publicly says it is hiring software workers to do, then compare advertised work with advertised qualifications and the official interview gate.
+This is the first employer case in the FAANG working area. The task is descriptive: preserve what Amazon publicly says it is hiring software workers to do, compare advertised work with advertised qualifications and the official interview gate, and measure the current requisition stock without pretending postings are realized hires.
 
-## Snapshot boundary
+## First full snapshot
 
-On 2026-09-16, Amazon's global **Software Development** category page displayed **2,613 open jobs**:
+Blackball now has a reproducible global snapshot of Amazon's **Software Development** category.
 
-https://www.amazon.jobs/en/job-category/software-development
+From **2026-09-16 15:57:26Z through 15:57:53Z**, Amazon's public search endpoint returned:
 
-That number is a volatile web snapshot, not yet the denominator for any claim in this directory. It is global, can change during the day, and may include different titles and management roles inside Amazon's own category. A defensible prevalence estimate requires enumerating and deduplicating the underlying job IDs at a defined time.
+- 2,613 initial hits;
+- 2,613 raw source records;
+- 2,613 distinct source-record IDs;
+- 2,613 distinct numeric Amazon requisition IDs;
+- zero duplicate requisition records;
+- zero records without a recoverable numeric requisition ID.
 
-The first seed corpus is deliberately selected to expose different kinds of software work rather than to estimate their frequencies. It includes a general 2026 US SDE pipeline, a fungible experienced-SDE pipeline, distributed search, identity, networking, RAG/document processing, security, people-science production systems, ML compilers, and AI/ML network infrastructure.
+See [`demand/2026-09-16-census.md`](demand/2026-09-16-census.md) and the machine-readable receipt under [`inventory/2026-09-16T155726Z/`](inventory/2026-09-16T155726Z/).
+
+The number is a **dated stock of advertised requisitions**, not a number of hires, employees, or positions actually filled. Amazon's index is live and can change during the day.
+
+The earlier ten-posting seed corpus remains useful because it contains inspected role details across a general 2026 US SDE pipeline, a fungible experienced-SDE pipeline, distributed search, identity, networking, RAG/document processing, security, people-science production systems, ML compilers, and AI/ML network infrastructure. It is not used as a prevalence sample.
+
+## Compiler result and classification warning
+
+The first broad keyword pass found compiler/toolchain language in 120 of the 2,613 requisitions. Inspection showed why keyword counts cannot simply be renamed occupations: centralized AWS postings and many adjacent systems roles mention compilers without being compiler vacancies.
+
+A stricter role screen plus manual review produced **12 compiler-centered requisitions**, 3 of them management postings. The audited set is in [`../specialties/compilers/amazon-2026-09-16.md`](../specialties/compilers/amazon-2026-09-16.md).
+
+That 12 / 2,613 ratio is about 0.46% of this dated Amazon Software Development requisition stock. It is not a share of Amazon programmers or a hiring probability.
+
+The same mention-versus-role separation still has to be applied to backend, distributed systems, infrastructure, ML, security, networking, embedded systems, and the other broad categories before their shares are reported.
 
 ## Research questions
 
@@ -18,37 +37,45 @@ For Amazon, keep asking:
 
 - Which requirements appear across unrelated SDE postings because they are standard Amazon templates?
 - Which requirements identify the actual work of a particular team?
-- What fraction of current vacancies falls into backend/application, distributed systems, infrastructure, databases/search, security, embedded/systems, compilers, ML, graphics, frontend/mobile, and other defensible categories?
-- Which jobs explicitly require a degree, and which accept experience without one?
+- What fraction of the requisition stock falls into defensibly classified backend/application, distributed systems, infrastructure, databases/search, security, embedded/systems, compilers, ML, graphics, frontend/mobile, and other categories?
+- Which jobs truly require a degree, which permit equivalent experience, which merely prefer a degree, and which state no degree rule?
 - How do requirements change by level?
 - What operational obligations recur: deployment, monitoring, on-call, incident response, documentation, code review, mentoring, or recruiting?
 - What does Amazon's generic SDE interview test, and what team-specific knowledge appears only in the job itself?
-- Which advertised requirements appear to be waived in actual hiring? That last question requires evidence beyond job postings.
+- Which advertised requirements appear to be waived in actual hiring? That requires evidence beyond job postings.
+- How persistent are requisitions, and how many new/removed postings appear between snapshots?
 
 ## Current files
 
 - [`jobs/2026-09-16-seed-corpus.md`](jobs/2026-09-16-seed-corpus.md) — ten inspected Amazon postings with source URLs and extracted facts.
-- [`demand/2026-09-16-seed-map.md`](demand/2026-09-16-seed-map.md) — what can and cannot yet be inferred from those examples.
-- [`org-tree/2026-09-16-public-evidence.md`](org-tree/2026-09-16-public-evidence.md) — team/organization relationships explicitly supported by the postings; this is not promoted into a complete reporting tree.
-- [`interview-versus-work/README.md`](interview-versus-work/README.md) — Amazon's official SDE interview material beside the work described in current postings.
-- [`../specialties/compilers/README.md`](../specialties/compilers/README.md) — current compiler-specialty evidence.
+- [`demand/2026-09-16-seed-map.md`](demand/2026-09-16-seed-map.md) — initial shape before the full census.
+- [`demand/2026-09-16-census.md`](demand/2026-09-16-census.md) — first population-level requisition snapshot and evidence boundary.
+- [`inventory/`](inventory/) — timestamped machine-readable inventories, classification rules, hashes, screening queues, and receipts.
+- [`acquire-software-development.sh`](acquire-software-development.sh) — current-directory-independent public-data acquisition and screening path.
+- [`org-tree/2026-09-16-public-evidence.md`](org-tree/2026-09-16-public-evidence.md) — team/organization relationships explicitly supported by postings; not promoted into a complete reporting tree.
+- [`interview-versus-work/README.md`](interview-versus-work/README.md) — Amazon's official SDE interview material beside work described in current postings.
+- [`../specialties/compilers/README.md`](../specialties/compilers/README.md) — compiler-specialty question map and current result.
 
-## Source policy
+## Identity and source policy
 
-Amazon Jobs pages are primary sources for Amazon's own advertised vacancies and interview process. They are not independent evidence that the work is performed exactly as advertised, that every listed qualification is enforced, that every open requisition results in a hire, or that a vacancy remains open after the retrieval date.
+Amazon's JSON `id` is a source-record identifier. Blackball separately records the numeric public requisition ID parsed from `/jobs/<number>/...`. The 2026-09-16 validated snapshot found a one-to-one mapping, but the two fields remain distinct so later changes cannot silently redefine job identity.
 
-Use job ID as the stable record key where possible. Preserve the legal employer named on the posting separately from product/team names. If a posting disappears, retain the dated extracted facts and seek an archived copy rather than reconstructing it from memory.
+Amazon Jobs pages and the search feed are primary sources for Amazon's own advertised vacancies, work, qualifications, and interview process. They are not independent evidence that:
 
-## Next measurement step
+- the work is performed exactly as advertised;
+- every listed qualification is enforced;
+- every requisition results in a hire;
+- one requisition represents exactly one headcount slot;
+- a posting remains open after its retrieval time.
 
-Build a reproducible dated inventory of the complete Amazon Software Development category:
+If a posting disappears, retain the dated metadata/hash and seek an archived source rather than reconstructing it from memory.
 
-1. enumerate all visible job IDs at a recorded retrieval time;
-2. save title, legal employer, location, category, URL, and posting text/source receipt where permitted;
-3. deduplicate by job ID;
-4. classify with explicit multi-label rules rather than mutually exclusive guesses;
-5. audit a sample manually;
-6. publish counts with the population definition and retrieval timestamp;
-7. repeat later so job stock, additions, removals, and persistence can be distinguished.
+## Next measurement steps
 
-Only then should this case make statements such as "compiler jobs are X% of Amazon software vacancies."
+1. Build and manually audit role-level classifiers for ordinary backend/application work and distributed/infrastructure work.
+2. Replace the literal degree-language screen with a rule-aware classification of required degree, degree-or-equivalent-experience, preferred degree, and no stated degree condition.
+3. Preserve management and individual-contributor requisitions separately.
+4. Repeat the exact Amazon snapshot so stock, additions, removals, and persistence can be measured.
+5. Apply the same bounded method to another major employer before treating Amazon as representative of the programming labor market.
+
+Only after those stages should Blackball make broader statements about what “software jobs” mostly are or what preparation the employment market rewards.
