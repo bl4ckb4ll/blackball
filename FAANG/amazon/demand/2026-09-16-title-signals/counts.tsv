@@ -2,6 +2,7 @@ signal	requisitions
 population	2613
 explicit_ml_title	127
 explicit_ai_title	178
+explicit_ml_and_ai_title	41
 explicit_ml_or_ai_title	264
 explicit_software_ic_title	1920
 explicit_ml_or_ai_and_software_ic_title	164
