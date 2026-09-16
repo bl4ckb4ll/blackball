@@ -31,6 +31,6 @@ A mutually exclusive title-only taxonomy of the **264** ML/AI-title records give
 
 This table is deliberately a **title taxonomy**, not a work taxonomy. For example,  belongs in the hardware/firmware title family even though ML appears in the title, while  belongs in software/systems. That distinction is already enough to reject treating every explicit ML title as a model-building job.
 
-The taxonomy is priority ordered and checked in beside the results so it can be audited. Body-aware review remains necessary, especially for the , , and  buckets.
+ preserves the entire 264-requisition union with separate ML and AI signal flags plus the assigned title family. The original 2,613-row inventory remains the source for the broader software-title count, so this derivation does not duplicate it.
 
-Files in this directory preserve every matching requisition and its assigned title family so the screen can be inspected rather than trusted from the aggregate count alone.
+The taxonomy is priority ordered and checked in beside the results so it can be audited. Body-aware review remains necessary, especially for the , , and  buckets.
