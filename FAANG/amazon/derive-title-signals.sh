@@ -32,8 +32,8 @@ function is_software_ic_title(s, x) {
 function ml_ai_title_family(s, x) {
     x = lower(s)
 
-    # This is only a title taxonomy. Priority is deliberate so each title lands
-    # in one bucket and the counts add back to the ML/AI-title union.
+    # Title taxonomy only. Priority makes the buckets mutually exclusive so the
+    # counts add back to the ML/AI-title union.
     if (is_management_title(s)) return "management"
     if (x ~ /(asic|soc|firmware|hardware|chip|silicon|fpga|physical design|verification|dft|post-silicon|pre-silicon|electrical|rf engineer|architecture modeling)/) return "hardware_firmware"
     if (x ~ /compiler/) return "compiler"
@@ -44,11 +44,7 @@ function ml_ai_title_family(s, x) {
 NR == 1 {
     sub(/\r$/, "", $0)
     header = $0
-    print header > (out_dir "/explicit-ml-title.tsv")
-    print header > (out_dir "/explicit-ai-title.tsv")
-    print header > (out_dir "/explicit-ml-or-ai-title.tsv")
-    print header > (out_dir "/explicit-software-ic-title.tsv")
-    print header, "title_signal_family" > (out_dir "/ml-ai-title-families.tsv")
+    print header, "ml_title_signal", "ai_title_signal", "title_signal_family" > (out_dir "/ml-ai-title-families.tsv")
     next
 }
 {
@@ -59,27 +55,18 @@ NR == 1 {
     software_ic = is_software_ic_title(title)
 
     total++
-    if (ml) {
-        ml_count++
-        print $0 > (out_dir "/explicit-ml-title.tsv")
-    }
-    if (ai) {
-        ai_count++
-        print $0 > (out_dir "/explicit-ai-title.tsv")
-    }
+    if (ml) ml_count++
+    if (ai) ai_count++
     if (ml && ai) ml_ai_intersection_count++
+    if (software_ic) software_ic_count++
+
     if (ml || ai) {
         ml_ai_count++
         family = ml_ai_title_family(title)
         family_count[family]++
-        print $0 > (out_dir "/explicit-ml-or-ai-title.tsv")
-        print $0, family > (out_dir "/ml-ai-title-families.tsv")
+        print $0, ml, ai, family > (out_dir "/ml-ai-title-families.tsv")
+        if (software_ic) ml_ai_software_ic_count++
     }
-    if (software_ic) {
-        software_ic_count++
-        print $0 > (out_dir "/explicit-software-ic-title.tsv")
-    }
-    if ((ml || ai) && software_ic) ml_ai_software_ic_count++
 }
 END {
     print "signal", "requisitions" > (out_dir "/counts.tsv")
@@ -149,9 +136,9 @@ A mutually exclusive title-only taxonomy of the **$ml_ai** ML/AI-title records g
 
 This table is deliberately a **title taxonomy**, not a work taxonomy. For example, `Sr. ASIC Design Engineer, Cloud-Scale Machine Learning Acceleration` belongs in the hardware/firmware title family even though ML appears in the title, while `Software Development Engineer, ML Systems` belongs in software/systems. That distinction is already enough to reject treating every explicit ML title as a model-building job.
 
-The taxonomy is priority ordered and checked in beside the results so it can be audited. Body-aware review remains necessary, especially for the `software_systems`, `model_science`, and `other` buckets.
+`ml-ai-title-families.tsv` preserves the entire 264-requisition union with separate ML and AI signal flags plus the assigned title family. The original 2,613-row inventory remains the source for the broader software-title count, so this derivation does not duplicate it.
 
-Files in this directory preserve every matching requisition and its assigned title family so the screen can be inspected rather than trusted from the aggregate count alone.
+The taxonomy is priority ordered and checked in beside the results so it can be audited. Body-aware review remains necessary, especially for the `software_systems`, `model_science`, and `other` buckets.
 EOF
 
 cat "$out_dir/counts.tsv"
