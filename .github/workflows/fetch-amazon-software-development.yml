@@ -1,12 +1,6 @@
 name: Fetch Amazon software-development snapshot
 
 on:
-  push:
-    branches:
-      - add-faang-amazon-demand-map
-    paths:
-      - .github/workflows/fetch-amazon-software-development.yml
-      - FAANG/amazon/acquire-software-development.sh
   workflow_dispatch:
 
 permissions:
@@ -25,7 +19,8 @@ jobs:
           gh auth setup-git
           gh repo clone "$GITHUB_REPOSITORY" worktree -- \
             --branch "$GITHUB_REF_NAME" \
-            --single-branch
+            --single-branch \
+            --depth 1
           cd worktree
           git config user.name "blackball amazon-jobs sync"
           git config user.email "blackball-amazon-jobs@users.noreply.github.com"
