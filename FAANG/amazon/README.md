@@ -29,7 +29,24 @@ A stricter role screen plus manual review produced **12 compiler-centered requis
 
 That 12 / 2,613 ratio is about 0.46% of this dated Amazon Software Development requisition stock. It is not a share of Amazon programmers or a hiring probability.
 
-The same mention-versus-role separation still has to be applied to backend, distributed systems, infrastructure, ML, security, networking, embedded systems, and the other broad categories before their shares are reported.
+## ML/AI title result and another classification warning
+
+The body-wide ML/AI screening tag appears in **836** requisitions. That is a retrieval queue, not 836 ML jobs.
+
+A deterministic derivation from the same frozen 2,613-requisition snapshot found **264** requisitions whose titles explicitly foreground ML or AI. Inside those 264, the checked title taxonomy assigns:
+
+- 161 to software/systems/infrastructure titles;
+- 44 to hardware/firmware/silicon titles;
+- 13 to model/science titles;
+- 8 to compiler titles;
+- 16 to management titles;
+- 22 to other titles.
+
+These are still title signals, not work classifications. Generic titles can hide ML-centered work, while titles naming an ML accelerator or AI product can describe ordinary software or hardware engineering. The result is useful because it makes the heterogeneity visible before any claim about how many “AI jobs” exist.
+
+See [`demand/2026-09-16-title-signals/`](demand/2026-09-16-title-signals/) and [`../specialties/machine-learning/`](../specialties/machine-learning/).
+
+The same mention-versus-role separation still has to be applied to backend, distributed systems, infrastructure, security, networking, embedded systems, and the other broad categories before their shares are reported.
 
 ## Research questions
 
@@ -50,11 +67,14 @@ For Amazon, keep asking:
 - [`jobs/2026-09-16-seed-corpus.md`](jobs/2026-09-16-seed-corpus.md) — ten inspected Amazon postings with source URLs and extracted facts.
 - [`demand/2026-09-16-seed-map.md`](demand/2026-09-16-seed-map.md) — initial shape before the full census.
 - [`demand/2026-09-16-census.md`](demand/2026-09-16-census.md) — first population-level requisition snapshot and evidence boundary.
+- [`demand/2026-09-16-title-signals/`](demand/2026-09-16-title-signals/) — fixed-snapshot ML/AI and software-title signals with auditable title-family assignments.
 - [`inventory/`](inventory/) — timestamped machine-readable inventories, classification rules, hashes, screening queues, and receipts.
 - [`acquire-software-development.sh`](acquire-software-development.sh) — current-directory-independent public-data acquisition and screening path.
+- [`derive-title-signals.sh`](derive-title-signals.sh) — deterministic derivation from the preserved 2026-09-16 snapshot; it does not re-fetch Amazon.
 - [`org-tree/2026-09-16-public-evidence.md`](org-tree/2026-09-16-public-evidence.md) — team/organization relationships explicitly supported by postings; not promoted into a complete reporting tree.
 - [`interview-versus-work/README.md`](interview-versus-work/README.md) — Amazon's official SDE interview material beside work described in current postings.
 - [`../specialties/compilers/README.md`](../specialties/compilers/README.md) — compiler-specialty question map and current result.
+- [`../specialties/machine-learning/README.md`](../specialties/machine-learning/README.md) — ML/AI demand question map and current title-level result.
 
 ## Identity and source policy
 
@@ -72,10 +92,11 @@ If a posting disappears, retain the dated metadata/hash and seek an archived sou
 
 ## Next measurement steps
 
-1. Build and manually audit role-level classifiers for ordinary backend/application work and distributed/infrastructure work.
-2. Replace the literal degree-language screen with a rule-aware classification of required degree, degree-or-equivalent-experience, preferred degree, and no stated degree condition.
-3. Preserve management and individual-contributor requisitions separately.
-4. Repeat the exact Amazon snapshot so stock, additions, removals, and persistence can be measured.
-5. Apply the same bounded method to another major employer before treating Amazon as representative of the programming labor market.
+1. Do a body-aware audit of the 836-record ML/AI mention queue, keeping model/science, software systems, data/retrieval infrastructure, hardware, compilers/runtimes, product integration, incidental mentions, management, and uncertain cases separate.
+2. Build and manually audit role-level classifiers for ordinary backend/application work and distributed/infrastructure work.
+3. Replace the literal degree-language screen with a rule-aware classification of required degree, degree-or-equivalent-experience, preferred degree, and no stated degree condition.
+4. Preserve management and individual-contributor requisitions separately.
+5. Repeat the exact Amazon snapshot so stock, additions, removals, and persistence can be measured.
+6. Apply the same bounded method to another major employer before treating Amazon as representative of the programming labor market.
 
 Only after those stages should Blackball make broader statements about what “software jobs” mostly are or what preparation the employment market rewards.

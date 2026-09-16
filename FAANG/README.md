@@ -46,7 +46,8 @@ This distinction follows the existing Blackball treatment of firm-level job-post
 ## Current case files
 
 - [`amazon/`](amazon/) — first employer case; current postings, demand map, team relationships, and interview-versus-work comparison.
-- [`specialties/compilers/`](specialties/compilers/) — first specialty test case.
+- [`specialties/compilers/`](specialties/compilers/) — first specialty test case; direct compiler demand versus adjacent mentions.
+- [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI demand case; separates body-wide mentions, explicit title signals, and different title families before any claim about “AI jobs.”
 
 ## Related Blackball work
 
