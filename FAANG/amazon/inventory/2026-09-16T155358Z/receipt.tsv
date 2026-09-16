@@ -1,0 +1,17 @@
+field	value
+retrieval_started_at	2026-09-16T15:53:58Z
+retrieval_finished_at	2026-09-16T15:54:25Z
+endpoint	https://www.amazon.jobs/en/search.json
+category_parameter	software-development
+sort	relevant
+page_size	100
+pages_fetched	27
+initial_hits	2613
+raw_records	2613
+unique_job_ids	2613
+duplicate_records	0
+compiler_any_mention	120
+compiler_core_candidates	12
+compiler_core_candidate_management	3
+compiler_core_candidate_ic_or_unknown	9
+full_posting_bodies_committed	no
