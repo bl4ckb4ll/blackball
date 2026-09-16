@@ -4,16 +4,31 @@
 
 The first case is Amazon.
 
-## Central question
+## Primary object: the organization and its demand for work
 
-Do not begin with what a school, professor, famous programmer, or interview-prep industry says a programmer ought to know. Begin with the institutions that actually advertise and fill jobs:
+The backbone of this research is **not a list of programming languages or interview topics**. It is a map of the employer as a productive organization.
 
-- What work does the employer say it needs done?
-- How many vacancies of each kind are actually visible?
-- Which requirements recur across the corporation, and which are team-specific?
-- Which requirements are interview gates, which describe the subsequent work, and which are both?
-- Which specialties form substantial employment markets, and which are small niches?
-- How much can a worker infer from a job title, and how much varies by firm or team?
+Work in this order:
+
+1. identify the corporation's publicly observable business units, organizations, departments, teams, products, and services;
+2. record only source-supported relationships among those units;
+3. attach dated requisitions to the narrowest supported organizational node;
+4. measure how many requisitions and what kinds of work are attached to each node;
+5. determine what systems, products, operations, or business functions that node actually owns or supports;
+6. only then attach skills, languages, credentials, interview gates, and other worker-side requirements to the organizational nodes that demand them.
+
+A statement such as “Amazon asks for Java” is much less informative than “this organization owns these services, currently advertises this many requisitions, and these particular teams ask for Java.” The first can turn corporate boilerplate into fake labor-market guidance. The second exposes what the institution is actually trying to get done.
+
+## Central questions
+
+- What organizations inside the corporation actually consume technical labor?
+- What does each organization own, operate, build, sell, or support?
+- How many current requisitions can be attached to each unit?
+- Which units are large durable demand centers and which appear narrow or transient?
+- How are product teams, infrastructure teams, business functions, centralized hiring pools, and management layers related?
+- Which relationships are explicitly documented, and which remain unknown?
+- Within each unit, what work is being purchased from programmers and other technical workers?
+- Only after that: which skills, languages, credentials, and interview gates recur within or across those units?
 
 The worker-facing goal is to make the employment structure inspectable before someone commits years of training to an assumed market.
 
@@ -21,33 +36,36 @@ The worker-facing goal is to make the employment structure inspectable before so
 
 Keep these separate:
 
-1. **occupation convention** — what is commonly associated with a job title;
-2. **corporate category count** — the employer's own current classification of open jobs;
-3. **posting-level stated demand** — what a specific vacancy says it wants;
-4. **interview gate** — what the employer says it assesses before hire;
-5. **work description** — what the employer says the employee will do;
-6. **revealed hiring behavior** — what the employer actually accepts in hires;
-7. **realized work** — what employees actually spend their time doing.
+1. **organizational node** — a sourced business unit, organization, department, team, product/service group, or centralized hiring pool;
+2. **organizational edge** — a sourced relationship such as `within`, `owns`, `operates`, `supports`, or `reports_to`;
+3. **requisition attachment** — a dated vacancy attached to the narrowest supported node;
+4. **work demand** — what that node says employees will build, operate, sell, analyze, or support;
+5. **posting-level worker requirements** — credentials, experience, skills, languages, and technologies advertised for a vacancy;
+6. **interview gate** — what the employer says it assesses before hire;
+7. **revealed hiring behavior** — what the employer actually accepts in hires;
+8. **realized work** — what employees actually spend their time doing.
 
-A posting is direct evidence for layers 3 and 5, not automatically 6 or 7. An interview-prep page is direct evidence for layer 4. A public statement by one manager or programmer is evidence of that person's stated view unless stronger evidence establishes a broader rule.
+Do not jump from layer 5 to a story about the organization. A requirement keyword is an attribute of a requisition; it is not itself a department, a product, a demand center, or proof of what most employees do.
 
-This distinction follows the existing Blackball treatment of firm-level job-posting heterogeneity in [`economics/deming-kahn-skill-requirements-across-firms-2017.md`](../economics/deming-kahn-skill-requirements-across-firms-2017.md).
+This also follows the existing Blackball treatment of firm-level job-posting heterogeneity in [`economics/deming-kahn-skill-requirements-across-firms-2017.md`](../economics/deming-kahn-skill-requirements-across-firms-2017.md).
 
 ## Measurement rules
 
 - Preserve job IDs, URLs, retrieval dates, legal employer, locations, compensation where published, qualifications, team or organization language, and stated responsibilities.
+- Preserve employer-provided business/team metadata separately from manually validated organizational nodes.
+- Treat labels such as centralized hiring pools, job-family labels, and “no team listed” as labels, not departments.
 - Treat employer search-result counts as dated snapshots. Do not silently turn a changing web count into a durable denominator.
 - Do not infer an org-chart edge merely because two names occur in the same posting.
 - Do not infer market share from a deliberately selected example set.
 - Separate generic corporate qualification templates from requirements that are specific to the actual team or domain.
 - Record negative evidence and unresolved questions rather than filling gaps.
-- When prevalence matters, enumerate a defined population of postings, deduplicate by job ID, state the retrieval window, and preserve the classification rule.
+- When prevalence matters, enumerate a defined population of postings, deduplicate by requisition ID, state the retrieval window, and preserve the classification rule.
 
 ## Current case files
 
-- [`amazon/`](amazon/) — first employer case; current postings, demand map, team relationships, and interview-versus-work comparison.
-- [`specialties/compilers/`](specialties/compilers/) — first specialty test case; direct compiler demand versus adjacent mentions.
-- [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI demand case; separates body-wide mentions, explicit title signals, and different title families before any claim about “AI jobs.”
+- [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
+- [`specialties/compilers/`](specialties/compilers/) — compiler specialty test case.
+- [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI title-signal case, subordinate to the organization map rather than a substitute for it.
 
 ## Related Blackball work
 
