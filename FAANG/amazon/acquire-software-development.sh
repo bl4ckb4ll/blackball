@@ -78,8 +78,10 @@ category = sys.argv[5]
 initial_hits = int(sys.argv[6])
 pages = int(sys.argv[7])
 
+# These are screening tags, not mutually exclusive occupational classifications.
+# A word appearing anywhere in a posting is not enough to call the vacancy that kind of job.
 rules = [
-    ("compiler", r"\bcompiler(s| engineering)?\b|\bllvm\b|\bmlir\b|\bopenxla\b|\bstablehlo\b|\bcode[- ]?gen(eration)?\b|\btoolchain\b"),
+    ("compiler_mention", r"\bcompiler(s| engineering)?\b|\bllvm\b|\bmlir\b|\bopenxla\b|\bstablehlo\b|\bcode[- ]?gen(eration)?\b|\btoolchain\b"),
     ("machine_learning", r"\bmachine learning\b|\bartificial intelligence\b|\bgenerative ai\b|\blarge language model(s)?\b|\bllm(s)?\b|\bpytorch\b|\btensorflow\b|\bjax\b"),
     ("distributed_systems", r"\bdistributed system(s)?\b|\bdistributed computing\b|\bfault[- ]tolerant\b|\bhighly available\b|\bmulti[- ]tier(ed)?\b"),
     ("cloud_infrastructure", r"\bcloud\b|\binfrastructure\b|\baws\b|\bec2\b|\bs3\b|\becs\b|\blambda\b|\bkubernetes\b|\bcontainer(s|ized)?\b"),
@@ -93,8 +95,31 @@ rules = [
     ("operations_observability", r"\bon[- ]call\b|\bmonitoring\b|\bobservability\b|\bincident(s)?\b|\blivesite\b|\bproduction issue(s)?\b"),
 ]
 compiled_rules = [(tag, re.compile(pattern, re.I)) for tag, pattern in rules]
+
+# Compiler-specific screening deliberately distinguishes a mere mention from evidence
+# that the vacancy itself is for compiler work. `core_candidate` still requires human audit.
+compiler_title_re = re.compile(
+    r"\bcompiler(s)?\b|\bcompiler engineer(s|ing)?\b|\bcompiler engineering\b|\bcompilation\b",
+    re.I,
+)
+compiler_role_re = re.compile(
+    r"\b(neuron compiler (team|engineering)|compiler engineering team|"
+    r"machine learning compilers?|edge ai compiler( and runtime)? team|nki compiler|"
+    r"compiler development infrastructure|compiler optimization passes?|"
+    r"compiler verification passes?|develop(?:ing|s)? (?:a |the )?compiler|"
+    r"build(?:ing|s)? (?:a |the )?compiler|work(?:ing)? on (?:the )?compiler|"
+    r"responsible for [^.]{0,120}\bcompiler|compiler backend|compiler front[- ]?end)\b",
+    re.I,
+)
+central_pipeline_re = re.compile(
+    r"\bfungible\b|\bcentral(?:ized)? (?:sde|software development engineer) (?:team|pipeline|pool)\b|"
+    r"\bcentral sourcing\b|\bmultiple (?:aws )?(?:sde )?(?:teams|organizations|positions)\b|"
+    r"\bbusiness need\b.{0,120}\bplacement\b",
+    re.I,
+)
+
 degree_re = re.compile(r"\b(bachelor'?s|bachelors|master'?s|masters|ph\.?d\.?|degree)\b", re.I)
-manager_title_re = re.compile(r"\b(manager|director|head of)\b", re.I)
+manager_title_re = re.compile(r"\b(manager|director|head of|sdm)\b", re.I)
 
 
 def flatten(value):
@@ -122,6 +147,7 @@ def first(job, *keys):
             return job[key]
     return ""
 
+
 raw_jobs = []
 for page in sorted(page_dir.glob("page-*.json"), key=lambda p: int(p.stem.split("-")[1])):
     payload = json.loads(page.read_text(encoding="utf-8"))
@@ -148,7 +174,10 @@ degree_counts = Counter()
 manager_counts = Counter()
 title_counts = Counter()
 country_counts = Counter()
-compiler_rows = []
+compiler_screen_counts = Counter()
+compiler_mention_rows = []
+compiler_core_rows = []
+compiler_mention_only_rows = []
 
 for job_id in sorted(by_id, key=lambda x: (len(x), x)):
     job = by_id[job_id]
@@ -206,6 +235,33 @@ for job_id in sorted(by_id, key=lambda x: (len(x), x)):
         manager_status = "not_identified"
     manager_counts[manager_status] += 1
 
+    compiler_mention = "compiler_mention" in tags
+    title_core = bool(compiler_title_re.search(title))
+    body_core = bool(compiler_role_re.search(description)) and not bool(central_pipeline_re.search(description))
+    core_candidate = title_core or body_core
+
+    if title_core:
+        compiler_screening = "core_candidate_title"
+        compiler_screen_counts["core_candidate_title"] += 1
+    elif body_core:
+        compiler_screening = "core_candidate_body"
+        compiler_screen_counts["core_candidate_body"] += 1
+    elif compiler_mention:
+        compiler_screening = "mention_only"
+        compiler_screen_counts["mention_only"] += 1
+    else:
+        compiler_screening = "none"
+        compiler_screen_counts["none"] += 1
+
+    if compiler_mention:
+        compiler_screen_counts["any_mention"] += 1
+    if core_candidate:
+        compiler_screen_counts["core_candidate_total"] += 1
+        if manager_status in ("source_true", "title_inferred"):
+            compiler_screen_counts["core_candidate_management"] += 1
+        else:
+            compiler_screen_counts["core_candidate_ic_or_unknown"] += 1
+
     title_counts[title or "[missing title]"] += 1
     country_counts[country or "[missing country]"] += 1
 
@@ -225,19 +281,26 @@ for job_id in sorted(by_id, key=lambda x: (len(x), x)):
         "schedule_type": schedule_type,
         "manager_status": manager_status,
         "degree_status": degree_status,
+        "compiler_screening": compiler_screening,
         "domain_tags": ",".join(tags),
         "source_url": source_url,
         "source_record_sha256": record_hash,
     }
     rows.append(row)
-    if "compiler" in tags:
-        compiler_rows.append(row)
+    if compiler_mention:
+        compiler_mention_rows.append(row)
+    if core_candidate:
+        compiler_core_rows.append(row)
+    elif compiler_mention:
+        compiler_mention_only_rows.append(row)
 
 fields = [
     "retrieved_at", "job_id", "title", "location", "city", "state", "country",
     "posted", "updated", "job_category", "business_category", "team", "schedule_type",
-    "manager_status", "degree_status", "domain_tags", "source_url", "source_record_sha256",
+    "manager_status", "degree_status", "compiler_screening", "domain_tags", "source_url",
+    "source_record_sha256",
 ]
+
 
 def write_tsv(path, records, fieldnames):
     with path.open("w", encoding="utf-8", newline="") as f:
@@ -245,19 +308,40 @@ def write_tsv(path, records, fieldnames):
         writer.writeheader()
         writer.writerows(records)
 
+
 write_tsv(out_dir / "jobs.tsv", rows, fields)
-write_tsv(out_dir / "compiler-jobs.tsv", compiler_rows, fields)
+write_tsv(out_dir / "compiler-mentions.tsv", compiler_mention_rows, fields)
+write_tsv(out_dir / "compiler-core-candidates.tsv", compiler_core_rows, fields)
+write_tsv(out_dir / "compiler-mention-only.tsv", compiler_mention_only_rows, fields)
 
 with (out_dir / "classification-rules.tsv").open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f, delimiter="\t")
     writer.writerow(["tag", "case_insensitive_regex"])
     writer.writerows(rules)
+    writer.writerow(["compiler_core_title", compiler_title_re.pattern])
+    writer.writerow(["compiler_core_body", compiler_role_re.pattern])
+    writer.writerow(["central_pipeline_exclusion", central_pipeline_re.pattern])
 
 with (out_dir / "tag-counts.tsv").open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f, delimiter="\t")
-    writer.writerow(["tag", "requisitions"])
+    writer.writerow(["screening_tag", "requisitions"])
     for tag, count in sorted(tag_counts.items(), key=lambda x: (-x[1], x[0])):
         writer.writerow([tag, count])
+
+with (out_dir / "compiler-screening-counts.tsv").open("w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f, delimiter="\t")
+    writer.writerow(["compiler_screen", "requisitions"])
+    for name in (
+        "any_mention",
+        "core_candidate_total",
+        "core_candidate_title",
+        "core_candidate_body",
+        "core_candidate_management",
+        "core_candidate_ic_or_unknown",
+        "mention_only",
+        "none",
+    ):
+        writer.writerow([name, compiler_screen_counts.get(name, 0)])
 
 with (out_dir / "degree-counts.tsv").open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f, delimiter="\t")
@@ -298,7 +382,10 @@ receipt = [
     ("raw_records", str(raw_count)),
     ("unique_job_ids", str(unique_count)),
     ("duplicate_records", str(duplicates)),
-    ("compiler_tagged", str(tag_counts.get("compiler", 0))),
+    ("compiler_any_mention", str(compiler_screen_counts.get("any_mention", 0))),
+    ("compiler_core_candidates", str(compiler_screen_counts.get("core_candidate_total", 0))),
+    ("compiler_core_candidate_management", str(compiler_screen_counts.get("core_candidate_management", 0))),
+    ("compiler_core_candidate_ic_or_unknown", str(compiler_screen_counts.get("core_candidate_ic_or_unknown", 0))),
     ("full_posting_bodies_committed", "no"),
 ]
 with (out_dir / "receipt.tsv").open("w", encoding="utf-8", newline="") as f:
@@ -306,7 +393,24 @@ with (out_dir / "receipt.tsv").open("w", encoding="utf-8", newline="") as f:
     writer.writerow(["field", "value"])
     writer.writerows(receipt)
 
-summary = f"""# Amazon Software Development snapshot\n\nRetrieval started: `{started_at}`  \nRetrieval finished: `{retrieved_at}`\n\n- Amazon `/en/search.json` initial hit count: **{initial_hits}**\n- Raw records fetched across {pages} pages: **{raw_count}**\n- Unique job IDs after deduplication: **{unique_count}**\n- Duplicate page records removed: **{duplicates}**\n- Requisitions tagged `compiler` by the checked-in snapshot rules: **{tag_counts.get('compiler', 0)}**\n\nThis is a requisition inventory, not a count of hires or employees. Amazon's search index can change during pagination, so `initial_hits` and the deduplicated count are preserved separately rather than forced to agree. Classification is multi-label and regex-based; counts are descriptive screening results that require audit before interpretation. Full posting bodies were used transiently for classification but are not committed. `source_record_sha256` hashes the canonical source record seen during acquisition.\n"""
+summary = f"""# Amazon Software Development snapshot
+
+Retrieval started: `{started_at}`  
+Retrieval finished: `{retrieved_at}`
+
+- Amazon `/en/search.json` initial hit count: **{initial_hits}**
+- Raw records fetched across {pages} pages: **{raw_count}**
+- Unique job IDs after deduplication: **{unique_count}**
+- Duplicate page records removed: **{duplicates}**
+- Requisitions with any compiler-related screening mention: **{compiler_screen_counts.get('any_mention', 0)}**
+- Compiler core candidates before human audit: **{compiler_screen_counts.get('core_candidate_total', 0)}**
+
+This is a requisition inventory, not a count of hires, vacancies filled, or employees. Amazon's search index can change during pagination, so `initial_hits` and the deduplicated count are preserved separately rather than forced to agree.
+
+The general `domain_tags` are **mention-based screening tags** and overlap heavily. They are not occupational shares. Compiler screening is stricter: `any_mention` means compiler-related language appears somewhere in the posting, while `core_candidate` requires an explicit compiler title or explicit compiler-work language outside a detected centralized/fungible pipeline. Even `core_candidate` remains a machine-generated review queue until inspected.
+
+Full posting bodies were used transiently for classification but are not committed. `source_record_sha256` hashes the canonical source record seen during acquisition.
+"""
 (out_dir / "README.md").write_text(summary, encoding="utf-8")
 PY
 
