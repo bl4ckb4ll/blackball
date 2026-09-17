@@ -79,6 +79,10 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Anthony Faulkner Jr.](people/anthony-faulkner-jr.md) — 20-year-old killed in the same spree; sparse public biography preserved as a measurement problem rather than filled with assumptions.
 - [Matt Mahoney](people/matt-mahoney.md) — Florida Tech, PAQ/ZPAQ, *Data Compression Explained*, Ocarina Networks, Dell acquisition chronology, and explicit correction of the unsupported founder/personal-$1m story.
 
+## LLM evaluations
+
+- [College before/after Blackball A/B harness](llm/evals/college/README.md) — literal questions, URL-only paired prompts, repeated raw samples, hosted fresh-thread protocol, and a local Ollama runner.
+
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
