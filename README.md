@@ -90,6 +90,7 @@ A credential, ranking, institutional label, or professional title carries only t
 - [John Lennon — “Working Class Hero”](sources/john-lennon/working-class-hero/README.md) — song and album provenance, official full-lyrics routes and copyright boundary, Lennon/Ono and Beatles-breakup chronology, primal-therapy context, class-background evidence, recording history, political context, censorship history, and book leads.
 - [Matt Mahoney / Ocarina Networks source ledger](sources/matt-mahoney/README.md) — dated primary and secondary sources, acquisition filings, funding/product chronology, archive-discovery links, rights notes, and a claim ledger separating the real $1m prize pool from any unsupported personal payout.
 - [Miles Reid — *Notes for obituary*](sources/miles-reid/obituary-notes/README.md) — self-authored 2002 notes for a future Royal Society biographical memoir, with source links, chronology, academic-pipeline details, and evidence limitations.
+- [FTX / Sam Bankman-Fried federal criminal case](sources/ftx/sam-bankman-fried-federal-case/README.md) — seven-count trial and 2026 appeal, software/account evidence, cooperating-witness testimony, Ellison balance-sheet evidence, MIT/Stanford network, severed charges, atomic claim ledger, source provenance and evidentiary guardrails.
 
 ## Primary-source corpora
 
