@@ -1,0 +1,24 @@
+Source URL: https://www.reddit.com/r/berkeley/comments/1f8hwst
+Platform: Reddit / r/berkeley
+Public post date: 2024-09-04
+Retrieved: 2026-09-10
+Capture kind: public indexed-text snapshot
+Capture limitation: This is not source-native HTML or a screenshot. Preserve a native capture separately if available.
+
+New Grad Job Situation
+
+Hey recent (23-24) CS/EECS/DS grads. How is your job search going? If it's not so great, like for me, what do you do? Do you have a plan B?
+
+'bout me:
+
+Back in 2018, I decided to make a big change in my life, bet everything on education, and went to a community college with a following transfer to UCB. Spring 24 graduated with a BA CS degree. I did, I'd say, a bit better than average in school - GPA 3.8, managed to get one internship, built a portfolio of about 10 side projects, and developed a full-stack app for a small business that is currently in production. Also did a 2-semester-long interview-prep program where we did lots of coding questions and interview practice.
+
+I started seriously applying for jobs (20-60 applications/day) in May. As of today, I had about 10 interviews. Many of them were startups under 5 people who clearly were looking for someone more experienced but had vague requirements in the job postings. In at least a few of the interviews, I did pretty well but still got rejected. The worst, perhaps, was failing a coding assessment for an unpaid internship.
+
+Experiencing mass rejection every day isn't fun and my motivation and enthusiasm are about to be exhausted. I'm currently surviving on side gigs but the fact is that my savings will be depleted in a matter of few months and I will be forced to look for whatever would pay my bills.
+
+Same-thread later reply, 2024-12-26:
+
+Nope. Still doing SWE for a small business as a side hustle and just for fun.
+After about a thousand rejections, I decided to take a break and switch the gears. Got to spend more time doing hobbies, and somehow now I am in horse training and making a little cash there too.
+Barely afloat financially but relatively happy.
