@@ -28,6 +28,12 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 - [Adam Smith — *The Theory of Moral Sentiments*](adam-smith-theory-of-moral-sentiments.md) — sympathy, the impartial spectator, justice, virtue, status, and Smith's warning that admiration of wealth and rank can corrupt moral judgment.
 - [John Maynard Keynes — “Economic Possibilities for our Grandchildren” (1930)](economic-possibilities-for-our-grandchildren-1930.md) — the productivity-and-leisure argument, the approximately 2030 horizon, the fifteen-hour-week illustration, and Keynes's distinction between absolute and relative wants.
+- [Paul Lafargue — *The Right to Be Lazy* (1880/1883)](paul-lafargue-right-to-be-lazy-1880-1883.md) — an attack on the moral cult of work, a three-hour-day demand, and the argument that machinery and productivity should buy leisure rather than endless production and accumulation.
+
+## Executive compensation and corporate governance
+
+- [Academic economics, executive compensation, and the stock-option turn](executive-compensation-stock-options.md) — evidence that leading financial economists materially advocated stronger equity-based executive incentives, including stock options, while keeping the 1990s option boom's tax, accounting, governance, and market causes separate from the intellectual history.
+- [Lucian A. Bebchuk and Jesse M. Fried — *Pay without Performance*](bebchuk-fried-pay-without-performance.md) — author-credited source dossier on the managerial-power critique of arm's-length executive pay, camouflage and outrage constraints, option windfalls, weak pay-performance links, equity-unloading incentives, and the authors' governance reforms, with an explicit copyrighted-full-text evidence boundary.
 
 ## Executive compensation and corporate governance
 
