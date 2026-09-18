@@ -6,7 +6,9 @@ This is a reconstruction of the intellectual/source base behind Paula E. Stephan
 
 The strongest public source is Stephan's chapter **“The Economics of Science”** in *Handbook of the Economics of Innovation*, vol. 1 (2010), pp. 217–273. Its references run through the end of the chapter, and Stephan explicitly says the chapter **draws extensively from Stephan (1996)**. The chain is therefore documented:
 
-**Stephan 1996 JEL survey → Stephan 2010 handbook chapter → Stephan 2012 book.**
+**Verified source edge:** Stephan 1996 JEL survey → Stephan 2010 handbook chapter.
+
+**Precursor relation, not yet a verified citation edge:** Stephan 2010 handbook chapter → Stephan 2012 book.
 
 A 2012 review of the finished book independently says that its opening account of puzzles and recognition draws on **Thomas Kuhn, Robert K. Merton, Warren Hagstrom, and Derek de Solla Price**, and that only about **13% of the book's references are economics literature**. Sociology, management, education, science studies, policy reports, and other literatures matter heavily.
 
