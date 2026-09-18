@@ -24,7 +24,7 @@
 9. Relationship of Science to Economic Growth
 10. Can We Do Better?
 
-The book's printed references occupy roughly pp. 307–348. I have not treated an inaccessible/paywalled reference section as if I had read it.
+The book's printed references are **pp. 307–348**. JSTOR identifies the section as `j.ctt2jbqd1.18`, and Harvard/De Gruyter gives the section DOI **10.4159/harvard.9780674062757.c15**. Those primary records verify the section identity and page range, but the complete citation text is not exposed in the access state used for this repository pass. I have not treated the inaccessible/paywalled bibliography as if I had read it.
 
 ## How this source trail is labeled
 
@@ -35,9 +35,9 @@ This matters because Stephan published a closely related survey before the book.
 - **followed** — I independently followed the cited work far enough to identify what it contributes to Stephan's argument.
 - **follow-forward** — later work by Stephan or collaborators that tests or sharpens a question raised in the book.
 
-Paula Stephan's 2010 chapter explicitly says that it “draws extensively” on her 1996 *Journal of Economic Literature* article. That gives a documented chain:
+Paula Stephan's 2010 chapter explicitly says that it “draws extensively” on her 1996 *Journal of Economic Literature* article. That directly documents **Stephan 1996 → Stephan 2010**.
 
-**Stephan 1996 → Stephan 2010 → Stephan 2012 book.**
+The 2010 chapter is a closely related public precursor to the 2012 book, but without direct page-level inspection of the 2012 notes/references, this repository does **not** encode **Stephan 2010 → Stephan 2012** as a verified citation edge.
 
 - Paula E. Stephan, “The Economics of Science,” *Journal of Economic Literature* 34(3), 1996, 1199–1235: <https://ideas.repec.org/a/aea/jeclit/v34y1996i3p1199-1235.html>
 - Paula E. Stephan, “The Economics of Science,” in *Handbook of the Economics of Innovation*, vol. 1, 2010. Public handbook PDF: <https://users.metu.edu.tr/pamukcu/HandbookofInno2010.pdf>
@@ -177,6 +177,6 @@ More broadly, the book is standing on several communities that deserve to remain
 
 ## Remaining provenance work
 
-The biggest unresolved task is mechanical rather than conceptual: obtain lawful page-level access to the **2012 reference section, pp. 307–348**, and promote precursor items to `2012-confirmed` only when the actual 2012 bibliography verifies them. Until then this file deliberately preserves the distinction.
+The biggest unresolved task is mechanical rather than conceptual: obtain lawful page-level access to the **2012 reference section, pp. 307–348** (section DOI **10.4159/harvard.9780674062757.c15**), and promote precursor items to `2012-confirmed` only when the actual 2012 bibliography verifies them. Until then this file deliberately preserves the distinction; the uncaptured bibliography remains a retrieval frontier, not evidence silently supplied by the 2010 precursor.
 
 I am also deliberately **not** reproducing Stephan's entire copyrighted reference section. This is a curated, checkable source trail intended to send a reader outward to the works and people that made the book possible.
