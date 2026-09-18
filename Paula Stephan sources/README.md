@@ -4,9 +4,10 @@ This directory is the recursive source trail behind Paula E. Stephan's work on s
 
 The root object is Stephan's 2012 book *How Economics Shapes Science*. The best publicly inspectable upstream bridge is her 2010 handbook chapter, “The Economics of Science,” which explicitly says that it draws extensively from her 1996 *Journal of Economic Literature* survey.
 
-Documented chain:
+Documented precursor relation:
 
-**Stephan 1996 → Stephan 2010 → Stephan 2012**
+- Stephan's 2010 chapter explicitly says that it draws extensively from her 1996 *Journal of Economic Literature* survey, so **Stephan 1996 → Stephan 2010** is a verified source relationship.
+- The 2010 chapter is a closely related public precursor to the 2012 book, but until the 2012 notes/references are directly inspected, do **not** encode **Stephan 2010 → Stephan 2012** as a verified citation edge.
 
 The existing book note is at [`../books/paula-stephan-how-economics-shapes-science.md`](../books/paula-stephan-how-economics-shapes-science.md), and the thematic source map is at [`../sources/paula-stephan-public-source-map.md`](../sources/paula-stephan-public-source-map.md).
 
@@ -60,10 +61,12 @@ The goal is therefore not an endlessly duplicated citation tree. It is a directe
 ### Paula E. Stephan — *How Economics Shapes Science* (2012)
 
 - Harvard University Press, 2012.
-- Book reference section: pp. 307–348.
+- Exact reference section: **pp. 307–348**.
+- Primary section records: JSTOR `j.ctt2jbqd1.18`; Harvard/De Gruyter DOI **10.4159/harvard.9780674062757.c15**.
+- Those records verify the identity and page extent of the reference section; they do **not** expose its complete citation text in the access state used for this repository pass.
 - JSTOR/De Gruyter provide records and institutional-access versions, but the book is copyrighted.
 - Internet Archive/Open Library copies are restricted/controlled-lending copies, not redistribution permission.
-- The 2012 bibliography has **not** been silently substituted with the 2010 bibliography.
+- The 2012 bibliography has **not** been silently substituted with the 2010 bibliography. Full citation-by-citation capture remains a retrieval frontier.
 
 ### Paula E. Stephan — “The Economics of Science” (2010)
 
