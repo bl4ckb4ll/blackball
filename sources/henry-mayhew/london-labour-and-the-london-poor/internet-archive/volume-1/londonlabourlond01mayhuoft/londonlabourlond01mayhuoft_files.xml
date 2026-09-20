@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1765381298</mtime>
+    <size>7063</size>
+    <md5>c6ba1043f941b430b4f894af7a13f8ad</md5>
+    <crc32>ede9cd40</crc32>
+    <sha1>5e81a4bf017bd6e3942863c70d49cdc5bac76268</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="_cloth_detection.log" source="derivative">
+    <cloth_cover_detection_module_version>2.1.4</cloth_cover_detection_module_version>
+    <format>Cloth Cover Detection Log</format>
+    <original>scandata.zip</original>
+    <mtime>1714818157</mtime>
+    <size>1445</size>
+    <md5>53939543503934742c4ed4510049dfcd</md5>
+    <crc32>e46585c1</crc32>
+    <sha1>94c50473d1403c2404e7e4fe7303392d9a7e7972</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft.epub" source="derivative">
+    <hocr_epub_module_version>0.0.1</hocr_epub_module_version>
+    <hocr_epub_hocr_version>1.1.66</hocr_epub_hocr_version>
+    <format>EPUB</format>
+    <original>londonlabourlond01mayhuoft_hocr.html</original>
+    <mtime>1765381008</mtime>
+    <size>28248409</size>
+    <md5>5516d33c63e156dc2968a4fb4fadb86e</md5>
+    <crc32>29ef9cf8</crc32>
+    <sha1>dc9e2b7abb28aee3083a6026d4ca2a80b95cfd5d</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>londonlabourlond01mayhuoft_jp2.zip</original>
+    <md5>e7432aec1ae043222f6466a69e526967</md5>
+    <mtime>1193822996</mtime>
+    <size>267621</size>
+    <crc32>2b686e41</crc32>
+    <sha1>0ceecaa3715c5082f62ea54c639058bc7afd600e</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft.pdf" source="derivative">
+    <format>Text PDF</format>
+    <original>londonlabourlond01mayhuoft_page_numbers.json</original>
+    <mtime>1714818209</mtime>
+    <size>56881287</size>
+    <md5>90734bd0fcea5fcd675f4775354351e7</md5>
+    <crc32>1feb3e77</crc32>
+    <sha1>70b121b376078c458a57bfc470c274bae46e4d4f</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>londonlabourlond01mayhuoft_jp2.zip</original>
+    <md5>bc6cb54b22cfd394e638b020ab55950b</md5>
+    <mtime>1193864276</mtime>
+    <size>43244688</size>
+    <crc32>45527a5f</crc32>
+    <sha1>cb18da875ea85414d56e8522b23f3ee0266bfe09</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_archive.torrent" source="metadata">
+    <btih>089da8a31a68a958c36181852b592e3aa75fa390</btih>
+    <mtime>1765381310</mtime>
+    <size>19507</size>
+    <md5>75d7924691edb5510dfe6d2ef0342c1a</md5>
+    <crc32>c96fd668</crc32>
+    <sha1>39451da0f7205262b3ca4446608f1d3c81eca2a6</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="londonlabourlond01mayhuoft_bw.pdf" source="derivative">
+    <format>Grayscale PDF</format>
+    <original>londonlabourlond01mayhuoft_page_numbers.json</original>
+    <mtime>1714818210</mtime>
+    <size>58702824</size>
+    <md5>d3266d70d326277edf9e1483d9ba1095</md5>
+    <crc32>4ab24abf</crc32>
+    <sha1>a68a05644c695cd6fc84513984f143c301ebff28</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_chocr.html.gz" source="derivative">
+    <ocr_module_version>0.0.14</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.11</ocr_converted>
+    <format>chOCR</format>
+    <original>londonlabourlond01mayhuoft_abbyy.gz</original>
+    <mtime>1637795212</mtime>
+    <size>35270643</size>
+    <md5>d7ccf00d6a22cdda593f9b7318a222b4</md5>
+    <crc32>819ad4b8</crc32>
+    <sha1>dc6b6cfcd22bba4dd6e294abf81916805cf70d33</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_dc.xml" source="original">
+    <format>Dublin Core</format>
+    <md5>0a01b950ec4f8e889a7726eebea12701</md5>
+    <mtime>1649065068</mtime>
+    <size>1506</size>
+    <crc32>74c848b8</crc32>
+    <sha1>ef4573567603216568a439c2aabad945b698f791</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>londonlabourlond01mayhuoft_djvu.xml</original>
+    <mtime>1722761368</mtime>
+    <size>3324879</size>
+    <md5>b0213b6260f99597a35e9385cda552e7</md5>
+    <crc32>a64f7a99</crc32>
+    <sha1>855290bc942371eb87e1130938e2dd3976a6640e</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>londonlabourlond01mayhuoft_hocr.html</original>
+    <mtime>1722761361</mtime>
+    <size>40239668</size>
+    <md5>0866e201e03259f28c20e56b38539b5c</md5>
+    <crc32>2c5f0c37</crc32>
+    <sha1>26042063e7230b3c7c46043cc0a3fd1731012ae3</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>9eb685acd7a4d55068bb249f20c67780</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="londonlabourlond01mayhuoft_hocr.html" source="derivative">
+    <hocr_char_to_word_module_version>1.0.0</hocr_char_to_word_module_version>
+    <hocr_char_to_word_hocr_version>1.1.2</hocr_char_to_word_hocr_version>
+    <ocr_module_version>0.0.14</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.11</ocr_converted>
+    <format>hOCR</format>
+    <original>londonlabourlond01mayhuoft_chocr.html.gz</original>
+    <mtime>1637795453</mtime>
+    <size>76129303</size>
+    <md5>7ad9c72ff16de9438a5768e17b7f5832</md5>
+    <crc32>22070f9a</crc32>
+    <sha1>6a53ebd828ab078666ffa029d86bc6ea321bd555</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_hocr_pageindex.json.gz" source="derivative">
+    <hocr_pageindex_module_version>1.0.0</hocr_pageindex_module_version>
+    <hocr_pageindex_hocr_version>1.1.0</hocr_pageindex_hocr_version>
+    <format>OCR Page Index</format>
+    <original>londonlabourlond01mayhuoft_hocr.html</original>
+    <mtime>1637795632</mtime>
+    <size>7436</size>
+    <md5>b7121900654d614fa63233a37acc3436</md5>
+    <crc32>7b6b9353</crc32>
+    <sha1>6ff16f368fee883ba3ca4bd13c7a3f7e794b17e7</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_hocr_searchtext.txt.gz" source="derivative">
+    <hocr_fts_text_module_version>1.1.0</hocr_fts_text_module_version>
+    <hocr_fts_text_hocr_version>1.1.0</hocr_fts_text_hocr_version>
+    <word_conf_0_10>29856</word_conf_0_10>
+    <word_conf_11_20>46877</word_conf_11_20>
+    <word_conf_21_30>436117</word_conf_21_30>
+    <word_conf_31_40>0</word_conf_31_40>
+    <word_conf_41_50>0</word_conf_41_50>
+    <word_conf_51_60>0</word_conf_51_60>
+    <word_conf_61_70>0</word_conf_61_70>
+    <word_conf_71_80>0</word_conf_71_80>
+    <word_conf_81_90>0</word_conf_81_90>
+    <word_conf_91_100>0</word_conf_91_100>
+    <format>OCR Search Text</format>
+    <original>londonlabourlond01mayhuoft_hocr.html</original>
+    <mtime>1637795697</mtime>
+    <size>1185057</size>
+    <md5>d00d00c8a3f9f96d4ec7bd59abe047ac</md5>
+    <crc32>5b3a409b</crc32>
+    <sha1>afea64970f17abab6c09219b0b4cfd8aa7ea8828</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>londonlabourlond01mayhuoft_raw_jp2.zip</original>
+    <mtime>1193820023</mtime>
+    <size>296080180</size>
+    <md5>2c371c236642c62b16c78c4505f1c08f</md5>
+    <crc32>9adb1020</crc32>
+    <sha1>ef0748ed5bfad5e3459d9ef47c261ae636f3e63b</sha1>
+    <filecount>604</filecount>
+  </file>
+  <file name="londonlabourlond01mayhuoft_marc.xml" source="original">
+    <format>MARC</format>
+    <md5>e483a4f77479df152d0aa1991831987f</md5>
+    <mtime>1193699226</mtime>
+    <size>5610</size>
+    <crc32>7666e524</crc32>
+    <sha1>ec40b866716ce348fab3a549f0e19864345e7055</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_meta.mrc" source="original">
+    <md5>9598aa74e27d5d1c48aae70e1a2989d2</md5>
+    <format>MARC Binary</format>
+    <mtime>1193699226</mtime>
+    <size>1855</size>
+    <crc32>7ca74893</crc32>
+    <sha1>7bbbc1a38f4e315bda44d4757f178fcd601576c3</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_meta.sqlite" source="original">
+    <mtime>1466996769</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>10abdb22e5ab0f9a4a92cfddc7fda6b3</md5>
+    <crc32>60db5c9b</crc32>
+    <sha1>30a0ffa9f18b73d8ce0391a366434ac4c3fb8de0</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1765381305</mtime>
+    <size>3527</size>
+    <md5>ab9f278afb142d185ade1c5b0a177568</md5>
+    <crc32>1fc382ab</crc32>
+    <sha1>48bafee8ff9c0510ee852ecd4dda782377bc6f3d</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_metasource.xml" source="original">
+    <format>MARC Source</format>
+    <md5>e07d2e66ea1e132a7a0af25144c29df3</md5>
+    <mtime>1193699226</mtime>
+    <size>381</size>
+    <crc32>fd022a6a</crc32>
+    <sha1>5f977d46dff44c8d9c6f99c9115cc3145ecd1122</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_page_numbers.json" source="derivative">
+    <hocr_pagenumber_module_version>1.0.5</hocr_pagenumber_module_version>
+    <hocr_pagenumber_hocr_version>1.1.54</hocr_pagenumber_hocr_version>
+    <hocr_pagenumber_confidence>98</hocr_pagenumber_confidence>
+    <format>Page Numbers JSON</format>
+    <original>londonlabourlond01mayhuoft_hocr.html</original>
+    <mtime>1714818201</mtime>
+    <size>101618</size>
+    <md5>1a7a6095f6681f76e60b4b5a0c662890</md5>
+    <crc32>1fdc675f</crc32>
+    <sha1>5252a0d61e158c0ff6618bb4be7958b6337e9748</sha1>
+  </file>
+  <file name="londonlabourlond01mayhuoft_raw_jp2.zip" source="original">
+    <format>Single Page Raw JP2 ZIP</format>
+    <md5>2ac09940c3a250e77be5f131d378bc14</md5>
+    <mtime>1193819983</mtime>
+    <size>398258655</size>
+    <crc32>fe0345f4</crc32>
+    <sha1>462b4c6ab8d2efd3a627852627a50f8ff2742c20</sha1>
+    <filecount>604</filecount>
+  </file>
+  <file name="londonlabourlond01mayhuoft_reviews.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1198086443</mtime>
+    <size>756</size>
+    <md5>d7ea77425c97d524b99ed59cd2496b4e</md5>
+    <crc32>5b3e56e5</crc32>
+    <sha1>3c7af902eb1be7d3407c6cce0273e2967ec7ab0e</sha1>
+  </file>
+  <file name="scandata.zip" source="original">
+    <format>Scribe Scandata ZIP</format>
+    <md5>27d1704e98ed50050c564b2d26161089</md5>
+    <mtime>1714818156</mtime>
+    <size>101346749</size>
+    <crc32>fd96e1aa</crc32>
+    <sha1>b8b9015f00e2c6ccfdf148d13ab4a8a1b3e1693b</sha1>
+    <filecount>11</filecount>
+  </file>
+</files>

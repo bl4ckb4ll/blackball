@@ -1,0 +1,1036 @@
+<ocr_analysis>
+  <version>1</version>
+  <toc>
+    <!-- 10: VOLUME  - iii -->
+    <!-- 10: THE  STKEET-FOLK. PAGE The  Destroyers  op  Vermin         -        -        -        -        -        -  - 1 -->
+    <!-- 10: Street-Exhibitors     -        -        -        -        -  - 43 -->
+    <!-- 10: Street-Musicians      -       -       -       -        -        -       -       -       -       -  - 158 -->
+    <!-- 10: Street-Vocalists       -       -       -       -        -       -  - 190 -->
+    <!-- 10: Street- Artists         -       -       -       -        -       -       -       -       -       -  - 204 -->
+    <!-- 10: Exhibitors  of  Trained  Animals  -       -        -       -       -        -       -       -  - 214 -->
+    <!-- 10: Skilled  and  Unskilled  Labour    -       -    *   -       -       -       -       -  - 221 -->
+    <!-- 10: Garret-Masters        -        -        -        -        -        -  - 221 -->
+    <!-- 10: The  Coal-Heavers    -        -        -        -        -        -  - 234 -->
+    <!-- 10: Ballast-Men    -       -       -       -       -       -  - 265 -->
+    <!-- 10: Lumpers  -       -       -  - 288 -->
+    <!-- 10: The  Dock-Labourers  -       -  - 300 -->
+    <!-- 10: Cheap  Lodging-Houses        -        -        -        -        -  - 312 -->
+    <!-- 10: The  Transit  op  Great  Britain  and  the  Metropolis         -  - 318 -->
+    <!-- 10: London  Watermen,  Lightermen,  and  Steamboat-Men        -  - 327 -->
+    <!-- 10: London  Omnibus-Drivers  and  Conductors       -  - 335 -->
+    <!-- 10: London  Cab-Drivers  -       -  - 351 -->
+    <!-- 10: London  Carmen  and  Porters       -       -       -       -       -  - 357 -->
+    <!-- 10: London  Vagrants     -       -       -       -       -       -  - 363 -->
+    <!-- 10: Meeting  op  Ticket-of-Leave  Men                                 &#8226;*       &#187;       -  - 430 -->
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>iii</name>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>VOLUME </text>
+          <box>1105 1006 1471 950</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>1</name>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>THE </text>
+          <box>1014 1374 1192 1324</box>
+        </word>
+        <word>
+          <text>STKEET-FOLK.</text>
+          <box>1192 1375 1679 1324</box>
+        </word>
+        <word>
+          <text>PAGE</text>
+          <box>2319 1442 2419 1418</box>
+        </word>
+        <word>
+          <text>The </text>
+          <box>281 1510 404 1470</box>
+        </word>
+        <word>
+          <text>Destroyers </text>
+          <box>404 1509 709 1470</box>
+        </word>
+        <word>
+          <text>op </text>
+          <box>709 1506 790 1466</box>
+        </word>
+        <word>
+          <text>Vermin        </text>
+          <box>790 1507 1136 1466</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1136 1505 1294 1478</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1294 1505 1456 1478</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1456 1505 1613 1478</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1613 1505 1772 1478</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1772 1505 1930 1468</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>1930 1505 2395 1468</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>43</name>
+          <leaf>65</leaf>
+          <index>62</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Street-Exhibitors    </text>
+          <box>284 1605 817 1563</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>817 1599 975 1572</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>975 1599 1293 1572</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1293 1599 1613 1572</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1613 1599 1932 1572</box>
+        </word>
+        <word>
+          <text>-- </text>
+          <box>1932 1599 2248 1560</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>158</name>
+          <leaf>192</leaf>
+          <index>189</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Street-Musicians     </text>
+          <box>282 1699 815 1656</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>815 1695 975 1667</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>975 1695 1132 1667</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1132 1695 1292 1667</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1292 1695 1452 1667</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1452 1695 1613 1667</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1613 1695 1772 1667</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1772 1695 1930 1667</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1930 1695 2090 1667</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>2090 1695 2250 1655</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2250 1695 2342 1655</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>190</name>
+          <leaf>228</leaf>
+          <index>225</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Street-Vocalists      </text>
+          <box>282 1794 822 1751</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>822 1788 979 1760</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>979 1788 1298 1760</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1298 1788 1615 1760</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1615 1788 1934 1760</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1934 1788 2249 1748</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2249 1788 2342 1748</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>204</name>
+          <leaf>242</leaf>
+          <index>239</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Street-</text>
+          <box>284 1889 465 1849</box>
+        </word>
+        <word>
+          <text>Artists        </text>
+          <box>466 1886 819 1846</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>819 1884 976 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>976 1884 1136 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1136 1884 1297 1856</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1297 1884 1457 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1457 1884 1614 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1614 1884 1774 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1774 1884 1933 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1933 1884 2091 1856</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>2091 1884 2249 1844</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2249 1884 2342 1844</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>214</name>
+          <leaf>254</leaf>
+          <index>251</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Exhibitors </text>
+          <box>282 1982 575 1942</box>
+        </word>
+        <word>
+          <text>of </text>
+          <box>575 1981 656 1939</box>
+        </word>
+        <word>
+          <text>Trained </text>
+          <box>656 1979 884 1938</box>
+        </word>
+        <word>
+          <text>Animals </text>
+          <box>884 1979 1136 1938</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1136 1979 1296 1951</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1296 1979 1456 1951</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1456 1979 1614 1951</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1614 1979 1773 1951</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>1773 1979 1934 1951</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1934 1979 2092 1951</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>2092 1979 2250 1941</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2250 1979 2342 1941</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>221</name>
+          <leaf>261</leaf>
+          <index>258</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Skilled </text>
+          <box>284 2075 501 2035</box>
+        </word>
+        <word>
+          <text>and </text>
+          <box>501 2074 616 2034</box>
+        </word>
+        <word>
+          <text>Unskilled </text>
+          <box>616 2073 893 2032</box>
+        </word>
+        <word>
+          <text>Labour   </text>
+          <box>893 2073 1140 2032</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1140 2072 1298 2044</box>
+        </word>
+        <word>
+          <text>-   </text>
+          <box>1298 2072 1389 2044</box>
+        </word>
+        <word>
+          <text>*  </text>
+          <box>1389 2072 1458 2044</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1458 2072 1616 2044</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1616 2072 1775 2044</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1775 2072 1933 2044</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1933 2072 2091 2044</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2091 2072 2250 2034</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>221</name>
+          <leaf>261</leaf>
+          <index>258</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Garret-Masters       </text>
+          <box>285 2169 826 2128</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>826 2166 985 2139</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>985 2166 1303 2139</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1303 2166 1620 2139</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1620 2166 1934 2139</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1934 2166 2252 2130</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2252 2166 2342 2130</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>234</name>
+          <leaf>276</leaf>
+          <index>273</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>The </text>
+          <box>284 2262 409 2221</box>
+        </word>
+        <word>
+          <text>Coal-Heavers   </text>
+          <box>409 2263 824 2221</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>824 2260 980 2233</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>980 2260 1300 2233</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1300 2260 1618 2233</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1618 2260 1935 2233</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1935 2260 2251 2224</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2251 2260 2343 2224</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>265</name>
+          <leaf>311</leaf>
+          <index>308</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Ballast-Men   </text>
+          <box>283 2358 668 2317</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>668 2355 825 2327</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>825 2355 1141 2327</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1141 2355 1457 2327</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1457 2355 1776 2327</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1776 2355 2092 2322</box>
+        </word>
+        <word>
+          <text>-- </text>
+          <box>2092 2355 2343 2322</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>288</name>
+          <leaf>336</leaf>
+          <index>333</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Lumpers </text>
+          <box>283 2453 513 2413</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>513 2449 828 2421</box>
+        </word>
+        <word>
+          <text>---------      </text>
+          <box>828 2449 2253 2418</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2253 2449 2344 2418</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>300</name>
+          <leaf>350</leaf>
+          <index>347</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>The </text>
+          <box>285 2548 405 2507</box>
+        </word>
+        <word>
+          <text>Dock-Labourers </text>
+          <box>405 2546 828 2507</box>
+        </word>
+        <word>
+          <text>---------      </text>
+          <box>828 2544 2253 2512</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2253 2544 2345 2512</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>312</name>
+          <leaf>362</leaf>
+          <index>359</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Cheap </text>
+          <box>286 2644 465 2600</box>
+        </word>
+        <word>
+          <text>Lodging-Houses       </text>
+          <box>465 2641 985 2600</box>
+        </word>
+        <word>
+          <text>-       </text>
+          <box>985 2639 1143 2612</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1143 2639 1461 2612</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1461 2639 1778 2612</box>
+        </word>
+        <word>
+          <text>--       </text>
+          <box>1778 2639 2095 2609</box>
+        </word>
+        <word>
+          <text>-- </text>
+          <box>2095 2639 2344 2609</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>318</name>
+          <leaf>370</leaf>
+          <index>367</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>The </text>
+          <box>284 2739 411 2696</box>
+        </word>
+        <word>
+          <text>Transit </text>
+          <box>411 2737 627 2696</box>
+        </word>
+        <word>
+          <text>op </text>
+          <box>627 2736 710 2697</box>
+        </word>
+        <word>
+          <text>Great </text>
+          <box>710 2737 889 2697</box>
+        </word>
+        <word>
+          <text>Britain </text>
+          <box>889 2736 1107 2697</box>
+        </word>
+        <word>
+          <text>and </text>
+          <box>1107 2736 1223 2707</box>
+        </word>
+        <word>
+          <text>the </text>
+          <box>1223 2736 1336 2696</box>
+        </word>
+        <word>
+          <text>Metropolis        </text>
+          <box>1336 2736 1778 2696</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>1778 2736 2346 2704</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>327</name>
+          <leaf>379</leaf>
+          <index>376</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>London </text>
+          <box>285 2832 493 2790</box>
+        </word>
+        <word>
+          <text>Watermen, </text>
+          <box>493 2838 793 2791</box>
+        </word>
+        <word>
+          <text>Lightermen, </text>
+          <box>793 2839 1123 2791</box>
+        </word>
+        <word>
+          <text>and </text>
+          <box>1123 2832 1241 2792</box>
+        </word>
+        <word>
+          <text>Steamboat-Men       </text>
+          <box>1241 2832 1780 2792</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>1780 2832 2346 2801</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>335</name>
+          <leaf>389</leaf>
+          <index>386</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>London </text>
+          <box>285 2925 496 2882</box>
+        </word>
+        <word>
+          <text>Omnibus-Drivers </text>
+          <box>496 2925 932 2883</box>
+        </word>
+        <word>
+          <text>and </text>
+          <box>932 2925 1050 2885</box>
+        </word>
+        <word>
+          <text>Conductors      </text>
+          <box>1050 2927 1464 2885</box>
+        </word>
+        <word>
+          <text>------ </text>
+          <box>1464 2925 2346 2894</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>351</name>
+          <leaf>407</leaf>
+          <index>404</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>London </text>
+          <box>286 3018 495 2975</box>
+        </word>
+        <word>
+          <text>Cab-Drivers </text>
+          <box>495 3019 828 2977</box>
+        </word>
+        <word>
+          <text>---------      </text>
+          <box>828 3016 2254 2988</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2254 3017 2346 2988</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>357</name>
+          <leaf>413</leaf>
+          <index>410</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>London </text>
+          <box>288 3112 494 3069</box>
+        </word>
+        <word>
+          <text>Carmen </text>
+          <box>494 3113 708 3072</box>
+        </word>
+        <word>
+          <text>and </text>
+          <box>708 3111 824 3072</box>
+        </word>
+        <word>
+          <text>Porters      </text>
+          <box>824 3113 1145 3072</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>1145 3111 1304 3083</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1304 3111 1620 3083</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1620 3111 1938 3083</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1938 3111 2256 3082</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2256 3111 2346 3082</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>363</name>
+          <leaf>419</leaf>
+          <index>416</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>London </text>
+          <box>287 3207 495 3164</box>
+        </word>
+        <word>
+          <text>Vagrants    </text>
+          <box>495 3207 826 3166</box>
+        </word>
+        <word>
+          <text>-      </text>
+          <box>826 3206 985 3177</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>985 3206 1303 3177</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1303 3206 1621 3177</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1621 3206 1937 3177</box>
+        </word>
+        <word>
+          <text>--      </text>
+          <box>1937 3206 2255 3177</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2255 3206 2347 3177</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+    <entry>
+      <level>1</level>
+      <refpage>
+        <page>
+          <name>430</name>
+          <leaf>494</leaf>
+          <index>491</index>
+        </page>
+      </refpage>
+      <title>
+        <word>
+          <text>Meeting </text>
+          <box>287 3301 518 3257</box>
+        </word>
+        <word>
+          <text>op </text>
+          <box>518 3301 597 3258</box>
+        </word>
+        <word>
+          <text>Ticket-of-Leave </text>
+          <box>597 3301 1030 3258</box>
+        </word>
+        <word>
+          <text>Men                                </text>
+          <box>1030 3306 1779 3261</box>
+        </word>
+        <word>
+          <text>&#8226;*      </text>
+          <box>1779 3304 1938 3273</box>
+        </word>
+        <word>
+          <text>&#187;      </text>
+          <box>1938 3302 2098 3272</box>
+        </word>
+        <word>
+          <text>- </text>
+          <box>2098 3301 2346 3272</box>
+        </word>
+      </title>
+      <tocpage>
+        <page>
+          <leaf>13</leaf>
+          <index>10</index>
+        </page>
+      </tocpage>
+    </entry>
+  </toc>
+</ocr_analysis>

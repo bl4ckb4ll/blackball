@@ -1,0 +1,22 @@
+Found scandata at /var/tmp/autoclean/derive/b20415606_002/b20415606_002_scandata.xml.
+Will skip page 1 because it's a cover page.
+Will skip page 492 because it's a cover page.
+Seeking title page...
+
+Will skip the following pages as requested: 1,492
+Title:      "london labour and the london poor [electronic resource] : a cyclopaedia of the condition and earnings of those that will work, those that cannot work, and those that will not work."
+
+Candidate pages:
+  p. 7     330 total px    283.8 adj total
+
+Word details for selected page:
+  london    104 px
+  laboue    104 px
+  will       38 px
+  work,      48 px
+  cannot     36 px
+
+Selected title page: 7
+Identified leaf 7 as title page.
+Marking leaf 7 as 'Title'.
+Scandata has been modified. Saving log...

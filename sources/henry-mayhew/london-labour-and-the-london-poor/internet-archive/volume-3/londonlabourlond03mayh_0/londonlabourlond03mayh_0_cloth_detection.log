@@ -1,0 +1,7 @@
+02-Nov-22 15:59:25 INFO     Start cloth cover detector module version 1.2!
+02-Nov-22 15:59:25 INFO     sourceFile(scandata) : '/item/londonlabourlond03mayh_0_scandata.xml' -> targetFile(log-file) '/item/londonlabourlond03mayh_0_cloth_detection.log'
+02-Nov-22 15:59:25 INFO     The 'jp2' archive was found! Path to file: '/item/londonlabourlond03mayh_0_jp2.zip'
+02-Nov-22 15:59:26 INFO     Analysis of cover page with leafNum 1: 'is cloth' - False, 'edge level' - 13.664196132424086
+02-Nov-22 15:59:28 INFO     Analysis of cover page with leafNum 512: 'is cloth' - True, 'edge level' - 10.98539128315968
+02-Nov-22 15:59:28 INFO     Save new scandata with tag 'clothCover' in /item/londonlabourlond03mayh_0_scandata.xml
+02-Nov-22 15:59:28 INFO     Successful finish cloth-cover detector !

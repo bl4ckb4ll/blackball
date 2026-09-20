@@ -1,0 +1,91 @@
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01514cam a2200301I  4500</leader>
+  <controlfield tag="001">ocm00645483</controlfield>
+  <controlfield tag="005">19900219155706.8</controlfield>
+  <controlfield tag="008">880503m18611862enkabf        000 0 engm </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   09026340 //r</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">KSU</subfield>
+    <subfield code="d">SER</subfield>
+    <subfield code="d">m.c.</subfield>
+    <subfield code="d">XBM</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">e-uk-en</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2=" ">
+    <subfield code="a">HV4088.L8</subfield>
+    <subfield code="b">M5</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mayhew, Henry,</subfield>
+    <subfield code="d">1812-1887.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">London labour and the London poor;</subfield>
+    <subfield code="b">a cyclopædia of the condition and earnings of those that will work, those that cannot work, and those that will not work.</subfield>
+    <subfield code="c">By Henry Mayhew ...</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">London,</subfield>
+    <subfield code="b">Griffin, Bohn, and Company,</subfield>
+    <subfield code="c">1861-62.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">4 v.</subfield>
+    <subfield code="b">fronts. (v. 1, 3-4) plates, maps, tables.</subfield>
+    <subfield code="c">23 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">[The great metropolis,</subfield>
+    <subfield code="v">II]</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">I-III. The London street-folk; comprising, Street sellers. Street buyers. Street finders. Street performers. Street artizans. Street labourers.--[Extra volume] Those that will not work. Comprising, Prostitutes. Thieves. Swindlers. Beggars. By several contributors. With introductory essay on the agencies at present in operation in the metropolis for the suppression of vice and crime. By the Rev. William Tuckniss ...</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Poor</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Working class</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Crime</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Charities</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Prostitution</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Tuckniss, William.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Great metropolis ;</subfield>
+    <subfield code="v">II.</subfield>
+  </datafield>
+  <datafield tag="935" ind1=" " ind2=" ">
+    <subfield code="a">AAP-8057</subfield>
+  </datafield>
+  <datafield tag="907" ind1=" " ind2=" ">
+    <subfield code="a">.b11563692</subfield>
+  </datafield>
+  <datafield tag="915" ind1=" " ind2=" ">
+    <subfield code="9">Baseline 09_2013</subfield>
+    <subfield code="9">Under Authority Control</subfield>
+  </datafield>
+</record>

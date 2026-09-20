@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02382cam a22004691  4500</leader>
+  <controlfield tag="001">AAW-8697    </controlfield>
+  <controlfield tag="005">20070318000000.0</controlfield>
+  <controlfield tag="007">he amb---bucu       </controlfield>
+  <controlfield tag="008">821203m18611862enkabf        00000 eng  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">09026340</subfield>
+    <subfield code="z">09026340</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">RLINCCSG79211771-B</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(CaOTULAS)36064039</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(C)ZZB00208327</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="c">CarP</subfield>
+    <subfield code="d">CStRLIN</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">e-uk-en</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mayhew, Henry,</subfield>
+    <subfield code="d">1812-1887.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">London labour and the London poor</subfield>
+    <subfield code="h">[microform] :</subfield>
+    <subfield code="b">a cyclopaedia of the condition and earnings of those that will work, those that cannot work, and those that will not work.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">London :</subfield>
+    <subfield code="b">Griffin, Bohn, and company,</subfield>
+    <subfield code="c">1861-62.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">4 v. :</subfield>
+    <subfield code="b">fronts. (v. 1, 3-4) plates, maps, tables ;</subfield>
+    <subfield code="c">23 cm.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">I-III. The London street-folk; comprising, Street sellers. Street buyers. Street finders. Street performers. Street artizans. Street labourers.--[Extra volume] Those that will not work. Comprising, Prostitutes. Thieves. Swindlers. Beggars. By several contributors. With introductory essay on the agencies at present in operation in the metropolis for the suppression of vice and crime. By the Rev. William Tuckniss...</subfield>
+  </datafield>
+  <datafield tag="533" ind1=" " ind2=" ">
+    <subfield code="a">Microfiche.</subfield>
+    <subfield code="b">Ann Arbor, Mich. :</subfield>
+    <subfield code="c">University Microfillms,</subfield>
+    <subfield code="d">1998.</subfield>
+    <subfield code="e">6 + 7 + 5 + 6 microfiches.</subfield>
+    <subfield code="f">(English poor laws ; PL153).</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Print version also available in the Sutro Library. Cf. Sutro collection. Bibliography of books and pamphlets on the English poor laws (1639-1890), San Francisco, 1940., p. 23.</subfield>
+    <subfield code="5">C</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Labor and laboring classes</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Crime and criminals</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Prostitution</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Public welfare</subfield>
+    <subfield code="z">England</subfield>
+    <subfield code="z">London.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Poor</subfield>
+    <subfield code="z">London</subfield>
+    <subfield code="z">England.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="0">
+    <subfield code="a">London (England)</subfield>
+    <subfield code="x">Charities.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Tuckniss, William.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">4.1</subfield>
+    <subfield code="a">CRL</subfield>
+    <subfield code="b">CRLL</subfield>
+    <subfield code="j">B-11201</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">1.1</subfield>
+    <subfield code="a">LAGE</subfield>
+    <subfield code="b">sr</subfield>
+    <subfield code="h">HV4088.L8</subfield>
+    <subfield code="i">M4</subfield>
+    <subfield code="3">v.1-4</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">3.1</subfield>
+    <subfield code="a">GLAD</subfield>
+    <subfield code="b">BANC</subfield>
+    <subfield code="h">HV4088.L8</subfield>
+    <subfield code="i">M28 1861</subfield>
+    <subfield code="3">v.1-4</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">3.2</subfield>
+    <subfield code="a">GLAD</subfield>
+    <subfield code="b">MAIN</subfield>
+    <subfield code="h">HV4088.L8</subfield>
+    <subfield code="i">M3 1861</subfield>
+    <subfield code="3">Some volumes</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">English poor laws ;</subfield>
+    <subfield code="v">PL153.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">2.1</subfield>
+    <subfield code="a">CSLD</subfield>
+    <subfield code="b">RARE</subfield>
+    <subfield code="j">MICRO-FICHE PL153</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">2.2</subfield>
+    <subfield code="a">CSLD</subfield>
+    <subfield code="b">M</subfield>
+    <subfield code="j">MICRO-FICHE PL153</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="8">2.3</subfield>
+    <subfield code="a">CSLD</subfield>
+    <subfield code="b">SUTRO</subfield>
+    <subfield code="j">MICRO-FICHE PL153</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">HV4088.L8</subfield>
+    <subfield code="b">M5</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">331.8</subfield>
+    <subfield code="b">M46</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">331</subfield>
+    <subfield code="b">M</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">MICRO-FICHE PL153</subfield>
+  </datafield>
+  <datafield tag="901" ind1=" " ind2=" ">
+    <subfield code="a">CSLD</subfield>
+    <subfield code="b">AAW-8697</subfield>
+  </datafield>
+</record>

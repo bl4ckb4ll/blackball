@@ -1,0 +1,7 @@
+02-Nov-23 17:53:01 INFO     Start cloth cover detector module version 1.2!
+02-Nov-23 17:53:01 INFO     sourceFile(scandata) : '/item/b20415606_002_scandata.xml' -> targetFile(log-file) '/item/b20415606_002_cloth_detection.log'
+02-Nov-23 17:53:01 INFO     The 'jp2' archive was found! Path to file: '/item/b20415606_002_jp2.zip'
+02-Nov-23 17:53:03 INFO     Analysis of cover page with leafNum 1: 'is cloth' - True, 'edge level' - 11.935634077829453
+02-Nov-23 17:53:04 INFO     Analysis of cover page with leafNum 492: 'is cloth' - True, 'edge level' - 11.704453996619325
+02-Nov-23 17:53:04 INFO     Save new scandata with tag 'clothCover' in /item/b20415606_002_scandata.xml
+02-Nov-23 17:53:04 INFO     Successful finish cloth-cover detector !

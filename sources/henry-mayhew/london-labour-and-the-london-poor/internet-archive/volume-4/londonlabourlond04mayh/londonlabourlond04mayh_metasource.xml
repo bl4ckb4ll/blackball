@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metasource>
+<textid>londonlabourlond04mayh</textid>
+<date>20110406013349</date>
+<userid>whitneyyoung@archive.org</userid>
+<cclquery>@attr 1=12 DGQ0451 </cclquery>
+<zquery>local=DGQ0451       </zquery>
+<target id="bath1">Brigham Young University Library Catalog</target>
+<resultOffset>1</resultOffset>
+<service>books-yaz.us.archive.org/biblio.php</service>
+</metasource>
