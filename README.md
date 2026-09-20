@@ -35,6 +35,8 @@ unless the question is specifically about the secondary author's interpretation.
 
 A credential, ranking, institutional label, or professional title carries only the evidentiary weight of the process it actually certifies. Do not silently substitute broad claims about intelligence, competence, employability, judgment, or authority.
 
+Blackball does not impose optimism as an evidentiary requirement. An encouraging possibility is not a usable path until openings, selection, costs, constraints, probability, actual work, and loss-bearing are made concrete. Accuracy forbids both false hope and unsupported hopelessness.
+
 ## Audits
 
 - [September 1–7, 2026 conversation-to-repository forensic audit](audits/2026-09-01--07-conversation-repository/README.md) — all 131 project conversations visible at the Sep 7 20:22 UTC snapshot plus recovered outside-snapshot history mapped to a 109-item substantive ledger, graded by research quality and default-branch/PR/branch state without filling the identified gaps.
@@ -43,15 +45,26 @@ A credential, ranking, institutional label, or professional title carries only t
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
+- [Truth before hope](TRUTH-BEFORE-HOPE.md)
+- [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
+- [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
 - [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
 - [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
+
+## Education and occupational pathways
+
+- [Education accountability index](education/README.md) — front-loaded payment, back-loaded uncertainty, sunk-cost lock-in, lies versus incomplete information, actual job conversion, academic self-reproduction, and long-run regret.
+- [Erin Brockovich](Erin%20Brockovich/README.md) — the transition from a youth-facing image of law as justice to law-school competition, debt, recruiting, actual clients, calibrated threats, workplace injury defense, and class access to counsel.
+- [Main Street](Main%20Street/README.md) — ordinary repeatable employment options as the comparison baseline for expensive education, including pay, scheduling, physical cost, experience accumulation, and promotion.
+- [University of Michigan](University%20of%20Michigan/README.md) — institutional outcome claims and a southeast Michigan lead concerning psychology graduates working in retail under a manager with more applicable experience and less credential prestige.
 
 ## Institutional and local case files
 
 - [Place dossiers](places/README.md) — descriptive local case files for Greenwich, Newton, Armonk, Skaneateles, Shaker Heights, Evanston, Aurora, Cupertino, and Richmond; separates public evidence, institutional self-presentation, private research leads, interpretation, and geographic-boundary problems.
 - [Hyde Park](Hyde%20Park/README.md) — Venkatesh's Hyde Park/Woodlawn labor boundary; Friedman, Fama, Obama, and Venkatesh inside the same university-centered geography; Yiran Fan and Shaoxiong Zheng killings; "potential," mourning, policing, and institutional response.
 - [University of Chicago](University%20of%20Chicago/README.md) — put globally influential claims about markets, labor, poverty, human capital, law, and public policy beside the local economy and institutional power of Hyde Park and the South Side.
-- [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, including Venkatesh's 1996–1999 Society of Fellows appointment.
+- [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, with a pointer to Bryan Stevenson’s criticism of the separation between law professors’ professed beliefs and conduct.
+- [University of Michigan](University%20of%20Michigan/README.md) — compare broad college-wide outcomes with major-specific occupational conversion and first-person local cases.
 
 ## Economics
 
@@ -94,6 +107,9 @@ A credential, ranking, institutional label, or professional title carries only t
 
 ## Source dossiers
 
+- [Bryan Stevenson — *Just Mercy*](sources/bryan-stevenson/just-mercy/README.md) — the disconnect between professed beliefs and conduct as a central institutional accountability test.
+- [Anh Do — *The Happiest Refugee*](sources/anh-do/the-happiest-refugee/README.md) — garment-work poverty, the doctor-or-lawyer funnel, law as the money route, competitive legal education, and an exceptional exit.
+- [Estreicher and Radice — *Beyond Elite Law*](sources/estreicher-radice/beyond-elite-law/README.md) — elite legal production beside ordinary unmet civil legal needs.
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
 - [Andrew Hacker and Claudia Dreifus — *Higher Education?*](llm/andrew-hacker-claudia-dreifus-higher-education/README.md) — chapter-by-chapter argument/evidence map, campus-reporting method, reconstructed bibliography and upstream source trail, criticisms, and a retrieval queue that keeps direct observation separate from national inference.
 - [Jeff Sharlet — Dartmouth graduates into finance and consulting](llm/jeff-sharlet-dartmouth-finance-consulting/README.md)

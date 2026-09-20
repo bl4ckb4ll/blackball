@@ -4,6 +4,10 @@ Evidence-led notes and source records for economics, economic history, political
 
 This folder is not restricted to texts that would now be shelved in an economics department. Earlier political economy often lived inside moral philosophy, jurisprudence, history, and adjacent fields.
 
+## Model and decision accountability
+
+- [Optimal for whom, and what did the model omit?](optimal-for-whom-and-what-the-model-omits.md) — separates description, prediction, private optimization, social-welfare claims, and moral justification; treats NPV as conditional arithmetic rather than a universal endorsement of whoever receives the positive cash flow.
+
 ## Economic field reports
 
 - [Minnesota Implement — small fabrication shop versus public economic reports, 2026](field-reports/minnesota-implement-2026/README.md) — a West Concord, Minnesota small-business account matched against six months of steel, freight, farm-equipment, weather, regional-manufacturing, and national economic data to study how an individual firm's experience can diverge from aggregate reports.
