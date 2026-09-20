@@ -42,6 +42,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Current question surfaces
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
+- [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
 - [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
 
@@ -103,6 +104,8 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Eric Hobsbawm — books, long nineteenth century, and open article trail](llm/eric-hobsbawm/README.md)
 - [Toby Green — *A Fistful of Shells* — source trail and access](llm/toby-green-a-fistful-of-shells/README.md)
 - [Paulus Gerdes — *Geometry from Africa* — source trail and access](llm/paulus-gerdes-geometry-from-africa/README.md)
+- [Sarah Lawrence as a class and cultural type](llm/sarah-lawrence-class/README.md)
+- [J. D. Salinger and class](llm/j-d-salinger-class/README.md)
 
 ## Primary-source corpora
 
