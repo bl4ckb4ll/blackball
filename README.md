@@ -97,7 +97,23 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Matt Mahoney / Ocarina Networks source ledger](sources/matt-mahoney/README.md) — dated primary and secondary sources, acquisition filings, funding/product chronology, archive-discovery links, rights notes, and a claim ledger separating the real $1m prize pool from any unsupported personal payout.
 - [Miles Reid — *Notes for obituary*](sources/miles-reid/obituary-notes/README.md) — self-authored 2002 notes for a future Royal Society biographical memoir, with source links, chronology, academic-pipeline details, and evidence limitations.
 - [FTX / Sam Bankman-Fried federal criminal case](sources/ftx/sam-bankman-fried-federal-case/README.md) — seven-count trial and 2026 appeal, software/account evidence, cooperating-witness testimony, Ellison balance-sheet evidence, MIT/Stanford network, severed charges, atomic claim ledger, source provenance and evidentiary guardrails.
+- [E. P. Thompson — books, essays, and legitimate online access](llm/e-p-thompson/README.md)
+- [Christopher Hill — books and legitimate online access](llm/christopher-hill/README.md)
+- [Terence Ranger — books, bibliography, and access trail](llm/terence-ranger/README.md)
+- [Eric Hobsbawm — books, long nineteenth century, and open article trail](llm/eric-hobsbawm/README.md)
+- [Toby Green — *A Fistful of Shells* — source trail and access](llm/toby-green-a-fistful-of-shells/README.md)
+- [Paulus Gerdes — *Geometry from Africa* — source trail and access](llm/paulus-gerdes-geometry-from-africa/README.md)
 
 ## Primary-source corpora
 
 - [Henry Mayhew — *London Labour and the London Poor*](sources/henry-mayhew/london-labour-and-the-london-poor/README.md) — four-volume public-domain corpus with proofread text, page scans, raw OCR/HOCR/XML derivatives, metadata and audiobook routes.
+- [William Morris — *A Dream of John Ball; and, A King's Lesson*](sources/william-morris/a-dream-of-john-ball/README.md) — public-domain full text, local 1888 scan, raw scan OCR, and actual page-image reading views; directly useful upstream of E. P. Thompson's Morris work.
+
+  Read locally: [1888 PDF](sources/william-morris/a-dream-of-john-ball/internet-archive/dreamofjohnballa00morr/dreamofjohnballa00morr.pdf) · [proofread reading text](sources/william-morris/a-dream-of-john-ball/a-dream-of-john-ball-and-a-kings-lesson-gutenberg-reading-copy.txt) · [raw scan OCR](sources/william-morris/a-dream-of-john-ball/internet-archive/dreamofjohnballa00morr/dreamofjohnballa00morr_djvu.txt)
+
+<p align="center">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/contents-1.png" width="24%" alt="First contents page from the 1888 scan">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/contents-2.png" width="24%" alt="Second contents page from the 1888 scan">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-1.png" width="24%" alt="First page of Chapter I from the 1888 scan">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-2.png" width="24%" alt="Second page of Chapter I from the 1888 scan">
+</p>
