@@ -49,6 +49,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
 - [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
 - [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
+- [Employer discretion, worker risk, and the absence of a general fairness guarantee](llm/questions/employer-discretion-worker-risk.md) — separates specific legal constraints from broader questions about hiring screens, prior termination, truthfulness incentives, symbolic recognition, promotion, reciprocal obligations, and which employment risks remain with the worker.
 - [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
 
 ## Education and occupational pathways
