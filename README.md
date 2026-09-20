@@ -88,6 +88,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
+- [Jeff Sharlet — Dartmouth graduates into finance and consulting](llm/jeff-sharlet-dartmouth-finance-consulting/README.md)
 - [Associate Deans (@ass_deans)](sources/associate-deans/README.md) — insider academic-management satire treated as a source corpus on managerial layering, faculty/management relations, accountability, and insider/outsider information asymmetry.
 - [Earl Shorris — *A Nation of Salesmen*](llm/earl-shorris-a-nation-of-salesmen/README.md) — argument map, review synthesis, legitimate-access boundary, archival leads, and a dated used-book price snapshot.
 - [Earl Shorris — the Clemente Course in the Humanities](llm/earl-shorris-clemente-course/README.md) — first-course origin, recruitment, original faculty and curriculum, logistics, outcome-count disagreements, later institutionalization, and provenance.
