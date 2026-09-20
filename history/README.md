@@ -2,6 +2,28 @@
 
 Blackball history material is organized as inspectable source trails rather than isolated summaries. Where a historical source cites earlier work, preserve the citation edge and follow it backward when the cited source can actually be inspected.
 
+## Higher education
+
+- [Higher-education history](higher-education/README.md) — provisional Roger L. Geiger bibliography and lawful-access queue covering national chronology, research-university development, finance, knowledge, careers, culture, and institutional form; no book-length text has yet been inspected.
+- [Roger L. Geiger dossier](higher-education/roger-l-geiger/README.md) — core books and edited series, a machine-readable works ledger, current acquisition status, citation-spider queue, and strict separation between inspected text and discovery metadata.
+- [Johns Hopkins founding case](higher-education/roger-l-geiger/JOHNS-HOPKINS.md) — tests the remembered “students were an afterthought” formulation against Geiger, Daniel Coit Gilman's 1876 address, and focused institutional history; exact Geiger wording remains unverified.
+
+## Colonial settlement, disease, land, and institutional genealogy
+
+- [Groton School recruiting page, the Groton name, and Winthrop context](groton-school-winthrop-context.md) — current employment terms and institutional rhetoric; Groton School's stated Gilded Age founding constituency; the Groton, Massachusetts → Groton, Suffolk → Winthrop naming chain; and John Winthrop's 1634 smallpox/title statement, with explicit limits on what the juxtaposition establishes.
+
+## Mexico and revolution
+
+- [Mexican Revolution](mexican-revolution/README.md) — late-Porfirian political economy; Guggenheim/ASARCO mining and smelting capital; Andrés Molina Enríquez's 1909 *Los grandes problemas nacionales*; and Mike Duncan's *Revolutions* Season 9 with a recovered/partially recovered bibliography spider and explicit recursion frontier.
+
+### Mexican-Revolution citation graph
+
+- [Guggenheim / ASARCO in Porfirian Mexico](mexican-revolution/GUGGENHEIM-ASARCO.md)
+- [Molina Enríquez — *Los grandes problemas nacionales* (1909)](mexican-revolution/MOLINA-ENRIQUEZ-1909.md)
+- [Mike Duncan — *Revolutions*, Season 9](mexican-revolution/REVOLUTIONS-PODCAST.md)
+- [Duncan Season 9 bibliography spider](mexican-revolution/REVOLUTIONS-BIBLIOGRAPHY-SPIDER.md)
+- [Explicit recursion frontier](mexican-revolution/RECURSION-QUEUE.md)
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
@@ -17,6 +39,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Louis Hughes — *Thirty Years a Slave* (1897)](slavery/louis-hughes-thirty-years-a-slave.md) — primary-source note on the enslaved skilled blacksmith Uncle Ben; the distinction between skill and bargaining power; Hughes's medical aptitude and denied educational/occupational opportunity; and his descriptions of whipping, witnessed violence, and psychological injury.
 - [Edward Baptist — cotton productivity, coercion, and technology-as-progress](slavery/edward-baptist-cotton-productivity.md) — the fourfold rise in cotton picked per enslaved worker per day; Baptist's quota/ledger/"calibrated torture" argument; the Olmstead-Rhode seed-innovation critique; the 2026 Beckert-Stelzner reassessment; and the comparison with Manchester mill productivity.
 - [James C. Cobb — *The Most Southern Place on Earth*, engineering education, absentee ownership, and enslaved labor](slavery/james-c-cobb-most-southern-place-engineering-education.md) — source seed for an early-Delta anecdote connecting an elite technical/Princeton credential, Louisville absentee ownership, disease exposure, and enslaved plantation labor; preserves the remembered details as a verification target and flags that Princeton did not begin civil-engineering instruction until 1875.
+
+## Reconstruction
+
+- [Eric Foner — *Reconstruction: America's Unfinished Revolution, 1863–1877*](reconstruction/eric-foner-reconstruction-americas-unfinished-revolution.md) — source node for Foner's 1988 Reconstruction synthesis, with institutional bibliographic confirmation, a directly inspectable chapter map, and explicit boundaries around material not yet inspected from the book itself.
 
 ## Technology and progress
 

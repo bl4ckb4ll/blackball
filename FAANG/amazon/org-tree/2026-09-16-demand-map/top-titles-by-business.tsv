@@ -1,0 +1,498 @@
+business_category	rank_within_business	requisitions	title
+advertising	1	4	Software Development Engineer, Sponsored Products and Brands
+advertising	2	3	Software Development Engineer, Ads AI Core Infra
+advertising	3	3	Software Development Engineer, Agent Platforms & Services
+advertising	4	3	Software Development Engineer, Measurement, Ad Tech, and Data Science
+advertising	5	3	Sr. Software Development Engineer, Advanced Analytics
+advertising	6	2	SDE II, Sales Data Services (SDS)
+advertising	7	2	Software Development Engineer , Adaptive Search Relevance
+advertising	8	2	Software Development Engineer II — Ads Reporting, Programmatic Reporting Interfaces
+advertising	9	2	Software Development Engineer II, Omnichannel Metrics (OCM) - Measurement, Ad Tech, and Data Science (MADS)
+advertising	10	2	Software Development Engineer, Ads AI Core Infra (ACI)
+advertising	11	2	Software Development Engineer, Measurement, Ad Tech, and Data Science (MADS)
+advertising	12	1	Data Engineer I, Sales Data Services (SDS)
+advertising	13	1	Machine Learning Engineer, Amazon Ads Identity
+advertising	14	1	Principal Software Engineer, Amazon DSP (Demand-Side Platform) — Advertising
+advertising	15	1	Principal Software Engineer, MADS
+advertising	16	1	SDE II, Campaign and Creative
+advertising	17	1	SDE-II, AI Core Infra - AI Analytics and Insights
+advertising	18	1	Salesforce Developer I, Sales and Partner Enablement
+advertising	19	1	Salesforce Developer II, Sales and Partner Enablement
+advertising	20	1	Senior Manager, Ads Data Systems, Measurement Infrastructure
+advertising	21	1	Senior Manager, Software Development, Ads Performance Measurement
+advertising	22	1	Senior Software Development Engineer, Ads AI Core Infra
+advertising	23	1	Senior Software Development Engineer, Ads Campaign Management
+advertising	24	1	Senior Software Development Engineer, Ads Core Infra (ACI)
+advertising	25	1	Senior Software Development Engineer, Creative Advertiser Experiences
+alexa-and-amazon-devices	1	8	Software Development Engineer, Alexa Connections
+alexa-and-amazon-devices	2	6	Sr. Software Dev Engineer, Leo AI Foundations
+alexa-and-amazon-devices	3	5	Software Development Engineer , Leo Commerce, Leo Commerce
+alexa-and-amazon-devices	4	5	Software Development Engineer , Leo Customer Terminals Applications & Networking Team
+alexa-and-amazon-devices	5	4	Software Development Engineer , Amazon Leo
+alexa-and-amazon-devices	6	4	Software Development Engineer II, Amazon Leo
+alexa-and-amazon-devices	7	4	Software Development Engineer, Leo Autopilot
+alexa-and-amazon-devices	8	4	Software I&T Engineer , Amazon Leo for Government
+alexa-and-amazon-devices	9	4	Sr. Software Dev Engineer, Antenna System Validation, Amazon Leo
+alexa-and-amazon-devices	10	3	Software Dev Engineer, Amazon Leo AI Foundations
+alexa-and-amazon-devices	11	3	Software Development Engineer, Alexa Communications
+alexa-and-amazon-devices	12	3	Software Development Engineer, Ring
+alexa-and-amazon-devices	13	3	Software Development Engineer, Software Defined Network Controller, Amazon LEO
+alexa-and-amazon-devices	14	3	Sr. Software Development Engineer, Alexa Connections
+alexa-and-amazon-devices	15	2	Alarm & Accessories - Embedded SDE , Ring
+alexa-and-amazon-devices	16	2	Amazon Leo Network Development Engineer, Amazon Leo Enterprise Network Infrastructure
+alexa-and-amazon-devices	17	2	Application Builder, Ring Application Services
+alexa-and-amazon-devices	18	2	Application Builder, Ring Software Product Builders
+alexa-and-amazon-devices	19	2	Builder - Mobile (Platform), Ring
+alexa-and-amazon-devices	20	2	Embedded Software Dev Engineer, Amazon Leo Antenna Development
+alexa-and-amazon-devices	21	2	Embedded Software Dev Engineer, Amazon Leo Customer Terminal Software
+alexa-and-amazon-devices	22	2	Embedded Software Development Engineer, Flight Computer Software
+alexa-and-amazon-devices	23	2	Embedded Software Development Engineer, Ring Team
+alexa-and-amazon-devices	24	2	Embedded Software Engineer, Amazon Leo Optical Inter-Satellite Link
+alexa-and-amazon-devices	25	2	Front End Engineer , Amazon Leo
+amazon-artificial-general-intelligence	1	2	Post-Silicon Systems Validation Engineer I, Annapurna Labs
+amazon-artificial-general-intelligence	2	1	ML Systems Software Development Engineer Intern, Annapurna Labs - 2027
+amazon-artificial-general-intelligence	3	1	Senior Inference Engineer, AGI
+amazon-artificial-general-intelligence	4	1	Senior Software Engineer, Frontier AI Organization
+amazon-artificial-general-intelligence	5	1	Software Dev Engineer I - Graviton Software, Annapurna Labs
+amazon-artificial-general-intelligence	6	1	Software Development Engineer I – AI/ML Network Infrastructure, Annapurna Labs
+amazon-artificial-general-intelligence	7	1	Software Development Engineer Intern, Annapurna Labs - 2027
+amazon-business	1	7	Software Development Engineer II, EU INTech - Prime and Marketing Tech
+amazon-business	2	2	Senior Software Development Engineer, AZA
+amazon-business	3	2	Software Dev Engineer II
+amazon-business	4	2	Software Development Engineer II , Product & Offers Experience
+amazon-business	5	2	Software Development Engineer II, Amazon Now
+amazon-business	6	2	Software Development Engineer, Amazon Prime
+amazon-business	7	2	System Development Engineer , CoSS
+amazon-business	8	1	Machine Learning Engineer II, EU INTech - Exports, Emerging and Expansions
+amazon-business	9	1	Manager, Data Engineering, Selling Partner Insights and Analytics
+amazon-business	10	1	Network Dev Engineer II, ONE Access Engineering (LAN)
+amazon-business	11	1	SDE 2, FMA - Featured Merchant Algorithm
+amazon-business	12	1	SDE II, Global Trade (Level 5), Global Trade Foundations
+amazon-business	13	1	SDE2, Amazon
+amazon-business	14	1	Senior Software Dev Engineer (SDE-III), Amazon Business
+amazon-business	15	1	Software Dev Engineer II, Accounting Engineering
+amazon-business	16	1	Software Dev Engineer II, Cross Border Seller Programs
+amazon-business	17	1	Software Dev Engineer II, Cross Border Tech
+amazon-business	18	1	Software Dev Engineer II, EU INTech Partner Growth Experience
+amazon-business	19	1	Software Dev Engineer II, EU INTech Partner Growth Experience, EU INTech Partner Growth Experience
+amazon-business	20	1	Software Development Engineer
+amazon-business	21	1	Software Development Engineer II, Affordability (Exchange)
+amazon-business	22	1	Software Development Engineer II, Amazon Now (Tez)
+amazon-business	23	1	Software Development Engineer II, Hardline FX (Wireless / H&B)
+amazon-business	24	1	Software Development Engineer II, IN Pharmacy
+amazon-business	25	1	Software Development Engineer II, India HealthCare
+amazon-customer-service	1	1	Director Engineering, Associate Experience, Amazon Customer Service
+amazon-security	1	4	Software Engineer, AppSTAR COMPASS
+amazon-security	2	3	Senior Software Developer Engineer, AWS Compliance & Security Assurance
+amazon-security	3	3	Software Development Engineer - Security Automation, AWS Security Epoxy
+amazon-security	4	3	Software Development Engineer, AWS Security
+amazon-security	5	3	Software Development Engineer, AWS Vulnerability Management (AVM)
+amazon-security	6	3	Software Development Engineer, Amazon Integrated Security
+amazon-security	7	2	Software Dev Engineer, Amazon Security Automation
+amazon-security	8	2	Software Development Engineer II, AWS Compliance & Security Assurance, Denied Party Screening
+amazon-security	9	2	Software Development Engineer II, Amazon Vulnerability Management Services
+amazon-security	10	2	Software Development Engineer, Amazon Optics
+amazon-security	11	2	Software Development Engineer, IAM Stores Security
+amazon-security	12	2	Software Development Manager, Amazon Optics, Amazon Optics
+amazon-security	13	2	Software Development Manager, Leo Security
+amazon-security	14	1	Director IAM, Amazon Foundational Security Services
+amazon-security	15	1	Manager III, Software Development
+amazon-security	16	1	Manager III, Software Development, AWS Security
+amazon-security	17	1	SDE, Responsible AI
+amazon-security	18	1	SDEII - Threat Intel Systems, ACTI Engineering
+amazon-security	19	1	Security Software Dev Engineer II, AWS Security Corporate Response
+amazon-security	20	1	Senior Software Development Engineer - Security Automation, AWS Security OpRes
+amazon-security	21	1	Senior Software Development Engineer, AWS Compliance & Security Assurance
+amazon-security	22	1	Senior Software Development Engineer, AWS Security
+amazon-security	23	1	Senior Software Development Engineer, Engagement Security
+amazon-security	24	1	Senior Software Development Engineer, Leo Security
+amazon-security	25	1	Senior Software Development Engineer, Security Automation, Capabilities, Corporate Services Security (CPSS)
+amazongo	1	1	Software Development Manager III, Grocery Ordering
+amazongo	2	1	Sr. Software Development Engineer, Payroll Tax & Accounting Tech
+amazonian-experience-and-tech	1	2	Software Development Engineer, PXT Case Management System
+amazonian-experience-and-tech	2	1	Software Development Engineer - II
+amazonian-experience-and-tech	3	1	Sr. Software Dev Engineer, Verification Services
+ats	1	1	DevOps Engineer, Veeqo
+ats	2	1	Programmer/Analyst II, TFS Accounting Insights
+ats	3	1	SDE II, ShipTech/Visibility
+ats	4	1	Software Development Engineer II, TFS
+ats	5	1	Software Development Engineer, Middle Mile P&O
+ats	6	1	Software Development Engineer, Middle Mile Planning and Optimization (MMPO)
+ats	7	1	Sr. Technical Program Manager, Ship With Amazon
+ats	8	1	Technical Program Manager, Amazon Freight
+aws	1	12	Software Development Engineer, AWS
+aws	2	10	Software Development Engineer, AWS OpenSearch
+aws	3	9	Associate Delivery Consultant – AIML, A2C ProServe Shared Delivery (SDT)
+aws	4	9	Software Development Engineer
+aws	5	7	Software Dev Engineer, AWS Elastic Container Service
+aws	6	7	Software Development Engineer, Agentic Workspaces
+aws	7	7	Software Development Engineer, Amazon Quick
+aws	8	6	Software Development Engineer, AWS AppSync
+aws	9	6	Software Development Engineer, AWS Central SDE Team
+aws	10	6	Software Development Engineer, AWS Identity
+aws	11	6	Software Development Engineer, AWS OpenSearch Service
+aws	12	5	Software Development Engineer, AWS Config, AWS Config
+aws	13	5	Software Development Engineer, Bottlerocket
+aws	14	5	Software Development Engineer, S3 Index Control Plane
+aws	15	4	Senior Software Development Engineer, Aurora PostgreSQL
+aws	16	4	Software Dev Engineer II, Oracle Database@AWS
+aws	17	4	Software Development Engineer II - Amazon MSK, Managed Streaming Kafka (MSK)
+aws	18	4	Software Development Engineer II, AWS AI & Strategic Partner Engineering
+aws	19	4	Software Development Engineer, AWS Database Migration Service
+aws	20	4	Software Development Engineer, AWS Simple Queue Service (SQS)
+aws	21	4	Software Development Engineer, Kiro
+aws	22	4	Software Development Engineer, RDS SQL Server
+aws	23	4	Software Development Engineer, STRADA
+aws	24	4	Sr. Software Engineer- AI/ML, AWS Neuron Distributed Training
+aws	25	4	Verification Engineer
+business-and-corporate-development	1	1	Software Dev Engineer II, Amazon Fuse
+business-and-corporate-development	2	1	Software Development Engineer, Amazon Fuse
+consumer-payments	1	1	Software Dev Engineer II, Amazon 1P Credito, Payments
+consumer-payments	2	1	Software Dev Engineer II, Brazil Payments
+consumer-payments	3	1	Software Development Manager III, Amazon 1P Credito, Payments
+consumer_engagement	1	3	Software Development Engineer, Personalization, Amazon Personalization
+consumer_engagement	2	2	Senior Software Development Engineer, Customer 360
+consumer_engagement	3	1	Applied Scientist II, Personalization
+consumer_engagement	4	1	Quality Assurance Engineer, Amazon Search Relevance Measurement
+consumer_engagement	5	1	SDE II, Homepage & NavX
+consumer_engagement	6	1	SDE, Alexa For Shopping
+consumer_engagement	7	1	Senior Applied Scientist, Personalization
+consumer_engagement	8	1	Senior Software Development Engineer , Stores Foundational AI - Rufus
+consumer_engagement	9	1	Senior Software Development Engineer, Amazon Personalization - Customer 360
+consumer_engagement	10	1	Software Dev Engineer II, Alexa Shopping-Core
+consumer_engagement	11	1	Software Development Engineer , Project Dawn
+consumer_engagement	12	1	Software Development Engineer - Shopping Personalization AI, Amazon Stores
+consumer_engagement	13	1	Software Development Engineer II, Personalization
+consumer_engagement	14	1	Software Development Engineer, Agentic Commerce, Buy For Me
+consumer_engagement	15	1	Software Development Engineer, Amazon Lists
+consumer_engagement	16	1	Software Development Engineer, Core Shopping
+consumer_engagement	17	1	Sr. Software Dev Engineer, Customer360
+consumerpayments	1	4	Software Development Engineer, Amazon 1P Credito
+consumerpayments	2	1	QAE II, Amazon Payments
+consumerpayments	3	1	Software Development Engineer II, Amazon External Payments
+consumerpayments	4	1	Software Development Engineer II, Amazon Pay Credit and Lending
+consumerpayments	5	1	Software Development Engineer II, Amazon Payments
+consumerpayments	6	1	Software Development Manager , Amazon External Payments
+consumerpayments	7	1	Software Development Manager III, Amazon Payments
+consumerpayments	8	1	Software Development Manager, Amazon 1P Credito
+consumerpayments	9	1	Software Development Manager, Amazon External Payments, Amazon External Payments, Amazon External Payments
+consumerpayments	10	1	Software Development Manager, Amazon Payment Products
+consumerpayments	11	1	Software Development Manager, Payments - MENA and APAC Affordability
+consumerpayments	12	1	Software Develpment Engineer II, Physical Stores Payments
+cross-channel-cross-category-marketing	1	1	Software Development Engineer, XCM Brand Marketing Tech
+customer-service	1	3	Software Development Engineer, Amazon Customer Service
+customer-service	2	1	Machine Learning Engineer , Amazon Customer Service
+customer-service	3	1	Senior Software Development Engineer, Silk Browser, Web Experiences
+customer-service	4	1	Software Development Engineer , Amazon Customer Service
+customer-service	5	1	Software Development Engineer, Amazon Customer Service AI powered Content Solutions
+customer-service	6	1	Software Development Engineer, Customer Service
+customer-service	7	1	Software Development Engineer, Health & Wellness, Health Tech
+customer-service	8	1	Software Development Manager , Amazon Customer Service
+customer-service	9	1	Software Development Manager, Amazon Customer Service
+customer-trust-and-partner-support	1	1	Front-End Engineer, AWS Partner Registration & Onboarding
+customer-trust-and-partner-support	2	1	Software Development Manager, Tax and Account Compliance (TAC) Technology
+cx-and-business-trends	1	4	Software Dev Engineer II, Planning Intelligence
+cx-and-business-trends	2	1	Software Development Engineer , Concessions Tech
+cx-and-business-trends	3	1	Software Development Engineer, Customer Experience and Business Trends
+ecp	1	3	Software Development Engineer, Ordering
+ecp	2	2	Software Dev Engineer II, Business Data Technology
+ecp	3	2	Software Dev Engineer II, Offers Platform, Catalog Systems, ASCS
+ecp	4	2	Software Development Engineer II, Amazon
+ecp	5	2	Software Development Engineer II, Hosted Execution (HEX)
+ecp	6	2	Software Development Engineer, Amazon Catalog services team, Amazon Catalog services team
+ecp	7	2	Software Development Engineer, Identity Services
+ecp	8	1	Data Engineer, Amazon Traffic Engineering
+ecp	9	1	Network Dev Engineer I(Security), Corporate Network Engineering
+ecp	10	1	Network Development Engineer, Corporate Network Engineering - Core
+ecp	11	1	Principal Technical Program Manager, Region Flexibility & Efficiency
+ecp	12	1	SDM, ML Data Infra, Amazon Traffic Engineering
+ecp	13	1	Senior SDE, Amazon Tax
+ecp	14	1	Software Dev Engineer II, Amazon Catalog
+ecp	15	1	Software Dev Engineer II, Amazon Financials Foundation Services (AFFS)
+ecp	16	1	Software Dev Engineer II, Item and Offers Platform
+ecp	17	1	Software Dev Engineer II, Profit Intelligence
+ecp	18	1	Software Dev Engineer III, Data Nexus
+ecp	19	1	Software Dev Engineer III, ICON
+ecp	20	1	Software Dev Engineer, AFFS - ARS (Amortization Runtime Subledger)
+ecp	21	1	Software Dev Engineer, Items and Offers Platform, Relationship Inference and Correction
+ecp	22	1	Software Dev Engineer, SIEGE
+ecp	23	1	Software Development Engineer
+ecp	24	1	Software Development Engineer - GenAI/ML, Amazon Selection and Catalog Systems (ASCS)
+ecp	25	1	Software Development Engineer - Mobile Shopping, Builder Acceleration
+entertainment	1	4	Software Development Engineer, AI Studios Engineering
+entertainment	2	3	Machine Learning Engineer, Amazon Music - Catalog Quality
+entertainment	3	3	Software Development Engineer, Digital Acceleration
+entertainment	4	2	Software Development Engineer II, Digital Acceleration
+entertainment	5	2	Software Development Engineer II, Digital Pricing and Competitive Intelligence (D-PRICIQ ), Digital Acceleration
+entertainment	6	2	Software Development Engineer, Production and Post Production Technology, Amazon MGM Studios
+entertainment	7	1	Manager, Software Development
+entertainment	8	1	Principal Software Engineer, Prime Video Commerce Tech
+entertainment	9	1	SDE I - Temp, Amazon
+entertainment	10	1	Senior MLE, CreativeFlux, AI Studios
+entertainment	11	1	Senior Software Development Engineer
+entertainment	12	1	Senior Software Development Engineer, Prime Video Offers Expansion
+entertainment	13	1	Senior Software Development Engineer, Prime Video Sports
+entertainment	14	1	Software Dev Engineer, Prime Video Personalization & Discovery
+entertainment	15	1	Software Development Engineer - Prime Video Linear, Prime Video
+entertainment	16	1	Software Development Engineer 2, Prime Video Personalization and Discovery
+entertainment	17	1	Software Development Engineer II, Amazon Music
+entertainment	18	1	Software Development Engineer II, Amazon Music Search
+entertainment	19	1	Software Development Engineer II, Amazon Prime Video
+entertainment	20	1	Software Development Engineer II, Prime Video Ads Channels
+entertainment	21	1	Software Development Engineer III, Prime Video Infrastructure and platform team
+entertainment	22	1	Software Development Engineer, Amazon Music
+entertainment	23	1	Software Development Engineer, Amazon Music, Partner Payments & Reporting
+entertainment	24	1	Software Development Engineer, Music Search Retrieval Technology
+entertainment	25	1	Software Development Engineer, Prime Video Ads
+finance	1	2	Oracle Applications Functional Analyst, FinTech Cash Application, OFA Cash Application
+finance	2	2	Software Development Engineer II, Amazon
+finance	3	2	Software Development Engineer II, FinTech
+finance	4	2	Software Development Engineer II, Fintelligence Workplace
+finance	5	2	Software Development Engineer, Payroll Tax & Accounting Tech
+finance	6	1	Senior Software Development Engineer III, Finance Technology
+finance	7	1	Software Dev Engineer II , Finance Tech
+finance	8	1	Software Dev Engineer II, WW Stores FinTech
+finance	9	1	Software Development Engineer - II, FinTech - Machine Learning
+finance	10	1	Software Development Engineer - II, FinTech - TFAW
+finance	11	1	Software Development Engineer II
+finance	12	1	Software Development Engineer II, Amazon Finance Technology
+finance	13	1	Software Development Engineer II, Fintech TAX - RoW Compliance
+finance	14	1	Software Development Engineer, FinTech - TFAW
+finance	15	1	Software Development Engineer, FinTech General Ledger
+finance	16	1	Software Development Engineer, Finance Technology
+finance	17	1	Software Development Engineer, Payroll Tech
+finance	18	1	Software Development Manager III, FinTech
+fulfillment-and-operations	1	3	Software Dev Engineer II, SDX Checkout
+fulfillment-and-operations	2	3	Software Development Engineer - II , Last Mile Planning, Driver Matching
+fulfillment-and-operations	3	2	Software Development Engineer, Last Mile Delivery Automation, Autonomous Vehicle
+fulfillment-and-operations	4	2	Software Development Engineer, Loss Prevention Tech, WWOS Corporate
+fulfillment-and-operations	5	1	Applied GenAI Engineer, Amazon Logistics
+fulfillment-and-operations	6	1	Software Development Engineer II, Geospatial
+fulfillment-and-operations	7	1	Software Development Engineer, Last Mile Delivery
+fulfillment-and-operations	8	1	Software Development Engineer, Last Mile Delivery, Edge Intelligence
+fulfillment-and-operations	9	1	Software Development Manager, Geospatial
+fulfillment-and-operations	10	1	Software Engineer, Under the Roof Labor Planning, UTR
+fulfillment-ops	1	1	Sr. Manager, Software Development, WW Sustainability
+fulfillment-technology-and-robotics	1	3	Software Dev Engineer II, OMHS SCS
+fulfillment-technology-and-robotics	2	1	Front End Development Engineer, Automation Integration Technologies
+fulfillment-technology-and-robotics	3	1	Member of Technical Staff - Infrastructure Engineer, Frontier AI & Robotics (FAR)
+fulfillment-technology-and-robotics	4	1	Senior SDE, OMHS SCS
+fulfillment-technology-and-robotics	5	1	Senior Software Development Engineer, OneMHS Software Controls and Science
+global-corporate	1	9	Software Development Engineer II , Amazon Cross Border Tech
+global-corporate	2	1	Jr. Software Development Engineer - San Luis Obispo, CA, Jr. Developer Program
+healthcare	1	1	Software Dev Manager III, Amazon Pharmacy
+healthcare	2	1	Software Dev Manager, HST Health Foundation
+international-stores	1	3	Software Development Engineer, Digital Payments and Emerging Markets
+international-stores	2	2	Software Dev Engineer II, Amazon Payment Products
+international-stores	3	2	Software Development Engineer II , Amazon Pay
+international-stores	4	1	Software Dev Engineer 2
+international-stores	5	1	Software Dev Manager III, Amazon Payment Products - Gift Cards
+international-stores	6	1	Software Development Engineer, Amazon Books
+international-stores	7	1	Software Development Engineer, Digital and Emerging Markets Payments MX
+international-stores	8	1	Software Development Engineer, Selection Economics Tech
+international-stores	9	1	Sr Manager, Software Dev, 3P AM Gen AI Solutions, ISS
+kindlecontent	1	1	Principal Software Engineer, Amazon Autos
+kindlecontent	2	1	Principal Software Engineer, Amazon Shipping
+kindlecontent	3	1	Principal Software Engineer, Delivery Experience (DEX)
+kindlecontent	4	1	Principal Software Engineer, Enterprise Productivity
+kindlecontent	5	1	Principal Software Engineer, Fulfillment by Amazon - IOS
+kindlecontent	6	1	Principal Software Engineer, IES LATECH & GIS
+kindlecontent	7	1	Software Dev Engineer (ML)
+kindlecontent	8	1	Software Development Engineer III, Selection Economics Tech
+kindlecontent	9	1	Software Development Engineer, IES Latech & GIS
+kindlecontent	10	1	Software Development Engineer, International Emerging Stores Sub-same Day
+legal	1	1	SDE II - Amazon Legal Tech, Legal Tech
+no-business-category	1	5	SDE-1 (FTC)
+no-business-category	2	2	SDE-1 (Fixed Term Contract)
+no-business-category	3	2	Software Development Engineer - Discovery Tech, DiscoTec (Discovery Technology & Science)
+no-business-category	4	2	Software Development Engineer II, EU INTech - Prime and Marketing Tech
+no-business-category	5	1	Data Engineer II, ISS Central Science and Analytics
+no-business-category	6	1	Data Engineer II, International Seller Growth
+no-business-category	7	1	Jr. Software Develoment Engineer, Jr. Developer Program
+no-business-category	8	1	Principal Software Engineer, Prime Video & Studios CoreTech
+no-business-category	9	1	SDE
+no-business-category	10	1	SDM-III, Selling Partner Services Tech
+no-business-category	11	1	Salesforce Developer and Admin, ISS
+no-business-category	12	1	Senior Software Development Engineer, Under the Roof Labor Planning, UTR
+no-business-category	13	1	Software Dev Engineer I FTC
+no-business-category	14	1	Software Dev Engineer I, L4 FTC, IESP Merchant Tech
+no-business-category	15	1	Software Dev Engineer II , Selection Management - Subscribe & Save
+no-business-category	16	1	Software Dev Engineer, CMT ASIN Importer
+no-business-category	17	1	Software Development Engineer , CADENCE Team
+no-business-category	18	1	Software Development Engineer -I, IESP Merchant Tech
+no-business-category	19	1	Software Development Engineer I, Amazon Payments
+no-business-category	20	1	Software Development Engineer II (ML), CMT
+no-business-category	21	1	Software Development Engineer II , Amazon Cross Border Tech
+no-business-category	22	1	Software Development Engineer II, Amazon Finance Technology
+no-business-category	23	1	Software Development Engineer II, Direct Fulfilment
+no-business-category	24	1	Software Development Engineer II, Selling Partner Identity Verification
+no-business-category	25	1	Software Development Engineer II, Transactional Data Storage
+north-america-stores	1	5	Software Development Engineer, WW Deals & Promotions
+north-america-stores	2	1	Software Development Engineer, WW Deals and Promotions
+north-america-stores	3	1	Software Development Manager, Promotions Customer Experience (PCX)
+north-america-stores	4	1	Sr Software Engineer, WW Deals and Promotions
+north-america-stores	5	1	Sr. Software Development Engineer, Fitness & Fandom
+operations	1	4	Software Development Engineer, AFT External Fulfillment
+operations	2	3	Programmer/Analyst II, Ship With Amazon
+operations	3	3	SDE-II, Supply Chain
+operations	4	3	Software Development Engineer II, Amazon Fulfillment Technologies (AFT) - Workforce Optimization
+operations	5	3	Software Development Engineer, Inventory Genealogy
+operations	6	2	Senior Software Dev Engineer, SCOT-FO, Shipment Optimization (ATROPS)
+operations	7	2	Software Development Engineer - Supply Chain Optimization Tech, Inbound Systems
+operations	8	2	Software Development Engineer II, Delivery Choice
+operations	9	2	Software Development Engineer, Amazon Fulfilment Tech
+operations	10	2	Software Development Manager, Ship With Amazon
+operations	11	1	Amazon Fulfilment Tech - Software Development Engineer, AFT Inventory
+operations	12	1	Manager, SW Development, WW Speed & AI
+operations	13	1	Robotics - Software Development Engineer
+operations	14	1	SDE II , Stores TA
+operations	15	1	SDE II, Amazon Fulfilment Tech, Amazon Fulfilment - Inventory Team
+operations	16	1	SDE III, WW Speed & AI Tech, Same Day Delivery - LLM & Agentic workflows
+operations	17	1	SDE-II, Supply Chain Optimization Techonologies - Fulfillment Optimization
+operations	18	1	SDE2
+operations	19	1	Software Dev Engineer II , Last Mile Payments
+operations	20	1	Software Dev Engineer II, Delivery Experience, Delivery Experience
+operations	21	1	Software Dev Engineer II, Long Term Planning and Forecasting
+operations	22	1	Software Dev Engineer II, Quick Commerce
+operations	23	1	Software Dev Engineer II, SCOT ROW AIM TECH
+operations	24	1	Software Dev Engineer II, SCOT-OSS, Simulation
+operations	25	1	Software Dev Engineer II, Sort Tech
+pharmacy	1	1	Sr. Software Development Engineer, Amazon Pharmacy, Amazon Phamarcy
+pxt	1	3	Sr. Software Dev Engineer, Benefits Experience and Technology (BXT)
+pxt	2	2	Software Dev Engineer, Benefits Experience and Technology (BXT)
+pxt	3	2	Software Development Engineer
+pxt	4	2	Software Development Engineer III, AZA (Gen AI)
+pxt	5	1	AI/ML Engineer, Hiring Intelligence, Science & Experimentation (HIRISE)
+pxt	6	1	BIM Operation Lead, GREF Workplace Guideline
+pxt	7	1	Front End Engineer, Workforce Solutions - Transformative Tech
+pxt	8	1	Principal Data Engineer, Intelligent Talent Acquisition
+pxt	9	1	Senior Software Dev Engineer, Enrollment Experience - Benefits Experience & Technology (BXT)
+pxt	10	1	Senior Software Development Engineer, PreStart Domain
+pxt	11	1	Software Dev Engineer II, Talent Development, Talent Development
+pxt	12	1	Software Dev Engineer, Career Choice
+pxt	13	1	Software Development Engineer, Benefits Technology
+pxt	14	1	Software Development Engineer, PXT ESTech
+pxt	15	1	Software Development Engineer, People eXperience and Technology (PXT)
+pxt	16	1	Software Development Engineer, Workforce Solutions - Talent Mobility, Workforce Solutions - Talent Mobility
+pxt	17	1	Software Development Manager III, Workforce Solutions - Employee Onboarding Experience
+pxt	18	1	Software Development Manager, Hiring Intelligence, Science & Experimentation (HIRISE)
+pxt	19	1	Software Development Manager, Workforce Solutions - Employee Onboarding Experience (EOE)
+pxt	20	1	Sr. Software Dev Engineer , Workforce Solutions - Transformative Tech
+retail	1	5	Software Dev Engineer - AI Agents, IES LATech
+retail	2	5	Software Dev Engineer II, Prime Air
+retail	3	3	Software Development Engineer II, Prime Air
+retail	4	2	Embedded SDE II, Prime Air
+retail	5	2	Manager III, Software Dev, Search Science Data Infra
+retail	6	2	Software Dev Engineer II, Stores Foundational AI -SFAI
+retail	7	2	Software Developer, IES LATECH & GIS
+retail	8	2	Software Development Engineer, Amazon Private Brands, Automated Product Planning and Governance
+retail	9	2	Software Development Engineer, Amazon Shopping
+retail	10	2	Software Development Manager, Amazon Rufus
+retail	11	2	Software Engineer II, Prime Air
+retail	12	2	Sr. Software Development Engineer, Amazon Shopping (Rufus)
+retail	13	1	Applied Scientist, Core Search
+retail	14	1	Desenvolvedor de Software II, IES LATECH & GIS
+retail	15	1	Desenvolvedor de Software II, INTech Latam
+retail	16	1	Desenvolvedor de Software, IES Latech Latam
+retail	17	1	Desenvolvedora de Software (Vaga afirmativa prioritária para mulheres), IES LATECH & GIS
+retail	18	1	Manager III, Software Development, Perception Software, Perception, Vehicle Software
+retail	19	1	Manager, Search Capacity, Amazon Search
+retail	20	1	Principal Software Engineer, RBS - Tech
+retail	21	1	SDE - II, Search Product Grouping And Discovery Team
+retail	22	1	SDE II - Backend, Cross Border Shopping Experience
+retail	23	1	Senior Manager, Software Development, CMT
+retail	24	1	Senior Software Engineer, Prime Air
+retail	25	1	Software Dev Engineer - AI Agents (Prioritária para Pessoas com Deficiencia), IES LATech
+seller-services	1	1	SDE II (Level 5), GT Foundation
+seller-services	2	1	Software Development Engineer
+selling-partner-services	1	5	Software Development Engineer II
+selling-partner-services	2	4	Software Development Engineer
+selling-partner-services	3	3	Software Dev Engineer II
+selling-partner-services	4	3	Software Development Manager
+selling-partner-services	5	2	SDE II - Selling Partner Identity Verification and Registration, SPIV Tech
+selling-partner-services	6	2	Software Dev Engineer II, Profit Intelligence
+selling-partner-services	7	2	Software Development Engineer II, Account Compliance Tech
+selling-partner-services	8	2	Software Development Engineer, Inventory Authority Platform (IAP)
+selling-partner-services	9	2	Software Development Engineer, Vendor Experience
+selling-partner-services	10	2	Sr. TPM, Verification Services
+selling-partner-services	11	1	Data Engineer II, Compliance Shared Services, RISC
+selling-partner-services	12	1	Front-End Engineer II
+selling-partner-services	13	1	SDE II - Financial Risk Mitigation, Payment Instrument Trust
+selling-partner-services	14	1	SDE II - Financial Risk Mitigation, Reserve Auditing and Disbursement
+selling-partner-services	15	1	Software Dev Engineer II, Paragon
+selling-partner-services	16	1	Software Dev Engineer II, Paragon Workbench
+selling-partner-services	17	1	Software Dev Engineer, Paragon
+selling-partner-services	18	1	Software Dev Engineer, Profit Intelligence
+selling-partner-services	19	1	Software Development Engineer - II
+selling-partner-services	20	1	Software Development Engineer - II, Verification Services-Fixed
+selling-partner-services	21	1	Software Development Engineer II , Risk and Compliance Solutions (RCS)
+selling-partner-services	22	1	Software Development Engineer II, FBA
+selling-partner-services	23	1	Software Development Engineer II, FBA Capacity and Inventory Health Management
+selling-partner-services	24	1	Software Development Engineer II, Fulfillment by Amazon (FBA)
+selling-partner-services	25	1	Software Development Engineer II, Inventory Authority Platform (IAP)
+studentprograms	1	6	Software Development Engineer – 2026
+studentprograms	2	2	2026 Graduate Software Dev Engineer
+studentprograms	3	1	2026 Software Dev Engineer Intern - Germany
+studentprograms	4	1	2026 Software Dev Engineer Intern - Spain
+studentprograms	5	1	2026 Software Dev Engineer Intern - UK
+studentprograms	6	1	2027 Software Dev Engineer Intern
+studentprograms	7	1	Full-Time Software Development Engineer, São Paulo
+studentprograms	8	1	Software Dev Engineer
+studentprograms	9	1	Software Dev Engineer (DevOps), Amazon Prime Air
+studentprograms	10	1	Software Dev Engineer - Big Data Processing, S3 - Data and Analytics
+studentprograms	11	1	Software Dev Engineer - Embedded Development
+studentprograms	12	1	Software Dev Engineer - Embedded Development (Linux), Amazon Linux
+studentprograms	13	1	Software Dev Engineer - Embedded Development - Low Level, EC2 Live Migration
+studentprograms	14	1	Software Dev Engineer - Test, Ring & Blink Firmware
+studentprograms	15	1	Software Dev Engineer Embedded Development
+studentprograms	16	1	Software Dev Engineer Internship - Embedded Development (Linux)
+studentprograms	17	1	Software Dev Engineer internship - Embedded Development
+studentprograms	18	1	Software Dev Engineer, Ring Core Product
+studentprograms	19	1	Software Developer - Full Time, Amazon University, CDMX, Mexico
+studentprograms	20	1	Software Development Engineer , Amazon University Talent Aquisition (AUTA)
+studentprograms	21	1	Software Development Engineer - 2026
+studentprograms	22	1	Software Development Engineer - 2026 (US)
+studentprograms	23	1	Software Development Engineer - Military Veterans
+studentprograms	24	1	Software Development Engineer Apprentice - Military Veterans
+studentprograms	25	1	Software Development Engineer Intern, AWS Data Services - Fall 2026 (US)
+subsidiaries	1	5	Senior Software Development Engineer
+subsidiaries	2	3	Senior Software Development Engineer, Consumer Domains
+subsidiaries	3	2	Embedded Software Development Engineer II, Amazon Robotics Firmware
+subsidiaries	4	2	Embedded Software Manager, Mobile Robotics
+subsidiaries	5	2	SDE II, Perception and SLAM, Autonomous Mobility
+subsidiaries	6	2	Senior Software Engineer, Fauna
+subsidiaries	7	2	Software Development Engineer
+subsidiaries	8	2	Software Development Engineer, AI Data Infrastructure
+subsidiaries	9	2	Software Development Engineer, Amazon Robotics
+subsidiaries	10	2	Software Development Engineer, Creator Marketplace
+subsidiaries	11	2	Software Development Engineer, Early Career
+subsidiaries	12	2	Software Development Engineer, iOS
+subsidiaries	13	1	Design Technologist, Robot Animation , Fauna
+subsidiaries	14	1	Director of Software Development, Android
+subsidiaries	15	1	Embedded Robotics SDE, Compass
+subsidiaries	16	1	Embedded Software Development Engineer - Sensor & Compute, Amazon Robotics
+subsidiaries	17	1	Embedded Software Development Engineer II, Amazon Robotics Embedded Safety Systems
+subsidiaries	18	1	Embedded Software Engineer II, Autonomy Platform, Data and Tools
+subsidiaries	19	1	Firmware Engineer, Amazon Robotics
+subsidiaries	20	1	Head of Creator Technologies
+subsidiaries	21	1	Lead Software Development Engineer
+subsidiaries	22	1	Lead Software Development Engineer, Consumer Domains
+subsidiaries	23	1	Lead Software Development Engineer, Marketing Content Management System
+subsidiaries	24	1	ML Infrastructure Engineer, Fauna
+subsidiaries	25	1	Manipulation Robotics Embedded SDE
+transportation-and-logistics	1	2	Software Dev Engineer II, Ship Tech | Labeling
+transportation-and-logistics	2	1	Data Engineer, WW Returns & ReComm Tech& Inn
+transportation-and-logistics	3	1	Manager III, Software Dev, TITANS
+transportation-and-logistics	4	1	Senior Software Development Manager, Amazon Freight
+transportation-and-logistics	5	1	Senior Technical Program Manager, Relay Central (TTS)
+transportation-and-logistics	6	1	Software Dev Engineer, SSD Route Orchestration
+transportation-and-logistics	7	1	Software Development Engineer II, Recipient Experience, Recipient Experience
+transportation-and-logistics	8	1	Software Development Manager III, WW Services Tech
+transportation-and-logistics	9	1	Software Development Manager, QuBIT Ripple
+transportation-and-logistics	10	1	Software Development Manager, Transportation Financial Systems
+transportation-and-logistics	11	1	Sr Technical Program Manager, Geospatial
+transportation-and-logistics	12	1	Sr. Software Dev Engineer, Routing Platform
+transportation-and-logistics	13	1	Technical Program Manager, World Wide Returns & Recommerce
+university	1	1	Software Development Engineer - 2026
+worldwide-grocery-stores	1	1	Software Development Engineer, Inbound & Inventory Management Tech
+worldwide-grocery-stores	2	1	Software Development Manager, WWGST
