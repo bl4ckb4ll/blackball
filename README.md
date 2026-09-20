@@ -73,6 +73,8 @@ A credential, ranking, institutional label, or professional title carries only t
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Andrew Hacker](people/andrew-hacker.md) — political scientist and public critic of higher education; connects his 2005 NYRB source trail to *Higher Education?* and preserves the distinction between provocative measurement and strong causal evidence.
+- [Claudia Dreifus](people/claudia-dreifus.md) — journalist, interviewer, and coauthor of *Higher Education?*; focuses on campus reporting, interviewing, classroom observation, and the evidentiary boundary between a field report and a prevalence claim.
 - [Michael S. Kimmel](people/michael-kimmel.md) — former Stony Brook sociologist of gender and masculinity; graduate-student allegations, ASA award response, retirement, and limits of the public institutional record.
 - [Mike Lynch](people/mike-lynch.md) — Cambridge/Bayesian technical background, Autonomy and the British high-technology success narrative, institutional prestige, HP litigation, extradition, U.S. criminal acquittal, media-framing bibliography, court-document inventory, and a dated reconstruction of Wikipedia narrative changes.
 - [Tycho Brahe](people/tycho-brahe.md) — noble family and foster-uncle plan for statesmanship/jurisprudence, secret Leipzig astronomy, Tycho's rejection of inherited lineage as personal achievement, and the material-resource qualification.
@@ -93,6 +95,7 @@ A credential, ranking, institutional label, or professional title carries only t
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
+- [Andrew Hacker and Claudia Dreifus — *Higher Education?*](llm/andrew-hacker-claudia-dreifus-higher-education/README.md) — chapter-by-chapter argument/evidence map, campus-reporting method, reconstructed bibliography and upstream source trail, criticisms, and a retrieval queue that keeps direct observation separate from national inference.
 - [Jeff Sharlet — Dartmouth graduates into finance and consulting](llm/jeff-sharlet-dartmouth-finance-consulting/README.md)
 - [Associate Deans (@ass_deans)](sources/associate-deans/README.md) — insider academic-management satire treated as a source corpus on managerial layering, faculty/management relations, accountability, and insider/outsider information asymmetry.
 - [Earl Shorris — *A Nation of Salesmen*](llm/earl-shorris-a-nation-of-salesmen/README.md) — argument map, review synthesis, legitimate-access boundary, archival leads, and a dated used-book price snapshot.
