@@ -35,17 +35,88 @@ unless the question is specifically about the secondary author's interpretation.
 
 A credential, ranking, institutional label, or professional title carries only the evidentiary weight of the process it actually certifies. Do not silently substitute broad claims about intelligence, competence, employability, judgment, or authority.
 
+## Audits
+
+- [September 1–7, 2026 conversation-to-repository forensic audit](audits/2026-09-01--07-conversation-repository/README.md) — all 131 project conversations visible at the Sep 7 20:22 UTC snapshot plus recovered outside-snapshot history mapped to a 109-item substantive ledger, graded by research quality and default-branch/PR/branch state without filling the identified gaps.
+
 ## Current question surfaces
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
+- [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
+- [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
+
+## Institutional and local case files
+
+- [Place dossiers](places/README.md) — descriptive local case files for Greenwich, Newton, Armonk, Skaneateles, Shaker Heights, Evanston, Aurora, Cupertino, and Richmond; separates public evidence, institutional self-presentation, private research leads, interpretation, and geographic-boundary problems.
+- [Hyde Park](Hyde%20Park/README.md) — Venkatesh's Hyde Park/Woodlawn labor boundary; Friedman, Fama, Obama, and Venkatesh inside the same university-centered geography; Yiran Fan and Shaoxiong Zheng killings; "potential," mourning, policing, and institutional response.
+- [University of Chicago](University%20of%20Chicago/README.md) — put globally influential claims about markets, labor, poverty, human capital, law, and public policy beside the local economy and institutional power of Hyde Park and the South Side.
+- [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, including Venkatesh's 1996–1999 Society of Fellows appointment.
+
+## Economics
+
+- [Economics index](economics/README.md) — evidence and source records for Maddison, Keynes, Painter, Marx and Engels, Engels's working-class analysis, Adam Smith, and related economic history and political economy.
+- [Entrepreneurship](economics/entrepreneurship/README.md) — separates household livelihood enterprise, owner-operator business, family enterprise, franchise, growth firm, and venture-backed startup; applies a common capital, labor, household-return, downside, succession, and accountability analysis.
+
+## History and training institutions
+
+- [History index](history/README.md) — inspectable source trails for labor, organization, coercion, technology, and historical institutions.
+- [Higher-education history](history/higher-education/README.md) — a provisional Roger L. Geiger bibliography and acquisition map; no book-length Geiger text has yet been inspected.
+- [Johns Hopkins founding lead](history/higher-education/roger-l-geiger/JOHNS-HOPKINS.md) — preserves the remembered “students were an afterthought” formulation as an unverified retrieval target.
+- [Apprenticeship](history/apprenticeship/README.md) — applies the same accountability test to apprenticeship that Blackball applies to college and graduate education: actual training, contract enforcement, exit, deferred benefits, exclusion, wages, and outcomes rather than the surface appeal of “earn while you learn.”
+
+## People dossiers
+
+- [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
+- [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
+- [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Tycho Brahe](people/tycho-brahe.md) — noble family and foster-uncle plan for statesmanship/jurisprudence, secret Leipzig astronomy, Tycho's rejection of inherited lineage as personal achievement, and the material-resource qualification.
+- [Galileo Galilei](people/galileo-galilei.md) — father-directed medical training at Pisa, mathematical exposure and Ricci's intervention, departure without a medical degree, and the unresolved economics of the switch.
+- [Charles Darwin](people/charles-darwin.md) — father-directed medicine then clergy, university natural-history exposure, and Darwin's explicit statement that expected inherited property reduced his effort to learn medicine.
+- [Edwin Hubble](people/edwin-hubble.md) — paternal expectation of law, Rhodes-supported Oxford legal study, brief legal practice, and deliberate return to astronomy, with family-finance questions left open.
+- [Sudhir Venkatesh](people/sudhir-venkatesh.md) — Chicago fieldwork, Hyde Park's labor boundary, Harvard Junior Fellowship, "rogue sociologist" branding, and the conversion of access to poor communities into academic and publishing value.
+- [Barack Obama](people/barack-obama.md) — South Side organizing, Hyde Park residence, Harvard Law, UChicago Law faculty affiliation, and documented network/platform benefits.
+- [Eugene F. Fama](people/eugene-fama.md) — Chicago graduate training, mentorship, faculty career, finance research, and direct chronological overlap with Venkatesh's Hyde Park period.
+- [Milton Friedman](people/milton-friedman.md) — Chicago graduate degree and faculty career, Hyde Park residence, global policy influence, and an earlier generation of the same university-neighborhood geography.
+- [T. S. Eliot](people/t-s-eliot.md) — Emily Hale archive, Eliot's 1960 posthumous counter-statement, destruction of Hale's letters, and the distinction between literary value and personal/canonical authority.
+- [Yiran Fan](people/yiran-fan.md) — Booth/Economics Ph.D. student, institutional "potential" language, posthumous degree, and same-event comparison with other January 2021 victims.
+- [Shaoxiong "Dennis" Zheng](people/shaoxiong-dennis-zheng.md) — UChicago statistics graduate whose 2021 killing triggered major memorial and security responses.
+- [Aisha Johnson](people/aisha-johnson.md) — doorwoman killed in the same January 2021 spree as Fan; kept separate from UChicago affiliation absent evidence.
+- [Anthony Faulkner Jr.](people/anthony-faulkner-jr.md) — 20-year-old killed in the same spree; sparse public biography preserved as a measurement problem rather than filled with assumptions.
+- [Matt Mahoney](people/matt-mahoney.md) — Florida Tech, PAQ/ZPAQ, *Data Compression Explained*, Ocarina Networks, Dell acquisition chronology, and explicit correction of the unsupported founder/personal-$1m story.
 
 ## Source dossiers
 
 - [David L. Kirp — *Shakespeare, Einstein, and the Bottom Line*](llm/david-l-kirp-shakespeare-einstein-bottom-line/README.md)
+- [Associate Deans (@ass_deans)](sources/associate-deans/README.md) — insider academic-management satire treated as a source corpus on managerial layering, faculty/management relations, accountability, and insider/outsider information asymmetry.
+- [Earl Shorris — *A Nation of Salesmen*](llm/earl-shorris-a-nation-of-salesmen/README.md) — argument map, review synthesis, legitimate-access boundary, archival leads, and a dated used-book price snapshot.
+- [Earl Shorris — the Clemente Course in the Humanities](llm/earl-shorris-clemente-course/README.md) — first-course origin, recruitment, original faculty and curriculum, logistics, outcome-count disagreements, later institutionalization, and provenance.
+- [Earl Shorris — *Riches for the Poor*](llm/earl-shorris-riches-for-the-poor/README.md) — publication history from *New American Blues*, argument summary, Clemente relationship, access boundary, evidence limitations, and provenance.
+- [Gresham College lecture corpus](sources/gresham-college/lectures/README.md) — subject, series, speaker, transcript, audio, and video retrieval routes with explicit separation between public audiences and nonexistent enrolled students, and between lecture dates and later publication dates.
+- [Mathematicians of the African Diaspora — paper corpus](sources/mathematicians-of-the-african-diaspora/README.md) — Scott W. Williams's MAD roster normalized into a paper-level coverage ledger, bibliography cull, and mathematical summary/reaction lane with discovery/abstract/full-text evidence states kept separate.
+- [John Lennon — “Working Class Hero”](sources/john-lennon/working-class-hero/README.md) — song and album provenance, official full-lyrics routes and copyright boundary, Lennon/Ono and Beatles-breakup chronology, primal-therapy context, class-background evidence, recording history, political context, censorship history, and book leads.
+- [Matt Mahoney / Ocarina Networks source ledger](sources/matt-mahoney/README.md) — dated primary and secondary sources, acquisition filings, funding/product chronology, archive-discovery links, rights notes, and a claim ledger separating the real $1m prize pool from any unsupported personal payout.
+- [Miles Reid — *Notes for obituary*](sources/miles-reid/obituary-notes/README.md) — self-authored 2002 notes for a future Royal Society biographical memoir, with source links, chronology, academic-pipeline details, and evidence limitations.
+- [FTX / Sam Bankman-Fried federal criminal case](sources/ftx/sam-bankman-fried-federal-case/README.md) — seven-count trial and 2026 appeal, software/account evidence, cooperating-witness testimony, Ellison balance-sheet evidence, MIT/Stanford network, severed charges, atomic claim ledger, source provenance and evidentiary guardrails.
+- [E. P. Thompson — books, essays, and legitimate online access](llm/e-p-thompson/README.md)
+- [Christopher Hill — books and legitimate online access](llm/christopher-hill/README.md)
+- [Terence Ranger — books, bibliography, and access trail](llm/terence-ranger/README.md)
+- [Eric Hobsbawm — books, long nineteenth century, and open article trail](llm/eric-hobsbawm/README.md)
+- [Toby Green — *A Fistful of Shells* — source trail and access](llm/toby-green-a-fistful-of-shells/README.md)
+- [Paulus Gerdes — *Geometry from Africa* — source trail and access](llm/paulus-gerdes-geometry-from-africa/README.md)
 - [Sarah Lawrence as a class and cultural type](llm/sarah-lawrence-class/README.md)
 - [J. D. Salinger and class](llm/j-d-salinger-class/README.md)
 
 ## Primary-source corpora
 
 - [Henry Mayhew — *London Labour and the London Poor*](sources/henry-mayhew/london-labour-and-the-london-poor/README.md) — four-volume public-domain corpus with proofread text, page scans, raw OCR/HOCR/XML derivatives, metadata and audiobook routes.
+- [William Morris — *A Dream of John Ball; and, A King's Lesson*](sources/william-morris/a-dream-of-john-ball/README.md) — public-domain full text, local 1888 scan, raw scan OCR, and actual page-image reading views; directly useful upstream of E. P. Thompson's Morris work.
+
+  Read locally: [1888 PDF](sources/william-morris/a-dream-of-john-ball/internet-archive/dreamofjohnballa00morr/dreamofjohnballa00morr.pdf) · [proofread reading text](sources/william-morris/a-dream-of-john-ball/a-dream-of-john-ball-and-a-kings-lesson-gutenberg-reading-copy.txt) · [raw scan OCR](sources/william-morris/a-dream-of-john-ball/internet-archive/dreamofjohnballa00morr/dreamofjohnballa00morr_djvu.txt)
+
+<p align="center">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/contents-1.png" width="24%" alt="First contents page from the 1888 scan">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/contents-2.png" width="24%" alt="Second contents page from the 1888 scan">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-1.png" width="24%" alt="First page of Chapter I from the 1888 scan">
+  <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-2.png" width="24%" alt="Second page of Chapter I from the 1888 scan">
+</p>
