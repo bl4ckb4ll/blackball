@@ -1,0 +1,7 @@
+field	value
+source_snapshot	FAANG/amazon/inventory/2026-09-16T155726Z/jobs.tsv
+population	2613
+distinct_business_categories	42
+distinct_team_labels	125
+distinct_business_team_pairs	143
+method	exact metadata grouping; no inferred reporting edges
