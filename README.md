@@ -67,9 +67,13 @@ A credential, ranking, institutional label, or professional title carries only t
 
 ## People dossiers
 
+- [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
+- [Boaventura de Sousa Santos](people/boaventura-de-sousa-santos.md) — University of Coimbra sociologist; CES harassment/abuse controversy, first-person allegations, independent-commission findings, denials, and later Portuguese legal proceedings.
+- [John L. Comaroff](people/john-comaroff.md) — Harvard anthropologist (retired 2024); graduate-student allegations, Harvard policy findings and sanctions, federal litigation, denials, and dismissal record.
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
+- [Michael S. Kimmel](people/michael-kimmel.md) — former Stony Brook sociologist of gender and masculinity; graduate-student allegations, ASA award response, retirement, and limits of the public institutional record.
 - [Mike Lynch](people/mike-lynch.md) — Cambridge/Bayesian technical background, Autonomy and the British high-technology success narrative, institutional prestige, HP litigation, extradition, U.S. criminal acquittal, media-framing bibliography, court-document inventory, and a dated reconstruction of Wikipedia narrative changes.
 - [Tycho Brahe](people/tycho-brahe.md) — noble family and foster-uncle plan for statesmanship/jurisprudence, secret Leipzig astronomy, Tycho's rejection of inherited lineage as personal achievement, and the material-resource qualification.
 - [Galileo Galilei](people/galileo-galilei.md) — father-directed medical training at Pisa, mathematical exposure and Ricci's intervention, departure without a medical degree, and the unresolved economics of the switch.
