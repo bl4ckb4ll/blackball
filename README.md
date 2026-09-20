@@ -65,6 +65,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Hyde Park](Hyde%20Park/README.md) — Venkatesh's Hyde Park/Woodlawn labor boundary; Friedman, Fama, Obama, and Venkatesh inside the same university-centered geography; Yiran Fan and Shaoxiong Zheng killings; "potential," mourning, policing, and institutional response.
 - [University of Chicago](University%20of%20Chicago/README.md) — put globally influential claims about markets, labor, poverty, human capital, law, and public policy beside the local economy and institutional power of Hyde Park and the South Side.
 - [Harvard](Harvard/README.md) — Harvard as a credentialing and authority-conversion node in the Venkatesh and Obama trajectories, with a pointer to Bryan Stevenson’s criticism of the separation between law professors’ professed beliefs and conduct.
+- [UMKC six-year B.A./M.D. program](history/medical-education/umkc-six-year-ba-md.md) — a durable U.S. counterexample to treating four undergraduate years plus four medical-school years as a structurally necessary sequence: direct high-school admission, integrated liberal arts and medicine, early clinical contact, docent teams, accreditation resistance, outcome evidence, and explicit unresolved questions.
 - [University of Michigan](University%20of%20Michigan/README.md) — compare broad college-wide outcomes with major-specific occupational conversion and first-person local cases.
 
 ## Economics
