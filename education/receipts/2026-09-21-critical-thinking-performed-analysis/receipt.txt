@@ -4,8 +4,9 @@ Visible account: Poison D. Well (@isomorphed)
 Visible post time: 10:52 AM · 21 Sep 26
 Capture received: 2026-09-21 10:55 -04:00
 Capture kind: user-supplied social-media screenshot
-Artifact: screenshot.png
-Artifact SHA-256: 9b140573763a303ea04077a7ae146e59581cc802fddc3b18f2b1db72e40e2a19
+Original capture format: JPEG data, 768 x 1536 pixels (despite the uploaded .png filename)
+Original capture SHA-256: 9b140573763a303ea04077a7ae146e59581cc802fddc3b18f2b1db72e40e2a19
+Binary archival status: exact screenshot bytes are not yet vendored on this branch; preserve this as an explicit acquisition gap rather than pretending the transcription is source-native.
 Transcription policy: preserve visible wording, spelling, capitalization, and punctuation rather than silently correcting it.
 
 POST
@@ -26,6 +27,7 @@ It is not, by itself, evidence of how common the practice was, what institution 
 
 UNRESOLVED
 
+- exact screenshot binary still needs durable repository archival
 - source/post URL
 - platform
 - institution, course, and grade level
