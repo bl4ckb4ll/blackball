@@ -46,6 +46,7 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 ## Political economy and labor
 
+- [Colonial Virginia — land, labor status, trades, and economic power, c. 1760–1782](colonial-virginia-land-labor-and-economic-power.md) — reconstructs freeholders, tenants, hired hands, apprentices/journeymen/masters, shopkeepers, indentured servants, overseers, and enslaved labor around Washington; keeps legal status distinct from skill and links elite-status imitation to the balance-sheet question facing heavily indebted students.
 - [Marx and Engels — the “second page” of *The Communist Manifesto*](marx-engels-second-page-of-the-communist-manifesto.md) — the Part I passage cataloguing bourgeois society's historically revolutionary achievements in production, markets, technical change, urbanization, communication, and political centralization.
 - [Friedrich Engels — *The Condition of the Working Class in England* and the American working-class question](engels-condition-of-the-working-class-england-and-america.md) — wage dependence, competition, crises, urban conditions, labor organization, and the 1887 American-edition discussion.
 - [Robert Frost — “Two Tramps in Mud Time” (1934)](robert-frost-two-tramps-in-mud-time-1934.md) — chosen manual work versus work needed for income; ownership, control, skill, outside options, and the class difference between vocation and avocation.
