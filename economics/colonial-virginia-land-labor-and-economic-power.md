@@ -1,4 +1,4 @@
-# Colonial Virginia — land, labor status, trades, and economic power, c. 1760–1782
+# Colonial Virginia — land, labor status, trades, and economic power, c. 1760–1799
 
 This note reconstructs part of the social and economic structure surrounding George Washington in late-colonial Virginia. It is meant to answer a more useful question than “how many acres did Washington own?”:
 
@@ -306,7 +306,7 @@ The categories can be compared without pretending they were morally or legally e
 
 | Position | Main productive asset/control | Labor relationship | Exit/bargaining position |
 | --- | --- | --- | --- |
-| Enslaved person | little or no legally protected claim to own productive property; person treated as property | coerced labor | no contractual right to exit slavery |
+| Enslaved person | person legally held as property; independent accumulation was constrained and precarious | coerced labor | no contractual right to exit slavery |
 | Indentured servant | labor committed for a term | bound service | limited by contract and law until term ends |
 | Apprentice | training relationship plus bound service | labor exchanged partly for training/support | depends on contract, court, age, and local law |
 | Free hired hand | owns own labor; usually little capital | sells labor for wages/piece rate/provisions | can bargain or leave subject to contract and economic necessity |
