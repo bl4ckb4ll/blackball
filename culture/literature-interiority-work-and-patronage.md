@@ -56,6 +56,43 @@ It can be a profession, a public institution, a form of inquiry, a durable body 
 
 A separate question is what social arrangements give people enough time, equipment, institutions, and independence to do scientific work whose value may not be immediately monetizable.
 
+## Who gets to call thinking serious?
+
+Do not treat intellectual seriousness as an intrinsic property that institutions merely discover.
+
+The current Blackball question is about **power, recognition, and material support**. A person can spend decades thinking about probability, mathematics, history, literature, or anything else without that activity becoming a profession. Conversely, once an institution can pay someone, give the activity a title, provide an audience, certify participants, publish the work, and reproduce the role, the activity acquires durable social recognition.
+
+That does not prove that the activity is worthless or that institutional recognition is fake. It means that the historical explanation is incomplete if it jumps directly from “this is valuable thinking” to “therefore society supports professional thinkers.”
+
+Keep at least four claims separate:
+
+1. **Personal value:** the thinker wants to do it.
+2. **Patronage or exchange value:** someone with resources independently wants the thinker to do it and voluntarily supports the activity.
+3. **Institutional recognition:** an organization has enough durable power and resources to create offices, salaries, titles, audiences, credentials, archives, and succession.
+4. **A social claim on other people's resources:** the activity is said to deserve continuing support from students, taxpayers, donors, workers, or some other population.
+
+The fourth claim does not follow automatically from the first three. If a profession asks other people to support it, Blackball should ask what those people receive, what alternatives they give up, who made the allocation decision, and what power makes that decision stick.
+
+This is also an adult-responsibility question. Intense curiosity can justify a hobby to the person who has it. Turning that curiosity into a profession means entering a relationship with other people's needs and resources. “I care deeply about this” is not by itself an account of why somebody else should pay.
+
+### Historical leads
+
+Use historical cases to investigate the mechanism rather than to decorate the argument with famous names.
+
+- **Alexander / Aristotle:** preserve as a patronage model until sourced carefully. The relevant mechanism is simple: a ruler with resources may decide that having a particular thinker nearby is worth supporting. That makes the activity materially valuable to that patron; it does not establish a universal entitlement to support.
+- **Reviel Netz:** draft PR [#5](https://github.com/bl4ckb4ll/blackball/pull/5) is already the source lead. Its useful objects are named authorship, fame, polemic, patronage, scarcity, canon formation, and the historical production of cultural authority. Do not recruit Netz as though he had already established the modern-university thesis.
+- **John Napier:** investigate him without forcing the later amateur/professional distinction backward. The question is what property, rank, practical work, household resources, patronage, and institutions made sustained mathematical activity possible in his setting.
+- **Gresham College:** the existing [Gresham source corpus](../sources/gresham-college/lectures/README.md) supplies a concrete institutional case. The research question is not merely whether mathematics was “serious,” but who had the wealth and governing authority to endow chairs, appoint lecturers, create a durable audience, and make that classification persist.
+- **George Washington:** preserve as a comparison lead for a person whose surveying, agricultural, military, political, and technical activity crossed categories that later became separate professions. Do not use the case until the relevant primary or strong secondary sources are attached.
+
+The museum analogy is useful here: saying “art is what museums contain” mistakes an institutional selection mechanism for a definition of intrinsic artistic value. Likewise, saying “serious thought is what professors do” can hide the preceding allocation of wealth, authority, credentials, time, buildings, audiences, and legitimacy.
+
+The question Blackball should retain is therefore:
+
+> **Who has the power to declare an activity serious, organize resources around that declaration, make other people bear some of its costs, and reproduce the classification across generations?**
+
+That question does not settle whether the activity is good. It identifies the material and institutional machinery that must be visible before “serious” is treated as a neutral description.
+
 ## Patronage and durable public work
 
 A related historical question concerns what concentrated wealth is expected to do.
