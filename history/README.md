@@ -24,6 +24,12 @@ Blackball history material is organized as inspectable source trails rather than
 - [Duncan Season 9 bibliography spider](mexican-revolution/REVOLUTIONS-BIBLIOGRAPHY-SPIDER.md)
 - [Explicit recursion frontier](mexican-revolution/RECURSION-QUEUE.md)
 
+## Patronage and intellectual production
+
+- [Patronage, intellectual work, and the source of the patron's power](patronage/README.md) — recursive method and running ledger: intellectual/work → supporter → support mechanism → source of supporter power/resources → upstream labor/property/state relations.
+- [Running patronage ledger](patronage/ledger.csv) — machine-readable seed rows for Machiavelli, Galileo, the King James Bible, Bach, Gauss, and Olive Bray, with unresolved finance questions left explicit.
+- [Match factories, white phosphorus, and the price of not being free to study](labor/match-factory-white-phosphorus.md) — Bryant & May, low-paid teenage/female labor, fines, phosphorus necrosis of the jaw, and the material difference between a household that can fund study and one that needs wages now.
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
