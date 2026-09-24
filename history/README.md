@@ -30,6 +30,10 @@ Blackball history material is organized as inspectable source trails rather than
 - [Running patronage ledger](patronage/ledger.csv) — machine-readable seed rows for Machiavelli, Galileo, the King James Bible, Bach, Gauss, and Olive Bray, with unresolved finance questions left explicit.
 - [Match factories, white phosphorus, and the price of not being free to study](labor/match-factory-white-phosphorus.md) — Bryant & May, low-paid teenage/female labor, fines, phosphorus necrosis of the jaw, and the material difference between a household that can fund study and one that needs wages now.
 
+## Engineering careers, firms, and technical authority
+
+- [Engineering education, engineering work, and who gets the job](engineering-careers/README.md) — causal ledger for degree, technical competence, first-job mechanism, family resources, inheritance, firm ownership, sponsorship, underemployment, labor underneath design, and changing industrial demand; seed cases include Roebling, Florman, Ford, Cummins, Caterpillar, Conan Doyle, and the Cobb/Turnbull Delta lead.
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
