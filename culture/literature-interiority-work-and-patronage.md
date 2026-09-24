@@ -94,6 +94,14 @@ The question Blackball should retain is therefore:
 
 That question does not settle whether the activity is good. It identifies the material and institutional machinery that must be visible before “serious” is treated as a neutral description.
 
+### Cultivation can consume freedom without creating it
+
+[Olive Bray's 1908 *Elder or Poetic Edda*](../books/olive-bray-elder-poetic-edda.md) adds a useful case. Bray produced a serious bilingual Old Norse/English edition and was also the daughter of a High Court judge and a novelist in a materially comfortable household.
+
+Do not use the family background to discount the translation. Use it to keep causal direction visible. Specialized learning can be a rational **use of already available time, money, books, and social position**. That does not show that undertaking the same study would create those resources for someone who lacks them.
+
+This distinction is central to the education question: **education can consume freedom, cultivate it, or credential it without necessarily being what economically produced the freedom in the first place.**
+
 ### Privilege is not identical to freedom
 
 The [Paul Klee diary source dossier](../sources/paul-klee/diaries/README.md) preserves a useful retrieval target from Klee's art-school years: a remembered case of a substantially supported fellow student whose parents could finance unusually good artistic training while still directing what subjects he was permitted or expected to paint.
