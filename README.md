@@ -82,6 +82,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## People dossiers
 
+- [Graciela Chichilnisky](people/graciela-chichilnisky.md) — catastrophic-risk decision theory, rare-event-sensitive probability, and stated limits of nonparametric econometrics under weak assumptions.
+- [Ariane Lambert-Mogiliansky](people/ariane-lambert-mogiliansky.md) — non-classical uncertainty, expected-utility representation beyond Boolean event algebras, and quantum-like models of context-dependent or indeterminate preferences.
 - [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
 - [Boaventura de Sousa Santos](people/boaventura-de-sousa-santos.md) — University of Coimbra sociologist; CES harassment/abuse controversy, first-person allegations, independent-commission findings, denials, and later Portuguese legal proceedings.
 - [John L. Comaroff](people/john-comaroff.md) — Harvard anthropologist (retired 2024); graduate-student allegations, Harvard policy findings and sanctions, federal litigation, denials, and dismissal record.
