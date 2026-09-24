@@ -94,6 +94,16 @@ The question Blackball should retain is therefore:
 
 That question does not settle whether the activity is good. It identifies the material and institutional machinery that must be visible before “serious” is treated as a neutral description.
 
+### Privilege is not identical to freedom
+
+The [Paul Klee diary source dossier](../sources/paul-klee/diaries/README.md) preserves a useful retrieval target from Klee's art-school years: a remembered case of a substantially supported fellow student whose parents could finance unusually good artistic training while still directing what subjects he was permitted or expected to paint.
+
+Keep the exact passage unverified until recovered from the diary. The conceptual distinction is already worth preserving:
+
+**resources, dependence, control, and freedom are separate variables.**
+
+A wealthy family can protect a child from ordinary labor, finance travel or study, and make a rare cultural life possible while retaining enormous leverage over that child's choices. The existence of privilege therefore does not imply unconstrained freedom; nor does family constraint erase the material privilege.
+
 ## Patronage and durable public work
 
 A related historical question concerns what concentrated wealth is expected to do.
