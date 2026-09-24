@@ -112,6 +112,14 @@ Keep the exact passage unverified until recovered from the diary. The conceptual
 
 A wealthy family can protect a child from ordinary labor, finance travel or study, and make a rare cultural life possible while retaining enormous leverage over that child's choices. The existence of privilege therefore does not imply unconstrained freedom; nor does family constraint erase the material privilege.
 
+### Follow the patron upstream
+
+Blackball now keeps a [running patronage ledger](../history/patronage/README.md). For every durable intellectual or artistic work, ask who paid for the time or supplied the office, court, household support, stipend, commission, printing, or institutional position. Then recurse: **where did that supporter get the resources and authority to make that allocation?**
+
+Do not stop at labels such as banking, steel, mining, fur trade, royal court, or family wealth. Those labels open the next set of questions about labor, property, land, concessions, taxation, inheritance, monopoly, political office, and coercion; they do not answer them.
+
+The [match-factory case](../history/labor/match-factory-white-phosphorus.md) is the corresponding worker-side control. A young person who must bring wages home from dangerous factory work is not facing the same allocation problem as a household that can finance years of study. The freedom to spend years learning without immediate economic return is itself one of the resources being distributed.
+
 ## Patronage and durable public work
 
 A related historical question concerns what concentrated wealth is expected to do.
