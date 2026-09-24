@@ -39,13 +39,31 @@ Watson is also more precise than the loose modern analogy “he has a medical de
 
 At the beginning of *A Study in Scarlet*, Watson describes medical training, Army service, severe illness, repatriation to England, and a stated income of eleven shillings and sixpence per day while trying to recover. He first stays at a private hotel in the Strand, spends beyond his means, and then deliberately seeks cheaper shared lodgings.
 
-This is not evidence that Watson's family paid a modern six-figure medical bill. Do not import current U.S. tuition numbers into a Victorian fictional biography.
+The modern comparison to a six-figure U.S. medical education is an **analogy about the economic question**, not a claim about Victorian tuition: what material cushion allows someone to complete expensive professional training and then spend substantial time without urgently converting it into professional earnings?
 
-What the text does establish inside the fiction is a more useful point: a medically trained man can be outside ordinary medical practice while supported for a period by a military/state income and can face a budget constraint without immediately taking a civilian medical job.
+For a period-appropriate control, use [Charles Booth's London survey](../../charles-booth/life-and-labour-london/README.md). Booth's A–H scheme distinguished very poor and poor households, comfortable working-class households, and the middle classes using earnings, employment regularity, household circumstances, and status. That gives us a contemporary frame for asking how unusual Watson's position was without pretending modern U.S. prices existed in the 1880s.
+
+What the text itself establishes is that a medically trained man can be outside ordinary medical practice while supported for a period by military/state income, spend beyond his means, and then reduce his housing costs instead of immediately taking a civilian medical job.
 
 Source:
 
 - Arthur Conan Doyle, *A Study in Scarlet*, Project Gutenberg: https://www.gutenberg.org/files/244/244-h/244-h.htm
+
+## Contemporary economic control: Charles Booth
+
+Booth's *Life and Labour of the People in London* is much closer in time and place to Conan Doyle than a present-day tuition comparison.
+
+Do **not** mechanically assign Watson or Hatherley a Booth class from one income number. Booth's categories combine household resources, employment regularity, occupation, and social position, and his published thresholds often refer to a moderate family rather than a single man.
+
+Use Booth instead to ask:
+
+- what counted as poverty, ordinary working-class comfort, and middle-class security in late-Victorian London;
+- how regular the person's income was;
+- whether assets or inheritance existed independently of current earnings;
+- whether servants, independent premises, professional offices, or other status markers appear;
+- what share of London lived under much tighter constraints.
+
+This makes Hatherley's case especially revealing: inherited capital allowed him to establish a professional office even while the practice itself produced almost no work.
 
 ## Retrieval use
 

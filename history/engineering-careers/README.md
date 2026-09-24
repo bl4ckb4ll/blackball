@@ -75,6 +75,8 @@ That is a useful claim to investigate, not a periodization to assume. Ask who th
 
 [Conan Doyle's engineering and professional-work cases](../../sources/conan-doyle/engineering-and-professional-work/README.md) are useful precisely because the stories do not present credentials as automatic employment.
 
+[Charles Booth's London survey](../../sources/charles-booth/life-and-labour-london/README.md) supplies the better period control: A–H categories built from earnings, employment regularity, household circumstances, occupation, and status. Use that contemporary structure instead of treating a present-day six-figure medical degree as a literal Victorian price claim.
+
 Victor Hatherley reports seven years of apprenticeship, inherited money sufficient to open his own practice, and then almost no work for two years. Watson has medical and military training but, at the opening of *A Study in Scarlet*, is living on a stated daily income while convalescing and cutting his expenses.
 
 These are fictional observations, not labor statistics. They are still useful antidotes to the narrative convention that professional training mechanically generates a stable professional job.
