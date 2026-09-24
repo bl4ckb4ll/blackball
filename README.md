@@ -138,6 +138,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Sarah Lawrence as a class and cultural type](llm/sarah-lawrence-class/README.md)
 - [J. D. Salinger and class](llm/j-d-salinger-class/README.md)
 
+- [Olive Bray — *The Elder or Poetic Edda* (1908)](books/olive-bray-elder-poetic-edda.md) — public-domain bilingual Old Norse/English edition; Bray was the daughter of High Court judge Sir Reginald More Bray and novelist Emily Octavia Bray, making the edition useful both as literature and as a class/cultivation case.
+
 ## Primary-source corpora
 
 - [Henry Mayhew — *London Labour and the London Poor*](sources/henry-mayhew/london-labour-and-the-london-poor/README.md) — four-volume public-domain corpus with proofread text, page scans, raw OCR/HOCR/XML derivatives, metadata and audiobook routes.
