@@ -12,6 +12,10 @@ It does not ask only whether education is culturally admirable or whether some g
 - [Retrospective regret and attention cost](retrospective-regret-and-attention-cost.md) — count long-run regret, lost trust, and time consumed by the transaction rather than allowing earnings alone to declare success.
 - [When the seller controls the outcome story](seller-controls-the-outcome-story.md) — institutional reports, alumni selection, moving definitions of value, and the disappearance of retail, unrelated, and disappointing outcomes.
 
+## First-person receipts
+
+- [“Critical thinking” as performed book analysis](receipts/2026-09-21-critical-thinking-performed-analysis/receipt.txt) — a 2026-09-21 user-supplied social-media screenshot in which the speaker recalls being asked to write as though a newly encountered book had already been fully analyzed. Preserve as first-person testimony, not prevalence evidence.
+
 Related economics note:
 
 - [Optimal for whom, and what did the model omit?](../economics/optimal-for-whom-and-what-the-model-omits.md) — distinguishes description, private optimization, social-welfare claims, and moral justification; makes excluded people and costs explicit in NPV and education-return calculations.

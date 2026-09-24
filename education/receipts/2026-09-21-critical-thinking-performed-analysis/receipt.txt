@@ -1,0 +1,39 @@
+Source URL: not present in supplied capture
+Platform: not identified from the screenshot
+Visible account: Poison D. Well (@isomorphed)
+Visible post time: 10:52 AM · 21 Sep 26
+Capture received: 2026-09-21 10:55 -04:00
+Capture kind: user-supplied social-media screenshot
+Original capture format: JPEG data, 768 x 1536 pixels (despite the uploaded .png filename)
+Original capture SHA-256: 9b140573763a303ea04077a7ae146e59581cc802fddc3b18f2b1db72e40e2a19
+Binary archival status: exact screenshot bytes are not yet vendored on this branch; preserve this as an explicit acquisition gap rather than pretending the transcription is source-native.
+Transcription policy: preserve visible wording, spelling, capitalization, and punctuation rather than silently correcting it.
+
+POST
+
+I do not walk around thinking "I'm so grateful you taught me to think critically".
+
+REPLY
+
+It wasn't just dittoes with the word CRITICAL in one form of thick type or another.
+
+They literally had us write about some book we had just glossed over for the first time, adopt the air of someone who has completed an analysis of said text we had just seen, and called it 'reason'
+
+EVIDENTIARY USE
+
+This is first-person testimony about the speaker's remembered educational experience. It is evidence that the speaker reports being asked to perform the posture of completed textual analysis after only a first encounter with a book, and that the speaker retrospectively contrasts that exercise with actually learning to think critically.
+
+It is not, by itself, evidence of how common the practice was, what institution or course used it, what age or grade level was involved, what book or assignment was involved, or whether the exercise was intended as a complete analysis rather than an early-response exercise.
+
+UNRESOLVED
+
+- exact screenshot binary still needs durable repository archival
+- source/post URL
+- platform
+- institution, course, and grade level
+- book and assignment prompt
+- whether surviving course materials or assignments can independently corroborate the recollection
+
+BLACKBALL RELEVANCE
+
+Direct first-person evidence for the education-accountability question: what concrete activity was sold or described as "critical thinking" or "reason," and what did students actually do?
