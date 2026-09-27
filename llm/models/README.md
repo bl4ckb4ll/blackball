@@ -9,14 +9,17 @@ The initial targets are:
 | --- | --- | --- | --- |
 | `pythia-410m-deduped` | `EleutherAI/pythia-410m-deduped` | `step143000` | Small model for layer-by-layer inspection and checkpoint experiments |
 | `pythia-1b-deduped` | `EleutherAI/pythia-1b-deduped` | `step143000` | Same Pythia training design at a larger scale |
+| `qwen3-0.6b` | `Qwen/Qwen3-0.6B` | `c1899de289a04d12100db370d81485cdf75e47ca` | Small modern post-trained comparison model |
 | `olmo-3-7b-base` | `allenai/Olmo-3-1025-7B` | `803c2144d04eea827acf68247eb5871a8e4f81bf` | Modern 7B base model with unusually open training artifacts |
 
 Pythia is useful because the suite exposes many intermediate training
 checkpoints. The final Pythia checkpoint is `step143000`, which corresponds to
-the model's main final checkpoint. OLMo 3 is useful because Ai2 publishes the
-base model and the surrounding training/post-training artifacts, making it
-possible to compare pretraining with later assistant-oriented stages rather
-than treating the final assistant as a black box.
+the model's main final checkpoint. Qwen3 0.6B gives a small modern post-trained
+comparison point that is cheap enough to inspect repeatedly. OLMo 3 is useful
+because Ai2 publishes the base model and the surrounding training/post-training
+artifacts, making it possible to compare pretraining with later
+assistant-oriented stages rather than treating the final assistant as a black
+box.
 
 ## Weight storage
 
@@ -44,6 +47,10 @@ hf download EleutherAI/pythia-410m-deduped \
 hf download EleutherAI/pythia-1b-deduped \
   --revision step143000 \
   --local-dir weights/pythia-1b-deduped
+
+hf download Qwen/Qwen3-0.6B \
+  --revision c1899de289a04d12100db370d81485cdf75e47ca \
+  --local-dir weights/qwen3-0.6b
 
 hf download allenai/Olmo-3-1025-7B \
   --revision 803c2144d04eea827acf68247eb5871a8e4f81bf \
