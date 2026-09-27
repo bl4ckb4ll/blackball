@@ -47,7 +47,7 @@ PAIRS = [
 ]
 
 EARLY_STEPS = [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-COARSE_STEPS = EARLY_STEPS + [1000] + list(range(10000, 140001, 10000)) + [143000]
+DEFAULT_STEPS = EARLY_STEPS + [1000] + list(range(10000, 140001, 10000)) + [143000]\n\ndef requested_steps():\n    raw = os.environ.get("PYTHIA_BME_STEPS", "").strip()\n    if not raw:\n        return DEFAULT_STEPS\n    return [int(x.strip()) for x in raw.split(",") if x.strip()]
 
 
 def available_steps():
@@ -154,7 +154,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(MODEL, revision="step143000")
     available = available_steps()
 
-    planned = [s for s in COARSE_STEPS if s in available]
+    planned = [s for s in requested_steps() if s in available]
     rows = {}
 
     for step in planned:
