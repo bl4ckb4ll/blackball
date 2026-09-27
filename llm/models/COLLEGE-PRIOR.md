@@ -62,6 +62,7 @@ Use the targets in `models.tsv`:
 
 - Pythia 410M deduped for cheap complete sweeps;
 - Pythia 1B deduped to see whether the same result survives a scale increase;
+- Qwen3 0.6B for a small modern post-trained comparison;
 - OLMo 3 7B Base for a substantially more capable modern model whose training
   lineage is unusually inspectable.
 
