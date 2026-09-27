@@ -71,3 +71,21 @@ training, and how little intervention is required to reverse it.
 No model has been executed merely because this directory and its acquisition
 targets exist. Download, inference, activation inspection, adapter training, and
 evaluation are separate evidence stages.
+
+
+## Pythia-specific prestige / skill-pipeline RAG bin
+
+The Pythia branch now has a deliberately downside-heavy evidence bin at
+[`rag/pythia/`](rag/pythia/README.md).
+
+It contains current student-debt/default data, historical class-selection
+evidence for elite colleges, the existing MIT employment-conversion and
+engineering-career notes, and book/case nodes including *Broken Genius*,
+*The Sugarmill*, and *The Most Southern Place on Earth*. Research leads remain
+marked as leads rather than silently promoted to facts.
+
+`routes.jsonl` maps short cues such as `MIT`, `Harvard`, `Berkeley`,
+`engineering`, `computer science`, and `compiler engineering` to the
+relevant downside evidence. This is intended both for retrieval experiments and
+for generating adapter/evaluation examples whose behavior can be compared
+against the unmodified Pythia checkpoints.
