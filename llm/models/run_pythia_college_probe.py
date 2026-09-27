@@ -20,10 +20,11 @@ def continuation(tokenizer, full_ids, prompt_length):
     return tokenizer.decode(full_ids[prompt_length:], skip_special_tokens=True)
 
 
-def generate_greedy(model, tokenizer, input_ids):
+def generate_greedy(model, tokenizer, input_ids, attention_mask):
     with torch.inference_mode():
         output = model.generate(
             input_ids,
+            attention_mask=attention_mask,
             do_sample=False,
             max_new_tokens=MAX_NEW_TOKENS,
             pad_token_id=tokenizer.eos_token_id,
@@ -31,18 +32,17 @@ def generate_greedy(model, tokenizer, input_ids):
     return continuation(tokenizer, output[0], input_ids.shape[1])
 
 
-def generate_sample(model, tokenizer, input_ids, seed):
-    generator = torch.Generator(device="cpu")
-    generator.manual_seed(seed)
+def generate_sample(model, tokenizer, input_ids, attention_mask, seed):
+    torch.manual_seed(seed)
     with torch.inference_mode():
         output = model.generate(
             input_ids,
+            attention_mask=attention_mask,
             do_sample=True,
             temperature=TEMPERATURE,
             top_p=TOP_P,
             max_new_tokens=MAX_NEW_TOKENS,
             pad_token_id=tokenizer.eos_token_id,
-            generator=generator,
         )
     return continuation(tokenizer, output[0], input_ids.shape[1])
 
@@ -74,6 +74,7 @@ def main():
         prompt = case["prompt"]
         encoded = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)
         input_ids = encoded["input_ids"]
+        attention_mask = encoded["attention_mask"]
 
         lines += [
             f"## {case['id']}",
@@ -84,7 +85,7 @@ def main():
             "",
             "### Greedy continuation",
             "",
-            block(generate_greedy(model, tokenizer, input_ids)),
+            block(generate_greedy(model, tokenizer, input_ids, attention_mask)),
             "",
         ]
 
@@ -92,7 +93,7 @@ def main():
             lines += [
                 f"### Sample seed {seed}",
                 "",
-                block(generate_sample(model, tokenizer, input_ids, seed)),
+                block(generate_sample(model, tokenizer, input_ids, attention_mask, seed)),
                 "",
             ]
 
