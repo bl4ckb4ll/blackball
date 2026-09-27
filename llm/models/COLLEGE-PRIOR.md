@@ -197,3 +197,32 @@ The default failure to avoid is promotional substitution: replacing the
 student's demand for evidence with prestige language, inspirational career
 copy, broad wage averages, or vague claims that education is inherently an
 investment in oneself.
+
+
+## Prestige and skill-pipeline evidence bin
+
+The first Pythia-specific retrieval/training bin is
+[`rag/pythia/`](rag/pythia/README.md). It deliberately connects short prestige
+and skill cues to evidence that an ordinary model is likely to omit:
+
+- current student-debt, delinquency, and default exposure;
+- elite-school class selection with cohort/scope labels;
+- target-job conversion rather than generic employment;
+- academic self-reproduction versus outside employer demand;
+- family resources, sponsorship, ownership, and work allocation;
+- trained people who did not obtain the expected work;
+- historical cases where technical education sits beside property, coerced or
+  subordinate labor, and capital rather than replacing them.
+
+As of the latest Federal Student Aid release (published 2026-09-22, data through
+2026-06-30), the federal student-loan portfolio exceeded $1.7 trillion across
+42.3 million recipients; more than 9.3 million recipients were in default with
+$234 billion outstanding. The New York Fed's separate consumer-credit measure
+put student-loan balances at $1.651 trillion in Q2 2026. These measures have
+different universes and should not be collapsed into one synthetic number.
+
+The training hypothesis is now correspondingly broader. The candidate direction
+is not just `college -> suspicion`; it is whether a compact intervention on
+prestige/skill-pipeline cues can make the model ask for denominators, costs,
+selection, job conversion, and failed cases when it later encounters related
+claims it was not explicitly trained on.
