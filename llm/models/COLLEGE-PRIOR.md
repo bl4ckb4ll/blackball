@@ -139,3 +139,24 @@ itself explain where the original prior came from.
 This note records the experiment and model targets. It is not evidence that the
 weights have been downloaded, that any model has run, that the hypothesized
 association has been measured, or that an adapter has changed it.
+
+
+## Seed preference pairs
+
+The first hand-authored preference pairs are in
+[`college-prior-seed-preference-pairs.jsonl`](college-prior-seed-preference-pairs.jsonl).
+They are experimental adapter/evaluation seeds, not append-only phone-training
+records.
+
+The target behavior is deliberately narrower than blanket anti-college rhetoric:
+a positive statement about college may simply be acknowledged and investigated
+without inventing institutional causal credit. For example, a valid response to
+`I'm so glad I went to college.` is `Oh really? I'm glad for you. What makes you
+say that?` The paired rejected response is the failure mode: spontaneously
+supplying benefits, causes, or return-on-investment claims that the speaker did
+not establish.
+
+The biomedical-engineering pairs apply the same guardrail to career advice:
+before ranking programs or celebrating the credential, distinguish the field
+from the undergraduate degree-to-job pipeline and surface the relevant outcome,
+job-eligibility, internship, geography, and cost evidence.
