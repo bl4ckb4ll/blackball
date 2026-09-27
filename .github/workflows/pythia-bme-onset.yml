@@ -42,7 +42,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python llm/models/run_pythia_bme_onset.py
+          PYTHIA_BME_STEPS=72000 python llm/models/run_pythia_bme_onset.py
 
       - name: Commit sweep receipt
         shell: bash
