@@ -62,8 +62,9 @@ snapshot, so keeping it outside Git is deliberate.
 
 ## First experiment
 
-Start with [COLLEGE-PRIOR.md](COLLEGE-PRIOR.md). The immediate question is not
-whether a model can be prompted to criticize college. It is whether the model
+Start with [COLLEGE-PRIOR.md](COLLEGE-PRIOR.md) and the concrete
+[PYTHIA-INSPECTION-PLAN.md](PYTHIA-INSPECTION-PLAN.md). The immediate question
+is not whether a model can be prompted to criticize college. It is whether the model
 assigns different prior probability to positive institutional-credit
 continuations, where that preference enters the network, how it changes during
 training, and how little intervention is required to reverse it.
