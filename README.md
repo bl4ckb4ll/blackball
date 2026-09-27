@@ -113,6 +113,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Source dossiers
 
+- [Jerome Karabel — *The Chosen*](books/jerome-karabel-the-chosen.md) — rights-safe source record for the 2005 history of admission and exclusion at Harvard, Yale, and Princeton, with lawful reading links, late-chapter retrieval targets, and a cross-link to the Ivy/MIT financial-aid antitrust record.
+- [*United States v. Brown University* — Ivy/MIT financial-aid antitrust case](sources/united-states-v-brown-university/README.md) — primary filings from DOJ and MIT, the 1992 district-court reasoning, the 1993 Third Circuit majority and dissent, the settlement record, and explicit guardrails against overstating what the appeal decided.
 - [Charles Booth — *Life and Labour of the People in London*](sources/charles-booth/life-and-labour-london/README.md) — late-Victorian London A–H poverty/class framework, original survey archive, and Booth's own inherited leather/shipping business position; contemporary control for Watson/Hatherley rather than projecting modern prices backward.
 - [Bryan Stevenson — *Just Mercy*](sources/bryan-stevenson/just-mercy/README.md) — the disconnect between professed beliefs and conduct as a central institutional accountability test.
 - [Anh Do — *The Happiest Refugee*](sources/anh-do/the-happiest-refugee/README.md) — garment-work poverty, the doctor-or-lawyer funnel, law as the money route, competitive legal education, and an exceptional exit.
