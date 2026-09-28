@@ -47,7 +47,13 @@ PAIRS = [
 ]
 
 EARLY_STEPS = [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-DEFAULT_STEPS = EARLY_STEPS + [1000] + list(range(10000, 140001, 10000)) + [143000]\n\ndef requested_steps():\n    raw = os.environ.get("PYTHIA_BME_STEPS", "").strip()\n    if not raw:\n        return DEFAULT_STEPS\n    return [int(x.strip()) for x in raw.split(",") if x.strip()]
+DEFAULT_STEPS = EARLY_STEPS + [1000] + list(range(10000, 140001, 10000)) + [143000]
+
+def requested_steps():
+    raw = os.environ.get("PYTHIA_BME_STEPS", "").strip()
+    if not raw:
+        return DEFAULT_STEPS
+    return [int(x.strip()) for x in raw.split(",") if x.strip()]
 
 
 def available_steps():
