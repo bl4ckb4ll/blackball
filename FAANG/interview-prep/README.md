@@ -70,7 +70,7 @@ Extreme compensation anecdotes require the same treatment. They can document tha
 
 ## Resource index
 
-The initial machine-readable seed lives in [resources.tsv](resources.tsv).
+The machine-readable resource index lives in [resources.tsv](resources.tsv). Candidate-level trajectories are tracked in [candidate-outcomes.tsv](candidate-outcomes.tsv), research and funnel evidence in [studies.tsv](studies.tsv), and the first outcome synthesis in [outcomes/2026-09-28-first-pass.md](outcomes/2026-09-28-first-pass.md).
 
 Index each resource by:
 
