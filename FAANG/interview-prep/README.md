@@ -2,11 +2,11 @@
 
 **Initial retrieval date:** 2026-09-28
 
-This directory records the software-interview-preparation ecosystem and tests a narrower question than “can this material teach coding interview problems?”
+This directory records the software-interview-preparation ecosystem. Its primary value is to preserve what employers and practitioners tell candidates to learn and practice.
 
-> If a person who does not already carry elite-school, elite-employer, referral, or closely related professional signals learns this material, does it materially improve the probability that an employer will interview and hire that person?
+> The separate employment test is deliberately stricter: can a person with **no relevant experience and no useful professional connections/referrals/feeder pipeline** cold-apply, reach the interview, and receive the offer?
 
-The preparation material should remain available and inspectable regardless of the answer. A candidate in a small town or an unrelated service job should be able to see the same public preparation information that a candidate embedded in a major technology hub can see.
+The preparation material should remain available and inspectable regardless of the answer. A candidate in a small town or an unrelated service job should be able to see the same public preparation information that a candidate embedded in a major technology hub can see. The broader education-facing catalogue now lives at [../../education/if-not-college-then-what/](../../education/if-not-college-then-what/).
 
 This is not a recommendation list. It is an evidence corpus and outcome test.
 
@@ -41,6 +41,14 @@ That question must not be silently replaced by the much easier question:
 > If a candidate who already has a strong technical résumé reaches the interview, can practice improve interview performance?
 
 Both questions matter. They are different causal claims.
+
+## Strict employment boundary
+
+A candidate with relevant software/ML/data/quant experience does not answer the clean-entry question. Neither does a candidate who reaches the process through an employee referral, recruiter relationship, professional software network, or feeder pipeline.
+
+Those cases may still contain useful advice. Keep their curriculum claims, but do not count them as evidence that the same path is open to an unconnected novice.
+
+Until a qualifying positive case or cohort is found, record the clean-entry pathway as **not demonstrated**. Do not convert that absence into a measured numerical probability.
 
 ## Selection-confounding rule
 
