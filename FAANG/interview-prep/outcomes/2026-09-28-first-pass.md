@@ -1,5 +1,7 @@
 # Outcome archaeology — first pass
 
+> **Status note (2026-09-28):** retained as background evidence, but this file does not answer the strict entrant test. Placement/funnel statistics involving experienced candidates, referrals, recruiter sourcing, or existing technical pipelines are not substitutes for a case beginning with no relevant experience and no useful connections.
+
 **Retrieval date:** 2026-09-28
 
 This pass asks whether interview preparation changes employment outcomes, not merely whether interview-preparation resources exist.
