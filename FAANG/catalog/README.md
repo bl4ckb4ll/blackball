@@ -23,7 +23,7 @@ The first pass is deliberately concentrated in technology because public requisi
 | OpenAI | [openai](../openai/) | research/product/infrastructure/compute plus explicit 0–3 year emerging-talent and residency routes |
 | Cloudflare | [cloudflare](../cloudflare/) | large systems/network/security engineering surface with in-hub, hybrid, and distributed arrangements |
 
-Machine-readable first-pass fields are in [employers.tsv](employers.tsv).
+The first dated cross-employer snapshot is [2026-09-30-snapshot.md](2026-09-30-snapshot.md). Machine-readable first-pass fields are in [employers.tsv](employers.tsv).
 
 ## Minimum record for each employer
 
