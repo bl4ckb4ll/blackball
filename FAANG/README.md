@@ -102,10 +102,17 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 
 ## Current case files
 
+- [`catalog/`](catalog/) — cross-employer opportunity catalog and machine-readable first-pass index.
 - [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
 - [`anthropic/`](anthropic/) — current job-family map, geography/hybrid constraints, stated nontraditional-background policy, and a worker-access research queue.
 - [`meta/`](meta/) — software, AI, infrastructure, production engineering, data-center, security/privacy, research, and hardware/device demand; entry-route census still pending.
 - [`uber/`](uber/) — engineering demand plus explicit emerging-talent and Career Prep gates, kept separate from observed hiring outcomes.
+- [`google/`](google/) — explicit early-career software and internship gates.
+- [`microsoft/`](microsoft/) — software, hardware, data-center, support, facilities, research and early-in-profession routes.
+- [`apple/`](apple/) — software/OS, ML/AI, hardware, operations and student internship surfaces.
+- [`nvidia/`](nvidia/) — software, systems, silicon, firmware, robotics and explicit new-college-graduate routes.
+- [`openai/`](openai/) — research/product/infrastructure/compute plus explicit 0–3 year emerging-talent and residency routes.
+- [`cloudflare/`](cloudflare/) — systems/network/security engineering with in-hub, hybrid and distributed arrangements.
 - [`specialties/compilers/`](specialties/compilers/) — compiler specialty test case.
 - [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI title-signal case, subordinate to the organization map rather than a substitute for it.
 
