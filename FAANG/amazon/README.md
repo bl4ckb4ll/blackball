@@ -106,6 +106,51 @@ The ML/AI title derivation found 264 requisitions whose titles explicitly foregr
 
 See [`../specialties/compilers/`](../specialties/compilers/) and [`../specialties/machine-learning/`](../specialties/machine-learning/).
 
+## Current explicit entry gates beyond the software census
+
+A 2026 access pass found concrete routes that should be attached to the organizational map rather than treated as generic "Amazon jobs."
+
+### AWS Work Based Learning Program — Data Center Operations Technician
+
+Current Amazon Jobs posting:
+- https://www.amazon.jobs/en/jobs/10555540/work-based-learning-program-data-center-operations-technician
+
+This is a **12-month trainee program** inside AWS Infrastructure Services. Basic qualifications are:
+
+- high school diploma or equivalent;
+- age 18+;
+- willingness to work rotating shifts supporting 24/7 data-center operations.
+
+The posting says Amazon has multiple 2026 WBLP trainee openings. The work includes rack installation, hardware break/fix, network troubleshooting, operational incidents, maintenance, and completion of a defined training curriculum.
+
+Constraints are explicit: site work, nights/weekends/holidays, regional travel, reliable personal vehicle and driver's license, and no immigration sponsorship. A Frederick, Maryland posting lists a starting range of $23.07–$40.48/hour.
+
+This is a materially different gate from Amazon's university software pipeline.
+
+### 2026 graduate SDE
+
+Current posting:
+- https://amazon.jobs/en/jobs/10386987/2026-graduate-software-dev-engineer
+
+The posting requires current/recent study in specified STEM fields plus programming and data-structures/algorithm evidence, and places the role in Amazon's "Jobs for grads" category.
+
+### AWS early-career hardware
+
+Current posting:
+- https://www.amazon.jobs/en/jobs/10530353/cloud-hardware-development-engineer-aws-early-career-2026
+
+This route attaches directly to AWS hardware and spans thermal, mechanical, electrical, reliability, server integration, manufacturing, simulation, and scripting.
+
+The useful comparison is therefore not simply "Amazon software vs no Amazon." It is:
+
+```text
+AWS Infrastructure Services → data-center trainee
+Amazon/AWS software → graduate SDE
+AWS cloud hardware → early-career hardware engineer
+```
+
+Each has a different gate, geography, and cost of entry.
+
 ## Current files
 
 - [`org-tree/README.md`](org-tree/README.md) — organizational mapping rules and source hierarchy.
