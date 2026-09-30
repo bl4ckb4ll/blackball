@@ -47,6 +47,29 @@ Keep these separate:
 
 Do not jump from layer 5 to a story about the organization. A requirement keyword is an attribute of a requisition; it is not itself a department, a product, a demand center, or proof of what most employees do.
 
+## Worker-access and exit-route layer
+
+The main worker-facing use case is not generic career optimization for people who already have strong bargaining power. It is to answer a harder question for someone stuck in low-wage, low-autonomy, insecure, or otherwise bad work:
+
+> **Is there an evidence-backed way out, and what can I do without gambling years on a path that may never admit me?**
+
+Do not assume an employer, school, or public program will pay for the transition. Treat the worker's current need for income as a constraint.
+
+For each plausible route, measure separately:
+
+- whether openings actually exist and persist;
+- whether the employer accepts people without prior experience in the exact job;
+- what evidence can be built independently while the worker remains employed;
+- time, cash cost, scheduling burden, relocation, and unpaid-work requirements;
+- whether a side-income route can both produce money and build relevant evidence;
+- whether credentials are demanded by employers or mainly sold by training providers;
+- the smallest reversible step that yields new evidence about the route;
+- failure cases and dead ends, not just success stories.
+
+The economic object is the worker's **outside option**: whether they can make leaving a bad employer more realistic. Better outside options can reduce dependence on one employer even before a complete occupational switch succeeds.
+
+Do not promise that effort will be rewarded. The point of the research is to find where effort has observable demand behind it and to rule out attractive-looking paths that do not.
+
 This also follows the existing Blackball treatment of firm-level job-posting heterogeneity in [`economics/deming-kahn-skill-requirements-across-firms-2017.md`](../economics/deming-kahn-skill-requirements-across-firms-2017.md).
 
 ## Measurement rules
@@ -64,6 +87,7 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 ## Current case files
 
 - [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
+- [`anthropic/`](anthropic/) — second employer case; current job-family map, geography/hybrid constraints, stated nontraditional-background policy, and a worker-access research queue.
 - [`specialties/compilers/`](specialties/compilers/) — compiler specialty test case.
 - [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI title-signal case, subordinate to the organization map rather than a substitute for it.
 
