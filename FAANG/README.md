@@ -53,7 +53,7 @@ The main worker-facing use case is not generic career optimization for people wh
 
 > **Is there an evidence-backed way out, and what can I do without gambling years on a path that may never admit me?**
 
-Do not assume an employer, school, or public program will pay for the transition. Treat the worker's current need for income as a constraint.
+Assume the worker has to finance and execute the attempt while continuing to earn a living. Treat current income, time, family obligations, and the cost of failure as constraints.
 
 For each plausible route, measure separately:
 
@@ -69,6 +69,22 @@ For each plausible route, measure separately:
 The economic object is the worker's **outside option**: whether they can make leaving a bad employer more realistic. Better outside options can reduce dependence on one employer even before a complete occupational switch succeeds.
 
 Do not promise that effort will be rewarded. The point of the research is to find where effort has observable demand behind it and to rule out attractive-looking paths that do not.
+
+## Degree and training-provider claims are not labor-market evidence
+
+A college saying that computer science, electrical engineering, mechanical engineering, or another program prepares students for a field is evidence about what the college says. It is not evidence that employers are currently hiring graduates into that work.
+
+For each educational path, build the employer side independently:
+
+- what jobs actually exist now;
+- which employers repeatedly advertise them;
+- what level of experience they demand;
+- what degrees or credentials they actually require;
+- what alternative evidence they accept;
+- how many explicitly junior, new-graduate, apprentice, trainee, technician, or other entry routes are visible;
+- what happens to graduates who do not cross the advertised gate.
+
+Only after that should Blackball compare the observed market with college curricula, career-office claims, placement statistics, and marketing.
 
 This also follows the existing Blackball treatment of firm-level job-posting heterogeneity in [`economics/deming-kahn-skill-requirements-across-firms-2017.md`](../economics/deming-kahn-skill-requirements-across-firms-2017.md).
 
@@ -87,7 +103,9 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 ## Current case files
 
 - [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
-- [`anthropic/`](anthropic/) — second employer case; current job-family map, geography/hybrid constraints, stated nontraditional-background policy, and a worker-access research queue.
+- [`anthropic/`](anthropic/) — current job-family map, geography/hybrid constraints, stated nontraditional-background policy, and a worker-access research queue.
+- [`meta/`](meta/) — software, AI, infrastructure, production engineering, data-center, security/privacy, research, and hardware/device demand; entry-route census still pending.
+- [`uber/`](uber/) — engineering demand plus explicit emerging-talent and Career Prep gates, kept separate from observed hiring outcomes.
 - [`specialties/compilers/`](specialties/compilers/) — compiler specialty test case.
 - [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI title-signal case, subordinate to the organization map rather than a substitute for it.
 
