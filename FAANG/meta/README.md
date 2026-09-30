@@ -31,6 +31,33 @@ Meta is useful because its demand surface is not confined to a narrow "software 
 
 Blackball should not infer that a degree in any of those fields creates access. The question is what requisitions actually exist and what backgrounds are accepted.
 
+## Current access evidence
+
+Meta's current infrastructure page explicitly separates:
+
+- data centers;
+- production engineering;
+- privacy/security;
+- networking and large-scale AI compute;
+- operations support and systems security.
+
+Source:
+- https://www.metacareers.com/teams/technology/infrastructure/
+
+A current first-party **Software Engineer, Product** posting in Bellevue requires a bachelor's degree in a related field and allows the required experience to be demonstrated through university coursework, a research project, or an internship. That is useful low-experience evidence even though the posting is not labeled "University Grad."
+
+Source:
+- https://www.metacareers.com/jobs/970256684438722
+
+By contrast, a current **Critical Facility Engineer** posting is clearly an experienced-hire route: five years of electrical/HVAC/mechanical/controls experience, or reduced experience with an engineering degree.
+
+Source:
+- https://www.metacareers.com/jobs/1170798747831139
+
+This distinction matters. "Meta data-center work" contains both possible entry/early-career roles and heavily experienced critical-facility roles; they should not be collapsed.
+
+A separate indexed lead describes a **Data Center Server Repair Technician** as entry-level, but the current first-party requisition has not yet been recovered. Keep that as a lead, not established evidence, until the Meta job ID is frozen.
+
 ## Worker-facing questions
 
 For someone who has studied computer science, electrical engineering, mechanical engineering, or adjacent material but does not have the desired job, record:
