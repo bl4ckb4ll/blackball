@@ -151,6 +151,42 @@ Hiring statement:
 
 Again, preserve this as a dated authority edge rather than treating it as a permanent org-chart fact.
 
+### Anthropic Labs
+
+Zaven Nahapetyan publicly lists his current role as **Head of Engineering, Anthropic Labs** and describes Labs as Anthropic's moonshots team. His current profile says the team is hiring, and in February 2026 he directly recruited research-minded product leaders for Labs.
+
+Profile:
+- https://www.linkedin.com/in/zavn
+
+Hiring statement:
+- https://www.linkedin.com/posts/zavn_research-product-manager-labs-activity-7427442428728655872-oUf2
+
+This gives a named team lead plus a direct recruiting edge rather than only a generic executive title.
+
+### Safeguards ML Infrastructure
+
+Jeff Hu publicly lists his current role as **Member of Technical Staff, Manager** at Anthropic. In August 2026 he wrote that he was hiring SREs for his team; other 2026 posts identify that team as ML Infrastructure inside Safeguards.
+
+Profile:
+- https://www.linkedin.com/in/hujeff
+
+Hiring statement:
+- https://www.linkedin.com/posts/hujeff_staff-site-reliability-engineer-safeguards-activity-7492748513525616640-Bu3a
+
+This is a direct manager-to-team-to-requisition edge.
+
+### Computer Use
+
+Kiana Ehsani is a current Member of Technical Staff on the Computer Use effort after Vercept joined Anthropic. After the team publicly announced hiring in June 2026, she described going through candidate messages and responding to people she thought fit.
+
+Profile:
+- https://www.linkedin.com/in/kiana-ehsani-1b81b0162
+
+Recruiting evidence:
+- https://www.linkedin.com/posts/kiana-ehsani-1b81b0162_i-very-obviously-underestimated-the-amount-activity-7476865861119799296-MTCI
+
+This shows direct participation in recruiting, but it does **not** establish that she is the formal hiring manager. The authority table records that distinction.
+
 ## A useful counterexample: mentors are not automatically hiring contacts
 
 The Fellows posting names potential mentors, then explicitly tells applicants that all applications must go through the official form and **not** through the mentors.
