@@ -37,6 +37,37 @@ Examples:
 - https://jobs.uber.com/en/people-stories/career-growth/from-community-college-to-silicon-valley-my-uber-career-prep-story/
 - https://jobs.uber.com/en/people-stories/career-growth/uber-engineering-was-first-to-say-yes-to-nouru/
 
+## Current 2026 graduate evidence
+
+The current Uber careers system exposes live 2026 graduate Software Engineer I pages including:
+
+- Toronto: https://www.uber.com/global/en/careers/list/158014/
+- São Paulo: https://www.uber.com/global/en/careers/list/154755/
+
+Uber's first-party pages are dynamically rendered, so indexed mirrors were used only to recover the detailed qualification text while preserving the first-party job IDs/URLs as the canonical requisitions.
+
+The Toronto role is described as requiring a 2025/2026 bachelor's or master's degree in Computer Science, Engineering, or a related technical field plus data structures, algorithms, and a programming language.
+
+The Brazil role is described as requiring a recent bachelor's degree in Computer Science, Engineering, or a related technical field, programming/data-structures knowledge, and advanced English; preferred experience may come from work, education, coursework, training, research, or similar activity.
+
+This makes the "university graduate" path concrete and dateable rather than a generic Emerging Talent promise.
+
+## Non-engineering operating surface
+
+Uber's current **Community Operations** career page exposes a large operational organization that sits between technology and customers:
+
+- frontline support;
+- site leadership;
+- regional customer operations;
+- Greenlight operations;
+- operations/logistics;
+- process redesign based on recurring support problems.
+
+Source:
+- https://jobs.uber.com/en/teams/community-operations/
+
+That surface should be mapped separately from Engineering. It may contain very different entry gates, geographic constraints, and advancement paths.
+
 ## Why this case is useful
 
 For a worker or graduate trying to enter software, Uber lets us compare three distinct things:
