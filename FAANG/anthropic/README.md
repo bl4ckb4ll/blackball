@@ -109,6 +109,20 @@ For each role family, eventually record:
 
 The point is to avoid telling someone to spend years on a route merely because the destination pays well.
 
+## Current explicit entry gates
+
+The first access census found three concrete current gates rather than only general recruiting language:
+
+- **Anthropic Fellows Program** — rolling applications for a January 2027 cohort; four months full-time; paid; remote allowed in the US/UK/Canada; employer-reported prior full-time-offer conversion of 25–50%, with no offer guaranteed.
+- **Associate Applied AI, Rotational Program — London** — explicitly 0–2 years experience; six-month rotation; £115,000 advertised salary.
+- **Research Engineer, Takeoff Intel** — the posting explicitly says it is hiring at both junior and senior levels.
+
+Anthropic's careers FAQ also says it **does not currently offer internships**.
+
+The worker-facing details, costs, requested artifacts, and first named hiring-authority edges are recorded in:
+- [2026-09-30-access-map.md](2026-09-30-access-map.md)
+- [authority-edges.tsv](authority-edges.tsv)
+
 ## Current evidence boundary
 
 This first pass establishes only Anthropic's **current advertised demand and stated hiring/location policies**. It does not establish:
@@ -126,9 +140,9 @@ Those are follow-up questions, not blanks to fill with optimism or pessimism.
 
 ## Next steps
 
-1. Freeze a machine-readable snapshot of the current careers surface with retrieval time and job IDs.
+1. Continue the machine-readable requisition snapshot and repeat it so openings can be tracked through time.
 2. Classify requisitions by employer job family, role level, location, remote status, and named team.
-3. Separate staff/senior-heavy demand from genuinely accessible entry routes.
+3. Expand the explicit entry-gate census beyond Fellows, Applied AI rotation, and Takeoff Intel; measure how rare these gates are relative to staff/senior demand.
 4. Build a technical organization map under the recruiting categories: pretraining, RL, interpretability, research productivity, inference/infrastructure, product, compute, security/safeguards, applied AI, and other source-supported nodes.
 5. Sample actual employee backgrounds where public professional biographies permit it; keep employer recruiting claims separate from observed hiring.
 6. Repeat the snapshot so persistence and churn can be measured instead of inferred from one day.
