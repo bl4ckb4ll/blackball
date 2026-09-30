@@ -1,0 +1,7 @@
+sector_or_cluster	seeded_now	coverage_queue_examples	note
+management_consulting	Booz Allen Hamilton;McKinsey & Company;Bain & Company	Accenture;Deloitte;BCG;Oliver Wyman;Kearney	keep government-tech consulting distinct from strategy consulting
+banking_financial_services	JPMorganChase;Capital One;Wells Fargo	see banking/coverage-queue.tsv	do not treat three banks as the banking market
+medical_industrial	Stryker;Cummins	Johnson & Johnson;Medtronic;Caterpillar;John Deere;Eaton;Rockwell Automation	future coverage, not researched in this pass
+retail_corporate	Walmart	Target;Costco;Home Depot;Kroger	corporate functions differ from store labor markets
+facilities_real_estate	CBRE;JLL	Cushman & Wakefield;Colliers;ISS;ABM	client-account/site structure matters
+material_handling_service	Daifuku Services America / ELS	Dematic;Honeywell Intelligrated;Vanderlande;Swisslog	maintenance/controls work often hidden inside client sites
