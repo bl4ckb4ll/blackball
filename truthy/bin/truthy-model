@@ -38,14 +38,13 @@ mkdir -p "$run"
 cp "$work/prompt.txt" "$run/prompt.txt"
 printf '%s\n' "$model_id" > "$run/model-id.txt"
 printf '%s\n' "$model_revision" > "$run/model-revision.txt"
-printf '%s' "$1" > "$run/command.txt"
+cmd=$1
 shift
+printf '%s\n' "$cmd" > "$run/command.txt"
+printf '%s\0' "$cmd" "$@" > "$run/argv.nul"
 for arg in "$@"; do
-    printf ' %s' "$arg" >> "$run/command.txt"
+    printf 'arg\t%s\n' "$(printf '%s' "$arg" | tr '\t\r\n' '   ')" >> "$run/command.txt"
 done
-printf '\n' >> "$run/command.txt"
-
-cmd=$(awk '{print $1}' "$run/command.txt")
 set -- "$cmd" "$@"
 
 set +e
