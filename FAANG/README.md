@@ -64,6 +64,7 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 ## Current case files
 
 - [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
+- [`interview-prep/`](interview-prep/) — index of technical interview-preparation resources plus an outcome protocol separating application access, interview conversion, and offers.
 - [`specialties/compilers/`](specialties/compilers/) — compiler specialty test case.
 - [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI title-signal case, subordinate to the organization map rather than a substitute for it.
 
