@@ -41,3 +41,15 @@ Many technical roles remain centered in San Francisco. Current infrastructure ro
 3. Record which roles accept self-taught or equivalent-experience evidence in the actual posting.
 4. Compare the entry inventory with the much larger experienced-hire surface.
 5. Track whether compute/data-center/operations roles create distinct non-research ladders.
+
+## Agent-systems / coding-agent organization map — 2026-10-01
+
+The generic OpenAI seed has now been split into source-supported organizational nodes around coding agents and developer infrastructure.
+
+See:
+- [2026-10-01-agent-systems-map.md](2026-10-01-agent-systems-map.md) — Codex Core Agents, Cloud Agents, Codex Research, Compute/Agent Infrastructure, and Engineering Acceleration.
+- [agent-systems-roles.tsv](agent-systems-roles.tsv) — machine-readable requisition/team inventory.
+
+The **AI Systems Engineer, Codex Agents** posting is attached to **Codex - Engineering → Codex Core Agents**, not to a generic "AI engineer" bucket. The adjacent **Build Systems / CI** posting is attached to **Applied AI Infrastructure → Engineering Acceleration**, while **Agent Infrastructure** is attached to **Compute**. Preserve those organizational distinctions even when the work overlaps.
+
+The reviewed official postings do not name an individual hiring manager for these teams; do not infer one from prominence or title alone.
