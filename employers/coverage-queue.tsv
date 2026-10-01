@@ -5,3 +5,7 @@ medical_industrial	Stryker;Cummins	Johnson & Johnson;Medtronic;Caterpillar;John 
 retail_corporate	Walmart	Target;Costco;Home Depot;Kroger	corporate functions differ from store labor markets
 facilities_real_estate	CBRE;JLL	Cushman & Wakefield;Colliers;ISS;ABM	client-account/site structure matters
 material_handling_service	Daifuku Services America / ELS	Dematic;Honeywell Intelligrated;Vanderlande;Swisslog	maintenance/controls work often hidden inside client sites
+media_entertainment	Disney;ESPN;Nickelodeon	NBCUniversal/Comcast;Warner Bros. Discovery;Sony Pictures;Netflix;Paramount parent map	keep brand-level work distinct from shared parent technology/corporate functions
+games_interactive	Nintendo of America	Sony Interactive Entertainment;Electronic Arts;Take-Two;Epic Games;Valve;Microsoft Gaming	separate publisher/platform, first-party studios, online services and hardware
+household_consumer_manufacturing	Georgia-Pacific	Procter & Gamble;Coca-Cola;PepsiCo;Kimberly-Clark;Kraft Heinz;General Mills;3M	familiar brands can hide large plant engineering, maintenance, supply-chain and corporate labor markets
+household_technology	Apple;Amazon;Google;Microsoft;Meta	Samsung;Sony;LG;Dell;HP	keep consumer brand recognition from collapsing distinct hardware, operations, support and software departments
