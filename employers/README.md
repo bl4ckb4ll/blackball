@@ -20,31 +20,38 @@ Different employers expose different public structures:
 - consultancies expose practices, industries, capabilities, and integrated internal teams;
 - banks expose lines of business plus cross-enterprise functions such as technology, operations, risk, finance, and controls;
 - manufacturers expose business segments, plants, engineering/manufacturing functions, supply chain, service, and corporate functions;
-- facilities/real-estate firms expose client service lines and account organizations rather than a simple product hierarchy.
+- facilities/real-estate firms expose client service lines and account organizations rather than a simple product hierarchy;
+- media companies may expose consumer brands separately from shared parent-company technology, production and corporate functions;
+- game companies may expose publishers, platform groups, studios and technical subsidiaries as separate hiring markets.
 
 Do not normalize those differences away.
 
 ## Current seed set
 
-The initial technology cases remain under `../FAANG/` and are now treated as one subset of a larger employer universe.
+The initial technology cases remain under `../FAANG/` and are now treated as one subset of a larger employer universe. Apple is also indexed here and its team map has been expanded.
 
-This pass adds or promotes:
+Current mapped/seeded employers include:
 
-- IBM
-- Booz Allen Hamilton
-- McKinsey & Company
-- Bain & Company
-- JPMorganChase
-- Capital One
-- Wells Fargo
-- Stryker
-- Walmart corporate
-- Cummins
-- CBRE
-- JLL
-- Daifuku Services America / the ELS recruiting surface
+- Amazon, Anthropic, Meta, Uber, Apple and the other `FAANG/` technology cases;
+- IBM;
+- Booz Allen Hamilton, McKinsey & Company and Bain & Company;
+- JPMorganChase, Capital One and Wells Fargo;
+- Stryker and Cummins;
+- Walmart corporate;
+- CBRE and JLL;
+- Daifuku Services America / the ELS recruiting surface;
+- Disney and ESPN;
+- Nintendo of America;
+- Nickelodeon;
+- Georgia-Pacific.
 
 See `catalog.tsv` for the cross-employer index and `entry-gates.tsv` for current explicit access routes.
+
+## Household-name coverage
+
+Brand familiarity is useful as a coverage heuristic, not as evidence that the employer is desirable or accessible. Household names often contain labor markets that are invisible from the consumer product: factories, reliability, maintenance, finance, distribution, facilities, broadcast operations, localization, licensing, data systems and supply chain.
+
+The coverage queue now explicitly tracks media/entertainment, games, consumer manufacturing and household technology so the directory does not drift back toward only software companies.
 
 ## Research order
 
