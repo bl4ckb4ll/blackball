@@ -146,3 +146,17 @@ Those are follow-up questions, not blanks to fill with optimism or pessimism.
 4. Build a technical organization map under the recruiting categories: pretraining, RL, interpretability, research productivity, inference/infrastructure, product, compute, security/safeguards, applied AI, and other source-supported nodes.
 5. Sample actual employee backgrounds where public professional biographies permit it; keep employer recruiting claims separate from observed hiring.
 6. Repeat the snapshot so persistence and churn can be measured instead of inferred from one day.
+
+## Agent-systems peer map — 2026-10-01
+
+Current postings expose several organizational nodes directly comparable to coding-agent systems work:
+
+- **Platform → Agentic Systems → Claude Managed Agents** — hosted agent harness plus durable sessions, environments, tools, memory, permissions, credentials and recovery: https://job-boards.greenhouse.io/anthropic/jobs/5395767008
+- **Infrastructure → Developer Productivity → Developer Acceleration** — infrastructure enabling employees to work through agents: https://job-boards.greenhouse.io/anthropic/jobs/5290360008
+- **Developer Productivity → Continuous Integration** — testing, test selection, merge queues, flakes, multi-cloud Kubernetes CI and observability: https://job-boards.greenhouse.io/anthropic/jobs/5073998008
+- **Claude Code → Model Performance** — eval frameworks, research infrastructure, internal tooling and production reliability: https://job-boards.greenhouse.io/anthropic/jobs/5098025008
+- **AI Reliability Engineering (AIRE)** — cross-cutting serving reliability from SDK/network/API layers through accelerators: https://job-boards.greenhouse.io/anthropic/jobs/5113224008
+
+These official requisitions do not name an individual hiring manager. Keep person-level evidence in [authority-edges.tsv](authority-edges.tsv), where a manager/recruiting edge is added only when a public source directly supports it.
+
+A broader comparison with OpenAI, Cursor, Replit and Cognition is in [../../employers/agent-systems/](../../employers/agent-systems/).
