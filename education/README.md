@@ -13,6 +13,10 @@ It does not ask only whether education is culturally admirable or whether some g
 - [If you mean economic empowerment, put it in the contract](if-you-mean-economic-empowerment-put-it-in-the-contract.md) — separates cultural education from economic causation; converts strong empowerment language into outcome, population, denominator, counterfactual, conditions, and liability; uses the Go Blue Guarantee as a clean contrast between a bounded tuition guarantee and broader earnings language.
 - [When the seller controls the outcome story](seller-controls-the-outcome-story.md) — institutional reports, alumni selection, moving definitions of value, and the disappearance of retail, unrelated, and disappointing outcomes.
 
+## Working syllabus sketches
+
+- [Applied computer science syllabus — stub](applied-computer-science-syllabus-stub.md) — project-first working map of everyday development fluency, systems programming, networking/Wi-Fi, databases, debugging, build-from-scratch exercises, reading existing software, and theory attached to concrete project questions. It makes no credential or job-outcome claim.
+
 Related occupational-pathway note:
 
 - [Engineering education, engineering work, and who gets the job](../history/engineering-careers/README.md) — tests the specific engineering version of target-job conversion: the degree, technical competence, hiring mechanism, family/network resources, ownership, and actual work are separate variables.
