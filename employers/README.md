@@ -66,3 +66,11 @@ For each employer:
 7. repeat the snapshot so stale advice becomes visible.
 
 The catalog is successful when it turns "large prestigious employer" into inspectable, dated institutional structure.
+
+## Agent-systems and coding-agent organizations
+
+A thematic cross-employer map now tracks the organizational layers around coding agents and increasingly autonomous software work:
+
+- [agent-systems/](agent-systems/) — OpenAI/Anthropic-adjacent comparison covering agent harnesses, sandboxing/execution, durable orchestration/state, evals, developer productivity/CI, reliability/observability, security/permissions and research infrastructure.
+
+The map currently includes Anthropic, Cursor, Replit and Cognition, with the detailed OpenAI case under [../FAANG/openai/](../FAANG/openai/).
