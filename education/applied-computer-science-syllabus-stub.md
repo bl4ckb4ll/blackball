@@ -17,7 +17,60 @@ A deeper theoretical topic can enter when it:
 
 Do not treat this ordering as a claim that theory is unimportant. It is a claim about pedagogy: a live problem gives the theory somewhere to attach.
 
-## 1. Everyday working fluency
+## 0. Functional baseline: be able to operate the development environment
+
+Before data structures, algorithms, language theory, or larger projects, establish basic working competence.
+
+The skilled-trades analogue is knowing the ordinary tools and being able to enter a shop, inspect the problem, and start doing useful work. For programming, the corresponding baseline is being able to sit down at a Linux machine and work without the environment itself being the main obstacle.
+
+A learner should be able to:
+
+- log into and use a Linux system;
+- work comfortably at a Bash or comparable command-line shell;
+- move through the filesystem and create, copy, rename, remove, and inspect files and directories;
+- inspect permissions, processes, environment variables, disk space, and exit status;
+- use a text editor well enough to open, search, edit, save, and quit without getting stuck;
+- clone or unpack an existing project;
+- read its README or build instructions;
+- invoke a compiler directly when appropriate;
+- understand source files, object files, libraries, and executables at a basic practical level;
+- run make on an existing project, understand the basic target/dependency idea, recognize which command failed, and rerun after a change;
+- install or locate named development dependencies;
+- run the program and pass command-line arguments or input;
+- use standard input, standard output, standard error, redirection, and pipes;
+- stop or inspect a running process;
+- make a small edit, rebuild, and observe the behavioral change;
+- use Git well enough to see what changed and avoid losing work.
+
+If this is still difficult, a red-black tree is not the next missing piece. The immediate problem is operating fluency.
+
+### Start with something worth making work
+
+Do not make "Hello, world" the center of the learning path. Tiny functionless programs are useful as compiler, linker, packaging, or CI smoke tests, but they are poor motivation.
+
+Prefer a program the learner actually wants:
+
+- build an open-source game they like;
+- build an emulator, music player, graphics demo, text editor, utility, or small application they are curious about;
+- get an existing program running on their machine;
+- make one visible change;
+- then ask what it would take to move the same program to another machine or operating environment.
+
+For a game, that question can become:
+
+- what did the build command actually do?
+- which compiler and linker produced this executable?
+- what part is portable source and what part depends on the current platform?
+- what changes for another CPU or operating system?
+- what do graphics, audio, input, files, timing, and networking depend on?
+- what does "build an Xbox / Nintendo / handheld version" actually mean beyond changing one compiler flag?
+- is a cross-compiler enough, or does the target require a different ABI, SDK, system APIs, packaging format, asset pipeline, or hardware-specific work?
+
+This turns compiling from a ceremonial exercise into the first encounter with toolchains, dependencies, build systems, portability, ABIs, platform APIs, and hardware constraints.
+
+## 1. Everyday working fluency after the baseline
+
+Once the basic edit → build → run → inspect loop is ordinary rather than novel, widen the toolset.
 
 ### Files, shell, and processes
 
