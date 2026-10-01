@@ -293,6 +293,117 @@ A practical syllabus should also include:
 
 The ability to enter existing code is closer to ordinary development than a sequence of isolated greenfield assignments.
 
+## 9. Research program: connect capability backward to learning and forward to work
+
+Treat the syllabus as an evidence graph rather than a single authoritative sequence.
+
+The central node should be an **observable capability**, not a course title or a vague subject. Examples:
+
+- build an existing project from source on Linux;
+- inspect a failed build and identify which command failed;
+- use Git to inspect, preserve, and exchange changes;
+- use a shell to compose programs with pipes and redirection;
+- query and modify a relational database;
+- reproduce, isolate, and repair a bug;
+- inspect a network failure far enough to distinguish DNS, routing, transport, TLS, and application failure.
+
+Each capability gets independent evidence edges in both directions.
+
+### Forward edges: where does this capability matter?
+
+Keep these evidence classes separate:
+
+1. **Employer asks for it.** Dated job postings and job-posting aggregates.
+2. **Occupation model associates it with the work.** O*NET and ESCO occupation/skill relations.
+3. **Workers demonstrably use it.** Public build systems, engineering repositories, operational documentation, incident reports, worker interviews, apprenticeship standards, and other direct work-product evidence.
+4. **It is adjacent rather than explicitly named.** For example, a source tree may require Make even when a job advertisement merely says C/C++ or Linux.
+
+Do not turn absence from a job advertisement into evidence that a capability is unused. Job advertisements are selection documents, not exhaustive descriptions of work.
+
+Useful machine-readable starting points:
+
+- **O*NET Database:** tasks, task ratings, work activities, technology skills, tools, knowledge, skills, education/training, and occupational codes. O*NET also exposes employer-posting-based "Hot Technologies" and occupation-specific "In Demand" technology skills.
+- **ESCO:** occupations, skills/knowledge concepts, and downloadable occupation-skill relationships labelled essential or optional.
+- **Dated employer postings:** preserve the original posting, employer, role, location, date, and exact language rather than reducing it immediately to a keyword count.
+
+Example: O*NET's 2025 US employer-posting data for Software Developers reports Git in 14% and Linux in 9% of unique postings assigned to that occupation; it also reports Python 29%, SQL 24%, Docker 13%, and Kubernetes 14%. Those percentages establish a dated recruiting signal, not that the remaining postings do not use those technologies.
+
+### Backward edges: how can this capability be learned?
+
+Again keep different kinds of evidence separate:
+
+1. **Primary documentation:** manuals maintained by the tool/project itself, such as the GNU Make manual or Git documentation.
+2. **Task-centred instructional material:** lessons that make the learner perform the capability rather than merely recognize terminology.
+3. **Real projects:** build, run, modify, debug, or port a program the learner has a reason to care about.
+4. **Empirical learning research:** studies of debugging, worked examples, code tracing, Parsons problems, feedback, practice, motivation, and other instructional mechanisms.
+5. **Observed confusion:** Stack Overflow/Stack Exchange questions, issue trackers, compiler errors, build failures, and other records of where people actually get stuck.
+
+A learning resource should not be promoted merely because it is famous or attached to a university. Record:
+
+- what exact capability it claims to teach;
+- prerequisites;
+- what the learner actually does;
+- whether the exercise produces a checkable artifact or behavior;
+- evidence, if any, that learners improved;
+- population and context of that evidence;
+- known limitations.
+
+For example, Software Carpentry currently publishes lessons on the Unix shell, Git, programming, SQL, and an additional Automation and Make lesson. Its long-term assessment reported self-reported changes among more than 530 past workshop participants; that is useful evidence about that population, but it is not a randomized comparison and should not be promoted into a universal causal claim.
+
+### Prerequisite edges
+
+Prerequisites should also be evidence-backed and operational.
+
+Instead of:
+
+> learn data structures before systems programming
+
+prefer statements such as:
+
+> before the Make lesson used here, the learner must already be able to navigate directories, manipulate files, and run simple commands in a shell.
+
+That particular prerequisite is explicitly stated by Software Carpentry's Make lesson. Similar prerequisite claims can be taken from project build instructions, manuals, learner-error data, and instructional research.
+
+### Difficulty and confusion edges
+
+Use the historical Stack Overflow corpus separately from curriculum recommendations.
+
+For each capability, collect:
+
+- highly upvoted questions;
+- recurring error messages;
+- common misconceptions;
+- common missing prerequisites;
+- year/tag trends;
+- whether the problem concerns syntax, environment/setup, representation, debugging, algorithms, APIs, networking, build systems, or something else.
+
+Question upvotes can be treated as evidence that other users recognized the same problem, not as proof that an answer or teaching method is correct.
+
+### Minimal record
+
+A first machine-readable record can be as small as:
+
+| field | meaning |
+| --- | --- |
+| capability | observable thing a person can do |
+| prerequisite | another capability apparently required first |
+| work_evidence | occupation, posting, or direct-work source |
+| work_evidence_kind | asked-for / occupation-model / observed-use |
+| learning_resource | manual, lesson, project, exercise, etc. |
+| learning_evidence | what supports using that resource |
+| demonstration | artifact or behavior showing competence |
+| source | URL / document / snapshot |
+| date | source or observation date |
+| population | whom the evidence actually describes |
+| confidence | how strongly the source supports the edge |
+| caveat | what must not be inferred |
+
+This lets Blackball answer two different questions without conflating them:
+
+**Why learn this?** → follow capability → work edges.
+
+**How could I learn this?** → follow capability → prerequisite/resource/evidence edges.
+
 ## 9. Evidence boundary for this syllabus
 
 Keep three things separate:
