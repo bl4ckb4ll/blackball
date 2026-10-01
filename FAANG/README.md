@@ -119,3 +119,11 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 ## Related Blackball work
 
 This directory does not replace the existing livelihood and entrepreneurship analysis. Independent business, owner-operator work, family enterprise, franchise, and related alternatives remain under [`economics/entrepreneurship/`](../economics/entrepreneurship/). The eventual comparison should put those arrangements and corporate employment on a common household-risk-and-return ledger rather than duplicating the entrepreneurship hierarchy here.
+
+## Agent-systems cross-employer map
+
+The coding-agent infrastructure work now has a dedicated organizational comparison:
+- [openai/2026-10-01-agent-systems-map.md](openai/2026-10-01-agent-systems-map.md) — detailed OpenAI team/requisition map.
+- [../employers/agent-systems/](../employers/agent-systems/) — comparable Anthropic, Cursor, Replit and Cognition structures.
+
+Treat "agent systems" as a work surface spanning several organizations, not as a single job title.
