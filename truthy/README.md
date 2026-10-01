@@ -43,22 +43,22 @@ The files are intentionally ordinary files.  Append-only TSV records, an explici
 ## Basic use
 
 ```sh
-truthy/bin/truthy-new truthy/runs/example \
+sh truthy/bin/truthy-new truthy/runs/example \
   'Did source X actually support the sentence attributed to it?'
 
-truthy/bin/truthy-search-log truthy/runs/example \
+sh truthy/bin/truthy-search-log truthy/runs/example \
   wikipedia 'exact phrase from article' \
   'https://en.wikipedia.org/wiki/...'
 
-truthy/bin/truthy-fetch truthy/runs/example \
+sh truthy/bin/truthy-fetch truthy/runs/example \
   'https://example.org/source.html'
 
-truthy/bin/truthy-links.py \
+python3 truthy/bin/truthy-links.py \
   truthy/runs/example/artifacts/sha256/HASH/body \
   'https://example.org/source.html' \
   --run truthy/runs/example --artifact-hash HASH
 
-truthy/bin/truthy-model truthy/runs/example \
+sh truthy/bin/truthy-model truthy/runs/example \
   qwen CANDIDATE-REVISION -- /path/to/qwen-worker \
   < prompt.txt
 ```
