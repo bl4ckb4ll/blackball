@@ -8,6 +8,8 @@ The basic retrieval path is:
 
 **question → candidate claims → evidence → source owner → scope/time → disagreement → answer**
 
+Reproducible investigation tooling: [Truthy](truthy/README.md) freezes inspected web artifacts, records searches and investigation branches, preserves model prompts/outputs, and leaves a replayable path from discovery to claim without treating Wikipedia or an LLM as an authority.
+
 Blackball is not primarily a syllabus, recommendation list, or human-facing course guide. A syllabus can be evidence in Blackball; it is not the organizing object.
 
 ## What belongs here
