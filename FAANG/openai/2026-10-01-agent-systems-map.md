@@ -124,3 +124,17 @@ See [agent-systems-roles.tsv](agent-systems-roles.tsv).
 3. Track whether these requisitions persist, close or re-open.
 4. Map reporting edges among Codex Engineering, Codex Research, Compute and Applied AI Infrastructure only where a source explicitly establishes them.
 5. Keep role similarity separate from hierarchy.
+
+
+## Role-level public-profile lens
+
+The target role now has a dedicated evidence dossier:
+- [AI Systems Engineer, Codex Agents role dossier](roles/ai-systems-engineer-codex-agents/)
+
+That directory separates:
+1. requisition and organization facts established by public sources;
+2. public Codex contributor evidence, without inferring hiring authority; and
+3. a descriptive role-specific public-profile lens for repeatable Looking Glass experiments.
+
+The profile lens records visible role-relevant evidence, adjacent evidence, presentation friction and unknowns.
+It does not rank candidates or make hiring recommendations.
