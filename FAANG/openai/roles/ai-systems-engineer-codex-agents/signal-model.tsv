@@ -1,0 +1,8 @@
+dimension	meaning	role_connection	examples
+presentation_friction	Public evidence is unnecessarily hard to find or inspect	separate from technical evidence	broken link; missing README; unclear canonical repo; inaccessible artifact
+direct_role_evidence	Concrete public artifact demonstrates work named by this requisition	direct	agent harness; sandbox; orchestration; eval; runtime debugging; observability; compiler/runtime; developer platform
+transferable_evidence	Concrete systems work bears on the role but is not the same task	adjacent	build/release systems; native runtime boundary; reliable deployment; state machine; kernel work
+distinctive_non_role	Real evidence differentiates the profile but is not materially about this role	none by default	unrelated mathematics; unusual domain project; hobby artifact
+proxy_distractor	Easy filtering signal that is not itself evidence of doing this work	none	stars; follower count; prestige; school name; years as a scalar; repository count; inferred personality
+unknown	Material role question not answered by inspected public evidence	unresolved	production scale; authorship; Rust depth; GPU/inference work; team collaboration
+next_inspection	Highest-information bounded follow-up that could resolve an unknown	pending evidence	open a test; inspect CI; inspect release; inspect a relevant PR; inspect source around claimed subsystem
