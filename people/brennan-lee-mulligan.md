@@ -20,6 +20,8 @@ Mulligan is a useful case for several Blackball themes at once:
 
 The strongest point is not an inference. SUNY Ulster quoted Mulligan in 2023 saying that he uses lessons from Professor Tom Davis's philosophy classes **“every single day.”**
 
+A structurally useful comparison is [Chris Watson](chris-watson.md): another case where a self-directed practice long predates the recognizable career, then becomes durable through communities, institutional training, reputation, and several adjacent forms of paid work rather than one fixed corporate ladder.
+
 ## Education: be precise about the credential
 
 SUNY Ulster's own alumni profile says Mulligan graduated in 2005 with an **Associate's degree in Liberal Arts: Humanities, with a concentration in Philosophy**. It says he then earned a bachelor's degree at the School of Visual Arts in film/screenwriting direction.
