@@ -47,6 +47,45 @@ Keep these separate:
 
 Do not jump from layer 5 to a story about the organization. A requirement keyword is an attribute of a requisition; it is not itself a department, a product, a demand center, or proof of what most employees do.
 
+## Worker-access and exit-route layer
+
+The main worker-facing use case is not generic career optimization for people who already have strong bargaining power. It is to answer a harder question for someone stuck in low-wage, low-autonomy, insecure, or otherwise bad work:
+
+> **Is there an evidence-backed way out, and what can I do without gambling years on a path that may never admit me?**
+
+Assume the worker has to finance and execute the attempt while continuing to earn a living. Treat current income, time, family obligations, and the cost of failure as constraints.
+
+For each plausible route, measure separately:
+
+- whether openings actually exist and persist;
+- whether the employer accepts people without prior experience in the exact job;
+- what evidence can be built independently while the worker remains employed;
+- time, cash cost, scheduling burden, relocation, and unpaid-work requirements;
+- whether a side-income route can both produce money and build relevant evidence;
+- whether credentials are demanded by employers or mainly sold by training providers;
+- the smallest reversible step that yields new evidence about the route;
+- failure cases and dead ends, not just success stories.
+
+The economic object is the worker's **outside option**: whether they can make leaving a bad employer more realistic. Better outside options can reduce dependence on one employer even before a complete occupational switch succeeds.
+
+Do not promise that effort will be rewarded. The point of the research is to find where effort has observable demand behind it and to rule out attractive-looking paths that do not.
+
+## Degree and training-provider claims are not labor-market evidence
+
+A college saying that computer science, electrical engineering, mechanical engineering, or another program prepares students for a field is evidence about what the college says. It is not evidence that employers are currently hiring graduates into that work.
+
+For each educational path, build the employer side independently:
+
+- what jobs actually exist now;
+- which employers repeatedly advertise them;
+- what level of experience they demand;
+- what degrees or credentials they actually require;
+- what alternative evidence they accept;
+- how many explicitly junior, new-graduate, apprentice, trainee, technician, or other entry routes are visible;
+- what happens to graduates who do not cross the advertised gate.
+
+Only after that should Blackball compare the observed market with college curricula, career-office claims, placement statistics, and marketing.
+
 This also follows the existing Blackball treatment of firm-level job-posting heterogeneity in [`economics/deming-kahn-skill-requirements-across-firms-2017.md`](../economics/deming-kahn-skill-requirements-across-firms-2017.md).
 
 ## Measurement rules
@@ -63,10 +102,28 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 
 ## Current case files
 
+- [`catalog/`](catalog/) — cross-employer opportunity catalog and machine-readable first-pass index.
 - [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
+- [`anthropic/`](anthropic/) — current job-family map, geography/hybrid constraints, stated nontraditional-background policy, and a worker-access research queue.
+- [`meta/`](meta/) — software, AI, infrastructure, production engineering, data-center, security/privacy, research, and hardware/device demand; entry-route census still pending.
+- [`uber/`](uber/) — engineering demand plus explicit emerging-talent and Career Prep gates, kept separate from observed hiring outcomes.
+- [`google/`](google/) — explicit early-career software and internship gates.
+- [`microsoft/`](microsoft/) — software, hardware, data-center, support, facilities, research and early-in-profession routes.
+- [`apple/`](apple/) — software/OS, ML/AI, hardware, operations and student internship surfaces.
+- [`nvidia/`](nvidia/) — software, systems, silicon, firmware, robotics and explicit new-college-graduate routes.
+- [`openai/`](openai/) — research/product/infrastructure/compute plus explicit 0–3 year emerging-talent and residency routes.
+- [`cloudflare/`](cloudflare/) — systems/network/security engineering with in-hub, hybrid and distributed arrangements.
 - [`specialties/compilers/`](specialties/compilers/) — compiler specialty test case.
 - [`specialties/machine-learning/`](specialties/machine-learning/) — ML/AI title-signal case, subordinate to the organization map rather than a substitute for it.
 
 ## Related Blackball work
 
 This directory does not replace the existing livelihood and entrepreneurship analysis. Independent business, owner-operator work, family enterprise, franchise, and related alternatives remain under [`economics/entrepreneurship/`](../economics/entrepreneurship/). The eventual comparison should put those arrangements and corporate employment on a common household-risk-and-return ledger rather than duplicating the entrepreneurship hierarchy here.
+
+## Agent-systems cross-employer map
+
+The coding-agent infrastructure work now has a dedicated organizational comparison:
+- [openai/2026-10-01-agent-systems-map.md](openai/2026-10-01-agent-systems-map.md) — detailed OpenAI team/requisition map.
+- [../employers/agent-systems/](../employers/agent-systems/) — comparable Anthropic, Cursor, Replit and Cognition structures.
+
+Treat "agent systems" as a work surface spanning several organizations, not as a single job title.
