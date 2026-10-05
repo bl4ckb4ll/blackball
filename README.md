@@ -157,3 +157,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
   <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-1.png" width="24%" alt="First page of Chapter I from the 1888 scan">
   <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-2.png" width="24%" alt="Second page of Chapter I from the 1888 scan">
 </p>
+
+## Response-comparison corpus
+
+[The BME debt prompt family](llm/evals/college/README.md) supplies 12 high-debt variants, two low-debt/research controls, and a literal paired protocol for testing whether the evidence corpus changes model behavior. It preserves the earlier 44 generic prompts separately. The corpus is a test design; no live-model improvement is claimed.
