@@ -96,6 +96,17 @@ Use the Kirp dossier for:
 
 Kirp supplies cases and mechanisms, not by himself a complete answer to the business-school bundle.
 
+### Jeff Sharlet / Dartmouth finance-consulting case
+
+Use the [Sharlet / Dartmouth dossier](../jeff-sharlet-dartmouth-finance-consulting/README.md) for:
+
+- the reported concentration of Dartmouth Class of 2023 graduates in finance and consulting;
+- a Dartmouth creative-writing professor's contemporaneous objection to that concentration;
+- a student account of early recruiting, structured internships, return offers, high pay, prestige and job security as mechanisms that can pull undecided students toward those sectors;
+- an explicit example of an elite liberal-arts institution also operating as a recruiting interface for high-status business occupations.
+
+This is a one-institution, one-period case. It bears directly on recruiting-channel and occupational-allocation mechanisms but does not by itself establish a general causal theory of elite higher education or class reproduction.
+
 ### Next source families to build
 
 - histories of university business schools and management professionalization;
