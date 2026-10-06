@@ -108,7 +108,7 @@ The visible gaps in 2001 are gaps in the original-topic run rather than missing 
 
 ## Next
 
-Proceed chronologically through 2002, continuing to normalize returning guests into these dossiers. The later archive remains unfinished, so this work stays on the draft pull request.
+Proceed chronologically through 2002, continuing to normalize returning guests into these dossiers. The later archive remains unfinished. Continue from this coverage record; the completed 1998–2001 tranche can live on the default branch independently of later ingestion.
 
 ## Counting note
 
