@@ -55,3 +55,7 @@ For every program or degree:
 - [MIT](../MIT/employment-promise-and-academic-self-reproduction.md) — target-job conversion, academic self-reproduction, enforceable debt, and the strongest-case ceiling.
 
 The corpus should make it harder for possibility language, prestige, seller self-congratulation, and compulsory optimism to stand in for a customer outcome.
+## First-person receipts
+
+- [“Critical thinking” as performed book analysis](receipts/2026-09-21-critical-thinking-performed-analysis/receipt.txt) — a 2026-09-21 user-supplied social-media screenshot in which the speaker recalls being asked to write as though a newly encountered book had already been fully analyzed. Preserve as first-person testimony, not prevalence evidence.
+
