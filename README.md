@@ -45,12 +45,14 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
+- [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
 - [Truth before hope](TRUTH-BEFORE-HOPE.md)
 - [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
 - [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
 - [Family career insurance and intellectual defection](llm/questions/family-career-insurance-and-intellectual-defection.md) — tests the recurring pattern in which a family directs education toward a secure or prestigious occupation but the educational path exposes the student to the science, art, literature, or scholarship ultimately pursued; requires denominators and explicit class/resource evidence rather than anecdotal prevalence claims.
 - [Employer discretion, worker risk, and the absence of a general fairness guarantee](llm/questions/employer-discretion-worker-risk.md) — separates specific legal constraints from broader questions about hiring screens, prior termination, truthfulness incentives, symbolic recognition, promotion, reciprocal obligations, and which employment risks remain with the worker.
 - [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
+- [Engineering education, engineering work, and who gets the job](history/engineering-careers/README.md) — separates degree, technical ability, hiring, family resources, ownership, sponsorship, work allocation, and historical demand instead of treating “studied engineering → engineer” as a complete causal story.
 
 ## Education and occupational pathways
 
@@ -82,10 +84,13 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## People dossiers
 
+- [Graciela Chichilnisky](people/graciela-chichilnisky.md) — catastrophic-risk decision theory, rare-event-sensitive probability, and stated limits of nonparametric econometrics under weak assumptions.
+- [Ariane Lambert-Mogiliansky](people/ariane-lambert-mogiliansky.md) — non-classical uncertainty, expected-utility representation beyond Boolean event algebras, and quantum-like models of context-dependent or indeterminate preferences.
 - [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
 - [Boaventura de Sousa Santos](people/boaventura-de-sousa-santos.md) — University of Coimbra sociologist; CES harassment/abuse controversy, first-person allegations, independent-commission findings, denials, and later Portuguese legal proceedings.
 - [John L. Comaroff](people/john-comaroff.md) — Harvard anthropologist (retired 2024); graduate-student allegations, Harvard policy findings and sanctions, federal litigation, denials, and dismissal record.
 - [Adam Smith](people/adam-smith.md) — Glasgow moral-philosophy chair, career chronology, reconstructed scale of the Scottish professoriate around 1759, and comparison with colonial American higher education.
+- [Carl Friedrich Gauss](people/carl-friedrich-gauss.md) — working-family origin, sixteen years of ducal stipend support, transition to the Göttingen observatory, and later private wealth from investment; a concrete patronage → institution → capital case.
 - [John O. Outwater Jr.](people/john-o-outwater-jr.md) — mechanical-engineering professor, ski-safety researcher, and family/academic-background notes.
 - [Louis Joel Mordell](people/louis-joel-mordell.md) — Philadelphia self-education, the single-ticket Cambridge scholarship gamble, later job-search friction, and number-theory career, grounded in Mordell's reminiscences and Cassels's memoir.
 - [Andrew Hacker](people/andrew-hacker.md) — political scientist and public critic of higher education; connects his 2005 NYRB source trail to *Higher Education?* and preserves the distinction between provocative measurement and strong causal evidence.
@@ -109,6 +114,9 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Source dossiers
 
+- [Jerome Karabel — *The Chosen*](books/jerome-karabel-the-chosen.md) — rights-safe source record for the 2005 history of admission and exclusion at Harvard, Yale, and Princeton, with lawful reading links, late-chapter retrieval targets, and a cross-link to the Ivy/MIT financial-aid antitrust record.
+- [*United States v. Brown University* — Ivy/MIT financial-aid antitrust case](sources/united-states-v-brown-university/README.md) — primary filings from DOJ and MIT, the 1992 district-court reasoning, the 1993 Third Circuit majority and dissent, the settlement record, and explicit guardrails against overstating what the appeal decided.
+- [Charles Booth — *Life and Labour of the People in London*](sources/charles-booth/life-and-labour-london/README.md) — late-Victorian London A–H poverty/class framework, original survey archive, and Booth's own inherited leather/shipping business position; contemporary control for Watson/Hatherley rather than projecting modern prices backward.
 - [Bryan Stevenson — *Just Mercy*](sources/bryan-stevenson/just-mercy/README.md) — the disconnect between professed beliefs and conduct as a central institutional accountability test.
 - [Anh Do — *The Happiest Refugee*](sources/anh-do/the-happiest-refugee/README.md) — garment-work poverty, the doctor-or-lawyer funnel, law as the money route, competitive legal education, and an exceptional exit.
 - [Estreicher and Radice — *Beyond Elite Law*](sources/estreicher-radice/beyond-elite-law/README.md) — elite legal production beside ordinary unmet civil legal needs.
@@ -121,6 +129,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Earl Shorris — *Riches for the Poor*](llm/earl-shorris-riches-for-the-poor/README.md) — publication history from *New American Blues*, argument summary, Clemente relationship, access boundary, evidence limitations, and provenance.
 - [Gresham College lecture corpus](sources/gresham-college/lectures/README.md) — subject, series, speaker, transcript, audio, and video retrieval routes with explicit separation between public audiences and nonexistent enrolled students, and between lecture dates and later publication dates.
 - [Mathematicians of the African Diaspora — paper corpus](sources/mathematicians-of-the-african-diaspora/README.md) — Scott W. Williams's MAD roster normalized into a paper-level coverage ledger, bibliography cull, and mathematical summary/reaction lane with discovery/abstract/full-text evidence states kept separate.
+- [Paul Klee — *The Diaries of Paul Klee, 1898–1918*](sources/paul-klee/diaries/README.md) — source dossier and retrieval target for the remembered art-school passage in which substantial family support coexists with parental control over what an artist is allowed or expected to paint.
 - [John Lennon — “Working Class Hero”](sources/john-lennon/working-class-hero/README.md) — song and album provenance, official full-lyrics routes and copyright boundary, Lennon/Ono and Beatles-breakup chronology, primal-therapy context, class-background evidence, recording history, political context, censorship history, and book leads.
 - [Matt Mahoney / Ocarina Networks source ledger](sources/matt-mahoney/README.md) — dated primary and secondary sources, acquisition filings, funding/product chronology, archive-discovery links, rights notes, and a claim ledger separating the real $1m prize pool from any unsupported personal payout.
 - [Miles Reid — *Notes for obituary*](sources/miles-reid/obituary-notes/README.md) — self-authored 2002 notes for a future Royal Society biographical memoir, with source links, chronology, academic-pipeline details, and evidence limitations.
@@ -133,6 +142,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Paulus Gerdes — *Geometry from Africa* — source trail and access](llm/paulus-gerdes-geometry-from-africa/README.md)
 - [Sarah Lawrence as a class and cultural type](llm/sarah-lawrence-class/README.md)
 - [J. D. Salinger and class](llm/j-d-salinger-class/README.md)
+
+- [Olive Bray — *The Elder or Poetic Edda* (1908)](books/olive-bray-elder-poetic-edda.md) — public-domain bilingual Old Norse/English edition; Bray was the daughter of High Court judge Sir Reginald More Bray and novelist Emily Octavia Bray, making the edition useful both as literature and as a class/cultivation case.
 
 ## Primary-source corpora
 
@@ -147,3 +158,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
   <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-1.png" width="24%" alt="First page of Chapter I from the 1888 scan">
   <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-2.png" width="24%" alt="Second page of Chapter I from the 1888 scan">
 </p>
+
+## Response-comparison corpus
+
+[The BME debt prompt family](llm/evals/college/README.md) supplies 12 high-debt variants, two low-debt/research controls, and a literal paired protocol for testing whether the evidence corpus changes model behavior. It preserves the earlier 44 generic prompts separately. The corpus is a test design; no live-model improvement is claimed.

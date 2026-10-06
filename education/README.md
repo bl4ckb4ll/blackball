@@ -6,15 +6,22 @@ It does not ask only whether education is culturally admirable or whether some g
 
 ## Core notes
 
+- [If not college, then what?](if-not-college-then-what/README.md) — source-by-source ledger of what employers, engineers, interview authors, quant practitioners, and AI/LLM practitioners tell people to learn and practice; records the advice independently of whether it produces employment.
+
 - [Truth before hope](truth-before-hope.md) — do not use optimism or exceptional success stories as substitutes for a feasible path; discouraging evidence does not require a reassuring correction.
 - [Sunk-cost lock-in and lies](sunk-cost-lock-in-and-lies.md) — people honor sunk costs; commitment changes later behavior; distinguish uncertainty from strategic deception; inspect the friendly front end and asymmetric back end separately.
 - [Where are the students’ jobs?](where-are-the-students-jobs.md) — seller success is not customer success; separate employment from target-job conversion and inspect the actual work.
 - [Retrospective regret and attention cost](retrospective-regret-and-attention-cost.md) — count long-run regret, lost trust, and time consumed by the transaction rather than allowing earnings alone to declare success.
+- [If you mean economic empowerment, put it in the contract](if-you-mean-economic-empowerment-put-it-in-the-contract.md) — separates cultural education from economic causation; converts strong empowerment language into outcome, population, denominator, counterfactual, conditions, and liability; uses the Go Blue Guarantee as a clean contrast between a bounded tuition guarantee and broader earnings language.
 - [When the seller controls the outcome story](seller-controls-the-outcome-story.md) — institutional reports, alumni selection, moving definitions of value, and the disappearance of retail, unrelated, and disappointing outcomes.
 
-## First-person receipts
+## Working syllabus sketches
 
-- [“Critical thinking” as performed book analysis](receipts/2026-09-21-critical-thinking-performed-analysis/receipt.txt) — a 2026-09-21 user-supplied social-media screenshot in which the speaker recalls being asked to write as though a newly encountered book had already been fully analyzed. Preserve as first-person testimony, not prevalence evidence.
+- [Applied computer science syllabus — stub](applied-computer-science-syllabus-stub.md) — project-first working map of everyday development fluency, systems programming, networking/Wi-Fi, databases, debugging, build-from-scratch exercises, reading existing software, and theory attached to concrete project questions. It makes no credential or job-outcome claim.
+
+Related occupational-pathway note:
+
+- [Engineering education, engineering work, and who gets the job](../history/engineering-careers/README.md) — tests the specific engineering version of target-job conversion: the degree, technical competence, hiring mechanism, family/network resources, ownership, and actual work are separate variables.
 
 Related economics note:
 
@@ -48,3 +55,7 @@ For every program or degree:
 - [MIT](../MIT/employment-promise-and-academic-self-reproduction.md) — target-job conversion, academic self-reproduction, enforceable debt, and the strongest-case ceiling.
 
 The corpus should make it harder for possibility language, prestige, seller self-congratulation, and compulsory optimism to stand in for a customer outcome.
+## First-person receipts
+
+- [“Critical thinking” as performed book analysis](receipts/2026-09-21-critical-thinking-performed-analysis/receipt.txt) — a 2026-09-21 user-supplied social-media screenshot in which the speaker recalls being asked to write as though a newly encountered book had already been fully analyzed. Preserve as first-person testimony, not prevalence evidence.
+

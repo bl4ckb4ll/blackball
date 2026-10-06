@@ -1,0 +1,14 @@
+Source URL: https://www.linkedin.com/posts/jamesfobrien_tech-jobs-have-dried-upand-arent-coming-activity-7242613292479696897-gCyT
+Platform: LinkedIn
+Displayed author: James O'Brien
+Retrieved: 2026-09-10
+Capture kind: public indexed-text excerpt and metadata
+Capture limitation: This is not source-native HTML or a screenshot. Preserve a native capture separately if available.
+
+Exact excerpt:
+
+“outstanding students, like those with a 4.0 in-major GPA, are now contacting me worried because they have zero offers.”
+
+Source-grounded summary:
+
+O'Brien contrasts this with an earlier period when Berkeley CS graduates received multiple attractive offers and says he is hearing similar employment concerns from current students. He presents the observation as his own report and broader interpretation; it is not an individual graduate's first-person receipt.

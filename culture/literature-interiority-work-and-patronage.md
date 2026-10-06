@@ -56,6 +56,70 @@ It can be a profession, a public institution, a form of inquiry, a durable body 
 
 A separate question is what social arrangements give people enough time, equipment, institutions, and independence to do scientific work whose value may not be immediately monetizable.
 
+## Who gets to call thinking serious?
+
+Do not treat intellectual seriousness as an intrinsic property that institutions merely discover.
+
+The current Blackball question is about **power, recognition, and material support**. A person can spend decades thinking about probability, mathematics, history, literature, or anything else without that activity becoming a profession. Conversely, once an institution can pay someone, give the activity a title, provide an audience, certify participants, publish the work, and reproduce the role, the activity acquires durable social recognition.
+
+That does not prove that the activity is worthless or that institutional recognition is fake. It means that the historical explanation is incomplete if it jumps directly from “this is valuable thinking” to “therefore society supports professional thinkers.”
+
+Keep at least four claims separate:
+
+1. **Personal value:** the thinker wants to do it.
+2. **Patronage or exchange value:** someone with resources independently wants the thinker to do it and voluntarily supports the activity.
+3. **Institutional recognition:** an organization has enough durable power and resources to create offices, salaries, titles, audiences, credentials, archives, and succession.
+4. **A social claim on other people's resources:** the activity is said to deserve continuing support from students, taxpayers, donors, workers, or some other population.
+
+The fourth claim does not follow automatically from the first three. If a profession asks other people to support it, Blackball should ask what those people receive, what alternatives they give up, who made the allocation decision, and what power makes that decision stick.
+
+This is also an adult-responsibility question. Intense curiosity can justify a hobby to the person who has it. Turning that curiosity into a profession means entering a relationship with other people's needs and resources. “I care deeply about this” is not by itself an account of why somebody else should pay.
+
+### Historical leads
+
+Use historical cases to investigate the mechanism rather than to decorate the argument with famous names.
+
+- **Alexander / Aristotle:** preserve as a patronage model until sourced carefully. The relevant mechanism is simple: a ruler with resources may decide that having a particular thinker nearby is worth supporting. That makes the activity materially valuable to that patron; it does not establish a universal entitlement to support.
+- **Reviel Netz:** draft PR [#5](https://github.com/bl4ckb4ll/blackball/pull/5) is already the source lead. Its useful objects are named authorship, fame, polemic, patronage, scarcity, canon formation, and the historical production of cultural authority. Do not recruit Netz as though he had already established the modern-university thesis.
+- **John Napier:** investigate him without forcing the later amateur/professional distinction backward. The question is what property, rank, practical work, household resources, patronage, and institutions made sustained mathematical activity possible in his setting.
+- **Gresham College:** the existing [Gresham source corpus](../sources/gresham-college/lectures/README.md) supplies a concrete institutional case. The research question is not merely whether mathematics was “serious,” but who had the wealth and governing authority to endow chairs, appoint lecturers, create a durable audience, and make that classification persist.
+- **Carl Friedrich Gauss:** see [Gauss dossier](../people/carl-friedrich-gauss.md). His chronology makes the mechanism unusually visible: a duke's stipend supported education and private scholarship from 1791 through 1807; after the patron died, Gauss moved into a salaried Göttingen observatory position; decades later he accumulated private wealth through investment. Keep those three funding stages separate.
+- **George Washington:** preserve as a comparison lead for a person whose surveying, agricultural, military, political, and technical activity crossed categories that later became separate professions. Do not use the case until the relevant primary or strong secondary sources are attached.
+
+The museum analogy is useful here: saying “art is what museums contain” mistakes an institutional selection mechanism for a definition of intrinsic artistic value. Likewise, saying “serious thought is what professors do” can hide the preceding allocation of wealth, authority, credentials, time, buildings, audiences, and legitimacy.
+
+The question Blackball should retain is therefore:
+
+> **Who has the power to declare an activity serious, organize resources around that declaration, make other people bear some of its costs, and reproduce the classification across generations?**
+
+That question does not settle whether the activity is good. It identifies the material and institutional machinery that must be visible before “serious” is treated as a neutral description.
+
+### Cultivation can consume freedom without creating it
+
+[Olive Bray's 1908 *Elder or Poetic Edda*](../books/olive-bray-elder-poetic-edda.md) adds a useful case. Bray produced a serious bilingual Old Norse/English edition and was also the daughter of a High Court judge and a novelist in a materially comfortable household.
+
+Do not use the family background to discount the translation. Use it to keep causal direction visible. Specialized learning can be a rational **use of already available time, money, books, and social position**. That does not show that undertaking the same study would create those resources for someone who lacks them.
+
+This distinction is central to the education question: **education can consume freedom, cultivate it, or credential it without necessarily being what economically produced the freedom in the first place.**
+
+### Privilege is not identical to freedom
+
+The [Paul Klee diary source dossier](../sources/paul-klee/diaries/README.md) preserves a useful retrieval target from Klee's art-school years: a remembered case of a substantially supported fellow student whose parents could finance unusually good artistic training while still directing what subjects he was permitted or expected to paint.
+
+Keep the exact passage unverified until recovered from the diary. The conceptual distinction is already worth preserving:
+
+**resources, dependence, control, and freedom are separate variables.**
+
+A wealthy family can protect a child from ordinary labor, finance travel or study, and make a rare cultural life possible while retaining enormous leverage over that child's choices. The existence of privilege therefore does not imply unconstrained freedom; nor does family constraint erase the material privilege.
+
+### Follow the patron upstream
+
+Blackball now keeps a [running patronage ledger](../history/patronage/README.md). For every durable intellectual or artistic work, ask who paid for the time or supplied the office, court, household support, stipend, commission, printing, or institutional position. Then recurse: **where did that supporter get the resources and authority to make that allocation?**
+
+Do not stop at labels such as banking, steel, mining, fur trade, royal court, or family wealth. Those labels open the next set of questions about labor, property, land, concessions, taxation, inheritance, monopoly, political office, and coercion; they do not answer them.
+
+The [match-factory case](../history/labor/match-factory-white-phosphorus.md) is the corresponding worker-side control. A young person who must bring wages home from dangerous factory work is not facing the same allocation problem as a household that can finance years of study. The freedom to spend years learning without immediate economic return is itself one of the resources being distributed.
+
 ## Patronage and durable public work
 
 A related historical question concerns what concentrated wealth is expected to do.

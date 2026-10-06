@@ -24,6 +24,16 @@ Blackball history material is organized as inspectable source trails rather than
 - [Duncan Season 9 bibliography spider](mexican-revolution/REVOLUTIONS-BIBLIOGRAPHY-SPIDER.md)
 - [Explicit recursion frontier](mexican-revolution/RECURSION-QUEUE.md)
 
+## Patronage and intellectual production
+
+- [Patronage, intellectual work, and the source of the patron's power](patronage/README.md) — recursive method and running ledger: intellectual/work → supporter → support mechanism → source of supporter power/resources → upstream labor/property/state relations.
+- [Running patronage ledger](patronage/ledger.csv) — machine-readable seed rows for Machiavelli, Galileo, the King James Bible, Bach, Gauss, and Olive Bray, with unresolved finance questions left explicit.
+- [Match factories, white phosphorus, and the price of not being free to study](labor/match-factory-white-phosphorus.md) — Bryant & May, low-paid teenage/female labor, fines, phosphorus necrosis of the jaw, and the material difference between a household that can fund study and one that needs wages now.
+
+## Engineering careers, firms, and technical authority
+
+- [Engineering education, engineering work, and who gets the job](engineering-careers/README.md) — causal ledger for degree, technical competence, first-job mechanism, family resources, inheritance, firm ownership, sponsorship, underemployment, labor underneath design, and changing industrial demand; seed cases include Roebling, Florman, Ford, Cummins, Caterpillar, Conan Doyle, and the Cobb/Turnbull Delta lead.
+
 ## Labor and organization
 
 - [Homestead strike and Pinkerton battle, 1892](homestead-strike-1892-pinkertons.md) — Carnegie Steel lockout/strike, Pinkerton battle, militia intervention, and a 1–80 Wikipedia footnote map backed by an annotated source ledger.
@@ -36,6 +46,7 @@ Blackball history material is organized as inspectable source trails rather than
 
 ## Slavery, labor, skill, and coercion
 
+- [Colonial Virginia — land, labor status, trades, and economic power, c. 1760–1799](../economics/colonial-virginia-land-labor-and-economic-power.md) — source-backed social/economic reconstruction around Washington: landholding, free and bound labor, skilled trades, tenancy, slavery, and the difference between legal ownership and economic control.
 - [Louis Hughes — *Thirty Years a Slave* (1897)](slavery/louis-hughes-thirty-years-a-slave.md) — primary-source note on the enslaved skilled blacksmith Uncle Ben; the distinction between skill and bargaining power; Hughes's medical aptitude and denied educational/occupational opportunity; and his descriptions of whipping, witnessed violence, and psychological injury.
 - [Edward Baptist — cotton productivity, coercion, and technology-as-progress](slavery/edward-baptist-cotton-productivity.md) — the fourfold rise in cotton picked per enslaved worker per day; Baptist's quota/ledger/"calibrated torture" argument; the Olmstead-Rhode seed-innovation critique; the 2026 Beckert-Stelzner reassessment; and the comparison with Manchester mill productivity.
 - [James C. Cobb — *The Most Southern Place on Earth*, engineering education, absentee ownership, and enslaved labor](slavery/james-c-cobb-most-southern-place-engineering-education.md) — source seed for an early-Delta anecdote connecting an elite technical/Princeton credential, Louisville absentee ownership, disease exposure, and enslaved plantation labor; preserves the remembered details as a verification target and flags that Princeton did not begin civil-engineering instruction until 1875.

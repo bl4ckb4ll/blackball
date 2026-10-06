@@ -38,6 +38,18 @@ He could afford only a one-word telegram to his father after learning the result
 
 This was not a romantic decision to emigrate permanently on a literal one-way fare. It was a much sharper financial gamble: he could afford the outbound journey needed to attempt the scholarship examination, but not an ordinary return journey if the attempt failed.
 
+## Put beside Gauss: access to protected time
+
+Mordell's story is more revealing beside [Carl Friedrich Gauss](carl-friedrich-gauss.md). Both can be retold as stories in which extraordinary mathematical ability eventually receives its proper reward. Materially, the mechanisms were different. Gauss obtained patronage before he needed ordinary employment. Mordell helped finance his own attempt through tutoring and family support, then won a scholarship that opened a path into Cambridge.
+
+The reward in either story was not merely permission to know mathematics. It was access to conditions in which mathematical work could displace other work. For somebody who wants to spend most of the day thinking about mathematics, becoming a professor can be an extraordinarily desirable job.
+
+That matters when “intrinsic value” is used to draw a moral distinction between academic and vocational motives. Blackball should not assume that a business student is greedy because the student openly wants education to improve wages, working conditions, security, or occupational choice while an academic is disinterested because the academic wants to be paid to read, teach, and think about a subject they love. Both lives can involve money, status, security, autonomy, pleasant or unpleasant working conditions, and escape from work one does not want to do. Whether the resulting work also has intellectual or social value is a separate question.
+
+The comparison also keeps the larger economy visible. Funding a scholarship, a stipend, or a professorship can give one person protected time without answering who performs the tiring, repetitive, dangerous, or tightly controlled work elsewhere in the same society. A system can make consumer life more comfortable and still impose harsh conditions on some of the workers who make that comfort possible. Mathematical beauty does not settle that distributional question.
+
+So the Blackball question is not “was Gauss or Mordell selfish?” It is: **who gets access to protected time, through what mechanism, what must everyone else do meanwhile, and why are some preferred uses of time treated as intrinsically nobler than other people's attempts to improve their material lives?**
+
 ## Cambridge
 
 Mordell entered St John's College, Cambridge, in October 1907, supported by the St John's scholarship and a scholarship from his Philadelphia high school.
