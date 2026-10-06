@@ -1,0 +1,18 @@
+employer	status	note
+JPMorganChase	seeded	initial business-area map exists
+Capital One	seeded	initial business/program map exists
+Wells Fargo	seeded	initial business-division map exists
+Bank of America	unmapped	coverage seed
+Citigroup	unmapped	coverage seed
+Goldman Sachs	unmapped	coverage seed
+Morgan Stanley	unmapped	coverage seed
+U.S. Bank	unmapped	coverage seed
+PNC	unmapped	coverage seed
+Truist	unmapped	coverage seed
+BNY	unmapped	coverage seed
+State Street	unmapped	coverage seed
+Fifth Third	unmapped	coverage seed
+Citizens	unmapped	coverage seed
+Huntington	unmapped	coverage seed
+American Express	unmapped	adjacent payments/financial-services seed
+Discover	unmapped	adjacent card/banking seed

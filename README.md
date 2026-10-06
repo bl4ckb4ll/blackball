@@ -45,6 +45,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
+- [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
 - [Truth before hope](TRUTH-BEFORE-HOPE.md)
 - [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
 - [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
@@ -113,6 +114,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Source dossiers
 
+- [Jerome Karabel — *The Chosen*](books/jerome-karabel-the-chosen.md) — rights-safe source record for the 2005 history of admission and exclusion at Harvard, Yale, and Princeton, with lawful reading links, late-chapter retrieval targets, and a cross-link to the Ivy/MIT financial-aid antitrust record.
+- [*United States v. Brown University* — Ivy/MIT financial-aid antitrust case](sources/united-states-v-brown-university/README.md) — primary filings from DOJ and MIT, the 1992 district-court reasoning, the 1993 Third Circuit majority and dissent, the settlement record, and explicit guardrails against overstating what the appeal decided.
 - [Charles Booth — *Life and Labour of the People in London*](sources/charles-booth/life-and-labour-london/README.md) — late-Victorian London A–H poverty/class framework, original survey archive, and Booth's own inherited leather/shipping business position; contemporary control for Watson/Hatherley rather than projecting modern prices backward.
 - [Bryan Stevenson — *Just Mercy*](sources/bryan-stevenson/just-mercy/README.md) — the disconnect between professed beliefs and conduct as a central institutional accountability test.
 - [Anh Do — *The Happiest Refugee*](sources/anh-do/the-happiest-refugee/README.md) — garment-work poverty, the doctor-or-lawyer funnel, law as the money route, competitive legal education, and an exceptional exit.
@@ -155,3 +158,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
   <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-1.png" width="24%" alt="First page of Chapter I from the 1888 scan">
   <img src="./sources/william-morris/a-dream-of-john-ball/page-images/chapter-1-page-2.png" width="24%" alt="Second page of Chapter I from the 1888 scan">
 </p>
+
+## Response-comparison corpus
+
+[The BME debt prompt family](llm/evals/college/README.md) supplies 12 high-debt variants, two low-debt/research controls, and a literal paired protocol for testing whether the evidence corpus changes model behavior. It preserves the earlier 44 generic prompts separately. The corpus is a test design; no live-model improvement is claimed.
