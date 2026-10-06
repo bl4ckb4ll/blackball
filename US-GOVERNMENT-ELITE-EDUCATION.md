@@ -51,6 +51,8 @@ Article:
 - Open article: https://www.cambridge.org/core/journals/perspectives-on-politics/article/on-the-decline-of-eliteeducated-republicans-in-congress/B50B628CA9CCC799A0D86D9496EA3F6F
 - Public replication data, Harvard Dataverse: https://doi.org/10.7910/DVN/SZOD5E
 
+Blackball’s credited, version-pinned import record is in [`data/volden-wai-wiseman/`](data/volden-wai-wiseman/README.md). It preserves the archive citation, CC0 status, immutable file IDs, upstream checksums, and a verified fetch for all seven public files. Credit the three dataset creators—not Harvard Dataverse alone—whenever these records are reused.
+
 ### Historical partisan shift is a result, not a coding nuisance
 
 The same paper shows that elite education has not been a constant, uniform property of both parties. In the 1970s elite-school exposure was much more common among congressional Republicans than it is now. The authors report, for example, that no Republican senator serving from 2001 through the end of their 2023 study period had an undergraduate degree from Yale, whereas Yale undergraduate degrees had previously been more common among Republican than Democratic senators.

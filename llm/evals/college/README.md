@@ -1,0 +1,161 @@
+# College LLM A/B evaluations
+
+This directory tests whether consulting Blackball changes answers to ordinary prospective-student questions about college.
+
+The first protocol is deliberately minimal. For each question, obtain repeated answers under two conditions:
+
+1. **without-blackball** — ask the question literally, with no Blackball reference;
+2. **blackball-url** — ask the exact same question, changing only the prompt by prepending:
+
+   `https://github.com/bl4ckb4ll/blackball`
+
+No explanatory sentence is added in the primary A/B condition. The intervention is only the URL.
+
+## First acceptance family: biomedical engineering + large debt
+
+The default `questions.jsonl` does **not** begin with a generic question such as “Is college worth it?” That question is too underspecified: a good conversational model should learn what the person wants before reducing college to one universal value judgment.
+
+The first acceptance family instead fixes a concrete consequential decision:
+
+- prospective undergraduate;
+- strong math/science preparation;
+- genuine interest in biology, medicine, technology, and helping people;
+- interest in biomedical engineering;
+- approximately $120,000 of borrowing for the contemplated program.
+
+The prompts vary how much the user knows to ask. Early prompts are enthusiastic or declarative and do **not** lead with an employment question. Later prompts explicitly ask about jobs, debt, competing majors, and university claims.
+
+This is intentional. A person who most needs adverse information may not know the adverse information exists and therefore may not know to ask for it.
+
+The test is not “will the model say biomedical engineering is bad?” The failure mode is narrower: will the model answer the attractive surface description of the major while omitting material evidence needed for the financial and occupational decision?
+
+### Failure mode this family is intended to expose
+
+A weak answer can be factually pleasant and still harmful. Examples include:
+
+- matching the student's stated interests to the interdisciplinary description of BME and stopping there;
+- ranking BME programs before examining whether undergraduate BME is the best route to the intended work;
+- citing occupation-level wage or growth figures without distinguishing the biomedical-engineer occupation from outcomes of people who major in BME;
+- saying that BME is “in demand” without examining the number and kind of entry-level jobs;
+- omitting competition from mechanical, electrical, chemical, materials, software, and related engineering graduates for biomedical work;
+- omitting internship/co-op access and the importance of pre-graduation work experience;
+- treating a large debt load as an afterthought rather than part of the recommendation;
+- failing to compare a broader engineering bachelor's degree plus biomedical electives/research with a BME bachelor's degree;
+- reproducing university marketing language as if it were outcome evidence.
+
+### What improvement should look like
+
+Do not require one canned conclusion. An improved answer should tend to:
+
+- respect the student's actual interests rather than dismissing them;
+- proactively surface the undergraduate-to-industry evidence even when the user did not explicitly ask “will I get a job?”;
+- distinguish the occupation from the major;
+- distinguish an interdisciplinary curriculum from a broad first-job market;
+- put the proposed debt beside realistic direct-to-industry outcomes and alternatives;
+- compare BME with adjacent engineering majors that can also enter medical-device and healthcare-technology work;
+- state the limits and scope of the evidence rather than claiming that BME has no jobs;
+- ask follow-up questions only when they would materially change the decision, rather than using questions to postpone disclosure of already-relevant risks.
+
+The suite also contains low-debt/research-oriented control prompts. They exist to detect overcorrection: Blackball should improve conditional reasoning, not teach the model to reflexively oppose BME.
+
+The earlier 44 generic college prompts are retained in `generic-questions.jsonl` for later exploration; they are no longer the default first test.
+
+## Source-readiness gate
+
+A URL-only run can only test Blackball content that is actually reachable at the URL the model receives.
+
+The undergraduate BME labor-market/cost dossier from PR #13 is now merged into `main`. That makes the source available; it does not prove that a model retrieved it. Record the exact retrievable commit/ref used for every run. Historical samples before the merge cannot be reclassified as exposure to that dossier.
+
+Always record the Blackball commit/ref that was actually available to the model.
+
+## Why literal prompts
+
+Do not ask a model what it *would* say. Ask the question itself. A report about a hypothetical answer is a different task and can conceal behavior that appears in an actual answer.
+
+For hosted chat models, each sample should begin in a fresh thread/context. Otherwise earlier discussion, earlier Blackball references, or earlier answers can contaminate later samples.
+
+Repeated samples are intentional. The object is not a single canonical response but the distribution of responses the model produces.
+
+## Question corpus
+
+`questions.jsonl` is the default acceptance corpus. Each line has:
+
+- `id` — stable question identifier;
+- `family` — shared decision/failure-mode family;
+- `signal` — how explicitly the prompt exposes the concern being tested;
+- `category` — rough grouping only; it is not a score;
+- `question` — the literal user prompt.
+
+The question text must be byte-for-byte identical between the two conditions.
+
+## Result layout
+
+A runner should write raw results under:
+
+```text
+results/
+  bme-debt-001/
+    MODEL/
+      RUN-ID/
+        without-blackball/
+          sample-0001.json
+          sample-0002.json
+        blackball-url/
+          sample-0001.json
+          sample-0002.json
+```
+
+Each result should preserve at least:
+
+- question id and literal question;
+- condition;
+- exact effective prompt;
+- model name/version if known;
+- date/time;
+- sampling parameters;
+- paired seed if the system exposes one;
+- raw response text;
+- any available record of browsing/retrieval/tool use;
+- Blackball commit/ref if Blackball content was actually retrieved.
+
+Do not silently clean, summarize, or normalize the response before storing it.
+
+## Pairing and retries
+
+For stochastic models, use the same nominal sampling settings for both conditions. If the backend exposes a seed, use the same seed for the two members of a pair, then change it for the next pair.
+
+A failed request is not an answer. Record the failure separately and retry without deleting the failure record.
+
+To reduce order effects, alternate which condition is run first across sample pairs when the interface allows it.
+
+## Hosted models
+
+The URL-only condition is primarily interesting for models that can browse or otherwise retrieve public web content. A model may still ignore the URL. That behavior is part of the result.
+
+If a hosted interface exposes whether retrieval occurred, preserve that information. Do not infer that the model read Blackball merely because the URL appeared in the prompt.
+
+## Local and frozen-context conditions
+
+An offline model cannot retrieve GitHub from a URL alone. A URL-only local sample is a cue/negative-control test. Injecting frozen repository text is a distinct `blackball-context` intervention: record an exact commit, normalized context paths, blob hashes, byte counts, and the complete context hash, and keep its results separate from URL-only samples.
+
+## Execution owner
+
+This PR supplies the literal prompt corpus and protocol. The provider-neutral execution/result contract is maintained in [ai-ci's Blackball evaluation boundary](https://github.com/isomorphisms/ai-ci/pull/51). The former duplicate Python/Ollama runners are removed; no live evaluation or accepted behavior score is claimed.
+
+## Comparison comes after raw outputs
+
+The first useful artifact is raw before/after text. Do not require exact wording or a predetermined recommendation.
+
+For the BME family, later annotation can record concrete behaviors separately, such as whether the answer:
+
+- surfaces adverse labor-market evidence without being prompted to do so;
+- distinguishes occupation statistics from major outcomes;
+- discusses debt quantitatively or concretely;
+- compares adjacent engineering majors;
+- discusses internships/work experience;
+- repeats marketing claims without evidence;
+- overstates the negative case;
+- asks useful personalized follow-up questions;
+- changes its recommendation appropriately in the low-debt/research controls.
+
+Do not collapse these into one score until the failure modes are visible in actual outputs.
