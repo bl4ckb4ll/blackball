@@ -107,3 +107,7 @@ Conversely, do not use cultural explanation as a residual category for everythin
 - American Enterprise Institute, "Charles Murray: A Life" transcript (2024): https://www.aei.org/wp-content/uploads/2024/07/Charles-Murray_A-Life_Transcript_2024.pdf
 - American Enterprise Institute, Charles Murray CV: https://www.aei.org/wp-content/uploads/2014/06/Murray-AEI-CV-October-2023.pdf
 - AEI Center on Opportunity and Social Mobility, history of poverty/opportunity/social-capital research: https://cosm.aei.org/research-on-poverty-opportunity-and-social-capital-at-aei-a-brief-history/
+
+## Statistical and institutional dossier
+
+[The Bell Curve, Fishtown, and institutional links](charles-murray-bell-curve-and-fishtown.md) preserves the complementary September dossier and its sources. Its earlier Murray–Barron's recollection is a historical unresolved lead: the [Peter Brimelow dossier](peter-brimelow.md) identifies Brimelow as the documented Barron's connection. Do not attribute that employment to Murray.
