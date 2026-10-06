@@ -102,6 +102,8 @@ This also follows the existing Blackball treatment of firm-level job-posting het
 
 ## Current case files
 
+- [`interview-prep/`](interview-prep/) — index of technical interview-preparation resources plus an outcome protocol separating application access, interview conversion, and offers.
+
 - [`catalog/`](catalog/) — cross-employer opportunity catalog and machine-readable first-pass index.
 - [`amazon/`](amazon/) — first employer case; organization-demand map, current requisitions, interview-versus-work comparison, and specialty probes.
 - [`anthropic/`](anthropic/) — current job-family map, geography/hybrid constraints, stated nontraditional-background policy, and a worker-access research queue.

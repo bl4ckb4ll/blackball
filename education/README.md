@@ -6,6 +6,8 @@ It does not ask only whether education is culturally admirable or whether some g
 
 ## Core notes
 
+- [If not college, then what?](if-not-college-then-what/README.md) — source-by-source ledger of what employers, engineers, interview authors, quant practitioners, and AI/LLM practitioners tell people to learn and practice; records the advice independently of whether it produces employment.
+
 - [Truth before hope](truth-before-hope.md) — do not use optimism or exceptional success stories as substitutes for a feasible path; discouraging evidence does not require a reassuring correction.
 - [Sunk-cost lock-in and lies](sunk-cost-lock-in-and-lies.md) — people honor sunk costs; commitment changes later behavior; distinguish uncertainty from strategic deception; inspect the friendly front end and asymmetric back end separately.
 - [Where are the students’ jobs?](where-are-the-students-jobs.md) — seller success is not customer success; separate employment from target-job conversion and inspect the actual work.
