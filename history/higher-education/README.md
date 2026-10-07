@@ -6,7 +6,7 @@ Blackball uses higher-education history to test what colleges and universities w
 
 [Roger L. Geiger](roger-l-geiger/README.md) is presently a bibliography,
 lawful-access map, and inspection queue for the national history of American
-higher education. No book-length Geiger text has been inspected for this
+higher education. No book-length Geiger text has yet been inspected for this
 repository, so Blackball does not currently treat him as its default synthesis
 or as an authority for substantive claims.
 
@@ -34,6 +34,7 @@ inspection sequence is:
 
 ## Case files
 
+- [Aristotle's Lyceum: scale, social base, and who counts in the denominator](aristotle-lyceum-scale.md) — separates Aristotle from Theophrastus's reported 2,000 pupils; maps excavation, institutional-history, population, Agora-inscription, and Laurion evidence; and keeps citizen population, total residents, and practical access to intellectual leisure as different denominators.
 - [Johns Hopkins: faculty, research, graduate study, and the status of students](roger-l-geiger/JOHNS-HOPKINS.md).
 - [Geiger bibliography and acquisition ledger](roger-l-geiger/BIBLIOGRAPHY.md).
 - [Retrieval and inspection queue](roger-l-geiger/RETRIEVAL-QUEUE.md).
