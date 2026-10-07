@@ -37,7 +37,7 @@ The following chronology comes primarily from Natali's Ca' Foscari curriculum pa
 - **2009–2015:** coordinated doctoral studies in philosophy.
 - **2010–2011:** directed Ca' Foscari's Doctoral School of Humanities.
 - **2012–2015:** president of the Società Italiana di Storia della Filosofia Antica (SISFA).
-- **2018–:** listed by Ca' Foscari as an honorary professor.
+- **After the 2018 end of his full professorship:** Ca' Foscari's current profile lists him as an honorary professor.
 
 His CV also records research stays or fellowships at Clare Hall, Cambridge (1995), the Institute for Advanced Studies in the Humanities in Edinburgh (2005/2006 in the available profiles), and All Souls College, Oxford (2010), plus the Tópicos chair at Universidad Panamericana in Mexico City (2018).
 
