@@ -84,6 +84,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## People dossiers
 
+- [Carlo Natali](people/carlo-natali.md) — historian of ancient philosophy and major modern Aristotle biographer; source-critical reconstruction of Aristotle’s life and the Peripatos, with explicit guardrails against turning the Lyceum into a modern enrollment count.
 - [Graciela Chichilnisky](people/graciela-chichilnisky.md) — catastrophic-risk decision theory, rare-event-sensitive probability, and stated limits of nonparametric econometrics under weak assumptions.
 - [Ariane Lambert-Mogiliansky](people/ariane-lambert-mogiliansky.md) — non-classical uncertainty, expected-utility representation beyond Boolean event algebras, and quantum-like models of context-dependent or indeterminate preferences.
 - [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
