@@ -17,6 +17,7 @@ The relevant question is not whether any one institution "made" Obama. It is how
 - **1996:** elected to the Illinois State Senate.
 - **2004:** elected to the U.S. Senate.
 - **2008:** elected President of the United States.
+- **April 24–25, 2012:** delivered campus speeches calling college the best future investment while campaigning to limit student-loan rates.
 
 ## Benefits from institutional affiliation
 
@@ -39,6 +40,14 @@ Obama's first Chicago period matters because his community-organizer identity an
 After Harvard, Obama returned to Chicago and again spent years in the Hyde Park/UChicago environment while teaching law and rising through elected office.
 
 Blackball should not invent a daily route past any particular worker. The better-supported structural fact is that Obama repeatedly occupied both sides of a large institutional divide: organizer among poor South Side residents and beneficiary of elite legal/academic institutions with substantially greater leverage.
+
+## Public college-investment promises (April 2012)
+
+On **24–25 April 2012**, Obama gave student-loan affordability speeches at UNC–Chapel Hill, the University of Colorado Boulder, and the University of Iowa. Colorado and Iowa framed college as **the best investment** in both individual and national futures; UNC used, among other formulations, **one of the best**. The immediate legislative campaign sought to prevent a scheduled July 2012 rate increase on affected federal Stafford loans.
+
+In Iowa he reported telling two students in financial difficulty that their lifetime earnings would more than repay the college investment. That *individual future-return assurance* should not be confused with his accompanying *aggregate* wage/unemployment comparisons. The transcript does not establish whether either student's actual outcome matched his prediction.
+
+Primary records and source criticism: [April 2012 speech overview](../sources/barack-obama/2012-college-affordability/README.md), [Boulder, April 24](../sources/barack-obama/2012-college-affordability/2012-04-24-university-of-colorado-boulder.md), and [Iowa, April 25](../sources/barack-obama/2012-college-affordability/2012-04-25-university-of-iowa.md).
 
 ## Questions for investigation
 
