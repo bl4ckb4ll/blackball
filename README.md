@@ -84,6 +84,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## People dossiers
 
+- [Alexandre Grothendieck](people/alexandre-grothendieck.md) — first-person account of fear, vanity, discovery, the heroic myth of science, and the boundary between mathematical beauty and status.
 - [Graciela Chichilnisky](people/graciela-chichilnisky.md) — catastrophic-risk decision theory, rare-event-sensitive probability, and stated limits of nonparametric econometrics under weak assumptions.
 - [Ariane Lambert-Mogiliansky](people/ariane-lambert-mogiliansky.md) — non-classical uncertainty, expected-utility representation beyond Boolean event algebras, and quantum-like models of context-dependent or indeterminate preferences.
 - [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
@@ -114,6 +115,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Source dossiers
 
+- [Alexandre Grothendieck — *Récoltes et Semailles*: anguish, vanity, and discovery](sources/alexandre-grothendieck/recoltes-et-semailles/README.md) — original French, Roy Lisker translation, 1986 preface context, exact quotation, competing interpretations, and Blackball evidence ledger.
 - [Jerome Karabel — *The Chosen*](books/jerome-karabel-the-chosen.md) — rights-safe source record for the 2005 history of admission and exclusion at Harvard, Yale, and Princeton, with lawful reading links, late-chapter retrieval targets, and a cross-link to the Ivy/MIT financial-aid antitrust record.
 - [*United States v. Brown University* — Ivy/MIT financial-aid antitrust case](sources/united-states-v-brown-university/README.md) — primary filings from DOJ and MIT, the 1992 district-court reasoning, the 1993 Third Circuit majority and dissent, the settlement record, and explicit guardrails against overstating what the appeal decided.
 - [Charles Booth — *Life and Labour of the People in London*](sources/charles-booth/life-and-labour-london/README.md) — late-Victorian London A–H poverty/class framework, original survey archive, and Booth's own inherited leather/shipping business position; contemporary control for Watson/Hatherley rather than projecting modern prices backward.
