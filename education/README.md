@@ -15,6 +15,8 @@ It does not ask only whether education is culturally admirable or whether some g
 - [If you mean economic empowerment, put it in the contract](if-you-mean-economic-empowerment-put-it-in-the-contract.md) — separates cultural education from economic causation; converts strong empowerment language into outcome, population, denominator, counterfactual, conditions, and liability; uses the Go Blue Guarantee as a clean contrast between a bounded tuition guarantee and broader earnings language.
 - [When the seller controls the outcome story](seller-controls-the-outcome-story.md) — institutional reports, alumni selection, moving definitions of value, and the disappearance of retail, unrelated, and disappointing outcomes.
 
+- [Obama's April 2012 college-investment speeches](../sources/barack-obama/2012-college-affordability/README.md) — White House primary records from Colorado and Iowa, with the UNC variant, emphasizing the Iowa individual lifetime-payoff assurance, the difference between group statistics and private returns, and the legislative context.
+
 ## Working syllabus sketches
 
 - [Applied computer science syllabus — stub](applied-computer-science-syllabus-stub.md) — project-first working map of everyday development fluency, systems programming, networking/Wi-Fi, databases, debugging, build-from-scratch exercises, reading existing software, and theory attached to concrete project questions. It makes no credential or job-outcome claim.
@@ -58,4 +60,3 @@ The corpus should make it harder for possibility language, prestige, seller self
 ## First-person receipts
 
 - [“Critical thinking” as performed book analysis](receipts/2026-09-21-critical-thinking-performed-analysis/receipt.txt) — a 2026-09-21 user-supplied social-media screenshot in which the speaker recalls being asked to write as though a newly encountered book had already been fully analyzed. Preserve as first-person testimony, not prevalence evidence.
-
