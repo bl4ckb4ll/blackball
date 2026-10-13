@@ -12,6 +12,20 @@ This separates **what happens**, **why it happens**, and **whether the instituti
 
 The word *middle class* is an unstable unit here. Distinguish families by **parental occupation, parental income percentile, parental net worth, business/property ownership, and ability to support a child who has no earnings**. A professional family on wages, a family owning a practice, and a family receiving large inheritances are not interchangeable.
 
+## Ability is not access — conversation recorded 2026-10-12
+
+The user's statement, preserved verbatim at their request:
+
+> Smart doesn't matter. Only having a rich family who will cheat you into a good job matters.
+
+**Being able to do the work and being given access to the job are different things.** The complaint concerns obtaining a livelihood, not whether intelligence has some abstract value. “Become more capable” does not answer “Who will actually give me access?” Another person's success does not establish that an excluded person received a fair chance.
+
+The empirical question is not merely whether ability and earnings correlate. It is whether someone capable of doing the work can obtain the paid position, and how that chance changes with family connections, parental resources, and employer selection. A theory of skill formation cannot by itself answer a question about who gets admitted to the workplace.
+
+**Keep the claim and the evidence distinct.** The statement above is the user's criticism, not a statistical finding. The parental-employer research below supports a consequential family-access mechanism. It does not establish that intelligence has zero effect, that every good job requires a rich family, or that every parental connection involves deception or a broken rule. “Cheat” also expresses a judgment about a supposedly merit-based competition: legal or customary preference can still be challenged as unjust. Evidence of advantage, evidence of specific misconduct, and a judgment about fairness must not be silently substituted for one another.
+
+Neither limitation rescues the stronger meritocratic claim that earnings simply measure ability. Blackball should investigate the **conversion from demonstrated capability to an actual offer**, including people who never receive one, rather than answer exclusion with compliments, exceptional success stories, or another unsupported instruction to acquire skills.
+
 ## Two pathways, measured at the same ages
 
 **Professional-family pathway (hypothesized mechanisms):**
@@ -27,6 +41,21 @@ Each arrow must be tested. Some low-income students enter elite professions; som
 The temporal question matters: a household that pays for school and housing at ages 18–25 is moving the child's starting line, whereas a person who pays tuition, rent, interest, and forgone wages begins accumulating assets later even if subsequent salaries match.
 
 ## Evidence already located
+
+### Parental employers — a measured job-access channel
+
+**Source trail checked for this addition:** Travis Shoemaker, U.S. Census Bureau, *Children Working at the Same Employer as Their Parents Saw Persistent Increases in Earnings*, **August 12, 2025**, and the linked Matthew Staiger paper, *The Intergenerational Transmission of Employers and the Earnings of Young Workers*, **June 2026 version**. Article inspected; paper abstract, introduction, and data discussion inspected, with visual checks of the title page and printed pp. 3 and 6. This is not a full methods or replication audit.
+
+- Census article: https://www.census.gov/library/stories/2025/08/generational-wealth.html
+- Author-hosted paper: https://matthewstaiger.github.io/matthewstaiger.com/The%20Intergenerational%20Transmission%20of%20Employers%20and%20the%20Earnings%20of%20Young%20Workers.pdf
+
+**Finding and mechanism.** Staiger estimates **24% higher initial earnings** from working for a parent's employer, mainly through access to higher-paying firms, not preferential pay within a firm. The June 2026 introduction reports **17% higher earnings three years later** (printed p. 3; PDF page 4). Higher-earning parents' children benefit more. The design uses temporary firm-specific hiring changes as an instrument, not randomized hiring; causal interpretation depends on its identifying assumptions.
+
+**Version distinction.** The Census article also reports 24% initially but says **20% after three years**. Preserve that difference: 20% belongs to the article's account, 17% to the inspected June 2026 paper. No explanation for the revision was established. The article further reports that the gains for children of parents in the top 40% of earners exceeded twice those for the bottom 40%.
+
+**Scope.** The paper concerns first **stable** jobs, not necessarily first-ever jobs or professional jobs. Its sample frame covers expected high-school completion in 2000–2013. Printed p. 6 describes a wage-reliant sample excluding the very poorest and richest households; parental earnings are not family net worth. Do not present it as a comprehensive study of wealthy-family favoritism.
+
+**Interpretation for this question.** Access can have a substantial earnings consequence without being a reward for greater intelligence. That inference does not measure intelligence's effect or establish that connected workers lack ability. A 24% earnings effect is neither a 24-percentage-point hiring advantage nor the proportion of jobs obtained through favoritism. It also cannot diagnose why any particular applicant was rejected.
 
 ### Medicine — strong descriptive evidence of unequal origin
 
