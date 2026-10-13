@@ -167,7 +167,7 @@ The row printed “Other East Asian” appears beneath the Southeast Asian headi
 
 The income thresholds are year-specific dollar amounts. The footnote says prior-year income limits were used to estimate prior-year parental income, and gives the example that the 2019 questionnaire represents 2018 parental income. A later analyst must preserve this timing rather than align series by the questionnaire year alone.
 
-The national 80th-percentile boundaries shown for 2017, 2018 and 2019 are $121,018, $126,253 and $130,000. A fixed-dollar cutoff pooled across years would answer a different question from a year-specific percentile classification. Neither is interchangeable with net worth.
+The national 80th-percentile boundaries shown for 2017, 2018 and 2019 are $121,018, $126,603 and $130,000. A fixed-dollar cutoff pooled across years would answer a different question from a year-specific percentile classification. Neither is interchangeable with net worth.
 
 Income is combined gross parental income, not necessarily spendable support delivered to the student. Taxes, dependents, debt, regional costs and the willingness or ability to transfer money remain separate. Conversely, a wealthy household with low current income could be mischaracterized by income alone. This is a reason to add balance-sheet variables, not a reason to discard the income measure.
 
