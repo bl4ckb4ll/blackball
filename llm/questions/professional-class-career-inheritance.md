@@ -26,6 +26,14 @@ The empirical question is not merely whether ability and earnings correlate. It 
 
 Neither limitation rescues the stronger meritocratic claim that earnings simply measure ability. Blackball should investigate the **conversion from demonstrated capability to an actual offer**, including people who never receive one, rather than answer exclusion with compliments, exceptional success stories, or another unsupported instruction to acquire skills.
 
+## Finance — client-family hiring to obtain business (2026-10-13)
+
+The user's follow-up complaint concerns options trading and banks offering jobs to people whose relatives can bring client business. **Source-verified cases exist for the underlying mechanism, though not specifically for options-trading desks.** The SEC found that JPMorgan's Asia-Pacific *Sons & Daughters Program* bypassed normal competitive hiring and assessed referral candidates by prospective client revenue. Its 2006–2013 record lists approximately **200 referral hires**, nearly **100** involving foreign officials at Chinese state-owned enterprises, plus **more than $100 million** of associated transactions revenue. In 2010–2011 the bank tracked clients' revenue alongside referral hires. The SEC, DOJ, and Federal Reserve settlements together exceeded **$264 million**.
+
+The SEC and DOJ documented comparable quid-pro-quo hiring at **Credit Suisse** (2018 resolution), and the SEC documented preferential family hiring at **Deutsche Bank** (2019 resolution). These cases establish **jobs allocated as inducements for business**, which undermines any claim that finance-sector hiring is necessarily purely meritocratic. They do not establish the prevalence on options-trading desks, much less that *all* such jobs are allocated this way. A bank's financial motive, a specific law violation, and the assertion that managers disregard fairness must be evaluated separately.
+
+**Primary-source dossier with page references, counts, legal posture and limitations:** [Finance-sector client-referral hiring](../../sources/client-referral-hiring-finance/README.md). This is an evidence-backed mechanism alongside parental-employer transfers and selective-college advantages, not a substitute for estimating the number of denied applicants.
+
 ## Two pathways, measured at the same ages
 
 **Professional-family pathway (hypothesized mechanisms):**
