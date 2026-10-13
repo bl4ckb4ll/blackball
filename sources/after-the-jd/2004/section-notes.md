@@ -49,7 +49,7 @@ The time origin also matters. “Three years into practice” and “age thirty-
 
 **Read alongside:** [pp. 19–21][p19], especially [p. 20][p20] and Table 2.2.
 
-The [source record](README.md#citation-and-exact-locator) gives the verified statistic and its exact wording in paraphrase. The essential mathematical distinction is between:
+The [source record](README.md#citation-and-exact-locator) gives the verified statistic and its precise scope. The essential mathematical distinction is between:
 
 P(professional-family background | entrant)
 
@@ -74,7 +74,7 @@ The father's occupation is not a complete family balance sheet. A serious extens
 <a id="s03"></a>
 ## Section 3 — a job label is not the whole outcome
 
-**Read alongside:** [pp. 25–29][p25], Tables 3.1–3.2 and Figure 3.1; inspect the eligibility qualification on p. 26.
+**Read alongside:** [pp. 25–29][p25], Tables 3.1–3.2 and Figure 3.2; inspect the eligibility qualification on p. 26.
 
 Use a multidimensional outcome record: employment, actual work performed, hours, pay, security, autonomy, training, ownership, and suitability to the person's stated objective. “Employed” is too coarse to stand in for every one of these. Equally, work outside an intended profession should not automatically be described as failure: the person's alternatives and preferences matter. Calling every departure successful flexibility would be just as unsupported.
 
