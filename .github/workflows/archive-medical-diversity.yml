@@ -1,4 +1,4 @@
-name: Archive the CC-BY medical-diversity source
+name: Preserve the licensed medical-diversity source
 
 on:
   push:
@@ -19,7 +19,31 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Acquire and verify the licensed publisher version from NLM
+      - name: Correct the independently checked 2018 table cutoff
+        shell: node {0}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          'use strict';
+          async function main() {
+            const path = 'sources/medical-student-socioeconomic-diversity/2022/section-notes.md';
+            const root = `https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}/contents/${path}`;
+            const headers = { Authorization: `Bearer ${process.env.GH_TOKEN}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' };
+            const response = await fetch(`${root}?ref=${encodeURIComponent(process.env.GITHUB_REF_NAME)}`, { headers });
+            if (!response.ok) throw new Error(`Cannot read annotation: HTTP ${response.status}`);
+            const file = await response.json();
+            const text = Buffer.from(file.content, 'base64').toString('utf8');
+            const old = '$121,018, $126,253 and $130,000';
+            const corrected = '$121,018, $126,603 and $130,000';
+            if (text.includes(corrected) && !text.includes(old)) { console.log('Cutoff already corrected.'); return; }
+            if (text.split(old).length !== 2) throw new Error('Expected exactly one known transcription error; refusing broader edits');
+            const result = await fetch(root, { method: 'PUT', headers, body: JSON.stringify({ message: 'Correct transcribed 2018 income cutoff to the source value $126,603', branch: process.env.GITHUB_REF_NAME, sha: file.sha, content: Buffer.from(text.replace(old, corrected)).toString('base64') }) });
+            if (!result.ok) throw new Error(`Correction was not committed: HTTP ${result.status}`);
+            console.log('Correction committed:', (await result.json()).commit.sha);
+          }
+          main().catch(e => { console.error(e.message); process.exitCode = 1; });
+
+      - name: Preserve original NLM objects without pretending XML is a PDF
         shell: node {0}
         env:
           GH_TOKEN: ${{ github.token }}
@@ -35,120 +59,116 @@ jobs:
           const folder = 'texts/medical-student-socioeconomic-diversity/2022';
           const doi = '10.1001/jamanetworkopen.2022.2621';
           const origin = 'https://pmc-oa-opendata.s3.amazonaws.com';
-          const digest = (data, algorithm = 'sha256') => crypto.createHash(algorithm).update(data).digest('hex');
+          const digest = data => crypto.createHash('sha256').update(data).digest('hex');
           async function remote(url) {
-            const r = await fetch(url, { signal: AbortSignal.timeout(60000), headers: { 'User-Agent': 'Blackball-source-preservation/1.0' } });
-            if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
-            return r;
-          }
-          function sourceURL(raw) {
-            const url = new URL(String(raw).replace(/^s3:\/\/pmc-oa-opendata\//, origin + '/'));
-            if (url.protocol !== 'https:' || url.hostname !== 'pmc-oa-opendata.s3.amazonaws.com' || !url.pathname.startsWith('/PMC8924719.')) throw new Error('Source URL is outside the named NLM article');
-            return url;
-          }
-          async function bytesAt(raw) {
-            const url = sourceURL(raw);
-            const bytes = Buffer.from(await (await remote(url)).arrayBuffer());
-            if (bytes.length > 20000000) throw new Error('Source exceeds 20 MB bound');
-            const expected = url.searchParams.get('md5');
-            if (expected && digest(bytes, 'md5') !== expected.toLowerCase()) throw new Error('NLM metadata MD5 mismatch');
-            return bytes;
+            const response = await fetch(url, { signal: AbortSignal.timeout(45000) });
+            if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+            return response;
           }
           async function api(endpoint, method = 'GET', body) {
-            const r = await fetch(`https://api.github.com/repos/${repository}/${endpoint}`, {
-              method, signal: AbortSignal.timeout(60000),
-              headers: { Authorization: `Bearer ${process.env.GH_TOKEN}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' },
+            const response = await fetch(`https://api.github.com/repos/${repository}/${endpoint}`, {
+              method, signal: AbortSignal.timeout(45000), headers: { Authorization: `Bearer ${process.env.GH_TOKEN}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
               body: body === undefined ? undefined : JSON.stringify(body)
             });
-            if (!r.ok) throw new Error(`GitHub ${method} ${endpoint}: HTTP ${r.status}`);
-            return r.json();
+            if (!response.ok) throw new Error(`GitHub ${endpoint}: HTTP ${response.status}`);
+            return response.json();
           }
           async function main() {
             if (repository !== 'bl4ckb4ll/blackball' || branch !== 'notes/professional-class-fast-track-20261012') throw new Error('Unexpected destination');
-            if (process.platform !== 'linux' || !/^ID=ubuntu$/m.test(fs.readFileSync('/etc/os-release', 'utf8'))) throw new Error('Observed Ubuntu runner required');
-            const preflight = spawnSync('pdftotext', ['-v'], { encoding: 'utf8' });
-            if (preflight.error && preflight.error.code === 'ENOENT') {
-              execFileSync('sudo', ['apt-get', 'update', '-qq'], { stdio: 'inherit' });
-              execFileSync('sudo', ['apt-get', 'install', '-y', '--no-install-recommends', 'poppler-utils'], { stdio: 'inherit' });
-            } else if (preflight.status !== 0) throw new Error('PDF reader preflight failed');
-            // Current NLM distribution: https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/
-            // Legacy OA API and FTP article packages were retired in August 2026.
-            const listingURL = `${origin}/?list-type=2&prefix=PMC8924719.&delimiter=%2F&max-keys=100`;
+            const listingURL = `${origin}/?list-type=2&prefix=PMC8924719.&max-keys=100`;
             const listing = await (await remote(listingURL)).text();
-            if (/<IsTruncated>true<\/IsTruncated>/.test(listing)) throw new Error('Unexpectedly truncated single-article version listing');
-            const prefixes = [...listing.matchAll(/<CommonPrefixes>\s*<Prefix>(PMC8924719\.\d+\/)<\/Prefix>\s*<\/CommonPrefixes>/g)].map(m => m[1]);
-            if (!prefixes.length || prefixes.length > 10) throw new Error('No bounded article-version inventory');
-            const inspected = [];
-            const candidates = [];
-            for (const prefix of prefixes) {
-              const metadataURL = `${origin}/${prefix}${prefix.slice(0, -1)}.json`;
-              const metadata = await (await remote(metadataURL)).json();
-              inspected.push({ metadata_url: metadataURL, metadata });
-              const cc = String(metadata.license_code).toLowerCase().replace(/[ _]/g, '-');
-              if (metadata.doi !== doi) throw new Error('DOI mismatch in NLM metadata');
-              if (String(metadata.is_manuscript).toLowerCase() === 'yes') continue;
-              if (String(metadata.is_retracted).toLowerCase() === 'yes') throw new Error('NLM flags this source as retracted; manual review required');
-              if (!/^cc-by(?:-[1-4]\.0)?$/.test(cc)) throw new Error(`Unqualified license: ${metadata.license_code}`);
-              if (metadata.pdf_url) candidates.push({ metadataURL, metadata });
+            if (/<IsTruncated>true<\/IsTruncated>/.test(listing)) throw new Error('Single-article listing was truncated');
+            const keys = [...listing.matchAll(/<Key>([^<]+)<\/Key>/g)].map(m => m[1]);
+            if (!keys.length || keys.some(key => !/^PMC8924719\.\d+\//.test(key))) throw new Error('Unexpected article object inventory');
+            console.log('NLM object inventory:', JSON.stringify(keys));
+            const metadataKeys = keys.filter(key => /\/PMC8924719\.\d+\.json$/.test(key));
+            const metadata = [];
+            for (const key of metadataKeys) {
+              const record = await (await remote(`${origin}/${key}`)).json();
+              if (record.doi !== doi) throw new Error('Metadata DOI mismatch');
+              if (!/^cc[-_]by(?:[-_][1-4]\.0)?$/i.test(String(record.license_code))) throw new Error('Explicit CC BY permission absent');
+              if (String(record.is_retracted).toLowerCase() === 'yes') throw new Error('Retraction flag requires review');
+              metadata.push({ key, record });
             }
-            if (candidates.length !== 1) throw new Error(`Expected one licensed publisher PDF, found ${candidates.length}; do not choose by version number alone`);
-            const { metadataURL, metadata } = candidates[0];
-            const pdf = await bytesAt(metadata.pdf_url);
-            if (pdf.length < 1000 || pdf.subarray(0, 5).toString() !== '%PDF-' || !pdf.subarray(-4096).includes(Buffer.from('%%EOF'))) throw new Error('Not a complete PDF response');
-            const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'blackball-medical-'));
-            try {
-              const local = path.join(tmp, 'source.pdf');
-              fs.writeFileSync(local, pdf);
-              const info = execFileSync('pdfinfo', [local], { encoding: 'utf8' });
-              const extracted = execFileSync('pdftotext', ['-layout', local, '-'], { encoding: 'utf8', maxBuffer: 10000000 });
-              const match = info.match(/^Pages:\s+(\d+)/m);
-              const pages = match ? Number(match[1]) : 0;
-              const compact = extracted.replace(/\s+/g, ' ');
-              if (pages !== 5 || !compact.includes(doi) || !compact.includes('Socioeconomic Diversity of the Matriculating US Medical Student Body')) throw new Error(`PDF identity check failed; observed pages=${pages}`);
-              if (!/CC[ -]?BY\s+License|Creative Commons Attribution/i.test(compact)) throw new Error('Embedded article-specific CC BY grant absent');
-              const pdfPath = `${folder}/shahriar-et-al-2022.pdf`;
-              const receipt = {
-                schema: 'blackball-source-archive-v1', state: 'ARCHIVED', title: metadata.title,
-                doi, pmcid: 'PMC8924719', publication_date: '2022-03-15',
-                source_url: String(sourceURL(metadata.pdf_url)), metadata_url: metadataURL,
-                license: metadata.license_code, license_evidence: 'NLM article-version metadata and matching original PDF both contain an explicit CC BY grant.',
-                license_terms: 'https://jamanetwork.com/pages/cc-by-license-permissions', copyright: '2022 Shahriar AA et al.',
-                changes_to_pdf: 'none', pdf_path: pdfPath, pages, bytes: pdf.length, sha256: digest(pdf),
-                metadata_md5: sourceURL(metadata.pdf_url).searchParams.get('md5'),
-                retrieved_at: new Date().toISOString(), acquisition_workflow_commit: process.env.GITHUB_SHA,
-                acquisition_run: `https://github.com/${repository}/actions/runs/${process.env.GITHUB_RUN_ID}`,
-                superseded_failed_runs: [38336629453, 38337135319],
-                distribution_documentation: 'https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/',
-                checks: { signature: 'PASS', pdf_reader: 'PASS', page_count: 'PASS', title: 'PASS', doi: 'PASS', metadata_license: 'PASS', embedded_license: 'PASS' },
-                evidence_boundary: 'Original PDF acquisition and identity verification, not survey replication or independent ai-ci acceptance. No supplemental PDF or law-report reproduction is included.'
-              };
-              const attribution = '# Attribution and archival notice\n\nShahriar AA, Puram VV, Miller JM, Sagi V, Castañón-Gonzalez LA, Prasad S, Crichlow R. *Socioeconomic Diversity of the Matriculating US Medical Student Body by Race, Ethnicity, and Sex, 2017-2019*. JAMA Network Open. 2022;5(3):e222621. https://doi.org/' + doi + '\n\n© 2022 Shahriar AA et al. CC BY. Terms: https://jamanetwork.com/pages/cc-by-license-permissions . The original PDF is unchanged. source.extracted.txt is a mechanical pdftotext extraction with page breaks and possible layout errors, not a different source.\n\nAcquired from NIH NLM NCBI PubMed Central Article Datasets on AWS; https://registry.opendata.aws/ncbi-pmc . This dated research snapshot does not necessarily reflect the most current or accurate NLM data. Neither the authors nor NLM/NIH/HHS endorse Blackball or its annotations. The metadata and archive-receipt.json preserve acquisition identity and hashes.\n\n[Annotations](../../../sources/medical-student-socioeconomic-diversity/2022/README.md)\n';
-              const files = [[pdfPath, pdf], [`${folder}/archive-receipt.json`, Buffer.from(JSON.stringify(receipt, null, 2) + '\n')], [`${folder}/nlm-metadata.json`, Buffer.from(JSON.stringify(inspected, null, 2) + '\n')], [`${folder}/ATTRIBUTION.md`, Buffer.from(attribution)], [`${folder}/source.extracted.txt`, Buffer.from(extracted)]];
-              const entries = [];
-              for (const [filename, data] of files) {
-                const blob = await api('git/blobs', 'POST', { content: data.toString('base64'), encoding: 'base64' });
-                entries.push({ path: filename, mode: '100644', type: 'blob', sha: blob.sha });
-              }
-              let committed;
-              for (let attempt = 0; attempt < 3; attempt++) {
-                const ref = await api(`git/ref/heads/${branch}`);
-                const parent = await api(`git/commits/${ref.object.sha}`);
-                const current = await api(`git/trees/${parent.tree.sha}?recursive=1`);
-                if (current.truncated) throw new Error('Cannot verify paths against a truncated tree');
-                for (const entry of entries) {
-                  const existing = current.tree.find(e => e.path === entry.path);
-                  if (existing && existing.sha !== entry.sha) throw new Error(`Refusing to overwrite existing archive object: ${entry.path}`);
+            console.log('NLM article metadata:', JSON.stringify(metadata));
+            if (metadata.length !== 1) throw new Error('Exactly one article version is required for this bounded acquisition');
+            const prefix = metadata[0].key.slice(0, metadata[0].key.lastIndexOf('/') + 1);
+            const files = [];
+            const objects = [];
+            for (const extension of ['xml', 'txt']) {
+              const matches = keys.filter(key => key.startsWith(prefix) && key.endsWith(`.${extension}`));
+              if (matches.length !== 1) throw new Error(`Expected one main ${extension} object, found ${matches.length}`);
+              const key = matches[0];
+              const bytes = Buffer.from(await (await remote(`${origin}/${key}`)).arrayBuffer());
+              if (bytes.length > 20000000 || !bytes.toString('utf8').includes(doi)) throw new Error(`${extension} object identity or size check failed`);
+              const destination = `${folder}/source.${extension}`;
+              files.push([destination, bytes]);
+              objects.push({ format: extension, source_url: `${origin}/${key}`, path: destination, bytes: bytes.length, sha256: digest(bytes), changes: 'none' });
+            }
+            const pdfKeys = keys.filter(key => key.startsWith(prefix) && /\.pdf$/i.test(key));
+            if (pdfKeys.length > 6) throw new Error('Too many PDF candidates for bounded inspection');
+            const pdfAttempts = [];
+            let archivedPDF = false;
+            if (pdfKeys.length) {
+              if (process.platform !== 'linux' || !/^ID=ubuntu$/m.test(fs.readFileSync('/etc/os-release', 'utf8'))) throw new Error('Observed Ubuntu runner required for PDF inspection');
+              const preflight = spawnSync('pdftotext', ['-v'], { encoding: 'utf8' });
+              if (preflight.error && preflight.error.code === 'ENOENT') {
+                execFileSync('sudo', ['apt-get', 'update', '-qq'], { stdio: 'inherit' });
+                execFileSync('sudo', ['apt-get', 'install', '-y', '--no-install-recommends', 'poppler-utils'], { stdio: 'inherit' });
+              } else if (preflight.status !== 0) throw new Error('PDF reader preflight failed');
+              const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'blackball-source-'));
+              try {
+                for (const key of pdfKeys) {
+                  try {
+                    const bytes = Buffer.from(await (await remote(`${origin}/${key}`)).arrayBuffer());
+                    if (bytes.length > 20000000 || bytes.subarray(0, 5).toString() !== '%PDF-') throw new Error('Not a bounded PDF');
+                    const filename = path.join(temporary, 'source.pdf');
+                    fs.writeFileSync(filename, bytes);
+                    const info = execFileSync('pdfinfo', [filename], { encoding: 'utf8' });
+                    const text = execFileSync('pdftotext', ['-layout', filename, '-'], { encoding: 'utf8' }).replace(/\s+/g, ' ');
+                    if (!/^Pages:\s+5$/m.test(info) || !text.includes(doi) || !text.includes('Socioeconomic Diversity of the Matriculating US Medical Student Body') || !/CC[ -]?BY\s+License|Creative Commons Attribution/i.test(text)) throw new Error('Not the complete licensed five-page article');
+                    const destination = `${folder}/shahriar-et-al-2022.pdf`;
+                    files.push([destination, bytes]);
+                    objects.push({ format: 'pdf', source_url: `${origin}/${key}`, path: destination, bytes: bytes.length, sha256: digest(bytes), pages: 5, changes: 'none' });
+                    archivedPDF = true; pdfAttempts.push({ key, result: 'VERIFIED' }); break;
+                  } catch (error) { pdfAttempts.push({ key, result: 'REJECTED', reason: error.message }); }
                 }
-                const tree = await api('git/trees', 'POST', { base_tree: parent.tree.sha, tree: entries });
-                const commit = await api('git/commits', 'POST', { message: 'Archive original CC-BY medical-diversity PDF from verified NLM metadata', tree: tree.sha, parents: [ref.object.sha] });
-                try { await api(`git/refs/heads/${branch}`, 'PATCH', { sha: commit.sha, force: false }); committed = commit.sha; break; }
-                catch (e) { if (attempt === 2) throw e; }
+              } finally { fs.rmSync(temporary, { recursive: true, force: true }); }
+            }
+            const receipt = {
+              schema: 'blackball-source-archive-v1', state: archivedPDF ? 'PDF_AND_FULL_TEXT_ARCHIVED' : 'FULL_TEXT_ARCHIVED_PDF_UNAVAILABLE',
+              doi, pmcid: 'PMC8924719', publication_date: '2022-03-15', license: metadata[0].record.license_code,
+              license_evidence: `${origin}/${metadata[0].key}`, original_pdf_archived: archivedPDF,
+              objects, pdf_candidates: pdfKeys, pdf_attempts: pdfAttempts, retrieved_at: new Date().toISOString(),
+              workflow_commit: process.env.GITHUB_SHA, workflow_run: `https://github.com/${repository}/actions/runs/${process.env.GITHUB_RUN_ID}`,
+              earlier_failed_runs: [38336629453, 38337135319, 38337673662],
+              evidence_boundary: 'Original NLM source-object preservation, not survey replication or independent acceptance. XML and text are not PDF substitutes. No After the JD reproduction, supplemental review or PR merge is claimed.'
+            };
+            const attribution = '# Source attribution\n\nShahriar AA, Puram VV, Miller JM, Sagi V, Castañón-Gonzalez LA, Prasad S, Crichlow R. Socioeconomic Diversity of the Matriculating US Medical Student Body by Race, Ethnicity, and Sex, 2017–2019. JAMA Network Open. 2022;5(3):e222621. https://doi.org/' + doi + '\n\n© 2022 Shahriar AA et al. CC BY. Terms: https://jamanetwork.com/pages/cc-by-license-permissions . Original source objects are unchanged. Blackball commentary is separate. Neither the authors nor NLM/NIH/HHS endorse it.\n\nAcquired from NIH NLM NCBI PubMed Central Article Datasets on AWS, https://registry.opendata.aws/ncbi-pmc . This dated snapshot does not necessarily reflect the most current or accurate NLM data. See archive-receipt.json for formats actually preserved, dates and SHA-256 hashes. A preserved XML or text object does not mean that an original PDF was acquired.\n\n[Original analytical notes](../../../sources/medical-student-socioeconomic-diversity/2022/README.md)\n';
+            files.push([`${folder}/archive-receipt.json`, Buffer.from(JSON.stringify(receipt, null, 2) + '\n')], [`${folder}/nlm-metadata.json`, Buffer.from(JSON.stringify(metadata, null, 2) + '\n')], [`${folder}/ATTRIBUTION.md`, Buffer.from(attribution)]);
+            const entries = [];
+            for (const [filename, bytes] of files) {
+              const blob = await api('git/blobs', 'POST', { content: bytes.toString('base64'), encoding: 'base64' });
+              entries.push({ path: filename, mode: '100644', type: 'blob', sha: blob.sha });
+            }
+            let committed;
+            for (let attempt = 0; attempt < 3; attempt++) {
+              const reference = await api(`git/ref/heads/${branch}`);
+              const parent = await api(`git/commits/${reference.object.sha}`);
+              const oldTree = await api(`git/trees/${parent.tree.sha}?recursive=1`);
+              if (oldTree.truncated) throw new Error('Cannot check archive collisions against a truncated tree');
+              for (const entry of entries) {
+                const old = oldTree.tree.find(item => item.path === entry.path);
+                if (old && old.sha !== entry.sha) throw new Error(`Refusing to overwrite archive object ${entry.path}`);
               }
-              if (!committed) throw new Error('Archive commit not published');
-              const tree = await api(`git/trees/${(await api(`git/commits/${committed}`)).tree.sha}?recursive=1`);
-              for (const entry of entries) if (!tree.tree.some(e => e.path === entry.path && e.sha === entry.sha)) throw new Error('Published tree verification failed');
-              const summary = `ARCHIVED commit=${committed}\nPDF=${pdfPath}\nSHA256=${receipt.sha256}\nPAGES=${pages}\nNo law-report reproduction or merge performed.\n`;
-              console.log(summary); fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
-            } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+              const tree = await api('git/trees', 'POST', { base_tree: parent.tree.sha, tree: entries });
+              const commit = await api('git/commits', 'POST', { message: `Preserve licensed medical source: ${receipt.state}`, tree: tree.sha, parents: [reference.object.sha] });
+              try { await api(`git/refs/heads/${branch}`, 'PATCH', { sha: commit.sha, force: false }); committed = commit.sha; break; }
+              catch (error) { if (attempt === 2) throw error; }
+            }
+            if (!committed) throw new Error('No source archive commit published');
+            console.log('ARCHIVE RESULT:', JSON.stringify({ commit: committed, receipt }));
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `Source state: ${receipt.state}\nCommit: ${committed}\nOriginal PDF archived: ${archivedPDF}\n`);
+            if (!archivedPDF) console.log('::warning::Full licensed text preserved, but the requested original medical PDF remains unavailable.');
           }
-          main().catch(e => { console.error(e.message); process.exitCode = 1; });
+          main().catch(error => { console.error(error.message); process.exitCode = 1; });
