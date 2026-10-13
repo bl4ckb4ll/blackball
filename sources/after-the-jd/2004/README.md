@@ -4,6 +4,8 @@
 
 **Blackball annotations:** [Detailed notes on every numbered section, the front matter, methods appendix, and sponsors](section-notes.md).
 
+**Paired reading:** [Medical-school social origins: full main-article notes and table audit](../../medical-student-socioeconomic-diversity/2022/README.md) · [Both studies, inherited support, wealth and years lost before security](../../professional-inheritance/README.md).
+
 ## Citation and exact locator
 
 Ronit Dinovitzer, Bryant G. Garth, Richard Sander, Joyce Sterling, and Gita Z. Wilder, *After the JD: First Results of a National Study of Legal Careers*. NALP Foundation for Law Career Research and Education / American Bar Foundation, 2004. 96 PDF pages.
@@ -46,6 +48,8 @@ The notes distinguish **source facts**, **mathematical consequences**, **hypothe
 
 ## Cross-links
 
+- [Both annotated studies and the lifetime-security question](../../professional-inheritance/README.md)
+- [Medical-school parental income, methods, figure, table and sensitivity analysis](../../medical-student-socioeconomic-diversity/2022/README.md)
 - [The originating professional-class inheritance question](../../../llm/questions/professional-class-career-inheritance.md)
 - [Family career insurance](../../../llm/questions/family-career-insurance-and-intellectual-defection.md)
 - [Education-to-work accountability](../../../WHERE-ARE-THE-STUDENTS-JOBS.md)
