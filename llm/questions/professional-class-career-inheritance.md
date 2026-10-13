@@ -39,6 +39,8 @@ Source, full open-access article: https://pmc.ncbi.nlm.nih.gov/articles/PMC89247
 
 ### Law — direct family/occupational-background evidence
 
+[Detailed After the JD dossier](../../sources/after-the-jd/2004/README.md): complete publisher-hosted PDF link, exact page locator, and [original annotations on all twelve sections, methods, and institutional context](../../sources/after-the-jd/2004/section-notes.md). The PDF binary is not mirrored; redistribution permission has not been established.
+
 Dinovitzer et al., *After the JD: First Results of a National Study of Legal Careers* (NALP Foundation / American Bar Foundation, **2004**), Section 2, printed **p. 20**, report that among sampled newly admitted U.S. lawyers:
 
 - **69%** had fathers who were managers or professionals (the report compares this with **20%** of the general workforce);
