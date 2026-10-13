@@ -13,21 +13,27 @@ Arman A. Shahriar, Vikram V. Puram, Jonathan M. Miller, Varun Sagi, Lorenzo Adol
 
 The study concerns **matriculating US allopathic medical students in 2017–2019 who supplied parental-income information**. It is not a study of all medical applicants, all physicians, physician-parent succession, or current physician wealth. Publication year, cohort years and retrieval date must remain distinct.
 
-## Rights and archival state
+## Rights and actual archival state
 
-The article's own **Article Information → Open Access** statement explicitly assigns **CC BY**, © 2022 Shahriar AA et al. This is affirmative redistribution permission, unlike the separate *After the JD* report. [Publisher license terms](https://jamanetwork.com/pages/cc-by-license-permissions). The general website footer is not the article-specific license.
+The article's own **Article Information → Open Access** statement explicitly assigns **CC BY**, © 2022 Shahriar AA et al. Its original XML also contains a CC BY 4.0 license reference and the article-specific permission. [Publisher license terms](https://jamanetwork.com/pages/cc-by-license-permissions). The general website footer is not the article-specific license.
 
-The deterministic acquisition workflow is `.github/workflows/archive-medical-diversity.yml`. Its destination is:
+**The complete NLM article inventory was archived on October 12, 2026, America/Detroit (October 13 at 02:47 UTC).** Original filenames and bytes are preserved under `texts/medical-student-socioeconomic-diversity/2022/`:
 
-`texts/medical-student-socioeconomic-diversity/2022/shahriar-et-al-2022.pdf`
+| Preserved source object | Repository copy |
+| --- | --- |
+| Main article, XML with structured tables and references | [PMC8924719.1.xml](../../../texts/medical-student-socioeconomic-diversity/2022/PMC8924719.1.xml) |
+| Main article, NLM plain-text rendering | [PMC8924719.1.txt](../../../texts/medical-student-socioeconomic-diversity/2022/PMC8924719.1.txt) |
+| Original figure | [jamanetwopen-e222621-g001.jpg](../../../texts/medical-student-socioeconomic-diversity/2022/jamanetwopen-e222621-g001.jpg) |
+| Supplemental methods PDF — **not the main article PDF** | [jamanetwopen-e222621-s001.pdf](../../../texts/medical-student-socioeconomic-diversity/2022/jamanetwopen-e222621-s001.pdf) |
+| NLM article-version metadata | [PMC8924719.1.json](../../../texts/medical-student-socioeconomic-diversity/2022/PMC8924719.1.json) |
+| Exact URLs, byte counts, SHA-256 hashes, license evidence and archive run | [archive-receipt.json](../../../texts/medical-student-socioeconomic-diversity/2022/archive-receipt.json) |
+| Attribution, format distinctions and snapshot notice | [ATTRIBUTION.md](../../../texts/medical-student-socioeconomic-diversity/2022/ATTRIBUTION.md) |
 
-Its machine-readable proof is:
+**The original five-page main-article PDF has not been archived.** Publisher retrieval failed, and the inspected NLM inventory contains the supplemental PDF but no main-article PDF. Do not rename the supplement to imply otherwise. XML, text, a generated reading copy or an acquisition workflow must not be described as the original publisher PDF.
 
-`texts/medical-student-socioeconomic-diversity/2022/archive-receipt.json`
+The receipt state is `ARTICLE_XML_TEXT_FIGURE_AND_SUPPLEMENT_ARCHIVED`; it explicitly records `original_main_pdf_archived: false`. The source inventory was retrieved from NLM's documented post-August-2026 distribution. The archive is an unchanged, dated source snapshot, not an endorsement by the authors or NLM and not a promise that it reflects future corrections. Earlier failed acquisition runs remain identified in the receipt.
 
-**An acquisition request is not an archived file.** Treat the original PDF as present only when the binary and an `ARCHIVED` receipt actually exist at the same repository revision. The receipt records the exact URL, UTC retrieval time, byte count, SHA-256, five-page extent, source identity checks, license evidence and acquisition run. The PDF must remain unchanged, with attribution beside it. A reconstructed PDF or the HTML article must not be relabeled as the publisher PDF.
-
-At this dossier's initial writing, the publisher HTML, rendered figure, rendered table, and licensing statement have been inspected. PDF download and supplemental-method retrieval were attempted; access was unreliable. The separate acquisition receipt, when produced, establishes the stronger binary-preservation claim. This note does not claim a local microdata reanalysis, independent acceptance, or a reviewed supplemental PDF.
+The publisher HTML, rendered figure, rendered table, and licensing statement were inspected for these annotations. **The supplemental PDF is preserved but its methods review is still outstanding.** The corresponding section of the notes describes the initial retrieval gap and the questions to resolve; successful preservation does not itself answer them. No microdata reanalysis or independent acceptance is claimed.
 
 ## Reading index
 
@@ -58,6 +64,8 @@ The entry points below follow the publisher's actual sections and distinct sourc
 The article's Results report **50.5%** from the highest-income quintile. Its displayed counts yield **(7,302 + 8,061) ÷ 30,373 = 50.5811%**, which rounds to 50.6% at one decimal place. The reported component percentages, 24.0% and 26.5%, add to 50.5%. Preserve the published result and the separate count-based recomputation; do not silently change one into the other or claim the authors confirmed an explanation.
 
 The **6.1%** lowest-quintile figure is 1,844 of the 30,373 included respondents. It is not an admission probability for a low-income applicant. The paper reports **46.4% coverage of all matriculants**, distinct from both the questionnaire response rate and the parental-income item-completion rate.
+
+An initial transcription in Blackball's table-footnote commentary gave the 2018 80th-percentile cutoff incorrectly. It has been corrected to the source's **$126,603**. This was a Blackball transcription error, not a claimed error in the study.
 
 ## Relationship to Blackball
 
