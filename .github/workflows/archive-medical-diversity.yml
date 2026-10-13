@@ -1,0 +1,144 @@
+name: Archive the CC-BY medical-diversity source
+
+on:
+  push:
+    branches: [notes/professional-class-fast-track-20261012]
+    paths: [.github/workflows/archive-medical-diversity.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive-medical-diversity-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    if: github.repository == 'bl4ckb4ll/blackball' && github.ref == 'refs/heads/notes/professional-class-fast-track-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Acquire, verify and commit only the licensed article
+        shell: node {0}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          'use strict';
+          const fs = require('node:fs');
+          const os = require('node:os');
+          const path = require('node:path');
+          const crypto = require('node:crypto');
+          const { execFileSync, spawnSync } = require('node:child_process');
+          const repository = process.env.GITHUB_REPOSITORY;
+          const branch = process.env.GITHUB_REF_NAME;
+          const folder = 'texts/medical-student-socioeconomic-diversity/2022';
+          const pdfPath = `${folder}/shahriar-et-al-2022.pdf`;
+          const recordPath = `${folder}/archive-receipt.json`;
+          const doi = '10.1001/jamanetworkopen.2022.2621';
+          const articleURL = 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2790107';
+          const candidates = [
+            'https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2790107/shahriar_2022_ld_220027_1646767800.58479.pdf',
+            'https://pmc.ncbi.nlm.nih.gov/articles/PMC8924719/pdf/jamanetwopen-e222621.pdf',
+            'https://europepmc.org/articles/PMC8924719?pdf=render'
+          ];
+          async function remote(url) {
+            const r = await fetch(url, { signal: AbortSignal.timeout(90000), headers: { 'User-Agent': 'Blackball-source-preservation/1.0' } });
+            if (!r.ok) throw new Error(`HTTP ${r.status}`);
+            return r;
+          }
+          async function api(endpoint, method = 'GET', body) {
+            const r = await fetch(`https://api.github.com/repos/${repository}/${endpoint}`, {
+              method, signal: AbortSignal.timeout(60000),
+              headers: { Authorization: `Bearer ${process.env.GH_TOKEN}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' },
+              body: body === undefined ? undefined : JSON.stringify(body)
+            });
+            if (!r.ok) throw new Error(`GitHub ${method} ${endpoint}: HTTP ${r.status}`);
+            return r.json();
+          }
+          async function main() {
+            if (repository !== 'bl4ckb4ll/blackball' || branch !== 'notes/professional-class-fast-track-20261012') throw new Error('Unexpected destination');
+            const release = fs.readFileSync('/etc/os-release', 'utf8');
+            if (process.platform !== 'linux' || !/^ID=ubuntu$/m.test(release)) throw new Error('This acquisition path requires an observed Ubuntu runner');
+            const preflight = spawnSync('pdftotext', ['-v'], { encoding: 'utf8' });
+            if (preflight.error && preflight.error.code === 'ENOENT') {
+              execFileSync('sudo', ['apt-get', 'update', '-qq'], { stdio: 'inherit' });
+              execFileSync('sudo', ['apt-get', 'install', '-y', '--no-install-recommends', 'poppler-utils'], { stdio: 'inherit' });
+            } else if (preflight.status !== 0) throw new Error('Existing PDF reader failed its preflight');
+            const licensePage = await (await remote(articleURL)).text();
+            if (!licensePage.includes(doi) || !/CC-BY License|cc-by-license-permissions/.test(licensePage)) throw new Error('Affirmative article-specific CC-BY evidence unavailable');
+            const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'blackball-medical-'));
+            const attempts = [];
+            let selected;
+            try {
+              for (const url of candidates) {
+                try {
+                  const r = await remote(url);
+                  const bytes = Buffer.from(await r.arrayBuffer());
+                  if (bytes.length < 1000 || bytes.length > 20000000 || bytes.subarray(0, 5).toString() !== '%PDF-' || !bytes.subarray(-4096).includes(Buffer.from('%%EOF'))) throw new Error('Not a complete bounded PDF response');
+                  const local = path.join(tmp, 'source.pdf');
+                  fs.writeFileSync(local, bytes);
+                  const info = execFileSync('pdfinfo', [local], { encoding: 'utf8' });
+                  const text = execFileSync('pdftotext', ['-layout', local, '-'], { encoding: 'utf8', maxBuffer: 10000000 });
+                  const pages = Number((info.match(/^Pages:\s+(\d+)/m) || [])[1]);
+                  const compact = text.replace(/\s+/g, ' ');
+                  if (pages !== 5 || !compact.includes(doi) || !compact.includes('Socioeconomic Diversity of the Matriculating US Medical Student Body') || !/CC-BY|Creative Commons/.test(compact)) throw new Error('PDF identity, five-page extent or embedded license check failed');
+                  selected = { bytes, url, pages };
+                  attempts.push({ url, state: 'VERIFIED' });
+                  break;
+                } catch (e) { attempts.push({ url, state: 'FAILED', diagnostic: String(e.message) }); }
+              }
+              if (!selected) throw new Error(`Source acquisition failed: ${JSON.stringify(attempts)}`);
+              const receipt = {
+                schema: 'blackball-source-archive-v1', state: 'ARCHIVED',
+                title: 'Socioeconomic Diversity of the Matriculating US Medical Student Body by Race, Ethnicity, and Sex, 2017-2019',
+                authors: ['Arman A. Shahriar', 'Vikram V. Puram', 'Jonathan M. Miller', 'Varun Sagi', 'Lorenzo Adolfo Castañón-Gonzalez', 'Shailendra Prasad', 'Renée Crichlow'],
+                doi, publication_date: '2022-03-15', source_url: selected.url,
+                article_url: articleURL, license: 'CC-BY',
+                license_evidence: articleURL + '#article-info',
+                license_terms: 'https://jamanetwork.com/pages/cc-by-license-permissions',
+                copyright: '2022 Shahriar AA et al.',
+                changes_to_pdf: 'none', pdf_path: pdfPath, pages: selected.pages,
+                bytes: selected.bytes.length, sha256: crypto.createHash('sha256').update(selected.bytes).digest('hex'),
+                retrieved_at: new Date().toISOString(), attempts,
+                acquisition_workflow_commit: process.env.GITHUB_SHA,
+                acquisition_run: `https://github.com/${repository}/actions/runs/${process.env.GITHUB_RUN_ID}`,
+                checks: { signature: 'PASS', complete_pdf_reader: 'PASS', page_count: 'PASS', title: 'PASS', doi: 'PASS', article_license: 'PASS', embedded_license: 'PASS' },
+                evidence_boundary: 'PDF acquisition and identity verification, not an independent reanalysis or ai-ci acceptance. The supplemental PDF is not included. After the JD remains link-only.'
+              };
+              const attribution = '# Source attribution\n\nShahriar AA, Puram VV, Miller JM, Sagi V, Castañón-Gonzalez LA, Prasad S, Crichlow R. *Socioeconomic Diversity of the Matriculating US Medical Student Body by Race, Ethnicity, and Sex, 2017-2019*. JAMA Network Open. 2022;5(3):e222621.\n\nDOI: https://doi.org/' + doi + '\n\n© 2022 Shahriar AA et al. Distributed under CC BY, as stated in the article. Terms: https://jamanetwork.com/pages/cc-by-license-permissions . The archived PDF is unchanged. Blackball annotations are separate and are not endorsed by the authors. See archive-receipt.json for the exact source, date and SHA-256.\n\nNotes: ../../../sources/medical-student-socioeconomic-diversity/2022/README.md\n';
+              const entries = [];
+              for (const [filename, data] of [[pdfPath, selected.bytes], [recordPath, Buffer.from(JSON.stringify(receipt, null, 2) + '\n')], [`${folder}/ATTRIBUTION.md`, Buffer.from(attribution)]]) {
+                const blob = await api('git/blobs', 'POST', { content: data.toString('base64'), encoding: 'base64' });
+                entries.push({ path: filename, mode: '100644', type: 'blob', sha: blob.sha });
+              }
+              let committed;
+              for (let attempt = 0; attempt < 3; attempt++) {
+                const ref = await api(`git/ref/heads/${branch}`);
+                const parent = await api(`git/commits/${ref.object.sha}`);
+                const current = await api(`git/trees/${parent.tree.sha}?recursive=1`);
+                if (current.truncated) throw new Error('Cannot safely verify archive paths against a truncated tree');
+                for (const entry of entries) {
+                  const existing = current.tree.find(e => e.path === entry.path);
+                  if (existing && existing.sha !== entry.sha) throw new Error(`Refusing to overwrite an existing archive object: ${entry.path}`);
+                }
+                const tree = await api('git/trees', 'POST', { base_tree: parent.tree.sha, tree: entries });
+                const commit = await api('git/commits', 'POST', { message: 'Archive verified unchanged CC-BY medical-diversity PDF and provenance', tree: tree.sha, parents: [ref.object.sha] });
+                try {
+                  await api(`git/refs/heads/${branch}`, 'PATCH', { sha: commit.sha, force: false });
+                  committed = commit.sha;
+                  break;
+                } catch (e) {
+                  if (attempt === 2) throw e;
+                  console.log('Branch advanced; rebuilding on its current head without overwriting changes.');
+                }
+              }
+              if (!committed) throw new Error('Archive commit not published');
+              const committedTree = await api(`git/trees/${(await api(`git/commits/${committed}`)).tree.sha}?recursive=1`);
+              for (const entry of entries) if (!committedTree.tree.some(e => e.path === entry.path && e.sha === entry.sha)) throw new Error('Published tree verification failed');
+              const summary = `Archived licensed medical source. Commit: ${committed}\nPDF: ${pdfPath}\nSHA-256: ${receipt.sha256}\nPages: ${receipt.pages}\nNo law-report reproduction or merge was performed.\n`;
+              console.log(summary);
+              fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
+            } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+          }
+          main().catch(e => { console.error(e.message); process.exitCode = 1; });
