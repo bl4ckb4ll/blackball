@@ -59,4 +59,5 @@ For every program or degree:
 The corpus should make it harder for possibility language, prestige, seller self-congratulation, and compulsory optimism to stand in for a customer outcome.
 ## First-person receipts
 
+- [WCC automotive technician employment-conversion telephone report (2026-10-13)](../skilled%20trades/automotive%20technician/2026-10-13-wcc-employment-conversion.md) — reported response from the college, the program's employment-facing language, a historically weak outcome survey, and an explicit request for a current complete-cohort job-conversion rate.
 - [“Critical thinking” as performed book analysis](receipts/2026-09-21-critical-thinking-performed-analysis/receipt.txt) — a 2026-09-21 user-supplied social-media screenshot in which the speaker recalls being asked to write as though a newly encountered book had already been fully analyzed. Preserve as first-person testimony, not prevalence evidence.
