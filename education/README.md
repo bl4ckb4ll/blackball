@@ -14,6 +14,8 @@ It does not ask only whether education is culturally admirable or whether some g
 - [Retrospective regret and attention cost](retrospective-regret-and-attention-cost.md) — count long-run regret, lost trust, and time consumed by the transaction rather than allowing earnings alone to declare success.
 - [If you mean economic empowerment, put it in the contract](if-you-mean-economic-empowerment-put-it-in-the-contract.md) — separates cultural education from economic causation; converts strong empowerment language into outcome, population, denominator, counterfactual, conditions, and liability; uses the Go Blue Guarantee as a clean contrast between a bounded tuition guarantee and broader earnings language.
 - [When the seller controls the outcome story](seller-controls-the-outcome-story.md) — institutional reports, alumni selection, moving definitions of value, and the disappearance of retail, unrelated, and disappointing outcomes.
+- [Michael Young's *The Rise of the Meritocracy*](../books/michael-young-the-rise-of-the-meritocracy.md) — education as a sorting and class-reproduction institution; separate task-specific competence from credential-mediated social worth.
+- [Meritocracy, class closure, and AI opportunity](../llm/questions/meritocracy-class-closure-and-ai-opportunity.md) — evidence questions about first openings, accumulated opportunity, displaced work, and actual earnings.
 
 - [Obama's April 2012 college-investment speeches](../sources/barack-obama/2012-college-affordability/README.md) — White House primary records from Colorado and Iowa, with the UNC variant, emphasizing the Iowa individual lifetime-payoff assurance, the difference between group statistics and private returns, and the legislative context.
 
