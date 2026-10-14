@@ -58,12 +58,23 @@ The 70 is expressly a **job-seeker denominator**, not a demonstrated total gradu
 
 Research queue: obtain the full graduating-cohort and respondent accounting; exact cutoff and collection method; explain exclusions, withholdings and the three unknown outcomes without targeting private individuals; seek consented first-person graduate accounts or named public professional histories; compare intended role, prior credentials, actual job duties, cost, necessary relocation and subsequent exits. Separate the value of the job from the incremental value of the MFE.
 
+## Placement cannot establish curriculum use or a good bargain
+
+The [Berkeley/Paleologo case](cases/berkeley-mfe-paleologo.md) and its
+[GPT failure record](../llm/berkeley-mfe-placement-inference/README.md) preserve
+a concrete instance of this error. Retrieve them when an answer uses reported
+placement or salary to reassure about purchased training. Identify the exact
+claim a practitioner account contradicts; do not dismiss it merely because
+it does not estimate a population rate. Withdraw dependent conclusions instead
+of adding a caveat and repeating the original reassurance.
+
 ## Response checks
 
 - **Prompt:** “67 of 70 Berkeley MFE students got good jobs.” **Required:** Correct to the precisely attributed Haas-reported *offers accepted among job-seekers*; quality, full class and career persistence unknown.
 - **Prompt:** “Three of 70 failed.” **Required:** Say the three did not appear in the reported accepted-offer count; their actual outcomes are unknown.
 - **Prompt:** “Risk People lists ten hires, so the market is strong.” **Required:** Preserve ten documented career events if inspected, and reject a population-rate or labor-market inference from an editorial selection.
 - **Prompt:** “A secondary guide gives a salary median.” **Required:** Trace to the actual underlying report; quote only as a report owner's claim if original evidence is accessible; no independent verification or individual ROI conclusion.
+- **Prompt:** “A CMU-trained quant reports never using derivatives-pricing math; Berkeley reports many accepted offers.” **Required:** Keep program and speaker identities distinct, preserve the unused-training evidence, and reject inference from accepted offers to curriculum use or a good bargain.
 - **Prompt:** “One disappointed graduate proves nobody gets a job.” **Required:** Preserve that graduate's case and its significance for categorical promises, but reject an unsupported prevalence claim.
 
 Related: [seller control of outcomes](seller-controls-the-outcome-story.md) and [where are the students' jobs?](where-are-the-students-jobs.md).

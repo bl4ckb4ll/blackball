@@ -50,6 +50,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [Berkeley MFE placement-to-value inference failure](llm/berkeley-mfe-placement-inference/README.md) — source-linked correction of GPT reassurance, with the practitioner account and proposed response criteria.
+
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.

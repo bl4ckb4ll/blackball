@@ -6,6 +6,8 @@ It does not ask only whether education is culturally admirable or whether some g
 
 ## Core notes
 
+- [Berkeley MFE and Paleologo: what placement figures did not establish](cases/berkeley-mfe-paleologo.md) — original practitioner account, precise attribution, and withdrawal of the inference from offers to useful training or educational value.
+
 - [Occupational-outcome evidence: original observations first](occupational-outcome-evidence.md) — trace named career events, distinguish a school's reported counts from inspected careers, and reject unauditable placement-rate and salary-outcome inferences. Includes Berkeley MFE and Risk magazine cases.
 
 - [If not college, then what?](if-not-college-then-what/README.md) — source-by-source ledger of what employers, engineers, interview authors, quant practitioners, and AI/LLM practitioners tell people to learn and practice; records the advice independently of whether it produces employment.
