@@ -67,6 +67,10 @@ For each employer:
 
 The catalog is successful when it turns "large prestigious employer" into inspectable, dated institutional structure.
 
+## Layoff evidence
+
+[Primary SEC EDGAR and state WARN ingestion](layoffs/README.md) is a distinct evidence stream, designed to record filed workforce reductions directly and attach them to employer organizations only when the filing actually supports the join. Its source register and initial directly inspected Amazon Washington title fixture are present; automated parsing/polling remains unimplemented.
+
 ## Agent-systems and coding-agent organizations
 
 A thematic cross-employer map now tracks the organizational layers around coding agents and increasingly autonomous software work:
