@@ -19,7 +19,7 @@ The AI studies share case identifier **AMZ-2026-06-AI-CASE** in the organization
 | Selling Partner Services | **70** under namesake category | October affected-unit report | None linked to the same team | No employee headcount, no rate of layoff |
 | AGI | **8** under namesake category | July confirmed AGI reductions, reported Data Services and Information VP groups | None linked to same team | No engineer-only layoff count |
 | Prime Video/entertainment | **50** under broad entertainment category | January Prime subscription cuts are a **different** organization | June Prime Video Financial Systems sprint | Do not collapse Prime and Prime Video |
-| Washington, unknown units | No valid organizational join | WARN notices of 2,303 (Oct 2025); 2,198 (Jan 2026); 57 (July); 121 (Aug) affected roles | None assignable | Facility addresses and titles are not department IDs |
+| Washington, unknown units | No valid organizational join | WARN notices of 2,303 (Oct 2025); 2,198 (Jan 2026, original notice inspected, including 58 SDE I–III at SEA104); 57 (July); 121 (Aug) affected roles | None assignable | Facility addresses and titles are not department IDs |
 
 **Important:** advertised requisition counts are a date-stamped stock of vacancies, not a total workforce or the number of hires. Layoff notices describe affected positions, not necessarily people who ultimately separate (internal transfers can occur). A local WARN count may be a subset of a companywide reduction: **never add such a child count to its parent**. Separate notices must also not be summed without checking overlap and effective dates.
 
@@ -30,6 +30,14 @@ Amazon's [June 10, 2026 first-party engineering account](https://aws.amazon.com/
 - **AWS Bedrock inference engine:** **6 senior engineers, 76 days**, versus a **projected plan of 30 developers for 12–18 months**. It also reports approximately **20x normalized commit velocity**. This is an employer-reported project comparison, **not 24 engineers fired**, a controlled estimate of counterfactual staffing, or evidence about the particular Bedrock employees who received January notices.
 - **Prime Video Financial Systems:** **6 engineers**, a **10-day sprint** with **556 commits versus 96** in a comparison, and a revised **90-week to 24-week** project estimate. Prime Video Financial Systems is not Prime subscriptions.
 - **Amazon Stores engineering pilots:** among 50-plus observed teams, the 25 that adopted both new tools and practices were reported to have a median **4.5x normalized deployment velocity**; some exceeded 10x. Perfect Order Experience and Worldwide Grocery are cited separately. Deployment counts and document turnaround are not audited economic output, staffing, or feature-quality measures.
+
+## Original Washington primary filing: January 2026
+
+A [24-page Amazon WARN notice on the Washington ESD government host](https://fortress.wa.gov/esd/file/WARN/Public/DownloadFile.aspx?download=1&file=a6d82fc5-3b7e-4b5b-8f9b-de2d0800173e.pdf), dated January 29 and stamped received January 30, 2026, lists per-facility affected positions, 116 remote positions, expected separation dates beginning April 28, and job-title attachments. The per-site approximate counts plus 116 remote positions sum to **2,198 planned affected employees**. Original [SEA104 title rows](2026-01-30-wa-warn-sea104.tsv), manually inspected against PDF page 4: SDE I **14**, II **36**, III **8** = **58** at that Bellevue facility, of **134** affected positions at SEA104. This is a **verified local subset**, **not** a complete Washington software-engineer total, nor a completed-separations total.
+
+These first-hand government-filed figures supersede the earlier journalistic *source* for the January 2026 state-count row. Secondary accounts remain useful for department leads but are not required to know the filed event. The attachment names titles and facilities, **not** AWS/Stores business units or any AI cause.
+
+The cross-employer [original-filing ingestion contract](../../../employers/layoffs/README.md) records direct SEC EDGAR and separate state WARN acquisition routes. Its adapters and continuous polling are **planned, not running**.
 
 ### Documented cuts, with different evidence strengths
 
@@ -53,4 +61,4 @@ Amazon's [June 10, 2026 first-party engineering account](https://aws.amazon.com/
 
 ## Next specific acquisitions
 
-Obtain and check the original Washington attachments for **2026-01-30** and **2026-08-31**; record exact position titles and effective dates. Resolve AWS Bedrock/Redshift/ProServe and Stores engineering organizations in **posting bodies, not generic team tags**; retrieve another requisition snapshot to see actual additions/removals of stable job IDs. Neither disappearing ads nor new ads establish employment flows without corroboration.
+Finish title-by-title parsing and reconciliation of the inspected original Washington **2026-01-30** attachment; separately obtain and inspect the original **2026-08-31** attachment; record exact position titles and effective dates. Resolve AWS Bedrock/Redshift/ProServe and Stores engineering organizations in **posting bodies, not generic team tags**; retrieve another requisition snapshot to see actual additions/removals of stable job IDs. Neither disappearing ads nor new ads establish employment flows without corroboration.
