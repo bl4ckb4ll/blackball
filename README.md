@@ -33,6 +33,13 @@ Prefer:
 
 unless the question is specifically about the secondary author's interpretation.
 
+For **job placement and educational return**, apply the stricter
+[original-observation rule](education/occupational-outcome-evidence.md): an
+institution's report is evidence of its own claim, not independently inspected
+career outcomes. Named professional moves, employer records and first-person
+accounts retain their distinct evidentiary limits; do not infer population rates
+from selected observations.
+
 A credential, ranking, institutional label, or professional title carries only the evidentiary weight of the process it actually certifies. Do not silently substitute broad claims about intelligence, competence, employability, judgment, or authority.
 
 Blackball does not impose optimism as an evidentiary requirement. An encouraging possibility is not a usable path until openings, selection, costs, constraints, probability, actual work, and loss-bearing are made concrete. Accuracy forbids both false hope and unsupported hopelessness.
