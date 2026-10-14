@@ -47,6 +47,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
 - [Do wealth, credentials, and physics PhDs establish intelligence?](llm/questions/wealth-credentials-and-physics-phds.md) — tests specific conceptual errors, the “practical physicist” hiring story, and wealth-as-intelligence assumptions; requires original observations and counterexamples.
+- [Michael Young — *The Rise of the Meritocracy* (1958)](books/michael-young-the-rise-of-the-meritocracy.md) — source-graded record of the 1958 satire, Young's own retrospective warning, credential sorting, class reproduction, and the distinction between appointing for ability and reproducing an elite.
+- [Meritocracy, class closure, and AI opportunity](llm/questions/meritocracy-class-closure-and-ai-opportunity.md) — test whether disrupted implementation creates real first paid opportunities for outsiders or instead increases incumbents' advantages; layoffs alone are insufficient evidence.
 - [Truth before hope](TRUTH-BEFORE-HOPE.md)
 - [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
 - [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
