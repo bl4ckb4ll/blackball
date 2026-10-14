@@ -43,6 +43,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [NuclearPhynance: the prestige credential versus the desk's right to say no](llm/questions/nuclear-phynance-credentials-and-desk-hiring.md) — primary forum transcripts, applicant grade/school claims, desk-level hiring discretion, target-school access, self-reported student losses, counterexamples and a dated source ledger.
+
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
