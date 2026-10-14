@@ -100,3 +100,20 @@ Examples of why validation matters:
 ## Current evidence graph
 
 [`2026-09-16-public-evidence.md`](2026-09-16-public-evidence.md) contains the first explicit organization relationships extracted from inspected postings. Extend that file or replace it with a machine-readable graph as coverage grows, but keep relation types and source URLs attached to every edge.
+
+## October 2026: attach job losses and AI work to this organization map
+
+The [2026-10-14-labor-ai-org-signals.tsv](2026-10-14-labor-ai-org-signals.tsv) adds **sourced observations** to named organizational nodes. Its event IDs resolve to [../labor-change/2026-10-14-events.tsv](../labor-change/2026-10-14-events.tsv); [the comparison and source audit](../labor-change/README.md) explains all counts, uncertainty and the June AI-development studies.
+
+**Additional relationship kinds** (none imply a formal reporting edge):
+
+- **affected_team_report** — firsthand journalistic reporting of affected internal teams, not proof of the number or eventual departure of workers in that team.
+- **confirmed_unit_layoff** — company-confirmed cut at a named parent organization, without an occupation-specific count.
+- **title_level_reduction_without_unit** — WARN title and geographical evidence that **must remain unattached to a department** absent a better source.
+- **self_reported_ai_workflow_case** — employer-published AI engineering throughput/plan comparison; cannot be read as a layoff notice or proven labor displacement.
+
+The new evidence distinguishes **AWS/Bedrock, AWS/Redshift, AWS/ProServe; Stores/retail engineering, Stores/Selling Partner Services; AGI; and Prime Video Financial Systems**. It **does not** establish that the same Bedrock employees appeared in both January layoffs and the June six-engineer case study. The Jan. **Prime subscriptions** layoff unit is **not** June's **Prime Video Financial Systems** study.
+
+The September recruiting buckets stay frozen. In particular, **retail (70)** cannot be equated with companywide **Stores**; **selling-partner-services (70)** is a count of advertised requisitions, not staff; **amazon-artificial-general-intelligence (8)** likewise is not an AGI headcount. **AWS (1,224)** includes **904 team-sde-primary** entries, whose precise service attachments remain unresolved.
+
+Future work should narrow the original vacancy IDs using posting bodies and business-unit evidence, while keeping headcount notices, AI project estimates and advertised vacancies as **independent dimensions**. Add a layoffs observation to the map only when source and date can be preserved.
