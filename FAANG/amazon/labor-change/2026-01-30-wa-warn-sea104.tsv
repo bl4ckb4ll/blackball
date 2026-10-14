@@ -1,0 +1,4 @@
+event_id	facility_id	job_title_verbatim	planned_affected_positions	source_pdf_page_1_based	evidence_state	source_url
+AMZ-2026-01-WA	SEA104	Software Dev Engineer I	14	4	manually_verified_original_pdf	https://fortress.wa.gov/esd/file/WARN/Public/DownloadFile.aspx?download=1&file=a6d82fc5-3b7e-4b5b-8f9b-de2d0800173e.pdf
+AMZ-2026-01-WA	SEA104	Software Dev Engineer II	36	4	manually_verified_original_pdf	https://fortress.wa.gov/esd/file/WARN/Public/DownloadFile.aspx?download=1&file=a6d82fc5-3b7e-4b5b-8f9b-de2d0800173e.pdf
+AMZ-2026-01-WA	SEA104	Software Dev Engineer III	8	4	manually_verified_original_pdf	https://fortress.wa.gov/esd/file/WARN/Public/DownloadFile.aspx?download=1&file=a6d82fc5-3b7e-4b5b-8f9b-de2d0800173e.pdf
