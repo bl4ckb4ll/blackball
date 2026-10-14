@@ -6,6 +6,8 @@
 
 The question is not merely whether a teenager thinks being a lawyer brings income or social standing. What does a lawyer's *successful work* accomplish for the client, and what does it mean for people on the other side? Corporate restructuring offers a way to investigate with court-filed pleadings, confirmed plans, lawyer-retention and fee applications, creditor claims and actual payment records.
 
+**Tell prospective law students now.** The intended audience includes young people, approximately 19–27, who are not bankruptcy-law insiders. Do not delay basic occupational disclosure until a study proves how many students know it. [Read the direct pre-law disclosure](../../Erin%20Brockovich/before-law-school-what-successful-lawyers-do.md): who hires the lawyer, what they are paid to obtain, the consequences of a win, and what the underlying orders show. Research into existing student knowledge is a separate optional question.
+
 One October 14, 2026 X screenshot supplied in conversation shows a post attributed to Moe Tkacik asserting that operators use Chapter 11 proceedings in Houston to wipe out small landowners. The screenshot shows only a truncated post, not the full post, identified cases, or its research records. Treat it as an **attributable allegation and investigation lead**, not as independently established proof. It was responding to a separate claim about wealth conspicuously enjoyed by Pennsylvania residents in gas-drilling areas; the screenshot is not sufficient to establish the speaker's whole argument or any individual resident's finances.
 
 ### Necessary distinctions
@@ -79,7 +81,7 @@ The public **“lawyer = respectable well-paid career”** story does not answer
 2. Follow plan classifications to allowed claim, court order, disbursement records, and later suits or settlements. Distinguish **no check, reduced check, delayed check, preserved claim, and fully satisfied payment**.
 3. Recover professional retention agreements, interim/final fee requests, objections and fee allowance/disbursements; compare **law firm pay** to recovery for individual small creditors, without mixing denominators.
 4. Expand sample across Chapter 11 venues, operators, debtor and creditor counsel; do not select only cases confirming the hypothesis.
-5. Identify which legal tasks are most financially rewarded and whether incoming law students actually understand them. Seek original recruiting brochures and first-person accounts, prospective-student expectations, graduate practice descriptions, and longitudinal employment rather than salary aggregates alone.
+5. Investigate which legal tasks are most financially rewarded. Seek original recruiting brochures and first-person accounts, graduate practice descriptions and longitudinal employment rather than salary aggregates alone. Separately study how much prospective students understand, **without making that measurement a condition for publishing clear descriptions of the work**.
 6. Locate and preserve the **complete original Moe Tkacik post and any underlying case references**. Only a truncated screenshot has been provided here. Check the political and factual context of the “Cadillacs” claim separately.
 
 ### Source handling
