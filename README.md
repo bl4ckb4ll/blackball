@@ -43,6 +43,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [Job-advertisement keywords and actual work](llm/questions/job-advertisement-keywords-and-education.md) — a 2026-10-15 applicant-facing recruiter-message receipt, with source limits, tests the invalid jump from “communication” in a job advertisement to effective university training and employment.
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
