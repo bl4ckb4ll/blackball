@@ -1,0 +1,54 @@
+# Adecco mobile service-technician message: job-advertisement receipt
+
+Capture received: **2026-10-15**, from a job seeker's Indeed conversation screenshots.
+Source type: **user-supplied screenshots of a recruiter message and attached job-opportunity card**. This is a direct observation of what an applicant was shown, not an independent verification of the vacancy, employer, recruiter, or work.
+Source owner as displayed: Adecco Staffing / its recruiting intermediary. The private-message correspondent's name and contact address are intentionally omitted from this public transcript.
+
+## What is visible
+
+The message describes a **direct-hire** first-shift technician position in the **Ann Arbor/Detroit area**, Monday–Friday with occasional Saturdays. Compensation is described as **“paying competitively, based on experience”**, without a number.
+
+The attached card is headed **“Service Technician”** and labeled **“Adecco Finance and Accounting”**. Its opening describes an unidentified **“premier mobile mechanic service company”** needing a full-time mobile technician.
+
+The message says the technician will repair and maintain **trash compactors, recycle balers, truck docks, and other material-handling equipment**. It calls for strong skills in **electrical controls and hydraulics**, plus some knowledge and experience in **structural welding**.
+
+In the visible requirements near the bottom of the card:
+
+> Exceptional communication and customer service skills are necessary, as you operate in the public eye without the buffer of a traditional service desk.
+
+A **good driving record** is also requested. Visible benefits include health/vision/dental insurance with an advertised 75% premium coverage upon hire, paid time off, an advertised “25% 401K Match” after one year, an employee stock ownership program after one year, and uniforms/boot allowance. The full job-card text is **not visible** across the supplied captures; do not infer that these excerpts exhaust its terms.
+
+## Observations distinguished from inferences
+
+1. **Observed:** A card labeled “Finance and Accounting” describes mechanical/electrical/hydraulic service work. **Not established:** that an accounting firm employs the technician, or whether Indeed, an Adecco posting system, or a human selected the label.
+2. **Observed:** The actual hiring company's identity and a numeric wage are absent **from the displayed portions**. **Not established:** that they were unavailable elsewhere in the complete listing or on request.
+3. **Observed:** The same outreach uses an explicit *communication skills* criterion while giving only vague pay and employer information and showing a mismatched card label. **Not established:** that the recruiter is unqualified, the message was automated, or that actual workplace communication is unimportant.
+4. **Observed:** Tasks and several technical skill areas are named. **Not established:** actual daily work, required proficiency, welding frequency, training offered, compensation, safety practices, travel radius, or the worker's eventual experience.
+
+## Source integrity
+
+The original screenshot binaries were supplied in the 2026-10-15 conversation, but **have not been committed to this repository**. The capture filenames below refer to received attachments, **not repository paths**. Preserve this acquisition gap instead of presenting the text as a separately archived original.
+
+Three **unique** JPEG-encoded 691×1536 screenshots (despite their `.png` names) were observed:
+
+| Received attachment filename | SHA-256 of received bytes | Portion |
+| --- | --- | --- |
+| `1000000518.png` | `12c6d7fd0bbc2a138e5806055959292d621f2f58d41ebf04dfda13130c3bedcb` | Message, duties, shift |
+| `Screenshot_20261015-082807.png` | `34914be00576fc08162c1523479c5e4e0866fa29f964ff83e07dc86f61c9dd1b` | Message ending and attached card opening |
+| `1000000516.png` | `2e49f9fac2f74e2a9ba6e4d443267e9e016768324860542f2482905377d9bc01` | Bottom of card and benefits |
+
+A fourth received file, `1000000517.png`, was byte-identical to `Screenshot_20261015-082807.png`. The UI shows 8:28 on the phone and a conversation date divider; it does **not** prove the exact original send date. No source URL, full original advertisement, job ID, or employer confirmation was provided.
+
+## Research use
+
+This is **one observed communication artifact**. It is evidence about the applicant-facing message, not a frequency estimate for staffing quality or a sample of hiring outcomes.
+
+The associated [question map](../../../llm/questions/job-advertisement-keywords-and-education.md) tests the inference from a job-ad keyword (“communication”) to a claimed university curriculum benefit. An advertisement is a statement made by an interested intermediary, not a direct observation of the work or its hiring requirements.
+
+## To retrieve
+
+- Original Indeed listing URL or job ID and full historical job description, if accessible
+- Whether the card's occupational category came from the platform or the recruiter
+- Identity and operational work of the hiring company
+- Numeric wage/range, work schedule including overtime and travel, training, on-call expectations, and safety requirements
+- Hiring-manager and worker testimony; candidate screening, job performance, and employment outcomes
