@@ -25,6 +25,31 @@ Do not use any of the following as substitutes for student value:
 
 These may be real achievements. They do not establish that a paying student received a relevant job, adequate income, useful knowledge, or a transaction worth its price.
 
+## The professor's opportunity is not the student's
+
+A professor educated at Harvard can teach serious mathematics at a Midwestern college. The mathematical content may be excellent. But the students have not thereby been admitted to Harvard or granted access to its campus recruiting, alumni networks, employer interviews, or reputation. **A teacher's biography is not a student's job opportunity.**
+
+The student's question is: **“What exactly are you going to do for me, Professor?”** The student contributes money, time, attention, and foregone alternatives. Instruction is a service to examine, not a favor for which gratitude substitutes for results. Keep the obligations of the individual teacher, department, university, and prospective employer distinct; do not assign a teacher a placement guarantee that nobody made.
+
+For an actual department, program, or instructor, investigate:
+
+1. **Delivered teaching:** What did students learn, make, prove, or practice? What individualized feedback and assessment did they receive? Do not assume that valuable education must result in a high-paying job.
+2. **Career representations:** What jobs were mentioned in advising, lectures, admissions material, or recruiting? Were they described as possible, probable, accessible to these students, or guaranteed? Preserve original dated statements and context.
+3. **Actual access:** Which named employers came to *this campus*, accepted applications from *these students*, interviewed them, offered work, or recruited through a verified referral? A prestigious professor's previous school or career is not evidence that a student receives the same access.
+4. **Concrete faculty actions:** Were students given introductions, recommendations, industry contacts, portfolios, research placements, or actual employer conversations? Record offers and refusals, not merely the existence of a relationship.
+5. **Student conversion:** Of the relevant entrants, how many received the specific advertised occupation, when, for what pay and work, and after what further expenses? Preserve missing respondents, non-completion, unrelated work, and students who left the path. Do not infer a rate from conspicuous winners.
+6. **Opportunity cost:** What wages, work experience, alternative training, savings, housing, or family responsibilities did the student forgo? Compare plausible options available to that student, not to the professor at an elite institution.
+7. **Accountability:** When actual recruiting access is absent, was that disclosed before students paid? Did the instructor or institution correct inflated claims rather than appealing to inspirational examples?
+
+### Falsifiers and evidence boundaries
+
+- A non-elite college may have strong recruiting or personally effective faculty referrals; record such examples when observed.
+- A professor can teach valuable material honestly without promising employment. Evaluate the teaching on what was actually offered, not on an invented job guarantee.
+- The fact that a prestigious employer visits one campus does not prove that every other campus is excluded. Check original employer eligibility rules, recruiting calendars, applications, interviews, and offers for named firms, schools, occupations, and years.
+- A professor's elite credential, a student's mathematical ability, recruiting access, and eventual career outcome are four separate variables. Do not deduce one from another.
+
+This audit extends [the contract test](if-you-mean-economic-empowerment-put-it-in-the-contract.md), [seller-controlled outcome reporting](seller-controls-the-outcome-story.md), and [meritocracy, class closure, and entry](../llm/questions/meritocracy-class-closure-and-ai-opportunity.md). The college-specific recruiting asymmetry is a **research hypothesis** until evidenced for the institutions and employers being compared.
+
 ## Separate employment from target-job conversion
 
 Record:
