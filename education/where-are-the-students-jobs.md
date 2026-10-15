@@ -50,6 +50,63 @@ For an actual department, program, or instructor, investigate:
 
 This audit extends [the contract test](if-you-mean-economic-empowerment-put-it-in-the-contract.md), [seller-controlled outcome reporting](seller-controls-the-outcome-story.md), and [meritocracy, class closure, and entry](../llm/questions/meritocracy-class-closure-and-ai-opportunity.md). The college-specific recruiting asymmetry is a **research hypothesis** until evidenced for the institutions and employers being compared.
 
+## Audit the career promise against the student cohort
+
+**Do not score a professional course by its professors' careers, its most exceptional graduates, or the highest salary among the jobs it invokes.** Those observations establish that some people succeeded, not that purchasing the course gives an ordinary entrant an appreciable chance of the same result.
+
+Preserve the *dated, pre-enrollment claim* and distinguish a genuine promise from a possibility, example, cultural justification, or explicitly uncertain aspiration. No invented employment guarantee is required to challenge a misleading implication.
+
+### Unit of measurement
+
+For a named institution, program, entry year, and claimed occupation, collect original records sufficient to distinguish:
+
+| Question | Measurable evidence | Inadequate proxy |
+| --- | --- | --- |
+| Who bought the opportunity? | All entrants, completers, noncompleters, and documented nonresponders | Survey respondents only, or selected alumni |
+| Who entered the claimed occupation? | Actual start dates, employers, tasks, compensation, hours, and persistence at 6, 12, and 24 months | Job postings, interviews, offers, or a headline placement percentage |
+| Whose career was showcased? | Separate records for professors, program staff, students, and graduates | A faculty member's subsequent industry hire counted as program effectiveness |
+| What was purchased? | Tuition, financing, foregone earnings and experience, relocation, extra degrees, unpaid training, and student-borne loss | Starting salary alone |
+| Was the education decisive? | Comparable people who did not buy this program; prior skills, employer screens, referrals, family resources, and counterexamples | Assuming every graduate hire was caused by the degree |
+| Did the outcome endure? | Subsequent employment, stability, repayment, career mobility, and graduates' own retrospective assessment | A first-destination photograph of the best cases |
+
+Define the **original-cohort conversion fraction** as verified members of the entrant cohort who actually begin the advertised occupation by the stated deadline, divided by *all entrants*. Show completion-conditional and job-seeker-conditional figures separately when useful; never substitute either silently for the original cohort. An offer is not a job start. A relevant-sounding job title is not proof of the actual work.
+
+When some entrants cannot be located, label them **unknown**, not unemployed or successful. Report the verified fraction as a lower bound and the fraction including all unknown cases as a missing-data upper bound. For pay, give distributions and coverage rather than projecting the salaries of respondents onto the missing cases.
+
+Estimate **incremental net value** relative to the feasible alternatives available to those students: earnings and work experience without the program, its money and time costs, selection effects, and the degree of confidence in the comparison. A correlation between holding a degree and a salary is not the causal return from buying the degree.
+
+### Check the employer-side capacity claim
+
+An exceptionally well-paid job exists; a program says mathematics or data science can lead to it; millions of students are told to study the subject for that reason. These are **three different claims**.
+
+For each employer invoked in a career pitch—whether a proprietary trading firm such as Jane Street or Citadel Securities, or a data-science employer—seek:
+
+- **Relevant annual hires**, not revenue, total current employees, or a famous recruit's compensation;
+- openings actually accessible to the intended student population, with credentials, work authorization, experience, location, internships, and recruiting-channel restrictions;
+- who was *actually* hired, by prior education and career stage, not merely whom the job advertisement nominally permits to apply;
+- applicant and unsuccessful-candidate denominators where available; referrals and elite campus pipelines are not a universally available hiring route;
+- expected churn, persistence, total viable openings across employers, and whether different programs are competing for the **same** finite positions.
+
+A firm's headcount is a **stock**; relevant hires during a year are a **flow**. Dividing all students by a firm's employees is a rough scale illustration, **not an individual student's probability of being hired**. Even a genuinely lucrative, technically sophisticated employer cannot justify an employment promise made to a vast audience without evidence of the audience's realistic access.
+
+This matters especially when Wall Street mathematics is used to justify *compulsory high-school mathematics*. The intellectual, civic, and practical reasons to teach mathematics may be debated independently. A tiny, highly selected occupational destination cannot by itself establish the economic benefit of requiring the same curriculum for everyone.
+
+### Accountability and correction
+
+Compare the institution's actual pre-enrollment language with these findings, then record its response to failures or missing evidence:
+
+1. Does it publish the complete denominator and unfavorable outcomes, including unrelated work and graduates who do not respond?
+2. Does it distinguish student placement from faculty advancement, publications, consulting, and the school's own financial success?
+3. Does it disclose the hiring bottleneck and selection criteria before collecting fees?
+4. Does it correct inflated language, change recruitment, reduce price, or offer a contractual remedy? If it promises nothing, does it say so plainly?
+5. Does it take responsibility for factual misrepresentations, or reclassify employment disappointment as a failure of attitude, networking, or further credential acquisition?
+
+A negative first-person case is admissible as a **case**, not a population rate. A favorable alumni profile is likewise a case, not a rate. Both belong in the source ledger; neither is allowed to erase the unobserved people. Distinguish original employer or institutional records, attributed testimony, inference, and unresolved questions.
+
+**Research status:** the numerical cohort and employer tests in this section are specified, not executed. No verified claim is made here about the prevalence of faculty-to-industry hiring, the success rate of data-science students, or the share of high-school students hired by trading firms.
+
+Related question maps: [data-science master's employability](../llm/questions/data-science-masters-employability.md), [quant-finance entry and exits](../llm/questions/quant-finance-entry-work-and-exit.md). Related methodology: [the economic-empowerment contract test](if-you-mean-economic-empowerment-put-it-in-the-contract.md).
+
 ## Separate employment from target-job conversion
 
 Record:
