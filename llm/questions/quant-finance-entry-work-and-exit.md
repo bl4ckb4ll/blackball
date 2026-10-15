@@ -2,6 +2,8 @@
 
 Recorded question: 2026-10-14. Status: **open empirical question**.
 
+For the measurable supply-versus-demand version, see [mathematics doctorates worldwide versus Jane Street's math-appropriate openings](mathematics-phds-versus-jane-street-roles.md). That source ledger corrects earlier U.S. counts and preserves the distinction between company-wide advertisements and verified hires.
+
 ## The distinction to protect
 
 **Getting a hedge-fund quantitative job ≠ doing particular quantitative work ≠ being valued at work ≠ receiving a good lifetime economic return ≠ wanting to stay.**
