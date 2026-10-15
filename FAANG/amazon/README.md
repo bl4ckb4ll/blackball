@@ -165,6 +165,10 @@ AWS cloud hardware → early-career hardware engineer
 
 Each has a different gate, geography, and cost of entry.
 
+## Idriç CLI re-verification
+
+The [2026-10-14 source-only audit](audits/2026-10-14-idric-cli.md) defines the required Cat Food → Flexible Pipes → AICI path for *new* Amazon.jobs observations. Its live re-census is **NOT_VERIFIED**; the dated 2026-09-16 baseline is not re-described as an October finding.
+
 ## Current files
 
 - [`org-tree/README.md`](org-tree/README.md) — organizational mapping rules and source hierarchy.
