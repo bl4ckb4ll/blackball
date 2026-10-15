@@ -47,6 +47,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
 - [Do wealth, credentials, and physics PhDs establish intelligence?](llm/questions/wealth-credentials-and-physics-phds.md) — tests specific conceptual errors, the “practical physicist” hiring story, and wealth-as-intelligence assumptions; requires original observations and counterexamples.
+- [Quant finance: entering, working, and leaving the hedge-fund pipeline](llm/questions/quant-finance-entry-work-and-exit.md) — distinguishes successful recruitment from real technical work, status, compensation, retention, and voluntary or involuntary exits; begins with Todd W. Schneider's documented career transition.
 - [Michael Young — *The Rise of the Meritocracy* (1958)](books/michael-young-the-rise-of-the-meritocracy.md) — source-graded record of the 1958 satire, Young's own retrospective warning, credential sorting, class reproduction, and the distinction between appointing for ability and reproducing an elite.
 - [Meritocracy, class closure, and AI opportunity](llm/questions/meritocracy-class-closure-and-ai-opportunity.md) — test whether disrupted implementation creates real first paid opportunities for outsiders or instead increases incumbents' advantages; layoffs alone are insufficient evidence.
 - [Truth before hope](TRUTH-BEFORE-HOPE.md)
@@ -115,6 +116,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Aisha Johnson](people/aisha-johnson.md) — doorwoman killed in the same January 2021 spree as Fan; kept separate from UChicago affiliation absent evidence.
 - [Anthony Faulkner Jr.](people/anthony-faulkner-jr.md) — 20-year-old killed in the same spree; sparse public biography preserved as a measurement problem rather than filled with assumptions.
 - [Matt Mahoney](people/matt-mahoney.md) — Florida Tech, PAQ/ZPAQ, *Data Compression Explained*, Ocarina Networks, Dell acquisition chronology, and explicit correction of the unsupported founder/personal-$1m story.
+- [Todd W. Schneider](people/todd-w-schneider.md) — six years in hedge-fund mortgage valuation per his 2014 RailsConf bio, the documented subsequent Rap Genius/software career, and Wedding Crunchers as a selected corpus of prestige language, without inventing his exit motive.
 
 ## Source dossiers
 
