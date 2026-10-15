@@ -14,7 +14,7 @@ Do not treat the selective recruitment pipeline as proof that the eventual job i
 
 The record establishes a change of publicly described occupation, **not** disappointment, failure, burnout, firing, financial independence, or dislike of finance. “Exited the hedge-fund career track” is a narrower claim than “rejected that career.”
 
-His *Wedding Crunchers* project offers a different line of inquiry: prestigious schools and Wall Street employers appear in an explicitly selective public announcement genre. Their appearance measures public presentation and editorial selection, not how recruits fared.
+His *Wedding Crunchers* project offers a different line of inquiry: prestigious schools and Wall Street employers appear in an explicitly selective public announcement genre. Their appearance measures public presentation and editorial selection, not how recruits fared. **More directly, his own [2013 introduction](https://toddwschneider.com/posts/when-harvard-met-sally-n-gram-analysis-of-the-new-york-times-weddings-section/) and [2014 follow-up](https://toddwschneider.com/posts/do-you-work-for-an-investment-bank-or-the-investment-bank/) openly mock elite status display.** This supports an attitude of skepticism or satirical distance toward that *display*, while the proposition **"he left finance because he disliked elite culture" remains a live, unconfirmed hypothesis**.
 
 ### Claims requiring distinct evidence
 
