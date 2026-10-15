@@ -18,6 +18,10 @@ Automotive service is a strong case because the occupation has all of the follow
 
 The conclusion should not be "trades bad" or "college good." The point is to audit the transaction with the same standards Blackball applies to college.
 
+## Employment entry is a separate question
+
+This file evaluates earnings **after** someone gets automotive technician work. The [WCC automotive-program telephone report and job-conversion case](../../skilled%20trades/automotive%20technician/2026-10-13-wcc-employment-conversion.md) asks the prior question: after paying for training, does the student actually get a paid technician job, by what route, and with what probability? Neither high-end wage anecdotes nor alleged shortages establish that conversion.
+
 ## The headline claim
 
 In November 2025 Ford CEO Jim Farley said Ford dealerships had about 5,000 mechanic openings and described the work as a "$120,000 a year job," while also saying it takes about five years to learn the work. Contemporary coverage traces the remarks to *Office Hours: Business Edition*.

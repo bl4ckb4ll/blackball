@@ -60,6 +60,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Education and occupational pathways
 
+- [Automotive technician training, hiring, and pay](skilled%20trades/automotive%20technician/README.md) — includes the WCC employment-conversion telephone report, current program claims, historical survey limits, and links to the separate technician-pay audit.
 - [Education accountability index](education/README.md) — front-loaded payment, back-loaded uncertainty, sunk-cost lock-in, lies versus incomplete information, actual job conversion, academic self-reproduction, and long-run regret.
 - [Erin Brockovich](Erin%20Brockovich/README.md) — the transition from a youth-facing image of law as justice to law-school competition, debt, recruiting, actual clients, calibrated threats, workplace injury defense, and class access to counsel.
 - [Main Street](Main%20Street/README.md) — ordinary repeatable employment options as the comparison baseline for expensive education, including pay, scheduling, physical cost, experience accumulation, and promotion.
