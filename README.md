@@ -43,6 +43,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [Finance social types: Arnade's client dinner](llm/chris-arnade-finance-social-types/README.md) — participant testimony about trained sales cheerfulness, a commercially valuable eccentric client, and the bank intermediary; separates social performance from credentials, hiring, wealth and intelligence.
+
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
