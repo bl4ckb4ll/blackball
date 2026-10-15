@@ -17,6 +17,8 @@ Schneider also built *Wedding Crunchers*, a tool for exploring prestige language
 | TS-03 | On **2013-09-04**, he published an analysis introducing Wedding Crunchers, then described as a searchable corpus of roughly **60,000** *New York Times* wedding announcements. His original article uses the plural **“we built.”** | [Schneider, “When Harvard Met Sally”](https://toddwschneider.com/posts/when-harvard-met-sally-n-gram-analysis-of-the-new-york-times-weddings-section/), self-authored contemporaneous account. | Do not assert sole authorship; do not treat a curated wedding section as a random workforce sample. Article and site may have been updated after first publication. |
 | TS-04 | On **2015-06-09**, Schneider referred to the time **“when I worked as a mortgage analyst”** while presenting open-source analysis of Fannie Mae and Freddie Mac loan-level data using PostgreSQL and R. | [Schneider, “Mortgages Are About Math”](https://toddwschneider.com/posts/mortgages-are-about-math-open-source-loan-level-analysis-of-fannie-and-freddie/), first-person technical article, with linked source code. | This corroborates mortgage-analysis experience; it does not establish hedge-fund investment performance or the nature of his employment departure. |
 | TS-05 | As inspected **2026-10-14**, his own biography describes him as working on the data-science/software-engineering continuum and **currently building Poppy Legal**; he lists Wedding Crunchers among his projects. | [Schneider, About + Contact](https://toddwschneider.com/about/), present-tense self-description. | No independent verification of current pay, employment contract, ownership interest, or active work arrangement. |
+| TS-06 | In **2013**, Schneider introduced Wedding Crunchers in explicitly sardonic terms: New York as a capital of status-consciousness; wedding announcements as evidence of what self-important people value; and Wall Street's period of peak decadence as a research target. | [Schneider, “When Harvard Met Sally,” 2013-09-04](https://toddwschneider.com/posts/when-harvard-met-sally-n-gram-analysis-of-the-new-york-times-weddings-section/), self-authored article, introduction and Wall Street section. | Clear evidence of a satirical, skeptical public voice about elite status display; not evidence about his private emotional state, class background, or hedge-fund exit motive. |
+| TS-07 | In **2014**, Schneider mocked the prestige distinction between **“the”** investment bank and **“an”** investment bank in wedding announcements, and the high status formerly accorded to failed Wall Street firms. | [Schneider, “Do you work for AN investment bank, or THE investment bank?,” 2014-07-15](https://toddwschneider.com/posts/do-you-work-for-an-investment-bank-or-the-investment-bank/), self-authored primary source. | Shows explicit mockery of prestige signaling, not proof that he categorically disliked all elite institutions or that it motivated his departure. |
 
 ## The separate Wedding Crunchers evidence
 
@@ -25,6 +27,16 @@ The [2013 write-up](https://toddwschneider.com/posts/when-harvard-met-sally-n-gr
 This is **primary evidence of Schneider's method and interpretation**, not direct evidence that all people from those schools held the jobs, that specific financial employers paid well, or that a typical graduate could obtain or keep such jobs. Potential confounders include who marries and receives a Times announcement, editorial selection, changing announcement formats, the text authors' choice to disclose information, geographic concentration, and institutional population sizes.
 
 *Wedding Crunchers* is therefore suited to research on **public credential display and changing status language**, with an explicit selection boundary. No attempt to infer population rates or causal labor-market changes is accepted from phrase counts alone.
+
+## Interpretation: did Schneider dislike elite culture?
+
+**Observed attitude, firsthand:** Schneider's 2013 *Wedding Crunchers* introduction was **not** a neutral description of elite society. His jokes about the self-importance of *New York Times* wedding couples, elite credentials, and Wall Street excess explicitly satirize status competition. The [2014 follow-up](https://toddwschneider.com/posts/do-you-work-for-an-investment-bank-or-the-investment-bank/) sharpens the point by turning even the article preceding a bank's name into a mock prestige ranking and contrasting prestige with the failures of respected banks. These are strong grounds for saying that **he publicly ridiculed elite status signaling**.
+
+**Plausible hypothesis, not established cause:** because Schneider had worked within hedge-fund finance before publishing this satire, he **may** have become alienated from elite finance culture and may have preferred a different kind of work. The observable career change and skeptical public writing make that worth investigating, **but they do not show whether he liked or disliked his former colleagues, his actual job, the firm's culture, or elite society generally**.
+
+**Alternative explanations remain open:** insider humor without hostility to finance; enjoyment of programming and public-data analysis; changing career opportunity, compensation or risk; or reasons unrelated to status culture. Neither a joke nor a subsequent job title selects among them.
+
+**Boundary:** public satire of prestige is a stronger and separately supported claim than an undocumented personal motivation for leaving a hedge fund. Do not erase the satire by treating him as merely an impartial analyst, and do not turn the satire into a biographical confession.
 
 ## What the case does and does not answer
 
@@ -37,7 +49,7 @@ The case is a counterexample only to the **narrative assumption** that entering 
 
 ## Research queue
 
-1. Find a first-person statement or interview addressing **why** Schneider moved from mortgage valuation to web engineering. Preserve his words and date; do not infer motive from the job sequence.
+1. Find a first-person statement or interview addressing **why** Schneider moved from mortgage valuation to web engineering, including whether he actually identified discomfort with elite workplace or status culture. Preserve his words and date; do not infer motive from the job sequence.
 2. Establish the hedge-fund employer and tenure from attributable firsthand or original organizational records, if publicly available.
 3. Search for original technical artifacts or firsthand job descriptions specifying the valuation work rather than conflating mortgage modeling with proprietary trading, market-making, or risk management.
 4. For comparison with other finance entrants, capture denominators: all recruits into a cohort, entry requirements, pay and hours, attrition, voluntary versus involuntary exits, subsequent earnings, and the outcomes of unsuccessful applicants.
