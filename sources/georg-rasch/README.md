@@ -14,6 +14,10 @@ Does mathematical calibration in Rasch psychometrics establish measurement of a 
 
 None follows merely from writing, fitting, or exponentiating an equation. Rasch's 1960 book includes intelligence and attainment tests, but use of Rasch analysis does **not** itself commit every application to one universal intelligence variable. Do not attribute that stronger claim without a source.
 
+## Adjacent methodological case: Bayesian estimates of undisclosed rape
+
+[Yu, Stasny & Li (2008)](yu-stasny-li-2008-survey-underreporting.md), *The Annals of Applied Statistics* 2(2):665–686, estimates rape cases **not disclosed to NCVS survey interviewers** from observed survey frequencies. The paper is **not about Rasch modeling**. It is included as a comparison of how an unobserved target depends on identification restrictions: crime-status/spouse-presence independence, restrictions on interview-related nondisclosure, and prior information from previous NCVS surveys. Their 86% estimated nondisclosure conditional on spouse presence uses an empirical-Bayes weight of 88% on historical prior information (p. 681). This does not describe the percentage of rape victims who failed to report to police. Distinguish model-identifiability, predictive validation, and actual events; investigate whether alternate assumptions fit the observations. The remembered Bayesian textbook remains unidentified.
+
 ## Which "Rasch journal"?
 
 | Venue | Documentary identity | Implications |
