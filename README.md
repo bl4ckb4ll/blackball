@@ -43,6 +43,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [Hunger amid abundance and access to paid work](llm/questions/hunger-amid-abundance-and-job-access.md) — a first-person account of buying a hungry stranger lunch leads to questions about ordinary assistance, material access, housing instability, job-entry gates, employer leverage, and the difference between distress and evidence.
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
