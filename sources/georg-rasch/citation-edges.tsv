@@ -1,0 +1,22 @@
+citing_id	cited_id	edge_type	verification	citing_source_url	note
+RMT-LINACRE-2010	RMT-MASTERS-1993	explicit_citation	full_html	https://www.rasch.org/rmt/rmt243f.htm	Cites RMT 7:2 p289 regarding item discrimination
+RMT-LINACRE-2010	RMT-BOND-1994	explicit_citation	full_html	https://www.rasch.org/rmt/rmt243f.htm	Cites RMT 8:1 p347 on factor analysis
+RMT-LINACRE-2010	RMT-SCHUMACKER-1996	explicit_citation	full_html	https://www.rasch.org/rmt/rmt243f.htm	Cites RMT 10:1 p479 on correcting correlations
+RMT-LINACRE-2010	RMT-COMMUNICATION-1996	explicit_citation	full_html	https://www.rasch.org/rmt/rmt243f.htm	Cites RMT 10:1 p482 on rating scales
+RMT-GARNER-2009	JAM-GARNER-ENGELHARD-2002	bibliography	full_html	https://www.rasch.org/rmt/rmt232a.htm	Eigenvector Rasch item estimation method
+RMT-GARNER-2009	BOOK-LANGVILLE-MEYER-2006	bibliography	full_html	https://www.rasch.org/rmt/rmt232a.htm	External PageRank mathematics text
+RMT-STENNER-STONE-BURDICK-2009	TPS-KYNGDON-2008A	bibliography	full_html	https://www.rasch.org/rmt/rmt232b.htm	Representational theory challenge
+RMT-STENNER-STONE-BURDICK-2009	TPS-KYNGDON-2008D	bibliography	full_html	https://www.rasch.org/rmt/rmt232b.htm	Kyngdon reply to commentators
+RMT-STENNER-STONE-BURDICK-2009	JAM-SMITH-2000	bibliography	full_html	https://www.rasch.org/rmt/rmt232b.htm	Fit analysis in latent trait measurement models
+FRONTIERS-STENNER-ETAL-2013	RMT-STENNER-STONE-BURDICK-2009	bibliography	full_html	https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00536/full	References own previous theoretical proposal
+FRONTIERS-STENNER-ETAL-2013	JAM-SMITH-2000	bibliography	full_html	https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00536/full	External journal named in bibliography
+FRONTIERS-STENNER-ETAL-2013	JAM-KARABATSOS-2001	bibliography	full_html	https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00536/full	Explicit discussion of estimation of persons and items from same responses
+FRONTIERS-STENNER-ETAL-2013	TPS-TRENDLER-2009	bibliography	full_html	https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00536/full	Addresses an outside measurement critique
+TPS-BORSBOOM-ZANDSCHOLTEN-2008	TPS-KYNGDON-2008A	explicit_response	publisher_abstract	https://journals.sagepub.com/doi/10.1177/0959354307086925	Response does not accept impossibility claim
+TPS-BORSBOOM-ZANDSCHOLTEN-2008	JAM-KARABATSOS-2001	bibliography	publisher_references	https://journals.sagepub.com/doi/10.1177/0959354307086925	Discussion of Rasch and conjoint measurement
+TPS-MICHELL-2008	TPS-KYNGDON-2008A	explicit_response	publisher_abstract	https://journals.sagepub.com/doi/10.1177/0959354307086926	Rasch paradox and quantitativeness
+TPS-KYNGDON-2008D	TPS-BORSBOOM-ZANDSCHOLTEN-2008	explicit_reply	publisher_abstract	https://journals.sagepub.com/doi/10.1177/0959354307086927	Named reply to Borsboom and Zand Scholten
+TPS-KYNGDON-2008D	TPS-MICHELL-2008	explicit_reply	publisher_abstract	https://journals.sagepub.com/doi/10.1177/0959354307086927	Named reply to Michell
+TPS-SIJTSMA-EMONS-2013	TPS-HUMPHRY-2013	explicit_rejoinder	publisher_title	https://journals.sagepub.com/doi/10.1177/0959354313503724	Rejoinder to Humphry named in title
+TPS-MICHELL-2014	TPS-HUMPHRY-2013	explicit_response	publisher_title	https://journals.sagepub.com/doi/10.1177/0959354313517524	Response to Humphry named in title
+TPS-MICHELL-2014	TPS-SIJTSMA-2012	explicit_response	publisher_title	https://journals.sagepub.com/doi/10.1177/0959354313517524	Response to Sijtsma named in title
