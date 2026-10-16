@@ -13,6 +13,7 @@ Keep these separate:
 - **Book contents:** what a book covers, not proof that any school assigns it.
 - **First-person judgment:** a reader's or student's experience, not a general estimate of educational quality.
 - **Educational, occupational, and social value:** separate questions, not conclusions supplied by course names or salaries.
+- **Practicality for whom, and under what conditions?** A concrete technique can be readily executable in a particular finance task without being usable by every reader. Check whether a person has assets, access to capital, eligibility for credit, a job applying the material, or a financial decision in which that technique matters; do not assume those opportunities are available. Conceptual clarity, technical applicability, access to act on the knowledge, personal economic benefit, and social value are distinct observations.
 
 ## Published curriculum record 1 — Michigan Ross BBA, 2025–26
 
@@ -60,7 +61,9 @@ The table is a compact transcription of course codes and subjects, not a substit
 - **Reader testimony, 2026-10-16:** The project owner remembers this book as *very practical and easy to understand*.
 - **Syllabus status:** **Suggested reading for this research syllabus**, **not** evidence that Ross, or any other named institution, assigned this book.
 
-This is a positive case worth retaining: an accessible presentation of calculations with concrete financial applications. Whether these skills are required in particular jobs, produce a wage premium, or make the activity socially beneficial requires independent evidence.
+This is a positive case worth retaining for **clear mathematical exposition and concrete applications**. But “practical” must be qualified. Bond duration and convexity can be directly useful to someone pricing securities or managing an investment portfolio; they may have little immediate practical use to someone without assets to manage or work in which those calculations arise. The mathematics of mortgages similarly has a different practical meaning for people who can obtain a mortgage and people excluded from that market. Understanding an exclusion or a product can still be informative; that does not make access or a profitable action available. Whether the knowledge improves employment or earnings, or whether the supported economic activity benefits society, requires separate evidence.
+
+**Name disambiguation:** This book's author is **Robert Zipf**. [Zipf's law](https://xlinux.nist.gov/dads/HTML/zipfslaw.html) is named for **George Kingsley Zipf**, a different person (NIST Dictionary of Algorithms and Data Structures).
 
 ## First-person institutional observation
 
