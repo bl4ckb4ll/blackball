@@ -2,6 +2,8 @@
 
 **Status (2026-10-16):** First source-anchored reconnaissance, not a systematic census or a completed investigation of any named author's entire body of work. This branch deliberately precedes the proposed Georg Rasch / psychometric-method audit. It is a Blackball evidence corpus, not a verdict that everyone in academia is dishonest.
 
+**Additional matched cases (2026-10-16):** [Retraction Watch ↔ Blackball: statistical modeling, education, medical machine learning, financial replication, publishing economics and critic power](blackball-crosswalk-2026-10-16.md). This dossier separates retractions from technical disputes, contested investigations and publishing stings, and records what remains untested.
+
 ## Central question
 
 **How can a weak, invalid, invented, or commercially convenient claim be made to look like scientific knowledge, and why might it be rewarded before anyone checks whether it is true?**
