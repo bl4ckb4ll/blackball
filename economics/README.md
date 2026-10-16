@@ -10,6 +10,7 @@ This folder is not restricted to texts that would now be shelved in an economics
 
 ## Economic field reports
 
+- [An ordinary lunch — firsthand account, 2026-10-16](field-reports/ordinary-lunch-and-hunger-2026-10-16.md) — a bounded account of buying food for a stranger, the contrast between abundant food and access to it, and the narrator's shift from job-search desperation toward a forthcoming wage job; hypotheses are separated from observations.
 - [Minnesota Implement — small fabrication shop versus public economic reports, 2026](field-reports/minnesota-implement-2026/README.md) — a West Concord, Minnesota small-business account matched against six months of steel, freight, farm-equipment, weather, regional-manufacturing, and national economic data to study how an individual firm's experience can diverge from aggregate reports.
 
 ## Work, pay, and career claims
