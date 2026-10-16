@@ -25,6 +25,8 @@ None follows merely from writing, fitting, or exponentiating an equation. Rasch'
 
 The RMT archive itself shows that it is an intertwined scholarly/professional community: for example volume 34:1 (2021) lists *R Statistics Rasch Packages: A Survey*, SIG announcements, a JAM publication list, and workshops; volume 38:3 (2026) contains a research article on nonparametric person-response functions, a book-translation announcement, an award, and SIG announcements. These are **content categories**, not a measured fraction of vacuous papers.
 
+A separate [2025–2026 sample of JAM accepted-paper abstracts](JAM-current-sample.md) records six more examples, including a personality-factor analysis using only item wording and no respondents. Its authors themselves raise the possibility that factor structure reflects linguistic practice instead of an underlying psychological reality. These are publisher abstracts, **not** full-paper audits.
+
 ## Close-reading sample: article by article
 
 Evidence grade **full HTML** means the available journal/article text was inspected; **abstract or bibliographic** means no claim of full-paper audit.
@@ -72,7 +74,7 @@ Metadata and abstracts establish the named reply links, not a completed adjudica
 
 ## What the first directed graph establishes, and what it does not
 
-The accompanying TSV is a **purposefully chosen seed graph**, not a complete bibliography or statistically representative sample. It distinguishes direct responses, same-outlet references, cross-outlet citations, and a 2013 paper's explicit bibliographic connections. A path from one article to another establishes a textual relationship, **not** an exchange of empty content, agreement, or collusion.
+The graph includes one deliberately external book node (BOOK-LANGVILLE-MEYER-2006) not included in the paper inventory; outside publications are retained rather than silently dropped. The accompanying TSV is a **purposefully chosen seed graph**, not a complete bibliography or statistically representative sample. It distinguishes direct responses, same-outlet references, cross-outlet citations, and a 2013 paper's explicit bibliographic connections. A path from one article to another establishes a textual relationship, **not** an exchange of empty content, agreement, or collusion.
 
 To test "these papers only cite one another": enumerate **all research-content articles** for fixed publication years, identify distinct authors and institutions, extract reference lists, label citations as internal/cross-journal/outside-psychometrics, normalize by field and date, annotate intellectual contribution and independent data, and audit a preregistered random sample **including negative evidence**. Without denominator or external controls, the claim remains untested.
 
