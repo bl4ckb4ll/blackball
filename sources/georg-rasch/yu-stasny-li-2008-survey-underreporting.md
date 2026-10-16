@@ -1,5 +1,7 @@
 # Yu, Stasny & Li (2008) — survey nondisclosure and Bayesian identification
 
+Content note: Examines sexual violence and sensitive survey responses; no graphic descriptions.
+
 Status: **original paper inspected**, 2026-10-16. **Adjacent methodological case**, not a Rasch-model, IRT, or Rasch-journal paper. Criticism of identification does not imply that victimization or nondisclosure did not occur. The Bayesian methods **book** recalled in conversation remains unidentified; do not conflate it with this paper.
 
 ## Primary reference
@@ -58,5 +60,5 @@ The critical issue is **identification of unobserved events, not Bayesian notati
 
 - [Original 2008 article, author PDF](https://publichealth.lsuhsc.edu/faculty_pages/qyu/Research/Papers/YuStasnyLi.pdf), especially Tables 2, 9–11 and §3.
 - [Original arXiv record](https://arxiv.org/abs/0801.3442).
-- [National Research Council, (2014), chapter 8, on incidence and survey measurement](https://www.ncbi.nlm.nih.gov/books/NBK202274/): later contextual discussion of mode and privacy effects; **not** independent verification of the 86% figure.
+- [National Research Council (2014), chapter 8: survey measurement](https://www.ncbi.nlm.nih.gov/books/NBK202274/): later contextual discussion of mode and privacy effects; **not** independent verification of the 86% figure.
 - The exact remembered female-authored Bayesian **methods book** is an **unresolved bibliographic lead**. Keep searching; do not silently equate it with this journal article.
