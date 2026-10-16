@@ -61,6 +61,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 ## Education and occupational pathways
 
 - [Education accountability index](education/README.md) — front-loaded payment, back-loaded uncertainty, sunk-cost lock-in, lies versus incomplete information, actual job conversion, academic self-reproduction, and long-run regret.
+
+- [Business-school curricula, syllabi, and books](education/business-school-syllabi-and-curricula.md) — begin with official course requirements and verifiable technical reading, not assumptions that business education is inherently empty or inherently valuable.
 - [Erin Brockovich](Erin%20Brockovich/README.md) — the transition from a youth-facing image of law as justice to law-school competition, debt, recruiting, actual clients, calibrated threats, workplace injury defense, and class access to counsel.
 - [Main Street](Main%20Street/README.md) — ordinary repeatable employment options as the comparison baseline for expensive education, including pay, scheduling, physical cost, experience accumulation, and promotion.
 - [University of Michigan](University%20of%20Michigan/README.md) — institutional outcome claims and a southeast Michigan lead concerning psychology graduates working in retail under a manager with more applicable experience and less credential prestige.
