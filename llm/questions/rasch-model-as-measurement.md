@@ -10,6 +10,10 @@ One cannot resolve a question about whether a latent quantity is real by placing
 
 In particular, a score for a narrowly defined task is not automatically a measure of general intelligence. Do not portray Georg Rasch's framework or every use of the framework as a direct assertion that every kind of intelligence is one-dimensional. Identify who made which claim, for which task, and what evidence is offered.
 
+## Comparison outside psychometrics: Bayesian correction of survey nonresponse
+
+[Yu, Stasny & Li (2008)](../../sources/georg-rasch/yu-stasny-li-2008-survey-underreporting.md) estimates victimizations **not disclosed during NCVS interviews** by imposing assumptions about which interview conditions suppress reporting and about crime occurrence versus spouse presence. The paper identifies a substantial prior contribution to one key estimate. It is **not a Rasch paper**, and the existence of underreporting is not the issue: the transferable question is how far observations independently identify a latent quantity rather than a quantity defined through the chosen model. Check sensitivity and external validation before interpreting fitted values as measured truth.
+
 ## Six separable questions
 
 1. **Ontology**: Do empirical operations independently support a quantitative attribute, or does modeling merely assume its quantity and ordering?
