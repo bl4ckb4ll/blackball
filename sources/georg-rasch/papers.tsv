@@ -1,0 +1,25 @@
+id	year	venue	first_author	title	url	access_level	initial_class
+RMT-LINACRE-2009	2009	Rasch Measurement Transactions	Linacre	Unidimensional Models in a Multidimensional World	https://www.rasch.org/rmt/rmt232d.htm	full_html	advocacy_and_interpretation
+RMT-LINACRE-2010	2010	Rasch Measurement Transactions	Linacre	More Objections to the Rasch Model	https://www.rasch.org/rmt/rmt243f.htm	full_html	model_defense
+RMT-STENNER-STONE-BURDICK-2009	2009	Rasch Measurement Transactions	Stenner	The Concept of a Measurement Mechanism	https://www.rasch.org/rmt/rmt232b.htm	full_html	substantive_theory
+RMT-GARNER-2009	2009	Rasch Measurement Transactions	Garner	Google's PageRank Algorithm and the Rasch Measurement Model	https://www.rasch.org/rmt/rmt232a.htm	full_html	mathematical_analogy
+RMT-ROYAL-2010	2010	Rasch Measurement Transactions	Royal	How Skeptical are Magicians?	https://www.rasch.org/rmt/rmt243b.htm	full_html	short_application
+RMT-MASTERS-1993	1993	Rasch Measurement Transactions	Masters	Undesirable Item Discrimination	https://www.rasch.org/rmt/rmt72f.htm	full_html	model_diagnostics
+RMT-BOND-1994	1994	Rasch Measurement Transactions	Bond	Too Many Factors in Factor Analysis?	https://www.rasch.org/rmt/rmt81p.htm	full_html	methodology_debate
+RMT-SCHUMACKER-1996	1996	Rasch Measurement Transactions	Schumacker	Disattenuating Correlation Coefficients	https://www.rasch.org/rmt/rmt101g.htm	full_html	measurement_statistics
+RMT-COMMUNICATION-1996	1996	Rasch Measurement Transactions	unverified	Communication Validity and Rating Scales	https://www.rasch.org/rmt/rmt101k.htm	full_html	measurement_discussion
+JAM-KARABATSOS-2000	2000	Journal of Applied Measurement	Karabatsos	A critique of Rasch residual fit statistics	https://pubmed.ncbi.nlm.nih.gov/12029176/	abstract	method_criticism
+JAM-KARABATSOS-2001	2001	Journal of Applied Measurement	Karabatsos	The Rasch model additive conjoint measurement and new models of probabilistic measurement theory	https://journals.sagepub.com/doi/10.1177/0959354307086925	bibliography	theoretical
+JAM-GARNER-ENGELHARD-2002	2002	Journal of Applied Measurement	Garner	An Eigenvector Method for Estimating Item Parameters of the Dichotomous and Polytomous Rasch Models	https://www.rasch.org/rmt/rmt232a.htm	bibliography	method
+JAM-SMITH-2000	2000	Journal of Applied Measurement	Smith	Fit analysis in latent trait measurement models	https://www.rasch.org/rmt/rmt232b.htm	bibliography	method
+TPS-KYNGDON-2008A	2008	Theory & Psychology	Kyngdon	The Rasch Model from the Perspective of the Representational Theory of Measurement	https://journals.sagepub.com/doi/10.1177/0959354307086924	abstract_or_bibliography	foundations_criticism
+TPS-BORSBOOM-ZANDSCHOLTEN-2008	2008	Theory & Psychology	Borsboom	The Rasch Model and Conjoint Measurement Theory from the Perspective of Psychometrics	https://journals.sagepub.com/doi/10.1177/0959354307086925	publisher_abstract	debate_reply
+TPS-MICHELL-2008	2008	Theory & Psychology	Michell	Conjoint Measurement and the Rasch Paradox: A Response to Kyngdon	https://journals.sagepub.com/doi/10.1177/0959354307086926	publisher_abstract	debate_reply
+TPS-KYNGDON-2008D	2008	Theory & Psychology	Kyngdon	Conjoint Measurement Error and the Rasch Model: A Reply to Michell and Borsboom and Zand Scholten	https://journals.sagepub.com/doi/10.1177/0959354307086927	publisher_abstract	debate_rejoinder
+FRONTIERS-STENNER-ETAL-2013	2013	Frontiers in Psychology	Stenner	Causal Rasch models	https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00536/full	full_html	construct_mechanism
+TPS-TRENDLER-2009	2009	Theory & Psychology	Trendler	Measurement theory psychology and the revolution that cannot happen	https://doi.org/10.1177/0959354309341926	bibliography	foundations_criticism
+TPS-SIJTSMA-2012	2012	Theory & Psychology	Sijtsma	Psychological measurement between physics and statistics	https://journals.sagepub.com/doi/10.1177/0959354312454353	publisher_abstract	theory_criticism
+TPS-HUMPHRY-2013	2013	Theory & Psychology	Humphry	A middle path between abandoning measurement and measurement theory	https://journals.sagepub.com/doi/10.1177/0959354313499638	publisher_abstract	theory_reply
+TPS-SIJTSMA-EMONS-2013	2013	Theory & Psychology	Sijtsma	Separating models ideas and data to avoid a paradox: Rejoinder to Humphry	https://journals.sagepub.com/doi/10.1177/0959354313503724	publisher_title	theory_rejoinder
+TPS-MICHELL-2014	2014	Theory & Psychology	Michell	The Rasch paradox conjoint measurement and psychometrics: Response to Humphry and Sijtsma	https://journals.sagepub.com/doi/10.1177/0959354313517524	publisher_title	theory_reply
+PAID-TRENDLER-2022	2022	Personality and Individual Differences	Trendler	The incoherence of Rasch measurement	https://www.sciencedirect.com/science/article/abs/pii/S019188692100787X	publisher_abstract	foundations_criticism
