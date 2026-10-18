@@ -1,6 +1,6 @@
 # The Philosopher's Wife
 
-**Status: first-pass source investigation, 17 October 2026.** This is a branch-local research project and narrative essay within Blackball, not a verdict on intellectuals as a class.
+**Status: expanded primary-source investigation, 18 October 2026.** This is a branch-local research project and narrative essay within Blackball, not a verdict on intellectuals as a class.
 
 **Question:** What was it actually like to live with celebrated philosophers, scientists, mathematicians, and public intellectuals? What unpaid work, affection, freedom, intellectual opportunity, professional advancement, safety, and recognition were required or sacrificed in the household? Was the celebrated person also miserable, or only the people around them?
 
@@ -9,11 +9,18 @@ The name is deliberate, but **“wife” is not a universal category**: include 
 ## Read first
 
 - [The Philosopher's Wife — opening essay](essay.md) — documentary narrative, not invented dialogue or psychological diagnosis.
+- [The Missing Replies — second documentary essay](essay-ii.md) — Tolstaya's omitted letters, Jenny's secretarial work, Sagan's twenty seconds, Darwin's trust, Mill's pledge.
 - [Roger Penrose: Joan Wedge, Vanessa Thomas, Judith Daniels, and the sons](cases/roger-penrose.md) — biographer's interviews, the “muse” demand, damaged family relations; important limitations.
 - [Carl Sagan: Lynn Margulis, Linda Salzman, Ann Druyan](cases/carl-sagan.md) — housework and parenting, Margulis's own career, first-person descriptions, and contradictory experiences.
 - [Bertrand Russell: Alys Pearsall Smith and Dora Black](cases/bertrand-russell.md) — a philosopher of happiness, sexual freedom, and a bitter domestic record.
 - [Albert Einstein and Mileva Marić](cases/albert-einstein.md) — surviving correspondence and the 1914 conditions for living together.
-- [Claim and source ledger](claims.md) — retrieval-ready atomic claims and limits.
+- [Sofia Tolstaya](cases/sofia-tolstaya.md) — diaries, memoir, manuscript copying, and two-way letters absent from older editions.
+- [Jane Hawking](cases/jane-hawking.md) — first-person account of care and emotional isolation; 2026 biography review.
+- [Jenny Marx](cases/jenny-marx.md) — four dated primary-authored letters, editorial and financial work.
+- [Emma Darwin](cases/emma-darwin.md) — correspondence showing affection, scientific help and an unequal workload.
+- [Harriet Taylor Mill](cases/harriet-taylor-mill.md) — an intellectual partner with her own philosophy, and Mill's explicit 1851 marriage pledge.
+- [Source register: 47 documents / edition and access statuses](source-register.md) — letters, memoirs, interviews, archives and secondary reviews graded by provenance.
+- [Claim ledger](claims.md) — 47 atomic/source-linked claims, limits and proposed tests.
 
 ## Questions and variables
 
@@ -45,7 +52,18 @@ Blackball's ordering applies: original letters and contemporaneous records > fir
 - Dora Russell, *The Tamarisk Tree: My Quest for Liberty and Love* (1975 and later volumes); Bertrand Russell, *Autobiography*; Ray Monk's two-volume Russell biography. **Not yet read in full here.** Cross-check letters and custody file.
 - *The Collected Papers of Albert Einstein*, Vol. 8, especially the memorandum to Mileva Einstein-Marić, ca. 18 July 1914, and related letters; Walter Isaacson, *Einstein: His Life and Universe* (2007). **Primary document located in scholarly transcription, but the critical edition has not been independently checked page by page.**
 
-**Comparison queue:** John von Neumann; Leo Tolstoy and Sophia Tolstaya (diaries); Karl Marx and Jenny von Westphalen (letters); Richard Feynman (marriage biographies); Simone de Beauvoir and Jean-Paul Sartre (not a marital couple); accounts of scientists and philosophers with happy or cooperative marriages for countercases. *These are leads only, not allegations.*
+**Now opened:** Sofia Tolstaya, Jane Hawking, Jenny Marx, Emma Darwin and Harriet Taylor Mill. Source text inspected varies from scholarly primary editions and edited letters to catalogue descriptions. Follow the [register](source-register.md) and read status for each, rather than assuming the complete volumes have been examined.
+
+**Next cases:** John von Neumann and his spouses; Richard Feynman; Simone de Beauvoir and Jean-Paul Sartre (not a married couple); additional sustained and cooperative intellectual households. *These are research leads only, not allegations.*
+
+## Priority documentary acquisitions
+
+- **2017 paired Tolstoy/Tolstaya letters**, critical edition: publisher reports 644 Sofia letters absent from the older published husband-to-wife collection.
+- **Davidson's Sagan biography**, pp. 97, 140, 285, 287, 425–426: verify Margulis, Lynda Obst, Nick Sagan and Ann Druyan in original context, without upgrading allegations.
+- **Russell's 1934 sworn affidavit and Dora's responding record**: McMaster catalogues the former but does not publicly transcribe it.
+- **Jane Hawking's 1999 and revised memoir; Farmelo 2026**: compare testimony and the latest biographical access.
+- **Einstein critical correspondence**, and on-site Hans Albert papers (including a family-letters publication project and a catalogue entry for a 1939 protection request).
+- **Jenny Marx critical editions (MECW 39–41)**: compare German texts with edited English online transcriptions.
 
 ## Relation to Blackball
 
