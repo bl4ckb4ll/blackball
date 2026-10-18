@@ -37,4 +37,10 @@ His wife Joan, estranged wife Vanessa, Daniels, and children must not be treated
 2. Locate precise pages and note any direct evidence for each son's recollection, Penrose's actual words, and his response to allegations.
 3. Inspect the Daniels correspondence as quoted and described; distinguish academic mentoring, one-sided romance, demand for labor and retrospective interpretation.
 4. Trace Vanessa's PhD supervision/withdrawal and later career with sources **independent of** Penrose's recollections.
-5. Compare claims with Penrose's 1989 [AIP oral history](https://www.aip.org/history/q-a-patchen-barss-penrose) and contemporaneous family or institutional material where available.
+5. Compare claims with Penrose's 1989 [AIP oral history catalogue](https://history.aip.org/catalog/icos/34322.html) and contemporaneous family or institutional material where available.
+
+## Additional oral-history lead and access correction
+
+An **actual contemporary Penrose oral-history record** exists: [Alan Lightman interviewed Roger Penrose on 24 January 1989, American Institute of Physics catalogue](https://history.aip.org/catalog/icos/34322.html). The archive catalogue was located; the complete interview transcript has **not** been inspected. This is a different source from [Barss's first-person AIP interview in February 2026](https://www.aip.org/history/q-a-patchen-barss-penrose) about writing the biography. The earlier reading queue conflated the two; do not do that in future citations.
+
+The detailed [*Physics World* review](https://physicsworld.com/a/so-you-think-you-know-roger-penrose-be-prepared-to-be-shocked/) is **currently not fully accessible through the website** in this pass; its available search excerpt and the previously recovered review summary are **not equivalent to reading Barss's original family interviews**. All alleged aggression and motivations remain precisely attributed and await direct page inspection.
