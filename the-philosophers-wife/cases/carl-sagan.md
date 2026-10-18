@@ -37,3 +37,13 @@ Sagan married Ann Druyan in 1981; they remained married until he died in 1996. D
 3. Find Linda Salzman's first-person accounts and her documented original artistic work.
 4. Read Poundstone independently, especially interviews with partners and adult children.
 5. Avoid the narrative that a great man mistreats two “wrong” wives and becomes good when he meets the “right” one; record which person and period each source describes.
+
+## New excerpts to verify in Davidson's printed biography
+
+The [2022 reviewer of Davidson's biography](https://sheseeksnonfiction.blog/2022/06/05/carl-sagan-a-life-review/) reproduces several additional, specifically located passages. The source is **the later review of an interview in the book**, not firsthand access to Davidson's page or its recording:
+
+- **p. 285:** Lynda Obst reportedly recalled Sagan expecting Linda Salzman to cook and clean for him so that he could concentrate on science, despite Linda's desire for more than domestic work. This is Obst's characterization of Carl's expectation, **not** Linda's own independently recorded view here.
+- **p. 287:** Son **Nick Sagan** reportedly described Carl arguing with Linda over the ordering of toast and a breakfast shake to save approximately **twenty seconds per day**. The illuminating feature is the asymmetry: he used a calculation to optimize *her* service of him. Because the witness's statement reaches us through a biographer and a reviewer, check both the printed page and Nick's context before presenting dialogue in a story.
+- **pp. 425–426:** Ann Druyan acknowledged that Carl seldom performed domestic chores (cooking, making beds or folding towels), **but described the marriage as profoundly loving**. It would be false to infer from continuing unequal housework that Druyan secretly shared Linda or Lynn's assessment. Her account is a distinct first-person testimony reproduced at two removes.
+
+This sequence offers a sharper empirical comparison than saying that Sagan was sometimes “difficult”: different partners report different valuations of an apparently persistent division of domestic work. Distinguish household effort, subjective satisfaction, access to paid assistance, career loss and power in decision-making. **Critical next step** is to inspect Davidson pp. 97, 140, 285, 287 and 425–426 together; find Linda Salzman's *own* speech or archival materials before making claims about her unreported thoughts.
