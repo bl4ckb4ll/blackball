@@ -43,6 +43,8 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [The Philosopher's Wife](the-philosophers-wife/README.md) — source-graded inquiry into the intimate and domestic lives of celebrated intellectuals, starting with Penrose, Sagan, Russell and Einstein; includes a documentary opening essay and case/claim dossiers.
+
 - [What do people do in Manhattan's office towers?](llm/questions/what-do-people-do-in-office-towers.md) — building-by-building investigation of who is paid to do what, who benefits or loses, and whether the paid work creates value or harm; includes advertising, recruiters and a link to bankruptcy cases.
 - [Shorris, material poverty, and tutoring](education/shorris-poverty-tutoring-and-material-outcomes.md) — test whether cultural enrichment yields the cash, employment and security poor people actually need, and when tutoring recycles credential costs.
 
