@@ -42,3 +42,11 @@ Alys, Dora, and the children occupied different roles and were not interchangeab
 3. Check details of divorce litigation, custody and maintenance against documentary records; distinguish both spouses' accusations from findings.
 4. Map Dora's publications and political work during marriage and after; distinguish opportunity costs from freely chosen projects.
 5. Preserve the early happy years of the Dora marriage and the kind moments recalled by participants alongside the damage.
+
+## New archive: Russell's sworn version of the breakdown
+
+The [Bertrand Russell Archives Catalogue and Research System at McMaster, BRACERS 116247](https://bracers.mcmaster.ca/index.php/116247) identifies a **12 June 1934, 13-piece autobiographical affidavit by Russell** to the High Court of Justice, Chancery Division; **RA2 / class 761 / document 133999 / box 8.35**. This is much more concrete than another biography praising or condemning him, but **only the archival description and selected extracts have been inspected**; the catalogue explicitly says no full public transcription is available and to contact the archives for the original.
+
+The inventory describes Russell's account of Dora's extramarital relations, beginning with a 1924 incident learned about in 1926, and his own developing relationship with Patricia Spence. He stated that he held the household together partly for the children and Beacon Hill School, then left in April 1932. The catalogue also reproduces **his allegation** that in February 1934 Beacon Hill School was unsanitary. This is a statement made by **a party in an adversarial divorce case**, not an archival certification that Dora committed misconduct or ran a dirty school. The interested witness's framing can be compared to Dora's own notes, children's accounts and independent school records.
+
+Next targets: actual affidavit paragraphs, Dora's pleading/replies, education inspections of the school, legal fee and maintenance orders. [McMaster's Bertrand Russell collection finding aid](https://library.mcmaster.ca/finding-aid/br) mentions lawyer-held files with access restrictions; no restricted document should be represented as retrieved.
