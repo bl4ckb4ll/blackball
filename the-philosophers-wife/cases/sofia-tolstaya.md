@@ -32,3 +32,9 @@ A 1985 *Kirkus* review reports different numbers of pregnancies and surviving ch
 - Compare Leo's dated journals and his secretary Vladimir Chertkov's accounts to Sofia's entries. They are participants with interests, not independent judges.
 - Test whether her labor is described as both valued and assumed; separate grief over child deaths from harm caused by Leo's decisions.
 - Construct an account of **Sofia the writer and editor**, not a character invented to illuminate Leo.
+
+## New: the two-way correspondence that changes the archive (2017)
+
+Andrew Donskov's edited [*Tolstoy and Tolstaya: A Portrait of a Life in Letters*](https://www.jstor.org/stable/j.ctt1wbf841) (University of Ottawa Press, 2017; ISBN 978-0-7766-2472-3) identifies **840 letters Tolstoy sent to Sofia** and **644 that Sofia sent him**. The editors report that when Sofia assembled published editions of his letters in 1913 and 1915, she **omitted her own 644 replies**. Reading just the more familiar one-direction correspondence risks badly misunderstanding what the husband's remarks actually answered. The critical bilingual/English volume reconstructs the exchange, includes **eleven previously unpublished letters from Sofia** (pp. 311–338), and has a dated family chronology (pp. 347–394).
+
+**Access in this pass:** publisher/JSTOR description and detailed table of contents were inspected, **not the complete correspondence**. The volume groups years 1862–79 (pp. 1–80), 1880–88 (pp. 81–196), 1889–1910 (pp. 197–310). The editorial statement itself supports the archival-selection issue; do not claim to have verified the emotional content of particular letters. In fact, the editors explicitly describe times of joy as well as sadness. The next direct-read target is *paired* letters immediately surrounding the couple's conflicts over publication, property and separation, not a list of Leo's statements in isolation.
