@@ -43,6 +43,10 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [What do people do in Manhattan's office towers?](llm/questions/what-do-people-do-in-office-towers.md) — building-by-building investigation of who is paid to do what, who benefits or loses, and whether the paid work creates value or harm; includes advertising, recruiters and a link to bankruptcy cases.
+- [Shorris, material poverty, and tutoring](education/shorris-poverty-tutoring-and-material-outcomes.md) — test whether cultural enrichment yields the cash, employment and security poor people actually need, and when tutoring recycles credential costs.
+
+
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
