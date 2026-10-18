@@ -20,7 +20,7 @@ The name is deliberate, but **“wife” is not a universal category**: include 
 - [Emma Darwin](cases/emma-darwin.md) — correspondence showing affection, scientific help and an unequal workload.
 - [Harriet Taylor Mill](cases/harriet-taylor-mill.md) — an intellectual partner with her own philosophy, and Mill's explicit 1851 marriage pledge.
 - [Source register: 47 documents / edition and access statuses](source-register.md) — letters, memoirs, interviews, archives and secondary reviews graded by provenance.
-- [Claim ledger](claims.md) — 47 atomic/source-linked claims, limits and proposed tests.
+- [Claim ledger](claims.md) — 48 atomic/source-linked claims, limits and proposed tests.
 
 ## Questions and variables
 
