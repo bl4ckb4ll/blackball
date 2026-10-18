@@ -34,3 +34,13 @@ Marić and the children returned to Zurich in July 1914, and the couple divorced
 2. Assemble a chronology of Marić's own letters and work before 1903, during 1903–14, and after separation.
 3. Record each partner's contributions to earnings, care and scientific discussion only where evidence shows them.
 4. Compare the accounts of Marić's life written by historians with different positions on her scientific contribution, without assuming either camp determines the domestic evidence.
+
+## New archival witness: Hans Albert's family papers
+
+The [University of Iowa **Hans Albert Einstein Papers**, collection MsC 900, finding aid](https://www.lib.uiowa.edu/scua/msc/tomsc900/msc900/msc0900hanseinsteinpapers.html) is unusually detailed. **The papers themselves have not been read**: the finding aid says the collection is available only to **on-site readers**, with most listed correspondence in German.
+
+- **Box 1, folder 1:** letters between Hans Albert and his parents and other family members, including Albert's letters to his son and “Mama” writing from Zurich. The dated inventory can support a later chronology of parent-child contact, but not conclusions about those letters' emotional tenor before reading them.
+- **Box 1, folder 2c, and folders 3–4:** Frieda Einstein assembled an unpublished *Albert Einstein in His Letters to His Wife and Children*. Drafts, originals or copies, publishing agreements, and 1958–62 legal disputes over rights survive. This is a major **publication-selection problem**: surviving correspondence may differ from the better-known edited canon for legal and family reasons. The draft is not a published book or a source we have directly read.
+- **Box 1, folder 2b:** the inventory lists a **February 1939 typed letter from Albert Einstein to British authorities** requesting permission for **Mileva and Eduard** to enter Britain to escape Nazi persecution. If correctly described, this complicates a simple story in which Einstein only showed indifference to their welfare. **This is a catalogue description, not the letter, evidence that permission was granted, or proof of Albert's underlying motives.**
+
+The 1914 memorandum remains a strong primary-authored record of what Einstein demanded *then*. These later catalogue entries do not make the demands disappear. A faithful life account must be **chronological**, capable of showing cruel demands in 1914, later family contact and possibly protective actions in 1939, without forcing one timeless character label.
