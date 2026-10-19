@@ -81,6 +81,9 @@ Do not treat the modern university business school as the only conceivable form 
 The important question is not simply whether alternatives existed. It is **which interface controlled access to the jobs and status people wanted**.
 
 ## Sources already relevant in Blackball
+For the **published content of a concrete business degree**, see [Business-school curricula, syllabi, and books](../../education/business-school-syllabi-and-curricula.md). That ledger begins with the 2025–26 Michigan Ross BBA bulletin and Robert Zipf's *Fixed Income Mathematics* as separate evidence kinds. Neither a curriculum title nor a suggested book proves what a particular course teaches; assess actual syllabi and assignments before judging.
+
+
 
 ### David L. Kirp
 
