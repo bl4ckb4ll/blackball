@@ -62,6 +62,11 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Apprenticeship, entrepreneurship, and the null alternative](llm/questions/apprenticeship-entrepreneurship-and-the-null-alternative.md) — compares college, apprenticeship, wage employment, household/family enterprise, other entrepreneurship, mixed strategies, and doing nothing against the same accountability ledger.
 - [Engineering education, engineering work, and who gets the job](history/engineering-careers/README.md) — separates degree, technical ability, hiring, family resources, ownership, sponsorship, work allocation, and historical demand instead of treating “studied engineering → engineer” as a complete causal story.
 
+## Deconstruction and intellectual authority
+
+- [Deconstruction source reviews](culture/deconstruction/README.md) — arguments in their own words, omissions within narratives, and concrete checks on whether a critique changes the explanation.
+- [Gayatri Chakravorty Spivak — the 1984 *Post-modern Condition* debate](culture/deconstruction/gayatri-chakravorty-spivak-1984.md) — a transcript-based reading of her position beside Aronson's and Dunn's objections, separated from arguments about academic reputation.
+
 ## Education and occupational pathways
 
 - [Education accountability index](education/README.md) — front-loaded payment, back-loaded uncertainty, sunk-cost lock-in, lies versus incomplete information, actual job conversion, academic self-reproduction, and long-run regret.
