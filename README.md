@@ -43,9 +43,17 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 
 ## Current question surfaces
 
+- [What do people do in Manhattan's office towers?](llm/questions/what-do-people-do-in-office-towers.md) — building-by-building investigation of who is paid to do what, who benefits or loses, and whether the paid work creates value or harm; includes advertising, recruiters and a link to bankruptcy cases.
+- [Shorris, material poverty, and tutoring](education/shorris-poverty-tutoring-and-material-outcomes.md) — test whether cultural enrichment yields the cash, employment and security poor people actually need, and when tutoring recycles credential costs.
+
+
 - [Why are business schools bundled with universities and liberal arts?](llm/questions/business-school-university-bundle.md)
 - [What did “Sarah Lawrence girl” mean as a class type?](llm/questions/sarah-lawrence-girl-as-class-type.md)
 - [Beware moral polarity in chatbot framing](llm/questions/chatbot-moral-polarity.md) — records a 2026-09-24 GPT-5.6 Sol status-protective framing incident as a bounded observation and proposes paired-prompt tests that hold conduct and evidence fixed while varying actor status.
+- [Do wealth, credentials, and physics PhDs establish intelligence?](llm/questions/wealth-credentials-and-physics-phds.md) — tests specific conceptual errors, the “practical physicist” hiring story, and wealth-as-intelligence assumptions; requires original observations and counterexamples.
+- [Quant finance: entering, working, and leaving the hedge-fund pipeline](llm/questions/quant-finance-entry-work-and-exit.md) — distinguishes successful recruitment from real technical work, status, compensation, retention, and voluntary or involuntary exits; begins with Todd W. Schneider's documented career transition.
+- [Michael Young — *The Rise of the Meritocracy* (1958)](books/michael-young-the-rise-of-the-meritocracy.md) — source-graded record of the 1958 satire, Young's own retrospective warning, credential sorting, class reproduction, and the distinction between appointing for ability and reproducing an elite.
+- [Meritocracy, class closure, and AI opportunity](llm/questions/meritocracy-class-closure-and-ai-opportunity.md) — test whether disrupted implementation creates real first paid opportunities for outsiders or instead increases incumbents' advantages; layoffs alone are insufficient evidence.
 - [Truth before hope](TRUTH-BEFORE-HOPE.md)
 - [Where are the students’ jobs?](WHERE-ARE-THE-STUDENTS-JOBS.md)
 - [Professed values versus conduct](PROFESSED-VALUES-VERSUS-CONDUCT.md)
@@ -85,6 +93,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 ## People dossiers
 
 - [Carlo Natali](people/carlo-natali.md) — historian of ancient philosophy and major modern Aristotle biographer; source-critical reconstruction of Aristotle’s life and the Peripatos, with explicit guardrails against turning the Lyceum into a modern enrollment count.
+- [Alexandre Grothendieck](people/alexandre-grothendieck.md) — first-person account of fear, vanity, discovery, the heroic myth of science, and the boundary between mathematical beauty and status.
 - [Graciela Chichilnisky](people/graciela-chichilnisky.md) — catastrophic-risk decision theory, rare-event-sensitive probability, and stated limits of nonparametric econometrics under weak assumptions.
 - [Ariane Lambert-Mogiliansky](people/ariane-lambert-mogiliansky.md) — non-classical uncertainty, expected-utility representation beyond Boolean event algebras, and quantum-like models of context-dependent or indeterminate preferences.
 - [Avital Ronell](people/avital-ronell.md) — comparative literature / German at NYU; 2018 Title IX sexual-harassment finding, adviser-student power allegations, lawsuit record, and faculty-prestige controversy.
@@ -112,9 +121,11 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Aisha Johnson](people/aisha-johnson.md) — doorwoman killed in the same January 2021 spree as Fan; kept separate from UChicago affiliation absent evidence.
 - [Anthony Faulkner Jr.](people/anthony-faulkner-jr.md) — 20-year-old killed in the same spree; sparse public biography preserved as a measurement problem rather than filled with assumptions.
 - [Matt Mahoney](people/matt-mahoney.md) — Florida Tech, PAQ/ZPAQ, *Data Compression Explained*, Ocarina Networks, Dell acquisition chronology, and explicit correction of the unsupported founder/personal-$1m story.
+- [Todd W. Schneider](people/todd-w-schneider.md) — six years in hedge-fund mortgage valuation per his 2014 RailsConf bio, the documented subsequent Rap Genius/software career, and Wedding Crunchers as a selected corpus of prestige language, without inventing his exit motive.
 
 ## Source dossiers
 
+- [Alexandre Grothendieck — *Récoltes et Semailles*: anguish, vanity, and discovery](sources/alexandre-grothendieck/recoltes-et-semailles/README.md) — original French, Roy Lisker translation, 1986 preface context, exact quotation, competing interpretations, and Blackball evidence ledger.
 - [Jerome Karabel — *The Chosen*](books/jerome-karabel-the-chosen.md) — rights-safe source record for the 2005 history of admission and exclusion at Harvard, Yale, and Princeton, with lawful reading links, late-chapter retrieval targets, and a cross-link to the Ivy/MIT financial-aid antitrust record.
 - [*United States v. Brown University* — Ivy/MIT financial-aid antitrust case](sources/united-states-v-brown-university/README.md) — primary filings from DOJ and MIT, the 1992 district-court reasoning, the 1993 Third Circuit majority and dissent, the settlement record, and explicit guardrails against overstating what the appeal decided.
 - [Charles Booth — *Life and Labour of the People in London*](sources/charles-booth/life-and-labour-london/README.md) — late-Victorian London A–H poverty/class framework, original survey archive, and Booth's own inherited leather/shipping business position; contemporary control for Watson/Hatherley rather than projecting modern prices backward.
