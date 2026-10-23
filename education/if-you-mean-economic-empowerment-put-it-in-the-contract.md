@@ -44,6 +44,36 @@ This is not a demand that every uncertain forecast become a guarantee. It is a d
 
 If the institution will not accept liability for an outcome, the claim should be presented with the corresponding uncertainty.
 
+## "Signalling" is not a job: the employer-signature test
+
+An adviser can call a degree, portfolio, certificate, referral, or body of work a **signal**. That describes a possible interpretation by a hiring decision-maker. It does not identify a vacancy, establish that any employer will act on the signal, or produce wages.
+
+The job seeker's objection is not answered by repeating the theory:
+
+> "Does that mean someone will hire me even though what you're telling me is completely functionally useless? Let's see you write that into the contract, because I can't make this work on my own. You're just up there talking right now."
+
+Treat this as a demand for an obligation, not a request for a more encouraging explanation.
+
+Before recommending a signalling expenditure or presenting it as an employment strategy, ask:
+
+1. **Who will hire?** Name the legal employer, the position, the authorized hiring decision-maker, and a real paid opening. An adviser, university, or chatbot cannot promise a third party's decision.
+2. **What will the employer commit to?** Is there a written, signed offer or placement agreement? Specify minimum pay, hours, location, start deadline, duration if promised, and every condition. An interview, visibility, a positive impression, and a job are four different outcomes.
+3. **What happened to comparable job seekers?** Give the number who attempted the route and the number who obtained relevant paid work, the period and relevant constraints, and an appropriate comparison group. Do not substitute a success story, a recruiter anecdote, or increased application activity for hiring conversion.
+4. **What does the seller or adviser owe?** If the proposed signal costs tuition, certification fees, unpaid work, or months of effort, identify what the provider actually undertakes to deliver and any refund, reimbursement, placement service, or other remedy if it fails. State **none** when there is none.
+5. **Who carries failure?** Account for costs and foregone wages borne by the job seeker. Do not retrospectively assign all failure to insufficient networking, effort, or presentation when the advice supplied no verified route.
+
+### The clause someone would have to sign
+
+This is an example of the **kind of commitment** the employment claim would require, **not** an existing contract, job offer, or legal guarantee:
+
+> **Hiring commitment:** "[Legal name of employer], through [authorized signatory], commits to employ [named applicant] as [job title] at [workplace/location], starting by [date], at not less than [pay] for at least [hours per week], subject only to [enumerated conditions]. If the employer does not perform, [specified party] owes [specified remedy] under [specified procedure]."
+
+A school, platform, credential seller, or adviser may instead offer a *different* signed commitment about something it controls—teaching, assessment, introductions, a placement service, or a refund. Label that commitment accurately. It is **not** a hiring commitment unless an employer with authority has assumed the employment obligation.
+
+Without the employer's commitment, write **NO JOB PROMISED**. Without credible comparative outcome evidence, write **EMPLOYMENT BENEFIT UNVERIFIED**. Without a provider remedy, write **REMEDY: NONE**. These are separate findings: lack of a guarantee does not prove that the signal can never help, but a hypothetical signal is not an employment result or a demonstrated workable path.
+
+For LLM and other advice, the failure mode to catch is answering a request for paid work with "build your portfolio to signal competence" and stopping there. The response has named an activity for the applicant, not a buyer of their labor, an opening, a hiring decision, or anyone responsible for the result.
+
 ## Michigan's useful contrast: a guarantee that actually says what it guarantees
 
 The University of Michigan's **Go Blue Guarantee** is useful because it shows that the university knows how to state an enforceable-looking commitment precisely.
