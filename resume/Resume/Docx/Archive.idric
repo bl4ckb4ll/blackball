@@ -1,0 +1,209 @@
+module Resume.Docx.Archive
+
+import Data.Bits
+import Data.List
+import Data.List1
+import Data.Text
+import Resume.Utf8
+
+export
+record ZipEntry where
+  constructor CheckedEntry
+  entry_name : Text
+  entry_checksum : Bits32
+  expanded_size : Number
+  compressed_size : Number
+  local_offset : Number
+  compression_method : Number
+  entry_flags : Number
+  data_start : Number
+
+export
+zip_entry_name : ZipEntry → Text
+zip_entry_name = entry_name
+
+export
+zip_entry_size : ZipEntry → Number
+zip_entry_size = expanded_size
+
+little_endian_number : Number → List Bits8 → Number
+little_endian_number Z _ = 0
+little_endian_number (S remaining) [] = 0
+little_endian_number (S remaining) (value :: rest) =
+  cast value + 256 × little_endian_number remaining rest
+
+field_number : Number → Number → List Bits8 → Number
+field_number offset width = little_endian_number width . drop offset
+
+-- Checksums and Unix mode fields are 32-bit encodings, not domain counts.
+-- Avoid first constructing a potentially billion-sized whole-number value.
+little_endian_word : Number → List Bits8 → Bits32
+little_endian_word Z _ = 0
+little_endian_word (S remaining) [] = 0
+little_endian_word (S remaining) (value :: rest) =
+  cast value .|. (little_endian_word remaining rest `shiftL` 8)
+
+field_word : Number → List Bits8 → Bits32
+field_word offset = little_endian_word 4 . drop offset
+
+safe_entry_name : Text → Bool
+safe_entry_name name =
+  let pieces = forget (split (≟ '/') name)
+      filename = unpack name
+      safe_character = \character => isAlphaNum character || elem character ['/', '_', '-', '.']
+  in not (null filename) && length filename <= 240 &&
+     not (isPrefixOf "/" name) && not (isInfixOf "\\" name) &&
+     not (any (\piece => piece ≟ ".." || piece ≟ ".") pieces) &&
+     all (\character => ord character >= 32 && ord character < 127) filename &&
+     (name ≟ "[Content_Types].xml" || all safe_character filename)
+
+find_end_record : Number → Number → List Bits8 → Maybe (Number,List Bits8)
+find_end_record total_bytes position [] = Nothing
+find_end_record total_bytes position bytes@(_ :: rest) =
+  if take 4 bytes ≟ [80,75,5,6] && length bytes >= 22 &&
+     position + 22 + field_number 20 2 bytes ≟ total_bytes
+    then Just (position,bytes)
+    else find_end_record total_bytes (S position) rest
+
+parse_local_entry : List Bits8 → Number → ZipEntry → Either Text ZipEntry
+parse_local_entry original central_start entry =
+  let header = drop entry.local_offset original
+      name_size = field_number 26 2 header
+      extra_size = field_number 28 2 header
+      payload_start = entry.local_offset + 30 + name_size + extra_size
+      filename_bytes = take name_size (drop 30 header)
+  in if length header < 30 || not (take 4 header ≟ [80,75,3,4])
+       then Left "MalformedZipLocalHeader"
+     else if not (decode_document_utf8 filename_bytes ≟ Just entry.entry_name) ||
+             not (field_number 6 2 header ≟ entry.entry_flags) ||
+             not (field_number 8 2 header ≟ entry.compression_method)
+       then Left "ZipDirectoryLocalHeaderMismatch"
+     else if payload_start + entry.compressed_size > central_start
+       then Left "ZipPayloadOutOfBounds"
+     else if entry.compression_method ≟ 0 && not (entry.expanded_size ≟ entry.compressed_size)
+       then Left "MalformedStoredZipSize"
+     else if not (entry.entry_flags `mod` 16 >= 8) &&
+        (not (field_word 14 header ≟ entry.entry_checksum) ||
+         not (field_number 18 4 header ≟ entry.compressed_size) ||
+         not (field_number 22 4 header ≟ entry.expanded_size))
+       then Left "ZipDirectoryLocalHeaderMismatch"
+     else Right (record { data_start = payload_start } entry)
+
+parse_directory_entries : Number → Number → List Bits8 → List Bits8 → Either Text (List ZipEntry)
+parse_directory_entries Z central_start original [] = Right []
+parse_directory_entries Z central_start original _ = Left "ZipDirectorySizeMismatch"
+parse_directory_entries (S remaining) central_start original bytes =
+  if length bytes < 46 || not (take 4 bytes ≟ [80,75,1,2])
+    then Left "MalformedZipDirectory"
+  else do
+    let name_size = field_number 28 2 bytes
+    let record_size = 46 + name_size + field_number 30 2 bytes + field_number 32 2 bytes
+    let flags = field_number 8 2 bytes
+    let method = field_number 10 2 bytes
+    let expanded = field_number 24 4 bytes
+    let compressed = field_number 20 4 bytes
+    if record_size > length bytes then Left "MalformedZipDirectory"
+      else if flags `mod` 2 ≟ 1 then Left "EncryptedDocument"
+      else if (the Bits32 (cast flags)) .&. complement 0x080e > 0 then Left "UnsupportedZipFlags"
+      else if not (elem method [0,8]) then Left "UnsupportedZipCompression"
+      else if field_number 34 2 bytes > 0 then Left "UnsupportedMultipartZip"
+      else if expanded > 8388608 || compressed > 262144 then Left "DecompressedSizeLimit"
+      else if field_number 42 4 bytes >= central_start then Left "ZipPayloadOutOfBounds"
+      else if (field_word 38 bytes `shiftR` 28) ≟ 10
+        then Left "ZipSymlinkNotAllowed"
+      else do
+      Just name ← pure (decode_document_utf8 (take name_size (drop 46 bytes)))
+        | Nothing => Left "InvalidZipEntryName"
+      if not (safe_entry_name name) then Left "UnsafeZipEntryName" else do
+        local ← parse_local_entry original central_start
+          (CheckedEntry name (field_word 16 bytes) expanded compressed
+            (field_number 42 4 bytes) method flags 0)
+        remaining_entries ← parse_directory_entries remaining central_start original (drop record_size bytes)
+        pure (local :: remaining_entries)
+
+entries_do_not_overlap : List ZipEntry → Bool
+entries_do_not_overlap [] = True
+entries_do_not_overlap (first :: remaining) =
+  all (\second => first.data_start + first.compressed_size <= second.local_offset ||
+                  second.data_start + second.compressed_size <= first.local_offset) remaining &&
+  entries_do_not_overlap remaining
+
+check_directory_entries : List ZipEntry → Either Text (List ZipEntry)
+check_directory_entries entries =
+  let names = map entry_name entries
+  in if length (nub names) < length names then Left "DuplicateZipEntryName"
+     else if sum (map expanded_size entries) > 8388608 then Left "DecompressedSizeLimit"
+     else if not (entries_do_not_overlap entries) then Left "OverlappingZipEntries"
+     else if not (elem "word/document.xml" names && elem "[Content_Types].xml" names)
+       then Left "UnsupportedZipNotDocx"
+     else if any (\name => isInfixOf "vbaproject" (toLower name) ||
+                           isPrefixOf "word/embeddings/" (toLower name)) names
+       then Left "EmbeddedExecutionNotAllowed"
+     else Right entries
+
+export
+inspect_docx_zip_directory : List Bits8 → Either Text (List ZipEntry)
+inspect_docx_zip_directory bytes = do
+  if length bytes > 262144 then Left "InputSizeLimit" else do
+    Just (end_offset,end_record) ← pure (find_end_record (length bytes) 0 bytes)
+      | Nothing => Left "MalformedZipEndRecord"
+    let entry_count = field_number 10 2 end_record
+    let central_size = field_number 12 4 end_record
+    let central_start = field_number 16 4 end_record
+    if field_number 4 2 end_record > 0 || field_number 6 2 end_record > 0 ||
+       not (field_number 8 2 end_record ≟ entry_count)
+      then Left "UnsupportedMultipartZip"
+      else if entry_count ≟ 65535 || central_start ≟ 4294967295 || central_size ≟ 4294967295
+      then Left "UnsupportedZip64"
+      else if entry_count > 256 then Left "ZipEntryCountLimit"
+      else if not (central_start + central_size ≟ end_offset) then Left "ZipDirectoryOutOfBounds"
+      else do
+      entries ← parse_directory_entries entry_count central_start bytes
+                  (take central_size (drop central_start bytes))
+      check_directory_entries entries
+
+export
+entry_needs_anchor_sidecar : ZipEntry → Bool
+entry_needs_anchor_sidecar entry =
+  entry.entry_name ≟ "[Content_Types].xml" || isSuffixOf ".rels" entry.entry_name ||
+  (isPrefixOf "word/" entry.entry_name &&
+   any (flip isPrefixOf entry.entry_name)
+     ["word/document.xml","word/header","word/footer","word/footnotes.xml",
+      "word/endnotes.xml","word/comments.xml"] && isSuffixOf ".xml" entry.entry_name)
+
+export
+docx_sidecar_entries : List ZipEntry → Either Text (List ZipEntry)
+docx_sidecar_entries entries =
+  let selected = sortBy (\first,second => compare (part_order first) (part_order second))
+                        (filter entry_needs_anchor_sidecar entries)
+  in if length selected > 64 then Left "DocxPartCountLimit"
+     else if any (\entry => entry.expanded_size > 262144) selected
+       then Left "DocxPartSizeLimit"
+       else Right selected
+  where
+    part_order : ZipEntry → (Number,Text)
+    part_order entry =
+      let name = zip_entry_name entry
+          priority : Number = if name ≟ "word/document.xml" then 0
+                     else if isPrefixOf "word/header" name then 1
+                     else if isPrefixOf "word/footer" name then 2
+                     else if name ≟ "word/footnotes.xml" then 3
+                     else if name ≟ "word/endnotes.xml" then 4
+                     else if name ≟ "word/comments.xml" then 5 else 6
+      in (priority,name)
+
+crc32_bit_step : Number → Bits32 → Bits32
+crc32_bit_step Z value = value
+crc32_bit_step (S remaining) value =
+  crc32_bit_step remaining
+    (if value .&. 1 ≟ 1 then (value `shiftR` 1) `xor` 0xedb88320 else value `shiftR` 1)
+
+export
+zip_part_bytes_match : ZipEntry → List Bits8 → Bool
+zip_part_bytes_match entry bytes =
+  length bytes ≟ entry.expanded_size &&
+  crc32_source_bytes bytes ≟ entry.entry_checksum
+  where
+    crc32_source_bytes : List Bits8 → Bits32
+    crc32_source_bytes bytes = complement
+      (foldl (\checksum,byte => crc32_bit_step 8 (checksum `xor` cast byte)) 0xffffffff bytes)

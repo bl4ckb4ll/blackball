@@ -4,6 +4,9 @@ import Data.Buffer
 import Data.Text
 import Resume.Source
 import Resume.Dates
+import Resume.Docx.Archive
+import Resume.Docx.Decode
+import Resume.Utf8
 import System.File
 import System.File.Buffer
 
@@ -46,3 +49,36 @@ intake_plaintext_file path observation acquisition policy =
       received ← receive_document_bytes bytes (Acquisition acquisition observation) policy
       inspected ← inspect_received_document received
       extract_plaintext_document inspected
+
+read_docx_part_files : Text → Number → List ZipEntry → IO (Either Text (List DecodedPart))
+read_docx_part_files directory ordinal [] = pure (Right [])
+read_docx_part_files directory ordinal (entry :: remaining) = do
+  Right bytes ← read_bounded_source_bytes (directory ++ "/reader-part-" ++ show ordinal ++ ".xml")
+    | Left error => pure (Left error)
+  Right others ← read_docx_part_files directory (S ordinal) remaining
+    | Left error => pure (Left error)
+  pure (Right (ReaderPart (zip_entry_name entry) bytes :: others))
+
+export
+read_docx_bundle_parts : List Bits8 → Text → IO (Either Text (List DecodedPart))
+read_docx_bundle_parts bytes directory = do
+  Right entries ← pure (inspect_docx_zip_directory bytes >>= docx_sidecar_entries)
+    | Left error => pure (Left error)
+  read_docx_part_files directory 1 entries
+
+export
+intake_document_with_reader_files : Text → Text → Text → HandlingPolicy → Text →
+                                   IO (Either Text ValidatedDocument)
+intake_document_with_reader_files path observation acquisition policy reader_directory = do
+  Right bytes ← read_bounded_source_bytes path | Left error => pure (Left error)
+  Right received ← pure (receive_document_bytes bytes (Acquisition acquisition observation) policy)
+    | Left error => pure (Left error)
+  Right inspected ← pure (inspect_received_document received) | Left error => pure (Left error)
+  case inspected_format inspected of
+    Docx => do
+      Right parts ← read_docx_bundle_parts bytes reader_directory | Left error => pure (Left error)
+      Right model_bytes ← read_bounded_source_bytes (reader_directory ++ "/reader-model.json")
+        | Left error => pure (Left error)
+      Just model ← pure (decode_document_utf8 model_bytes) | Nothing => pure (Left "InvalidReaderUtf8")
+      pure (validate_docx_reader_output inspected parts model)
+    _ => pure (extract_plaintext_document inspected)

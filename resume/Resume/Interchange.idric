@@ -60,7 +60,7 @@ render_document_tsv : ValidatedDocument → Text
 render_document_tsv document =
   let source = validated_document_source document
       blocks = validated_layout_blocks document
-  in tsv_row ["validated-document-v1", source_document_digest source, "plaintext-scalars-v1"] ++
+  in tsv_row ["validated-document-v1", source_document_digest source, source_extraction_revision source] ++
      concat (map (\block => tsv_row ["block",anchor_location_text (layout_block_anchor block),
                                     layout_block_wording block]) blocks)
 

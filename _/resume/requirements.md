@@ -18,8 +18,10 @@ commands literally, survive a hostile filename and reject oversized input.
 
 Every output directory must be fresh. Test inputs and outputs are synthetic.
 No personal records or temporary reader output may be committed. The recipe
-does not exercise PDF, DOCX, OCR status, document-reader isolation, safe deletion,
-structured career-event extraction or independent ai-ci semantic acceptance.
+also exercises bounded Pandoc DOCX decoding, actual OOXML part/paragraph anchors,
+source-preserving review/reload, Unicode, tables, headers, academic footnotes,
+source/model disagreement and hostile/changed reader inputs. It does not exercise
+PDF/OCR outcomes, safe deletion, structured career-event extraction or independent ai-ci semantic acceptance.
 Those required job boundaries remain unfinished and prevent COMPLETE.
 
 Known recipe repair: Grease's ARGV splice was unchanged by the inherited

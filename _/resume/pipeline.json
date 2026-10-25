@@ -10,9 +10,9 @@
     "aici-style": {"required":true,"pattern":"^/[^\\n]+$"},
     "style-recipe": {"required":true,"pattern":"^/[^\\n]+$"}
   },
-  "required_stages": ["kitchen-prepared-plaintext-tests", "aici-source-style"],
+  "required_stages": ["kitchen-prepared-resume-tests", "aici-source-style"],
   "stages": [
-    {"name":"kitchen-prepared-plaintext-tests","kind":"command","cwd":".",
+    {"name":"kitchen-prepared-resume-tests","kind":"command","cwd":".",
      "argv":["{{grease}}","{{recipe}}","{{project}}","{{compiler}}","{{grease}}","{{evidence}}"]},
     {"name":"aici-source-style","kind":"command","cwd":".",
      "argv":["{{grease}}","{{style-recipe}}","{{project}}","{{aici-style}}"]}

@@ -10,6 +10,7 @@ var project = $1
 var compiler = $2
 var grease = $3
 var output = $4
+setglobal ENV.GREASE_BINARY = grease
 for path in "$project" "$compiler" "$grease" "$output" {
   var first_character = "$(printf '%s' "$path" | cut -c 1)"
   if ! test "$first_character" = / {
@@ -110,7 +111,9 @@ if "$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
 }
 rg --fixed-strings --quiet InputSizeLimit "$output/oversized.log"
 test ! -e "$output/oversized-output"
+"$grease" "$project/_/resume/docx-tests.grease" "$project" "$output/bin/resume-core" \
+  "$grease" "$output/docx" > "$output/docx-tests.log" 2>&1
 sha256sum "$output/bin/resume-core_app/resume-core.so" \
   "$output/bin/resume-tests_app/resume-tests.so" "$output/ordinary/source.bin" \
   "$output/ordinary/draft.tsv" "$output/reviewed/profile.tsv" > "$output/artifacts.sha256"
-echo 'PASS: bounded plaintext producer tests; PDF/DOCX and independent semantic acceptance remain unqualified'
+echo 'PASS: bounded plaintext and DOCX producer tests; PDF and independent semantic acceptance remain unqualified'

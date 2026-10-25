@@ -8,6 +8,15 @@ PASS	surrogate-utf8-rejected
 PASS	unicode-overflow-rejected
 PASS	truncated-utf8-rejected
 PASS	NUL-rejected
+PASS	xml-known-entity-decoded
+PASS	xml-external-entity-declaration-rejected
+PASS	xml-duplicate-attribute-rejected
+PASS	xml-unmatched-element-rejected
+PASS	xml-unsupported-encoding-rejected
+PASS	json-reader-model-version-rejected
+PASS	json-reader-output-byte-limit
+PASS	json-omitted-source-text-rejected
+PASS	json-fabricated-reader-text-rejected
 PASS	year-only-no-invented-month
 PASS	invalid-calendar-day-rejected
 PASS	valid-leap-day-accepted

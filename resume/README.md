@@ -1,8 +1,8 @@
 # Local résumé intake — partial implementation
 
 SUN BB-PARSE-RESUMES-01 is **PARTIAL**. The checked Idriç application executes
-plaintext intake, evidence-backed line drafts and explicit review/correction
-snapshots. PDF/DOCX decoding, structured career-event interpretation, safe managed
+plaintext and bounded DOCX intake, evidence-backed drafts and explicit review/correction
+snapshots. PDF decoding, structured career-event interpretation, safe managed
 deletion and independent semantic acceptance remain unfinished. Do not use this
 as an accepted production parser for personal documents.
 
@@ -33,8 +33,11 @@ grease /absolute/blackball/_/resume/run.grease /absolute/build/resume-core revie
 The output parent must exist and lie outside Git. Each output directory must
 be new. The wrapper rejects non-regular intake files, applies 20-second elapsed,
 10-second CPU, 768-MiB address-space, 8-MiB file and 64-descriptor limits. The
-core bounds source bytes and each derived text file at 256 KiB and rejects invalid UTF-8/NUL. These limits
-do not qualify an isolated PDF/DOCX reader. Use the wrapper: direct core calls
+core bounds source bytes and each derived text file at 256 KiB and rejects invalid UTF-8/NUL.
+DOCX adds a 256-entry ZIP limit, 8-MiB decompressed total, 64 selected XML parts,
+96-level XML depth, 4096 paragraphs and 16-MiB total stored output. Each actual
+reader/core child has the process limits above; trusted Grease orchestration
+has the whole-command elapsed limit. Use the wrapper: direct core calls
 are the lower-level interface and bypass its process limits and Git guard.
 
 The job recipe compiles and tests from absolute locations:
@@ -48,7 +51,17 @@ artifact digests are in [dependencies.tsv](../_/resume/dependencies.tsv) and
 [artifacts.tsv](../_/resume/artifacts.tsv). Install/provision the actual pinned
 distribution separately; this command does not silently download a compiler.
 The [pipeline specification](../_/resume/pipeline.json) is input to the existing
-Flexible Pipes runner. JSON is limited to that required external interface.
+Flexible Pipes runner. JSON appears only at required external interfaces:
+Flexible Pipes and Pandoc's actual document model.
+
+DOCX uses the pinned `/usr/bin/pandoc` 3.1.3+ds-2 executable in `--sandbox`
+mode and pinned `/usr/bin/unzip` for selected-entry stdout decompression.
+ZIP bounds and original-part checks precede Pandoc. Macros, embedded executable
+objects, entity declarations and non-hyperlink external-resource relationships
+are refused. No archive pathname is extracted, filter executed or resource
+fetched. PandocPure is the document IO boundary; no OS namespace is claimed.
+`GREASE_BINARY` may supply the verified Grease entrypoint when it is not in PATH.
+The preparation recipe sets that explicit entrypoint automatically.
 
 ## Evidence and review
 
@@ -59,11 +72,30 @@ parsing, owner review or independent verification. New files have mode 0600
 and directories 0700. There is no database. Keep real documents, filenames,
 records and review histories out of this repository and public logs/artifacts.
 
-Every line claim has a private-constructor source anchor. Plaintext offsets
+Every documentary claim has a private-constructor source anchor. Plaintext offsets
 count Unicode scalar values, zero-based and end-exclusive, in exact decoded
 text including line terminators and BOM. SHA-256 binds original bytes and the
 extraction revision binds offset interpretation. No page/rectangle is invented.
 Whole original text, including headings and uninterpreted material, is retained.
+
+DOCX anchors name the actual OOXML part and a one-based element-child XPath,
+for example `word/document.xml:/*[1]/*[1]/*[4]/*[2]/*[1]/*[1]` for a table-cell
+paragraph. Positions count element children only, including the root element.
+No Word page number or rectangle is inferred. `reader-part-N.xml` preserves the
+selected original XML; `reader-model.json` preserves the actual Pandoc model.
+The Idriç validator checks archive headers/bounds, part length and CRC, XML
+structure, model version/depth, duplicate keys and source-text coverage. Header,
+footer and note text is preserved alongside the main document. Section scope
+resets at part boundaries; visual reading order remains an explicit unknown.
+
+The [mixed-run regression](../_/resume/pandoc-gap.md) identifies a Pandoc text-loss
+case reproduced in both 3.1.3 and 3.12.1. Such input returns a source/model
+mismatch with no draft. A focused reader fork/patch is justified for that case;
+the ordinary DOCX path uses unmodified Pandoc.
+
+This first DOCX slice supports the usual Transitional Word namespace with a
+`w` prefix. Strict/aliased namespace variants and unsupported symbol, math or
+embedded-object content fail explicitly rather than losing material silently.
 
 The conservative interpreter recognizes explicit name/contact labels and named
 sections. It groups remaining lines provisionally and preserves their exact
@@ -106,5 +138,5 @@ Read the job-local [receipt.tsv](../_/resume/receipt.tsv),
 [requirements](../_/resume/requirements.md) and
 [reader evaluation](../_/resume/reader-evaluation.md). Producer tests,
 compilation, FP execution and ai-ci source style are separate evidence.
-No independent résumé semantic gate or clean-host PDF/DOCX demonstration is
+No independent résumé semantic gate or clean-host all-format demonstration is
 claimed. Keep the implementation PR in draft and do not merge this partial work.

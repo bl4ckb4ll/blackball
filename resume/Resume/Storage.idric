@@ -48,27 +48,32 @@ write_record_files directory ((name, text) :: remaining) = do
       | Left _ => pure (Left "OutputWriteError")
     write_record_files directory remaining
 
-save_record_with_decisions : Text → ResumeDraft → List ReviewDecision → List (Text,Text) → IO (Either Text ())
-save_record_with_decisions directory draft decisions extra_files = do
-  restrict_record_permissions
-  -- Existing directories are always refused, including symlinks and previous
-  -- partial writes. The completion marker is written after all evidence files.
-  Right _ ← createDir directory | Left _ => pure (Left "OutputDirectoryMustBeNew")
-  let document = resume_draft_document draft
-  let source = validated_document_source document
-  let digest = source_document_digest source
-  Right _ ← write_source_bytes (directory ++ "/source.bin") (source_document_bytes source)
-    | Left error => pure (Left error)
-  write_record_files directory $
+document_record_files : SourceDocument → ValidatedDocument → ResumeDraft →
+                        List ReviewDecision → List (Text,Text) → List (Text,Text)
+document_record_files source document draft decisions extra_files =
     [("metadata.tsv", render_metadata_tsv source),
      ("extracted.txt", source_document_text source),
      ("document.tsv", render_document_tsv document),
      ("draft.tsv", render_draft_tsv draft),
      ("review.txt", render_evidence_review draft),
      ("unresolved.tsv", render_unresolved_tsv draft),
-     ("decisions.tsv", render_review_decisions digest decisions),
-     ("diagnostics.tsv", "diagnostics-v1\nplaintext-reader\tPASS\npdf-reader\tNOT_QUALIFIED\ndocx-reader\tNOT_QUALIFIED\nentry-structure\tUNRESOLVED\nindependent-verification\tNOT_RUN\n")] ++
-     extra_files ++ [("complete.tsv", tsv_row ["resume-record-complete-v1",digest])]
+     ("decisions.tsv", render_review_decisions (source_document_digest source) decisions),
+     ("diagnostics.tsv", source_reader_diagnostics source)] ++ source_reader_files source ++
+     extra_files ++ [("complete.tsv", tsv_row ["resume-record-complete-v1",source_document_digest source])]
+
+save_record_with_decisions : Text → ResumeDraft → List ReviewDecision → List (Text,Text) → IO (Either Text ())
+save_record_with_decisions directory draft decisions extra_files = do
+  restrict_record_permissions
+  let document = resume_draft_document draft
+  let source = validated_document_source document
+  let files = document_record_files source document draft decisions extra_files
+  if length (source_document_bytes source) + sum (map (encoded_utf8_byte_count . snd) files) > 16777216
+    then pure (Left "TotalOutputSizeLimit") else do
+      -- Existing directories, including symlinks and partial writes, are refused.
+      Right _ ← createDir directory | Left _ => pure (Left "OutputDirectoryMustBeNew")
+      Right _ ← write_source_bytes (directory ++ "/source.bin") (source_document_bytes source)
+        | Left error => pure (Left error)
+      write_record_files directory files
 
 export
 save_draft_record : Text → ResumeDraft → IO (Either Text ())
@@ -109,7 +114,7 @@ load_draft_record directory = do
     | Left _ => pure (Left "IncompleteRecord")
   if not (completion ≟ tsv_row ["resume-record-complete-v1",digest])
     then pure (Left "IncompleteRecord") else do
-      Right document ← intake_plaintext_file (directory ++ "/source.bin") observation acquisition selected_policy
+      Right document ← intake_document_with_reader_files (directory ++ "/source.bin") observation acquisition selected_policy directory
         | Left error => pure (Left error)
       if not (digest ≟ source_document_digest (validated_document_source document))
         then pure (Left "SourceDigestMismatch") else do

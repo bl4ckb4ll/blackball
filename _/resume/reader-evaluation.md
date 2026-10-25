@@ -1,4 +1,4 @@
-# PDF and DOCX boundary: blocked, no production reader selected
+# Reader boundaries: DOCX executed; PDF remains blocked
 
 The two requested upstream repositories were cloned and inspected at the
 revisions in dependencies.tsv. Their actual libraries, package descriptions,
@@ -26,20 +26,33 @@ The isolated-process prerequisite was also probed with
 with “Operation not permitted.” An available network/process isolation boundary
 has not been established. Resource limits alone do not establish isolation.
 
-Pandoc 3.1.3 is present and reports its Haskell DOCX reader. No DOCX fixture or
-source-anchor sidecar has been qualified. PDF extraction has not been routed
-through Pandoc or Poppler. Poppler is present but has not been used as a hidden
-production replacement. Independent synthetic PDF rendering and geometry
-comparison are NOT_RUN.
+The earlier compiler and namespace failures remain evidence about the PDF
+candidate build path. They do not block the already installed Pandoc executable.
+DOCX now executes through Pandoc 3.1.3+ds-2, pinned by binary digest and upstream
+source revision. The Idriç ZIP/XML sidecar checks bounds, preserves original Word
+parts and constructs actual part/paragraph anchors. Ordinary, Unicode, table,
+header and academic footnote fixtures complete intake/review/reload. Encrypted
+ZIPs, oversized expansion, XML entity declarations, external resource
+relationships, malformed models and changed XML sidecars are refused.
 
-Consequently all PDF and ZIP/DOCX-candidate inputs fail closed as
-PdfReaderNotQualified or DocxReaderNotQualified. The application does not
+The configured Pandoc `--sandbox` uses PandocPure for named document inputs;
+fixed arguments exclude filters and other execution paths. Each actual reader
+and core process is resource-limited. This document IO isolation does not claim
+an OS namespace. See [the executed reader gap](pandoc-gap.md) for a mixed-run
+text-loss regression also reproduced with official Pandoc 3.12.1.
+
+PDF extraction has not been routed through Pandoc or Poppler. Poppler remains
+an unrun comparison implementation, not a hidden production substitute.
+Independent synthetic PDF rendering and geometry comparison are NOT_RUN.
+
+Consequently PDF inputs fail closed as PdfReaderNotQualified. ZIP candidates
+must pass DOCX package inspection and model/source validation. The application does not
 mislabel those documents as image-only, encrypted, malformed or OCR-qualified;
 the required NeedsTextRecognition and mixed-page outcomes remain NOT_IMPLEMENTED.
 
-Next required boundary: acquire a complete compatible GHC distribution, execute
+Next required PDF boundary: acquire a complete compatible GHC distribution, execute
 both pinned readers on independently authored PDF text/layout fixtures, inspect
 the rendered pages, select a reader on that evidence, and qualify a bounded
-non-networked reader process before enabling document decoding. DOCX additionally
-needs checked ZIP bounds and real OOXML-part/block anchors alongside Pandoc's
-document model. No broad fork is justified by the current evidence.
+non-networked PDF reader process before enabling decoding. DOCX's bounded
+Pandoc-plus-source-sidecar path is implemented; the identified mixed-run bug
+provides a concrete reason for a focused Pandoc reader patch.

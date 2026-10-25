@@ -1,0 +1,54 @@
+#!/usr/bin/env grease
+# DOCX foreign-reader recipe. Core owns bytes, bounds, anchors and claims.
+set -o errexit
+set -o pipefail
+umask 077
+if test "$#" -ne 6 {
+  echo 'FAIL: expected CORE INPUT NEW_OUTPUT OBSERVATION ACQUISITION PANDOC' >&2
+  exit 2
+}
+var core = $1
+var input = $2
+var output = $3
+var observation = $4
+var acquisition = $5
+var pandoc = $6
+var pandoc_digest = "$(sha256sum "$pandoc" | cut -d ' ' -f1)"
+test "$pandoc_digest" = 3dd273647f0265cb439f22976d5366a54b071a3783f6fec50838b47fb53d701b
+var unzip_digest = "$(sha256sum /usr/bin/unzip | cut -d ' ' -f1)"
+test "$unzip_digest" = b582f2d782989a4d0105284b8032b076222eb29a6c141b5c53b792c864199396
+var parent = "$(dirname -- "$output")"
+var workspace = "$(mktemp -d "$parent/.resume-reader.XXXXXXXX")"
+proc remove_reader_temporary_files {
+  rm -rf -- "$workspace"
+}
+trap --add EXIT { remove_reader_temporary_files }
+head -c 262145 -- "$input" > "$workspace/source.bin"
+if ! prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- \
+    "$core" docx-parts "$workspace/source.bin" > "$workspace/parts.txt" {
+  cat "$workspace/parts.txt" >&2
+  echo 'FAIL: DOCX inspection failed; no reader or draft was admitted' >&2
+  exit 1
+}
+var part_count = int("$(wc -l < "$workspace/parts.txt")")
+var index = 1
+while (index <= part_count) {
+  var part = "$(sed -n "$[index]p" "$workspace/parts.txt")"
+  var archive_pattern = part
+  if test "$part" = '[Content_Types].xml' {
+    setvar archive_pattern = r'\[Content_Types\].xml'
+  }
+  # -p writes selected entry bytes to stdout; no archive pathname is extracted.
+  prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- \
+    /usr/bin/unzip -p -qq "$workspace/source.bin" "$archive_pattern" > "$workspace/reader-part-$index.xml"
+  setvar index += 1
+}
+prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- \
+  "$core" check-docx-parts "$workspace/source.bin" "$workspace"
+# No filters, Lua code, defaults file, media extraction or PDF production.
+# At the pinned source this invokes the reader/writer inside PandocPure.
+prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- \
+  "$pandoc" --sandbox --from=docx --to=json --track-changes=all --wrap=none \
+  --output="$workspace/reader-model.json" -- "$workspace/source.bin"
+prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- \
+  "$core" intake-docx "$workspace/source.bin" "$workspace" "$output" "$observation" "$acquisition"

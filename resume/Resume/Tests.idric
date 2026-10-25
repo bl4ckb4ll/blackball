@@ -9,6 +9,8 @@ import Resume.Dates
 import Resume.Interpret
 import Resume.Review
 import Resume.Interchange
+import Resume.Docx.Xml
+import Resume.Docx.Model
 import System
 
 assert_case : Text → Bool → IO ()
@@ -109,6 +111,23 @@ main = do
   assert_case "unicode-overflow-rejected" (decode_document_utf8 [244,144,128,128] ≟ Nothing)
   assert_case "truncated-utf8-rejected" (decode_document_utf8 [226,130] ≟ Nothing)
   assert_case "NUL-rejected" (decode_document_utf8 [65,0,66] ≟ Nothing)
+  assert_case "xml-known-entity-decoded" $ case parse_safe_xml "<p>Zoë &amp; inventory</p>" of
+    Right (Element "p" [] [Characters "Zoë & inventory"]) => True
+    _ => False
+  assert_case "xml-external-entity-declaration-rejected" $ is_left $
+    parse_safe_xml "<!DOCTYPE p [<!ENTITY x SYSTEM 'file:///synthetic'>]><p>&x;</p>"
+  assert_case "xml-duplicate-attribute-rejected" $ is_left $ parse_safe_xml "<p id='1' id='2'/>"
+  assert_case "xml-unmatched-element-rejected" $ is_left $ parse_safe_xml "<p><q></p>"
+  assert_case "xml-unsupported-encoding-rejected" $ is_left $
+    parse_safe_xml "<?xml version='1.0' encoding='UTF-16'?><p/>"
+  assert_case "json-reader-model-version-rejected" $ is_left $ validate_pandoc_docx_model "{}" [] []
+  assert_case "json-reader-output-byte-limit" $
+    validate_pandoc_docx_model (pack (replicate 262145 ' ') ++
+      "{\"pandoc-api-version\":[1,23,1],\"meta\":{},\"blocks\":[]}") [] [] ≟ Left "ReaderOutputLimit"
+  assert_case "json-omitted-source-text-rejected" $ is_left $
+    validate_pandoc_docx_model "{\"pandoc-api-version\":[1,23,1],\"meta\":{},\"blocks\":[]}" ["source text"] ["source text"]
+  assert_case "json-fabricated-reader-text-rejected" $ is_left $
+    validate_pandoc_docx_model "{\"pandoc-api-version\":[1,23,1],\"meta\":{},\"blocks\":[{\"t\":\"Para\",\"c\":[{\"t\":\"Str\",\"c\":\"fabricated\"}]}]}" ["source"] ["source"]
   assert_case "year-only-no-invented-month" $ case parse_partial_date "2019" of
     Just (YearOnly 2019) => True
     _ => False

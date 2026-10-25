@@ -37,4 +37,17 @@ if test -n "$record_output" {
     exit 2
   }
 }
+if test "$operation" = intake {
+  var magic = "$(od -An -N4 -t x1 -- "$3" | tr -d r' \n')"
+  if test "$magic" = 504b0304 {
+    var script_directory = "$(dirname -- "$0")"
+    var selected_grease = get(ENV, 'GREASE_BINARY', '')
+    if test -z "$selected_grease" {
+      setvar selected_grease = "$(command -v grease)"
+    }
+    test -x "$selected_grease"
+    exec timeout --signal=KILL 20s "$selected_grease" \
+      "$script_directory/docx-reader.grease" "$core" "$3" "$4" "$5" "$6" /usr/bin/pandoc
+  }
+}
 exec timeout --signal=KILL 20s prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- "$core" @arguments

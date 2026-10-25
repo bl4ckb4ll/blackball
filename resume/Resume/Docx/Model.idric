@@ -1,0 +1,78 @@
+module Resume.Docx.Model
+
+import Data.List
+import Data.Text
+import Language.JSON
+import Resume.Utf8
+
+-- JSON is Pandoc's external interchange format. Its inherited numeric
+-- representation stays at this foreign boundary, not in résumé domain types.
+json_nesting_is_bounded : Number → Bool → Bool → List Char → Bool
+json_nesting_is_bounded depth quoted escaped [] = depth ≟ 0 && not quoted
+json_nesting_is_bounded depth True True (_ :: rest) = json_nesting_is_bounded depth True False rest
+json_nesting_is_bounded depth True False ('\\' :: rest) = json_nesting_is_bounded depth True True rest
+json_nesting_is_bounded depth quoted False ('"' :: rest) = json_nesting_is_bounded depth (not quoted) False rest
+json_nesting_is_bounded depth True False (_ :: rest) = json_nesting_is_bounded depth True False rest
+json_nesting_is_bounded depth False True (_ :: rest) = False
+json_nesting_is_bounded depth False False (character :: rest) =
+  if elem character ['{','['] then depth < 128 && json_nesting_is_bounded (S depth) False False rest
+  else if elem character ['}',']'] then depth > 0 && json_nesting_is_bounded (minus depth 1) False False rest
+  else json_nesting_is_bounded depth False False rest
+
+json_field : Text → JSON → Maybe JSON
+json_field name (JObject fields) = lookup name fields
+json_field _ _ = Nothing
+
+unique_json_keys : Number → JSON → Bool
+unique_json_keys Z _ = False
+unique_json_keys (S remaining) (JObject fields) =
+  length (nub (map fst fields)) ≟ length fields && all (unique_json_keys remaining . snd) fields
+unique_json_keys (S remaining) (JArray values) = all (unique_json_keys remaining) values
+unique_json_keys (S remaining) _ = True
+
+model_text : Number → JSON → Text
+model_text Z _ = ""
+model_text (S remaining) (JArray values) = concat (map (model_text remaining) values)
+model_text (S remaining) node@(JObject fields) = case (json_field "t" node,json_field "c" node) of
+  (Just (JString "Str"),Just (JString text)) => text
+  (Just (JString "Space"),_) => " "
+  (Just (JString "SoftBreak"),_) => "\n"
+  (Just (JString "LineBreak"),_) => "\n"
+  (Just (JString "Code"),Just (JArray [_,JString text])) => text
+  (Just (JString "CodeBlock"),Just (JArray [_,JString text])) => text ++ "\n"
+  (Just (JString "Math"),Just (JArray [_,JString text])) => text
+  (Just (JString "Para"),Just contents) => model_text remaining contents ++ "\n"
+  (Just (JString "Plain"),Just contents) => model_text remaining contents ++ "\n"
+  (Just (JString "Header"),Just (JArray [_,_,contents])) => model_text remaining contents ++ "\n"
+  (Just (JString "MetaInlines"),Just contents) => model_text remaining contents ++ "\n"
+  (Just (JString "Note"),Just contents) => "\n" ++ model_text remaining contents ++ "\n"
+  (Just (JString _),Just contents) => model_text remaining contents
+  _ => concat (map (model_text remaining . snd) fields)
+model_text (S remaining) _ = ""
+
+sorted_tokens_included : List Text → List Text → Bool
+sorted_tokens_included [] _ = True
+sorted_tokens_included (_ :: _) [] = False
+sorted_tokens_included small@(first :: rest) (candidate :: remaining) = case compare first candidate of
+  EQ => sorted_tokens_included rest remaining
+  GT => sorted_tokens_included small remaining
+  LT => False
+
+export
+validate_pandoc_docx_model : Text → List Text → List Text → Either Text ()
+validate_pandoc_docx_model encoded main_wording all_wording = do
+  if encoded_utf8_byte_count encoded <= 262144 then Right () else Left "ReaderOutputLimit"
+  if json_nesting_is_bounded 0 False False (unpack encoded)
+    then Right () else Left "PandocModelDepthOrSyntaxLimit"
+  Just model@(JObject fields) ← pure (parse encoded) | _ => Left "MalformedPandocModel"
+  if unique_json_keys 260 model then Right () else Left "DuplicatePandocModelKey"
+  Just (JArray [JNumber 1,JNumber 23,JNumber 1]) ← pure (json_field "pandoc-api-version" model)
+    | _ => Left "UnsupportedPandocModelVersion"
+  Just (JArray _) ← pure (json_field "blocks" model) | _ => Left "MalformedPandocModel"
+  Just (JObject _) ← pure (json_field "meta" model) | _ => Left "MalformedPandocModel"
+  let extracted_tokens = sort (words (model_text 260 model))
+  let original_body_tokens = sort (concatMap words main_wording)
+  let original_all_tokens = sort (concatMap words all_wording)
+  if sorted_tokens_included original_body_tokens extracted_tokens &&
+     sorted_tokens_included extracted_tokens original_all_tokens
+    then Right () else Left "PandocModelSourceTextMismatch"

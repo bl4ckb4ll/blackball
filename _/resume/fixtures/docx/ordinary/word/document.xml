@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><w:body>
+<w:p><w:r><w:t>Name: Zoë Synthetic</w:t></w:r></w:p>
+<w:p><w:r><w:t>Email: zoe@example.invalid</w:t></w:r></w:p>
+<w:p><w:r><w:t>Employment</w:t></w:r></w:p>
+<w:tbl><w:tblGrid><w:gridCol w:w="1800"/><w:gridCol w:w="6000"/></w:tblGrid><w:tr><w:tc><w:p><w:r><w:t>2018 – present</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>Synthetic Repair Shop</w:t></w:r></w:p></w:tc></w:tr></w:tbl>
+<w:p><w:r><w:t>Skills</w:t></w:r></w:p>
+<w:p><w:r><w:t>Maintenance &amp; inventory</w:t></w:r></w:p>
+<w:sectPr><w:headerReference w:type="default" r:id="rIdHeader1"/></w:sectPr>
+</w:body></w:document>

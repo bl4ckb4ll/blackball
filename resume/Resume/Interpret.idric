@@ -67,25 +67,29 @@ explicit_label_section wording =
      else if any (flip isPrefixOf lower) ["email:","phone:","address:","website:"]
        then Just Contacts else Nothing
 
-interpret_blocks : ResumeSection → Number → List LayoutBlock → List DraftField
-interpret_blocks section ordinal [] = []
-interpret_blocks section ordinal (block :: remaining) =
+interpret_blocks : ResumeSection → Number → Text → List LayoutBlock → List DraftField
+interpret_blocks section ordinal previous_scope [] = []
+interpret_blocks section ordinal previous_scope (block :: remaining) =
   let wording = layout_block_wording block
       normalized = trim wording
       identifier = "claim-" ++ show ordinal
-  in if null (unpack normalized) then interpret_blocks section ordinal remaining
+      current_scope = layout_block_scope block
+      active_section = if current_scope ≟ previous_scope then section else Unclassified
+  in if null (unpack normalized) then interpret_blocks active_section ordinal current_scope remaining
      else case section_heading wording of
-       Just next_section => interpret_blocks next_section ordinal remaining
+       Just next_section => interpret_blocks next_section ordinal current_scope remaining
        Nothing =>
-         let selected = maybe section id (explicit_label_section wording)
-             method = case explicit_label_section wording of
+         let selected = maybe active_section id (explicit_label_section wording)
+             basic_method = case explicit_label_section wording of
                Just _ => "explicit-label-v1"
                Nothing => "section-layout-v1;entry-structure-unresolved"
+             method = basic_method ++ (if layout_block_decoding_method block ≟ "" then ""
+                        else ";" ++ layout_block_decoding_method block)
              reading = case claim_from_layout_block block normalized method of
                Right supported => Supported supported
                Left error => Unreadable error
          in Field identifier selected reading ::
-            interpret_blocks section (S ordinal) remaining
+            interpret_blocks active_section (S ordinal) current_scope remaining
 
 all_sections : List ResumeSection
 all_sections = [Names,Contacts,Employment,Education,Projects,Credentials,Skills,
@@ -98,13 +102,13 @@ has_section fields requested_section =
 export
 interpret_resume_document : ValidatedDocument → ResumeDraft
 interpret_resume_document document =
-  let fields = interpret_blocks Unclassified 1 (validated_layout_blocks document)
+  let fields = interpret_blocks Unclassified 1 "" (validated_layout_blocks document)
       missing = map (\section => "missing:" ++ section_name section)
                     (filter (not . has_section fields) all_sections)
       unresolved = map (\field => "entry-structure:" ++ field.claim_identifier) fields
   in Draft document fields
        ("Omission is not evidence of absence; no entities merged; no facts verified." ::
-        missing ++ unresolved)
+        missing ++ unresolved ++ source_unresolved_reader_material (validated_document_source document))
 
 export
 resume_draft_document : ResumeDraft → ValidatedDocument
