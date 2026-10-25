@@ -1,0 +1,27 @@
+requirement	state	evidence_boundary
+job	PARTIAL	SUN BB-PARSE-RESUMES-01; checked plaintext implementation; full requested parser unfinished
+source_start	PINNED	d6a57ec658448651300d70a2936f966713aa8f5c; branch parse-resumes
+compiler	EXECUTED	Idriç 94dfd99bd3e376507fedc8611053b7173b2519f0; Linux x86_64 Chez; actual runtime digests in artifacts.tsv
+core	COMPILED_AND_EXECUTED	Source, UTF8, SHA256, Dates, Interpret, Review, Interchange, Intake, Storage and Main
+core_cases	PASS	32 producer assertions in Resume.Tests; independently specified FIPS vectors and source/review negative cases
+compile_fail_boundaries	PASS	forged stage, private claim constructor, private reviewed constructor and absent verification state rejected for their intended diagnostics
+plaintext_round_trip	PASS	synthetic UTF8 input -> source/anchors/draft -> explicit accept/reject/correct -> new profile; prior bytes and draft preserved
+snapshot_reload	PASS	prior correction events retained across another review; altered derived evidence refused
+repeatability	PASS	same synthetic content at different filenames yields equal draft, document and acquisition metadata
+resource_bounds	PARTIAL	input/output byte caps, process limits, UTF8 rejection and oversized-input refusal; hostile document readers not qualified
+privacy	PARTIAL	synthetic fixtures only; private modes and Git-output guard tested; safe deletion not qualified
+orchestration	EXECUTED	unchanged pinned Flexible Pipes -> Kitchen-prepared Grease recipe and separate ai-ci source-style stage both exited 0 at source bf385e9490ff89cedb2c988ce54a0698067539fb; final published head is rechecked separately
+aici_source_style	PASS_WITH_WARNINGS	pinned independent source-style checker exited 0; inherited library call names trigger style canaries; this is not semantic résumé acceptance
+fp_spec_digest	PINNED	a0c0a9e1a27e8a540ac132260e138e7a17c2a35a99216f228d046b4c81fe16eb
+fp_producer_stdout_digest	OBSERVED	4c73d0d5556db1d05091afb7ceca0ecef3b05a1a8f2ae58123659c39033d03bf; stderr empty
+verification_commands	RECORDED	commands.tsv; complete producer assertions retained in producer-cases.tsv
+ike	NOT_RUN	no qualified Ike executable found on this host; no generic-C substitute built
+pdf_candidate_builds	BLOCKED	GHC acquisition incomplete; both Cabal builds failed before usable compiler detection; see reader-evaluation.md
+pdf_and_docx_intake	NOT_IMPLEMENTED	no reader selected or qualified; production entry points fail closed
+pdf_geometry_and_OCR_status	NOT_RUN	no PDF page anchors, image-only/mixed-page outcomes or independent rendered-page comparison
+structured_career_events	NOT_IMPLEMENTED	line claims and section grouping work; event/date/entity interpretation remains unresolved
+owner_added_facts	NOT_IMPLEMENTED	existing documentary claims can be corrected; new owner-only fields need a separate event creation operation
+safe_managed_deletion	BLOCKED	qualified managed-path/symlink deletion policy missing; operation refuses without effects
+independent_semantic_acceptance	NOT_RUN	shared ai-ci guardrails and source-style gate are available; no résumé semantic acceptance contract exists at the pinned revision
+clean_supported_host_demo	NOT_RUN	current-host compilation and execution do not establish fresh-host dependency acquisition or PDF/DOCX behavior
+completion	BLOCKED	full job cannot be COMPLETE until readers, isolation, structured events, deletion and independent acceptance execute

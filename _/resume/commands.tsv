@@ -1,0 +1,13 @@
+stage	command_or_argv	result	scope
+compiler_probe	idric --check BoundaryProbe.idric	PASS	actual pinned compiler accepts Text, Number and Unicode arrows
+core_build	idric --cg chez --source-dir PROJECT/resume --build-dir EVIDENCE/ttc --output-dir EVIDENCE/bin -o resume-core PROJECT/resume/Main.idric	PASS	all actual paths supplied as separate argv; see prepare-and-test.grease
+test_build	idric --cg chez --source-dir PROJECT/resume --build-dir EVIDENCE/ttc --output-dir EVIDENCE/bin -o resume-tests PROJECT/resume/Resume/Tests.idric	PASS	producer tests compiled through same Idriç runtime
+core_tests	EVIDENCE/bin/resume-tests	PASS	32 assertions; producer-cases.tsv
+compile_fail	idric --source-dir EVIDENCE/negative-source --build-dir EVIDENCE/negative-ttc --check EVIDENCE/negative-source/Forged{Stage,Claim,Review,Verification}.idric	EXPECTED_REJECTION	four separate invocations; each diagnostic matched its independently declared expected boundary
+intake	grease PROJECT/_/resume/run.grease EVIDENCE/bin/resume-core intake SYNTHETIC_FILE NEW_RECORD 2026-10-25 synthetic-fixture	PASS	ordinary, academic, embedded-instruction and hostile-filename fixtures
+review	grease PROJECT/_/resume/run.grease EVIDENCE/bin/resume-core review INPUT_RECORD DECISIONS NEW_RECORD	PASS	first and second explicit review; original bytes/text/draft compared with cmp
+tamper_and_limits	prepare-and-test.grease refusing cases	PASS	altered extracted text; existing output; Git worktree output; oversized input
+fp_qualification	python3 PINNED_FP/scripts/run-pipeline bb-parse-resumes-01 --param project=PROJECT --param compiler=COMPILER --param grease=GREASE --param recipe=PROJECT/_/resume/prepare-and-test.grease --param evidence=NEW_EVIDENCE --param aici-style=PINNED_AICI/idric-style/check_added_source --param style-recipe=PROJECT/_/resume/aici-style.grease	PASS	unchanged inherited FP controller; no new Python source authored; absolute observed paths supplied to existing interface
+independent_style	sh PINNED_AICI/idric-style/check_added_source d6a57ec658448651300d70a2936f966713aa8f5c HEAD	PASS_WITH_WARNINGS	independent mechanical source style only, invoked by Grease adapter in project directory
+reader_builds	cabal build --offline --with-compiler=ACQUIRED_GHC; pdf-toolbox additionally uses --project-file=cabal_no_viewer.project	BLOCKED	both attempted; usable GHC version could not be determined from partial acquisition
+isolation_probe	unshare --user --map-root-user --net true	BLOCKED	uid_map write refused; no reader isolation attested

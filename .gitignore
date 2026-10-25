@@ -1,0 +1,10 @@
+# Application-managed records belong outside this checkout. These names are
+# an additional guard, not permission to commit personal material elsewhere.
+/resume-output/
+/resume-records/
+/uploads/
+/private/
+/build/
+/_/resume/build/
+/_/resume/local-evidence/
+**/build/ttc/

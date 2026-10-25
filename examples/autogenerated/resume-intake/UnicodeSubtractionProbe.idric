@@ -1,0 +1,7 @@
+module UnicodeSubtractionProbe
+
+-- Retained compiler limitation at pin 94dfd99b; this is intentionally not
+-- part of the passing build. Production uses named subtraction instead.
+infixl 6 −
+(−) : Number → Number → Number
+(−) = minus

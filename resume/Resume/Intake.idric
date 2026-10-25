@@ -1,0 +1,48 @@
+module Resume.Intake
+
+import Data.Buffer
+import Data.Text
+import Resume.Source
+import Resume.Dates
+import System.File
+import System.File.Buffer
+
+read_buffer_until_end : Number → File → Buffer → Int → IO (Either Text Int)
+read_buffer_until_end Z file buffer position = pure (Left "InputReadLimit")
+read_buffer_until_end (S remaining) file buffer position = do
+  let capacity = cast maximum_source_bytes + 1
+  if position >= capacity then pure (Left "InputSizeLimit") else do
+    Right count ← readBufferData file buffer position (capacity + negate position)
+      | Left _ => pure (Left "InputReadError")
+    if count ≟ 0 then pure (Right position) else read_buffer_until_end remaining file buffer (position + count)
+
+read_buffer_bytes : Number → Buffer → Int → IO (List Bits8)
+read_buffer_bytes Z buffer position = pure []
+read_buffer_bytes (S remaining) buffer position = do
+  value ← getBits8 buffer position
+  rest ← read_buffer_bytes remaining buffer (position + 1)
+  pure (value :: rest)
+
+export
+read_bounded_source_bytes : Text → IO (Either Text (List Bits8))
+read_bounded_source_bytes path = do
+  Right file ← openFile path Read | Left _ => pure (Left "InputOpenError")
+  Just buffer ← newBuffer (cast maximum_source_bytes + 1)
+    | Nothing => do closeFile file; pure (Left "InputMemoryLimit")
+  result ← read_buffer_until_end (S maximum_source_bytes) file buffer 0
+  closeFile file
+  case result of
+    Left error => pure (Left error)
+    Right count => Right <$> read_buffer_bytes (cast count) buffer 0
+
+export
+intake_plaintext_file : Text → Text → Text → HandlingPolicy →
+                        IO (Either Text ValidatedDocument)
+intake_plaintext_file path observation acquisition policy =
+  if not (valid_observation_date observation) then pure (Left "InvalidObservationDate")
+  else do
+    Right bytes ← read_bounded_source_bytes path | Left error => pure (Left error)
+    pure $ do
+      received ← receive_document_bytes bytes (Acquisition acquisition observation) policy
+      inspected ← inspect_received_document received
+      extract_plaintext_document inspected

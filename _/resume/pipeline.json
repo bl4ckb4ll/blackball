@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "name": "bb-parse-resumes-01",
+  "parameters": {
+    "project": {"required":true,"pattern":"^/[^\\n]+$"},
+    "compiler": {"required":true,"pattern":"^/[^\\n]+$"},
+    "grease": {"required":true,"pattern":"^/[^\\n]+$"},
+    "evidence": {"required":true,"pattern":"^/[^\\n]+$"},
+    "recipe": {"required":true,"pattern":"^/[^\\n]+$"},
+    "aici-style": {"required":true,"pattern":"^/[^\\n]+$"},
+    "style-recipe": {"required":true,"pattern":"^/[^\\n]+$"}
+  },
+  "required_stages": ["kitchen-prepared-plaintext-tests", "aici-source-style"],
+  "stages": [
+    {"name":"kitchen-prepared-plaintext-tests","kind":"command","cwd":".",
+     "argv":["{{grease}}","{{recipe}}","{{project}}","{{compiler}}","{{grease}}","{{evidence}}"]},
+    {"name":"aici-source-style","kind":"command","cwd":".",
+     "argv":["{{grease}}","{{style-recipe}}","{{project}}","{{aici-style}}"]}
+  ]
+}

@@ -1,0 +1,40 @@
+#!/usr/bin/env grease
+# Preparation requirements and supported-host limitations are in README.md.
+# The core never invokes a shell or launches a document-controlled command.
+set -o errexit
+if test "$#" -lt 2 {
+  echo 'Usage: grease run.grease /absolute/resume-core OPERATION ARGUMENTS...' >&2
+  exit 2
+}
+var core = $1
+var arguments = ARGV[1:]
+if ! test -x "$core" {
+  echo 'FAIL: core must name the compiled executable' >&2
+  exit 2
+}
+var operation = $2
+var record_output = ''
+if test "$operation" = intake {
+  if test "$#" -ne 6 {
+    echo 'FAIL: intake requires FILE NEW_OUTPUT_DIRECTORY OBSERVATION_DATE ACQUISITION_REFERENCE' >&2
+    exit 2
+  }
+  test -f "$3"
+  setvar record_output = $4
+} elif test "$operation" = review {
+  if test "$#" -ne 5 {
+    echo 'FAIL: review requires INPUT_RECORD DECISIONS_TSV NEW_OUTPUT_DIRECTORY' >&2
+    exit 2
+  }
+  test -f "$4"
+  setvar record_output = $5
+}
+if test -n "$record_output" {
+  var output_parent = "$(dirname -- "$record_output")"
+  test -d "$output_parent"
+  if git -C "$output_parent" rev-parse --is-inside-work-tree > /dev/null 2>&1 {
+    echo 'FAIL: StorageInsideGitWorktree; choose an output directory outside Git' >&2
+    exit 2
+  }
+}
+exec timeout --signal=KILL 20s prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- "$core" @arguments

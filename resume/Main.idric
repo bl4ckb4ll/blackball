@@ -1,0 +1,46 @@
+module Main
+
+import Data.Text
+import Resume.Source
+import Resume.Intake
+import Resume.Interpret
+import Resume.Interchange
+import Resume.Review
+import Resume.Storage
+import System
+
+report_result : Either Text () → IO ()
+report_result (Left error) = do putStrLn ("FAIL\t" ++ error); exitFailure
+report_result (Right _) = putStrLn "PASS\tRecordSaved; claims remain unverified"
+
+receive_resume : Text → Text → Text → Text → IO ()
+receive_resume path output observation acquisition = do
+  Right document ← intake_plaintext_file path observation acquisition PrivateDocument
+    | Left error => report_result (Left error)
+  save_draft_record output (interpret_resume_document document) >>= report_result
+
+review_resume : Text → Text → Text → IO ()
+review_resume input decisions_path output = do
+  Right (draft, previous_decisions) ← load_draft_record input
+    | Left error => report_result (Left error)
+  Right text ← read_bounded_text_file decisions_path
+    | Left error => report_result (Left error)
+  Right (digest, decisions) ← pure (read_review_decisions text)
+    | Left error => report_result (Left error)
+  if null decisions then report_result (Left "ExplicitReviewDecisionRequired") else do
+    Right snapshot ← pure (apply_review_decisions draft digest (previous_decisions ++ decisions))
+      | Left error => report_result (Left error)
+    save_reviewed_snapshot output snapshot >>= report_result
+
+main : IO ()
+main = do
+  arguments ← getArgs
+  case arguments of
+    [_, "intake", path, output, observation, acquisition] =>
+      receive_resume path output observation acquisition
+    [_, "review", input, decisions, output] => review_resume input decisions output
+    [_, "delete", _] => report_result (Left "DeletionNotQualified; no files removed")
+    _ => do
+      putStrLn "Usage: resume-core intake FILE NEW_OUTPUT_DIRECTORY YYYY-MM-DD ACQUISITION_REFERENCE"
+      putStrLn "       resume-core review INPUT_RECORD DECISIONS_TSV NEW_OUTPUT_DIRECTORY"
+      exitFailure

@@ -1,0 +1,9 @@
+module BoundaryProbe
+
+import Data.Text
+
+count_received_characters : Text → Number
+count_received_characters text = length (unpack text)
+
+main : IO ()
+main = printLn (count_received_characters "Zoë")

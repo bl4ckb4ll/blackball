@@ -1,0 +1,3 @@
+*.idric linguist-language=Idris
+# A final tab is the required empty fifth TSV column, not prose whitespace.
+_/resume/fixtures/ordinary-review*.tsv whitespace=-blank-at-eol

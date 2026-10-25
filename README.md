@@ -4,6 +4,9 @@ Blackball is an LLM-facing RAG bin: a model-independent evidence corpus, claim l
 
 It is built to make later answers inspectable.
 
+[Local résumé intake](resume/README.md) — checked Idriç plaintext drafts and
+explicit evidence review; PDF/DOCX and full job acceptance remain unfinished.
+
 The basic retrieval path is:
 
 **question → candidate claims → evidence → source owner → scope/time → disagreement → answer**

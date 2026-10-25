@@ -1,0 +1,125 @@
+module Resume.Tests
+
+import Data.List
+import Data.Text
+import Resume.ContentDigest
+import Resume.Utf8
+import Resume.Source
+import Resume.Dates
+import Resume.Interpret
+import Resume.Review
+import Resume.Interchange
+import System
+
+assert_case : Text → Bool → IO ()
+assert_case name True = putStrLn ("PASS\t" ++ name)
+assert_case name False = do putStrLn ("FAIL\t" ++ name); exitFailure
+
+ascii_bytes : Text → List Bits8
+ascii_bytes = map (cast . ord) . unpack
+
+is_left : Either error value → Bool
+is_left (Left _) = True
+is_left _ = False
+
+sample_draft : Either Text ResumeDraft
+sample_draft = do
+  received ← receive_document_bytes (ascii_bytes "Name: Synthetic Reader\nEmployment\n2018 - present: repair work\nEducation\nUnfinished certificate\nSkills\nMaintenance\n")
+               (Acquisition "synthetic-test" "2026-10-25") PrivateDocument
+  inspected ← inspect_received_document received
+  document ← extract_plaintext_document inspected
+  pure (interpret_resume_document document)
+
+test_source_boundaries : IO ()
+test_source_boundaries = do
+  Right received ← pure (receive_document_bytes (ascii_bytes "abc\ndef")
+    (Acquisition "synthetic" "2026-10-25") PrivateDocument)
+    | Left _ => assert_case "receive" False
+  Right inspected ← pure (inspect_received_document received)
+    | Left _ => assert_case "inspect" False
+  assert_case "malformed-reader-wording-rejected" $ is_left $
+    validate_plaintext_reader_output inspected [UntrustedTextBlock 0 3 "forged"]
+  assert_case "omitted-reader-block-rejected" $ is_left $
+    validate_plaintext_reader_output inspected [UntrustedTextBlock 0 3 "abc"]
+  assert_case "out-of-range-reader-anchor-rejected" $ is_left $
+    validate_plaintext_reader_output inspected [UntrustedTextBlock 0 99 "abc",UntrustedTextBlock 4 7 "def"]
+  Right document ← pure (extract_plaintext_document inspected)
+    | Left _ => assert_case "extract" False
+  let source = validated_document_source document
+  let claims = map (\block => claim_from_layout_block block (layout_block_wording block) "explicit-wording")
+                   (validated_layout_blocks document)
+  assert_case "all-created-claims-have-resolving-anchors" $ all
+    (\result => case result of
+      Left _ => False
+      Right claim => not (null (documentary_claim_anchors claim)) &&
+                     all (anchor_resolves_in_source source) (documentary_claim_anchors claim)) claims
+  Right zip_received ← pure (receive_document_bytes [80,75,3,4,0]
+    (Acquisition "synthetic" "2026-10-25") PrivateDocument)
+    | Left _ => assert_case "zip-receive" False
+  Right zip_inspected ← pure (inspect_received_document zip_received)
+    | Left _ => assert_case "zip-inspect" False
+  assert_case "zip-candidate-is-not-plaintext-certified" $ is_left $
+    validate_plaintext_reader_output zip_inspected []
+
+test_review_boundaries : IO ()
+test_review_boundaries = do
+  Right draft ← pure sample_draft | Left _ => assert_case "draft" False
+  let source = validated_document_source (resume_draft_document draft)
+  let digest = source_document_digest source
+  assert_case "no-degree-required" (length (resume_draft_fields draft) ≟ 4)
+  assert_case "empty-review-rejected" (is_left (apply_review_decisions draft digest []))
+  assert_case "unknown-claim-review-rejected" $ is_left $
+    apply_review_decisions draft digest [Decide "claim-999" AcceptClaim "owner" "revision-1"]
+  assert_case "wrong-source-review-rejected" $ is_left $
+    apply_review_decisions draft "different-source" [Decide "claim-1" AcceptClaim "owner" "revision-1"]
+  assert_case "missing-actor-rejected" $ is_left $
+    apply_review_decisions draft digest [Decide "claim-1" AcceptClaim "" "revision-1"]
+  let decision = Decide "claim-1" (CorrectClaim "A corrected name") "owner-supplied" "revision-1"
+  Right snapshot ← pure (apply_review_decisions draft digest [decision])
+    | Left _ => assert_case "explicit-review" False
+  assert_case "correction-event-separate-from-document" (snapshot_correction_count snapshot ≟ 1)
+  assert_case "correction-does-not-overwrite-evidence"
+    (render_draft_tsv (snapshot_draft snapshot) ≟ render_draft_tsv draft)
+  assert_case "duplicate-review-event-rejected" $ is_left $
+    apply_review_decisions draft digest [decision,decision]
+  assert_case "review-serialization-round-trip" $ case read_review_decisions (render_review_decisions digest [decision]) of
+    Right (reloaded_digest,reloaded_decisions) =>
+      reloaded_digest ≟ digest && not (is_left (apply_review_decisions draft digest reloaded_decisions))
+    _ => False
+  assert_case "unknown-review-action-rejected" $ is_left $
+    read_review_decisions (tsv_row ["review-v1",digest] ++ "claim-1\tverify\towner\tr1\t\n")
+  assert_case "contradiction-distinct-from-ambiguity" $ case
+    compare_date_endpoints (Dated (YearOnly 2022)) (Dated (YearOnly 2020)) of
+      Contradictory => True
+      _ => False
+
+main : IO ()
+main = do
+  assert_case "sha256-empty-FIPS" (sha256_content_digest [] ≟
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
+  assert_case "sha256-abc-FIPS" (sha256_content_digest (ascii_bytes "abc") ≟
+    "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad")
+  assert_case "sha256-two-block-FIPS" (sha256_content_digest
+    (ascii_bytes "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq") ≟
+    "248d6a61d20638b8e5c026930c3e6039a33ce45964ff2167f6ecedd419db06c1")
+  assert_case "unicode-name-exact" (decode_document_utf8 [90,111,195,171] ≟ Just "Zoë")
+  assert_case "unicode-non-BMP-exact" (decode_document_utf8 [240,159,152,128] ≟ Just "😀")
+  assert_case "overlong-utf8-rejected" (decode_document_utf8 [192,175] ≟ Nothing)
+  assert_case "surrogate-utf8-rejected" (decode_document_utf8 [237,160,128] ≟ Nothing)
+  assert_case "unicode-overflow-rejected" (decode_document_utf8 [244,144,128,128] ≟ Nothing)
+  assert_case "truncated-utf8-rejected" (decode_document_utf8 [226,130] ≟ Nothing)
+  assert_case "NUL-rejected" (decode_document_utf8 [65,0,66] ≟ Nothing)
+  assert_case "year-only-no-invented-month" $ case parse_partial_date "2019" of
+    Just (YearOnly 2019) => True
+    _ => False
+  assert_case "invalid-calendar-day-rejected" (not (valid_observation_date "2025-02-29"))
+  assert_case "valid-leap-day-accepted" (valid_observation_date "2024-02-29")
+  assert_case "ongoing-bound-to-observation" $
+    describe_date_endpoint (read_date_endpoint "2026-10-25" "present") ≟ "ongoing-at:2026-10-25"
+  assert_case "unknown-endpoint-preserved" $
+    describe_date_endpoint (read_date_endpoint "2026-10-25" "?") ≟ "unknown-endpoint"
+  test_source_boundaries
+  test_review_boundaries
+  assert_case "tsv-escapes-round-trip" $
+    read_tsv_row (joinBy "\t" (map escape_tsv_field ["a\tb","c\nd","e\\f"])) ≟
+      Just ["a\tb","c\nd","e\\f"]
