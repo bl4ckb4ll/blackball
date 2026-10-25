@@ -6,6 +6,16 @@ snapshots. PDF/DOCX decoding, structured career-event interpretation, safe manag
 deletion and independent semantic acceptance remain unfinished. Do not use this
 as an accepted production parser for personal documents.
 
+## Research purpose
+
+Read [Parsing résumés and academic CVs](../notes/parsing-resumes.md) for reader
+comparisons and the research requirements: professors' self-presentation, what
+they and their institutions emphasize or reward, documented work histories,
+and institutional hiring hierarchies. Preserve degree-to-appointment evidence
+needed to investigate elite graduates' downward placement and less prestigious
+graduates' upward mobility. This is not employer applicant screening; document
+presentation, career claims and population-level findings remain distinct.
+
 ## Run
 
 Supported runtime tested here: Linux x86_64, pinned Idriç Chez distribution
