@@ -29,21 +29,24 @@ assert_contains "issue_robustness_100" "$report" "100.00${tab}14000.00${tab}8.46
 assert_contains "issue_robustness_150" "$report" "150.00${tab}21000.00${tab}12.69${tab}5.79"
 
 # Previously-missing local worker comparison must now exist.
+assert_contains "listing_profile_b_present" "$report" "listing_profile_b_15_full_time_shared_2br"
+assert_contains "listing_monthly_2br_rent" "$report" "listing_2br_park_place_monthly_rent${tab}1539.00"
+assert_contains "min_wage_sensitivity" "$report" "13.73${tab}147.01${tab}1125.91"
 assert_contains "local_profile_b_present" "$report" "profile_b_full_time_shared_two_bedroom"
-assert_contains "local_profile_b_surplus" "$report" "annual_surplus${tab}1708.50"
-assert_contains "local_profile_b_years_resident" "$report" "years_to_full_coa${tab}96.88"
-assert_contains "local_profile_b_nonresident" "$report" "profile_b_nonresident${tab}162.59${tab}212.46"
-assert_contains "local_basket_vs_surplus" "$report" "basket_share_of_profile_b_surplus_percent${tab}174.42"
-assert_contains "local_basket_spent_deficit" "$report" "profile_b_surplus_if_basket_is_spent${tab}-1271.50"
+assert_contains "local_profile_b_surplus" "$report" "annual_surplus${tab}2100.75"
+assert_contains "local_profile_b_years_resident" "$report" "years_to_full_coa${tab}78.79"
+assert_contains "local_profile_b_nonresident" "$report" "profile_b_nonresident${tab}132.23${tab}172.79"
+assert_contains "local_basket_vs_surplus" "$report" "basket_share_of_profile_b_surplus_percent${tab}141.85"
+assert_contains "local_basket_spent_deficit" "$report" "profile_b_surplus_if_basket_is_spent${tab}-879.25"
 assert_contains "subsidy_go_blue_remainder" "$report" "go_blue_non_tuition_remainder_per_year${tab}21298.00"
-assert_contains "subsidy_unpaid_internship" "$report" "profile_b_surplus_after_unpaid_internship${tab}-2791.50"
-assert_contains "subsidy_relocation" "$report" "profile_b_surplus_after_one_time_2000_relocation${tab}-291.50"
+assert_contains "subsidy_unpaid_internship" "$report" "profile_b_surplus_after_unpaid_internship${tab}-2399.25"
+assert_contains "subsidy_relocation" "$report" "profile_b_surplus_after_one_time_2000_relocation${tab}100.75"
 
 # The worker command itself must answer the follow-up question.
 worker=$(bash "$calc" worker --wage 15 --hours 40 --weeks 50 --rent 800 --utilities 120 \
     --food 380 --transport 300 --health 120 --phone 60 --personal 150)
-assert_contains "worker_years_resident_coa" "$worker" "years_to_full_coa${tab}96.88"
-assert_contains "worker_years_resident_tuition" "$worker" "years_to_tuition_only${tab}47.02"
+assert_contains "worker_years_resident_coa" "$worker" "years_to_full_coa${tab}78.79"
+assert_contains "worker_years_resident_tuition" "$worker" "years_to_tuition_only${tab}38.24"
 
 # Determinism: identical inputs produce identical output.
 run_a=$(bash "$calc" report)
@@ -64,6 +67,6 @@ assert_contains "note_has_nonresident_coa" "$note_text" "\$93,096"
 assert_contains "note_has_four_year_total" "$note_text" "\$165,520"
 assert_contains "note_has_austerity_point" "$note_text" "austerity does not manufacture capital"
 assert_contains "note_links_calculator" "$note_text" "calculate.sh"
-assert_contains "note_has_local_worker" "$note_text" "96.88"
+assert_contains "note_has_local_worker" "$note_text" "78.79"
 
 finish
