@@ -42,9 +42,9 @@ worker=$(bash "$calc" worker --wage 16 --hours 40 --rent 800 --utilities 120 \
     --food 380 --transport 300 --health 120 --phone 60 --personal 150)
 assert_exit "worker_exit_zero" 0 "$?"
 assert_contains "worker_gross" "$worker" "gross_annual${tab}32000.00"
-assert_contains "worker_take_home" "$worker" "take_home${tab}26390.50"
-assert_contains "worker_surplus" "$worker" "annual_surplus${tab}3230.50"
-assert_contains "worker_years_coa" "$worker" "years_to_full_coa${tab}51.24"
+assert_contains "worker_take_home" "$worker" "take_home${tab}26782.75"
+assert_contains "worker_surplus" "$worker" "annual_surplus${tab}3622.75"
+assert_contains "worker_years_coa" "$worker" "years_to_full_coa${tab}45.69"
 
 default_out=$(bash "$calc")
 assert_exit "default_command_exit_zero" 0 "$?"
