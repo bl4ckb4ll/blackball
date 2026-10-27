@@ -179,9 +179,13 @@ W_DEFAULT_PERSONAL=150
 W_DEFAULT_TUITION=80328
 W_DEFAULT_COST=165520
 
-# Static 2025 single-filer federal brackets and standard deduction (IRS
-# Rev. Proc. 2024-40) plus FICA 7.65% and Michigan 4.25%. Tax parameters are
-# model inputs; see the note for why they are labelled and dated.
+# Verified 2026 single-filer federal brackets and standard deduction: IRS 2026
+# tax tables (Publication 505). Michigan 2026 4.25% rate and $5,900 single
+# personal exemption; 2026 Social Security wage base $184,500. This is a
+# simplified annual income-tax scenario, not a tax return or aid determination.
+# https://www.irs.gov/publications/p505
+# https://www.michigan.gov/taxes/business-taxes/withholding/calendar-year-tax-information
+# https://www.irs.gov/publications/p15
 worker_metrics() {
     require_amount wage "$1"; wage=$VALIDATED
     require_amount hours "$2"; hours=$VALIDATED
@@ -203,17 +207,25 @@ worker_metrics() {
 scale=$RAW_SCALE
 define fedtax(t) {
     if (t <= 0) return (0)
-    if (t <= 11925) return (0.10 * t)
-    if (t <= 48475) return (0.10 * 11925 + 0.12 * (t - 11925))
-    if (t <= 103350) return (0.10 * 11925 + 0.12 * (48475 - 11925) + 0.22 * (t - 48475))
-    return (0)
+    if (t <= 12400) return (0.10 * t)
+    if (t <= 50400) return (1240 + 0.12 * (t - 12400))
+    if (t <= 105700) return (5800 + 0.22 * (t - 50400))
+    if (t <= 201775) return (17966 + 0.24 * (t - 105700))
+    if (t <= 256225) return (41024 + 0.32 * (t - 201775))
+    if (t <= 640600) return (58448 + 0.35 * (t - 256225))
+    return (192979.25 + 0.37 * (t - 640600))
 }
 gross = $wage * $hours * $weeks
-taxable = gross - 15000
+taxable = gross - 16100
 if (taxable < 0) taxable = 0
 fed = fedtax(taxable)
-fica = gross * 0.0765
-state = gross * 0.0425
+ss_base = gross
+if (ss_base > 184500) ss_base = 184500
+fica = ss_base * 0.062 + gross * 0.0145
+if (gross > 200000) fica = fica + (gross - 200000) * 0.009
+mi_taxable = gross - 5900
+if (mi_taxable < 0) mi_taxable = 0
+state = mi_taxable * 0.0425
 take = gross - fed - fica - state
 exp = ($rent + $util + $food + $trans + $health + $phone + $personal) * 12
 surp = take - exp
@@ -353,10 +365,21 @@ report() {
 
     printf '\n[sensitivity: full-time 40h, shared two-bedroom, four-year resident COA]\n'
     printf 'wage\tsurplus\tyears_to_full_coa\n'
-    sensitivity_row 13
+    sensitivity_row 13.73
     sensitivity_row 15
     sensitivity_row 17
     sensitivity_row 19
+
+    printf '\n[dated west Ann Arbor apartment-listing scenario; rents exclude separately assumed utilities]\n'
+    printf 'listing_1br_park_place_monthly_rent\t1339.00\n'
+    printf 'listing_2br_park_place_monthly_rent\t1539.00\n'
+    printf 'listing_two_roommates_equal_split_monthly_rent\t769.50\n'
+    printf 'listing_profile_a_15_part_time_solo_1br\n'
+    line_worker 15 32 50 1339 180 380 300 120 60 150 "$W_DEFAULT_COST" "$W_DEFAULT_TUITION"
+    printf 'listing_profile_b_15_full_time_shared_2br\n'
+    line_worker 15 40 50 769.50 120 380 300 120 60 150 "$W_DEFAULT_COST" "$W_DEFAULT_TUITION"
+    printf 'listing_profile_c_17_full_time_shared_2br\n'
+    line_worker 17 40 50 769.50 120 380 300 120 60 150 "$W_DEFAULT_COST" "$W_DEFAULT_TUITION"
 
     printf '\n[nonresident four-year targets at profile surplus]\n'
     printf 'profile\tyears_to_tuition_only\tyears_to_full_coa\n'
@@ -402,6 +425,9 @@ check() {
     check_assert nonresident_four_year_coa 362980.00 "$(fmt_money "$(bcexpr '2*88394 + 2*93096')")"
     check_assert resident_four_year_tuition 80328.00 "$(fmt_money "$(bcexpr '2*18896 + 2*21268')")"
     check_assert nonresident_four_year_tuition 277788.00 "$(fmt_money "$(bcexpr '2*67096 + 2*71798')")"
+    check_assert worker_2026_b_surplus 2100.75 "$(line_worker 15 40 50 800 120 380 300 120 60 150 "$W_DEFAULT_COST" "$W_DEFAULT_TUITION" | awk -F '\t' '$1=="annual_surplus"{print $2}')"
+    check_assert worker_2026_b_federal 1420.00 "$(line_worker 15 40 50 800 120 380 300 120 60 150 "$W_DEFAULT_COST" "$W_DEFAULT_TUITION" | awk -F '\t' '$1=="federal_tax"{print $2}')"
+    check_assert worker_2026_b_michigan 1024.25 "$(line_worker 15 40 50 800 120 380 300 120 60 150 "$W_DEFAULT_COST" "$W_DEFAULT_TUITION" | awk -F '\t' '$1=="michigan_tax"{print $2}')"
     check_assert cover_40194_2980_share 7.41 "$(fmt_money "$(bcexpr '100 * 2980 / 40194')")"
     check_assert cover_165520_11920_share 7.20 "$(fmt_money "$(bcexpr '100 * 11920 / 165520')")"
     check_assert cover_362980_11920_share 3.28 "$(fmt_money "$(bcexpr '100 * 11920 / 362980')")"
