@@ -2,11 +2,11 @@
 # SCENARIO_DEFECT_REGRESSION: reproduction state for issue #85.
 #
 # The reported defect was that the discretionary-cut arithmetic existed but the
-# requested local Washtenaw County worker affordability comparison (real wage,
+# requested local Washtenaw County worker affordability comparison (wage,
 # rent, expenses, take-home, surplus, years-to-cover) was absent. This suite
-# proves the defect is resolved: the note and calculator now produce the local
-# comparison, while the evidence boundary ("do not claim U-M says skipping
-# movies pays tuition") is preserved.
+# checks the calculator's modeled worker outputs and source note, NOT whether
+# hypothetical wages/rents are observed, nor an individual net-price outcome.
+# The U-M attribution boundary must remain explicit.
 set -u
 
 script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
