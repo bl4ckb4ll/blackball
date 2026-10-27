@@ -120,37 +120,44 @@ This is a **scale** finding, not a claim that budgeting is useless or that U-M l
 
 The issue's follow-up asked for a concrete Main Street profile: an auto-parts counter worker with a plausibly located Ann Arbor apartment within a few miles of both work and U-M. The point is to replace the absent "years of surplus" question with an auditable answer.
 
+### Dated local observations versus assumptions
+
+- **Workplace:** O'Reilly Auto Parts store #3329 is at 2182 West Stadium Boulevard, Ann Arbor (company store directory). This fixes a real comparison location, not a verified worker or wage: https://locations.oreillyauto.com/en-us/mi/annarbor/autoparts-3329.html
+- **Comparable posted wage:** Weingartz advertised a full-time Ann Arbor **Parts and Service Specialist** at **$17–$20/hour**. The [preserved listing](https://tallo.com/talent/job/sales/parts-specialist-or-salesperson/mi/ann-arbor/parts-and-service-specialist-d21612c8) specifies an **October 24, 2026 expiry**; examined October 27, 2026. It is dated occupational evidence, **not** evidence of current availability or of what O'Reilly pays. The baseline $15/hour remains a hypothetical input. See also [Weingartz employer listing on Indeed](https://www.indeed.com/cmp/Weingartz?campaignid=mobvjcmp&fromjk=bf9e22e30d786e97).
+- **Locatable rents:** Park Place, **1980 Pauline Boulevard**, west Ann Arbor: [property manager floor-plan snapshot](https://www.mckinley.com/apartments/michigan/ann-arbor/park-place/floorplans/the-cedar/?locale=ht) and [unit-level rental listing](https://hotpads.com/park-place-ann-arbor-mi-48103-249jrxr/pad?beds=1), inspected October 27, 2026. The displayed Sycamore one-bedroom unit 2088-2B was **$1,339/month**, listed for November 5; the Cedar two-bedroom unit 2066-2A was **$1,539/month**, listed for November 6. An *assumed equal split between two roommates* is **$769.50/month each**. These are **advertisements, not signed leases**, and prices, concessions, fees and availability can change. Other versions of the property page show promotional rents; do not substitute those for recurring contracted rent without verification.
+- **Independent contextual benchmark:** MIT's [2026 Washtenaw County Living Wage Calculator](https://livingwage.mit.edu/counties/26161) estimates **$25.30/hour** for one adult with no children working 2,080 hours annually (updated February 15, 2026). This uses **MIT's own expense methodology** and is **not** an observed worker wage or a substitution for the expense basket below.
+
 ### Model inputs
 
 | Input | Value | Basis |
 |---|---:|---|
-| Hourly wage | $15.00 (main); $13 / $15 / $17 / $19 (sensitivity) | **Model input.** A representative Ann Arbor auto-parts counter rate. It is not a pinned posting: a dated capture of a live O'Reilly or comparable posting must replace it before this line is treated as durable wage evidence. |
-| Hours / week | 32 (profile A); 40 (profiles B, C) | Store counter roles are often part-time; 40 hours is the full-time case. |
-| Weeks / year | 50 | Two weeks unpaid. |
-| Federal tax | 2025 single standard deduction $15,000; 10% to $11,925, then 12% | IRS Rev. Proc. 2024-40 brackets, used as a dated stand-in; re-pin when the 2026 table is captured. Taxable income here never reaches the 22% bracket. |
-| FICA | 7.65% | Social Security 6.2% + Medicare 1.45%, below the wage base. |
-| Michigan income tax | 4.25% | Michigan Department of Treasury flat individual rate. |
-| Rent | $1,400/month (solo 1BR); $800/month (shared 2BR) | **Model input.** A HUD Fair Market Rent snapshot for the Ann Arbor HUD Metro FMR Area must be pinned before this line is treated as durable. |
-| Utilities + internet | $180/month (solo); $120/month (shared) | Model input. |
-| Food at home | $380/month | Model input. |
-| Transportation | $300/month | Model input (insurance, fuel, maintenance, or bus). |
-| Health-insurance premium | $120/month | Model input (employee share). |
-| Phone | $60/month | Model input. |
-| Personal / household | $150/month | Model input. |
+| Hourly wage | $15.00 baseline; $13.73, $15, $17, $19 sensitivity | $15 is an explicit **assumption**, not an O'Reilly salary. $13.73 is Michigan's ordinary 2026 minimum wage; $17–$20 is the separate Weingartz posted range. |
+| Hours / week | 32 (profile A); 40 (profiles B, C) | **Assumptions** about a part-time and full-time schedule, not promised hours in a captured O'Reilly offer. |
+| Weeks / year | 50 | **Assumption:** two weeks unpaid. |
+| Federal income tax | 2026 single filer; $16,100 standard deduction; 10% to $12,400 taxable, then 12% to $50,400 | [IRS 2026 Publication 505](https://www.irs.gov/publications/p505); full bracket schedule implemented. No credits, itemizing or special deductions assumed. |
+| FICA | 6.2% Social Security to $184,500 wage base + 1.45% Medicare (plus 0.9% over $200,000) | [IRS Publication 15, 2026](https://www.irs.gov/publications/p15). |
+| Michigan income tax | 4.25% of modeled Michigan taxable wages above one $5,900 personal exemption | [Michigan Treasury, calendar year 2026](https://www.michigan.gov/taxes/business-taxes/withholding/calendar-year-tax-information). No state credits/deductions beyond this simplified exemption. |
+| Rent | $1,400/month solo 1BR; $800/month shared 2BR | **Original baseline assumptions**, retained separately from observed advertisements. Alternative Park Place rents are $1,339 solo / $769.50 equal shared split. |
+| Utilities + internet | $180/month solo; $120/month shared | Assumption **additional to the quoted apartment rent**; utilities/fees are not verified for the unit. Do not also add utilities to a HUD *gross-rent* benchmark. |
+| Food at home | $380/month | Assumption. |
+| Transportation | $300/month | Assumption (insurance, fuel, maintenance, or bus). |
+| Health-insurance premium | $120/month | Assumption (employee share, treated as after-tax expense in this simplified model). |
+| Phone | $60/month | Assumption. |
+| Personal / household | $150/month | Assumption. |
 
-The expense budget contains **necessities only**. The Part 1 discretionary basket is additional spending on top of it.
+These profiles concern a **hypothetical single worker without dependents**. The tax estimates do not include local tax where applicable, payroll withholding differences, refundable federal/state credits, pretax employee deductions, benefits eligibility, grants, inflation, investment returns, or earnings interrupted by school. The expense budget contains **necessities only**; the Part 1 discretionary basket is extra. The years-of-surplus ratio is an illustrative scale comparison, **not** a realistic student financing schedule.
 
 ### Worked computation — profile B (40 h/week at $15.00, shared two-bedroom)
 
-Formulas are shown exactly as [`calculate.sh`](calculate.sh) computes them:
+Formulas follow [`calculate.sh`](calculate.sh) with verified 2026 federal and Michigan parameters:
 
 - Gross: `15.00 × 40 × 50 = $30,000`
-- Federal taxable: `30,000 − 15,000 = $15,000`; federal tax: `0.10 × 11,925 + 0.12 × (15,000 − 11,925) = 1,192.50 + 369.00 = $1,561.50`
-- FICA: `30,000 × 0.0765 = $2,295.00`
-- Michigan: `30,000 × 0.0425 = $1,275.00`
-- Take-home: `30,000 − 1,561.50 − 2,295.00 − 1,275.00 = $24,868.50`
+- Federal taxable: `30,000 − 16,100 = $13,900`; federal tax: `0.10 × 12,400 + 0.12 × (13,900 − 12,400) = 1,240 + 180 = $1,420.00`
+- FICA: `30,000 × (0.062 + 0.0145) = $2,295.00`
+- Michigan: `(30,000 − 5,900) × 0.0425 = $1,024.25`
+- Take-home after modeled taxes: `30,000 − 1,420 − 2,295 − 1,024.25 = $25,260.75`
 - Annual expenses: `(800 + 120 + 380 + 300 + 120 + 60 + 150) × 12 = 1,930 × 12 = $23,160`
-- **Annual surplus: `24,868.50 − 23,160 = $1,708.50`**
+- **Annual surplus: `25,260.75 − 23,160 = $2,100.75`**
 
 ### Years of surplus required to cover the bill
 
@@ -158,28 +165,36 @@ Formulas are shown exactly as [`calculate.sh`](calculate.sh) computes them:
 
 | Profile | Take-home | Annual surplus | Years to resident tuition only ($80,328) | Years to resident COA ($165,520) | Years to nonresident tuition only ($277,788) | Years to nonresident COA ($362,980) |
 |---|---:|---:|---:|---:|---:|---:|
-| **A** — 32 h/week, $15.00, solo 1BR | $20,244 | **−$10,836** | never | never | never | never |
-| **B** — 40 h/week, $15.00, shared 2BR | $24,868.50 | **$1,708.50** | 47.02 | 96.88 | 162.59 | 212.46 |
-| **C** — 40 h/week, $17.00, shared 2BR | $27,912.50 | **$4,752.50** | 16.90 | 34.83 | 58.45 | 76.38 |
+| **A** — 32 h/week, $15.00, solo 1BR | $20,604.75 | **−$10,475.25** | never | never | never | never |
+| **B** — 40 h/week, $15.00, shared 2BR | $25,260.75 | **$2,100.75** | 38.24 | 78.79 | 132.23 | 172.79 |
+| **C** — 40 h/week, $17.00, shared 2BR | $28,304.75 | **$5,144.75** | 15.61 | 32.17 | 53.99 | 70.55 |
 
-Profile A cannot cover a one-bedroom apartment out of wages at all. Only the full-time, shared-housing case produces a surplus, and four years of resident cost of attendance — tuition, living, books, and travel — still requires roughly **97 years** of that entire surplus; nonresident cost requires about **212 years**.
+Under these specific baseline inputs, profile A has **negative savings**; B has a small positive margin. Profile B's entire surplus would take **78.79 years** to match the resident four-year cost-of-attendance budget, or **172.79 years** for the nonresident budget. These ratios are not predictions of time to a degree or proof that all aid recipients face gross sticker price.
 
-### Sensitivity to the unpinned wage
+### Wage and listed-rent sensitivities
 
-Full-time, 40 h/week, shared two-bedroom, four-year resident COA:
+Full-time, 40 h/week, original **modeled** $800/month shared rent, four-year resident COA:
 
 | Wage | Annual surplus | Years to resident four-year COA |
 |---:|---:|---:|
-| $13.00 | −$1,354.00 | never |
-| $15.00 | $1,708.50 | 96.88 |
-| $17.00 | $4,752.50 | 34.83 |
-| $19.00 | $7,796.50 | 21.23 |
+| $13.73 (Michigan 2026 ordinary minimum) | $147.01 | 1,125.91 |
+| $15.00 (assumed baseline) | $2,100.75 | 78.79 |
+| $17.00 (bottom of comparable advertised range) | $5,144.75 | 32.17 |
+| $19.00 (inside comparable advertised range) | $8,188.75 | 20.21 |
 
-The conclusion is stable across the plausible wage range: the surplus needed to pay four years of resident cost of attendance is measured in **decades**, and for nonresident cost of attendance in **centuries**.
+**Separately** using the observed Park Place advertisement, holding all other modeled expenses fixed:
+
+| Worker scenario | Advertised apartment rent input | Modeled annual surplus | Years to resident four-year COA |
+|---|---:|---:|---:|
+| A: $15/h, 32h/wk, solo one-bedroom | $1,339/month | −$9,743.25 | never |
+| B: $15/h, 40h/wk, half of two-bedroom | $769.50/month | $2,466.75 | 67.10 |
+| C: $17/h, 40h/wk, half of two-bedroom | $769.50/month | $5,510.75 | 30.04 |
+
+**Observed:** the unit advertisements and comparable job pay band. **Assumed:** actual employment, hours, co-tenancy, 50 paid weeks, utility spending, costs outside rent, and each hypothetical worker's particular wage. Near-minimum wages make the ratio extraordinarily sensitive to a small change in expenses. At the higher wage scenarios, nonresident attendance-cost comparisons are still decades but **not always centuries**.
 
 ### The discretionary basket relative to this worker
 
-For profile B, the $2,980 modeled basket is **174.42%** of the entire annual surplus left after necessities. A worker who actually spends that basket is running a deficit of `1,708.50 − 2,980 = −$1,271.50`; eliminating the basket is the difference between a deficit and a thin surplus. Yet even that recovered surplus still requires 96.88 years for resident four-year cost of attendance.
+For profile B, the $2,980 modeled basket is **141.85%** of the annual surplus after necessities. Actually spending it produces a deficit of `2,100.75 − 2,980 = −$879.25`; forgoing it recovers a thin surplus. Even that modeled full surplus would take **78.79 years** to match the resident four-year attendance-cost budget.
 
 The scale problem is exactly this inversion: the spending the advice treats as discretionary is large relative to an ordinary worker's margin, while the price it is supposed to address is large enough that the cut barely registers against it.
 
@@ -191,7 +206,7 @@ None of the following is assumed in the base profile. Each changes the price, an
 
 U-M states that Michigan families with income of $125,000 or less **and** assets below $125,000 qualify for free tuition on the Ann Arbor campus for up to four years, reviewed each year. That is a real, bounded promise about **price**, and it changes the problem substantially for qualifying residents: tuition and fees go to $0.
 
-It does not erase the non-tuition budget. The remaining U-M cost-of-attendance lines are `17,220 + 1,220 + 400 + 2,458 = $21,298` per year. At profile B's surplus of $1,708.50, that remainder alone is `21,298 ÷ 1,708.50 = 12.47` years of the worker's entire annual surplus **per year** of study. Grants remove tuition; they do not remove the living-cost requirement, and they do not turn a worker without capital into someone who has it.
+For an **otherwise qualifying LSA student with tuition and mandatory fees covered but no separate living-cost grant**, the full non-tuition budget remains `17,220 + 1,220 + 400 + 2,458 = $21,298` per academic year; this is **10.14** years of profile B's modeled $2,100.75 annual surplus **per year** of study. This is **not the net price for all Go Blue recipients**: U-M says it meets demonstrated need for eligible residents, and in 2026 qualifying students in **Nursing, specified teacher-preparation programs in the Marsal Family School of Education, and Music, Theatre & Dance** receive coverage for the **full cost of attendance including housing**. Individual grant awards must be calculated separately. See [U-M eligibility](https://finaid.umich.edu/apply-aid/new-undergraduates/michigan-residents/go-blue-guarantee-eligibility).
 
 ### Scenario F — Family pays part or all of cost of attendance
 
@@ -199,11 +214,11 @@ If a family covers some or all of the $165,520 (resident) or $362,980 (nonreside
 
 ### Scenario I — Unpaid or low-paid internship or research placement
 
-If a student must take an unpaid 10-hour-per-week placement during a 30-week academic year, forgone wages at $15.00/hour are `15 × 10 × 30 = $4,500`. That exceeds profile B's annual surplus of $1,708.50 and turns it negative: `1,708.50 − 4,500 = −$2,791.50`. Unpaid experience is therefore not free; it is a capital requirement of roughly $4,500 per placement year for this worker.
+**If and only if** a 10-hour-per-week unpaid placement replaces 10 previously paid hours for 30 weeks, wages forgone at the **assumed** $15/hour are `15 × 10 × 30 = $4,500` gross. Compared as a simplified gross opportunity-cost shock to profile B's $2,100.75 margin, the arithmetic is `2,100.75 − 4,500 = −$2,399.25`. This is not an observed internship requirement, and a rigorous net-income scenario must recompute taxes for fewer paid hours instead of subtracting gross wages from net savings.
 
 ### Scenario R — Relocation or moving help
 
-A single $2,000 relocation or moving expense moves profile B's surplus from `1,708.50` to `1,708.50 − 2,000 = −$291.50`. One-time costs of this size are enough to eliminate the annual margin.
+A modeled one-time $2,000 moving expense changes profile B's annual surplus to `2,100.75 − 2,000 = $100.75`. It **nearly** eliminates the year's savings, but does **not** create a deficit at that input. The source of the $2,000 cost remains hypothetical.
 
 The consistent result: anything that increases cost or reduces paid hours — tuition, unpaid work, relocation, transport, family constraints — pushes this worker toward or below zero, while small discretionary cuts move the total by a few percent.
 
@@ -213,7 +228,7 @@ Budgeting can reduce some variable living expenses. It cannot solve a shortage o
 
 That is why the framing matters. When an institution charging roughly $40,000–$43,000 per year for resident attendance and $88,000–$93,000 for nonresident attendance directs financially strained students toward coffee, movies, eating out, travel, and comparable discretionary spending, it risks recasting a **large affordability problem as a problem of personal restraint**.
 
-The deterministic comparison above makes the scale explicit. Even aggressive discretionary cuts leave the overwhelming majority of the attendance cost untouched, and for a concrete local worker the arithmetic runs in decades or centuries, not months.
+The deterministic comparison above makes the scale explicit. Even aggressive discretionary cuts leave the overwhelming majority of the attendance cost untouched, and for these modeled local-worker profiles the ratios are generally many years, decades or longer, not months. They do not estimate a student's actual net cost after individual aid.
 
 The defensible claim is about **scale, affordability, and moral framing** — not that U-M told students their movie tickets were the tuition bill.
 
@@ -248,9 +263,9 @@ Companion shell tests live in [`tests/`](../../tests/run_tests.sh) and cover hap
 ## Evidence gaps and next steps
 
 1. **Archive the historical `Your Money, Your Life` pages.** The located pages carry no visible date. Pin a Wayback Machine snapshot before using their wording longitudinally.
-2. **Capture a dated live wage posting.** Replace the $15.00 model wage with a captured O'Reilly (or comparable) Ann Arbor counter/sales posting, including pay type and schedule.
-3. **Pin a HUD Fair Market Rent snapshot** for the Ann Arbor HUD Metro FMR Area to replace the $1,400 / $800 rent inputs.
-4. **Pin the exact 2026 tax tables** (IRS bracket and standard-deduction figures, Michigan rate) once published, replacing the dated 2025 stand-ins.
+2. **Find O'Reilly-specific pay evidence.** A dated **comparable** Ann Arbor Weingartz parts/services posting is now recorded at $17–$20/hour but expired October 24; do not describe its pay or schedule as O'Reilly's or as a currently available job.
+3. **Recheck the rental offer and fees.** Dated unit-level Park Place advertisements have been recorded separately from the initial $1,400 / $800 hypothetical rent. Verify landlord-contracted rents, utility responsibility and move-in charges before converting the sensitivity into observed monthly living costs. HUD Fair Market Rent is a **gross-rent** benchmark, not an advertised unit rent; do not add utilities twice.
+4. **Refine the tax/benefits scenario.** Federal 2026 rates/standard deduction and Michigan's 2026 rate/exemption are now pinned. Add credits, income-limited public support, employer pretax health premiums, and actual state tax-return treatment where relevant rather than implying this simplified calculation is exact take-home pay.
 5. **Add a loan-amortization scenario.** Debt actually carried by non-grant students adds interest not modeled here.
 6. **Separate research question on family capital.** Test whether entry into fields such as civil engineering depends materially on family-funded internships, relocation, transport, housing, or periods of low or no pay. Anecdotes generate the hypothesis; they do not establish it.
 7. **Search for the remembered explicit movie/eating-out tuition comparison.** It remains unverified; do not promote it to a U-M claim until an older source is recovered.
@@ -264,7 +279,14 @@ Companion shell tests live in [`tests/`](../../tests/run_tests.sh) and cover hap
 - U-M Office of Financial Aid, "Go Blue Guarantee Eligibility": https://finaid.umich.edu/apply-aid/new-undergraduates/michigan-residents/go-blue-guarantee-eligibility
 - U-M Campus Information, "Victor Views | Lessons on Money (Financial February)": https://campusinfo.umich.edu/article/victor-views-lessons-money-financial-february
 - U-M Parents & Families, "First-Year Expectations": https://parents.umich.edu/page/firstyear-expectations
-- IRS, Publication 15 (tax-withholding reference): https://www.irs.gov/publications/p15
-- Michigan Department of Treasury, individual income tax: https://www.michigan.gov/taxes/iit
+- IRS, 2026 Publication 505 (federal single-filer rates): https://www.irs.gov/publications/p505
+- IRS, 2026 Publication 15 (Social Security/Medicare withholding): https://www.irs.gov/publications/p15
+- Michigan Treasury, calendar-year 2026 4.25% and $5,900 exemption: https://www.michigan.gov/taxes/business-taxes/withholding/calendar-year-tax-information
+- Michigan LEO, minimum wage $13.73 from January 1, 2026: https://www.michigan.gov/leo/bureaus-agencies/ber/Wage-and-Hour/min-wage
+- O'Reilly store #3329, 2182 West Stadium Boulevard: https://locations.oreillyauto.com/en-us/mi/annarbor/autoparts-3329.html
+- Weingartz Ann Arbor dated parts/service listing ($17–$20/hour; stated October 24, 2026 expiration): https://tallo.com/talent/job/sales/parts-specialist-or-salesperson/mi/ann-arbor/parts-and-service-specialist-d21612c8
+- Park Place floor plans, McKinley property manager: https://www.mckinley.com/apartments/michigan/ann-arbor/park-place/floorplans/the-cedar/?locale=ht
+- Park Place advertised units and dates: https://hotpads.com/park-place-ann-arbor-mi-48103-249jrxr/pad?beds=1
+- MIT, 2026 Washtenaw living-wage method/expenses: https://livingwage.mit.edu/counties/26161
 
 Related Blackball notes: [`education/if-you-mean-economic-empowerment-put-it-in-the-contract.md`](../../education/if-you-mean-economic-empowerment-put-it-in-the-contract.md) tests economic-empowerment claims against family capital and unpaid work; [`../README.md`](../README.md) tracks Michigan claims, costs, and outcomes.
