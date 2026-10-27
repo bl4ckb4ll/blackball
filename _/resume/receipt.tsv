@@ -16,12 +16,16 @@ fp_spec_digest	PINNED	54ea3cc1f1f88a5be3819042b16020d6dbd311689903fccbe2fa899cb5
 fp_producer_stdout_digest	OBSERVED	2beb1dbb6a2c33e59f98abe1b5227ea11946760ab993076eb9b8e15115b295ea; prototype plaintext/DOCX recipe; stderr empty
 verification_commands	RECORDED	commands.tsv; complete producer assertions retained in producer-cases.tsv
 ike	NOT_RUN	no qualified Ike executable found on this host; no generic-C substitute built
-pdf_candidate_builds	BLOCKED	GHC acquisition incomplete; both Cabal builds failed before usable compiler detection; see reader-evaluation.md
+pdf_candidate_builds	PASS	2026-10-27: official GHC 9.14.1 and Cabal 3.16.1.0; both pinned libraries and actual extraction clients compiled; acquisition failure below is historical
+pdf_candidate_comparison	EXECUTED_NOT_QUALIFIED	12 independent synthetic PDFs, 24 resource-limited reader executions; Unicode, mapping uncertainty and standard-font geometry defects remain; see pdf-qualification/
+pdf_reader_selection	BLOCKED	neither current candidate passes the independent contract; no production selection or activation
+pdf_producer_regression	PASS	unchanged 41 assertions rerun; output byte-identical to producer-cases.tsv; not a new filesystem round trip or independent résumé acceptance
+pdf_process_isolation	NOT_QUALIFIED	namespace probe refused; separate Landlock ABI query returned Function not implemented (ENOSYS, 38); resource limits do not prove non-networked isolation
 docx_intake	PASS	Pandoc 3.1.3 plus checked ZIP/XML/model boundary; ordinary and academic DOCX complete intake/review/reload with actual OOXML part/paragraph anchors
 docx_refusals	PASS	encrypted ZIP; excessive expansion; external-resource relationship; entity declaration; omitted gridless table; changed model; changed XML sidecar
 docx_reader_loss	BLOCKED_FOR_AFFECTED_INPUT	mixed text/footnote run loses text in both 3.1.3 and official 3.12.1; checked core refuses source/model mismatch; see pandoc-gap.md
 pdf_intake	NOT_IMPLEMENTED	no PDF reader selected or qualified; entry point fails closed
-pdf_geometry_and_OCR_status	NOT_RUN	no PDF page anchors, image-only/mixed-page outcomes or independent rendered-page comparison
+pdf_geometry_and_OCR_status	PARTIAL	independent fixtures rendered and compared; hpdft image/blank/mixed observations execute, but no production PDF anchors/outcomes exist; OCR not invoked
 structured_career_events	NOT_IMPLEMENTED	line claims and section grouping work; event/date/entity interpretation remains unresolved
 owner_added_facts	NOT_IMPLEMENTED	existing documentary claims can be corrected; new owner-only fields need a separate event creation operation
 safe_managed_deletion	BLOCKED	qualified managed-path/symlink deletion policy missing; operation refuses without effects

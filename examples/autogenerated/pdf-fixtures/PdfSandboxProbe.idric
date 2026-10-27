@@ -1,0 +1,16 @@
+module PdfSandboxProbe
+
+import System.Errno
+
+-- Linux x86_64 only. Query the Landlock ABI without creating a ruleset or
+-- changing process restrictions. This does not attest a working sandbox.
+%foreign "C:syscall,libc.so.6"
+query_linux_sandbox_abi : Int → Int → Int → Int → PrimIO Int
+
+main : IO ()
+main = do
+  -- Linux x86_64 landlock_create_ruleset = 444; VERSION flag = 1.
+  version ← primIO (query_linux_sandbox_abi 444 0 0 1)
+  error_number ← getErrno
+  putStrLn ("landlock-abi-query\t" ++ show version)
+  if version < 0 then putStrLn ("landlock-error\t" ++ strerror error_number ++ "\t" ++ show error_number) else pure ()

@@ -1,0 +1,94 @@
+module PdfFixtures
+
+import Data.List
+import Data.Text
+import System
+import System.File
+
+record PdfPageFixture where
+  constructor PageFixture
+  content_stream : Text
+  page_attributes : Text
+
+stream_object : Text → Text
+stream_object content = "<< /Length " ++ show (length (unpack content)) ++ ">>\nstream\n" ++ content ++ "endstream"
+
+font_object : Text
+font_object = "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding << /Type /Encoding /BaseEncoding /WinAnsiEncoding /Differences [132 /UnknownFixtureGlyph] >> /ToUnicode 4 0 R >>"
+
+unicode_mapping : Text
+unicode_mapping = joinBy "\n"
+  ["/CIDInit /ProcSet findresource begin", "12 dict begin", "begincmap",
+   "/CIDSystemInfo << /Registry (Fixture) /Ordering (Unicode) /Supplement 0 >> def",
+   "/CMapName /FixtureUnicode def", "/CMapType 2 def",
+   "1 begincodespacerange", "<00> <ff>", "endcodespacerange",
+   "1 beginbfrange", "<00> <7f> <0000>", "endbfrange",
+   "4 beginbfchar", "<80> <00eb>", "<81> <03a9>", "<82> <4e2d>", "<83> <d83dde00>",
+   "endbfchar", "endcmap", "CMapName currentdict /CMap defineresource pop", "end", "end", ""]
+
+page_objects : Number → List PdfPageFixture → List Text
+page_objects ordinal [] = []
+page_objects ordinal (page :: remaining) =
+  let page_reference = 6 + 2 × ordinal
+      content_reference = S page_reference
+      dictionary = "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 600 800] " ++ page.page_attributes ++
+        " /Resources << /Font << /F1 3 0 R >> /XObject << /Im1 5 0 R >> >> /Contents " ++ show content_reference ++ " 0 R >>"
+  in dictionary :: stream_object page.content_stream :: page_objects (S ordinal) remaining
+
+numbered_objects : Number → List Text → List Text
+numbered_objects ordinal [] = []
+numbered_objects ordinal (object :: remaining) =
+  (show ordinal ++ " 0 obj\n" ++ object ++ "\nendobj\n") :: numbered_objects (S ordinal) remaining
+
+object_offsets : Number → List Text → List Number
+object_offsets offset [] = []
+object_offsets offset (object :: remaining) = offset :: object_offsets (offset + length (unpack object)) remaining
+
+decimal_offset : Number → Text
+decimal_offset offset = let digits = show offset in pack (replicate (minus 10 (length (unpack digits))) '0') ++ digits
+
+render_pdf_fixture_with_font : Text → List PdfPageFixture → Text
+render_pdf_fixture_with_font selected_font pages =
+  let header = "%PDF-1.4\n"
+      references = map (\ordinal => show (6 + 2 × ordinal) ++ " 0 R") (take (length pages) [0 .. length pages])
+      page_tree = "<< /Type /Pages /Kids [" ++ joinBy " " references ++ "] /Count " ++ show (length pages) ++ " >>"
+      image = "<< /Type /XObject /Subtype /Image /Width 1 /Height 1 /ColorSpace /DeviceGray /BitsPerComponent 8 /Filter /ASCIIHexDecode /Length 3 >>\nstream\n00>\nendstream"
+      objects = numbered_objects 1 (["<< /Type /Catalog /Pages 2 0 R >>", page_tree, selected_font,
+                                     stream_object unicode_mapping, image] ++ page_objects 0 pages)
+      body = header ++ joinBy "" objects
+      offsets = object_offsets (length (unpack header)) objects
+  in body ++ "xref\n0 " ++ show (S (length objects)) ++ "\n0000000000 65535 f \n" ++
+     joinBy "" (map (\offset => decimal_offset offset ++ " 00000 n \n") offsets) ++
+     "trailer\n<< /Size " ++ show (S (length objects)) ++ " /Root 1 0 R >>\nstartxref\n" ++
+     show (length (unpack body)) ++ "\n%%EOF\n"
+
+render_pdf_fixture : List PdfPageFixture → Text
+render_pdf_fixture = render_pdf_fixture_with_font font_object
+
+write_fixture : Text → Text → List PdfPageFixture → IO ()
+write_fixture directory name pages = do
+  Right _ ← writeFile (directory ++ "/" ++ name ++ ".pdf") (render_pdf_fixture pages)
+    | Left _ => do putStrLn "FixtureWriteFailed"; exitFailure
+  pure ()
+
+ordinary_page : PdfPageFixture
+ordinary_page = PageFixture "BT /F1 12 Tf 50 740 Td (Name: Ada Example) Tj 0 -24 Td (Employment) Tj 0 -24 Td (Factory technician, 2019-2024) Tj ET\n" ""
+
+main : IO ()
+main = do
+  [_, directory] ← getArgs | _ => do putStrLn "Usage: pdf-fixtures EXISTING_OUTPUT_DIRECTORY"; exitFailure
+  write_fixture directory "ordinary" [ordinary_page]
+  write_fixture directory "unicode" [PageFixture "BT /F1 12 Tf 50 740 Td <5a6f80208120822083> Tj ET\n" ""]
+  write_fixture directory "columns" [PageFixture "BT /F1 12 Tf 320 740 Td (Right column) Tj ET\nBT /F1 12 Tf 50 740 Td (Left column) Tj ET\n" ""]
+  write_fixture directory "geometry" [PageFixture "BT /F1 12 Tf 50 740 Td (Geometry) Tj ET\n" "/CropBox [20 30 580 770] /Rotate 90"]
+  write_fixture directory "boundaries" [ordinary_page, ordinary_page]
+  write_fixture directory "image-only" [PageFixture "q 100 0 0 100 50 600 cm /Im1 Do Q\n" ""]
+  write_fixture directory "blank" [PageFixture "" ""]
+  write_fixture directory "mixed" [ordinary_page, PageFixture "q 100 0 0 100 50 600 cm /Im1 Do Q\n" ""]
+  write_fixture directory "unmapped" [PageFixture "BT /F1 12 Tf 50 740 Td <84> Tj ET\n" ""]
+  -- Independent positive control: Courier has a 600-unit advance for every
+  -- glyph. Explicit widths distinguish absent-metric behavior from transforms.
+  let courier_font = "<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding /FirstChar 0 /LastChar 255 /Widths [" ++ joinBy " " (replicate 256 "600") ++ "] >>"
+  Right _ ← writeFile (directory ++ "/explicit-widths.pdf") (render_pdf_fixture_with_font courier_font [ordinary_page])
+    | Left _ => do putStrLn "FixtureWriteFailed"; exitFailure
+  putStrLn "PASS: independent synthetic PDFs written"

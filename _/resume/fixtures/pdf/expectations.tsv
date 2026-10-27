@@ -1,0 +1,14 @@
+case	pages	independent_expected_observation
+ordinary	1	page 1 wording: Name: Ada Example; Employment; Factory technician, 2019-2024; baselines (50,740), (50,716), (50,692)
+standard14-advance	1	Helvetica N has advance 8.664 at 12 points; first line advance 110.04; omitting Widths is valid for this standard PDF font
+explicit-widths	1	Courier with explicit Widths of 600 for all codes; N advance 7.2 at 12 points; first line advance 122.4
+unicode	1	page 1 logical ToUnicode wording: Zoë Ω 中 😀; origin (50,740); no replacement/control/surrogate scalar
+columns	1	Right column at (320,740); Left column at (50,740); physical placement retained regardless of output order
+geometry	1	MediaBox [0,0,600,800]; CropBox [20,30,580,770]; Rotate 90; raw text origin (50,740)
+boundaries	2	ordinary wording and origins on both pages; page identities remain distinct
+image-only	1	zero selectable glyphs; one painted image at [50,600,150,700]; NeedsTextRecognition
+blank	1	zero selectable glyphs; zero painted images; blank page
+mixed	2	page 1 ordinary wording; page 2 zero glyphs and one painted image; preserve page 2 recognition requirement
+unmapped	1	code 132 names UnknownFixtureGlyph and has no ToUnicode mapping; uncertainty or refusal required
+malformed	unknown	invalid PDF object/xref structure; explicit failure and no completed record
+encrypted	1	reader without password refuses; no password guess or OCR attempt

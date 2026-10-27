@@ -1,0 +1,162 @@
+module PdfProbeChecks
+
+import Data.List
+import Data.List1
+import Data.Text
+import System
+import System.File
+
+-- Independent expectations come from the fixture contract, not reader output.
+-- This checker deliberately does not import the intake or either PDF library.
+read_rows : Text → List (List Text)
+read_rows text = map (forget . split (≟ '\t')) (lines text)
+
+glyph_text : Text → Text → List Text → Text
+glyph_text "hpdft" page ["glyph", actual_page, _, _, _, _, wording] =
+  if page ≟ actual_page then wording else ""
+glyph_text "toolbox" page ["glyph", actual_page, _, _, _, _, _, "MAPPED", wording] =
+  if page ≟ actual_page then wording else ""
+glyph_text _ _ _ = ""
+
+page_text : Text → Text → Text → Text
+page_text reader page output = concat (map (glyph_text reader page) (read_rows output))
+
+origin_matches : Text → List Text → Bool
+origin_matches "hpdft" ["glyph", "1", "50.0", "740.0", _, _, _] = True
+origin_matches "toolbox" ["glyph", "1", _, "50.0", "740.0", _, _, _, _] = True
+origin_matches _ _ = False
+
+has_expected_origin : Text → Text → Bool
+has_expected_origin reader output = any (origin_matches reader) (read_rows output)
+
+shift_origin : Text → List Text → List Text
+shift_origin "hpdft" ["glyph", page, _, y, width, size, wording] = ["glyph", page, "51.0", y, width, size, wording]
+shift_origin "toolbox" ["glyph", page, code, _, top, right, bottom, state, wording] = ["glyph", page, code, "51.0", top, right, bottom, state, wording]
+shift_origin _ row = row
+
+zero_advance : Text → List Text → List Text
+zero_advance "hpdft" ["glyph", page, x, y, _, size, wording] = ["glyph", page, x, y, "0.0", size, wording]
+zero_advance "toolbox" ["glyph", page, code, left, top, _, bottom, state, wording] = ["glyph", page, code, left, top, left, bottom, state, wording]
+zero_advance _ row = row
+
+invented_image_text : Text → Text
+invented_image_text "hpdft" = "\nglyph\t1\t50.0\t600.0\t10.0\t12.0\tinvented OCR text\n"
+invented_image_text "toolbox" = "\nglyph\t1\t73\t50.0\t600.0\t60.0\t612.0\tMAPPED\tinvented OCR text\n"
+invented_image_text _ = ""
+
+without_page_two : List Text → Bool
+without_page_two ("glyph" :: "2" :: _) = False
+without_page_two _ = True
+
+without_page_one_text : Text → List Text → Bool
+without_page_one_text reader row = null (unpack (glyph_text reader "1" row))
+
+render_rows : List (List Text) → Text
+render_rows = joinBy "\n" . map (joinBy "\t")
+
+contains_text : Text → Text → Bool
+contains_text needle haystack = isInfixOf (unpack needle) (unpack haystack)
+
+decimal_denominator : Number → Integer
+decimal_denominator Z = 1
+decimal_denominator (S digits) = 10 × decimal_denominator digits
+
+-- Exact decimal comparison; no host floating-point narrowing in the oracle.
+read_nonnegative_decimal : Text → Maybe (Integer, Integer)
+read_nonnegative_decimal text = case forget (split (≟ '.') text) of
+  [whole, fraction] => do
+    integral ← parsePositive {a=Integer} whole
+    fractional ← parsePositive {a=Integer} fraction
+    let denominator = decimal_denominator (length (unpack fraction))
+    pure (integral × denominator + fractional, denominator)
+  _ => Nothing
+
+within_one_thousandth : Integer → Text → Bool
+within_one_thousandth expected_thousandths actual = case read_nonnegative_decimal actual of
+  Nothing => False
+  Just (numerator, denominator) =>
+    abs (numerator × 1000 + negate (expected_thousandths × denominator)) <= denominator
+
+has_expected_advance : Text → Integer → Text → Bool
+has_expected_advance reader expected output = any matches (read_rows output)
+  where
+    matches : List Text → Bool
+    matches ["glyph", "1", "50.0", "740.0", width, _, "Name: Ada Example"] =
+      reader ≟ "hpdft" && within_one_thousandth expected width
+    matches ["glyph", "1", "78", "50.0", _, right, _, "MAPPED", "N"] =
+      reader ≟ "toolbox" && within_one_thousandth expected right
+    matches _ = False
+
+report_check : Text → Bool → IO ()
+report_check name passed = putStrLn (name ++ "\t" ++ if passed then "PASS" else "FAIL")
+
+report_control : Text → Bool → Bool → IO ()
+report_control name baseline_passed mutation_rejected =
+  if baseline_passed then report_check name mutation_rejected
+  else putStrLn (name ++ "\tBLOCKED\tbaseline does not pass")
+
+-- The comparison wrapper bounds output files; the inherited readFile action
+-- still exposes a covering IO contract rather than a total one.
+covering
+read_output : Text → Text → IO Text
+read_output directory name = do
+  Right output ← readFile (directory ++ "/" ++ name ++ ".out")
+    | Left _ => do putStrLn ("MissingReaderOutput:" ++ name); exitFailure
+  pure output
+
+ordinary_wording : Text
+ordinary_wording = "Name: Ada ExampleEmploymentFactory technician, 2019-2024"
+
+covering
+main : IO ()
+main = do
+  [_, reader, directory] ← getArgs
+    | _ => do putStrLn "Usage: pdf-probe-checks hpdft|toolbox OUTPUT_DIRECTORY"; exitFailure
+  ordinary ← read_output directory "ordinary"
+  unicode ← read_output directory "unicode"
+  columns ← read_output directory "columns"
+  boundaries ← read_output directory "boundaries"
+  geometry ← read_output directory "geometry"
+  image_only ← read_output directory "image-only"
+  blank ← read_output directory "blank"
+  mixed ← read_output directory "mixed"
+  unmapped ← read_output directory "unmapped"
+  explicit_widths ← read_output directory "explicit-widths"
+  Right malformed_status ← readFile (directory ++ "/malformed.status")
+    | Left _ => do putStrLn "MissingMalformedStatus"; exitFailure
+  Right encrypted_status ← readFile (directory ++ "/encrypted.status")
+    | Left _ => do putStrLn "MissingEncryptedStatus"; exitFailure
+  Right malformed_error ← readFile (directory ++ "/malformed.err")
+    | Left _ => do putStrLn "MissingMalformedDiagnostic"; exitFailure
+  Right encrypted_error ← readFile (directory ++ "/encrypted.err")
+    | Left _ => do putStrLn "MissingEncryptedDiagnostic"; exitFailure
+  let checks =
+        [("reader-version-and-page-count", contains_text (if reader ≟ "hpdft" then "hpdft-probe-v1\t1\n" else "pdf-toolbox-probe-v1\t1\n") ordinary && contains_text (if reader ≟ "hpdft" then "hpdft-probe-v1\t2\n" else "pdf-toolbox-probe-v1\t2\n") boundaries),
+         ("ordinary-exact-wording", page_text reader "1" ordinary ≟ ordinary_wording),
+         ("unicode-exact-scalars", page_text reader "1" unicode ≟ "Zoë Ω 中 😀"),
+         ("raw-text-origin", has_expected_origin reader ordinary),
+         -- Adobe Helvetica AFM: N has 722 units; complete line 9170 units.
+         ("standard14-advance", has_expected_advance reader (if reader ≟ "hpdft" then 110040 else 58664) ordinary),
+         ("explicit-widths-control", has_expected_advance reader (if reader ≟ "hpdft" then 122400 else 57200) explicit_widths),
+         ("both-columns-retained", contains_text "Right column" (page_text reader "1" columns) && contains_text "Left column" (page_text reader "1" columns)),
+         ("page-boundaries", page_text reader "1" boundaries ≟ ordinary_wording && page_text reader "2" boundaries ≟ ordinary_wording),
+         ("page-one-mixed-text", page_text reader "1" mixed ≟ ordinary_wording),
+         ("image-page-no-invented-text", page_text reader "1" image_only ≟ "" && page_text reader "2" mixed ≟ ""),
+         ("image-blank-distinguished", contains_text "page-counts\t1\t0\t1" image_only && contains_text "page-counts\t1\t0\t0" blank),
+         ("mixed-image-retained", contains_text "page-counts\t2\t0\t1" mixed),
+         ("crop-and-rotation-retained", contains_text "\"/CropBox\",PdfArray [PdfNumber 20.0,PdfNumber 30.0,PdfNumber 580.0,PdfNumber 770.0]" geometry && contains_text "\"/Rotate\",PdfNumber 90.0" geometry),
+         ("unknown-glyph-marked", contains_text "UNMAPPED" unmapped),
+         ("malformed-refused", trim malformed_status ≟ "1" && contains_text (if reader ≟ "hpdft" then "BrokenXref" else "Corrupted \"lastXRef\"") malformed_error),
+         ("encrypted-refused", trim encrypted_status ≟ "1" && contains_text (if reader ≟ "hpdft" then "DecryptionError \"invalid or missing password\"" else "EncryptedDocumentRefused") encrypted_error)]
+  traverse_ (\check => report_check (fst check) (snd check)) checks
+  -- Targeted mutations must be detected by the same semantic predicates.
+  let controls =
+        [("reject-dropped-wording", page_text reader "1" ordinary ≟ ordinary_wording && not (page_text reader "1" (render_rows (filter (without_page_one_text reader) (read_rows ordinary))) ≟ ordinary_wording)),
+         ("reject-merged-pages", page_text reader "2" boundaries ≟ ordinary_wording && not (page_text reader "2" (render_rows (filter without_page_two (read_rows boundaries))) ≟ ordinary_wording)),
+         ("reject-shifted-coordinates", has_expected_origin reader ordinary && not (has_expected_origin reader (render_rows (map (shift_origin reader) (read_rows ordinary))))),
+         ("reject-invented-ocr", page_text reader "1" image_only ≟ "" && not (page_text reader "1" (image_only ++ invented_image_text reader) ≟ "")),
+         ("reject-zero-advance", has_expected_advance reader (if reader ≟ "hpdft" then 122400 else 57200) explicit_widths && not (has_expected_advance reader (if reader ≟ "hpdft" then 122400 else 57200) (render_rows (map (zero_advance reader) (read_rows explicit_widths)))))]
+  traverse_ (\check => report_check (fst check) (snd check)) controls
+  report_control "reject-replacement-unicode" (page_text reader "1" unicode ≟ "Zoë Ω 中 😀")
+    (not (pack (filter (\character => not (character ≟ '😀')) (unpack (page_text reader "1" unicode))) ≟ "Zoë Ω 中 😀"))
+  if all snd (checks ++ controls) then pure () else exitFailure

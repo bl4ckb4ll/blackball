@@ -6,6 +6,13 @@ snapshots. PDF decoding, structured career-event interpretation, safe managed
 deletion and independent semantic acceptance remain unfinished. Do not use this
 as an accepted production parser for personal documents.
 
+The [PDF executable comparison](../_/resume/reader-evaluation.md) now clears
+the Haskell build blocker: both pinned readers compile and run. Neither yet
+qualifies. Both lose standard-font advances; hpdft also loses a supplementary
+Unicode character and emits an unknown glyph name as wording. Synthetic fixtures,
+independent Idriç checks and captured observations are retained. PDF intake
+continues to refuse, and no production reader has been selected.
+
 ## Research purpose
 
 Read [Parsing résumés and academic CVs](../notes/parsing-resumes.md) for reader
