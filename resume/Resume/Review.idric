@@ -1,0 +1,94 @@
+module Resume.Review
+
+import Data.List
+import Data.Maybe
+import Data.Text
+import Resume.Source
+import Resume.Interpret
+
+public export
+data ReviewAction = AcceptClaim | RejectClaim | CorrectClaim Text
+
+public export
+record ReviewDecision where
+  constructor Decide
+  claim_identifier : Text
+  action : ReviewAction
+  actor_reference : Text
+  revision_reference : Text
+
+export
+record OwnerCorrection value where
+  constructor Correction
+  corrected_claim_identifier : Text
+  corrected_value : value
+  actor_reference : Text
+  revision_reference : Text
+
+export
+record ReviewedSnapshot where
+  constructor Reviewed
+  original_draft : ResumeDraft
+  review_decisions : List ReviewDecision
+  owner_corrections : List (OwnerCorrection Text)
+
+nonempty_text : Text → Bool
+nonempty_text = not . null . unpack . trim
+
+decision_valid : ResumeDraft → ReviewDecision → Bool
+decision_valid draft decision =
+  isJust (find_draft_field draft decision.claim_identifier) &&
+  nonempty_text decision.actor_reference && nonempty_text decision.revision_reference &&
+  case decision.action of
+    CorrectClaim replacement => nonempty_text replacement
+    _ => True
+
+same_event : ReviewDecision → ReviewDecision → Bool
+same_event first second = first.claim_identifier ≟ second.claim_identifier &&
+  first.actor_reference ≟ second.actor_reference &&
+  first.revision_reference ≟ second.revision_reference
+
+unique_events : List ReviewDecision → Bool
+unique_events [] = True
+unique_events (first :: rest) = not (any (same_event first) rest) && unique_events rest
+
+correction_event : ReviewDecision → Maybe (OwnerCorrection Text)
+correction_event decision = case decision.action of
+  CorrectClaim replacement => Just (Correction decision.claim_identifier replacement
+                                   decision.actor_reference decision.revision_reference)
+  _ => Nothing
+
+export
+apply_review_decisions : ResumeDraft → Text → List ReviewDecision →
+                         Either Text ReviewedSnapshot
+apply_review_decisions draft expected_digest decisions =
+  if not (expected_digest ≟ source_document_digest
+            (validated_document_source (resume_draft_document draft)))
+    then Left "ReviewSourceMismatch"
+  else if null decisions then Left "ExplicitReviewDecisionRequired"
+  else if not (all (decision_valid draft) decisions) then Left "InvalidReviewDecision"
+  else if not (unique_events decisions) then Left "DuplicateReviewEvent"
+  else Right (Reviewed draft decisions (mapMaybe correction_event decisions))
+
+export
+snapshot_draft : ReviewedSnapshot → ResumeDraft
+snapshot_draft = original_draft
+
+export
+snapshot_decisions : ReviewedSnapshot → List ReviewDecision
+snapshot_decisions = review_decisions
+
+export
+snapshot_correction_count : ReviewedSnapshot → Number
+snapshot_correction_count snapshot = length snapshot.owner_corrections
+
+export
+describe_review_action : ReviewAction → Text
+describe_review_action AcceptClaim = "accept"
+describe_review_action RejectClaim = "reject"
+describe_review_action (CorrectClaim _) = "correct"
+
+export
+review_replacement : ReviewAction → Text
+review_replacement (CorrectClaim replacement) = replacement
+review_replacement _ = ""

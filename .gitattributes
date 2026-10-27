@@ -1,0 +1,10 @@
+*.idric linguist-language=Idris
+# A final tab is the required empty fifth TSV column, not prose whitespace.
+_/resume/fixtures/ordinary-review*.tsv whitespace=-blank-at-eol
+# PDF xref records contain required padding; preserve fixture bytes exactly.
+_/resume/fixtures/pdf/*.pdf binary linguist-generated=true
+_/resume/pdf-qualification/** linguist-generated=true
+_/resume/pdf-qualification/**/*.out whitespace=-blank-at-eol
+# Preserve the actual diagnostic's trailing blank line as captured evidence.
+_/resume/pdf-qualification/**/*.err whitespace=-blank-at-eof
+_/resume/pdf-readers/*.freeze linguist-generated=true

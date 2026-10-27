@@ -1,0 +1,4 @@
+hpdft-probe-v1	1
+page	1	Just (fromList [("/Contents",ObjRef 7),("/CropBox",PdfArray [PdfNumber 20.0,PdfNumber 30.0,PdfNumber 580.0,PdfNumber 770.0]),("/MediaBox",PdfArray [PdfNumber 0.0,PdfNumber 0.0,PdfNumber 600.0,PdfNumber 800.0]),("/Parent",ObjRef 2),("/Resources",PdfDict (fromList [("/Font",PdfDict (fromList [("/F1",ObjRef 3)])),("/XObject",PdfDict (fromList [("/Im1",ObjRef 5)]))])),("/Rotate",PdfNumber 90.0),("/Type",PdfName "/Page")])
+glyph	1	50.0	740.0	0.0	12.0	Geometry
+page-counts	1	1	0

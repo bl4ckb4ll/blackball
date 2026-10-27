@@ -1,0 +1,62 @@
+module Resume.Utf8
+
+import Data.Text
+
+continuation_value : Bits8 → Maybe Integer
+continuation_value byte = if byte >= 128 && byte < 192
+  then Just (cast byte + negate 128) else Nothing
+
+-- Reject overlong sequences, surrogate code points, out-of-range scalars and
+-- NUL. NUL has no résumé text meaning and can truncate foreign text interfaces.
+decode_scalars : List Bits8 → Maybe (List Char)
+decode_scalars [] = Just []
+decode_scalars (first :: rest) =
+  if first > 0 && first < 128 then (chr (cast first) ::) <$> decode_scalars rest
+  else case rest of
+    second :: third :: fourth :: remaining =>
+      if first >= 240 && first <= 244 then do
+        second_value ← continuation_value second
+        third_value ← continuation_value third
+        fourth_value ← continuation_value fourth
+        let scalar = (cast first + negate 240) × 262144 + second_value × 4096 +
+                     third_value × 64 + fourth_value
+        if scalar >= 65536 && scalar <= 1114111
+          then (chr (cast scalar) ::) <$> decode_scalars remaining else Nothing
+      else decode_short first rest
+    _ => decode_short first rest
+  where
+    decode_short : Bits8 → List Bits8 → Maybe (List Char)
+    decode_short first (second :: third :: remaining) =
+      if first >= 224 && first <= 239 then do
+        second_value ← continuation_value second
+        third_value ← continuation_value third
+        let scalar = (cast first + negate 224) × 4096 + second_value × 64 + third_value
+        if scalar >= 2048 && not (scalar >= 55296 && scalar <= 57343)
+          then (chr (cast scalar) ::) <$> decode_scalars remaining else Nothing
+      else case continuation_value second of
+        Just second_value =>
+          if first >= 194 && first <= 223
+            then (chr (cast ((cast first + negate 192) × 64 + second_value)) ::) <$>
+                 decode_scalars (third :: remaining)
+            else Nothing
+        Nothing => Nothing
+    decode_short first [second] = do
+      second_value ← continuation_value second
+      if first >= 194 && first <= 223
+        then Just [chr (cast ((cast first + negate 192) × 64 + second_value))]
+        else Nothing
+    decode_short _ _ = Nothing
+
+export
+decode_document_utf8 : List Bits8 → Maybe Text
+decode_document_utf8 bytes = pack <$> decode_scalars bytes
+
+scalar_byte_count : Char → Number
+scalar_byte_count character =
+  if ord character < 128 then 1
+  else if ord character < 2048 then 2
+  else if ord character < 65536 then 3 else 4
+
+export
+encoded_utf8_byte_count : Text → Number
+encoded_utf8_byte_count = sum . map scalar_byte_count . unpack

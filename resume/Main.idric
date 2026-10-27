@@ -1,0 +1,73 @@
+module Main
+
+import Data.Text
+import Resume.Source
+import Resume.Intake
+import Resume.Interpret
+import Resume.Interchange
+import Resume.Review
+import Resume.Storage
+import Resume.Docx.Archive
+import Resume.Docx.Decode
+import Data.List
+import System
+
+report_result : Either Text () → IO ()
+report_result (Left error) = do putStrLn ("FAIL\t" ++ error); exitFailure
+report_result (Right _) = putStrLn "PASS\tRecordSaved; claims remain unverified"
+
+receive_resume : Text → Text → Text → Text → IO ()
+receive_resume path output observation acquisition = do
+  Right document ← intake_plaintext_file path observation acquisition PrivateDocument
+    | Left error => report_result (Left error)
+  save_draft_record output (interpret_resume_document document) >>= report_result
+
+receive_docx_resume : Text → Text → Text → Text → Text → IO ()
+receive_docx_resume path reader_directory output observation acquisition = do
+  Right document ← intake_document_with_reader_files path observation acquisition PrivateDocument reader_directory
+    | Left error => report_result (Left error)
+  save_draft_record output (interpret_resume_document document) >>= report_result
+
+print_docx_parts : Text → IO ()
+print_docx_parts path = do
+  Right bytes ← read_bounded_source_bytes path | Left error => report_result (Left error)
+  Right entries ← pure (inspect_docx_zip_directory bytes >>= docx_sidecar_entries)
+    | Left error => report_result (Left error)
+  traverse_ (\entry => putStrLn (zip_entry_name entry)) entries
+
+check_docx_parts : Text → Text → IO ()
+check_docx_parts path directory = do
+  Right bytes ← read_bounded_source_bytes path | Left error => report_result (Left error)
+  Right parts ← read_docx_bundle_parts bytes directory | Left error => report_result (Left error)
+  Right _ ← pure (validate_docx_parts bytes parts) | Left error => report_result (Left error)
+  putStrLn "PASS\tDocxPartsValidated; no profile state promoted"
+
+review_resume : Text → Text → Text → IO ()
+review_resume input decisions_path output = do
+  Right (draft, previous_decisions) ← load_draft_record input
+    | Left error => report_result (Left error)
+  Right text ← read_bounded_text_file decisions_path
+    | Left error => report_result (Left error)
+  Right (digest, decisions) ← pure (read_review_decisions text)
+    | Left error => report_result (Left error)
+  if null decisions then report_result (Left "ExplicitReviewDecisionRequired") else do
+    Right snapshot ← pure (apply_review_decisions draft digest (previous_decisions ++ decisions))
+      | Left error => report_result (Left error)
+    save_reviewed_snapshot output snapshot >>= report_result
+
+main : IO ()
+main = do
+  arguments ← getArgs
+  case arguments of
+    [_, "intake", path, output, observation, acquisition] =>
+      receive_resume path output observation acquisition
+    [_, "review", input, decisions, output] => review_resume input decisions output
+    [_, "intake-docx", path, reader_directory, output, observation, acquisition] =>
+      receive_docx_resume path reader_directory output observation acquisition
+    [_, "docx-parts", path] => print_docx_parts path
+    [_, "check-docx-parts", path, directory] => check_docx_parts path directory
+    [_, "delete", _] => report_result (Left "DeletionNotQualified; no files removed")
+    _ => do
+      putStrLn "Usage: resume-core intake FILE NEW_OUTPUT_DIRECTORY YYYY-MM-DD ACQUISITION_REFERENCE"
+      putStrLn "       resume-core review INPUT_RECORD DECISIONS_TSV NEW_OUTPUT_DIRECTORY"
+      exitFailure

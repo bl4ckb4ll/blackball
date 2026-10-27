@@ -1,0 +1,155 @@
+module Resume.Docx.Decode
+
+import Data.List
+import Data.Maybe
+import Data.Text
+import Resume.Docx.Archive
+import Resume.Docx.Xml
+import Resume.Docx.Model
+import Resume.Utf8
+
+public export
+record DecodedPart where
+  constructor ReaderPart
+  document_part_name : Text
+  decoded_part_bytes : List Bits8
+
+public export
+record WordParagraph where
+  constructor Paragraph
+  document_part_name : Text
+  block_path : Text
+  original_wording : Text
+
+export
+record DocxEvidence where
+  constructor CheckedDocx
+  original_parts : List (Text,Text)
+  original_pandoc_model : Text
+  paragraphs : List WordParagraph
+
+export
+docx_original_parts : DocxEvidence → List (Text,Text)
+docx_original_parts = original_parts
+
+export
+docx_pandoc_model : DocxEvidence → Text
+docx_pandoc_model = original_pandoc_model
+
+export
+docx_word_paragraphs : DocxEvidence → List WordParagraph
+docx_word_paragraphs = paragraphs
+
+word_namespace : Text
+word_namespace = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+
+word_prefix_is_stable : Number → XmlNode → Bool
+word_prefix_is_stable Z _ = False
+word_prefix_is_stable (S remaining) (Characters _) = True
+word_prefix_is_stable (S remaining) (Element name attrs children) =
+  maybe True (≟ word_namespace) (xml_attribute "xmlns:w" attrs) &&
+  all (word_prefix_is_stable remaining) children
+
+has_disallowed_word_element : Number → XmlNode → Bool
+has_disallowed_word_element Z _ = True
+has_disallowed_word_element (S remaining) (Characters _) = False
+has_disallowed_word_element (S remaining) (Element name attrs children) =
+  elem name ["w:object","w:altChunk","w:sym","m:oMath","m:oMathPara"] ||
+  any (has_disallowed_word_element remaining) children
+
+relationships_are_passive : Number → XmlNode → Bool
+relationships_are_passive Z _ = False
+relationships_are_passive (S remaining) (Characters _) = True
+relationships_are_passive (S remaining) (Element name attrs children) =
+  let mode = maybe "" toLower (xml_attribute "TargetMode" attrs)
+      relationship_type = maybe "" id (xml_attribute "Type" attrs)
+  in (not (mode ≟ "external") || isSuffixOf "/hyperlink" relationship_type) &&
+     all (relationships_are_passive remaining) children
+
+contains_macro_content_type : Number → XmlNode → Bool
+contains_macro_content_type Z _ = True
+contains_macro_content_type (S remaining) (Characters _) = False
+contains_macro_content_type (S remaining) (Element name attrs children) =
+  any (isInfixOf "macroenabled" . toLower . snd) attrs ||
+  any (contains_macro_content_type remaining) children
+
+paragraph_text : Number → Bool → XmlNode → Text
+paragraph_text Z _ _ = ""
+paragraph_text (S remaining) root (Characters text) = if root then text else ""
+paragraph_text (S remaining) False (Element "w:p" _ _) = ""
+paragraph_text (S remaining) root (Element "w:t" _ children) =
+  concatMap (paragraph_text remaining True) children
+paragraph_text (S remaining) root (Element "w:delText" _ children) =
+  concatMap (paragraph_text remaining True) children
+paragraph_text (S remaining) root (Element "w:tab" _ _) = "\t"
+paragraph_text (S remaining) root (Element "w:br" _ _) = "\n"
+paragraph_text (S remaining) root (Element "w:cr" _ _) = "\n"
+paragraph_text (S remaining) root (Element "w:noBreakHyphen" _ _) = singleton (chr 8209)
+paragraph_text (S remaining) root (Element "w:softHyphen" _ _) = singleton (chr 173)
+paragraph_text (S remaining) root (Element _ _ children) =
+  concatMap (paragraph_text remaining False) children
+
+element_children : List XmlNode → List XmlNode
+element_children = filter (\node => case node of Element _ _ _ => True; _ => False)
+
+collect_paragraphs : Number → Text → Text → XmlNode → List WordParagraph
+collect_paragraphs Z part path node = []
+collect_paragraphs (S remaining) part path (Characters _) = []
+collect_paragraphs (S remaining) part path node@(Element name attrs children) =
+  let current = if name ≟ "w:p" then [Paragraph part path (paragraph_text 128 True node)] else []
+      descend = \indexed => collect_paragraphs remaining part
+        (path ++ "/*[" ++ show (fst indexed) ++ "]") (snd indexed)
+  in current ++ concatMap descend (zip [1 .. length (element_children children)] (element_children children))
+
+validate_part_root : Text → XmlNode → Either Text ()
+validate_part_root name root@(Element root_name attrs children) =
+  if isSuffixOf ".rels" name
+    then if root_name ≟ "Relationships" && relationships_are_passive 128 root
+           then Right () else Left "DocxExternalResourceNotAllowed"
+  else if name ≟ "[Content_Types].xml"
+    then if root_name ≟ "Types" && not (contains_macro_content_type 128 root)
+           then Right () else Left "EmbeddedExecutionNotAllowed"
+  else if not (xml_attribute "xmlns:w" attrs ≟ Just word_namespace) ||
+          not (word_prefix_is_stable 128 root)
+    then Left "UnsupportedWordNamespace"
+  else if has_disallowed_word_element 128 root then Left "UnsupportedDocxInlineContent"
+  else if (name ≟ "word/document.xml" && not (root_name ≟ "w:document")) ||
+          (isPrefixOf "word/header" name && not (root_name ≟ "w:hdr")) ||
+          (isPrefixOf "word/footer" name && not (root_name ≟ "w:ftr"))
+    then Left "DocxPartRootMismatch"
+  else Right ()
+validate_part_root _ _ = Left "DocxPartRootMismatch"
+
+validate_part : ZipEntry → DecodedPart → Either Text ((Text,Text),List WordParagraph)
+validate_part entry supplied = do
+  if zip_entry_name entry ≟ supplied.document_part_name &&
+     zip_part_bytes_match entry supplied.decoded_part_bytes
+    then Right () else Left "DocxSidecarSourceMismatch"
+  Just text ← pure (decode_document_utf8 supplied.decoded_part_bytes)
+    | Nothing => Left "UnsupportedDocxXmlEncoding"
+  root ← parse_safe_xml text
+  validate_part_root supplied.document_part_name root
+  let paragraphs = if isPrefixOf "word/" supplied.document_part_name &&
+                      not (isSuffixOf ".rels" supplied.document_part_name)
+        then collect_paragraphs 128 supplied.document_part_name "/*[1]" root else []
+  if length paragraphs > 4096 then Left "DocxParagraphCountLimit"
+    else Right ((supplied.document_part_name,text),paragraphs)
+
+export
+validate_docx_parts : List Bits8 → List DecodedPart →
+                      Either Text (List (Text,Text),List WordParagraph)
+validate_docx_parts original parts = do
+  entries ← inspect_docx_zip_directory original >>= docx_sidecar_entries
+  if length entries ≟ length parts then Right () else Left "DocxSidecarPartCountMismatch"
+  results ← traverse (\pair => validate_part (fst pair) (snd pair)) (zip entries parts)
+  let paragraphs = concatMap snd results
+  if length paragraphs > 4096 then Left "DocxParagraphCountLimit"
+    else Right (map fst results,paragraphs)
+
+export
+validate_docx_decoding : List Bits8 → List DecodedPart → Text → Either Text DocxEvidence
+validate_docx_decoding original supplied model = do
+  (parts,paragraphs) ← validate_docx_parts original supplied
+  let body_wording = map original_wording (filter ((≟ "word/document.xml") . document_part_name) paragraphs)
+  validate_pandoc_docx_model model body_wording (map original_wording paragraphs)
+  pure (CheckedDocx parts model paragraphs)

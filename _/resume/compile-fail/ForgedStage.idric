@@ -1,0 +1,4 @@
+module ForgedStage
+import Resume.Source
+forged : ReceivedDocument → ValidatedDocument
+forged received = received

@@ -1,0 +1,331 @@
+module Resume.Source
+
+import Data.List
+import Data.Text
+import Resume.ContentDigest
+import Resume.Utf8
+import Resume.Dates
+import Resume.Docx.Decode
+
+public export
+data DocumentFormat = Plaintext | Pdf | Docx
+
+export
+format_name : DocumentFormat → Text
+format_name Plaintext = "plaintext"
+format_name Pdf = "pdf"
+format_name Docx = "docx-candidate"
+
+public export
+data HandlingPolicy = PrivateDocument | PublicDocument
+
+public export
+record AcquisitionRecord where
+  constructor Acquisition
+  acquisition_reference : Text
+  observation_date : Text
+
+-- All stage constructors below are module-private. Exporting their types
+-- permits checked operations, not relabelling bytes or fabricating evidence.
+export
+record ReceivedDocument where
+  constructor Received
+  received_bytes : List Bits8
+  acquisition : AcquisitionRecord
+  handling_policy : HandlingPolicy
+
+export
+record InspectedDocument where
+  constructor Inspected
+  received : ReceivedDocument
+  detected_format : DocumentFormat
+
+export
+record SourceDocument where
+  constructor Source
+  content_digest : Text
+  original_document : InspectedDocument
+  extraction_revision : Text
+  extracted_text : Text
+  docx_evidence : Maybe DocxEvidence
+
+public export
+record ReaderTextBlock where
+  constructor UntrustedTextBlock
+  scalar_start : Number
+  scalar_end : Number
+  reader_wording : Text
+
+data AnchorLocation = PlaintextScalars Number Number | WordPartBlock Text Text
+
+export
+record SourceAnchor where
+  constructor Anchor
+  source_digest : Text
+  extraction_revision : Text
+  location : AnchorLocation
+
+export
+record LayoutBlock where
+  constructor Block
+  source_anchor : SourceAnchor
+  original_wording : Text
+  decoding_method : Text
+
+export
+record ValidatedDocument where
+  constructor Validated
+  source : SourceDocument
+  layout_blocks : List LayoutBlock
+
+export
+record DocumentBackedClaim value where
+  constructor SupportedClaim
+  claim_value : value
+  first_supporting_anchor : SourceAnchor
+  additional_supporting_anchors : List SourceAnchor
+  original_wording : Text
+  interpretation_method : Text
+
+public export
+data FieldReading value
+  = Missing
+  | Unreadable Text
+  | Supported (DocumentBackedClaim value)
+  | Alternatives (DocumentBackedClaim value) (DocumentBackedClaim value)
+                 (List (DocumentBackedClaim value))
+
+-- Contradiction is not an alternative interpretation of the same wording.
+public export
+record Contradiction value where
+  constructor ConflictingClaims
+  first_statement : DocumentBackedClaim value
+  second_statement : DocumentBackedClaim value
+  conflict_description : Text
+
+export
+maximum_source_bytes : Number
+maximum_source_bytes = 262144
+
+export
+receive_document_bytes : List Bits8 → AcquisitionRecord → HandlingPolicy →
+                         Either Text ReceivedDocument
+receive_document_bytes bytes acquisition policy =
+  if null bytes then Left "EmptyDocument"
+  else if length bytes > maximum_source_bytes then Left "InputSizeLimit"
+  else if null (unpack acquisition.acquisition_reference) ||
+          not (valid_observation_date acquisition.observation_date)
+    then Left "MissingAcquisitionProvenance"
+    else Right (Received bytes acquisition policy)
+
+export
+inspect_received_document : ReceivedDocument → Either Text InspectedDocument
+inspect_received_document received =
+  if take 5 received.received_bytes ≟ [37,80,68,70,45]
+    then Right (Inspected received Pdf)
+  else if take 4 received.received_bytes ≟ [80,75,3,4]
+    then Right (Inspected received Docx)
+  else case decode_document_utf8 received.received_bytes of
+    Just _ => Right (Inspected received Plaintext)
+    Nothing => Left "UnsupportedFormatOrInvalidUtf8"
+
+export
+inspected_format : InspectedDocument → DocumentFormat
+inspected_format = detected_format
+
+export
+received_source_bytes : InspectedDocument → List Bits8
+received_source_bytes document = document.received.received_bytes
+
+export
+source_document_digest : SourceDocument → Text
+source_document_digest = content_digest
+
+export
+source_document_text : SourceDocument → Text
+source_document_text = extracted_text
+
+export
+source_extraction_revision : SourceDocument → Text
+source_extraction_revision = extraction_revision
+
+export
+source_document_bytes : SourceDocument → List Bits8
+source_document_bytes source = received_source_bytes source.original_document
+
+export
+source_document_format : SourceDocument → DocumentFormat
+source_document_format source = source.original_document.detected_format
+
+export
+source_reader_files : SourceDocument → List (Text,Text)
+source_reader_files source = case source.docx_evidence of
+  Nothing => []
+  Just evidence => ("reader-model.json",docx_pandoc_model evidence) ::
+    map (\indexed => ("reader-part-" ++ show (fst indexed) ++ ".xml",snd (snd indexed)))
+      (zip [1 .. length (docx_original_parts evidence)] (docx_original_parts evidence))
+
+export
+source_reader_diagnostics : SourceDocument → Text
+source_reader_diagnostics source = case source.docx_evidence of
+  Nothing => "diagnostics-v1\nplaintext-reader\tPASS\npdf-reader\tNOT_QUALIFIED\ndocx-reader\tNOT_USED\nentry-structure\tUNRESOLVED\nindependent-verification\tNOT_RUN\n"
+  Just _ => "diagnostics-v1\ndocx-model\tVALIDATED\npandoc-version\t3.1.3\nword-xml-parts\tVALIDATED\nlayout-reading-order\tUNRESOLVED\npdf-reader\tNOT_QUALIFIED\nentry-structure\tUNRESOLVED\nindependent-verification\tNOT_RUN\n"
+
+export
+source_unresolved_reader_material : SourceDocument → List Text
+source_unresolved_reader_material source = case source.docx_evidence of
+  Nothing => []
+  Just _ => ["DOCX visual reading order and pagination remain unresolved; anchors use actual OOXML part paths.",
+             "All selected Word text parts are retained; headers and footers supplement Pandoc's body model.",
+             "Styles, field instructions, graphics and other package material remain in the original ZIP; no embedded code is executed."]
+
+export
+source_observation_date : SourceDocument → Text
+source_observation_date source = source.original_document.received.acquisition.observation_date
+
+export
+source_acquisition_reference : SourceDocument → Text
+source_acquisition_reference source = source.original_document.received.acquisition.acquisition_reference
+
+export
+source_is_public : SourceDocument → Bool
+source_is_public source = case source.original_document.received.handling_policy of
+  PublicDocument => True
+  PrivateDocument => False
+
+export
+validated_document_source : ValidatedDocument → SourceDocument
+validated_document_source = source
+
+export
+validated_layout_blocks : ValidatedDocument → List LayoutBlock
+validated_layout_blocks = layout_blocks
+
+export
+layout_block_wording : LayoutBlock → Text
+layout_block_wording = original_wording
+
+export
+layout_block_anchor : LayoutBlock → SourceAnchor
+layout_block_anchor = source_anchor
+
+export
+layout_block_decoding_method : LayoutBlock → Text
+layout_block_decoding_method = decoding_method
+
+export
+layout_block_scope : LayoutBlock → Text
+layout_block_scope block = case block.source_anchor.location of
+  PlaintextScalars _ _ => ""
+  WordPartBlock part _ => part
+
+export
+anchor_location_text : SourceAnchor → Text
+anchor_location_text anchor = "sha256:" ++ anchor.source_digest ++ ":" ++
+  anchor.extraction_revision ++ ":" ++ case anchor.location of
+    PlaintextScalars start end => "unicode-scalar:" ++ show start ++ ":" ++ show end
+    WordPartBlock part path => "docx-part:" ++ part ++ ":" ++ path
+
+export
+anchor_resolves_in_source : SourceDocument → SourceAnchor → Bool
+anchor_resolves_in_source source anchor =
+  source.content_digest ≟ anchor.source_digest &&
+  source.extraction_revision ≟ anchor.extraction_revision && case anchor.location of
+    PlaintextScalars start end => start < end && end <= length (unpack source.extracted_text)
+    WordPartBlock part path => case source.docx_evidence of
+      Nothing => False
+      Just evidence => any (\paragraph => paragraph.document_part_name ≟ part && paragraph.block_path ≟ path)
+                         (docx_word_paragraphs evidence)
+
+export
+claim_from_layout_block : LayoutBlock → value → Text →
+                          Either Text (DocumentBackedClaim value)
+claim_from_layout_block block value method =
+  if null (unpack method) then Left "MissingInterpretationMethod"
+  else Right (SupportedClaim value block.source_anchor [] block.original_wording method)
+
+export
+documentary_claim_value : DocumentBackedClaim value → value
+documentary_claim_value = claim_value
+
+export
+documentary_claim_wording : DocumentBackedClaim value → Text
+documentary_claim_wording = original_wording
+
+export
+documentary_claim_method : DocumentBackedClaim value → Text
+documentary_claim_method = interpretation_method
+
+export
+documentary_claim_anchors : DocumentBackedClaim value → List SourceAnchor
+documentary_claim_anchors claim = claim.first_supporting_anchor :: claim.additional_supporting_anchors
+
+-- Plaintext offsets count Unicode scalar values in the exact decoded source,
+-- including CR, LF and any BOM. They are zero-based, end-exclusive; no pages
+-- or rectangles are invented. Reader rows must partition all non-newline text.
+split_text_blocks : Number → Number → List Char → List Char → List ReaderTextBlock
+split_text_blocks start position accumulated [] =
+  if null accumulated then []
+  else [UntrustedTextBlock start position (pack (reverse accumulated))]
+split_text_blocks start position accumulated ('\n' :: remaining) =
+  let rest = split_text_blocks (S position) (S position) [] remaining
+  in if null accumulated then rest
+     else UntrustedTextBlock start position (pack (reverse accumulated)) :: rest
+split_text_blocks start position accumulated (character :: remaining) =
+  split_text_blocks start (S position) (character :: accumulated) remaining
+
+same_reader_block : ReaderTextBlock → ReaderTextBlock → Bool
+same_reader_block first second = first.scalar_start ≟ second.scalar_start &&
+  first.scalar_end ≟ second.scalar_end && first.reader_wording ≟ second.reader_wording
+
+same_reader_blocks : List ReaderTextBlock → List ReaderTextBlock → Bool
+same_reader_blocks [] [] = True
+same_reader_blocks (first :: rest) (second :: remaining) =
+  same_reader_block first second && same_reader_blocks rest remaining
+same_reader_blocks _ _ = False
+
+make_layout_block : Text → ReaderTextBlock → LayoutBlock
+make_layout_block digest block = Block
+  (Anchor digest "plaintext-scalars-v1" (PlaintextScalars block.scalar_start block.scalar_end))
+  block.reader_wording ""
+
+export
+validate_plaintext_reader_output : InspectedDocument → List ReaderTextBlock →
+                                   Either Text ValidatedDocument
+validate_plaintext_reader_output document rows = case document.detected_format of
+  Plaintext => case decode_document_utf8 document.received.received_bytes of
+    Nothing => Left "InvalidUtf8"
+    Just text =>
+      let expected = split_text_blocks 0 0 [] (unpack text)
+          digest = sha256_content_digest document.received.received_bytes
+      in if same_reader_blocks expected rows
+        then Right (Validated (Source digest document "plaintext-scalars-v1" text Nothing)
+                              (map (make_layout_block digest) rows))
+        else Left "MalformedReaderOutput"
+  _ => Left "ReaderFormatMismatch"
+
+export
+extract_plaintext_document : InspectedDocument → Either Text ValidatedDocument
+extract_plaintext_document document = case document.detected_format of
+  Plaintext => case decode_document_utf8 document.received.received_bytes of
+    Nothing => Left "InvalidUtf8"
+    Just text => validate_plaintext_reader_output document
+                   (split_text_blocks 0 0 [] (unpack text))
+  Pdf => Left "PdfReaderNotQualified"
+  Docx => Left "DocxReaderNotQualified"
+
+export
+validate_docx_reader_output : InspectedDocument → List DecodedPart → Text → Either Text ValidatedDocument
+validate_docx_reader_output inspected parts model = case inspected.detected_format of
+  Docx => do
+    evidence ← validate_docx_decoding inspected.received.received_bytes parts model
+    let revision = "docx-pandoc3.1.3-word-xml-v1"
+    let digest = sha256_content_digest inspected.received.received_bytes
+    let paragraphs = docx_word_paragraphs evidence
+    let make_block = \paragraph => Block
+          (Anchor digest revision (WordPartBlock paragraph.document_part_name paragraph.block_path))
+          paragraph.original_wording "word-xml-source-wording;Pandoc-body-model-validated"
+    pure (Validated (Source digest inspected revision
+            (joinBy "\n" (map original_wording paragraphs)) (Just evidence))
+          (map make_block paragraphs))
+  _ => Left "ReaderFormatMismatch"
