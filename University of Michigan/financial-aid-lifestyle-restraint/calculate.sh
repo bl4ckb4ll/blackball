@@ -162,9 +162,10 @@ line_cover() {
     printf 'remaining\t%s\n' "$(fmt_money "$remaining")"
 }
 # --- worker affordability ---------------------------------------------------
-# Default local profile: an O'Reilly Auto Parts counter/sales worker living in
-# Ann Arbor within a few miles of both work and U-M. Wage, hours, and rent are
-# model inputs, not source facts; see the note's evidence section.
+# Hypothetical Ann Arbor auto-parts counter worker. O'Reilly's local store
+# address is source-backed; neither $15/hour nor the baseline rents/hours are
+# observations. Independent comparable wage and listed-rent scenarios appear
+# in the accompanying research note.
 W_DEFAULT_WAGE=15.00
 W_DEFAULT_HOURS=32
 W_DEFAULT_WEEKS=50
