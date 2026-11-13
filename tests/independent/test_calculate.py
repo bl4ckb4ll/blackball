@@ -85,6 +85,15 @@ def main():
     assert_worker("property-ad equal room split", 15, rent="769.50")
     assert_worker("property-ad comparable wage", 17, rent="769.50")
     assert_worker("above 22% federal bracket", 60)
+    # Reported on 2026-10-27: at the old 2025 cutoff, federal tax was positive at one dollar of
+    # taxable income and fell to zero at the next. The 2026 schedule runs past that cutoff, so both
+    # sides of it must stay positive and must not fall. wage 60.90 over 2,000 hours is exactly
+    # 105,700 of taxable income after the 16,100 standard deduction.
+    at_cutoff = run_calculator("worker", "--wage", "60.90", "--hours", "40", "--weeks", "50")
+    past_cutoff = run_calculator("worker", "--wage", "60.91", "--hours", "40", "--weeks", "50")
+    assert at_cutoff["federal_tax"] == "17966.00", at_cutoff["federal_tax"]
+    assert D(past_cutoff["federal_tax"]) > D(at_cutoff["federal_tax"]), (
+        past_cutoff["federal_tax"], at_cutoff["federal_tax"])
     assert_worker("above Social Security wage cap", 95)
     assert_worker("additional Medicare tax", 101)
 
