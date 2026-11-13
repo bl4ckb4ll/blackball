@@ -1,0 +1,2 @@
+# The final empty TSV field is significant test data.
+escapes.tsv whitespace=-blank-at-eol

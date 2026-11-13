@@ -1,0 +1,13 @@
+scope	initial_owner	integration_owner	independent_start	dependency_boundary
+contract-v1	SUN-BB-BME-00	SUN-BB-BME-34	YES	new contract revision requires explicit field mapping; serialize shared index writes
+original-paper	SUN-BB-BME-01	SUN-BB-BME-34	YES	02/03/P1 consume exact contribution bytes
+michigan-outcomes	SUN-BB-BME-04	SUN-BB-BME-34	YES	current catalogs/cohorts remain with04
+ohio-state-outcomes	SUN-BB-BME-05A	SUN-BB-BME-34	YES	13/15 denominator reconciliation stays with05A
+hopkins-outcomes	SUN-BB-BME-05B	SUN-BB-BME-34	YES	current destination denominator stays with05B
+literature-extension	SUN-BB-BME-03	SUN-BB-BME-34	YES	do not duplicate05A numerical ownership
+source-acquisition	SUN-BB-BME-06/07/08/09/13/19/22/23/24/25	SUN-BB-BME-34	YES for source recovery	final interchange binds00; individual supported-access boundaries persist
+vacancy-classification-identity-geography	SUN-BB-BME-10/11/12	SUN-BB-BME-34	10/11 after09;12 after10/11	classification and identity must not be inferred from raw count
+idric-domains	SUN-BB-BME-29/30/31	SUN-BB-BME-32	YES	separate example directories; unrun sketch is not executed calculation
+cost-and-life-scenarios	SUN-BB-BME-14/15/16/17/18/20/21/26/27/28	SUN-BB-BME-34	per original queue	actual prices/locations/conditions required for actual scenario claims
+pythia-science	P1 then P2	fuego-ironworks/gym	canonical reproduction YES	P1 accepted finite manifest before P2; no concurrent driver edits
+interactive-view	SUN-BB-BME-33	SUN-BB-BME-34	synthetic skeleton YES	actual case after exact accepted inputs

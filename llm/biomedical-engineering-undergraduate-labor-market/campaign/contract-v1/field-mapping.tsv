@@ -1,0 +1,18 @@
+owner	input	field_or_distinction	v1_mapping	loss_or_guard
+blackball	README.md	question-claim-source-scope/time-disagreement	claim plus source envelope and counterevidence	No verdict inferred from source presence
+blackball	research-evidence.md	study and background statistics	claim plus source_span plus population/cohort extension	Do not assign cited statistics to interview sample
+blackball	chatgpt-incident.md	reconstructed advising sequence	evidence_kind=reconstruction	Not original transcript/model output
+blackball	program-costs.md	static four-year sticker estimate	money price_kind=sticker; period and division/rate assumptions	Not net price or actual graduate debt
+blackball	program-marketing-vs-outcomes.md	present claims versus historical outcomes	separate observation IDs and source times	Do not combine different cohorts/dates
+blackball	reddit-testimony.md	selected negative and contrary accounts	narrative with selection method and contrary cases	Not prevalence
+college-town	observations.csv	id	observation_id with original id retained	Scope namespace prevents cross-file collision
+college-town	observations.csv	city;institution;campus_relationship	place identity plus original relationship text	Do not invent coordinates or worksite
+college-town	observations.csv	price_usd	money currency=USD scale=2 integer minor units	Exact decimal parse; UNKNOWN remains unknown
+college-town	observations.csv	price_basis	basis plus period; retain original field	per person per installment cannot become per unit per month
+college-town	observations.csv	observed_on	observed_time day precision	Source date and validity remain UNKNOWN
+college-town	observations.csv	status	owner_status extension	verified is retained historical owner claim, not new live PASS
+college-town	observations.csv	source_url;claim	source_locator;claim	Blank URL on a lead remains a provenance gap
+college-town	METHOD.md	new price appended	new revision and supersedes link	Historical row is not overwritten
+cost-of-college	README.md	sticker/grants/scholarships/loans/work-study/family resources	money price_kind plus availability/conditions	Do not subtract unavailable funds or erase liability
+ai-ci	evidence-ledger/README.md	row/enum/git manifest assertions	fixture/source structure checks	Cannot certify domain interpretation or live observation
+ai-ci	docs/job-delivery.md	storage/presentation/dispatch stages	separate acceptance fields with raw owner receipts	Storage bytes do not prove display or execution
