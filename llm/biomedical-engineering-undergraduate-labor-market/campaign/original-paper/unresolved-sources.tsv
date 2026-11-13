@@ -1,0 +1,9 @@
+gap_id	source_id	locator	missing_material	status	observed_date	owner_or_next_consumer	dependent_claim_blocked
+G01	BME01-S01	Institutional Context	Underlying alumni-survey instrument, cohorts, respondent counts, response rate and observation horizon	UNKNOWN	2026-11-13	BME-02; BME-04	Verified placement rate
+G02	BME01-S01	Interviews; Data Availability	Full wave-specific protocols and coded deidentified transcripts	NOT_ACQUIRED	2026-11-13	Later source-data audit if authorized	Independent coding replication and prompting-adjusted change
+G03	BME01-S01	Publisher; PMC; DOI search	Supplement/correction registry completeness	NO_POSITIVE_RECORD_IN_INSPECTED_SURFACES	2026-11-13	BME-03	Claim that no correction or supplement exists
+G04	BME01-S01	Author PDF	Byte download and visual rendering	BLOCKED_HTTP_403	2026-11-13	Acquisition owner if byte archival is required	Byte-identical snapshot or visually verified pagination
+G05	BME01-S01	Discussion placement recommendation	Measured hiring effect of reframing	NOT_REPORTED_IN_INSPECTED_ARTICLE	2026-11-13	Future intervention research	Causal benefit of reframing
+G06	BME01-S01	Background references 2,3,7	Complete original Berglund and APPLES source-data verification	PARTIAL_TRACE	2026-11-13	BME-03	New quantitative rates copied from background prose
+G07	BME01-R02	../../chatgpt-incident.md	Original complete advising conversations	RECONSTRUCTION_ONLY	2026-11-13	BME-02; P1	Verbatim original prompt, exposure or response claims
+G08	BME01-S01	Institutional Context	Explicit identification of anonymous study site	NOT_DISCLOSED	2026-11-13	BME-02	Substituting affiliation for named study site

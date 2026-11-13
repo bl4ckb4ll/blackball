@@ -1,0 +1,7 @@
+source_id	repository	ref	head_or_blob	evidence	observed_date	coverage
+BME00-S01	bl4ckb4ll/blackball	main	d6a57ec658448651300d70a2936f966713aa8f5c	https://github.com/bl4ckb4ll/blackball/tree/d6a57ec658448651300d70a2936f966713aa8f5c	2026-11-13	README; AGENTS; six BME dossier files; campaign absent
+BME00-S02	bl4ckb4ll/college-town	main	d2d012557375404a562745fba124fb90f95f5ee1	https://github.com/bl4ckb4ll/college-town/blob/d2d012557375404a562745fba124fb90f95f5ee1/METHOD.md	2026-11-13	METHOD and observations.csv retained owner records; not live re-acquisition
+BME00-S03	bl4ckb4ll/cost-of-college	main	db6a19c5605e6dfec91b0755459a195462bf7229	https://github.com/bl4ckb4ll/cost-of-college/blob/db6a19c5605e6dfec91b0755459a195462bf7229/README.md	2026-11-13	sticker/grants/loans/work-study/resources distinction
+BME00-S04	isomorphisms/ai-ci	main	4082d7f45b00cd2ea7c81118447fe22c047ba030	https://github.com/isomorphisms/ai-ci/blob/4082d7f45b00cd2ea7c81118447fe22c047ba030/evidence-ledger/README.md	2026-11-13	shared instructions; evidence-ledger checker; scoped-evidence contract; job-delivery boundary
+BME00-S05	isomorphisms/Idric	Idriç	STYLE blob d5724bcfbf167833465fda21cc10b18209f3f240	https://github.com/isomorphisms/Idric/blob/Idri%C3%A7/STYLE.md	2026-11-13	README; STYLE; _/EDRIC documented syntax; no resolved compiler runtime
+BME00-S06	ChatGPT Library	October13 packet	libfile_afbf563fb0d4819191a06ea720eef46b	STAR-BB-BME-01-SUN-PACKET.txt	2026-11-13	BME00/BME01 full prompts and earlier ledger; historical evidence only

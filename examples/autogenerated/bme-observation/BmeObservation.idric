@@ -1,0 +1,21 @@
+module BmeObservation
+
+choice retrieval_coverage one_of
+  complete
+  partial
+  failed
+
+choice qualifying_count one_of
+  unknown_count
+  known_count Number
+
+can_claim_scoped_empty : retrieval_coverage → qualifying_count → Bool
+can_claim_scoped_empty complete (known_count 0) = True
+can_claim_scoped_empty _ _ = False
+
+main : IO ()
+main = do
+  printLn (can_claim_scoped_empty complete (known_count 0))
+  printLn (can_claim_scoped_empty partial (known_count 0))
+  printLn (can_claim_scoped_empty failed (known_count 0))
+  printLn (can_claim_scoped_empty complete unknown_count)
