@@ -1,0 +1,288 @@
+// BME domain checks run by the standalone Fieldmouse interpreter.
+// Decimal counts remain text; no money/count is converted to Double.
+function append(xs, value) { xs[xs.length] ← value; }
+function has(xs, value) {
+  var i ← 0;
+  while (i < xs.length) { if (xs[i] ≟ value) return true; i ← i + 1; }
+  return Ø;
+}
+function join(xs, separator) {
+  var out ← ""; var i ← 0;
+  while (i < xs.length) {
+    if (i > 0) out ← out + separator;
+    out ← out + xs[i]; i ← i + 1;
+  }
+  return out;
+}
+function quotient(value, divisor) {
+  var out ← 0;
+  while (value >= divisor) { value ← value - divisor; out ← out + 1; }
+  return out;
+}
+function divisible(value, divisor) { return value - quotient(value, divisor) * divisor ≟ 0; }
+function small_text(value) {
+  if (value < 10) return fromCodePoints([48 + value]);
+  var rest ← quotient(value, 10);
+  return small_text(rest) + fromCodePoints([48 + value - rest * 10]);
+}
+function same_bytes(left, right) {
+  if (left.length ≠ right.length) return Ø;
+  var i ← 0;
+  while (i < left.length) { if (left[i] ≠ right[i]) return Ø; i ← i + 1; }
+  return true;
+}
+function utf8(bytes) {
+  var points ← []; var i ← 0;
+  while (i < bytes.length) {
+    var first ← bytes[i]; var size ← 0; var point ← 0; var minimum ← 0;
+    if (first < 128) { size ← 1; point ← first; }
+    else if (first >= 194 && first <= 223) { size ← 2; point ← first - 192; minimum ← 128; }
+    else if (first >= 224 && first <= 239) { size ← 3; point ← first - 224; minimum ← 2048; }
+    else if (first >= 240 && first <= 244) { size ← 4; point ← first - 240; minimum ← 65536; }
+    else return {error: "BME-UTF8"};
+    if (i + size > bytes.length) return {error: "BME-UTF8"};
+    var k ← 1;
+    while (k < size) {
+      var next ← bytes[i + k];
+      if (next < 128 || next > 191) return {error: "BME-UTF8"};
+      point ← point * 64 + next - 128; k ← k + 1;
+    }
+    if (point < minimum || point > 1114111 || (point >= 55296 && point <= 57343)) return {error: "BME-UTF8"};
+    append(points, point); i ← i + size;
+  }
+  return {error: "", text: fromCodePoints(points)};
+}
+function encode_utf8(text) {
+  var out ← []; var points ← codePoints(text); var i ← 0;
+  while (i < points.length) {
+    var point ← points[i];
+    if (point < 128) append(out, point);
+    else {
+      var tails ← []; var width ← 2; var prefix ← 192;
+      if (point >= 2048) { width ← 3; prefix ← 224; }
+      if (point >= 65536) { width ← 4; prefix ← 240; }
+      var k ← 1;
+      while (k < width) {
+        var rest ← quotient(point, 64); append(tails, 128 + point - rest * 64);
+        point ← rest; k ← k + 1;
+      }
+      append(out, prefix + point); k ← tails.length;
+      while (k > 0) { k ← k - 1; append(out, tails[k]); }
+    }
+    i ← i + 1;
+  }
+  return out;
+}
+function split(text, delimiter) {
+  var parts ← []; var points ← codePoints(text); var part ← ""; var i ← 0;
+  while (i < points.length) {
+    if (points[i] ≟ delimiter) { append(parts, part); part ← ""; }
+    else part ← part + fromCodePoints([points[i]]);
+    i ← i + 1;
+  }
+  append(parts, part); return parts;
+}
+function escaped(text) {
+  var points ← codePoints(text); var out ← ""; var i ← 0;
+  while (i < points.length) {
+    var point ← points[i];
+    if (point ≟ 92) out ← out + "\\\\";
+    else if (point ≟ 9) out ← out + "\\t";
+    else if (point ≟ 10) out ← out + "\\n";
+    else if (point ≟ 13) out ← out + "\\r";
+    else out ← out + fromCodePoints([point]);
+    i ← i + 1;
+  }
+  return out;
+}
+function unescaped(text) {
+  var points ← codePoints(text); var out ← []; var i ← 0;
+  while (i < points.length) {
+    var point ← points[i];
+    if (point ≟ 92) {
+      i ← i + 1; if (i >= points.length) return {error: "BME-ESCAPE"};
+      point ← points[i];
+      if (point ≟ 116) point ← 9;
+      else if (point ≟ 110) point ← 10;
+      else if (point ≟ 114) point ← 13;
+      else if (point ≠ 92) return {error: "BME-ESCAPE"};
+    }
+    append(out, point); i ← i + 1;
+  }
+  return {error: "", text: fromCodePoints(out)};
+}
+function parse(bytes) {
+  var decoded ← utf8(bytes); if (decoded.error ≠ "") return decoded;
+  var points ← codePoints(decoded.text);
+  if (points.length ≟ 0 || points[points.length - 1] ≠ 10) return {error: "BME-TRUNCATED"};
+  if (has(points, 13)) return {error: "BME-LINE-END"};
+  var lines ← split(decoded.text, 10); var header ← split(lines[0], 9); var seen ← []; var i ← 0;
+  while (i < header.length) {
+    if (header[i] ≟ "" || has(seen, header[i])) return {error: "BME-HEADER"};
+    append(seen, header[i]); i ← i + 1;
+  }
+  var rows ← []; i ← 1;
+  while (i < lines.length - 1) {
+    var raw ← split(lines[i], 9);
+    if (raw.length ≠ header.length) return {error: "BME-SHAPE"};
+    var fields ← []; var k ← 0;
+    while (k < raw.length) {
+      var field ← unescaped(raw[k]); if (field.error ≠ "") return field;
+      append(fields, field.text); k ← k + 1;
+    }
+    append(rows, fields); i ← i + 1;
+  }
+  return {error: "", header: header, rows: rows};
+}
+function serialize(table) {
+  var body ← join(table.header, "\t") + "\n"; var i ← 0;
+  while (i < table.rows.length) {
+    var row ← table.rows[i]; var fields ← []; var k ← 0;
+    while (k < row.length) { append(fields, escaped(row[k])); k ← k + 1; }
+    body ← body + join(fields, "\t") + "\n"; i ← i + 1;
+  }
+  return encode_utf8(body);
+}
+function whole(text, signed) {
+  var points ← codePoints(text); var i ← 0;
+  if (signed && points[0] ≟ 45) i ← 1;
+  if (i >= points.length) return Ø;
+  if (points[i] ≟ 48 && points.length > i + 1) return Ø;
+  while (i < points.length) {
+    if (points[i] < 48 || points[i] > 57) return Ø;
+    i ← i + 1;
+  }
+  return true;
+}
+function greater_decimal(left, right) {
+  var a ← codePoints(left); var b ← codePoints(right);
+  if (a.length ≠ b.length) return a.length > b.length;
+  var i ← 0;
+  while (i < a.length) { if (a[i] ≠ b[i]) return a[i] > b[i]; i ← i + 1; }
+  return Ø;
+}
+function digits_number(points, start, end) {
+  var result ← 0;
+  while (start < end) {
+    if (points[start] < 48 || points[start] > 57) return -1;
+    result ← result * 10 + points[start] - 48; start ← start + 1;
+  }
+  return result;
+}
+function valid_date(text, precision) {
+  if (precision ≟ "unknown") return text ≟ "UNKNOWN";
+  var points ← codePoints(text);
+  if (!(precision ≟ "year" || precision ≟ "month" || precision ≟ "day")) return Ø;
+  var width ← 4;
+  if (precision ≟ "month") width ← 7;
+  if (precision ≟ "day") width ← 10;
+  if (points.length ≠ width) return Ø;
+  var year ← digits_number(points, 0, 4); if (year < 0) return Ø;
+  if (width ≟ 4) return true;
+  if (points[4] ≠ 45) return Ø;
+  var month ← digits_number(points, 5, 7); if (month < 1 || month > 12) return Ø;
+  if (width ≟ 7) return true;
+  if (points[7] ≠ 45) return Ø;
+  var lengths ← [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  if (divisible(year, 4) && (!divisible(year, 100) || divisible(year, 400))) lengths[1] ← 29;
+  var day ← digits_number(points, 8, 10);
+  return day >= 1 && day <= lengths[month - 1];
+}
+function check(table) {
+  var required ← ["observation_id", "revision_id", "collection_scope", "retrieval_state", "returned", "classification_state", "qualifying", "source_time", "source_precision", "original_source_time", "original_precision", "money_basis", "source_money_basis", "period", "source_period", "amount_minor", "evidence_stage", "claimed_stage", "source_span"];
+  var i ← 0;
+  while (i < required.length) { if (!has(table.header, required[i])) return {error: "BME-FIELD"}; i ← i + 1; }
+  var previous ← []; var decisions ← []; i ← 0;
+  while (i < table.rows.length) {
+    var fields ← table.rows[i]; var row ← {}; var encoded_fields ← []; var k ← 0;
+    while (k < table.header.length) { row[table.header[k]] ← fields[k]; append(encoded_fields, escaped(fields[k])); k ← k + 1; }
+    if (row.observation_id ≟ "" || row.revision_id ≟ "") return {error: "BME-IDENTITY"};
+    k ← 0;
+    while (k < previous.length) {
+      var prior ← previous[k];
+      if (prior.id ≟ row.observation_id && prior.revision ≟ row.revision_id && prior.fields ≠ join(encoded_fields, "\t")) return {error: "BME-COLLISION"};
+      k ← k + 1;
+    }
+    append(previous, {id: row.observation_id, revision: row.revision_id, fields: join(encoded_fields, "\t")});
+    if (row.collection_scope ≟ "" || row.collection_scope ≟ "UNKNOWN") return {error: "BME-SCOPE"};
+    if (row.source_span ≟ "") return {error: "BME-SPAN"};
+    if (row.money_basis ≠ row.source_money_basis || row.period ≠ row.source_period) return {error: "BME-MONEY-BASIS"};
+    if (row.amount_minor ≠ "UNKNOWN" && !whole(row.amount_minor, true)) return {error: "BME-MONEY-INTEGER"};
+    if (row.source_time ≠ row.original_source_time || row.source_precision ≠ row.original_precision) return {error: "BME-DATE-PRECISION"};
+    if (!valid_date(row.source_time, row.source_precision)) return {error: "BME-DATE-SHAPE"};
+    var stages ← ["source_review", "fixture_checks", "live_acquisition", "typecheck", "model_execution", "physical_acceptance"];
+    if (!has(stages, row.evidence_stage) || row.claimed_stage ≠ row.evidence_stage) return {error: "BME-STAGE"};
+    if (!has(["complete", "partial", "failed", "not_attempted"], row.retrieval_state)) return {error: "BME-RETRIEVAL"};
+    if (!has(["complete", "partial", "not_attempted"], row.classification_state)) return {error: "BME-CLASSIFICATION"};
+    var returned ← row.returned; var qualifying ← row.qualifying;
+    if ((returned ≠ "UNKNOWN" && !whole(returned, Ø)) || (qualifying ≠ "UNKNOWN" && !whole(qualifying, Ø))) return {error: "BME-COUNT"};
+    var decision ← "observed-records";
+    if (row.retrieval_state ≟ "failed" || row.retrieval_state ≟ "not_attempted") {
+      if (returned ≠ "UNKNOWN" || qualifying ≠ "UNKNOWN" || row.classification_state ≠ "not_attempted") return {error: "BME-FAILED-ZERO"};
+      decision ← "failed-retrieval"; if (row.retrieval_state ≟ "not_attempted") decision ← "not-attempted";
+    } else {
+      if (returned ≟ "UNKNOWN") return {error: "BME-COUNT"};
+      if ((row.classification_state ≟ "not_attempted" && qualifying ≠ "UNKNOWN") || (row.classification_state ≟ "complete" && qualifying ≟ "UNKNOWN")) return {error: "BME-CLASSIFICATION"};
+      if (qualifying ≠ "UNKNOWN" && greater_decimal(qualifying, returned)) return {error: "BME-COUNT"};
+      if (returned ≟ "0") decision ← row.retrieval_state + "-empty";
+      else if (row.classification_state ≟ "complete" && qualifying ≟ "0") decision ← "zero-qualifying";
+    }
+    append(decisions, decision); i ← i + 1;
+  }
+  return {error: "PASS", decisions: join(decisions, "|")};
+}
+function expect(condition, label) {
+  if (!condition) { console.log("FAIL\t" + label); exit(1); }
+}
+function observed(bytes) {
+  var table ← parse(bytes); if (table.error ≠ "") return table;
+  if (!same_bytes(serialize(table), bytes)) return {error: "BME-ROUNDTRIP"};
+  return check(table);
+}
+function run() {
+  var args ← arguments(); expect(args.length ≟ 1, "usage: check.fm ABSOLUTE-REPOSITORY");
+  expect(codePoints(args[0])[0] ≟ 47, "repository path must be absolute");
+  var scope ← joinPath(args[0], "llm/biomedical-engineering-undergraduate-labor-market/campaign/contract-v1/fixtures");
+  var cases ← parse(readBytes(joinPath(scope, "cases.tsv"))); expect(cases.error ≟ "", "cases TSV");
+  console.log("case_id\tstatus\tobserved");
+  var passed ← 0; var i ← 0;
+  while (i < cases.rows.length) {
+    var spec ← cases.rows[i]; var bytes ← readBytes(joinPath(scope, spec[1])); var result ← observed(bytes);
+    expect(result.error ≟ spec[2], spec[0] + ": expected " + spec[2] + ", observed " + result.error);
+    var message ← result.error;
+    if (result.error ≟ "PASS") { expect(result.decisions ≟ spec[3], spec[0] + ": decision"); message ← result.decisions; }
+    if (spec[0] ≟ "unicode-escapes-extensions") {
+      var table ← parse(bytes); var k ← 0;
+      while (k < table.header.length) {
+        if (table.header[k] ≟ "extra_note") expect(table.rows[0][k] ≟ "literal \\n; tab\tnewline\nCR\r; Tuğba ∧ Idriç", "decoded escapes and Unicode");
+        if (table.header[k] ≟ "empty_extension") expect(table.rows[0][k] ≟ "", "known empty extension");
+        k ← k + 1;
+      }
+    }
+    console.log(spec[0] + "\tPASS\t" + message); passed ← passed + 1; i ← i + 1;
+  }
+  var corruptions ← [
+    {id: "invalid-utf8", bytes: [255, 10], error: "BME-UTF8"},
+    {id: "truncated-final-line", bytes: [97, 10, 98], error: "BME-TRUNCATED"},
+    {id: "unknown-escape", bytes: [97, 10, 92, 113, 10], error: "BME-ESCAPE"},
+    {id: "duplicate-header", bytes: [97, 9, 97, 10, 120, 9, 121, 10], error: "BME-HEADER"},
+    {id: "utf8-surrogate", bytes: [237, 160, 128, 10], error: "BME-UTF8"},
+    {id: "utf8-overlong", bytes: [192, 128, 10], error: "BME-UTF8"},
+    {id: "utf8-truncated", bytes: [240, 159], error: "BME-UTF8"},
+    {id: "utf8-outside-range", bytes: [244, 144, 128, 128], error: "BME-UTF8"}
+  ]; i ← 0;
+  while (i < corruptions.length) {
+    var bad ← corruptions[i]; expect(parse(bad.bytes).error ≟ bad.error, bad.id);
+    console.log(bad.id + "\tPASS\t" + bad.error); passed ← passed + 1; i ← i + 1;
+  }
+  var empty ← encode_utf8("extension\n");
+  expect(same_bytes(serialize(parse(empty)), empty), "header-only roundtrip");
+  console.log("header-only-roundtrip\tPASS\tempty table preserved"); passed ← passed + 1;
+  var musical_symbol ← [240, 157, 132, 158];
+  var musical_decoded ← utf8(musical_symbol);
+  expect(musical_decoded.error ≟ "" && musical_decoded.text ≟ "𝄞", "nonBMP decoded scalar");
+  expect(same_bytes(encode_utf8(musical_decoded.text), musical_symbol), "nonBMP literal bytes");
+  console.log("non-bmp-roundtrip\tPASS\tliteral UTF8 bytes preserved"); passed ← passed + 1;
+  console.log("total\tPASS\t" + small_text(passed));
+}
+run();

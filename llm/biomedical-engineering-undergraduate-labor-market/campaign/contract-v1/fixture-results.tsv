@@ -16,9 +16,16 @@ identity-collision	PASS	BME-COLLISION
 unicode-escapes-extensions	PASS	complete-empty
 impossible-day	PASS	BME-DATE-SHAPE
 leap-day	PASS	complete-empty
+huge-count-equal	PASS	observed-records
+huge-count-exceeds	PASS	BME-COUNT
 invalid-utf8	PASS	BME-UTF8
 truncated-final-line	PASS	BME-TRUNCATED
 unknown-escape	PASS	BME-ESCAPE
 duplicate-header	PASS	BME-HEADER
+utf8-surrogate	PASS	BME-UTF8
+utf8-overlong	PASS	BME-UTF8
+utf8-truncated	PASS	BME-UTF8
+utf8-outside-range	PASS	BME-UTF8
 header-only-roundtrip	PASS	empty table preserved
-total	PASS	22
+non-bmp-roundtrip	PASS	literal UTF8 bytes preserved
+total	PASS	29

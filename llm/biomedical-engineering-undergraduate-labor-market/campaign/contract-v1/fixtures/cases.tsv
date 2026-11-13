@@ -16,3 +16,5 @@ identity-collision	collision.tsv	BME-COLLISION	NONE
 unicode-escapes-extensions	escapes.tsv	PASS	complete-empty
 impossible-day	impossible-day.tsv	BME-DATE-SHAPE	NONE
 leap-day	leap-day.tsv	PASS	complete-empty
+huge-count-equal	huge-count-equal.tsv	PASS	observed-records
+huge-count-exceeds	huge-count-exceeds.tsv	BME-COUNT	NONE

@@ -2,7 +2,7 @@ module BmeObservation
 
 choice retrieval_coverage one_of
   complete
-  partial
+  partial_coverage
   failed
 
 choice qualifying_count one_of
@@ -16,6 +16,6 @@ can_claim_scoped_empty _ _ = False
 main : IO ()
 main = do
   printLn (can_claim_scoped_empty complete (known_count 0))
-  printLn (can_claim_scoped_empty partial (known_count 0))
+  printLn (can_claim_scoped_empty partial_coverage (known_count 0))
   printLn (can_claim_scoped_empty failed (known_count 0))
   printLn (can_claim_scoped_empty complete unknown_count)

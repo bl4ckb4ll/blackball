@@ -1,6 +1,6 @@
 field	value
 contract_version	bme-observation-v1
-contract_sha256	0a91243c3c261b85d72966c18500097f0b462b330a50d34117db257682af5de6
+contract_sha256	7bd48640c5173f23bb92888671b8d05a09a69266f81d96814f4f15f3f1bfe006
 revision_id	BME01-20261113-r1
 supersedes	UNKNOWN
 record_kind	claim
