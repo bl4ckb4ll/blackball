@@ -6,6 +6,10 @@ The first local lead concerns psychology graduates reportedly working in retail 
 
 See [Psychology graduates in retail — southeast Michigan interview lead](psychology-graduates-in-retail-southeast-michigan-interview.md).
 
+## Financial-aid framing and the scale of attendance costs
+
+- [Financial aid, lifestyle restraint, and the scale of Michigan attendance costs](financial-aid-lifestyle-restraint/README.md) — preserves U-M's "live like a pauper" financial-literacy language and its pinned 2026–27 cost-of-attendance budgets, then runs a deterministic `bc` comparison of modeled discretionary cuts and a local Washtenaw County worker's annual surplus against tuition alone and total cost of attendance. Includes a reproducible calculator and companion tests.
+
 ## Why psychology is a useful test
 
 Psychology is one of the largest undergraduate fields in U-M LSA. The department reports that in 2024–2025 it granted 388 undergraduate psychology degrees and 354 undergraduate BCN degrees. A large program creates enough graduates that broad phrases such as “many career possibilities” should be replaceable with actual destination distributions.
