@@ -24,6 +24,8 @@ It does not ask only whether education is culturally admirable or whether some g
 
 - [Applied computer science syllabus — stub](applied-computer-science-syllabus-stub.md) — project-first working map of everyday development fluency, systems programming, networking/Wi-Fi, databases, debugging, build-from-scratch exercises, reading existing software, and theory attached to concrete project questions. It makes no credential or job-outcome claim.
 
+- [Business-school curricula, syllabi, and books](business-school-syllabi-and-curricula.md) — source-first inventory: a dated Ross BBA required-course list and Robert Zipf's *Fixed Income Mathematics* as independently identified technical reading, not a claimed course adoption. Keeps course content, personal observations, institutional accountability, and outcomes distinct.
+
 Related occupational-pathway note:
 
 - [Engineering education, engineering work, and who gets the job](../history/engineering-careers/README.md) — tests the specific engineering version of target-job conversion: the degree, technical competence, hiring mechanism, family/network resources, ownership, and actual work are separate variables.
