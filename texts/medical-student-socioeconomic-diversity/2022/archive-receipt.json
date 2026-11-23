@@ -1,0 +1,64 @@
+{
+  "schema": "blackball-source-archive-v1",
+  "state": "ARTICLE_XML_TEXT_FIGURE_AND_SUPPLEMENT_ARCHIVED",
+  "doi": "10.1001/jamanetworkopen.2022.2621",
+  "pmcid": "PMC8924719",
+  "article_version": 1,
+  "license": "CC BY",
+  "license_evidence": {
+    "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8924719.1/PMC8924719.1.xml",
+    "element": "<license><ali:license_ref xmlns:ali=\"http://www.niso.org/schemas/ali/1.0/\" specific-use=\"textmining\" content-type=\"ccbylicense\">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the CC-BY License.</license-p></license>"
+  },
+  "original_main_pdf_archived": false,
+  "main_pdf_reason": "The complete observed NLM article inventory contains only the supplemental PDF, not the five-page main-article PDF. Publisher retrieval attempts failed.",
+  "supplemental_pdf_archived": true,
+  "supplemental_pdf_reviewed": false,
+  "objects": [
+    {
+      "path": "texts/medical-student-socioeconomic-diversity/2022/PMC8924719.1.json",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8924719.1/PMC8924719.1.json",
+      "bytes": 884,
+      "sha256": "37924abfa3edede5d7fedcbcc9072086da5ddf31ae2edd5db54e0b4606781ff7",
+      "changes": "none"
+    },
+    {
+      "path": "texts/medical-student-socioeconomic-diversity/2022/PMC8924719.1.txt",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8924719.1/PMC8924719.1.txt",
+      "bytes": 17324,
+      "sha256": "0e8b977f52c6010844dbf3ff3f983bf7bd1efd0e2644978729cedbd8bb6991ee",
+      "changes": "none"
+    },
+    {
+      "path": "texts/medical-student-socioeconomic-diversity/2022/PMC8924719.1.xml",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8924719.1/PMC8924719.1.xml",
+      "bytes": 57230,
+      "sha256": "a9ec6b637f22782d2a4b88de4f5c4108059f193b9d39483a9a7935cdfad0c385",
+      "changes": "none"
+    },
+    {
+      "path": "texts/medical-student-socioeconomic-diversity/2022/jamanetwopen-e222621-g001.jpg",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8924719.1/jamanetwopen-e222621-g001.jpg",
+      "bytes": 423184,
+      "sha256": "c1c5f55739f9d354433639721bbc8c4edd81e431a516b35f84cc5a0ec9b5c822",
+      "changes": "none"
+    },
+    {
+      "path": "texts/medical-student-socioeconomic-diversity/2022/jamanetwopen-e222621-s001.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8924719.1/jamanetwopen-e222621-s001.pdf",
+      "bytes": 50415,
+      "sha256": "d6b878db7f060e600d261d456322d86f9947d6a6feecd9a9c08a644c180c896a",
+      "changes": "none"
+    }
+  ],
+  "retrieved_at": "2026-10-13T02:47:45.905Z",
+  "inventory_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8924719.1/&max-keys=100",
+  "workflow_commit": "e14ae69587c76dbe9a7fdf70235a62584fdc5639",
+  "workflow_run": "https://github.com/bl4ckb4ll/blackball/actions/runs/38338591904",
+  "earlier_failed_runs": [
+    38336629453,
+    38337135319,
+    38337673662,
+    38338428720
+  ],
+  "evidence_boundary": "Archival receipt for unchanged source bytes, not a survey replication, complete supplementary-method review, independent acceptance, or copy of the law report. Do not call the supplemental PDF the main article."
+}

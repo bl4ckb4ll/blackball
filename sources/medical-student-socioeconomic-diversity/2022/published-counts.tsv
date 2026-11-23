@@ -1,0 +1,46 @@
+# Source: Shahriar et al. (2022), DOI 10.1001/jamanetworkopen.2022.2621; https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2790107
+# License: CC BY, copyright 2022 Shahriar AA et al.; attribution and interpretation in README.md and section-notes.md.
+# Transcription of publisher HTML table; rendered table also inspected. These are published aggregate values, not survey microdata.
+# Columns descend from highest income to lowest. All bins use national thresholds, not group-specific quintiles. NA means not applicable.
+# Values are counts except units=representation_index. Published percentages are not copied; do not silently equate recalculated percentages to the source's rounded prose.
+# Household row sums may differ by one from printed totals; sex rows do not exhaust every overall row. Values are preserved, not repaired.
+# The label Other East Asian under Southeast Asian is printed that way in the source; footnote d identifies Indonesian, Cambodian and Laotian responses.
+# Table notes and unreviewed supplement boundaries: section-notes.md#footnotes and section-notes.md#supplement.
+row_id	population	group	sex	units	total	top_5	p81_95	p61_80	p41_60	p21_40	bottom_20	source_note
+all_students	medical_students	All respondents	all	count	30373	7302	8061	7325	3263	2578	1844	
+all_men	medical_students	All respondents	men	count	14447	3403	3817	3460	1577	1269	921	
+all_women	medical_students	All respondents	women	count	15916	3898	4241	3861	1686	1308	922	
+all_households	US_households	All respondents	all	count	382475	19128	57367	76495	76495	76495	76495	
+all_ri	student_share_divided_by_household_share	All respondents	all	representation_index	NA	4.81	1.77	1.21	0.54	0.42	0.30	published RI
+asian_students	medical_students	Non-Hispanic Asian	all	count	6455	1403	1822	1496	640	640	454	
+asian_men	medical_students	Non-Hispanic Asian	men	count	3034	645	823	716	302	312	236	
+asian_women	medical_students	Non-Hispanic Asian	women	count	3420	758	998	780	338	328	218	
+asian_households	US_households	Non-Hispanic Asian	all	count	20123	1902	4542	4351	3515	2786	3026	cells sum to 20122; printed total retained
+asian_ri	student_share_divided_by_household_share	Non-Hispanic Asian	all	representation_index	NA	2.30	1.25	1.07	0.57	0.72	0.47	published RI
+black_students	medical_students	Non-Hispanic Black	all	count	1959	179	355	483	323	342	277	
+black_men	medical_students	Non-Hispanic Black	men	count	721	71	120	156	120	143	111	
+black_women	medical_students	Non-Hispanic Black	women	count	1237	108	235	327	203	199	165	
+black_households	US_households	Non-Hispanic Black	all	count	50919	879	4082	7289	9660	12260	16749	
+black_ri	student_share_divided_by_household_share	Non-Hispanic Black	all	representation_index	NA	5.29	2.26	1.72	0.87	0.73	0.43	published RI
+hispanic_students	medical_students	Hispanic (any race)	all	count	3321	489	629	761	546	539	357	
+hispanic_men	medical_students	Hispanic (any race)	men	count	1648	224	315	348	294	272	195	
+hispanic_women	medical_students	Hispanic (any race)	women	count	1673	265	314	413	252	267	162	
+hispanic_households	US_households	Hispanic (any race)	all	count	52009	1167	5079	9309	11440	12733	12281	
+hispanic_ri	student_share_divided_by_household_share	Hispanic (any race)	all	representation_index	NA	6.56	1.94	1.28	0.75	0.66	0.46	published RI
+white_students	medical_students	Non-Hispanic White	all	count	16407	4689	4712	4054	1522	848	582	
+white_men	medical_students	Non-Hispanic White	men	count	7992	2204	2303	1999	750	448	288	
+white_women	medical_students	Non-Hispanic White	women	count	8409	2484	2409	2051	772	399	294	
+white_households	US_households	Non-Hispanic White	all	count	253820	14951	42976	54649	50747	47541	42957	cells sum to 253821; printed total retained
+white_ri	student_share_divided_by_household_share	Non-Hispanic White	all	representation_index	NA	4.85	1.70	1.15	0.46	0.28	0.21	published RI
+asian_chinese	medical_students	Chinese	all	count	1466	312	483	319	116	131	105	East Asian heading
+asian_korean	medical_students	Korean	all	count	600	76	100	138	103	123	60	East Asian heading
+asian_taiwanese	medical_students	Taiwanese	all	count	294	59	74	88	37	16	20	East Asian heading
+asian_other_east	medical_students	Other	all	count	183	43	55	53	14	12	6	East Asian heading; footnote c
+asian_filipino	medical_students	Filipino	all	count	209	36	67	70	21	9	6	Southeast Asian heading
+asian_vietnamese	medical_students	Vietnamese	all	count	458	42	81	102	70	89	74	Southeast Asian heading
+asian_other_southeast_display_label	medical_students	Other East Asian	all	count	42	5	10	6	6	9	6	Southeast Asian heading; printed label retained; footnote d
+asian_pakistani	medical_students	Pakistani	all	count	325	82	79	54	36	50	24	South Asian heading
+asian_bangladeshi	medical_students	Bangladeshi	all	count	124	15	25	29	16	20	19	South Asian heading
+asian_indian	medical_students	Indian	all	count	2129	638	693	496	141	94	67	South Asian heading
+asian_other_south	medical_students	Other South Asian	all	count	33	8	9	8	3	3	2	South Asian heading; footnote e
+asian_other	medical_students	Other Asian	all	count	592	87	146	133	77	84	65	footnote e
