@@ -18,6 +18,12 @@ The evidence does support a substantial warning about treating the undergraduate
 - Reddit testimony from students and graduates repeatedly reports the same failure mode in ordinary language: a curriculum broad enough to touch several engineering disciplines but sometimes not deep enough to compete with a specialist for the first job. This is anecdotal evidence, not a prevalence estimate, and contrary experiences are included.
 - At several universities offering BME or closely related undergraduate degrees, current published sticker tuition can imply a four-year academic cost well above $100,000 before aid. At private universities in this dossier, a static four-year tuition estimate exceeds **$270,000**.
 
+## How many graduates need a place?
+
+IPEDS counted **8,507 first-major BME bachelor’s awards in the 50 states and DC in 2023–24**, and 51 more in Puerto Rico. Across the reporting area, 184 institutions awarded at least one and 13 recorded zero. A single opening shared among several engineering majors can employ one person. Testing whether a whole graduating class could enter engineering requires distinct attainable positions over a comparable hiring period, including relevant roles outside the named biomedical-engineer occupation.
+
+[Browse annual counts for every reporting school](degree-counts/README.md) · [Look up one school across years](degree-counts/school-histories.md)
+
 ## The disclosure problem
 
 Universities commonly describe BME programs with explicit occupational language: preparation for biomedical industry, industry-ready engineers, employer demand, career paths, and employer recruiting. That is legitimate if accompanied by clear outcome evidence. The problem worth investigating is whether prospective students are given enough information to distinguish:

@@ -1,5 +1,11 @@
 # Research evidence: undergraduate BME and the labor market
 
+## Graduating classes for the labor-market comparison
+
+Use the federal school-by-year series as the supply side of the capacity question. The 50 states and DC produced 8,432 first-major BME bachelor’s awards in 2021–22, 8,675 in 2022–23, and 8,507 in 2023–24. At the latest verified class size, the BLS projection of 1,200 annual openings in the named occupation amounts to roughly one opening per seven awards. Even under the generous assumption that every projected opening went to a new BME graduate, about 7,300 graduates would need a position in another occupation for the entire class to enter engineering. The comparison uses a historical class size and a projected annual average. Both the broader capacity of adjacent roles and actual hiring by degree remain unmeasured.
+
+[School-by-school counts and source definitions](degree-counts/README.md) · [BLS occupation and projections](https://www.bls.gov/ooh/architecture-and-engineering/biomedical-engineers.htm)
+
 ## 1. Ohio State: direct comparison with traditional engineering majors
 
 **Source:** Racheida S. Lewis et al., “Evaluating factors that influence career attainment in biomedical engineering undergraduates compared to other engineering majors,” *Discover Education* 5, 330 (2026), published 13 March 2026. DOI: 10.1007/s44217-026-01339-7.

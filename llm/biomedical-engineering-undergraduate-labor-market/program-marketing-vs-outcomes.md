@@ -6,6 +6,18 @@ The purpose is **not** to infer fraudulent intent. A university can legitimately
 
 ---
 
+## Size of the graduating class
+
+| School and IPEDS campus | 2021–22 | 2022–23 | 2023–24 |
+|---|---:|---:|---:|
+| Johns Hopkins University | 100 | 108 | 102 |
+| University of Michigan–Ann Arbor | 103 | 138 | 150 |
+| Ohio State University–Main Campus | 79 | 89 | 98 |
+
+These are first-major BME bachelor’s awards. To interpret a school’s industry percentage, identify which graduation year it covers, how many graduates supplied outcomes, how many entered industry and how many actually took engineering roles. Where the school leaves its cohort unspecified, the federal count cannot supply its survey denominator.
+
+[All years and campuses](degree-counts/school-histories.md) · [IPEDS source files and counting rules](degree-counts/README.md)
+
 ## Johns Hopkins University
 
 ### Current prospective-student framing
