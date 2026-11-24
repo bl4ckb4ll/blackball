@@ -16,6 +16,8 @@ The record establishes a change of publicly described occupation, **not** disapp
 
 His *Wedding Crunchers* project offers a different line of inquiry: prestigious schools and Wall Street employers appear in an explicitly selective public announcement genre. Their appearance measures public presentation and editorial selection, not how recruits fared. **More directly, his own [2013 introduction](https://toddwschneider.com/posts/when-harvard-met-sally-n-gram-analysis-of-the-new-york-times-weddings-section/) and [2014 follow-up](https://toddwschneider.com/posts/do-you-work-for-an-investment-bank-or-the-investment-bank/) openly mock elite status display.** This supports an attitude of skepticism or satirical distance toward that *display*, while the proposition **"he left finance because he disliked elite culture" remains a live, unconfirmed hypothesis**.
 
+For the recruitment question, compare the lecturer a fund hired with the students to whom it is held out as a destination. At Morse Micro, usable evidence about new entrants came from a separate graduate intake. The same comparison in finance needs fund-specific hiring evidence. [Neil Weste and Morse Micro](../../people/neil-weste.md)
+
 ### Claims requiring distinct evidence
 
 | Question | Original observations required | Common invalid shortcut |

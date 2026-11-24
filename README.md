@@ -126,6 +126,7 @@ Blackball does not impose optimism as an evidentiary requirement. An encouraging
 - [Aisha Johnson](people/aisha-johnson.md) — doorwoman killed in the same January 2021 spree as Fan; kept separate from UChicago affiliation absent evidence.
 - [Anthony Faulkner Jr.](people/anthony-faulkner-jr.md) — 20-year-old killed in the same spree; sparse public biography preserved as a measurement problem rather than filled with assumptions.
 - [Matt Mahoney](people/matt-mahoney.md) — Florida Tech, PAQ/ZPAQ, *Data Compression Explained*, Ocarina Networks, Dell acquisition chronology, and explicit correction of the unsupported founder/personal-$1m story.
+- [Neil Weste and Morse Micro](people/neil-weste.md) — who designed the Wi-Fi HaLow physical layer, how the CMOS textbook coauthor entered the company, and what Morse Micro reported about applicants and paid places for new graduates.
 - [Todd W. Schneider](people/todd-w-schneider.md) — six years in hedge-fund mortgage valuation per his 2014 RailsConf bio, the documented subsequent Rap Genius/software career, and Wedding Crunchers as a selected corpus of prestige language, without inventing his exit motive.
 
 ## Source dossiers
