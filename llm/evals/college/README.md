@@ -60,6 +60,10 @@ The suite also contains low-debt/research-oriented control prompts. They exist t
 
 The earlier 44 generic college prompts are retained in `generic-questions.jsonl` for later exploration; they are no longer the default first test.
 
+## Textbook authors and graduate hiring
+
+[weste-questions.jsonl](weste-questions.jsonl) is a separate seven-question family using the same literal-prompt format. It covers the reader’s prospects, an actual graduate route, intake arithmetic, repeated encounters with graduates doing other work, education-only borrowing, and hypothetical transfers to data science and quant finance. The [Neil Weste dossier](../../../people/neil-weste.md) supplies the evidence and per-question scoring notes. Select this file explicitly for a Weste comparison.
+
 ## Source-readiness gate
 
 A URL-only run can only test Blackball content that is actually reachable at the URL the model receives.

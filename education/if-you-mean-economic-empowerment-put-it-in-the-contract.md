@@ -26,6 +26,16 @@ Possible mechanisms include:
 
 The statement “education empowers” does not identify which mechanism did the work.
 
+## Purchasing power reserved for education
+
+In an October 2, 2026 Blackball conversation, the contributor compared education-only borrowing to issuing currency for one purpose. A person who would have to save wages before paying tuition can sign a loan and pay the school now. The same person cannot redirect that student loan to start a business or keep the principal as unrestricted savings. The enrollment brings the seller revenue before anyone knows whether the student will get the advertised work.
+
+Federal Direct subsidized and unsubsidized loans illustrate the mechanism. Loan proceeds cover authorized costs of attendance. The school can apply funds to charges on the student’s account. A credit balance can cover expenses such as housing, transportation, or dependent care connected with attendance. The borrower signs the repayment promise. Failure to obtain a job, by itself, does not cancel it. A school making an employment claim can therefore receive tuition without having to deliver that employment as a condition of payment. [Federal Student Aid, Direct Loan master promissory note, borrower statement §§12–13 and 21](https://studentaid.gov/sites/default/files/MasterPromissoryNoteMPNDirectSubsidizedLoansandDirectUnsubsidizedLoans-en-us.pdf)
+
+The distinction has a measurable consequence. Studying changes in federal borrowing caps, Lucca, Nadauld and Shen estimated that an extra dollar of subsidized loan eligibility raised tuition by about 60 cents in their study. The estimate concerns changes in the cap in the period they studied. It gives empirical content to the question of how much additional purchasing power a school can capture. [New York Fed staff report 733](https://www.newyorkfed.org/research/staff_reports/sr733)
+
+The [electrical engineering case](../history/engineering-careers/electrical-engineering.md#an-electrical-engineering-masters-graduate-driving-for-uber) records a gap between degree and observed work. Whether that individual borrowed is a separate question.
+
 ## The contract test
 
 If the economic claim is stated with certainty, translate it into terms that could in principle be written into a contract.

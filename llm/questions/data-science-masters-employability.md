@@ -39,6 +39,8 @@ The relevant comparison is not merely whether data-science jobs exist. It is whe
 5. **Additional schooling can function as a labor-market retry.**
    Access to educational credit may make it possible for a worker disappointed by available employment to buy another credential instead of immediately accepting the current job options. Whether this materially improves later outcomes must be measured rather than assumed.
 
+A named comparison from chip design shows how to investigate the faculty/student question. Morse Micro recruited the CMOS textbook coauthor Neil Weste after he had already led Wi-Fi modem design at Radiata. The company separately reported applicants and selections for its first paid graduate intake. The analogous evidence for a data-science master’s would be the hires from its own graduating cohort. [Weste case and intake figures](../../people/neil-weste.md)
+
 ## Required denominators
 
 For each program and graduating cohort, recover where possible:

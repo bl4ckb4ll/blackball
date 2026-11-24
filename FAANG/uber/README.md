@@ -78,6 +78,10 @@ For a worker or graduate trying to enter software, Uber lets us compare three di
 
 Those must not be collapsed. The first tells us demand, the second tells us an advertised path, and the third proves only that some individual paths occurred.
 
+## Graduate degrees among drivers
+
+A passenger reported an Uber driver with a master’s in electrical engineering. Hall and Krueger’s December 2014 driver survey offers a broader comparison across fields. In that survey, 10.8% of respondents held postgraduate degrees. Platform driving and corporate engineering are separate workforces. The [electrical engineering case](../../history/engineering-careers/electrical-engineering.md#how-often-would-a-passenger-encounter-this) records the testimony, primary survey and assumptions for modeling repeat encounters.
+
 ## Worker-facing questions
 
 - How many genuinely early-career engineering openings appear over repeated snapshots?
