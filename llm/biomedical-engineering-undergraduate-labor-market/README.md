@@ -50,6 +50,7 @@ The supportable claim is narrower and more important: **there is published evide
 
 ## Files
 
+- [Pythia advice evaluation](../evals/college/README.md#pythia-results-from-24-november-2026) — generated answers to the BME questions, annotations, and a separate continuation-ranking test.
 - [`research-evidence.md`](research-evidence.md) — peer-reviewed studies, BLS data, job-board evidence, geographic concentration, and counterevidence.
 - [`reddit-testimony.md`](reddit-testimony.md) — primary-source student/graduate testimony, with negative and contrary cases.
 - [`program-costs.md`](program-costs.md) — 2026–27 published prices and static four-year sticker estimates for selected BME/Bioengineering programs.

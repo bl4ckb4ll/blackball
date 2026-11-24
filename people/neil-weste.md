@@ -52,6 +52,8 @@ The same question can be put to a [data-science master’s program][ds] that adv
 
 The Pythia pilot fitted two adapters and used held-out cases from UVA and Carnegie Mellon. Its improvements did not survive the answer-order criterion for both seeds. [Experiment results](https://github.com/fuego-ironworks/gym/blob/302d28e0b0da3293945ddf02436851b4f336cf1b/cases/blackball-bias/BB-PYTHIA-01/weste/results/README.md)
 
+The follow-up scored complete answers after the prompt without answer letters. With evidence supplied, each adapter ranked fewer keyed answers first by mean token log probability and one more by total log probability. The test measures how the model ranks supplied answers. [Weste continuation diagnostic](https://github.com/fuego-ironworks/gym/tree/2db6f8b440ee3d341bac7aa38df4cbe2d719ef76/llm/models/runs/pythia-14m-weste-letterless-2026-11-24)
+
 The [companion prompts][prompts] test whether a model can reason about access even when the reader admires the book, a real graduate succeeded, or a prestigious instructor works in a different field. Score the factual distinctions, allowing different wording.
 
 | Prompt | What a grounded answer should do |
