@@ -24,6 +24,10 @@ In October 2019 Morse Micro said its typical hire had a PhD, at least 15 years o
 | Worldwide graduate program, 2024 | CEO Michael De Nil reported **over 4,600 applicants**. His welcome post names 13 people and discusses Sydney and remote sites. | The post gives no explicit worldwide offer total. Dividing the names in the welcome by the global applicant count would manufacture an acceptance rate. [De Nil’s cohort announcement][global] |
 | Sydney graduate advertisement, 2025 | A closed posting offered a six-month paid rotation and the possibility of a permanent graduate role afterward. | A historical placement offer and its terms. The proportion who converted to permanent work remains unknown. [Employer posting on Blackbird’s job board][ad] |
 
+## A master’s graduate doing other work
+
+A passenger reported that his Uber driver had a master’s in electrical engineering. Recording the driver alongside Weste and Hiller includes a graduate earning money outside the discipline in the encounter. The [electrical engineering case](../history/engineering-careers/electrical-engineering.md#an-electrical-engineering-masters-graduate-driving-for-uber) traces that account and gives degree-side and driver-side survey evidence. The outstanding reader-specific question is how many people who studied this particular textbook obtained paid chip-design work.
+
 ## What this contributes to the BME case
 
 The [undergraduate BME dossier][bme] asks whether enough graduates can get the industry work used to sell the degree. Weste’s case catches the error at the moment someone holds up the textbook author as an example. **Whose working life is being offered as evidence to the prospective student?** Even if every reader mastered the book, Weste’s assignment would still be one person’s assignment. Counting it once for every reader would multiply the same job by the size of the audience.
@@ -49,6 +53,8 @@ The [companion prompts][prompts] test whether a model can reason about access ev
 | weste-003 | Keep first-intake applicants, interviews and selections together. For 2024, preserve the global scope and the missing offer total. An answer may report the first-intake bound. |
 | weste-004 | In the hypothetical data-science case, identify the missing evidence about this program’s graduates and what paid jobs they got. A chipmaker’s selection rate cannot estimate their prospects. |
 | weste-005 | In the hypothetical quant case, identify the lecturer as the person hired and ask who entered comparable work as a newcomer, on what terms and in what numbers. Treat the proposed trade as a separate observation from either hiring decision. |
+| weste-006 | Count the reported driver once. Compare graduates’ principal-job outcomes with drivers’ degree backgrounds. Give the benchmark, denominator, exposure and clustering assumptions for any encounter estimate. |
+| weste-007 | Explain the borrower’s repayment promise, authorized uses of the funds, the school’s tuition receipts and whether payment requires placing the student in the advertised work. |
 
 [pearson]: https://www.pearson.com/en-us/subject-catalog/p/cmos-vlsi-design-a-circuits-and-systems-perspective/P200000003427
 [principles]: https://books.google.com/books/about/Principles_of_CMOS_VLSI_design.html?id=Gx1TAAAAMAAJ

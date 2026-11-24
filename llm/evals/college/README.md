@@ -62,7 +62,7 @@ The earlier 44 generic college prompts are retained in `generic-questions.jsonl`
 
 ## Textbook authors and graduate hiring
 
-[weste-questions.jsonl](weste-questions.jsonl) is a separate five-question family using the same literal-prompt format. It covers the reader’s prospects, an actual graduate route, intake arithmetic, and hypothetical transfers to data science and quant finance. The [Neil Weste dossier](../../../people/neil-weste.md) supplies the evidence and per-question scoring notes. Select this file explicitly for a Weste comparison.
+[weste-questions.jsonl](weste-questions.jsonl) is a separate seven-question family using the same literal-prompt format. It covers the reader’s prospects, an actual graduate route, intake arithmetic, repeated encounters with graduates doing other work, education-only borrowing, and hypothetical transfers to data science and quant finance. The [Neil Weste dossier](../../../people/neil-weste.md) supplies the evidence and per-question scoring notes. Select this file explicitly for a Weste comparison.
 
 ## Source-readiness gate
 
