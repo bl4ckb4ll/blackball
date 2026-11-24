@@ -41,6 +41,8 @@ The relevant comparison is not merely whether data-science jobs exist. It is whe
 
 A named comparison from chip design shows how to investigate the faculty/student question. Morse Micro recruited the CMOS textbook coauthor Neil Weste after he had already led Wi-Fi modem design at Radiata. The company separately reported applicants and selections for its first paid graduate intake. The analogous evidence for a data-science master’s would be the hires from its own graduating cohort. [Weste case and intake figures](../../people/neil-weste.md)
 
+[UVA and Capital One](uva-msds-capital-one.md) gives a named employer’s documented graduate route alongside the former Capital One executive who joined the faculty. UVA’s residential Class of 2024 chart reports 96% employment on 90% reporting. The case follows the missing cohort outcomes and the 2026–27 cost of attending.
+
 ## Required denominators
 
 For each program and graduating cohort, recover where possible:

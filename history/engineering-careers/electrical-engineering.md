@@ -24,4 +24,10 @@ The contributor recalls an earlier assistant bootstrap of how often he encounter
 
 The financing question concerns when the seller can collect payment and who remains responsible if engineering work never materializes. [Student loans as purchasing power reserved for education](../../education/if-you-mean-economic-empowerment-put-it-in-the-contract.md#purchasing-power-reserved-for-education)
 
+## Graduate counts and actual openings
+
+The federal degree files now give a [school-by-school series of electrical engineering bachelor’s and master’s awards](electrical-engineering-degree-counts/README.md) from 2009–10 through 2023–24. The [Michigan and U.S. comparison](electrical-engineering-jobs.md) follows the counts through employer job requirements and the limits of adjacent labor data.
+
+The [encounter sensitivity](graduate-encounters.md) tests how sharing a workplace, repeatedly meeting the same driver and learning about a person’s degree change the interpretation of the original reports.
+
 See also [engineering careers](README.md#who-gets-the-design-assignment) and [experience needed to get hired](../../llm/questions/meritocracy-class-closure-and-ai-opportunity.md#experience-needed-to-get-hired).

@@ -40,6 +40,8 @@ Those are different quantities. A program can truthfully say “biomedical engin
 
 A comparison from [electrical engineering](../../history/engineering-careers/electrical-engineering.md) illustrates the denominator problem. A chipmaker recruited a textbook author and also reported selections for a paid graduate intake. Only the latter records how many applicants entered through that graduate route. For BME, the corresponding evidence would identify paid places accessible to new graduates and follow each school’s graduating cohort into the work it sought. [Neil Weste and Morse Micro’s intake figures](../../people/neil-weste.md)
 
+The [electrical engineering school and year tables](../../history/engineering-careers/electrical-engineering-degree-counts/README.md) apply the same award-count method to bachelor’s and master’s degrees. The [job comparison](../../history/engineering-careers/electrical-engineering-jobs.md) puts the cohort scale next to evidence of the openings employers actually let newcomers seek.
+
 ## Evidentiary boundary
 
 This dossier **does not claim** that universities know a BME degree will not lead to a job, that the programs are fraudulent, or that administrators intend to deceive students. The sources collected here do not establish intent, and BME graduates plainly do obtain good jobs.
