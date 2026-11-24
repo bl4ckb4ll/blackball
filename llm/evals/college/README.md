@@ -142,9 +142,15 @@ If a hosted interface exposes whether retrieval occurred, preserve that informat
 
 An offline model cannot retrieve GitHub from a URL alone. A URL-only local sample is a cue/negative-control test. Injecting frozen repository text is a distinct `blackball-context` intervention: record an exact commit, normalized context paths, blob hashes, byte counts, and the complete context hash, and keep its results separate from URL-only samples.
 
+## Pythia results from 24 November 2026
+
+The final Pythia-410M run produced **0 adequate answers in 75 generations** across five prompt and decoding conditions. With evidence absent, interpretable advice appeared in 5 of 15 literal greedy generations and 4 of 15 after a question-and-answer wrapper. The run retained raw answers and annotations for the first actionable recommendation and material job or debt checks. In the direct continuation test, mean token log probability ranked the keyed response first in 7 of 17 cases with evidence supplied. Mean and total log probability each missed at least one side of every evidence reversal. [Pythia-410M advice and continuation results](https://github.com/fuego-ironworks/gym/tree/0183fca0d7bb9f0c6b7074afbbfbbd479d5c995d/llm/models/runs/pythia-410m-bme-advice-2026-11-24)
+
+The Pythia-14M Weste follow-up ranked the same answer texts directly after the prompt. With evidence supplied, the base and two adapters ranked **5, 3, and 2 of 10** keyed responses first by mean token log probability and **4, 5, and 5 of 10** by total log probability. The direction of the adapter comparison depends on how the continuations are scored. [Weste continuation diagnostic](https://github.com/fuego-ironworks/gym/tree/0183fca0d7bb9f0c6b7074afbbfbbd479d5c995d/llm/models/runs/pythia-14m-weste-letterless-2026-11-24)
+
 ## Execution owner
 
-This PR supplies the literal prompt corpus and protocol. The provider-neutral execution/result contract is maintained in [ai-ci's Blackball evaluation boundary](https://github.com/isomorphisms/ai-ci/pull/51). The former duplicate Python/Ollama runners are removed; no live evaluation or accepted behavior score is claimed.
+Blackball maintains the literal prompts and protocol. Gym maintains the Pythia experiment code and receipts. [ai-ci's Blackball evaluation boundary](https://github.com/isomorphisms/ai-ci/pull/51) specifies the provider-neutral execution and result contract.
 
 ## Comparison comes after raw outputs
 
