@@ -24,6 +24,12 @@ In October 2019 Morse Micro said its typical hire had a PhD, at least 15 years o
 | Worldwide graduate program, 2024 | CEO Michael De Nil reported **over 4,600 applicants**. His welcome post names 13 people and discusses Sydney and remote sites. | The post gives no explicit worldwide offer total. Dividing the names in the welcome by the global applicant count would manufacture an acceptance rate. [De Nil’s cohort announcement][global] |
 | Sydney graduate advertisement, 2025 | A closed posting offered a six-month paid rotation and the possibility of a permanent graduate role afterward. | A historical placement offer and its terms. The proportion who converted to permanent work remains unknown. [Employer posting on Blackbird’s job board][ad] |
 
+The first-intake report names three participants and their assignments in June 2020. Ananya Subhash reported working on practical systems issues after her rotations. Morse Micro identified Aman Shreshtha as a graduate systems test engineer and Ahmed Emad Ahmed as a graduate software engineer. These are three recorded assignments among the four early entrants. The fourth name and the first cohort’s later conversion to permanent work remain unverified. Hiller joined in 2021. [Morse Micro’s June 2020 report][intake]
+
+## Hiring comparisons
+
+The [school-year degree count and U.S. job comparison](../history/engineering-careers/electrical-engineering-jobs.md) tracks a different labor market from the Sydney intake. There are named employer cases for [data science at Capital One](../llm/questions/uva-msds-capital-one.md) and [quantitative research at Squarepoint](../llm/questions/cmu-mscf-squarepoint.md).
+
 ## A master’s graduate doing other work
 
 A passenger reported that his Uber driver had a master’s in electrical engineering. Recording the driver alongside Weste and Hiller includes a graduate earning money outside the discipline in the encounter. The [electrical engineering case](../history/engineering-careers/electrical-engineering.md#an-electrical-engineering-masters-graduate-driving-for-uber) traces that account and gives degree-side and driver-side survey evidence. The outstanding reader-specific question is how many people who studied this particular textbook obtained paid chip-design work.
@@ -43,6 +49,8 @@ The same question can be put to a [data-science master’s program][ds] that adv
 - [Experience needed to get hired](../llm/questions/meritocracy-class-closure-and-ai-opportunity.md#experience-needed-to-get-hired)
 
 ## Language-model evaluation
+
+The Pythia pilot fitted two adapters and used held-out cases from UVA and Carnegie Mellon. Its improvements did not survive the answer-order criterion for both seeds. [Experiment results](https://github.com/fuego-ironworks/gym/blob/302d28e0b0da3293945ddf02436851b4f336cf1b/cases/blackball-bias/BB-PYTHIA-01/weste/results/README.md)
 
 The [companion prompts][prompts] test whether a model can reason about access even when the reader admires the book, a real graduate succeeded, or a prestigious instructor works in a different field. Score the factual distinctions, allowing different wording.
 

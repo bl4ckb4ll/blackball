@@ -18,6 +18,8 @@ His *Wedding Crunchers* project offers a different line of inquiry: prestigious 
 
 For the recruitment question, compare the lecturer a fund hired with the students to whom it is held out as a destination. At Morse Micro, usable evidence about new entrants came from a separate graduate intake. The same comparison in finance needs fund-specific hiring evidence. [Neil Weste and Morse Micro](../../people/neil-weste.md)
 
+[Carnegie Mellon MSCF and Squarepoint Capital](cmu-mscf-squarepoint.md) gives a named graduate’s work on interest-rate models and two cohorts’ reported offer counts. Some accepted outcomes were short-term. Those outcomes and the fellowship money the firm’s foundation gave the program address different parts of the career path.
+
 ### Claims requiring distinct evidence
 
 | Question | Original observations required | Common invalid shortcut |

@@ -36,6 +36,8 @@ The distinction has a measurable consequence. Studying changes in federal borrow
 
 The [electrical engineering case](../history/engineering-careers/electrical-engineering.md#an-electrical-engineering-masters-graduate-driving-for-uber) records a gap between degree and observed work. Whether that individual borrowed is a separate question.
 
+The [UVA residential master’s cost example](../llm/questions/uva-msds-capital-one.md#paying-for-the-202627-residential-program) puts billed charges and estimated living expenses alongside earned savings, grants, family resources and net proceeds under the July 2026 federal loan rules.
+
 ## The contract test
 
 If the economic claim is stated with certainty, translate it into terms that could in principle be written into a contract.
