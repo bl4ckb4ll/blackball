@@ -32,6 +32,12 @@ For this employer we can identify the practitioner and the work, count places in
 
 The same question can be put to a [data-science master’s program][ds] that advertises its instructors’ industry work or to a [quant finance program][quant] that features its lecturer’s fund job. For each, identify the person the employer engaged, what that person had done **before** the appointment, and the intake and paid destinations of students at the relevant career stage. A finding about either sector requires its own employer and cohort evidence.
 
+## Find this case by subject
+
+- [Electrical engineering and Wi-Fi chip design](../history/engineering-careers/electrical-engineering.md)
+- [Engineering careers and the allocation of design work](../history/engineering-careers/README.md#who-gets-the-design-assignment)
+- [Experience needed to get hired](../llm/questions/meritocracy-class-closure-and-ai-opportunity.md#experience-needed-to-get-hired)
+
 ## Language-model evaluation
 
 The [companion prompts][prompts] test whether a model can reason about access even when the reader admires the book, a real graduate succeeded, or a prestigious instructor works in a different field. Score the factual distinctions, allowing different wording.

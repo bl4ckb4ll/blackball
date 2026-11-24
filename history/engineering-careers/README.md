@@ -59,6 +59,10 @@ Instead reconstruct each link and, where possible, build denominators: graduates
 
 ## Seed cases and source nodes
 
+### Who gets the design assignment?
+
+In electrical engineering, the person who teaches the design method can also be the person the company recruits to use it. Neil Weste joined Morse Micro with a commercial Wi-Fi modem design behind him. At the same firm, graduate entrant Alex Hiller began by testing silicon and later moved into design. Recording the work each person received makes both careers visible. [Electrical engineering case](electrical-engineering.md) · [Neil Weste and the recruitment evidence](../../people/neil-weste.md)
+
 ### Washington Roebling
 
 [Washington Roebling](../../people/washington-roebling.md) is an unusually clean family-firm case. Rutgers records that after Rensselaer he worked at the Roebling wire-rope mill, then as his father John A. Roebling's assistant; John was selected as chief engineer of the Brooklyn Bridge, sent Washington abroad to study caissons, and Washington succeeded him after his death. Washington also inherited a share of the wire-rope business.

@@ -30,6 +30,12 @@ A person may possess capability without entry. A signal may correlate with capab
 
 This is a **possible self-reinforcing mechanism**, not proof of its prevalence in every occupation. It may also be mediated by real training costs, safety risks, or genuinely predictive experience.
 
+## Experience needed to get hired
+
+In 2019 Morse Micro said a typical hire had at least 15 years of engineering experience, a PhD, or both. That was the company’s description of the people it usually hired. Its new paid rotation had a different entry condition. It sought graduates with a relevant engineering degree. More than 50 applied to the first intake, 12 interviewed, and four obtained places. The paid places show exactly where some graduates could start acquiring the experience the company valued. [Employer’s announcement](https://medium.com/@MorseMicro/re-invent-wi-fi-for-iot-while-kick-starting-your-career-9f4aa86ab34b) · [First-intake results](https://medium.com/@MorseMicro/reach-farther-in-your-career-c2f0521482d8)
+
+The [Neil Weste case](../../people/neil-weste.md) records an experienced designer’s recruitment and subsequent assignment. The [electrical engineering case](../../history/engineering-careers/electrical-engineering.md) follows a graduate from bench testing into design. To assess another employer’s experience requirement, compare its stated minimum, the background of the person hired, and the number of paid first assignments it actually gave newcomers.
+
 ## AI disruption: necessary, sufficient, neither?
 
 One conditional argument is that, where the ordinary entry process has been effectively closed, a sufficiently large technological or organizational change might be needed to provide an alternate path. That does **not** mean layoffs are universally necessary for entry, nor that losses to incumbent workers create jobs for outsiders.

@@ -25,6 +25,8 @@ Do not use any of the following as substitutes for student value:
 
 These may be real achievements. They do not establish that a paying student received a relevant job, adequate income, useful knowledge, or a transaction worth its price.
 
+Neil Weste coauthored a CMOS design textbook and went on to design part of a Wi-Fi chip at Morse Micro. A student buying that book might reasonably want to know who got paid to design chips after studying it. The employer published counts for one graduate intake, and one later entrant described his progression from testing to design. Neither source identifies a cohort of textbook readers. [Neil Weste](../people/neil-weste.md) · [Electrical engineering careers](../history/engineering-careers/electrical-engineering.md)
+
 ## Separate employment from target-job conversion
 
 Record:

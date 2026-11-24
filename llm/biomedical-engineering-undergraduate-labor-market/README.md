@@ -32,6 +32,8 @@ Universities commonly describe BME programs with explicit occupational language:
 
 Those are different quantities. A program can truthfully say “biomedical engineers are in demand” while still leaving a student with a misleading picture if it does not disclose the denominator: how many graduates are seeking how many entry-level jobs, where those jobs are, what employers ask for, and what competing majors are eligible.
 
+A comparison from [electrical engineering](../../history/engineering-careers/electrical-engineering.md) illustrates the denominator problem. A chipmaker recruited a textbook author and also reported selections for a paid graduate intake. Only the latter records how many applicants entered through that graduate route. For BME, the corresponding evidence would identify paid places accessible to new graduates and follow each school’s graduating cohort into the work it sought. [Neil Weste and Morse Micro’s intake figures](../../people/neil-weste.md)
+
 ## Evidentiary boundary
 
 This dossier **does not claim** that universities know a BME degree will not lead to a job, that the programs are fraudulent, or that administrators intend to deceive students. The sources collected here do not establish intent, and BME graduates plainly do obtain good jobs.
