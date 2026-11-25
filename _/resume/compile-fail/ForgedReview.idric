@@ -1,0 +1,5 @@
+module ForgedReview
+import Resume.Interpret
+import Resume.Review
+forged : ResumeDraft → ReviewedSnapshot
+forged draft = Reviewed draft [] []

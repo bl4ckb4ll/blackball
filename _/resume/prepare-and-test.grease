@@ -1,0 +1,119 @@
+#!/usr/bin/env grease
+# Kitchen preparation: requirements.md; shared Kitchen instructions are pinned
+# in dependencies.tsv. This is a leaf build/test recipe, not a new scheduler.
+set -o errexit
+if test "$#" -ne 4 {
+  echo 'Usage: prepare-and-test.grease PROJECT IDRIC GREASE NEW_EVIDENCE_DIRECTORY' >&2
+  exit 2
+}
+var project = $1
+var compiler = $2
+var grease = $3
+var output = $4
+setglobal ENV.GREASE_BINARY = grease
+for path in "$project" "$compiler" "$grease" "$output" {
+  var first_character = "$(printf '%s' "$path" | cut -c 1)"
+  if ! test "$first_character" = / {
+    echo 'FAIL: absolute paths required' >&2
+    exit 2
+  }
+}
+test -x "$compiler"
+test -x "$grease"
+var compiler_digest = "$(sha256sum "$compiler" | cut -d ' ' -f1)"
+test "$compiler_digest" = 297953229cbeb0495bc89b680c63aee77d3a3c90163f3449a15be073ca02c89a
+var compiler_directory = "$(dirname -- "$compiler")"
+var compiler_program_digest = "$(sha256sum "$compiler_directory/../compiler/build/exec/idris2_app/idris2.so" | cut -d ' ' -f1)"
+test "$compiler_program_digest" = 129a3c27e06f444e0af84c12de856c27787cee37b9b27555f444882af60ffb23
+test ! -e "$output"
+mkdir "$output"
+cd "$project"
+git rev-parse HEAD > "$output/source-head.txt"
+git diff --check
+"$compiler" --version > "$output/compiler-version.txt"
+"$compiler" --cg chez --source-dir "$project/resume" --build-dir "$output/ttc" \
+  --output-dir "$output/bin" -o resume-core "$project/resume/Main.idric" > "$output/core-build.log" 2>&1
+"$compiler" --cg chez --source-dir "$project/resume" --build-dir "$output/ttc" \
+  --output-dir "$output/bin" -o resume-tests "$project/resume/Resume/Tests.idric" > "$output/tests-build.log" 2>&1
+"$output/bin/resume-tests" > "$output/tests.tsv"
+
+# A valid external client is compiled above. Negative fixtures must fail at
+# the intended typed boundary, rather than because an import cannot be found.
+cp -R "$project/resume" "$output/negative-source"
+for name in ForgedStage ForgedClaim ForgedReview ForgedVerification {
+  cp "$project/_/resume/compile-fail/$name.idric" "$output/negative-source/$name.idric"
+  if "$compiler" --source-dir "$output/negative-source" --build-dir "$output/negative-ttc" \
+      --check "$output/negative-source/$name.idric" > "$output/$name.log" 2>&1 {
+    echo "FAIL: $name unexpectedly compiled" >&2
+    exit 1
+  }
+  rg --fixed-strings --quiet --file "$project/_/resume/compile-fail/$name.expected" "$output/$name.log"
+}
+
+"$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
+  "$project/_/resume/fixtures/ordinary.txt" "$output/ordinary" 2026-10-25 synthetic-fixture
+"$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" review \
+  "$output/ordinary" "$project/_/resume/fixtures/ordinary-review.tsv" "$output/reviewed"
+cmp "$output/ordinary/source.bin" "$output/reviewed/source.bin"
+cmp "$output/ordinary/extracted.txt" "$output/reviewed/extracted.txt"
+cmp "$output/ordinary/draft.tsv" "$output/reviewed/draft.tsv"
+rg --fixed-strings --quiet 'owner-correction;not-documentary;not-verified' "$output/reviewed/profile.tsv"
+rg --fixed-strings --quiet 'unresolved;not-verified' "$output/reviewed/profile.tsv"
+"$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" review \
+  "$output/reviewed" "$project/_/resume/fixtures/ordinary-review2.tsv" "$output/reviewed-again"
+cmp "$output/reviewed/source.bin" "$output/reviewed-again/source.bin"
+rg --fixed-strings --quiet 'Zoë Synthetic Reader' "$output/reviewed-again/profile.tsv"
+rg --fixed-strings --quiet revision-2 "$output/reviewed-again/decisions.tsv"
+cp -R "$output/ordinary" "$output/tampered"
+printf '%s\n' 'fabricated extracted text' > "$output/tampered/extracted.txt"
+if "$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" review \
+    "$output/tampered" "$project/_/resume/fixtures/ordinary-review.tsv" "$output/tampered-result" > "$output/tampered.log" 2>&1 {
+  echo 'FAIL: changed evidence passed reload' >&2
+  exit 1
+}
+rg --fixed-strings --quiet DerivedRecordMismatch "$output/tampered.log"
+if "$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
+    "$project/_/resume/fixtures/ordinary.txt" "$project/forbidden-personal-output" \
+    2026-10-25 synthetic-fixture > "$output/git-storage.log" 2>&1 {
+  echo 'FAIL: record storage inside Git was allowed' >&2
+  exit 1
+}
+rg --fixed-strings --quiet StorageInsideGitWorktree "$output/git-storage.log"
+test ! -e "$project/forbidden-personal-output"
+test "$(stat -c %a "$output/ordinary")" = 700
+test "$(stat -c %a "$output/ordinary/source.bin")" = 600
+if "$output/bin/resume-core" intake "$project/_/resume/fixtures/ordinary.txt" \
+    "$output/ordinary" 2026-10-25 synthetic-fixture > "$output/existing-output.log" 2>&1 {
+  echo 'FAIL: existing evidence was overwritten' >&2
+  exit 1
+}
+rg --fixed-strings --quiet OutputDirectoryMustBeNew "$output/existing-output.log"
+
+"$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
+  "$project/_/resume/fixtures/academic.txt" "$output/academic" 2026-10-25 synthetic-fixture
+"$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
+  "$project/_/resume/fixtures/embedded-instructions.txt" "$output/embedded" 2026-10-25 synthetic-fixture
+var injection_basename = '$(touch SHOULD_NOT_EXIST); resume.txt'
+var injection_path = "$output/$injection_basename"
+cp "$project/_/resume/fixtures/ordinary.txt" "$injection_path"
+"$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
+  "$injection_path" "$output/hostile-name" 2026-10-25 synthetic-fixture
+test ! -e "$project/SHOULD_NOT_EXIST"
+test ! -e "$output/SHOULD_NOT_EXIST"
+cmp "$output/ordinary/draft.tsv" "$output/hostile-name/draft.tsv"
+cmp "$output/ordinary/document.tsv" "$output/hostile-name/document.tsv"
+cmp "$output/ordinary/metadata.tsv" "$output/hostile-name/metadata.tsv"
+head -c 262145 /dev/zero > "$output/oversized.bin"
+if "$grease" "$project/_/resume/run.grease" "$output/bin/resume-core" intake \
+    "$output/oversized.bin" "$output/oversized-output" 2026-10-25 synthetic-fixture > "$output/oversized.log" 2>&1 {
+  echo 'FAIL: oversized input was accepted' >&2
+  exit 1
+}
+rg --fixed-strings --quiet InputSizeLimit "$output/oversized.log"
+test ! -e "$output/oversized-output"
+"$grease" "$project/_/resume/docx-tests.grease" "$project" "$output/bin/resume-core" \
+  "$grease" "$output/docx" > "$output/docx-tests.log" 2>&1
+sha256sum "$output/bin/resume-core_app/resume-core.so" \
+  "$output/bin/resume-tests_app/resume-tests.so" "$output/ordinary/source.bin" \
+  "$output/ordinary/draft.tsv" "$output/reviewed/profile.tsv" > "$output/artifacts.sha256"
+echo 'PASS: bounded plaintext and DOCX producer tests; PDF and independent semantic acceptance remain unqualified'

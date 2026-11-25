@@ -1,0 +1,34 @@
+requirement	state	evidence_boundary
+job	PARTIAL	SUN BB-PARSE-RESUMES-01; checked plaintext and bounded Pandoc DOCX implementation; full requested parser unfinished
+source_start	PINNED	d6a57ec658448651300d70a2936f966713aa8f5c; branch parse-resumes
+compiler	EXECUTED	Idriç 94dfd99bd3e376507fedc8611053b7173b2519f0; Linux x86_64 Chez; actual runtime digests in artifacts.tsv
+core	COMPILED_AND_EXECUTED	Source, UTF8, SHA256, Dates, Interpret, Review, Interchange, Intake, Storage, DOCX Archive/XML/Model/Decode and Main
+core_cases	PASS	41 producer assertions in Resume.Tests; FIPS vectors, source/review boundaries, safe XML and bounded/malformed/omitted/fabricated model cases
+compile_fail_boundaries	PASS	forged stage, private claim constructor, private reviewed constructor and absent verification state rejected for their intended diagnostics
+plaintext_round_trip	PASS	synthetic UTF8 input -> source/anchors/draft -> explicit accept/reject/correct -> new profile; prior bytes and draft preserved
+snapshot_reload	PASS	prior correction events retained across another review; altered derived evidence refused
+repeatability	PASS	same synthetic content at different filenames yields equal draft, document and acquisition metadata
+resource_bounds	PARTIAL	plaintext/DOCX input/output and expansion bounds, child process limits, UTF8 rejection and oversized-input refusal; PDF reader remains unqualified
+privacy	PARTIAL	synthetic fixtures only; private modes and Git-output guard tested; safe deletion not qualified
+orchestration	EXECUTED	unchanged pinned Flexible Pipes -> Kitchen-prepared Grease recipe executed plaintext and DOCX tests; separate ai-ci source-style check applies only to its checked commit; final published head is rechecked separately
+aici_source_style	PASS_WITH_WARNINGS	pinned independent source-style checker exited 0; inherited library call names trigger style canaries; this is not semantic résumé acceptance
+fp_spec_digest	PINNED	54ea3cc1f1f88a5be3819042b16020d6dbd311689903fccbe2fa899cb5cec84c
+fp_producer_stdout_digest	OBSERVED	2beb1dbb6a2c33e59f98abe1b5227ea11946760ab993076eb9b8e15115b295ea; prototype plaintext/DOCX recipe; stderr empty
+verification_commands	RECORDED	commands.tsv; complete producer assertions retained in producer-cases.tsv
+ike	NOT_RUN	no qualified Ike executable found on this host; no generic-C substitute built
+pdf_candidate_builds	PASS	2026-10-27: official GHC 9.14.1 and Cabal 3.16.1.0; both pinned libraries and actual extraction clients compiled; acquisition failure below is historical
+pdf_candidate_comparison	EXECUTED_NOT_QUALIFIED	12 independent synthetic PDFs, 24 resource-limited reader executions; Unicode, mapping uncertainty and standard-font geometry defects remain; see pdf-qualification/
+pdf_reader_selection	BLOCKED	neither current candidate passes the independent contract; no production selection or activation
+pdf_producer_regression	PASS	unchanged 41 assertions rerun; output byte-identical to producer-cases.tsv; not a new filesystem round trip or independent résumé acceptance
+pdf_process_isolation	NOT_QUALIFIED	namespace probe refused; separate Landlock ABI query returned Function not implemented (ENOSYS, 38); resource limits do not prove non-networked isolation
+docx_intake	PASS	Pandoc 3.1.3 plus checked ZIP/XML/model boundary; ordinary and academic DOCX complete intake/review/reload with actual OOXML part/paragraph anchors
+docx_refusals	PASS	encrypted ZIP; excessive expansion; external-resource relationship; entity declaration; omitted gridless table; changed model; changed XML sidecar
+docx_reader_loss	BLOCKED_FOR_AFFECTED_INPUT	mixed text/footnote run loses text in both 3.1.3 and official 3.12.1; checked core refuses source/model mismatch; see pandoc-gap.md
+pdf_intake	NOT_IMPLEMENTED	no PDF reader selected or qualified; entry point fails closed
+pdf_geometry_and_OCR_status	PARTIAL	independent fixtures rendered and compared; hpdft image/blank/mixed observations execute, but no production PDF anchors/outcomes exist; OCR not invoked
+structured_career_events	NOT_IMPLEMENTED	line claims and section grouping work; event/date/entity interpretation remains unresolved
+owner_added_facts	NOT_IMPLEMENTED	existing documentary claims can be corrected; new owner-only fields need a separate event creation operation
+safe_managed_deletion	BLOCKED	qualified managed-path/symlink deletion policy missing; operation refuses without effects
+independent_semantic_acceptance	NOT_RUN	shared ai-ci guardrails and source-style gate are available; no résumé semantic acceptance contract exists at the pinned revision
+clean_supported_host_demo	NOT_RUN	current-host compilation and execution do not establish fresh-host dependency acquisition or PDF/DOCX behavior
+completion	BLOCKED	full job cannot be COMPLETE until PDF reader/isolated acquisition, affected DOCX runs, structured events, deletion and independent acceptance execute

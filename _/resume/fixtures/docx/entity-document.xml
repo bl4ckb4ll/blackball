@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE w:document [<!ENTITY stolen SYSTEM "file:///synthetic-reader-canary.txt">]>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body><w:p><w:r><w:t>&stolen;</w:t></w:r></w:p></w:body></w:document>

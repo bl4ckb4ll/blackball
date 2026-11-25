@@ -1,0 +1,99 @@
+module Resume.ContentDigest
+
+import Data.Bits
+import Data.List
+import Data.Text
+
+-- The pinned compiler does not accept the Unicode subtraction declaration.
+-- Use the existing named Number subtraction operation at that narrow boundary.
+
+-- SHA-256, FIPS 180-4 sections 5 and 6.2. The byte and word representations
+-- stay inside this module; source identity is lowercase hexadecimal text.
+record HashWords where
+  constructor Hash
+  word_a, word_b, word_c, word_d, word_e, word_f, word_g, word_h : Bits32
+
+initial_words : HashWords
+initial_words = Hash 0x6a09e667 0xbb67ae85 0x3c6ef372 0xa54ff53a
+                     0x510e527f 0x9b05688c 0x1f83d9ab 0x5be0cd19
+
+round_constants : List Bits32
+round_constants =
+ [0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+  0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+  0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+  0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+  0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+  0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+  0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+  0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2]
+
+word_at : Number → List Bits32 → Bits32
+word_at _ [] = 0
+word_at Z (first :: rest) = first
+word_at (S offset) (first :: rest) = word_at offset rest
+
+bytes_to_words : List Bits8 → List Bits32
+bytes_to_words (first :: second :: third :: fourth :: rest) =
+  ((cast first `shiftL` 24) .|. (cast second `shiftL` 16) .|.
+   (cast third `shiftL` 8) .|. cast fourth) :: bytes_to_words rest
+bytes_to_words _ = []
+
+extend_schedule : Number → List Bits32 → List Bits32
+extend_schedule Z schedule = schedule
+extend_schedule (S remaining) schedule =
+  let offset = length schedule
+      earlier = word_at (minus offset 15) schedule
+      later = word_at (minus offset 2) schedule
+      first_sigma = (rotR earlier 7) `xor` (rotR earlier 18) `xor` (earlier `shiftR` 3)
+      second_sigma = (rotR later 17) `xor` (rotR later 19) `xor` (later `shiftR` 10)
+      next = word_at (minus offset 16) schedule + first_sigma +
+             word_at (minus offset 7) schedule + second_sigma
+  in extend_schedule remaining (schedule ++ [next])
+
+compress_round : HashWords → (Bits32, Bits32) → HashWords
+compress_round (Hash a b c d e f g h) (constant, word) =
+  let sum_e = (rotR e 6) `xor` (rotR e 11) `xor` (rotR e 25)
+      choose = (e .&. f) `xor` ((complement e) .&. g)
+      first = h + sum_e + choose + constant + word
+      sum_a = (rotR a 2) `xor` (rotR a 13) `xor` (rotR a 22)
+      majority = (a .&. b) `xor` (a .&. c) `xor` (b .&. c)
+  in Hash (first + sum_a + majority) a b c (d + first) e f g
+
+compress_block : HashWords → List Bits8 → HashWords
+compress_block original block =
+  let result = foldl compress_round original
+                  (zip round_constants (extend_schedule 48 (bytes_to_words block)))
+  in Hash (original.word_a + result.word_a) (original.word_b + result.word_b)
+          (original.word_c + result.word_c) (original.word_d + result.word_d)
+          (original.word_e + result.word_e) (original.word_f + result.word_f)
+          (original.word_g + result.word_g) (original.word_h + result.word_h)
+
+compress_blocks : Number → HashWords → List Bits8 → HashWords
+compress_blocks Z state bytes = state
+compress_blocks (S remaining) state [] = state
+compress_blocks (S remaining) state bytes =
+  compress_blocks remaining (compress_block state (take 64 bytes)) (drop 64 bytes)
+
+hex_digit : Bits32 → Char
+hex_digit value = chr (if value < 10 then 48 + cast value else 87 + cast value)
+
+word_hexadecimal : Bits32 → Text
+word_hexadecimal word = pack $ map (hex_digit . (.&. 15))
+  [word `shiftR` 28,word `shiftR` 24,word `shiftR` 20,word `shiftR` 16,
+   word `shiftR` 12,word `shiftR` 8,word `shiftR` 4,word]
+
+export
+sha256_content_digest : List Bits8 → Text
+sha256_content_digest bytes =
+  let bit_length : Bits64 = cast (length bytes) × 8
+      zero_padding_length = (minus 119 (length bytes `mod` 64)) `mod` 64
+      suffix : List Bits8 = map cast
+        [bit_length `shiftR` 56,bit_length `shiftR` 48,bit_length `shiftR` 40,
+         bit_length `shiftR` 32,bit_length `shiftR` 24,bit_length `shiftR` 16,
+         bit_length `shiftR` 8,bit_length]
+      padded = bytes ++ [128] ++ replicate zero_padding_length 0 ++ suffix
+      state = compress_blocks (length padded) initial_words padded
+  in concat $ map word_hexadecimal
+       [state.word_a,state.word_b,state.word_c,state.word_d,
+        state.word_e,state.word_f,state.word_g,state.word_h]

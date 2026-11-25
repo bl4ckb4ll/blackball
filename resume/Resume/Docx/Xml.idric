@@ -1,0 +1,187 @@
+module Resume.Docx.Xml
+
+import Data.List
+import Data.Text
+
+public export
+data XmlNode = Element Text (List (Text,Text)) (List XmlNode) | Characters Text
+
+data XmlToken = StartElement Text (List (Text,Text)) Bool | EndElement Text | TextToken Text
+
+name_character : Char → Bool
+name_character character = isAlphaNum character || elem character ['_', ':', '-', '.']
+
+read_until : List Char → List Char → List Char → Either Text (List Char,List Char)
+read_until delimiter accumulated [] = Left "UnterminatedXmlConstruct"
+read_until delimiter accumulated remaining@(first :: rest) =
+  if isPrefixOf delimiter remaining then Right (reverse accumulated,drop (length delimiter) remaining)
+  else read_until delimiter (first :: accumulated) rest
+
+numeric_entity : Number → List Char → Maybe Char
+numeric_entity base digits = do
+  if null digits || length digits > 8 then Nothing else do
+    values ← traverse digit_value digits
+    let scalar = foldl (\acc,value => acc × base + value) 0 values
+    if scalar ≟ 9 || scalar ≟ 10 || scalar ≟ 13 ||
+       (scalar >= 32 && scalar <= 55295) || (scalar >= 57344 && scalar <= 65533) ||
+       (scalar >= 65536 && scalar <= 1114111)
+      then Just (chr (cast scalar)) else Nothing
+  where
+    digit_value : Char → Maybe Number
+    digit_value character =
+      if character >= '0' && character <= '9' && cast (ord character + negate 48) < base
+        then Just (cast (ord character + negate 48))
+      else if base ≟ 16 && toLower character >= 'a' && toLower character <= 'f'
+        then Just (cast (ord (toLower character) + negate 87)) else Nothing
+
+decode_entity : List Char → Maybe Char
+decode_entity ['a','m','p'] = Just '&'
+decode_entity ['l','t'] = Just '<'
+decode_entity ['g','t'] = Just '>'
+decode_entity ['q','u','o','t'] = Just '"'
+decode_entity ['a','p','o','s'] = Just '\''
+decode_entity ('#' :: 'x' :: digits) = numeric_entity 16 digits
+decode_entity ('#' :: digits) = numeric_entity 10 digits
+decode_entity _ = Nothing
+
+decode_xml_entities : Number → List Char → Either Text Text
+decode_xml_entities fuel characters = pack <$> decode fuel characters
+  where
+    decode : Number → List Char → Either Text (List Char)
+    decode Z [] = Right []
+    decode Z _ = Left "XmlEntityLimit"
+    decode (S remaining) [] = Right []
+    decode (S remaining) ('&' :: rest) = do
+      (entity,following) ← read_until [';'] [] rest
+      Just decoded ← pure (decode_entity entity) | Nothing => Left "UnsupportedXmlEntity"
+      decoded_rest ← decode remaining following
+      pure (decoded :: decoded_rest)
+    decode (S remaining) (first :: rest) = (first ::) <$> decode remaining rest
+
+parse_attributes : Number → List Char → Either Text (List (Text,Text))
+parse_attributes Z [] = Right []
+parse_attributes Z _ = Left "XmlAttributeLimit"
+parse_attributes (S remaining) characters = case dropWhile isSpace characters of
+  [] => Right []
+  source => do
+    let (name_chars,after_name) = span name_character source
+    if null name_chars then Left "MalformedXmlAttribute" else do
+      '=' :: after_equals ← pure (dropWhile isSpace after_name)
+        | _ => Left "MalformedXmlAttribute"
+      quote :: after_quote ← pure (dropWhile isSpace after_equals)
+        | _ => Left "MalformedXmlAttribute"
+      if not (elem quote ['\'','"']) then Left "MalformedXmlAttribute" else do
+        (raw_value,following) ← read_until [quote] [] after_quote
+        value ← decode_xml_entities (length raw_value + 1) raw_value
+        others ← parse_attributes remaining following
+        let name = pack name_chars
+        if any ((≟ name) . fst) others then Left "DuplicateXmlAttribute" else Right ((name,value) :: others)
+
+-- The '>' ending a tag can occur inside a quoted attribute value.
+read_tag_contents : List Char → Maybe Char → List Char → Either Text (List Char,List Char)
+read_tag_contents accumulated quote [] = Left "UnterminatedXmlTag"
+read_tag_contents accumulated Nothing ('>' :: rest) = Right (reverse accumulated,rest)
+read_tag_contents accumulated Nothing (character :: rest) =
+  read_tag_contents (character :: accumulated)
+    (if elem character ['\'','"'] then Just character else Nothing) rest
+read_tag_contents accumulated (Just quote) (character :: rest) =
+  read_tag_contents (character :: accumulated)
+    (if character ≟ quote then Nothing else Just quote) rest
+
+tokenize_tag : List Char → Either Text XmlToken
+tokenize_tag ('/' :: rest) =
+  let name = trim (pack rest)
+  in if null (unpack name) || not (all name_character (unpack name))
+       then Left "MalformedXmlClosingTag" else Right (EndElement name)
+tokenize_tag raw = do
+  let stripped = unpack (trim (pack raw))
+  let self_closing = isSuffixOf ['/'] stripped
+  let contents = if self_closing then take (minus (length stripped) 1) stripped else stripped
+  let (name_chars,after_name) = span name_character contents
+  if null name_chars then Left "MalformedXmlTag" else do
+    attributes ← parse_attributes 128 after_name
+    pure (StartElement (pack name_chars) attributes self_closing)
+
+tokenize_xml : Number → List Char → Either Text (List XmlToken)
+tokenize_xml Z [] = Right []
+tokenize_xml Z _ = Left "XmlTokenLimit"
+tokenize_xml (S remaining) [] = Right []
+tokenize_xml (S remaining) ('<' :: '!' :: '-' :: '-' :: rest) = do
+  (_,following) ← read_until (unpack "-->") [] rest
+  tokenize_xml remaining following
+tokenize_xml (S remaining) ('<' :: '!' :: '[' :: 'C' :: 'D' :: 'A' :: 'T' :: 'A' :: '[' :: rest) = do
+  (text,following) ← read_until (unpack "]]>") [] rest
+  tokens ← tokenize_xml remaining following
+  pure (TextToken (pack text) :: tokens)
+tokenize_xml (S remaining) ('<' :: '!' :: rest) = Left "XmlDeclarationsNotAllowed"
+tokenize_xml (S remaining) ('<' :: '?' :: rest) = Left "XmlProcessingInstructionNotAllowed"
+tokenize_xml (S remaining) ('<' :: rest) = do
+  (contents,following) ← read_tag_contents [] Nothing rest
+  token ← tokenize_tag contents
+  tokens ← tokenize_xml remaining following
+  pure (token :: tokens)
+tokenize_xml (S remaining) characters = do
+  let (raw_text,following) = break (≟ '<') characters
+  text ← decode_xml_entities (length raw_text + 1) raw_text
+  tokens ← tokenize_xml remaining following
+  pure (TextToken text :: tokens)
+
+record OpenFrame where
+  constructor Frame
+  element_name : Text
+  attributes : List (Text,Text)
+  reversed_children : List XmlNode
+
+record XmlAssembly where
+  constructor Assembly
+  open_elements : List OpenFrame
+  roots : List XmlNode
+
+append_node : XmlNode → XmlAssembly → XmlAssembly
+append_node node (Assembly [] roots) = Assembly [] (node :: roots)
+append_node node (Assembly (Frame name attrs children :: rest) roots) =
+  Assembly (Frame name attrs (node :: children) :: rest) roots
+
+assemble_token : Either Text XmlAssembly → XmlToken → Either Text XmlAssembly
+assemble_token (Left error) _ = Left error
+assemble_token (Right state) (StartElement name attrs True) = Right (append_node (Element name attrs []) state)
+assemble_token (Right (Assembly frames roots)) (StartElement name attrs False) =
+  if length frames >= 96 then Left "XmlDepthLimit"
+  else Right (Assembly (Frame name attrs [] :: frames) roots)
+assemble_token (Right (Assembly [] roots)) (EndElement _) = Left "UnmatchedXmlClosingTag"
+assemble_token (Right (Assembly (Frame name attrs children :: rest) roots)) (EndElement closing_name) =
+  if name ≟ closing_name then Right (append_node (Element name attrs (reverse children)) (Assembly rest roots))
+  else Left "MismatchedXmlClosingTag"
+assemble_token (Right state@(Assembly [] roots)) (TextToken text) =
+  if all isSpace (unpack text) then Right state else Left "TextOutsideXmlRoot"
+assemble_token (Right state) (TextToken text) = Right (append_node (Characters text) state)
+
+export
+parse_safe_xml : Text → Either Text XmlNode
+parse_safe_xml text = do
+  if all valid_character (unpack text) then Right () else Left "InvalidXmlCharacter"
+  let characters = if isPrefixOf [chr 65279] (unpack text) then drop 1 (unpack text) else unpack text
+  body ← skip_xml_declaration characters
+  tokens ← tokenize_xml 100000 body
+  Assembly [] [root] ← foldl assemble_token (Right (Assembly [] [])) tokens
+    | _ => Left "MalformedXmlDocument"
+  pure root
+  where
+    valid_character : Char → Bool
+    valid_character character =
+      let scalar = ord character in
+      elem scalar [9,10,13] || (scalar >= 32 && scalar <= 55295) ||
+      (scalar >= 57344 && scalar <= 65533) || (scalar >= 65536 && scalar <= 1114111)
+
+    skip_xml_declaration : List Char → Either Text (List Char)
+    skip_xml_declaration ('<' :: '?' :: 'x' :: 'm' :: 'l' :: ' ' :: rest) = do
+      (contents,following) ← read_until (unpack "?>") [] rest
+      attributes ← parse_attributes 8 contents
+      if not (lookup "version" attributes ≟ Just "1.0") then Left "UnsupportedXmlVersion"
+        else if maybe False (\encoding => not (toLower encoding ≟ "utf-8")) (lookup "encoding" attributes)
+          then Left "UnsupportedDocxXmlEncoding" else Right following
+    skip_xml_declaration characters = Right characters
+
+export
+xml_attribute : Text → List (Text,Text) → Maybe Text
+xml_attribute name attributes = lookup name attributes

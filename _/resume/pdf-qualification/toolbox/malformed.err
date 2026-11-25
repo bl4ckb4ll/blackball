@@ -1,0 +1,9 @@
+toolbox-probe: Uncaught exception pdf-toolbox-core-0.1.3-inplace:Pdf.Core.Exception.Corrupted:
+
+Corrupted "lastXRef" ["Failed reading: Trailer not found"]
+
+While handling Parse exception: Failed reading: Trailer not found
+
+HasCallStack backtrace:
+  throwIO, called at lib/Pdf/Core/XRef.hs:72:19 in pdf-toolbox-core-0.1.3-inplace:Pdf.Core.XRef
+

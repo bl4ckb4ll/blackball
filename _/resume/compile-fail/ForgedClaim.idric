@@ -1,0 +1,5 @@
+module ForgedClaim
+import Data.Text
+import Resume.Source
+forged : DocumentBackedClaim Text
+forged = SupportedClaim "a degree" [] "a degree" "explicit"

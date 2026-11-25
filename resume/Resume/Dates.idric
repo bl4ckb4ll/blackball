@@ -1,0 +1,87 @@
+module Resume.Dates
+
+import Data.List
+import Data.List1
+import Data.Text
+
+public export
+data PartialDate = YearOnly Number | YearAndMonth Number Number |
+                   CalendarDay Number Number Number
+
+public export
+data DateEndpoint = Dated PartialDate | OngoingAt Text | UnknownEndpoint
+
+public export
+data DateOrder = Ordered | Contradictory | UnresolvedOrder
+
+decimal_number : Text → Maybe Number
+decimal_number text = if null (unpack text) || not (all isDigit (unpack text))
+  then Nothing else parsePositive text
+
+days_in_month : Number → Number → Number
+days_in_month year month = let calendar_year : Integer = cast year in if month ≟ 2
+  then if calendar_year `mod` 400 ≟ 0 || (calendar_year `mod` 4 ≟ 0 && not (calendar_year `mod` 100 ≟ 0))
+         then 29 else 28
+  else if elem month [4,6,9,11] then 30 else 31
+
+export
+parse_partial_date : Text → Maybe PartialDate
+parse_partial_date text = case forget (split (≟ '-') text) of
+  [year_text] => do
+    year ← decimal_number year_text
+    if length (unpack year_text) ≟ 4 && year > 0 then Just (YearOnly year) else Nothing
+  [year_text, month_text] => do
+    year ← decimal_number year_text
+    month ← decimal_number month_text
+    if length (unpack year_text) ≟ 4 && year > 0 && month >= 1 && month <= 12
+      then Just (YearAndMonth year month) else Nothing
+  [year_text, month_text, day_text] => do
+    year ← decimal_number year_text
+    month ← decimal_number month_text
+    day ← decimal_number day_text
+    if length (unpack year_text) ≟ 4 && year > 0 && month >= 1 && month <= 12 &&
+       day >= 1 && day <= days_in_month year month
+      then Just (CalendarDay year month day) else Nothing
+  _ => Nothing
+
+export
+valid_observation_date : Text → Bool
+valid_observation_date text = case parse_partial_date text of
+  Just (CalendarDay _ _ _) => True
+  _ => False
+
+export
+read_date_endpoint : Text → Text → DateEndpoint
+read_date_endpoint observation wording =
+  if elem (toLower (trim wording)) ["present", "current", "ongoing"]
+    then OngoingAt observation
+    else maybe UnknownEndpoint Dated (parse_partial_date (trim wording))
+
+date_year : PartialDate → Number
+date_year (YearOnly year) = year
+date_year (YearAndMonth year _) = year
+date_year (CalendarDay year _ _) = year
+
+export
+compare_date_endpoints : DateEndpoint → DateEndpoint → DateOrder
+compare_date_endpoints (Dated first) (Dated last) =
+  if date_year first > date_year last then Contradictory
+  else if date_year first < date_year last then Ordered
+  else case (first, last) of
+    (CalendarDay _ first_month first_day, CalendarDay _ last_month last_day) =>
+      if first_month > last_month || (first_month ≟ last_month && first_day > last_day)
+        then Contradictory else Ordered
+    (YearAndMonth _ first_month, YearAndMonth _ last_month) =>
+      if first_month > last_month then Contradictory else Ordered
+    _ => UnresolvedOrder
+compare_date_endpoints _ _ = UnresolvedOrder
+
+export
+describe_date_endpoint : DateEndpoint → Text
+describe_date_endpoint UnknownEndpoint = "unknown-endpoint"
+describe_date_endpoint (OngoingAt observation) = "ongoing-at:" ++ observation
+describe_date_endpoint (Dated (YearOnly year)) = "year:" ++ show year
+describe_date_endpoint (Dated (YearAndMonth year month)) =
+  "month:" ++ show year ++ "-" ++ show month
+describe_date_endpoint (Dated (CalendarDay year month day)) =
+  "day:" ++ show year ++ "-" ++ show month ++ "-" ++ show day

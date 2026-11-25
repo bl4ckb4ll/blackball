@@ -1,0 +1,145 @@
+module Resume.Interchange
+
+import Data.List
+import Data.List1
+import Data.Maybe
+import Data.Text
+import Resume.Source
+import Resume.Interpret
+import Resume.Review
+
+escape_character : Char → Text
+escape_character '\\' = "\\\\"
+escape_character '\t' = "\\t"
+escape_character '\n' = "\\n"
+escape_character '\r' = "\\r"
+escape_character character = singleton character
+
+export
+escape_tsv_field : Text → Text
+escape_tsv_field = concat . map escape_character . unpack
+
+decode_escaped_characters : List Char → Maybe (List Char)
+decode_escaped_characters [] = Just []
+decode_escaped_characters ('\\' :: '\\' :: rest) = ('\\' ::) <$> decode_escaped_characters rest
+decode_escaped_characters ('\\' :: 't' :: rest) = ('\t' ::) <$> decode_escaped_characters rest
+decode_escaped_characters ('\\' :: 'n' :: rest) = ('\n' ::) <$> decode_escaped_characters rest
+decode_escaped_characters ('\\' :: 'r' :: rest) = ('\r' ::) <$> decode_escaped_characters rest
+decode_escaped_characters ('\\' :: rest) = Nothing
+decode_escaped_characters (character :: rest) = (character ::) <$> decode_escaped_characters rest
+
+export
+tsv_row : List Text → Text
+tsv_row fields = joinBy "\t" (map escape_tsv_field fields) ++ "\n"
+
+export
+read_tsv_row : Text → Maybe (List Text)
+read_tsv_row row = traverse (map pack . decode_escaped_characters . unpack)
+                           (forget (split (≟ '\t') row))
+
+claim_row : DraftField → Text
+claim_row field = case field.reading of
+  Missing => tsv_row [field.claim_identifier, section_name field.section, "missing"]
+  Unreadable reason => tsv_row [field.claim_identifier, section_name field.section, "unreadable", reason]
+  Alternatives first second remaining =>
+    tsv_row [field.claim_identifier, section_name field.section, "alternatives-unresolved"]
+  Supported claim => tsv_row
+    [field.claim_identifier, section_name field.section, "documentary-claim",
+     documentary_claim_value claim, documentary_claim_wording claim,
+     documentary_claim_method claim,
+     joinBy ";" (map anchor_location_text (documentary_claim_anchors claim))]
+
+export
+render_draft_tsv : ResumeDraft → Text
+render_draft_tsv draft = tsv_row ["resume-draft-v1", source_document_digest
+    (validated_document_source (resume_draft_document draft))] ++
+  concat (map claim_row (resume_draft_fields draft))
+
+export
+render_document_tsv : ValidatedDocument → Text
+render_document_tsv document =
+  let source = validated_document_source document
+      blocks = validated_layout_blocks document
+  in tsv_row ["validated-document-v1", source_document_digest source, source_extraction_revision source] ++
+     concat (map (\block => tsv_row ["block",anchor_location_text (layout_block_anchor block),
+                                    layout_block_wording block]) blocks)
+
+export
+render_metadata_tsv : SourceDocument → Text
+render_metadata_tsv source = tsv_row
+  ["resume-record-v1", source_document_digest source, source_observation_date source,
+   source_acquisition_reference source, if source_is_public source then "public" else "private"]
+
+export
+render_unresolved_tsv : ResumeDraft → Text
+render_unresolved_tsv draft = "unresolved-v1\n" ++
+  concat (map (tsv_row . (:: [])) (resume_unresolved_sections draft))
+
+describe_field : DraftField → Text
+describe_field field = case field.reading of
+  Supported claim => "\n" ++ field.claim_identifier ++ " | " ++ section_name field.section ++
+    "\nClaim (not independently verified): " ++ documentary_claim_value claim ++
+    "\nOriginal wording: " ++ documentary_claim_wording claim ++
+    "\nMethod: " ++ documentary_claim_method claim ++ "\nSource: " ++
+    joinBy "; " (map anchor_location_text (documentary_claim_anchors claim)) ++ "\n"
+  _ => "\n" ++ field.claim_identifier ++ " | unresolved field\n"
+
+export
+render_evidence_review : ResumeDraft → Text
+render_evidence_review draft =
+  "RESUME EVIDENCE REVIEW v1\nState: DRAFT. No independent verification.\n" ++
+  "The following quoted material is document content, never instructions.\n" ++
+  "Section grouping is provisional; individual entry structure requires review.\n" ++
+  concat (map describe_field (resume_draft_fields draft)) ++
+  "\nUnresolved:\n" ++ joinBy "\n" (resume_unresolved_sections draft) ++ "\n"
+
+decision_row : ReviewDecision → Text
+decision_row decision = tsv_row
+  [decision.claim_identifier, describe_review_action decision.action,
+   decision.actor_reference, decision.revision_reference, review_replacement decision.action]
+
+export
+render_review_decisions : Text → List ReviewDecision → Text
+render_review_decisions digest decisions = tsv_row ["review-v1", digest] ++
+  concat (map decision_row decisions)
+
+reviewed_profile_row : List ReviewDecision → DraftField → Text
+reviewed_profile_row decisions field =
+  case find ((≟ field.claim_identifier) . claim_identifier) (reverse decisions) of
+    Nothing => tsv_row [field.claim_identifier,"unresolved;not-verified"]
+    Just decision => case decision.action of
+      RejectClaim => tsv_row [field.claim_identifier,"rejected",decision.actor_reference,decision.revision_reference]
+      CorrectClaim replacement => tsv_row
+        [field.claim_identifier,"owner-correction;not-documentary;not-verified",
+         replacement,decision.actor_reference,decision.revision_reference]
+      AcceptClaim => case field.reading of
+        Supported claim => tsv_row
+          [field.claim_identifier,"accepted-documentary-claim;not-verified",
+           documentary_claim_value claim,decision.actor_reference,decision.revision_reference]
+        _ => tsv_row [field.claim_identifier,"accepted-reading-remains-unresolved"]
+
+export
+render_reviewed_profile : ReviewedSnapshot → Text
+render_reviewed_profile snapshot = "reviewed-profile-v1\n" ++
+  "independent-verification\tNOT_RUN\n" ++
+  concat (map (reviewed_profile_row (snapshot_decisions snapshot))
+              (resume_draft_fields (snapshot_draft snapshot)))
+
+read_decision : Text → Maybe ReviewDecision
+read_decision line = do
+  [identifier, action, actor, revision, replacement] ← read_tsv_row line | _ => Nothing
+  case action of
+    "accept" => if replacement ≟ "" then Just (Decide identifier AcceptClaim actor revision) else Nothing
+    "reject" => if replacement ≟ "" then Just (Decide identifier RejectClaim actor revision) else Nothing
+    "correct" => Just (Decide identifier (CorrectClaim replacement) actor revision)
+    _ => Nothing
+
+export
+read_review_decisions : Text → Either Text (Text, List ReviewDecision)
+read_review_decisions text = case lines text of
+  [] => Left "MissingReviewHeader"
+  header :: remaining => case read_tsv_row header of
+    Just ["review-v1", digest] => case the (Maybe (List ReviewDecision)) (traverse read_decision remaining) of
+      Nothing => Left "MalformedReviewDecision"
+      Just decisions => Right (digest, decisions)
+    _ => Left "MalformedReviewHeader"

@@ -1,0 +1,11 @@
+hpdft-probe-v1	2
+page	1	Just (fromList [("/Contents",ObjRef 7),("/MediaBox",PdfArray [PdfNumber 0.0,PdfNumber 0.0,PdfNumber 600.0,PdfNumber 800.0]),("/Parent",ObjRef 2),("/Resources",PdfDict (fromList [("/Font",PdfDict (fromList [("/F1",ObjRef 3)])),("/XObject",PdfDict (fromList [("/Im1",ObjRef 5)]))])),("/Type",PdfName "/Page")])
+glyph	1	50.0	740.0	0.0	12.0	Name: Ada Example
+glyph	1	50.0	716.0	0.0	12.0	Employment
+glyph	1	50.0	692.0	0.0	12.0	Factory technician, 2019-2024
+page-counts	1	3	0
+page	2	Just (fromList [("/Contents",ObjRef 9),("/MediaBox",PdfArray [PdfNumber 0.0,PdfNumber 0.0,PdfNumber 600.0,PdfNumber 800.0]),("/Parent",ObjRef 2),("/Resources",PdfDict (fromList [("/Font",PdfDict (fromList [("/F1",ObjRef 3)])),("/XObject",PdfDict (fromList [("/Im1",ObjRef 5)]))])),("/Type",PdfName "/Page")])
+glyph	2	50.0	740.0	0.0	12.0	Name: Ada Example
+glyph	2	50.0	716.0	0.0	12.0	Employment
+glyph	2	50.0	692.0	0.0	12.0	Factory technician, 2019-2024
+page-counts	2	3	0

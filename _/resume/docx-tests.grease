@@ -1,0 +1,140 @@
+#!/usr/bin/env grease
+set -o errexit
+set -o pipefail
+if test "$#" -ne 4 { exit 2 }
+var project = $1
+var core = $2
+var grease = $3
+var output = $4
+setglobal ENV.GREASE_BINARY = grease
+mkdir "$output"
+cp -R "$project/_/resume/fixtures/docx/ordinary" "$output/ordinary-source"
+# Deterministic package timestamps; these are owned synthetic temporary files.
+find "$output/ordinary-source" -exec touch -t 200001010000 {} +
+cd "$output/ordinary-source"
+/usr/bin/zip -q -X -r "$output/ordinary.docx" .
+cd "$project"
+"$grease" "$project/_/resume/run.grease" "$core" intake "$output/ordinary.docx" \
+  "$output/ordinary-record" 2026-10-25 synthetic-docx
+var expected_count = int("$(wc -l < "$project/_/resume/fixtures/docx/ordinary.expected.tsv")")
+var index = 2
+while (index <= expected_count) {
+  var location = "$(awk -F r'\t' -v row="$index" 'NR == row { print $1 }' "$project/_/resume/fixtures/docx/ordinary.expected.tsv")"
+  var wording = "$(awk -F r'\t' -v row="$index" 'NR == row { print $2 }' "$project/_/resume/fixtures/docx/ordinary.expected.tsv")"
+  var matching_row = "$(rg --fixed-strings -- "$location" "$output/ordinary-record/document.tsv")"
+  printf '%s\n' "$matching_row" | rg --fixed-strings --quiet -- "$wording"
+  setvar index += 1
+}
+var digest = "$(sha256sum "$output/ordinary.docx" | cut -d ' ' -f1)"
+printf 'review-v1\t%s\nclaim-1\tcorrect\tsynthetic-owner\tdocx-revision-1\tZoë Synthetic Reader\n' "$digest" > "$output/review.tsv"
+"$grease" "$project/_/resume/run.grease" "$core" review "$output/ordinary-record" "$output/review.tsv" "$output/reviewed-record"
+cmp "$output/ordinary.docx" "$output/reviewed-record/source.bin"
+cmp "$output/ordinary-record/reader-model.json" "$output/reviewed-record/reader-model.json"
+cmp "$output/ordinary-record/draft.tsv" "$output/reviewed-record/draft.tsv"
+rg --fixed-strings --quiet 'owner-correction;not-documentary;not-verified' "$output/reviewed-record/profile.tsv"
+"$grease" "$project/_/resume/run.grease" "$core" intake "$output/ordinary.docx" \
+  "$output/repeated-record" 2026-10-25 synthetic-docx
+cmp "$output/ordinary-record/draft.tsv" "$output/repeated-record/draft.tsv"
+cmp "$output/ordinary-record/document.tsv" "$output/repeated-record/document.tsv"
+
+cp -R "$output/ordinary-source" "$output/academic-source"
+cp "$project/_/resume/fixtures/docx/academic-supported-document.xml" "$output/academic-source/word/document.xml"
+cp "$project/_/resume/fixtures/docx/academic-footnotes.xml" "$output/academic-source/word/footnotes.xml"
+cd "$output/academic-source"
+/usr/bin/zip -q -X -r "$output/academic.docx" .
+cd "$project"
+"$grease" "$project/_/resume/run.grease" "$core" intake "$output/academic.docx" \
+  "$output/academic-record" 2026-10-25 synthetic-docx
+rg --fixed-strings --quiet 'María Synthetic 😀' "$output/academic-record/draft.tsv"
+rg --fixed-strings --quiet 'Synthetic publication note.' "$output/academic-record/draft.tsv"
+rg --fixed-strings --quiet 'visual reading order and pagination remain unresolved' "$output/academic-record/unresolved.tsv"
+
+# Preserve the independently authored mixed-run fixture that exposed actual
+# reader text loss. Do not relabel its partial extraction as a complete draft.
+cp -R "$output/academic-source" "$output/mixed-run-source"
+cp "$project/_/resume/fixtures/docx/academic-document.xml" "$output/mixed-run-source/word/document.xml"
+cd "$output/mixed-run-source"
+/usr/bin/zip -q -X -r "$output/mixed-run.docx" .
+cd "$project"
+if "$grease" "$project/_/resume/run.grease" "$core" intake "$output/mixed-run.docx" \
+    "$output/mixed-run-record" 2026-10-25 synthetic-docx > "$output/mixed-run.log" 2>&1 {
+  echo 'FAIL: incomplete Pandoc text was accepted as a draft' >&2
+  exit 1
+}
+rg --fixed-strings --quiet PandocModelSourceTextMismatch "$output/mixed-run.log"
+test ! -e "$output/mixed-run-record"
+if "$grease" "$project/_/resume/run.grease" "$core" intake \
+    "$project/_/resume/fixtures/docx/table-without-grid.docx" "$output/gridless-record" \
+    2026-10-25 synthetic-docx > "$output/gridless.log" 2>&1 {
+  echo 'FAIL: missing table text was accepted' >&2
+  exit 1
+}
+rg --fixed-strings --quiet PandocModelSourceTextMismatch "$output/gridless.log"
+test ! -e "$output/gridless-record"
+
+cp -R "$output/ordinary-source" "$output/external-source"
+cp "$project/_/resume/fixtures/docx/external-resource.rels" "$output/external-source/word/_rels/document.xml.rels"
+cd "$output/external-source"
+/usr/bin/zip -q -X -r "$output/external.docx" .
+cd "$project"
+if "$grease" "$project/_/resume/run.grease" "$core" intake "$output/external.docx" \
+    "$output/external-record" 2026-10-25 synthetic-docx > "$output/external.log" 2>&1 {
+  echo 'FAIL: external resource was admitted' >&2
+  exit 1
+}
+rg --fixed-strings --quiet DocxExternalResourceNotAllowed "$output/external.log"
+test ! -e "$output/external-record"
+
+cp -R "$output/ordinary-source" "$output/entity-source"
+cp "$project/_/resume/fixtures/docx/entity-document.xml" "$output/entity-source/word/document.xml"
+cd "$output/entity-source"
+/usr/bin/zip -q -X -r "$output/entity.docx" .
+cd "$project"
+if "$grease" "$project/_/resume/run.grease" "$core" intake "$output/entity.docx" \
+    "$output/entity-record" 2026-10-25 synthetic-docx > "$output/entity.log" 2>&1 {
+  echo 'FAIL: entity declarations were admitted' >&2
+  exit 1
+}
+rg --fixed-strings --quiet XmlDeclarationsNotAllowed "$output/entity.log"
+
+cd "$output/ordinary-source"
+/usr/bin/zip -q -X -P synthetic -r "$output/encrypted.docx" .
+cd "$project"
+if "$grease" "$project/_/resume/run.grease" "$core" intake "$output/encrypted.docx" \
+    "$output/encrypted-record" 2026-10-25 synthetic-docx > "$output/encrypted.log" 2>&1 {
+  echo 'FAIL: encrypted ZIP was admitted' >&2
+  exit 1
+}
+rg --fixed-strings --quiet EncryptedDocument "$output/encrypted.log"
+
+cp -R "$output/ordinary-source" "$output/oversized-source"
+head -c 8388609 /dev/zero > "$output/oversized-source/large.bin"
+cd "$output/oversized-source"
+/usr/bin/zip -q -X -r "$output/expanded-limit.docx" .
+cd "$project"
+if "$grease" "$project/_/resume/run.grease" "$core" intake "$output/expanded-limit.docx" \
+    "$output/expanded-limit-record" 2026-10-25 synthetic-docx > "$output/expanded-limit.log" 2>&1 {
+  echo 'FAIL: excessive ZIP expansion was admitted' >&2
+  exit 1
+}
+rg --fixed-strings --quiet DecompressedSizeLimit "$output/expanded-limit.log"
+test ! -e "$output/expanded-limit-record"
+
+cp -R "$output/ordinary-record" "$output/tampered-model"
+printf '%s\n' '{}' > "$output/tampered-model/reader-model.json"
+if "$grease" "$project/_/resume/run.grease" "$core" review "$output/tampered-model" "$output/review.tsv" \
+    "$output/tampered-result" > "$output/tampered-model.log" 2>&1 {
+  echo 'FAIL: malformed foreign model passed reload' >&2
+  exit 1
+}
+rg --fixed-strings --quiet UnsupportedPandocModelVersion "$output/tampered-model.log"
+test ! -e "$output/tampered-result"
+cp -R "$output/ordinary-record" "$output/tampered-part"
+printf '%s\n' '<fabricated/>' > "$output/tampered-part/reader-part-1.xml"
+if "$grease" "$project/_/resume/run.grease" "$core" review "$output/tampered-part" "$output/review.tsv" \
+    "$output/tampered-part-result" > "$output/tampered-part.log" 2>&1 {
+  echo 'FAIL: changed XML sidecar passed reload' >&2
+  exit 1
+}
+rg --fixed-strings --quiet DocxSidecarSourceMismatch "$output/tampered-part.log"
+printf '%s\n' 'PASS: DOCX reader, real part anchors, review/reload, repeatability, academic notes, entities, resources, encryption and reader-output rejection'

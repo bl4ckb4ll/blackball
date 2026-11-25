@@ -1,0 +1,145 @@
+module Resume.Storage
+
+import Data.Buffer
+import Data.List
+import Data.Text
+import Resume.Source
+import Resume.Intake
+import Resume.Utf8
+import Resume.Interpret
+import Resume.Interchange
+import Resume.Review
+import System.Directory
+import System.File
+import System.File.Buffer
+
+-- Linux runtime boundary, not application semantics. Restrict newly created
+-- files/directories before opening them. This changes only this CLI process.
+%foreign "C:umask,libc.so.6"
+set_private_creation_mask : Int → PrimIO Int
+
+export
+restrict_record_permissions : IO ()
+restrict_record_permissions = do
+  _ ← primIO (set_private_creation_mask 63)
+  pure ()
+
+write_bytes_to_buffer : Buffer → Int → List Bits8 → IO ()
+write_bytes_to_buffer buffer offset [] = pure ()
+write_bytes_to_buffer buffer offset (byte :: remaining) = do
+  setBits8 buffer offset byte
+  write_bytes_to_buffer buffer (offset + 1) remaining
+
+write_source_bytes : Text → List Bits8 → IO (Either Text ())
+write_source_bytes path bytes = do
+  Just buffer ← newBuffer (cast (length bytes))
+    | Nothing => pure (Left "OutputMemoryLimit")
+  write_bytes_to_buffer buffer 0 bytes
+  result ← writeBufferToFile path buffer (cast (length bytes))
+  pure $ case result of
+    Left _ => Left "OutputWriteError"
+    Right _ => Right ()
+
+write_record_files : Text → List (Text, Text) → IO (Either Text ())
+write_record_files directory [] = pure (Right ())
+write_record_files directory ((name, text) :: remaining) = do
+  if encoded_utf8_byte_count text > maximum_source_bytes then pure (Left "OutputSizeLimit") else do
+    Right _ ← writeFile (directory ++ "/" ++ name) text
+      | Left _ => pure (Left "OutputWriteError")
+    write_record_files directory remaining
+
+document_record_files : SourceDocument → ValidatedDocument → ResumeDraft →
+                        List ReviewDecision → List (Text,Text) → List (Text,Text)
+document_record_files source document draft decisions extra_files =
+    [("metadata.tsv", render_metadata_tsv source),
+     ("extracted.txt", source_document_text source),
+     ("document.tsv", render_document_tsv document),
+     ("draft.tsv", render_draft_tsv draft),
+     ("review.txt", render_evidence_review draft),
+     ("unresolved.tsv", render_unresolved_tsv draft),
+     ("decisions.tsv", render_review_decisions (source_document_digest source) decisions),
+     ("diagnostics.tsv", source_reader_diagnostics source)] ++ source_reader_files source ++
+     extra_files ++ [("complete.tsv", tsv_row ["resume-record-complete-v1",source_document_digest source])]
+
+save_record_with_decisions : Text → ResumeDraft → List ReviewDecision → List (Text,Text) → IO (Either Text ())
+save_record_with_decisions directory draft decisions extra_files = do
+  restrict_record_permissions
+  let document = resume_draft_document draft
+  let source = validated_document_source document
+  let files = document_record_files source document draft decisions extra_files
+  if length (source_document_bytes source) + sum (map (encoded_utf8_byte_count . snd) files) > 16777216
+    then pure (Left "TotalOutputSizeLimit") else do
+      -- Existing directories, including symlinks and partial writes, are refused.
+      Right _ ← createDir directory | Left _ => pure (Left "OutputDirectoryMustBeNew")
+      Right _ ← write_source_bytes (directory ++ "/source.bin") (source_document_bytes source)
+        | Left error => pure (Left error)
+      write_record_files directory files
+
+export
+save_draft_record : Text → ResumeDraft → IO (Either Text ())
+save_draft_record directory draft = save_record_with_decisions directory draft [] []
+
+export
+save_reviewed_snapshot : Text → ReviewedSnapshot → IO (Either Text ())
+save_reviewed_snapshot directory snapshot =
+  save_record_with_decisions directory (snapshot_draft snapshot) (snapshot_decisions snapshot)
+    [("profile.tsv", render_reviewed_profile snapshot)]
+
+export
+read_bounded_text_file : Text → IO (Either Text Text)
+read_bounded_text_file path = do
+  Right bytes ← read_bounded_source_bytes path | Left error => pure (Left error)
+  pure $ maybe (Left "InvalidUtf8") Right (decode_document_utf8 bytes)
+
+verify_saved_text_files : Text → List (Text,Text) → IO (Either Text ())
+verify_saved_text_files directory [] = pure (Right ())
+verify_saved_text_files directory ((name,expected) :: remaining) = do
+  Right actual ← read_bounded_text_file (directory ++ "/" ++ name)
+    | Left error => pure (Left error)
+  if actual ≟ expected then verify_saved_text_files directory remaining else pure (Left "DerivedRecordMismatch")
+
+export
+load_draft_record : Text → IO (Either Text (ResumeDraft, List ReviewDecision))
+load_draft_record directory = do
+  Right metadata ← read_bounded_text_file (directory ++ "/metadata.tsv")
+    | Left error => pure (Left error)
+  Just ["resume-record-v1",digest,observation,acquisition,policy_text] ←
+    pure (read_tsv_row (trim metadata)) | _ => pure (Left "MalformedRecordMetadata")
+  let policy : Maybe HandlingPolicy = case policy_text of
+        "private" => Just PrivateDocument
+        "public" => Just PublicDocument
+        _ => Nothing
+  Just selected_policy ← pure policy | _ => pure (Left "MalformedHandlingPolicy")
+  Right completion ← read_bounded_text_file (directory ++ "/complete.tsv")
+    | Left _ => pure (Left "IncompleteRecord")
+  if not (completion ≟ tsv_row ["resume-record-complete-v1",digest])
+    then pure (Left "IncompleteRecord") else do
+      Right document ← intake_document_with_reader_files (directory ++ "/source.bin") observation acquisition selected_policy directory
+        | Left error => pure (Left error)
+      if not (digest ≟ source_document_digest (validated_document_source document))
+        then pure (Left "SourceDigestMismatch") else do
+          Right saved_draft ← read_bounded_text_file (directory ++ "/draft.tsv")
+            | Left error => pure (Left error)
+          let draft = interpret_resume_document document
+          if not (saved_draft ≟ render_draft_tsv draft)
+            then pure (Left "DerivedRecordMismatch") else do
+              Right _ ← verify_saved_text_files directory
+                [("extracted.txt",source_document_text (validated_document_source document)),
+                 ("document.tsv",render_document_tsv document),
+                 ("review.txt",render_evidence_review draft),
+                 ("unresolved.tsv",render_unresolved_tsv draft)]
+                | Left error => pure (Left error)
+              Right decision_text ← read_bounded_text_file (directory ++ "/decisions.tsv")
+                | Left error => pure (Left error)
+              case read_review_decisions decision_text of
+                Left error => pure (Left error)
+                Right (decision_digest, decisions) =>
+                  if not (decision_digest ≟ digest) then pure (Left "ReviewSourceMismatch")
+                  else if null decisions then pure (Right (draft, []))
+                  else case apply_review_decisions draft digest decisions of
+                    Left error => pure (Left error)
+                    Right snapshot => do
+                      Right _ ← verify_saved_text_files directory
+                        [("profile.tsv",render_reviewed_profile snapshot)]
+                        | Left error => pure (Left error)
+                      pure (Right (draft, decisions))

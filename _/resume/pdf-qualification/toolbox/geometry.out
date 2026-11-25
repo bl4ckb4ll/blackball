@@ -1,0 +1,11 @@
+pdf-toolbox-probe-v1	1
+page	1	Rectangle 0.0 0.0 600.0 800.0
+crop-rotation-image-presence	NOT_QUALIFIED
+glyph	1	71	50.0	740.0	50.0	752.0	MAPPED	G
+glyph	1	101	50.0	740.0	50.0	752.0	MAPPED	e
+glyph	1	111	50.0	740.0	50.0	752.0	MAPPED	o
+glyph	1	109	50.0	740.0	50.0	752.0	MAPPED	m
+glyph	1	101	50.0	740.0	50.0	752.0	MAPPED	e
+glyph	1	116	50.0	740.0	50.0	752.0	MAPPED	t
+glyph	1	114	50.0	740.0	50.0	752.0	MAPPED	r
+glyph	1	121	50.0	740.0	50.0	752.0	MAPPED	y

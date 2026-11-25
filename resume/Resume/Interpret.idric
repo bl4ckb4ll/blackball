@@ -1,0 +1,127 @@
+module Resume.Interpret
+
+import Data.List
+import Data.Text
+import Resume.Source
+
+public export
+data ResumeSection = Names | Contacts | Employment | Education | Projects |
+  Credentials | Skills | Publications | Volunteering | Appointments |
+  Affiliations | Consulting | Unclassified
+
+export
+section_name : ResumeSection → Text
+section_name Names = "names"
+section_name Contacts = "contacts"
+section_name Employment = "employment"
+section_name Education = "education"
+section_name Projects = "projects"
+section_name Credentials = "credentials"
+section_name Skills = "skills"
+section_name Publications = "publications"
+section_name Volunteering = "volunteering"
+section_name Appointments = "appointments"
+section_name Affiliations = "affiliations"
+section_name Consulting = "consulting"
+section_name Unclassified = "unclassified"
+
+public export
+record DraftField where
+  constructor Field
+  claim_identifier : Text
+  section : ResumeSection
+  reading : FieldReading Text
+
+export
+record ResumeDraft where
+  constructor Draft
+  document : ValidatedDocument
+  fields : List DraftField
+  unresolved_sections : List Text
+
+section_heading : Text → Maybe ResumeSection
+section_heading wording = case toLower (trim wording) of
+  "employment" => Just Employment
+  "experience" => Just Employment
+  "work experience" => Just Employment
+  "education" => Just Education
+  "study" => Just Education
+  "projects" => Just Projects
+  "credentials" => Just Credentials
+  "certifications" => Just Credentials
+  "skills" => Just Skills
+  "publications" => Just Publications
+  "volunteering" => Just Volunteering
+  "volunteer experience" => Just Volunteering
+  "appointments" => Just Appointments
+  "affiliations" => Just Affiliations
+  "consulting" => Just Consulting
+  "contact" => Just Contacts
+  "contacts" => Just Contacts
+  _ => Nothing
+
+explicit_label_section : Text → Maybe ResumeSection
+explicit_label_section wording =
+  let lower = toLower (trim wording)
+  in if isPrefixOf "name:" lower then Just Names
+     else if any (flip isPrefixOf lower) ["email:","phone:","address:","website:"]
+       then Just Contacts else Nothing
+
+interpret_blocks : ResumeSection → Number → Text → List LayoutBlock → List DraftField
+interpret_blocks section ordinal previous_scope [] = []
+interpret_blocks section ordinal previous_scope (block :: remaining) =
+  let wording = layout_block_wording block
+      normalized = trim wording
+      identifier = "claim-" ++ show ordinal
+      current_scope = layout_block_scope block
+      active_section = if current_scope ≟ previous_scope then section else Unclassified
+  in if null (unpack normalized) then interpret_blocks active_section ordinal current_scope remaining
+     else case section_heading wording of
+       Just next_section => interpret_blocks next_section ordinal current_scope remaining
+       Nothing =>
+         let selected = maybe active_section id (explicit_label_section wording)
+             basic_method = case explicit_label_section wording of
+               Just _ => "explicit-label-v1"
+               Nothing => "section-layout-v1;entry-structure-unresolved"
+             method = basic_method ++ (if layout_block_decoding_method block ≟ "" then ""
+                        else ";" ++ layout_block_decoding_method block)
+             reading = case claim_from_layout_block block normalized method of
+               Right supported => Supported supported
+               Left error => Unreadable error
+         in Field identifier selected reading ::
+            interpret_blocks active_section (S ordinal) current_scope remaining
+
+all_sections : List ResumeSection
+all_sections = [Names,Contacts,Employment,Education,Projects,Credentials,Skills,
+                Publications,Volunteering,Appointments,Affiliations,Consulting]
+
+has_section : List DraftField → ResumeSection → Bool
+has_section fields requested_section =
+  any (\field => section_name field.section ≟ section_name requested_section) fields
+
+export
+interpret_resume_document : ValidatedDocument → ResumeDraft
+interpret_resume_document document =
+  let fields = interpret_blocks Unclassified 1 "" (validated_layout_blocks document)
+      missing = map (\section => "missing:" ++ section_name section)
+                    (filter (not . has_section fields) all_sections)
+      unresolved = map (\field => "entry-structure:" ++ field.claim_identifier) fields
+  in Draft document fields
+       ("Omission is not evidence of absence; no entities merged; no facts verified." ::
+        missing ++ unresolved ++ source_unresolved_reader_material (validated_document_source document))
+
+export
+resume_draft_document : ResumeDraft → ValidatedDocument
+resume_draft_document = document
+
+export
+resume_draft_fields : ResumeDraft → List DraftField
+resume_draft_fields = fields
+
+export
+resume_unresolved_sections : ResumeDraft → List Text
+resume_unresolved_sections = unresolved_sections
+
+export
+find_draft_field : ResumeDraft → Text → Maybe DraftField
+find_draft_field draft identifier = find ((≟ identifier) . claim_identifier) draft.fields

@@ -1,0 +1,5 @@
+module ForgedVerification
+import Resume.Source
+import Resume.Review
+forged : ReviewedSnapshot → VerifiedSnapshot
+forged snapshot = snapshot

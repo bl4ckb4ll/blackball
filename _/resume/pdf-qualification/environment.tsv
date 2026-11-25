@@ -1,0 +1,24 @@
+component	identity	sha256_or_observation
+target	local disposable Linux x86_64 Ubuntu 24.04	observed; not Hetzner, a phone, or a GitHub runner
+comparison-date	2026-10-27	no private documents used
+intake-source	e32eaeb9d1dea4be782e2e3c8025e1a677832377	production source unchanged by the qualification work
+hpdft-source	4be4990b7b2a49b619103c0b62c05ddef049d034	unmodified upstream library; archive sha256 3ca3f3c68e3e0d8f836fa4eb36558a1989987778a54198556dafb2171a432962
+pdf-toolbox-source	98e4c620f9331af8ccfcd0c3c1e82df7292b3cd0	unmodified upstream libraries; archive sha256 325ab5638a0164a9bc2b109df1d62b1eabcfd244f657bd15d869eca7730f49d2
+ghc	9.14.1 official x86_64 Ubuntu 24.04 archive	530f0861d1d7b45476c158a9e68aa89987687aaf9939df7a15995c45726e2344; 308842500 bytes; matches official SHA256SUMS
+cabal	3.16.1.0 official x86_64 Ubuntu 24.04 archive	f7284888f523ff0bb3d8bfc9e7b8c89ab3b95fe87792aefc06019801b9f6ef74; 5283448 bytes; matches official SHA256SUMS
+ghc-host-configuration	unpacked with --no-same-owner; linker changed from gold to bfd	first link diagnostic named an invalid local Cabal-syntax archive; re-extracting that file repaired the local acquisition; not an upstream reader defect
+gmp	Ubuntu libgmp-dev 2:6.3.0+dfsg-2ubuntu6.1	locally unpacked headers/library; LIBRARY_PATH and CPATH supplied explicitly
+haskell-build-boundary	GHC native Haskell; inherited GCC/C dependency and linker boundary	requested Haskell qualification environment; no ICK/NDK or first-party C acceptance claimed
+idric-source	94dfd99bd3e376507fedc8611053b7173b2519f0	actual source rebuilt with Chez 10.4.1; bootstrap support Makefile excludes build-refc/install-refc; no frontend or language-library source patch
+idric-launcher	locally rebuilt distribution	55bd2f65fde3fd6093048e75369002d14f12db8f12258778d197376e5f37c0bf
+idric-compiler	locally rebuilt Chez program	1598841f6a412d9dc05ac7751130f200472bb75df1aa2079fbd8b5799244d186; different build root from October 25, not the earlier packaged executable
+grease-runtime	original qualification runtime reused	7e31cd05b7a9d8fb2a4a9e003a7f3fcb0159138506d17f0fb28da8cbe22aa85c; ASAN_OPTIONS=detect_leaks=0; actual Grease implementation, not a Bash run
+hpdft-probe	compiled HpdftProbe.hs	86b5ddb5db85b667d827959441f4f07fb3a0556441ce3d9bf98f992a7eca6538
+toolbox-probe	compiled ToolboxProbe.hs	e71f86bf5b0b71671046d66408e63a8e77bb5d9afbbb97c8b50be3a64a2d5d18
+poppler	26.05.0	independent rendering/text oracle only; not production intake
+ghostscript	10.02.1	independent encrypted-fixture writer only; not production intake or OCR
+ordinary-width-oracle	Adobe Helvetica AFM, distributed with Matplotlib pdfcorefonts	N width 722 units; first line 9170 units; Poppler independently reports first line ending at x=160.04 from x=50
+core-regression	41 producer assertions	PASS; stdout byte-identical to existing producer-cases.tsv; not independent résumé acceptance
+namespace-probe	bwrap --ro-bind / / --unshare-net true	Operation not permitted; no namespace attested
+landlock-query	compiled PdfSandboxProbe.idric	Function not implemented (ENOSYS, 38); no inference about every other sandbox mechanism
+production-pdf-selection	NONE	both candidates fail the independent contract; PdfReaderNotQualified remains active

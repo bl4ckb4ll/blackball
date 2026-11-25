@@ -1,0 +1,48 @@
+#!/usr/bin/env grease
+# Prepared synthetic fixtures only. This does not enable production PDF intake.
+set -o errexit
+if test "$#" -ne 4 {
+  echo 'Usage: pdf-compare.grease HPDFT_PROBE TOOLBOX_PROBE FIXTURES NEW_OUTPUT' >&2
+  exit 2
+}
+var hpdft = $1
+var toolbox = $2
+var fixtures = $3
+var output = $4
+for path in "$hpdft" "$toolbox" "$fixtures" "$output" {
+  var first_character = "$(printf '%s' "$path" | cut -c 1)"
+  if ! test "$first_character" = / {
+    echo 'FAIL: absolute paths required' >&2
+    exit 2
+  }
+}
+test -x "$hpdft"
+test -x "$toolbox"
+test -d "$fixtures"
+test ! -e "$output"
+umask 077
+mkdir "$output"
+for reader in hpdft toolbox {
+  var executable = hpdft
+  if test "$reader" = toolbox {
+    setvar executable = toolbox
+  }
+  mkdir "$output/$reader"
+  for name in ordinary unicode columns geometry boundaries image-only blank mixed unmapped explicit-widths malformed encrypted {
+    test -f "$fixtures/$name.pdf"
+    if timeout --signal=KILL 20s prlimit --as=805306368 --cpu=10 --fsize=8388608 --nofile=64 -- \
+        "$executable" "$fixtures/$name.pdf" > "$output/$reader/$name.out" 2> "$output/$reader/$name.err" {
+      echo 0 > "$output/$reader/$name.status"
+    } else {
+      var reader_status = $?
+      echo "$reader_status" > "$output/$reader/$name.status"
+    }
+  }
+  sha256sum "$executable" > "$output/$reader/executable.sha256"
+}
+sha256sum "$fixtures/ordinary.pdf" "$fixtures/unicode.pdf" "$fixtures/columns.pdf" \
+  "$fixtures/geometry.pdf" "$fixtures/boundaries.pdf" "$fixtures/image-only.pdf" \
+  "$fixtures/blank.pdf" "$fixtures/mixed.pdf" "$fixtures/unmapped.pdf" \
+  "$fixtures/explicit-widths.pdf" \
+  "$fixtures/malformed.pdf" "$fixtures/encrypted.pdf" > "$output/fixtures.sha256"
+echo 'Reader executions captured; exit 0 here does not qualify either reader'

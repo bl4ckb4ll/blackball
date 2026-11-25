@@ -1,0 +1,22 @@
+reader-version-and-page-count	PASS
+ordinary-exact-wording	PASS
+unicode-exact-scalars	FAIL
+raw-text-origin	PASS
+standard14-advance	FAIL
+explicit-widths-control	PASS
+both-columns-retained	PASS
+page-boundaries	PASS
+page-one-mixed-text	PASS
+image-page-no-invented-text	PASS
+image-blank-distinguished	PASS
+mixed-image-retained	PASS
+crop-and-rotation-retained	PASS
+unknown-glyph-marked	FAIL
+malformed-refused	PASS
+encrypted-refused	PASS
+reject-dropped-wording	PASS
+reject-merged-pages	PASS
+reject-shifted-coordinates	PASS
+reject-invented-ocr	PASS
+reject-zero-advance	PASS
+reject-replacement-unicode	BLOCKED	baseline does not pass
