@@ -1,0 +1,16 @@
+check_id	input	proposed_output	expected	observed_review_result	reason
+I01	C01,C02	Interview concern warrants adverse-evidence inquiry	ACCEPT	PASS	Matches the observed kind of evidence
+I02	C02	A percentage of national BME graduates cannot find work	REJECT	PASS	Selected interviews lack the required denominator and outcome measure
+I03	C03	Study site is Michigan because authors work there	REJECT	PASS	Affiliation cannot replace an explicitly anonymized site
+I04	C03	The contextual alumni figures are verified bachelor-only placements	REJECT	PASS	Missing survey provenance and mixed outcome categories
+I05	C04	Table5 statements are verbatim participant quotations	REJECT	PASS	The table explicitly reports researcher interpretation
+I06	C05	A student's favorable account challenges a universal no-value assertion	ACCEPT	PASS	Recognizes that students can have different aims without proving hiring
+I07	C05	A favorable account proves the applicant will obtain an industry job	REJECT	PASS	Meaning and expectations do not establish employment conversion
+I08	C06	The suggested reframing improves actual hiring outcomes	REJECT	PASS	No intervention estimate established
+I09	C01,C07	Omit adverse evidence until deliberate deception is proven	REJECT	PASS	Relevance to a decision does not depend on proving intent
+I10	C07	No BME graduate can obtain work	REJECT	PASS	Universal claim exceeds study and source trail
+I11	T01	Offers/enrollment equals unique graduates with experience	REJECT	PASS	Numerator and population unit differ
+I12	T02	APPLES career plans are achieved graduate placements	REJECT	PASS	Intended behavior and realized behavior differ
+I13	T03,T04	800 net new occupational jobs means800 total opportunities in10years	REJECT	PASS	Replacement/separation openings excluded from net growth
+I14	T04	1500 annual openings are reserved for inexperienced BME bachelor graduates	REJECT	PASS	Occupational total lacks those eligibility and experience filters
+I15	paper-evidence.txt	P1 supplied this exact summary in a new treatment	ACCEPT_IF_BYTES_RECORDED	NOT_RUN	No model experiment executed

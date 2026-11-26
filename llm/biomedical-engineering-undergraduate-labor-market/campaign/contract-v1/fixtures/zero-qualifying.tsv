@@ -1,0 +1,2 @@
+observation_id	revision_id	collection_scope	retrieval_state	returned	classification_state	qualifying	source_time	source_precision	original_source_time	original_precision	money_basis	source_money_basis	period	source_period	amount_minor	evidence_stage	claimed_stage	source_span
+synthetic-01	v1	synthetic employer feed; all 2 pages	complete	7	complete	0	2021	year	2021	year	person	person	installment	installment	279900	fixture_checks	fixture_checks	synthetic page 1 paragraph 2

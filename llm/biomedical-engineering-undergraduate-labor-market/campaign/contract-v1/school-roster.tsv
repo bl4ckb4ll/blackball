@@ -1,0 +1,10 @@
+school_id	institution	campus	program_scope	role	catalog_state	recovery_owner
+michigan-ann-arbor-bme	University of Michigan	Ann Arbor	undergraduate BME	primary	NOT_VERIFIED_CURRENT	SUN-BB-BME-04
+ohio-state-columbus-bme	Ohio State University	Columbus	undergraduate BME	primary	NOT_VERIFIED_CURRENT	SUN-BB-BME-05A
+johns-hopkins-bme	Johns Hopkins University	UNKNOWN	undergraduate BME	primary	NOT_VERIFIED_CURRENT	SUN-BB-BME-05B
+duke-bme	Duke University	UNKNOWN	undergraduate BME	comparison_lead	NOT_VERIFIED_CURRENT	SUN-BB-BME-17
+washu-bme	Washington University in St. Louis	UNKNOWN	undergraduate BME	comparison_lead	NOT_VERIFIED_CURRENT	SUN-BB-BME-17
+georgia-tech-bme	Georgia Tech	UNKNOWN	undergraduate BME	comparison_lead	NOT_VERIFIED_CURRENT	SUN-BB-BME-17
+penn-state-bme	Penn State	University Park	undergraduate BME	comparison_lead	NOT_VERIFIED_CURRENT	SUN-BB-BME-17
+clemson-bioengineering	Clemson University	UNKNOWN	undergraduate Bioengineering	comparison_lead	NOT_VERIFIED_CURRENT	SUN-BB-BME-17
+ucsd-bioengineering	UC San Diego	UNKNOWN	undergraduate Bioengineering	comparison_lead	NOT_VERIFIED_CURRENT	SUN-BB-BME-17

@@ -1,0 +1,26 @@
+field	value
+contract_version	bme-observation-v1
+contract_sha256	7bd48640c5173f23bb92888671b8d05a09a69266f81d96814f4f15f3f1bfe006
+revision_id	BME01-20261113-r1
+supersedes	UNKNOWN
+record_kind	claim
+observed_time	2026-11-13
+observed_time_precision	day
+timezone	UNKNOWN
+source_time	Join sources.tsv; UNKNOWN remains unknown
+source_time_precision	Join sources.tsv
+valid_from	UNKNOWN
+valid_from_precision	unknown
+valid_to	UNKNOWN
+valid_to_precision	unknown
+query	Original DOI/PMC/author-PDF lookups; exact DOI correction/supplement query; named references2,3,7,21,24; historic BLS openings check
+filters	Primary publisher, author-hosted and original government sources; no population sample inferred
+collection_scope	Original article: all extracted body sections, Tables1–5, declarations and36 references; upstream: only explicitly named sections in background-trace.tsv; existing dossier: research-evidence.md and chatgpt-incident.md
+geography	Anonymous Midwestern UnitedStates study site; upstream places scoped per source; no inferred Michigan site
+retrieval_state	partial
+retrieval_reason	Original complete extracted text read; raw data, binary PDF and some upstream full text unavailable
+records_returned	UNKNOWN
+classification_state	not_attempted
+qualifying_records	UNKNOWN
+classification_rule	NOT_APPLICABLE: research claim audit, not vacancy eligibility classification
+limitation	No new outcome rate, hiring-effect estimate, identified study site, original advising transcript, source-data replication or model execution

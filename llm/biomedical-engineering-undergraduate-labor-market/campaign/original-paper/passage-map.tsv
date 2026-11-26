@@ -1,0 +1,26 @@
+passage_id	locator	evidence_kind	reading_status	audit_question	claim_ids
+paper-abstract	Abstract	author_summary	PASS	Does a concern imply a measured rate?	C01
+paper-intro-1	Introduction, opening paragraphs	cited_background	PASS	Are external comparisons attributed to their actual producer?	C01
+paper-intro-2	Introduction, final paragraphs	author_framing	PASS	Does the research question answer the applicant's economic question?	C07
+paper-background-1	Background, curriculum history	cited_background	PASS	Are historic programme design choices confused with current hiring?	C07
+paper-background-2	Background, industry comparison	cited_background	PASS	Are occupational stock and annual graduate flow distinguished?	C07
+paper-background-3	Background, alternative careers	cited_background	PASS	Does entering a different path establish that it was desired or affordable?	C07
+paper-design	Study Design, research question and project origin	method_report	PASS	Were later questions prompted differently from early questions?	C02
+paper-context	Institutional Context	contextual_source_assertion	PASS	Is the site kept anonymous and the survey provenance unresolved?	C03
+paper-participants	Participants	method_report	PASS	Does co-curricular selection exclude important comparison groups?	C02
+paper-table1	Table 1	method_report	PASS	Is a selected sample described without population generalization?	C02
+paper-interviews	Interviews	method_report	PASS	Are repeated observations and missing final interviews kept distinct?	C02
+paper-analysis	Data Analysis	method_report	PASS	Are speech frequencies kept separate from employment outcomes?	C02
+paper-quality	Addressing Qualitative Research Quality; Table 2	method_report	PASS	Is researcher consensus distinguished from independent replication?	C02
+paper-results-overview	Results, opening paragraphs	author_interpretation	PASS	Are interpreted themes distinct from direct participant speech?	C04
+paper-table3	Personal Value subsection; Table 3	participant_perception	PASS	Does perceived prestige establish a realized return?	C05
+paper-table4	Unique Skills subsection; Table 4	participant_perception	PASS	Do self-described skills establish employer demand?	C05
+paper-placement	Perceptions subsection, participant example	participant_perception	PASS	Are claims about specific employers verified independently?	C04
+paper-table5	Table 5 and preceding paragraph	author_interpretation	PASS	Are the table statements mistaken for verbatim quotations?	C04
+paper-discussion-personal	Discussion, Personal Value subsection	author_interpretation	PASS	Can interest matter without substituting for occupational outcomes?	C05
+paper-discussion-skills	Discussion, Unique Skills subsection	author_recommendation	PASS	Which missing comparison would connect skills to actual hiring?	C05
+paper-discussion-placement	Discussion, Perceptions subsection	author_recommendation	PASS	Has the proposed intervention's effect been measured?	C06
+paper-limitations	Limitations	author_scope_statement	PASS	Does limited generalizability invalidate every observed concern?	C02
+paper-conclusions	Conclusions	author_summary	PASS	Are proposed future studies reported as completed evidence?	C07
+paper-declarations	Acknowledgments; contributions; funding; data; ethics	publication_metadata	PASS	Can affiliation, funding or IRB location deanonymize the study site?	C03
+paper-references	References 1–36	citation_metadata	PASS	Which upstream assertions have actually been checked?	C01,C07

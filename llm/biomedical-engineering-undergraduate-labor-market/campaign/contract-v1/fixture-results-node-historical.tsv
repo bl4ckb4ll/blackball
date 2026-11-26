@@ -1,0 +1,24 @@
+case_id	status	observed
+complete-empty	PASS	complete-empty
+partial-empty	PASS	partial-empty
+failed-retrieval	PASS	failed-retrieval
+zero-qualifying	PASS	zero-qualifying
+unclassified	PASS	observed-records
+missing-scope	PASS	BME-SCOPE
+wrong-basis	PASS	BME-MONEY-BASIS
+wrong-period	PASS	BME-MONEY-BASIS
+invented-day	PASS	BME-DATE-PRECISION
+source-to-physical	PASS	BME-STAGE
+failed-as-zero	PASS	BME-FAILED-ZERO
+classification-count	PASS	BME-COUNT
+fractional-minor-unit	PASS	BME-MONEY-INTEGER
+identity-collision	PASS	BME-COLLISION
+unicode-escapes-extensions	PASS	complete-empty
+impossible-day	PASS	BME-DATE-SHAPE
+leap-day	PASS	complete-empty
+invalid-utf8	PASS	BME-UTF8
+truncated-final-line	PASS	BME-TRUNCATED
+unknown-escape	PASS	BME-ESCAPE
+duplicate-header	PASS	BME-HEADER
+header-only-roundtrip	PASS	empty table preserved
+total	PASS	22

@@ -1,0 +1,24 @@
+field	value
+job_id	SUN-BB-BME-01
+owner_repository	bl4ckb4ll/blackball
+inspected_ref	main
+inspected_head	d6a57ec658448651300d70a2936f966713aa8f5c
+result_head	UNCOMMITTED
+dirty_state	Scoped new campaign/original-paper files
+observed_date	2026-11-13
+observed_date_precision	day
+timezone	America/Detroit
+contract_version	bme-observation-v1
+input_receipts	October13 SUN packet; source IDs in sources.tsv
+input_digests	Repository blobs in sources.tsv; external byte digests UNKNOWN
+output_paths	methods.md; passage-map.tsv; claims.tsv; sources.tsv; background-trace.tsv; unresolved-sources.tsv; interpretation-checks.tsv; paper-evidence.txt; envelope.tsv; receipt.tsv; artifacts.tsv
+output_digests	artifacts.tsv
+source_review	PASS: full original-paper extracted-text reading; focused upstream checks scoped in background-trace.tsv
+fixture_checks	PASS:14 manual interpretation controls; I15 remains conditional; no executable validator claim
+live_acquisition	PASS: source text/metadata retrieved; PDF bytes/rendering BLOCKED_HTTP_403
+typecheck	NOT_APPLICABLE: research records; no new programme
+model_execution	NOT_RUN: P1 treatment prepared only
+physical_acceptance	NOT_APPLICABLE: research records
+first_blocker	Underlying alumni-survey provenance absent; cannot admit contextual percentages as verified placement outcomes
+remaining_work	BME02 disclosure evidence; BME03 upstream acquisition gaps; P1 exact prompt/tokenizer qualification; no original transcript or data replication
+next_consumer	SUN-BB-BME-02; SUN-BB-BME-03; P1
