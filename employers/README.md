@@ -43,7 +43,8 @@ Current mapped/seeded employers include:
 - Disney and ESPN;
 - Nintendo of America;
 - Nickelodeon;
-- Georgia-Pacific.
+- Georgia-Pacific;
+- [Quantum Signal AI, Watson Engineering and Heat Treat Equipment](industrial/washtenaw-fabrication-and-welding.md) in Southeast Michigan.
 
 See `catalog.tsv` for the cross-employer index and `entry-gates.tsv` for current explicit access routes.
 
